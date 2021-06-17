@@ -14,6 +14,12 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dashboard: string;
   /**
+  * The list of dashboard lists this dashboard belongs to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html#dashboard_lists DashboardJson#dashboard_lists}
+  */
+  readonly dashboardLists?: number[];
+  /**
   * The URL of the dashboard.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html#url DashboardJson#url}
@@ -49,6 +55,7 @@ export class DashboardJson extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._dashboard = config.dashboard;
+    this._dashboardLists = config.dashboardLists;
     this._url = config.url;
   }
 
@@ -67,6 +74,27 @@ export class DashboardJson extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dashboardInput() {
     return this._dashboard
+  }
+
+  // dashboard_lists - computed: false, optional: true, required: false
+  private _dashboardLists?: number[];
+  public get dashboardLists() {
+    return this.interpolationForAttribute('dashboard_lists') as any;
+  }
+  public set dashboardLists(value: number[] ) {
+    this._dashboardLists = value;
+  }
+  public resetDashboardLists() {
+    this._dashboardLists = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dashboardListsInput() {
+    return this._dashboardLists
+  }
+
+  // dashboard_lists_removed - computed: true, optional: false, required: false
+  public get dashboardListsRemoved() {
+    return this.interpolationForAttribute('dashboard_lists_removed') as any;
   }
 
   // id - computed: true, optional: true, required: false
@@ -97,6 +125,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dashboard: cdktf.stringToTerraform(this._dashboard),
+      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform)(this._dashboardLists),
       url: cdktf.stringToTerraform(this._url),
     };
   }

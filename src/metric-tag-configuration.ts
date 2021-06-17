@@ -20,7 +20,7 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   */
   readonly metricName: string;
   /**
-  * The metric's type. This field can't be updated after creation. Allowed enum values: gauge,count,distribution.
+  * The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#metric_type MetricTagConfiguration#metric_type}
   */

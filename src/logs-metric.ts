@@ -34,7 +34,7 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
 }
 export interface LogsMetricCompute {
   /**
-  * The type of aggregation to use. This field can't be updated after creation.
+  * The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#aggregation_type LogsMetric#aggregation_type}
   */

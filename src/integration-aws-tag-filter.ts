@@ -14,7 +14,7 @@ export interface IntegrationAwsTagFilterConfig extends cdktf.TerraformMetaArgume
   */
   readonly accountId: string;
   /**
-  * The namespace associated with the tag filter entry. Allowed enum values: 'elb', 'application_elb', 'sqs', 'rds', 'custom', 'network_elb,lambda'
+  * The namespace associated with the tag filter entry. Valid values are `elb`, `application_elb`, `sqs`, `rds`, `custom`, `network_elb`, `lambda`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html#namespace IntegrationAwsTagFilter#namespace}
   */

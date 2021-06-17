@@ -52,7 +52,7 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
 }
 export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
-  * Type of parser to extract the value. Allowed enum values: `raw`, `json_path`, `regex`
+  * Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#type SyntheticsGlobalVariable#type}
   */
@@ -81,7 +81,7 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   */
   readonly field?: string;
   /**
-  * Defines the source to use to extract the value. Allowed enum values: `http_body`, `http_header`.
+  * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#type SyntheticsGlobalVariable#type}
   */

@@ -168,6 +168,11 @@ export class Downtime extends cdktf.TerraformResource {
     return this.getBooleanAttribute('active');
   }
 
+  // active_child_id - computed: true, optional: false, required: false
+  public get activeChildId() {
+    return this.getNumberAttribute('active_child_id');
+  }
+
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');

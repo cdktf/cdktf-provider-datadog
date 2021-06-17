@@ -26,7 +26,7 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly isReadOnly?: boolean;
   /**
-  * The layout type of the dashboard, either 'free' or 'ordered'.
+  * The layout type of the dashboard. Valid values are `ordered`, `free`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#layout_type Dashboard#layout_type}
   */
@@ -38,11 +38,17 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly notifyList?: string[];
   /**
-  * The reflow type of a new dashboard layout. Set this only when layout type is ‘ordered’. If set to ‘fixed’, the dashboard expect all widgets to have a layout, and if it’s set to ‘auto’, widgets should not have layouts.
+  * The reflow type of a new dashboard layout. Set this only when layout type is `ordered`. If set to `fixed`, the dashboard expects all widgets to have a layout, and if it's set to `auto`, widgets should not have layouts. Valid values are `auto`, `fixed`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#reflow_type Dashboard#reflow_type}
   */
   readonly reflowType?: string;
+  /**
+  * Role UUIDs corresponding to users authorized to edit the dashboard. **This feature is currently in beta.**
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#restricted_roles Dashboard#restricted_roles}
+  */
+  readonly restrictedRoles?: string[];
   /**
   * The title of the dashboard.
   * 
@@ -158,7 +164,7 @@ export interface DashboardWidgetAlertGraphDefinition {
   */
   readonly alertId: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -170,7 +176,7 @@ export interface DashboardWidgetAlertGraphDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -182,7 +188,7 @@ export interface DashboardWidgetAlertGraphDefinition {
   */
   readonly titleSize?: string;
   /**
-  * Type of visualization to use when displaying the widget. Either `timeseries` or `toplist`.
+  * Type of visualization to use when displaying the widget. Valid values are `timeseries`, `toplist`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#viz_type Dashboard#viz_type}
   */
@@ -215,7 +221,7 @@ export interface DashboardWidgetAlertValueDefinition {
   */
   readonly precision?: number;
   /**
-  * The alignment of the text in the widget.
+  * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
@@ -227,7 +233,7 @@ export interface DashboardWidgetAlertValueDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -261,24 +267,38 @@ function dashboardWidgetAlertValueDefinitionToTerraform(struct?: DashboardWidget
 
 export interface DashboardWidgetChangeDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetChangeDefinitionCustomLinkToTerraform(struct?: DashboardWidgetChangeDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -326,7 +346,7 @@ export interface DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery 
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -490,7 +510,7 @@ export interface DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery 
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -691,7 +711,7 @@ export interface DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery 
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -855,7 +875,7 @@ export interface DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -977,13 +997,13 @@ function dashboardWidgetChangeDefinitionRequestSecurityQueryToTerraform(struct?:
 
 export interface DashboardWidgetChangeDefinitionRequest {
   /**
-  * Whether to show absolute or relative change. One of `absolute`, `relative`.
+  * Whether to show absolute or relative change. Valid values are `absolute`, `relative`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#change_type Dashboard#change_type}
   */
   readonly changeType?: string;
   /**
-  * Choose from when to compare current data to. One of `hour_before`, `day_before`, `week_before` or `month_before`.
+  * Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compare_to Dashboard#compare_to}
   */
@@ -995,13 +1015,13 @@ export interface DashboardWidgetChangeDefinitionRequest {
   */
   readonly increaseGood?: boolean;
   /**
-  * One of `change`, `name`, `present` (present value) or `past` (past value).
+  * What to order by. Valid values are `change`, `name`, `present`, `past`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order_by Dashboard#order_by}
   */
   readonly orderBy?: string;
   /**
-  * Either `asc` (ascending) or `desc` (descending).
+  * Widget sorting method. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order_dir Dashboard#order_dir}
   */
@@ -1070,7 +1090,7 @@ function dashboardWidgetChangeDefinitionRequestToTerraform(struct?: DashboardWid
 
 export interface DashboardWidgetChangeDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -1082,7 +1102,7 @@ export interface DashboardWidgetChangeDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -1139,13 +1159,13 @@ export interface DashboardWidgetCheckStatusDefinition {
   */
   readonly groupBy?: string[];
   /**
-  * Either `check` or `cluster`, depending on whether the widget should use a single check or a cluster of checks.
+  * The kind of grouping to use. Valid values are `check`, `cluster`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#grouping Dashboard#grouping}
   */
   readonly grouping: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -1163,7 +1183,7 @@ export interface DashboardWidgetCheckStatusDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -1235,7 +1255,7 @@ export interface DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -1399,7 +1419,7 @@ export interface DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -1600,7 +1620,7 @@ export interface DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -1764,7 +1784,7 @@ export interface DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupB
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -1966,7 +1986,7 @@ export interface DashboardWidgetDistributionDefinition {
   */
   readonly legendSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -1984,7 +2004,7 @@ export interface DashboardWidgetDistributionDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -2018,13 +2038,13 @@ function dashboardWidgetDistributionDefinitionToTerraform(struct?: DashboardWidg
 
 export interface DashboardWidgetEventStreamDefinition {
   /**
-  * The size to use to display an event. One of `s`, `l`
+  * The size to use to display an event. Valid values are `s`, `l`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_size Dashboard#event_size}
   */
   readonly eventSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -2048,7 +2068,7 @@ export interface DashboardWidgetEventStreamDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -2076,7 +2096,7 @@ function dashboardWidgetEventStreamDefinitionToTerraform(struct?: DashboardWidge
 
 export interface DashboardWidgetEventTimelineDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -2100,7 +2120,7 @@ export interface DashboardWidgetEventTimelineDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -2145,7 +2165,7 @@ export interface DashboardWidgetFreeTextDefinition {
   */
   readonly text: string;
   /**
-  * The alignment of the text in the widget.
+  * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
@@ -2164,24 +2184,38 @@ function dashboardWidgetFreeTextDefinitionToTerraform(struct?: DashboardWidgetFr
 
 export interface DashboardWidgetGeomapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGeomapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGeomapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -2193,7 +2227,7 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaLimit {
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -2282,7 +2316,7 @@ export interface DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery 
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -2404,7 +2438,7 @@ function dashboardWidgetGeomapDefinitionRequestLogQueryToTerraform(struct?: Dash
 
 export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -2434,7 +2468,7 @@ function dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToTerraform
 
 export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -2446,7 +2480,7 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySor
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -2510,7 +2544,7 @@ function dashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchToTerraform(
 
 export interface DashboardWidgetGeomapDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -2561,7 +2595,7 @@ function dashboardWidgetGeomapDefinitionRequestQueryEventQueryToTerraform(struct
 
 export interface DashboardWidgetGeomapDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -2598,13 +2632,13 @@ function dashboardWidgetGeomapDefinitionRequestQueryMetricQueryToTerraform(struc
 
 export interface DashboardWidgetGeomapDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -2634,7 +2668,7 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryProcessQuery {
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -2742,7 +2776,7 @@ export interface DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery 
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -2947,7 +2981,7 @@ function dashboardWidgetGeomapDefinitionViewToTerraform(struct?: DashboardWidget
 
 export interface DashboardWidgetGeomapDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -2959,7 +2993,7 @@ export interface DashboardWidgetGeomapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -3018,7 +3052,7 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition {
   */
   readonly alertId: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -3030,7 +3064,7 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -3042,7 +3076,7 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition {
   */
   readonly titleSize?: string;
   /**
-  * Type of visualization to use when displaying the widget. Either `timeseries` or `toplist`.
+  * Type of visualization to use when displaying the widget. Valid values are `timeseries`, `toplist`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#viz_type Dashboard#viz_type}
   */
@@ -3075,7 +3109,7 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertValueDefinition {
   */
   readonly precision?: number;
   /**
-  * The alignment of the text in the widget.
+  * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
@@ -3087,7 +3121,7 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertValueDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -3121,24 +3155,38 @@ function dashboardWidgetGroupDefinitionWidgetAlertValueDefinitionToTerraform(str
 
 export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetChangeDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetChangeDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -3186,7 +3234,7 @@ export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -3350,7 +3398,7 @@ export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -3551,7 +3599,7 @@ export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -3715,7 +3763,7 @@ export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -3837,13 +3885,13 @@ function dashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQuer
 
 export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequest {
   /**
-  * Whether to show absolute or relative change. One of `absolute`, `relative`.
+  * Whether to show absolute or relative change. Valid values are `absolute`, `relative`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#change_type Dashboard#change_type}
   */
   readonly changeType?: string;
   /**
-  * Choose from when to compare current data to. One of `hour_before`, `day_before`, `week_before` or `month_before`.
+  * Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compare_to Dashboard#compare_to}
   */
@@ -3855,13 +3903,13 @@ export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequest {
   */
   readonly increaseGood?: boolean;
   /**
-  * One of `change`, `name`, `present` (present value) or `past` (past value).
+  * What to order by. Valid values are `change`, `name`, `present`, `past`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order_by Dashboard#order_by}
   */
   readonly orderBy?: string;
   /**
-  * Either `asc` (ascending) or `desc` (descending).
+  * Widget sorting method. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order_dir Dashboard#order_dir}
   */
@@ -3930,7 +3978,7 @@ function dashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestToTerraform(
 
 export interface DashboardWidgetGroupDefinitionWidgetChangeDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -3942,7 +3990,7 @@ export interface DashboardWidgetGroupDefinitionWidgetChangeDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -3999,13 +4047,13 @@ export interface DashboardWidgetGroupDefinitionWidgetCheckStatusDefinition {
   */
   readonly groupBy?: string[];
   /**
-  * Either `check` or `cluster`, depending on whether the widget should use a single check or a cluster of checks.
+  * The kind of grouping to use. Valid values are `check`, `cluster`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#grouping Dashboard#grouping}
   */
   readonly grouping: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -4023,7 +4071,7 @@ export interface DashboardWidgetGroupDefinitionWidgetCheckStatusDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -4095,7 +4143,7 @@ export interface DashboardWidgetGroupDefinitionWidgetDistributionDefinitionReque
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -4259,7 +4307,7 @@ export interface DashboardWidgetGroupDefinitionWidgetDistributionDefinitionReque
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -4460,7 +4508,7 @@ export interface DashboardWidgetGroupDefinitionWidgetDistributionDefinitionReque
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -4624,7 +4672,7 @@ export interface DashboardWidgetGroupDefinitionWidgetDistributionDefinitionReque
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -4826,7 +4874,7 @@ export interface DashboardWidgetGroupDefinitionWidgetDistributionDefinition {
   */
   readonly legendSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -4844,7 +4892,7 @@ export interface DashboardWidgetGroupDefinitionWidgetDistributionDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -4878,13 +4926,13 @@ function dashboardWidgetGroupDefinitionWidgetDistributionDefinitionToTerraform(s
 
 export interface DashboardWidgetGroupDefinitionWidgetEventStreamDefinition {
   /**
-  * The size to use to display an event. One of `s`, `l`
+  * The size to use to display an event. Valid values are `s`, `l`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_size Dashboard#event_size}
   */
   readonly eventSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -4908,7 +4956,7 @@ export interface DashboardWidgetGroupDefinitionWidgetEventStreamDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -4936,7 +4984,7 @@ function dashboardWidgetGroupDefinitionWidgetEventStreamDefinitionToTerraform(st
 
 export interface DashboardWidgetGroupDefinitionWidgetEventTimelineDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -4960,7 +5008,7 @@ export interface DashboardWidgetGroupDefinitionWidgetEventTimelineDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -5005,7 +5053,7 @@ export interface DashboardWidgetGroupDefinitionWidgetFreeTextDefinition {
   */
   readonly text: string;
   /**
-  * The alignment of the text in the widget.
+  * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
@@ -5024,24 +5072,38 @@ function dashboardWidgetGroupDefinitionWidgetFreeTextDefinitionToTerraform(struc
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -5053,7 +5115,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestForm
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -5142,7 +5204,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -5264,7 +5326,7 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryToTe
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -5294,7 +5356,7 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQu
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -5306,7 +5368,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQuer
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -5370,7 +5432,7 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQu
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -5421,7 +5483,7 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQu
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -5458,13 +5520,13 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQ
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -5494,7 +5556,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQuer
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -5602,7 +5664,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -5807,7 +5869,7 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionViewToTerraform(str
 
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -5819,7 +5881,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -5872,24 +5934,38 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionToTerraform(struct?
 
 export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -5960,7 +6036,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApm
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -6124,7 +6200,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLog
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -6325,7 +6401,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRum
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -6489,7 +6565,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSec
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -6735,7 +6811,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinition {
   */
   readonly legendSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -6753,7 +6829,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -6808,24 +6884,38 @@ function dashboardWidgetGroupDefinitionWidgetHeatmapDefinitionToTerraform(struct
 
 export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -6873,7 +6963,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFil
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -7037,7 +7127,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFil
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -7238,7 +7328,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFil
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -7402,7 +7492,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFil
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -7617,7 +7707,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSiz
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -7781,7 +7871,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSiz
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -7982,7 +8072,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSiz
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -8146,7 +8236,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSiz
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -8397,7 +8487,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinition {
   */
   readonly noMetricHosts?: boolean;
   /**
-  * The type of node used. Either `host` or `container`.
+  * The type of node used. Valid values are `host`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#node_type Dashboard#node_type}
   */
@@ -8415,7 +8505,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -8493,19 +8583,19 @@ export interface DashboardWidgetGroupDefinitionWidgetImageDefinition {
   */
   readonly hasBorder?: boolean;
   /**
-  * The horizontal alignment for the widget.
+  * The horizontal alignment for the widget. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#horizontal_align Dashboard#horizontal_align}
   */
   readonly horizontalAlign?: string;
   /**
-  * The margins to use around the image. Either `sm`, `md`, or `lg`. Note: `small` and `large` values are deprecated.
+  * The margins to use around the image. Note: `small` and `large` values are deprecated. Valid values are `sm`, `md`, `lg`, `small`, `large`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#margin Dashboard#margin}
   */
   readonly margin?: string;
   /**
-  * The preferred method to adapt the dimensions of the image. The values are based on the image `object-fit` CSS properties and are either: `fill`, `contain`, `cover`, `none` or `scale-down`. Note: `zoom`, `fit` and `center` values are deprecated.
+  * The preferred method to adapt the dimensions of the image. The values are based on the image `object-fit` CSS properties. Note: `zoom`, `fit` and `center` values are deprecated. Valid values are `fill`, `contain`, `cover`, `none`, `scale-down`, `zoom`, `fit`, `center`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sizing Dashboard#sizing}
   */
@@ -8523,7 +8613,7 @@ export interface DashboardWidgetGroupDefinitionWidgetImageDefinition {
   */
   readonly urlDarkTheme?: string;
   /**
-  * The vertical alignment for the widget.
+  * The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#vertical_align Dashboard#vertical_align}
   */
@@ -8552,7 +8642,7 @@ export interface DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort {
   */
   readonly column: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -8581,13 +8671,13 @@ export interface DashboardWidgetGroupDefinitionWidgetLogStreamDefinition {
   */
   readonly indexes?: string[];
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
-  * One of: ['inline', 'expanded-md', 'expanded-lg']
+  * Amount of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#message_display Dashboard#message_display}
   */
@@ -8617,7 +8707,7 @@ export interface DashboardWidgetGroupDefinitionWidgetLogStreamDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -8655,13 +8745,13 @@ function dashboardWidgetGroupDefinitionWidgetLogStreamDefinitionToTerraform(stru
 
 export interface DashboardWidgetGroupDefinitionWidgetManageStatusDefinition {
   /**
-  * Whether to colorize text or background. One of `text`, `background`.
+  * Whether to colorize text or background. Valid values are `background`, `text`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#color_preference Dashboard#color_preference}
   */
   readonly colorPreference?: string;
   /**
-  * The display setting to use. One of `counts`, `list`, or `countsAndList`.
+  * The display setting to use. Valid values are `counts`, `countsAndList`, `list`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_format Dashboard#display_format}
   */
@@ -8685,13 +8775,13 @@ export interface DashboardWidgetGroupDefinitionWidgetManageStatusDefinition {
   */
   readonly showLastTriggered?: boolean;
   /**
-  * The method to use to sort monitors. Example: `status,asc`.
+  * The method to use to sort monitors. Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
-  * One of: ['monitors', 'groups', 'combined']
+  * Which summary type should be used. Valid values are `monitors`, `groups`, `combined`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#summary_type Dashboard#summary_type}
   */
@@ -8703,7 +8793,7 @@ export interface DashboardWidgetGroupDefinitionWidgetManageStatusDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -8764,13 +8854,13 @@ export interface DashboardWidgetGroupDefinitionWidgetNoteDefinition {
   */
   readonly showTick?: boolean;
   /**
-  * The alignment of the widget's text. One of `left`, `center`, or `right`.
+  * The alignment of the widget's text. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
   /**
-  * When `tick = true`, string indicating on which side of the widget the tick should be displayed. One of `bottom`, `top`, `left`, `right`.
+  * When `tick = true`, string indicating on which side of the widget the tick should be displayed. Valid values are `bottom`, `left`, `right`, `top`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tick_edge Dashboard#tick_edge}
   */
@@ -8782,7 +8872,7 @@ export interface DashboardWidgetGroupDefinitionWidgetNoteDefinition {
   */
   readonly tickPos?: string;
   /**
-  * The vertical alignment for the widget.
+  * The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#vertical_align Dashboard#vertical_align}
   */
@@ -8806,24 +8896,38 @@ function dashboardWidgetGroupDefinitionWidgetNoteDefinitionToTerraform(struct?: 
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -8871,7 +8975,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -8999,7 +9103,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly alias?: string;
   /**
-  * A list of display modes for each table cell.
+  * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
   */
@@ -9011,7 +9115,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly name: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -9054,7 +9158,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly resource?: string;
   /**
-  * The level of detail for the request.
+  * The level of detail for the request. Valid values are `service`, `resource`, `span`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#row_type Dashboard#row_type}
   */
@@ -9088,7 +9192,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStats
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestConditionalFormats {
   /**
-  * Comparator to use. One of `>`, `>=`, `<`, or `<=`.
+  * Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
   */
@@ -9124,7 +9228,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly metric?: string;
   /**
-  * Color palette to apply. One of `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green` or `black_on_light_red`.
+  * Color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
   */
@@ -9202,7 +9306,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -9403,7 +9507,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -9567,7 +9671,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -9689,7 +9793,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurity
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest {
   /**
-  * The aggregator to use for time aggregation. One of `avg`, `min`, `max`, `sum`, `last`.
+  * The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -9701,7 +9805,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly alias?: string;
   /**
-  * A list of display modes for each table cell. List items one of `number`, `bar`.
+  * A list of display modes for each table cell. List items one of `number`, `bar`. Valid values are `number`, `bar`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
   */
@@ -9713,7 +9817,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly limit?: number;
   /**
-  * The sort order for the rows. One of `desc` or `asc`.
+  * The sort order for the rows. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -9789,13 +9893,13 @@ function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestToTerraf
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinition {
   /**
-  * Controls the display of the search bar. One of `auto`, `always`, `never`.
+  * Controls the display of the search bar. Valid values are `always`, `never`, `auto`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#has_search_bar Dashboard#has_search_bar}
   */
   readonly hasSearchBar?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -9807,7 +9911,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -9847,24 +9951,38 @@ function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionToTerraform(str
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -9912,7 +10030,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -10034,7 +10152,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestConditionalFormats {
   /**
-  * Comparator to use. One of `>`, `>=`, `<`, or `<=`.
+  * Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
   */
@@ -10070,7 +10188,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly metric?: string;
   /**
-  * Color palette to apply. One of `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green` or `black_on_light_red`.
+  * Color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
   */
@@ -10112,7 +10230,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -10201,7 +10319,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -10360,7 +10478,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestProcessQ
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -10390,7 +10508,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEve
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -10402,7 +10520,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -10466,7 +10584,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEve
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -10517,7 +10635,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEve
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -10554,13 +10672,13 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMet
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -10590,7 +10708,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -10698,7 +10816,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -10862,7 +10980,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -10984,7 +11102,7 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurity
 
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest {
   /**
-  * The aggregator to use for time aggregation. One of `avg`, `min`, `max`, `sum`, `last`.
+  * The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -11075,7 +11193,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinition {
   */
   readonly customUnit?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -11087,7 +11205,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinition {
   */
   readonly precision?: number;
   /**
-  * The alignment of the widget's text. One of `left`, `center`, or `right`.
+  * The alignment of the widget's text. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
@@ -11099,7 +11217,7 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -11142,24 +11260,38 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionToTerraform(str
 
 export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -11207,7 +11339,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -11371,7 +11503,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -11572,7 +11704,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -11736,7 +11868,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -11858,7 +11990,7 @@ function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecuri
 
 export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX {
   /**
-  * Aggregator used for the request.
+  * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -11958,7 +12090,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -12122,7 +12254,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -12323,7 +12455,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -12487,7 +12619,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -12609,7 +12741,7 @@ function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecuri
 
 export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY {
   /**
-  * Aggregator used for the request.
+  * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -12784,7 +12916,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinition {
   */
   readonly colorByGroups?: string[];
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -12796,7 +12928,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -12868,7 +13000,7 @@ export interface DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefini
   */
   readonly sloId: string;
   /**
-  * List of time windows to display in the widget. Each value in the list must be one of `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, or `previous_month`.
+  * List of time windows to display in the widget. Valid values are `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, `previous_month`, `global_time`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#time_windows Dashboard#time_windows}
   */
@@ -12880,7 +13012,7 @@ export interface DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefini
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -12892,7 +13024,7 @@ export interface DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefini
   */
   readonly titleSize?: string;
   /**
-  * View mode for the widget. One of `overall`, `component`, or `both`.
+  * View mode for the widget. Valid values are `overall`, `component`, `both`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#view_mode Dashboard#view_mode}
   */
@@ -12922,24 +13054,38 @@ function dashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionToTe
 
 export interface DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -12963,7 +13109,7 @@ export interface DashboardWidgetGroupDefinitionWidgetServicemapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -12996,24 +13142,38 @@ function dashboardWidgetGroupDefinitionWidgetServicemapDefinitionToTerraform(str
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -13114,7 +13274,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -13242,7 +13402,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -13331,7 +13491,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -13518,7 +13678,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -13677,7 +13837,7 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQ
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -13707,7 +13867,7 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEve
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -13719,7 +13879,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -13783,7 +13943,7 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEve
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -13834,7 +13994,7 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEve
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -13871,13 +14031,13 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMet
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -13907,7 +14067,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -14015,7 +14175,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -14179,7 +14339,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -14301,13 +14461,13 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurity
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle {
   /**
-  * Type of lines displayed. Available values are: `dashed`, `dotted`, or `solid`.
+  * Type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_type Dashboard#line_type}
   */
   readonly lineType?: string;
   /**
-  * Width of line displayed. Available values are: `normal`, `thick`, or `thin`.
+  * Width of line displayed. Valid values are `normal`, `thick`, `thin`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_width Dashboard#line_width}
   */
@@ -14331,7 +14491,7 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleToT
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest {
   /**
-  * How the marker lines will look. Possible values are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}. Example: `error dashed`.
+  * How the marker lines will look. Valid values are `area`, `bars`, `line`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_type Dashboard#display_type}
   */
@@ -14519,13 +14679,13 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisToTerrafor
 
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition {
   /**
-  * A list of columns to display in the legend. List items one of `value`, `avg`, `sum`, `min`, `max`.
+  * A list of columns to display in the legend. Valid values are `value`, `avg`, `sum`, `min`, `max`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_columns Dashboard#legend_columns}
   */
   readonly legendColumns?: string[];
   /**
-  * The layout of the legend displayed in the widget. One of `auto`, `horizontal`, `vertical`.
+  * The layout of the legend displayed in the widget. Valid values are `auto`, `horizontal`, `vertical`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_layout Dashboard#legend_layout}
   */
@@ -14537,7 +14697,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition {
   */
   readonly legendSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -14555,7 +14715,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -14626,24 +14786,38 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionToTerraform(str
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -14691,7 +14865,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -14813,7 +14987,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryToT
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats {
   /**
-  * Comparator to use. One of `>`, `>=`, `<`, or `<=`.
+  * Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
   */
@@ -14849,7 +15023,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestCon
   */
   readonly metric?: string;
   /**
-  * Color palette to apply. One of `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green` or `black_on_light_red`.
+  * Color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
   */
@@ -14891,7 +15065,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -14980,7 +15154,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -15139,7 +15313,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQuer
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -15169,7 +15343,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQ
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -15181,7 +15355,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -15245,7 +15419,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQ
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -15296,7 +15470,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQ
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -15333,13 +15507,13 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetric
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -15369,7 +15543,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -15477,7 +15651,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -15641,7 +15815,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -15858,7 +16032,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestToTerraform
 
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -15870,7 +16044,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -15909,7 +16083,7 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionToTerraform(struct
 
 export interface DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition {
   /**
-  * Number of columns to display. Available values are: `one_column`, `two_column`, or `three_column`.
+  * Number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_format Dashboard#display_format}
   */
@@ -15921,7 +16095,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition {
   */
   readonly env: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -15969,7 +16143,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition {
   */
   readonly showResourceList?: boolean;
   /**
-  * Size of the widget. Available values are: `small`, `medium`, or `large`.
+  * Size of the widget. Valid values are `small`, `medium`, `large`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#size_format Dashboard#size_format}
   */
@@ -15987,7 +16161,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -16263,7 +16437,7 @@ export interface DashboardWidgetGroupDefinition {
   */
   readonly bannerImg?: string;
   /**
-  * The layout type of the group, only 'ordered' for now.
+  * The layout type of the group. Valid values are `ordered`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#layout_type Dashboard#layout_type}
   */
@@ -16302,24 +16476,38 @@ function dashboardWidgetGroupDefinitionToTerraform(struct?: DashboardWidgetGroup
 
 export interface DashboardWidgetHeatmapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetHeatmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetHeatmapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -16390,7 +16578,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -16554,7 +16742,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -16755,7 +16943,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -16919,7 +17107,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -17165,7 +17353,7 @@ export interface DashboardWidgetHeatmapDefinition {
   */
   readonly legendSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -17183,7 +17371,7 @@ export interface DashboardWidgetHeatmapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -17238,24 +17426,38 @@ function dashboardWidgetHeatmapDefinitionToTerraform(struct?: DashboardWidgetHea
 
 export interface DashboardWidgetHostmapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetHostmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetHostmapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -17303,7 +17505,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -17467,7 +17669,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -17668,7 +17870,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -17832,7 +18034,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -18047,7 +18249,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -18211,7 +18413,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -18412,7 +18614,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQ
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -18576,7 +18778,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -18827,7 +19029,7 @@ export interface DashboardWidgetHostmapDefinition {
   */
   readonly noMetricHosts?: boolean;
   /**
-  * The type of node used. Either `host` or `container`.
+  * The type of node used. Valid values are `host`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#node_type Dashboard#node_type}
   */
@@ -18845,7 +19047,7 @@ export interface DashboardWidgetHostmapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -18923,19 +19125,19 @@ export interface DashboardWidgetImageDefinition {
   */
   readonly hasBorder?: boolean;
   /**
-  * The horizontal alignment for the widget.
+  * The horizontal alignment for the widget. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#horizontal_align Dashboard#horizontal_align}
   */
   readonly horizontalAlign?: string;
   /**
-  * The margins to use around the image. Either `sm`, `md`, or `lg`. Note: `small` and `large` values are deprecated.
+  * The margins to use around the image. Note: `small` and `large` values are deprecated. Valid values are `sm`, `md`, `lg`, `small`, `large`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#margin Dashboard#margin}
   */
   readonly margin?: string;
   /**
-  * The preferred method to adapt the dimensions of the image. The values are based on the image `object-fit` CSS properties and are either: `fill`, `contain`, `cover`, `none` or `scale-down`. Note: `zoom`, `fit` and `center` values are deprecated.
+  * The preferred method to adapt the dimensions of the image. The values are based on the image `object-fit` CSS properties. Note: `zoom`, `fit` and `center` values are deprecated. Valid values are `fill`, `contain`, `cover`, `none`, `scale-down`, `zoom`, `fit`, `center`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sizing Dashboard#sizing}
   */
@@ -18953,7 +19155,7 @@ export interface DashboardWidgetImageDefinition {
   */
   readonly urlDarkTheme?: string;
   /**
-  * The vertical alignment for the widget.
+  * The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#vertical_align Dashboard#vertical_align}
   */
@@ -18982,7 +19184,7 @@ export interface DashboardWidgetLogStreamDefinitionSort {
   */
   readonly column: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -19011,13 +19213,13 @@ export interface DashboardWidgetLogStreamDefinition {
   */
   readonly indexes?: string[];
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
-  * One of: ['inline', 'expanded-md', 'expanded-lg']
+  * Amount of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#message_display Dashboard#message_display}
   */
@@ -19047,7 +19249,7 @@ export interface DashboardWidgetLogStreamDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -19085,13 +19287,13 @@ function dashboardWidgetLogStreamDefinitionToTerraform(struct?: DashboardWidgetL
 
 export interface DashboardWidgetManageStatusDefinition {
   /**
-  * Whether to colorize text or background. One of `text`, `background`.
+  * Whether to colorize text or background. Valid values are `background`, `text`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#color_preference Dashboard#color_preference}
   */
   readonly colorPreference?: string;
   /**
-  * The display setting to use. One of `counts`, `list`, or `countsAndList`.
+  * The display setting to use. Valid values are `counts`, `countsAndList`, `list`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_format Dashboard#display_format}
   */
@@ -19115,13 +19317,13 @@ export interface DashboardWidgetManageStatusDefinition {
   */
   readonly showLastTriggered?: boolean;
   /**
-  * The method to use to sort monitors. Example: `status,asc`.
+  * The method to use to sort monitors. Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
-  * One of: ['monitors', 'groups', 'combined']
+  * Which summary type should be used. Valid values are `monitors`, `groups`, `combined`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#summary_type Dashboard#summary_type}
   */
@@ -19133,7 +19335,7 @@ export interface DashboardWidgetManageStatusDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -19194,13 +19396,13 @@ export interface DashboardWidgetNoteDefinition {
   */
   readonly showTick?: boolean;
   /**
-  * The alignment of the widget's text. One of `left`, `center`, or `right`.
+  * The alignment of the widget's text. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
   /**
-  * When `tick = true`, string indicating on which side of the widget the tick should be displayed. One of `bottom`, `top`, `left`, `right`.
+  * When `tick = true`, string indicating on which side of the widget the tick should be displayed. Valid values are `bottom`, `left`, `right`, `top`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tick_edge Dashboard#tick_edge}
   */
@@ -19212,7 +19414,7 @@ export interface DashboardWidgetNoteDefinition {
   */
   readonly tickPos?: string;
   /**
-  * The vertical alignment for the widget.
+  * The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#vertical_align Dashboard#vertical_align}
   */
@@ -19236,24 +19438,38 @@ function dashboardWidgetNoteDefinitionToTerraform(struct?: DashboardWidgetNoteDe
 
 export interface DashboardWidgetQueryTableDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetQueryTableDefinitionCustomLinkToTerraform(struct?: DashboardWidgetQueryTableDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -19301,7 +19517,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -19429,7 +19645,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns 
   */
   readonly alias?: string;
   /**
-  * A list of display modes for each table cell.
+  * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
   */
@@ -19441,7 +19657,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns 
   */
   readonly name: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -19484,7 +19700,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQuery {
   */
   readonly resource?: string;
   /**
-  * The level of detail for the request.
+  * The level of detail for the request. Valid values are `service`, `resource`, `span`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#row_type Dashboard#row_type}
   */
@@ -19518,7 +19734,7 @@ function dashboardWidgetQueryTableDefinitionRequestApmStatsQueryToTerraform(stru
 
 export interface DashboardWidgetQueryTableDefinitionRequestConditionalFormats {
   /**
-  * Comparator to use. One of `>`, `>=`, `<`, or `<=`.
+  * Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
   */
@@ -19554,7 +19770,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestConditionalFormats {
   */
   readonly metric?: string;
   /**
-  * Color palette to apply. One of `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green` or `black_on_light_red`.
+  * Color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
   */
@@ -19632,7 +19848,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -19833,7 +20049,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -19997,7 +20213,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupByS
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -20119,7 +20335,7 @@ function dashboardWidgetQueryTableDefinitionRequestSecurityQueryToTerraform(stru
 
 export interface DashboardWidgetQueryTableDefinitionRequest {
   /**
-  * The aggregator to use for time aggregation. One of `avg`, `min`, `max`, `sum`, `last`.
+  * The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -20131,7 +20347,7 @@ export interface DashboardWidgetQueryTableDefinitionRequest {
   */
   readonly alias?: string;
   /**
-  * A list of display modes for each table cell. List items one of `number`, `bar`.
+  * A list of display modes for each table cell. List items one of `number`, `bar`. Valid values are `number`, `bar`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
   */
@@ -20143,7 +20359,7 @@ export interface DashboardWidgetQueryTableDefinitionRequest {
   */
   readonly limit?: number;
   /**
-  * The sort order for the rows. One of `desc` or `asc`.
+  * The sort order for the rows. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -20219,13 +20435,13 @@ function dashboardWidgetQueryTableDefinitionRequestToTerraform(struct?: Dashboar
 
 export interface DashboardWidgetQueryTableDefinition {
   /**
-  * Controls the display of the search bar. One of `auto`, `always`, `never`.
+  * Controls the display of the search bar. Valid values are `always`, `never`, `auto`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#has_search_bar Dashboard#has_search_bar}
   */
   readonly hasSearchBar?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -20237,7 +20453,7 @@ export interface DashboardWidgetQueryTableDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -20277,24 +20493,38 @@ function dashboardWidgetQueryTableDefinitionToTerraform(struct?: DashboardWidget
 
 export interface DashboardWidgetQueryValueDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetQueryValueDefinitionCustomLinkToTerraform(struct?: DashboardWidgetQueryValueDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -20342,7 +20572,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -20464,7 +20694,7 @@ function dashboardWidgetQueryValueDefinitionRequestApmQueryToTerraform(struct?: 
 
 export interface DashboardWidgetQueryValueDefinitionRequestConditionalFormats {
   /**
-  * Comparator to use. One of `>`, `>=`, `<`, or `<=`.
+  * Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
   */
@@ -20500,7 +20730,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestConditionalFormats {
   */
   readonly metric?: string;
   /**
-  * Color palette to apply. One of `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green` or `black_on_light_red`.
+  * Color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
   */
@@ -20542,7 +20772,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormulaLimit {
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -20631,7 +20861,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -20790,7 +21020,7 @@ function dashboardWidgetQueryValueDefinitionRequestProcessQueryToTerraform(struc
 
 export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -20820,7 +21050,7 @@ function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeToTerra
 
 export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -20832,7 +21062,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupB
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -20896,7 +21126,7 @@ function dashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchToTerraf
 
 export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -20947,7 +21177,7 @@ function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryToTerraform(st
 
 export interface DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -20984,13 +21214,13 @@ function dashboardWidgetQueryValueDefinitionRequestQueryMetricQueryToTerraform(s
 
 export interface DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -21020,7 +21250,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery {
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -21128,7 +21358,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -21292,7 +21522,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupByS
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -21414,7 +21644,7 @@ function dashboardWidgetQueryValueDefinitionRequestSecurityQueryToTerraform(stru
 
 export interface DashboardWidgetQueryValueDefinitionRequest {
   /**
-  * The aggregator to use for time aggregation. One of `avg`, `min`, `max`, `sum`, `last`.
+  * The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -21505,7 +21735,7 @@ export interface DashboardWidgetQueryValueDefinition {
   */
   readonly customUnit?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -21517,7 +21747,7 @@ export interface DashboardWidgetQueryValueDefinition {
   */
   readonly precision?: number;
   /**
-  * The alignment of the widget's text. One of `left`, `center`, or `right`.
+  * The alignment of the widget's text. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
   */
@@ -21529,7 +21759,7 @@ export interface DashboardWidgetQueryValueDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -21572,24 +21802,38 @@ function dashboardWidgetQueryValueDefinitionToTerraform(struct?: DashboardWidget
 
 export interface DashboardWidgetScatterplotDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetScatterplotDefinitionCustomLinkToTerraform(struct?: DashboardWidgetScatterplotDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -21637,7 +21881,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -21801,7 +22045,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -22002,7 +22246,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -22166,7 +22410,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -22288,7 +22532,7 @@ function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryToTerraform(st
 
 export interface DashboardWidgetScatterplotDefinitionRequestX {
   /**
-  * Aggregator used for the request.
+  * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -22388,7 +22632,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -22552,7 +22796,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -22753,7 +22997,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -22917,7 +23161,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -23039,7 +23283,7 @@ function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryToTerraform(st
 
 export interface DashboardWidgetScatterplotDefinitionRequestY {
   /**
-  * Aggregator used for the request.
+  * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -23214,7 +23458,7 @@ export interface DashboardWidgetScatterplotDefinition {
   */
   readonly colorByGroups?: string[];
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -23226,7 +23470,7 @@ export interface DashboardWidgetScatterplotDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -23298,7 +23542,7 @@ export interface DashboardWidgetServiceLevelObjectiveDefinition {
   */
   readonly sloId: string;
   /**
-  * List of time windows to display in the widget. Each value in the list must be one of `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, or `previous_month`.
+  * List of time windows to display in the widget. Valid values are `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, `previous_month`, `global_time`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#time_windows Dashboard#time_windows}
   */
@@ -23310,7 +23554,7 @@ export interface DashboardWidgetServiceLevelObjectiveDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -23322,7 +23566,7 @@ export interface DashboardWidgetServiceLevelObjectiveDefinition {
   */
   readonly titleSize?: string;
   /**
-  * View mode for the widget. One of `overall`, `component`, or `both`.
+  * View mode for the widget. Valid values are `overall`, `component`, `both`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#view_mode Dashboard#view_mode}
   */
@@ -23352,24 +23596,38 @@ function dashboardWidgetServiceLevelObjectiveDefinitionToTerraform(struct?: Dash
 
 export interface DashboardWidgetServicemapDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetServicemapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetServicemapDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -23393,7 +23651,7 @@ export interface DashboardWidgetServicemapDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -23426,24 +23684,38 @@ function dashboardWidgetServicemapDefinitionToTerraform(struct?: DashboardWidget
 
 export interface DashboardWidgetTimeseriesDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: DashboardWidgetTimeseriesDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -23544,7 +23816,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -23672,7 +23944,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestFormulaLimit {
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -23761,7 +24033,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -23948,7 +24220,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySo
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -24107,7 +24379,7 @@ function dashboardWidgetTimeseriesDefinitionRequestProcessQueryToTerraform(struc
 
 export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -24137,7 +24409,7 @@ function dashboardWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerra
 
 export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -24149,7 +24421,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -24213,7 +24485,7 @@ function dashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToTerraf
 
 export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -24264,7 +24536,7 @@ function dashboardWidgetTimeseriesDefinitionRequestQueryEventQueryToTerraform(st
 
 export interface DashboardWidgetTimeseriesDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -24301,13 +24573,13 @@ function dashboardWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerraform(s
 
 export interface DashboardWidgetTimeseriesDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -24337,7 +24609,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryProcessQuery {
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -24445,7 +24717,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQu
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -24609,7 +24881,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupByS
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -24731,13 +25003,13 @@ function dashboardWidgetTimeseriesDefinitionRequestSecurityQueryToTerraform(stru
 
 export interface DashboardWidgetTimeseriesDefinitionRequestStyle {
   /**
-  * Type of lines displayed. Available values are: `dashed`, `dotted`, or `solid`.
+  * Type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_type Dashboard#line_type}
   */
   readonly lineType?: string;
   /**
-  * Width of line displayed. Available values are: `normal`, `thick`, or `thin`.
+  * Width of line displayed. Valid values are `normal`, `thick`, `thin`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_width Dashboard#line_width}
   */
@@ -24761,7 +25033,7 @@ function dashboardWidgetTimeseriesDefinitionRequestStyleToTerraform(struct?: Das
 
 export interface DashboardWidgetTimeseriesDefinitionRequest {
   /**
-  * How the marker lines will look. Possible values are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}. Example: `error dashed`.
+  * How the marker lines will look. Valid values are `area`, `bars`, `line`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_type Dashboard#display_type}
   */
@@ -24949,13 +25221,13 @@ function dashboardWidgetTimeseriesDefinitionYaxisToTerraform(struct?: DashboardW
 
 export interface DashboardWidgetTimeseriesDefinition {
   /**
-  * A list of columns to display in the legend. List items one of `value`, `avg`, `sum`, `min`, `max`.
+  * A list of columns to display in the legend. Valid values are `value`, `avg`, `sum`, `min`, `max`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_columns Dashboard#legend_columns}
   */
   readonly legendColumns?: string[];
   /**
-  * The layout of the legend displayed in the widget. One of `auto`, `horizontal`, `vertical`.
+  * The layout of the legend displayed in the widget. Valid values are `auto`, `horizontal`, `vertical`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_layout Dashboard#legend_layout}
   */
@@ -24967,7 +25239,7 @@ export interface DashboardWidgetTimeseriesDefinition {
   */
   readonly legendSize?: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -24985,7 +25257,7 @@ export interface DashboardWidgetTimeseriesDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -25056,24 +25328,38 @@ function dashboardWidgetTimeseriesDefinitionToTerraform(struct?: DashboardWidget
 
 export interface DashboardWidgetToplistDefinitionCustomLink {
   /**
+  * The flag for toggling context menu link visibility.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  */
+  readonly isHidden?: boolean;
+  /**
   * The label for the custom link URL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
   */
-  readonly label: string;
+  readonly label?: string;
   /**
   * The URL of the custom link.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
   */
-  readonly link: string;
+  readonly link?: string;
+  /**
+  * The label id that refers to a context menu link item. When override_label is provided, the client request will omit the label field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  */
+  readonly overrideLabel?: string;
 }
 
 function dashboardWidgetToplistDefinitionCustomLinkToTerraform(struct?: DashboardWidgetToplistDefinitionCustomLink): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
     label: cdktf.stringToTerraform(struct!.label),
     link: cdktf.stringToTerraform(struct!.link),
+    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
   }
 }
 
@@ -25121,7 +25407,7 @@ export interface DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQuery
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -25243,7 +25529,7 @@ function dashboardWidgetToplistDefinitionRequestApmQueryToTerraform(struct?: Das
 
 export interface DashboardWidgetToplistDefinitionRequestConditionalFormats {
   /**
-  * Comparator to use. One of `>`, `>=`, `<`, or `<=`.
+  * Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
   */
@@ -25279,7 +25565,7 @@ export interface DashboardWidgetToplistDefinitionRequestConditionalFormats {
   */
   readonly metric?: string;
   /**
-  * Color palette to apply. One of `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green` or `black_on_light_red`.
+  * Color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
   */
@@ -25321,7 +25607,7 @@ export interface DashboardWidgetToplistDefinitionRequestFormulaLimit {
   */
   readonly count?: number;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -25410,7 +25696,7 @@ export interface DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQuery
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -25569,7 +25855,7 @@ function dashboardWidgetToplistDefinitionRequestProcessQueryToTerraform(struct?:
 
 export interface DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -25599,7 +25885,7 @@ function dashboardWidgetToplistDefinitionRequestQueryEventQueryComputeToTerrafor
 
 export interface DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySort {
   /**
-  * Aggregation methods for event platform queries.
+  * Aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
   */
@@ -25611,7 +25897,7 @@ export interface DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySo
   */
   readonly metric?: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -25675,7 +25961,7 @@ function dashboardWidgetToplistDefinitionRequestQueryEventQuerySearchToTerraform
 
 export interface DashboardWidgetToplistDefinitionRequestQueryEventQuery {
   /**
-  * Data source for event platform-based queries.
+  * Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -25726,7 +26012,7 @@ function dashboardWidgetToplistDefinitionRequestQueryEventQueryToTerraform(struc
 
 export interface DashboardWidgetToplistDefinitionRequestQueryMetricQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
@@ -25763,13 +26049,13 @@ function dashboardWidgetToplistDefinitionRequestQueryMetricQueryToTerraform(stru
 
 export interface DashboardWidgetToplistDefinitionRequestQueryProcessQuery {
   /**
-  * The aggregation methods available for metrics queries.
+  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
-  * Data source for process queries.
+  * Data source for process queries. Valid values are `process`, `container`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
   */
@@ -25799,7 +26085,7 @@ export interface DashboardWidgetToplistDefinitionRequestQueryProcessQuery {
   */
   readonly name: string;
   /**
-  * Direction of sort.
+  * Direction of sort. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
   */
@@ -25907,7 +26193,7 @@ export interface DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQuery
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -26071,7 +26357,7 @@ export interface DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySort
   */
   readonly facet?: string;
   /**
-  * Widget sorting methods.
+  * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
   */
@@ -26288,7 +26574,7 @@ function dashboardWidgetToplistDefinitionRequestToTerraform(struct?: DashboardWi
 
 export interface DashboardWidgetToplistDefinition {
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -26300,7 +26586,7 @@ export interface DashboardWidgetToplistDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -26339,7 +26625,7 @@ function dashboardWidgetToplistDefinitionToTerraform(struct?: DashboardWidgetTop
 
 export interface DashboardWidgetTraceServiceDefinition {
   /**
-  * Number of columns to display. Available values are: `one_column`, `two_column`, or `three_column`.
+  * Number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_format Dashboard#display_format}
   */
@@ -26351,7 +26637,7 @@ export interface DashboardWidgetTraceServiceDefinition {
   */
   readonly env: string;
   /**
-  * The timeframe to use when displaying the widget. One of `10m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
+  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
   */
@@ -26399,7 +26685,7 @@ export interface DashboardWidgetTraceServiceDefinition {
   */
   readonly showResourceList?: boolean;
   /**
-  * Size of the widget. Available values are: `small`, `medium`, or `large`.
+  * Size of the widget. Valid values are `small`, `medium`, `large`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#size_format Dashboard#size_format}
   */
@@ -26417,7 +26703,7 @@ export interface DashboardWidgetTraceServiceDefinition {
   */
   readonly title?: string;
   /**
-  * The alignment of the widget's title. One of `left`, `center`, or `right`.
+  * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
   */
@@ -26720,6 +27006,7 @@ export class Dashboard extends cdktf.TerraformResource {
     this._layoutType = config.layoutType;
     this._notifyList = config.notifyList;
     this._reflowType = config.reflowType;
+    this._restrictedRoles = config.restrictedRoles;
     this._title = config.title;
     this._url = config.url;
     this._templateVariable = config.templateVariable;
@@ -26834,6 +27121,22 @@ export class Dashboard extends cdktf.TerraformResource {
     return this._reflowType
   }
 
+  // restricted_roles - computed: false, optional: true, required: false
+  private _restrictedRoles?: string[];
+  public get restrictedRoles() {
+    return this.getListAttribute('restricted_roles');
+  }
+  public set restrictedRoles(value: string[] ) {
+    this._restrictedRoles = value;
+  }
+  public resetRestrictedRoles() {
+    this._restrictedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedRolesInput() {
+    return this._restrictedRoles
+  }
+
   // title - computed: false, optional: false, required: true
   private _title: string;
   public get title() {
@@ -26920,6 +27223,7 @@ export class Dashboard extends cdktf.TerraformResource {
       layout_type: cdktf.stringToTerraform(this._layoutType),
       notify_list: cdktf.listMapper(cdktf.stringToTerraform)(this._notifyList),
       reflow_type: cdktf.stringToTerraform(this._reflowType),
+      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._restrictedRoles),
       title: cdktf.stringToTerraform(this._title),
       url: cdktf.stringToTerraform(this._url),
       template_variable: cdktf.listMapper(dashboardTemplateVariableToTerraform)(this._templateVariable),
