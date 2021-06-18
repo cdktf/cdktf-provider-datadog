@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Category the SLO correction belongs to
+  * Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#category SloCorrection#category}
   */
@@ -20,19 +20,19 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
-  * Ending time of the correction in epoch seconds
+  * Ending time of the correction in epoch seconds.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#end SloCorrection#end}
   */
   readonly end: number;
   /**
-  * ID of the SLO that this correction will be applied to
+  * ID of the SLO that this correction will be applied to.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#slo_id SloCorrection#slo_id}
   */
   readonly sloId: string;
   /**
-  * Starting time of the correction in epoch seconds
+  * Starting time of the correction in epoch seconds.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#start SloCorrection#start}
   */

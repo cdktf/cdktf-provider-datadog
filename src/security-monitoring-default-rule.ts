@@ -34,7 +34,7 @@ export interface SecurityMonitoringDefaultRuleCase {
   */
   readonly notifications: string[];
   /**
-  * Status of the rule case to match.
+  * Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#status SecurityMonitoringDefaultRule#status}
   */
@@ -51,7 +51,7 @@ function securityMonitoringDefaultRuleCaseToTerraform(struct?: SecurityMonitorin
 
 export interface SecurityMonitoringDefaultRuleFilter {
   /**
-  * The type of filtering action. Allowed enum values: require, suppress
+  * The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#action SecurityMonitoringDefaultRule#action}
   */

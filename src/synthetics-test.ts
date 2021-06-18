@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Array with the different device IDs used to run the test. Allowed enum values: `laptop_large`, `tablet`, `mobile_small` (only available for `browser` tests).
+  * Array with the different device IDs used to run the test (only for `browser` tests). Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#device_ids SyntheticsTest#device_ids}
   */
@@ -50,13 +50,13 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly setCookie?: string;
   /**
-  * Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Allowed enum values: `live`, `paused`
+  * Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#status SyntheticsTest#status}
   */
   readonly status: string;
   /**
-  * When `type` is `api`, choose from `http`, `ssl`, `tcp`, `dns`, `icmp` or `multi`. Defaults to `http`.
+  * The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#subtype SyntheticsTest#subtype}
   */
@@ -68,7 +68,7 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: string[];
   /**
-  * Synthetics test type (`api` or `browser`).
+  * Synthetics test type. Valid values are `api`, `browser`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -178,7 +178,7 @@ export interface SyntheticsTestApiStepAssertion {
   */
   readonly target?: string;
   /**
-  * Type of assertion. Choose from `body`, `header`, `responseTime`, `statusCode`. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
+  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -204,7 +204,7 @@ function syntheticsTestApiStepAssertionToTerraform(struct?: SyntheticsTestApiSte
 
 export interface SyntheticsTestApiStepExtractedValueParser {
   /**
-  * Type of parser for a Synthetics global variable from a synthetics test: `raw`, `json_path`, `regex`
+  * Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -237,7 +237,7 @@ export interface SyntheticsTestApiStepExtractedValue {
   */
   readonly name: string;
   /**
-  * Property of the Synthetics Test Response to use for the variable: `http_body` or `http_header`
+  * Property of the Synthetics Test Response to use for the variable. Valid values are `http_body`, `http_header`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -378,7 +378,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly host?: string;
   /**
-  * The HTTP method. One of `DELETE`, `GET`, `HEAD`, `OPTIONS`, `PATCH`, `POST`, `PUT`.
+  * The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#method SyntheticsTest#method}
   */
@@ -470,7 +470,7 @@ export interface SyntheticsTestApiStep {
   */
   readonly requestQuery?: { [key: string]: string };
   /**
-  * The subtype of the Synthetic multistep API test step, currently only supporting `http`.
+  * The subtype of the Synthetic multistep API test step. Valid values are `http`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#subtype SyntheticsTest#subtype}
   */
@@ -574,7 +574,7 @@ export interface SyntheticsTestAssertion {
   */
   readonly target?: string;
   /**
-  * Type of assertion. Choose from `body`, `header`, `responseTime`, `statusCode`. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
+  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -629,7 +629,7 @@ export interface SyntheticsTestBrowserStepParams {
   */
   readonly attribute?: string;
   /**
-  * Check type to use for an assertion step.
+  * Check type to use for an assertion step. Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#check SyntheticsTest#check}
   */
@@ -782,7 +782,7 @@ export interface SyntheticsTestBrowserStep {
   */
   readonly timeout?: number;
   /**
-  * Type of the step. Refer to [Datadog documentation](https://docs.datadoghq.com/api/v1/synthetics/#create-a-test) for the complete list of available types.
+  * Type of the step. Valid values are `assertCurrentUrl`, `assertElementAttribute`, `assertElementContent`, `assertElementPresent`, `assertEmail`, `assertFileDownload`, `assertFromJavascript`, `assertPageContains`, `assertPageLacks`, `click`, `extractFromJavascript`, `extractVariable`, `goToEmailLink`, `goToUrl`, `goToUrlAndMeasureTti`, `hover`, `playSubTest`, `pressKey`, `refresh`, `runApiTest`, `scroll`, `selectOption`, `typeText`, `uploadFiles`, `wait`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -833,7 +833,7 @@ export interface SyntheticsTestBrowserVariable {
   */
   readonly pattern?: string;
   /**
-  * Type of browser test variable. Allowed enum values: `element`, `email`, `global`, `javascript`, `text`.
+  * Type of browser test variable. Valid values are `element`, `email`, `global`, `javascript`, `text`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -859,6 +859,12 @@ export interface SyntheticsTestConfigVariable {
   */
   readonly example?: string;
   /**
+  * When type = `global`, ID of the global variable to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#id SyntheticsTest#id}
+  */
+  readonly id?: string;
+  /**
   * Name of the variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#name SyntheticsTest#name}
@@ -871,7 +877,7 @@ export interface SyntheticsTestConfigVariable {
   */
   readonly pattern?: string;
   /**
-  * Type of test configuration variable. Allowed enum values: `text`.
+  * Type of test configuration variable. Valid values are `global`, `text`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -882,6 +888,7 @@ function syntheticsTestConfigVariableToTerraform(struct?: SyntheticsTestConfigVa
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     example: cdktf.stringToTerraform(struct!.example),
+    id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
     pattern: cdktf.stringToTerraform(struct!.pattern),
     type: cdktf.stringToTerraform(struct!.type),
@@ -959,13 +966,23 @@ export interface SyntheticsTestOptionsList {
   */
   readonly minLocationFailed?: number;
   /**
+  * The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#monitor_name SyntheticsTest#monitor_name}
+  */
+  readonly monitorName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#monitor_priority SyntheticsTest#monitor_priority}
+  */
+  readonly monitorPriority?: number;
+  /**
   * Prevents saving screenshots of the steps.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#no_screenshot SyntheticsTest#no_screenshot}
   */
   readonly noScreenshot?: boolean;
   /**
-  * How often the test should run (in seconds). Current possible values are `900`, `1800`, `3600`, `21600`, `43200`, `86400`, `604800` plus `60` for API tests or `300` for browser tests.
+  * How often the test should run (in seconds). Valid values are `30`, `60`, `300`, `900`, `1800`, `3600`, `21600`, `43200`, `86400`, `604800`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#tick_every SyntheticsTest#tick_every}
   */
@@ -992,6 +1009,8 @@ function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsList
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
     min_failure_duration: cdktf.numberToTerraform(struct!.minFailureDuration),
     min_location_failed: cdktf.numberToTerraform(struct!.minLocationFailed),
+    monitor_name: cdktf.stringToTerraform(struct!.monitorName),
+    monitor_priority: cdktf.numberToTerraform(struct!.monitorPriority),
     no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
     tick_every: cdktf.numberToTerraform(struct!.tickEvery),
     monitor_options: cdktf.listMapper(syntheticsTestOptionsListMonitorOptionsToTerraform)(struct!.monitorOptions),
@@ -1117,7 +1136,7 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly host?: string;
   /**
-  * The HTTP method. One of `DELETE`, `GET`, `HEAD`, `OPTIONS`, `PATCH`, `POST`, `PUT`.
+  * The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#method SyntheticsTest#method}
   */

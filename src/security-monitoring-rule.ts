@@ -70,7 +70,7 @@ export interface SecurityMonitoringRuleCase {
   */
   readonly notifications?: string[];
   /**
-  * Severity of the Security Signal.
+  * Severity of the Security Signal. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#status SecurityMonitoringRule#status}
   */
@@ -89,19 +89,19 @@ function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitoringRuleCa
 
 export interface SecurityMonitoringRuleOptions {
   /**
-  * A time window is specified to match when at least one of the cases matches true. This is a sliding window and evaluates in real time.
+  * A time window is specified to match when at least one of the cases matches true. This is a sliding window and evaluates in real time. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#evaluation_window SecurityMonitoringRule#evaluation_window}
   */
   readonly evaluationWindow: number;
   /**
-  * Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window.
+  * Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#keep_alive SecurityMonitoringRule#keep_alive}
   */
   readonly keepAlive: number;
   /**
-  * A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. This time is calculated from the first seen timestamp.
+  * A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#max_signal_duration SecurityMonitoringRule#max_signal_duration}
   */
@@ -119,7 +119,7 @@ function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonitoringRul
 
 export interface SecurityMonitoringRuleQuery {
   /**
-  * The aggregation type.
+  * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#aggregation SecurityMonitoringRule#aggregation}
   */

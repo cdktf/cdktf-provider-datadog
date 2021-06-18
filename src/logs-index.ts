@@ -8,11 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The number of log events you can send in this index per day before you are rate-limited.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#daily_limit LogsIndex#daily_limit}
+  */
+  readonly dailyLimit: string;
+  /**
   * The name of the index.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#name LogsIndex#name}
   */
   readonly name: string;
+  /**
+  * The number of days before logs are deleted from this index.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#retention_days LogsIndex#retention_days}
+  */
+  readonly retentionDays: string;
   /**
   * exclusion_filter block
   * 
@@ -123,7 +135,9 @@ export class LogsIndex extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._dailyLimit = config.dailyLimit;
     this._name = config.name;
+    this._retentionDays = config.retentionDays;
     this._exclusionFilter = config.exclusionFilter;
     this._filter = config.filter;
   }
@@ -131,6 +145,19 @@ export class LogsIndex extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // daily_limit - computed: false, optional: false, required: true
+  private _dailyLimit: string;
+  public get dailyLimit() {
+    return this.getStringAttribute('daily_limit');
+  }
+  public set dailyLimit(value: string) {
+    this._dailyLimit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dailyLimitInput() {
+    return this._dailyLimit
+  }
 
   // id - computed: true, optional: true, required: false
   public get id() {
@@ -148,6 +175,19 @@ export class LogsIndex extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // retention_days - computed: false, optional: false, required: true
+  private _retentionDays: string;
+  public get retentionDays() {
+    return this.getStringAttribute('retention_days');
+  }
+  public set retentionDays(value: string) {
+    this._retentionDays = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionDaysInput() {
+    return this._retentionDays
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
@@ -185,7 +225,9 @@ export class LogsIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      daily_limit: cdktf.stringToTerraform(this._dailyLimit),
       name: cdktf.stringToTerraform(this._name),
+      retention_days: cdktf.stringToTerraform(this._retentionDays),
       exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter),
       filter: cdktf.listMapper(logsIndexFilterToTerraform)(this._filter),
     };

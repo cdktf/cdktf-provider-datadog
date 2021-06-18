@@ -8,11 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Your AWS access key ID. Only required if your AWS account is a GovCloud or China account.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html#access_key_id IntegrationAws#access_key_id}
+  */
+  readonly accessKeyId?: string;
+  /**
   * Your AWS Account ID without dashes.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html#account_id IntegrationAws#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * Enables or disables metric collection for specific AWS namespaces for this AWS account only. A list of namespaces can be found at the [available namespace rules API endpoint](https://docs.datadoghq.com/api/v1/aws-integration/#list-namespace-rules).
   * 
@@ -42,7 +48,13 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html#role_name IntegrationAws#role_name}
   */
-  readonly roleName: string;
+  readonly roleName?: string;
+  /**
+  * Your AWS secret access key. Only required if your AWS account is a GovCloud or China account.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html#secret_access_key IntegrationAws#secret_access_key}
+  */
+  readonly secretAccessKey?: string;
 }
 
 /**
@@ -59,9 +71,9 @@ export class IntegrationAws extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options IntegrationAwsConfig
+  * @param options IntegrationAwsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: IntegrationAwsConfig) {
+  public constructor(scope: Construct, id: string, config: IntegrationAwsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'datadog_integration_aws',
       terraformGeneratorMetadata: {
@@ -72,25 +84,46 @@ export class IntegrationAws extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accessKeyId = config.accessKeyId;
     this._accountId = config.accountId;
     this._accountSpecificNamespaceRules = config.accountSpecificNamespaceRules;
     this._excludedRegions = config.excludedRegions;
     this._filterTags = config.filterTags;
     this._hostTags = config.hostTags;
     this._roleName = config.roleName;
+    this._secretAccessKey = config.secretAccessKey;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
-  private _accountId: string;
+  // access_key_id - computed: false, optional: true, required: false
+  private _accessKeyId?: string;
+  public get accessKeyId() {
+    return this.getStringAttribute('access_key_id');
+  }
+  public set accessKeyId(value: string ) {
+    this._accessKeyId = value;
+  }
+  public resetAccessKeyId() {
+    this._accessKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessKeyIdInput() {
+    return this._accessKeyId
+  }
+
+  // account_id - computed: false, optional: true, required: false
+  private _accountId?: string;
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string) {
+  public set accountId(value: string ) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
@@ -171,17 +204,36 @@ export class IntegrationAws extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // role_name - computed: false, optional: false, required: true
-  private _roleName: string;
+  // role_name - computed: false, optional: true, required: false
+  private _roleName?: string;
   public get roleName() {
     return this.getStringAttribute('role_name');
   }
-  public set roleName(value: string) {
+  public set roleName(value: string ) {
     this._roleName = value;
+  }
+  public resetRoleName() {
+    this._roleName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get roleNameInput() {
     return this._roleName
+  }
+
+  // secret_access_key - computed: false, optional: true, required: false
+  private _secretAccessKey?: string;
+  public get secretAccessKey() {
+    return this.getStringAttribute('secret_access_key');
+  }
+  public set secretAccessKey(value: string ) {
+    this._secretAccessKey = value;
+  }
+  public resetSecretAccessKey() {
+    this._secretAccessKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretAccessKeyInput() {
+    return this._secretAccessKey
   }
 
   // =========
@@ -190,12 +242,14 @@ export class IntegrationAws extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_key_id: cdktf.stringToTerraform(this._accessKeyId),
       account_id: cdktf.stringToTerraform(this._accountId),
       account_specific_namespace_rules: cdktf.hashMapper(cdktf.anyToTerraform)(this._accountSpecificNamespaceRules),
       excluded_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedRegions),
       filter_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._filterTags),
       host_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._hostTags),
       role_name: cdktf.stringToTerraform(this._roleName),
+      secret_access_key: cdktf.stringToTerraform(this._secretAccessKey),
     };
   }
 }
