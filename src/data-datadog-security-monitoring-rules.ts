@@ -54,7 +54,36 @@ export class DataDatadogSecurityMonitoringRulesRulesCase extends cdktf.ComplexCo
     return this.getStringAttribute('status');
   }
 }
+export class DataDatadogSecurityMonitoringRulesRulesFilter extends cdktf.ComplexComputedList {
+
+  // action - computed: true, optional: false, required: false
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+
+  // query - computed: true, optional: false, required: false
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+}
+export class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions extends cdktf.ComplexComputedList {
+
+  // forget_after - computed: true, optional: false, required: false
+  public get forgetAfter() {
+    return this.getNumberAttribute('forget_after');
+  }
+
+  // learning_duration - computed: true, optional: false, required: false
+  public get learningDuration() {
+    return this.getNumberAttribute('learning_duration');
+  }
+}
 export class DataDatadogSecurityMonitoringRulesRulesOptions extends cdktf.ComplexComputedList {
+
+  // detection_method - computed: true, optional: false, required: false
+  public get detectionMethod() {
+    return this.getStringAttribute('detection_method');
+  }
 
   // evaluation_window - computed: true, optional: false, required: false
   public get evaluationWindow() {
@@ -69,6 +98,11 @@ export class DataDatadogSecurityMonitoringRulesRulesOptions extends cdktf.Comple
   // max_signal_duration - computed: true, optional: false, required: false
   public get maxSignalDuration() {
     return this.getNumberAttribute('max_signal_duration');
+  }
+
+  // new_value_options - computed: true, optional: false, required: false
+  public get newValueOptions() {
+    return this.interpolationForAttribute('new_value_options') as any;
   }
 }
 export class DataDatadogSecurityMonitoringRulesRulesQuery extends cdktf.ComplexComputedList {
@@ -113,6 +147,16 @@ export class DataDatadogSecurityMonitoringRulesRules extends cdktf.ComplexComput
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
+  }
+
+  // filter - computed: true, optional: false, required: false
+  public get filter() {
+    return this.interpolationForAttribute('filter') as any;
+  }
+
+  // has_extended_title - computed: true, optional: false, required: false
+  public get hasExtendedTitle() {
+    return this.getBooleanAttribute('has_extended_title');
   }
 
   // message - computed: true, optional: false, required: false

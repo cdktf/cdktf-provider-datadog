@@ -229,6 +229,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('require_full_window');
   }
 
+  // restricted_roles - computed: true, optional: false, required: false
+  public get restrictedRoles() {
+    return this.getListAttribute('restricted_roles');
+  }
+
   // tags - computed: true, optional: false, required: false
   public get tags() {
     return this.getListAttribute('tags');

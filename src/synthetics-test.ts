@@ -982,7 +982,7 @@ export interface SyntheticsTestOptionsList {
   */
   readonly noScreenshot?: boolean;
   /**
-  * How often the test should run (in seconds). Valid values are `30`, `60`, `300`, `900`, `1800`, `3600`, `21600`, `43200`, `86400`, `604800`.
+  * How often the test should run (in seconds).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#tick_every SyntheticsTest#tick_every}
   */
