@@ -12,7 +12,13 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#daily_limit LogsIndex#daily_limit}
   */
-  readonly dailyLimit: string;
+  readonly dailyLimit?: number;
+  /**
+  * If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). If false or omitted, the index's current daily_limit is maintained.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#disable_daily_limit LogsIndex#disable_daily_limit}
+  */
+  readonly disableDailyLimit?: boolean;
   /**
   * The name of the index.
   * 
@@ -24,7 +30,7 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#retention_days LogsIndex#retention_days}
   */
-  readonly retentionDays: string;
+  readonly retentionDays?: number;
   /**
   * exclusion_filter block
   * 
@@ -136,6 +142,7 @@ export class LogsIndex extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._dailyLimit = config.dailyLimit;
+    this._disableDailyLimit = config.disableDailyLimit;
     this._name = config.name;
     this._retentionDays = config.retentionDays;
     this._exclusionFilter = config.exclusionFilter;
@@ -146,17 +153,36 @@ export class LogsIndex extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // daily_limit - computed: false, optional: false, required: true
-  private _dailyLimit: string;
+  // daily_limit - computed: false, optional: true, required: false
+  private _dailyLimit?: number;
   public get dailyLimit() {
-    return this.getStringAttribute('daily_limit');
+    return this.getNumberAttribute('daily_limit');
   }
-  public set dailyLimit(value: string) {
+  public set dailyLimit(value: number ) {
     this._dailyLimit = value;
+  }
+  public resetDailyLimit() {
+    this._dailyLimit = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dailyLimitInput() {
     return this._dailyLimit
+  }
+
+  // disable_daily_limit - computed: true, optional: true, required: false
+  private _disableDailyLimit?: boolean;
+  public get disableDailyLimit() {
+    return this.getBooleanAttribute('disable_daily_limit');
+  }
+  public set disableDailyLimit(value: boolean) {
+    this._disableDailyLimit = value;
+  }
+  public resetDisableDailyLimit() {
+    this._disableDailyLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableDailyLimitInput() {
+    return this._disableDailyLimit
   }
 
   // id - computed: true, optional: true, required: false
@@ -177,13 +203,16 @@ export class LogsIndex extends cdktf.TerraformResource {
     return this._name
   }
 
-  // retention_days - computed: false, optional: false, required: true
-  private _retentionDays: string;
+  // retention_days - computed: true, optional: true, required: false
+  private _retentionDays?: number;
   public get retentionDays() {
-    return this.getStringAttribute('retention_days');
+    return this.getNumberAttribute('retention_days');
   }
-  public set retentionDays(value: string) {
+  public set retentionDays(value: number) {
     this._retentionDays = value;
+  }
+  public resetRetentionDays() {
+    this._retentionDays = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get retentionDaysInput() {
@@ -225,9 +254,10 @@ export class LogsIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      daily_limit: cdktf.stringToTerraform(this._dailyLimit),
+      daily_limit: cdktf.numberToTerraform(this._dailyLimit),
+      disable_daily_limit: cdktf.booleanToTerraform(this._disableDailyLimit),
       name: cdktf.stringToTerraform(this._name),
-      retention_days: cdktf.stringToTerraform(this._retentionDays),
+      retention_days: cdktf.numberToTerraform(this._retentionDays),
       exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter),
       filter: cdktf.listMapper(logsIndexFilterToTerraform)(this._filter),
     };

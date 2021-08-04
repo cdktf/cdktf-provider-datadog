@@ -105,7 +105,7 @@ export interface ServiceLevelObjectiveThresholds {
   */
   readonly targetDisplay?: string;
   /**
-  * The time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`.
+  * The time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#timeframe ServiceLevelObjective#timeframe}
   */

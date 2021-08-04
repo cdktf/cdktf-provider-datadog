@@ -14,6 +14,12 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   */
   readonly enabled?: boolean;
   /**
+  * Whether the notifications include the triggering group-by values in their title.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#has_extended_title SecurityMonitoringRule#has_extended_title}
+  */
+  readonly hasExtendedTitle?: boolean;
+  /**
   * Message for generated signals.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#message SecurityMonitoringRule#message}
@@ -37,6 +43,12 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#case SecurityMonitoringRule#case}
   */
   readonly case: SecurityMonitoringRuleCase[];
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#filter SecurityMonitoringRule#filter}
+  */
+  readonly filter?: SecurityMonitoringRuleFilter[];
   /**
   * options block
   * 
@@ -87,7 +99,59 @@ function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitoringRuleCa
   }
 }
 
+export interface SecurityMonitoringRuleFilter {
+  /**
+  * The type of filtering action. Valid values are `require`, `suppress`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#action SecurityMonitoringRule#action}
+  */
+  readonly action: string;
+  /**
+  * Query for selecting logs to apply the filtering action.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#query SecurityMonitoringRule#query}
+  */
+  readonly query: string;
+}
+
+function securityMonitoringRuleFilterToTerraform(struct?: SecurityMonitoringRuleFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+    query: cdktf.stringToTerraform(struct!.query),
+  }
+}
+
+export interface SecurityMonitoringRuleOptionsNewValueOptions {
+  /**
+  * The duration in days after which a learned value is forgotten. Valid values are `1`, `2`, `7`, `14`, `21`, `28`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#forget_after SecurityMonitoringRule#forget_after}
+  */
+  readonly forgetAfter: number;
+  /**
+  * The duration in days during which values are learned, and after which signals will be generated for values that weren't learned. If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#learning_duration SecurityMonitoringRule#learning_duration}
+  */
+  readonly learningDuration: number;
+}
+
+function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsNewValueOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    forget_after: cdktf.numberToTerraform(struct!.forgetAfter),
+    learning_duration: cdktf.numberToTerraform(struct!.learningDuration),
+  }
+}
+
 export interface SecurityMonitoringRuleOptions {
+  /**
+  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#detection_method SecurityMonitoringRule#detection_method}
+  */
+  readonly detectionMethod?: string;
   /**
   * A time window is specified to match when at least one of the cases matches true. This is a sliding window and evaluates in real time. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`.
   * 
@@ -106,14 +170,22 @@ export interface SecurityMonitoringRuleOptions {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#max_signal_duration SecurityMonitoringRule#max_signal_duration}
   */
   readonly maxSignalDuration: number;
+  /**
+  * new_value_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#new_value_options SecurityMonitoringRule#new_value_options}
+  */
+  readonly newValueOptions?: SecurityMonitoringRuleOptionsNewValueOptions[];
 }
 
 function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonitoringRuleOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    detection_method: cdktf.stringToTerraform(struct!.detectionMethod),
     evaluation_window: cdktf.numberToTerraform(struct!.evaluationWindow),
     keep_alive: cdktf.numberToTerraform(struct!.keepAlive),
     max_signal_duration: cdktf.numberToTerraform(struct!.maxSignalDuration),
+    new_value_options: cdktf.listMapper(securityMonitoringRuleOptionsNewValueOptionsToTerraform)(struct!.newValueOptions),
   }
 }
 
@@ -197,10 +269,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._enabled = config.enabled;
+    this._hasExtendedTitle = config.hasExtendedTitle;
     this._message = config.message;
     this._name = config.name;
     this._tags = config.tags;
     this._case = config.case;
+    this._filter = config.filter;
     this._options = config.options;
     this._query = config.query;
   }
@@ -223,6 +297,22 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled
+  }
+
+  // has_extended_title - computed: false, optional: true, required: false
+  private _hasExtendedTitle?: boolean;
+  public get hasExtendedTitle() {
+    return this.getBooleanAttribute('has_extended_title');
+  }
+  public set hasExtendedTitle(value: boolean ) {
+    this._hasExtendedTitle = value;
+  }
+  public resetHasExtendedTitle() {
+    this._hasExtendedTitle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasExtendedTitleInput() {
+    return this._hasExtendedTitle
   }
 
   // id - computed: true, optional: true, required: false
@@ -285,6 +375,22 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     return this._case
   }
 
+  // filter - computed: false, optional: true, required: false
+  private _filter?: SecurityMonitoringRuleFilter[];
+  public get filter() {
+    return this.interpolationForAttribute('filter') as any;
+  }
+  public set filter(value: SecurityMonitoringRuleFilter[] ) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
+  }
+
   // options - computed: false, optional: true, required: false
   private _options?: SecurityMonitoringRuleOptions[];
   public get options() {
@@ -321,10 +427,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
+      has_extended_title: cdktf.booleanToTerraform(this._hasExtendedTitle),
       message: cdktf.stringToTerraform(this._message),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       case: cdktf.listMapper(securityMonitoringRuleCaseToTerraform)(this._case),
+      filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform)(this._filter),
       options: cdktf.listMapper(securityMonitoringRuleOptionsToTerraform)(this._options),
       query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform)(this._query),
     };

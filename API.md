@@ -20,7 +20,9 @@ Name|Description
 [DataDatadogSecurityMonitoringRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
 [DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesQuery](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery)|*No description*
 [DataDatadogServiceLevelObjective](#cdktf-provider-datadog-datadatadogservicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
 [DataDatadogServiceLevelObjectives](#cdktf-provider-datadog-datadatadogservicelevelobjectives)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
@@ -879,7 +881,9 @@ Name|Description
 [SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)|*No description*
 [SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)|*No description*
 [SecurityMonitoringRuleConfig](#cdktf-provider-datadog-securitymonitoringruleconfig)|*No description*
+[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)|*No description*
 [SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)|*No description*
+[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)|*No description*
 [SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)|*No description*
 [ServiceLevelObjectiveConfig](#cdktf-provider-datadog-servicelevelobjectiveconfig)|*No description*
 [ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)|*No description*
@@ -1516,6 +1520,7 @@ Name | Type | Description
 **query** | <code>string</code> | <span></span>
 **renotifyInterval** | <code>number</code> | <span></span>
 **requireFullWindow** | <code>boolean</code> | <span></span>
+**restrictedRoles** | <code>Array<string></code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **tagsFilter** | <code>Array<string></code> | <span></span>
 **timeoutH** | <code>number</code> | <span></span>
@@ -2079,6 +2084,8 @@ Name | Type | Description
 -----|------|-------------
 **case** | <code>any</code> | <span></span>
 **enabled** | <code>boolean</code> | <span></span>
+**filter** | <code>any</code> | <span></span>
+**hasExtendedTitle** | <code>boolean</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **options** | <code>any</code> | <span></span>
@@ -2120,6 +2127,37 @@ Name | Type | Description
 
 
 
+## class DataDatadogSecurityMonitoringRulesRulesFilter  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesFilter(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**action** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+
+
+
 ## class DataDatadogSecurityMonitoringRulesRulesOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions"></a>
 
 
@@ -2146,9 +2184,42 @@ new DataDatadogSecurityMonitoringRulesRulesOptions(terraformResource: ITerraform
 
 Name | Type | Description 
 -----|------|-------------
+**detectionMethod** | <code>string</code> | <span></span>
 **evaluationWindow** | <code>number</code> | <span></span>
 **keepAlive** | <code>number</code> | <span></span>
 **maxSignalDuration** | <code>number</code> | <span></span>
+**newValueOptions** | <code>any</code> | <span></span>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**forgetAfter** | <code>number</code> | <span></span>
+**learningDuration** | <code>number</code> | <span></span>
 
 
 
@@ -3871,11 +3942,12 @@ new LogsIndex(scope: Construct, id: string, config: LogsIndexConfig)
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **dailyLimit** (<code>string</code>)  The number of log events you can send in this index per day before you are rate-limited. 
   * **filter** (<code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code>)  filter block. 
   * **name** (<code>string</code>)  The name of the index. 
-  * **retentionDays** (<code>string</code>)  The number of days before logs are deleted from this index. 
+  * **dailyLimit** (<code>number</code>)  The number of log events you can send in this index per day before you are rate-limited. __*Optional*__
+  * **disableDailyLimit** (<code>boolean</code>)  If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). __*Optional*__
   * **exclusionFilter** (<code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code>)  exclusion_filter block. __*Optional*__
+  * **retentionDays** (<code>number</code>)  The number of days before logs are deleted from this index. __*Optional*__
 
 
 
@@ -3884,19 +3956,45 @@ new LogsIndex(scope: Construct, id: string, config: LogsIndexConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**dailyLimit** | <code>string</code> | <span></span>
-**dailyLimitInput** | <code>string</code> | <span></span>
+**dailyLimit** | <code>number</code> | <span></span>
+**disableDailyLimit** | <code>boolean</code> | <span></span>
 **exclusionFilter** | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | <span></span>
 **filter** | <code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code> | <span></span>
 **filterInput** | <code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
-**retentionDays** | <code>string</code> | <span></span>
-**retentionDaysInput** | <code>string</code> | <span></span>
+**retentionDays** | <code>number</code> | <span></span>
+**dailyLimitInput**? | <code>number</code> | __*Optional*__
+**disableDailyLimitInput**? | <code>boolean</code> | __*Optional*__
 **exclusionFilterInput**? | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | __*Optional*__
+**retentionDaysInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
+
+
+#### resetDailyLimit() <a id="cdktf-provider-datadog-logsindex-resetdailylimit"></a>
+
+
+
+```ts
+resetDailyLimit(): void
+```
+
+
+
+
+
+#### resetDisableDailyLimit() <a id="cdktf-provider-datadog-logsindex-resetdisabledailylimit"></a>
+
+
+
+```ts
+resetDisableDailyLimit(): void
+```
+
+
+
 
 
 #### resetExclusionFilter() <a id="cdktf-provider-datadog-logsindex-resetexclusionfilter"></a>
@@ -3905,6 +4003,18 @@ Name | Type | Description
 
 ```ts
 resetExclusionFilter(): void
+```
+
+
+
+
+
+#### resetRetentionDays() <a id="cdktf-provider-datadog-logsindex-resetretentiondays"></a>
+
+
+
+```ts
+resetRetentionDays(): void
 ```
 
 
@@ -4947,6 +5057,8 @@ new SecurityMonitoringRule(scope: Construct, id: string, config: SecurityMonitor
   * **name** (<code>string</code>)  The name of the rule. 
   * **query** (<code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code>)  query block. 
   * **enabled** (<code>boolean</code>)  Whether the rule is enabled. __*Optional*__
+  * **filter** (<code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code>)  filter block. __*Optional*__
+  * **hasExtendedTitle** (<code>boolean</code>)  Whether the notifications include the triggering group-by values in their title. __*Optional*__
   * **options** (<code>Array<[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)></code>)  options block. __*Optional*__
   * **tags** (<code>Array<string></code>)  Tags for generated signals. __*Optional*__
 
@@ -4960,6 +5072,8 @@ Name | Type | Description
 **case** | <code>Array<[SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)></code> | <span></span>
 **caseInput** | <code>Array<[SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)></code> | <span></span>
 **enabled** | <code>boolean</code> | <span></span>
+**filter** | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | <span></span>
+**hasExtendedTitle** | <code>boolean</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **messageInput** | <code>string</code> | <span></span>
@@ -4970,6 +5084,8 @@ Name | Type | Description
 **queryInput** | <code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **enabledInput**? | <code>boolean</code> | __*Optional*__
+**filterInput**? | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | __*Optional*__
+**hasExtendedTitleInput**? | <code>boolean</code> | __*Optional*__
 **optionsInput**? | <code>Array<[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -4982,6 +5098,30 @@ Name | Type | Description
 
 ```ts
 resetEnabled(): void
+```
+
+
+
+
+
+#### resetFilter() <a id="cdktf-provider-datadog-securitymonitoringrule-resetfilter"></a>
+
+
+
+```ts
+resetFilter(): void
+```
+
+
+
+
+
+#### resetHasExtendedTitle() <a id="cdktf-provider-datadog-securitymonitoringrule-resethasextendedtitle"></a>
+
+
+
+```ts
+resetHasExtendedTitle(): void
 ```
 
 
@@ -18761,15 +18901,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dailyLimit** | <code>string</code> | The number of log events you can send in this index per day before you are rate-limited.
 **filter** | <code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code> | filter block.
 **name** | <code>string</code> | The name of the index.
-**retentionDays** | <code>string</code> | The number of days before logs are deleted from this index.
 **count**?🔹 | <code>number</code> | __*Optional*__
+**dailyLimit**? | <code>number</code> | The number of log events you can send in this index per day before you are rate-limited.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**disableDailyLimit**? | <code>boolean</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored).<br/>__*Optional*__
 **exclusionFilter**? | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | exclusion_filter block.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**retentionDays**? | <code>number</code> | The number of days before logs are deleted from this index.<br/>__*Optional*__
 
 
 
@@ -19154,10 +19295,26 @@ Name | Type | Description
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **enabled**? | <code>boolean</code> | Whether the rule is enabled.<br/>__*Optional*__
+**filter**? | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | filter block.<br/>__*Optional*__
+**hasExtendedTitle**? | <code>boolean</code> | Whether the notifications include the triggering group-by values in their title.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **options**? | <code>Array<[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)></code> | options block.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **tags**? | <code>Array<string></code> | Tags for generated signals.<br/>__*Optional*__
+
+
+
+## struct SecurityMonitoringRuleFilter  <a id="cdktf-provider-datadog-securitymonitoringrulefilter"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**action** | <code>string</code> | The type of filtering action. Valid values are `require`, `suppress`.
+**query** | <code>string</code> | Query for selecting logs to apply the filtering action.
 
 
 
@@ -19173,6 +19330,22 @@ Name | Type | Description
 **evaluationWindow** | <code>number</code> | A time window is specified to match when at least one of the cases matches true.
 **keepAlive** | <code>number</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window.
 **maxSignalDuration** | <code>number</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration.
+**detectionMethod**? | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`.<br/>__*Optional*__
+**newValueOptions**? | <code>Array<[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)></code> | new_value_options block.<br/>__*Optional*__
+
+
+
+## struct SecurityMonitoringRuleOptionsNewValueOptions  <a id="cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**forgetAfter** | <code>number</code> | The duration in days after which a learned value is forgotten.
+**learningDuration** | <code>number</code> | The duration in days during which values are learned, and after which signals will be generated for values that weren't learned.
 
 
 
