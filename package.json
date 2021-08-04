@@ -35,9 +35,9 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.2.4",
+    "@cdktf/provider-project": "^0.2.6",
     "@types/jest": "^26.0.23",
-    "@types/node": "^12.0.0",
+    "@types/node": "^12.19.0",
     "cdktf": "^0.5",
     "cdktf-cli": "^0.5",
     "constructs": "^3.0.4",
@@ -67,7 +67,7 @@
     "terraform"
   ],
   "engines": {
-    "node": ">= 12.0.0"
+    "node": ">= 12.19.0"
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",
