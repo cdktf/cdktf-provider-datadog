@@ -12,7 +12,7 @@ export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#automute IntegrationGcp#automute}
   */
-  readonly automute?: boolean;
+  readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your email found in your JSON service account key.
   * 
@@ -56,6 +56,11 @@ export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
 */
 export class IntegrationGcp extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_gcp";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -92,11 +97,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // ==========
 
   // automute - computed: false, optional: true, required: false
-  private _automute?: boolean;
+  private _automute?: boolean | cdktf.IResolvable;
   public get automute() {
     return this.getBooleanAttribute('automute');
   }
-  public set automute(value: boolean ) {
+  public set automute(value: boolean | cdktf.IResolvable ) {
     this._automute = value;
   }
   public resetAutomute() {

@@ -12,7 +12,7 @@ export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#include_tags LogsArchive#include_tags}
   */
-  readonly includeTags?: boolean;
+  readonly includeTags?: boolean | cdktf.IResolvable;
   /**
   * Your archive name.
   * 
@@ -174,6 +174,11 @@ function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3Archive): any {
 */
 export class LogsArchive extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_archive";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -215,11 +220,11 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // include_tags - computed: false, optional: true, required: false
-  private _includeTags?: boolean;
+  private _includeTags?: boolean | cdktf.IResolvable;
   public get includeTags() {
     return this.getBooleanAttribute('include_tags');
   }
-  public set includeTags(value: boolean ) {
+  public set includeTags(value: boolean | cdktf.IResolvable ) {
     this._includeTags = value;
   }
   public resetIncludeTags() {

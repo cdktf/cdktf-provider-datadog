@@ -12,13 +12,13 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#enabled SecurityMonitoringRule#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Whether the notifications include the triggering group-by values in their title.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#has_extended_title SecurityMonitoringRule#has_extended_title}
   */
-  readonly hasExtendedTitle?: boolean;
+  readonly hasExtendedTitle?: boolean | cdktf.IResolvable;
   /**
   * Message for generated signals.
   * 
@@ -246,6 +246,11 @@ function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitoringRuleQ
 */
 export class SecurityMonitoringRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_security_monitoring_rule";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -284,11 +289,11 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -300,11 +305,11 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // has_extended_title - computed: false, optional: true, required: false
-  private _hasExtendedTitle?: boolean;
+  private _hasExtendedTitle?: boolean | cdktf.IResolvable;
   public get hasExtendedTitle() {
     return this.getBooleanAttribute('has_extended_title');
   }
-  public set hasExtendedTitle(value: boolean ) {
+  public set hasExtendedTitle(value: boolean | cdktf.IResolvable ) {
     this._hasExtendedTitle = value;
   }
   public resetHasExtendedTitle() {

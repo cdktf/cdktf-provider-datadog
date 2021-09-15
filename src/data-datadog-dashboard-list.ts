@@ -20,6 +20,11 @@ export interface DataDatadogDashboardListConfig extends cdktf.TerraformMetaArgum
 */
 export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_dashboard_list";
+
   // ===========
   // INITIALIZER
   // ===========

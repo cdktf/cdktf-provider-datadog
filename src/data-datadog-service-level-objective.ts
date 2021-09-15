@@ -38,6 +38,11 @@ export interface DataDatadogServiceLevelObjectiveConfig extends cdktf.TerraformM
 */
 export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_service_level_objective";
+
   // ===========
   // INITIALIZER
   // ===========

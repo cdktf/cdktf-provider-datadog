@@ -32,6 +32,11 @@ export interface IntegrationPagerdutyConfig extends cdktf.TerraformMetaArguments
 */
 export class IntegrationPagerduty extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_pagerduty";
+
   // ===========
   // INITIALIZER
   // ===========

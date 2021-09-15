@@ -49,6 +49,11 @@ export class DataDatadogMonitorsMonitors extends cdktf.ComplexComputedList {
 */
 export class DataDatadogMonitors extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_monitors";
+
   // ===========
   // INITIALIZER
   // ===========

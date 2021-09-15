@@ -100,6 +100,11 @@ function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy): any {
 */
 export class LogsMetric extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_metric";
+
   // ===========
   // INITIALIZER
   // ===========

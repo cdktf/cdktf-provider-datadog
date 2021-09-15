@@ -26,6 +26,11 @@ export interface LogsIndexOrderConfig extends cdktf.TerraformMetaArguments {
 */
 export class LogsIndexOrder extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_index_order";
+
   // ===========
   // INITIALIZER
   // ===========

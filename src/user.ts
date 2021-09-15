@@ -12,7 +12,7 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#disabled User#disabled}
   */
-  readonly disabled?: boolean;
+  readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Email address for user.
   * 
@@ -36,13 +36,18 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#send_user_invitation User#send_user_invitation}
   */
-  readonly sendUserInvitation?: boolean;
+  readonly sendUserInvitation?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}
 */
 export class User extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_user";
 
   // ===========
   // INITIALIZER
@@ -78,11 +83,11 @@ export class User extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean;
+  private _disabled?: boolean | cdktf.IResolvable;
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean ) {
+  public set disabled(value: boolean | cdktf.IResolvable ) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -144,11 +149,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // send_user_invitation - computed: false, optional: true, required: false
-  private _sendUserInvitation?: boolean;
+  private _sendUserInvitation?: boolean | cdktf.IResolvable;
   public get sendUserInvitation() {
     return this.getBooleanAttribute('send_user_invitation');
   }
-  public set sendUserInvitation(value: boolean ) {
+  public set sendUserInvitation(value: boolean | cdktf.IResolvable ) {
     this._sendUserInvitation = value;
   }
   public resetSendUserInvitation() {

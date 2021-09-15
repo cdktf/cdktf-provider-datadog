@@ -14,6 +14,11 @@ export interface DataDatadogIpRangesConfig extends cdktf.TerraformMetaArguments 
 */
 export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_ip_ranges";
+
   // ===========
   // INITIALIZER
   // ===========

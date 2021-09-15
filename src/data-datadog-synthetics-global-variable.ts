@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/dashboard.html
+// https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,39 +6,39 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDatadogDashboardConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogSyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The dashboard name to search for. Must only match one dashboard.
+  * The synthetics global variable name to search for. Must only match one global variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html#name DataDatadogDashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html#name DataDatadogSyntheticsGlobalVariable#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}
 */
-export class DataDatadogDashboard extends cdktf.TerraformDataSource {
+export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_dashboard";
+  public static readonly tfResourceType: string = "datadog_synthetics_global_variable";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatadogDashboardConfig
+  * @param options DataDatadogSyntheticsGlobalVariableConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDatadogDashboardConfig) {
+  public constructor(scope: Construct, id: string, config: DataDatadogSyntheticsGlobalVariableConfig) {
     super(scope, id, {
-      terraformResourceType: 'datadog_dashboard',
+      terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog'
       },
@@ -72,14 +72,9 @@ export class DataDatadogDashboard extends cdktf.TerraformDataSource {
     return this._name
   }
 
-  // title - computed: true, optional: false, required: false
-  public get title() {
-    return this.getStringAttribute('title');
-  }
-
-  // url - computed: true, optional: false, required: false
-  public get url() {
-    return this.getStringAttribute('url');
+  // tags - computed: true, optional: false, required: false
+  public get tags() {
+    return this.getListAttribute('tags');
   }
 
   // =========

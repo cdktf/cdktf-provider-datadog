@@ -42,6 +42,11 @@ function rolePermissionToTerraform(struct?: RolePermission): any {
 */
 export class Role extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_role";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -12,7 +12,7 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#include_percentiles MetricTagConfiguration#include_percentiles}
   */
-  readonly includePercentiles?: boolean;
+  readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The metric name for this resource.
   * 
@@ -37,6 +37,11 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}
 */
 export class MetricTagConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_metric_tag_configuration";
 
   // ===========
   // INITIALIZER
@@ -76,11 +81,11 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // include_percentiles - computed: false, optional: true, required: false
-  private _includePercentiles?: boolean;
+  private _includePercentiles?: boolean | cdktf.IResolvable;
   public get includePercentiles() {
     return this.getBooleanAttribute('include_percentiles');
   }
-  public set includePercentiles(value: boolean ) {
+  public set includePercentiles(value: boolean | cdktf.IResolvable ) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {

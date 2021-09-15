@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Array with the different device IDs used to run the test (only for `browser` tests). Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`.
+  * Array with the different device IDs used to run the test (only for `browser` tests). Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`, `edge.laptop_large`, `edge.tablet`, `edge.mobile_small`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#device_ids SyntheticsTest#device_ids}
   */
@@ -36,13 +36,13 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_headers SyntheticsTest#request_headers}
   */
-  readonly requestHeaders?: { [key: string]: string };
+  readonly requestHeaders?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Query arguments name and value map.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_query SyntheticsTest#request_query}
   */
-  readonly requestQuery?: { [key: string]: string };
+  readonly requestQuery?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.
   * 
@@ -204,7 +204,7 @@ function syntheticsTestApiStepAssertionToTerraform(struct?: SyntheticsTestApiSte
 
 export interface SyntheticsTestApiStepExtractedValueParser {
   /**
-  * Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`.
+  * Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`, `x_path`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -354,6 +354,12 @@ function syntheticsTestApiStepRequestClientCertificateToTerraform(struct?: Synth
 
 export interface SyntheticsTestApiStepRequestDefinition {
   /**
+  * Allows loading insecure content for an HTTP test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#allow_insecure SyntheticsTest#allow_insecure}
+  */
+  readonly allowInsecure?: boolean | cdktf.IResolvable;
+  /**
   * The request body.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#body SyntheticsTest#body}
@@ -388,7 +394,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#no_saving_response_body SyntheticsTest#no_saving_response_body}
   */
-  readonly noSavingResponseBody?: boolean;
+  readonly noSavingResponseBody?: boolean | cdktf.IResolvable;
   /**
   * Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
   * 
@@ -406,7 +412,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#should_track_hops SyntheticsTest#should_track_hops}
   */
-  readonly shouldTrackHops?: boolean;
+  readonly shouldTrackHops?: boolean | cdktf.IResolvable;
   /**
   * Timeout in seconds for the test. Defaults to `60`.
   * 
@@ -424,6 +430,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
 function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: SyntheticsTestApiStepRequestDefinition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     body: cdktf.stringToTerraform(struct!.body),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
@@ -444,13 +451,13 @@ export interface SyntheticsTestApiStep {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#allow_failure SyntheticsTest#allow_failure}
   */
-  readonly allowFailure?: boolean;
+  readonly allowFailure?: boolean | cdktf.IResolvable;
   /**
   * Determines whether or not to consider the entire test as failed if this step fails. Can be used only if `allow_failure` is `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#is_critical SyntheticsTest#is_critical}
   */
-  readonly isCritical?: boolean;
+  readonly isCritical?: boolean | cdktf.IResolvable;
   /**
   * The name of the step.
   * 
@@ -462,13 +469,13 @@ export interface SyntheticsTestApiStep {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_headers SyntheticsTest#request_headers}
   */
-  readonly requestHeaders?: { [key: string]: string };
+  readonly requestHeaders?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Query arguments name and value map.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_query SyntheticsTest#request_query}
   */
-  readonly requestQuery?: { [key: string]: string };
+  readonly requestQuery?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * The subtype of the Synthetic multistep API test step. Valid values are `http`.
   * 
@@ -711,7 +718,7 @@ export interface SyntheticsTestBrowserStepParams {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#with_click SyntheticsTest#with_click}
   */
-  readonly withClick?: boolean;
+  readonly withClick?: boolean | cdktf.IResolvable;
   /**
   * X coordinates for a "scroll step".
   * 
@@ -762,13 +769,13 @@ export interface SyntheticsTestBrowserStep {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#allow_failure SyntheticsTest#allow_failure}
   */
-  readonly allowFailure?: boolean;
+  readonly allowFailure?: boolean | cdktf.IResolvable;
   /**
   * Force update of the "element" parameter for the step
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#force_element_update SyntheticsTest#force_element_update}
   */
-  readonly forceElementUpdate?: boolean;
+  readonly forceElementUpdate?: boolean | cdktf.IResolvable;
   /**
   * Name of the step.
   * 
@@ -940,19 +947,19 @@ export interface SyntheticsTestOptionsList {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#accept_self_signed SyntheticsTest#accept_self_signed}
   */
-  readonly acceptSelfSigned?: boolean;
+  readonly acceptSelfSigned?: boolean | cdktf.IResolvable;
   /**
   * Allows loading insecure content for an HTTP test.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#allow_insecure SyntheticsTest#allow_insecure}
   */
-  readonly allowInsecure?: boolean;
+  readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
   * For API HTTP test, whether or not the test should follow redirects.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#follow_redirects SyntheticsTest#follow_redirects}
   */
-  readonly followRedirects?: boolean;
+  readonly followRedirects?: boolean | cdktf.IResolvable;
   /**
   * Minimum amount of time in failure required to trigger an alert. Default is `0`.
   * 
@@ -980,7 +987,7 @@ export interface SyntheticsTestOptionsList {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#no_screenshot SyntheticsTest#no_screenshot}
   */
-  readonly noScreenshot?: boolean;
+  readonly noScreenshot?: boolean | cdktf.IResolvable;
   /**
   * How often the test should run (in seconds).
   * 
@@ -1146,7 +1153,7 @@ export interface SyntheticsTestRequestDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#no_saving_response_body SyntheticsTest#no_saving_response_body}
   */
-  readonly noSavingResponseBody?: boolean;
+  readonly noSavingResponseBody?: boolean | cdktf.IResolvable;
   /**
   * Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
   * 
@@ -1164,7 +1171,7 @@ export interface SyntheticsTestRequestDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#should_track_hops SyntheticsTest#should_track_hops}
   */
-  readonly shouldTrackHops?: boolean;
+  readonly shouldTrackHops?: boolean | cdktf.IResolvable;
   /**
   * Timeout in seconds for the test. Defaults to `60`.
   * 
@@ -1201,6 +1208,11 @@ function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTestReque
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}
 */
 export class SyntheticsTest extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_synthetics_test";
 
   // ===========
   // INITIALIZER
@@ -1319,11 +1331,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_headers - computed: false, optional: true, required: false
-  private _requestHeaders?: { [key: string]: string };
+  private _requestHeaders?: { [key: string]: string } | cdktf.IResolvable;
   public get requestHeaders() {
     return this.interpolationForAttribute('request_headers') as any;
   }
-  public set requestHeaders(value: { [key: string]: string } ) {
+  public set requestHeaders(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestHeaders = value;
   }
   public resetRequestHeaders() {
@@ -1335,11 +1347,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_query - computed: false, optional: true, required: false
-  private _requestQuery?: { [key: string]: string };
+  private _requestQuery?: { [key: string]: string } | cdktf.IResolvable;
   public get requestQuery() {
     return this.interpolationForAttribute('request_query') as any;
   }
-  public set requestQuery(value: { [key: string]: string } ) {
+  public set requestQuery(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestQuery = value;
   }
   public resetRequestQuery() {

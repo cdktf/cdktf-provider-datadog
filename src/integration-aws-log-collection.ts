@@ -26,6 +26,11 @@ export interface IntegrationAwsLogCollectionConfig extends cdktf.TerraformMetaAr
 */
 export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_aws_log_collection";
+
   // ===========
   // INITIALIZER
   // ===========

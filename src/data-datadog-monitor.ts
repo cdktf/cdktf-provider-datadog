@@ -76,6 +76,11 @@ export class DataDatadogMonitorMonitorThresholds extends cdktf.ComplexComputedLi
 */
 export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_monitor";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -192,6 +197,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameFilterInput() {
     return this._nameFilter
+  }
+
+  // new_group_delay - computed: true, optional: false, required: false
+  public get newGroupDelay() {
+    return this.getNumberAttribute('new_group_delay');
   }
 
   // new_host_delay - computed: true, optional: false, required: false

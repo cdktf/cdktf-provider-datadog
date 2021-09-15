@@ -56,6 +56,11 @@ export interface MetricMetadataConfig extends cdktf.TerraformMetaArguments {
 */
 export class MetricMetadata extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_metric_metadata";
+
   // ===========
   // INITIALIZER
   // ===========

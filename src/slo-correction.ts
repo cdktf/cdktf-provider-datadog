@@ -50,6 +50,11 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
 */
 export class SloCorrection extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_slo_correction";
+
   // ===========
   // INITIALIZER
   // ===========

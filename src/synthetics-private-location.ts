@@ -32,6 +32,11 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
 */
 export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_synthetics_private_location";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/role.html
+// https://www.terraform.io/docs/providers/datadog/d/user.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,39 +6,39 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDatadogRoleConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A string on which to filter the roles.
+  * Filter all users by the given string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/role.html#filter DataDatadogRole#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/user.html#filter DataDatadogUser#filter}
   */
   readonly filter: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}
 */
-export class DataDatadogRole extends cdktf.TerraformDataSource {
+export class DataDatadogUser extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_role";
+  public static readonly tfResourceType: string = "datadog_user";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatadogRoleConfig
+  * @param options DataDatadogUserConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDatadogRoleConfig) {
+  public constructor(scope: Construct, id: string, config: DataDatadogUserConfig) {
     super(scope, id, {
-      terraformResourceType: 'datadog_role',
+      terraformResourceType: 'datadog_user',
       terraformGeneratorMetadata: {
         providerName: 'datadog'
       },
@@ -53,6 +53,11 @@ export class DataDatadogRole extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // email - computed: true, optional: false, required: false
+  public get email() {
+    return this.getStringAttribute('email');
+  }
 
   // filter - computed: false, optional: false, required: true
   private _filter: string;
@@ -75,11 +80,6 @@ export class DataDatadogRole extends cdktf.TerraformDataSource {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-
-  // user_count - computed: true, optional: false, required: false
-  public get userCount() {
-    return this.getNumberAttribute('user_count');
   }
 
   // =========
