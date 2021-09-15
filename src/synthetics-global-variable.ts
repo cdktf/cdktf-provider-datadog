@@ -26,11 +26,17 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
   */
   readonly parseTestId?: string;
   /**
-  * Sets the variable as secure. Defaults to `false`.
+  * A list of role identifiers to associate with the Synthetics global variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+  */
+  readonly restrictedRoles?: string[];
+  /**
+  * If set to true, the value of the global variable is hidden. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#secure SyntheticsGlobalVariable#secure}
   */
-  readonly secure?: boolean;
+  readonly secure?: boolean | cdktf.IResolvable;
   /**
   * A list of tags to associate with your synthetics global variable.
   * 
@@ -52,7 +58,7 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
 }
 export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
-  * Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`.
+  * Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#type SyntheticsGlobalVariable#type}
   */
@@ -109,6 +115,11 @@ function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: Synthetics
 */
 export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_synthetics_global_variable";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -134,6 +145,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     this._description = config.description;
     this._name = config.name;
     this._parseTestId = config.parseTestId;
+    this._restrictedRoles = config.restrictedRoles;
     this._secure = config.secure;
     this._tags = config.tags;
     this._value = config.value;
@@ -194,12 +206,28 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     return this._parseTestId
   }
 
+  // restricted_roles - computed: false, optional: true, required: false
+  private _restrictedRoles?: string[];
+  public get restrictedRoles() {
+    return this.getListAttribute('restricted_roles');
+  }
+  public set restrictedRoles(value: string[] ) {
+    this._restrictedRoles = value;
+  }
+  public resetRestrictedRoles() {
+    this._restrictedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedRolesInput() {
+    return this._restrictedRoles
+  }
+
   // secure - computed: false, optional: true, required: false
-  private _secure?: boolean;
+  private _secure?: boolean | cdktf.IResolvable;
   public get secure() {
     return this.getBooleanAttribute('secure');
   }
-  public set secure(value: boolean ) {
+  public set secure(value: boolean | cdktf.IResolvable ) {
     this._secure = value;
   }
   public resetSecure() {
@@ -264,6 +292,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       parse_test_id: cdktf.stringToTerraform(this._parseTestId),
+      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._restrictedRoles),
       secure: cdktf.booleanToTerraform(this._secure),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       value: cdktf.stringToTerraform(this._value),

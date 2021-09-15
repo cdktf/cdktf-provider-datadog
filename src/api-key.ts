@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/dashboard.html
+// https://www.terraform.io/docs/providers/datadog/r/api_key.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,39 +6,39 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDatadogDashboardConfig extends cdktf.TerraformMetaArguments {
+export interface ApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The dashboard name to search for. Must only match one dashboard.
+  * Name for API Key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html#name DataDatadogDashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html#name ApiKey#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}
 */
-export class DataDatadogDashboard extends cdktf.TerraformDataSource {
+export class ApiKey extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_dashboard";
+  public static readonly tfResourceType: string = "datadog_api_key";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatadogDashboardConfig
+  * @param options ApiKeyConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDatadogDashboardConfig) {
+  public constructor(scope: Construct, id: string, config: ApiKeyConfig) {
     super(scope, id, {
-      terraformResourceType: 'datadog_dashboard',
+      terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog'
       },
@@ -59,6 +59,11 @@ export class DataDatadogDashboard extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
@@ -70,16 +75,6 @@ export class DataDatadogDashboard extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
-  }
-
-  // title - computed: true, optional: false, required: false
-  public get title() {
-    return this.getStringAttribute('title');
-  }
-
-  // url - computed: true, optional: false, required: false
-  public get url() {
-    return this.getStringAttribute('url');
   }
 
   // =========

@@ -26,6 +26,11 @@ export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArgume
 */
 export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_aws_lambda_arn";
+
   // ===========
   // INITIALIZER
   // ===========

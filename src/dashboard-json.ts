@@ -32,6 +32,11 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
 */
 export class DashboardJson extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_dashboard_json";
+
   // ===========
   // INITIALIZER
   // ===========

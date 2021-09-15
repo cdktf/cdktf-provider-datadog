@@ -32,6 +32,11 @@ export interface IntegrationAwsTagFilterConfig extends cdktf.TerraformMetaArgume
 */
 export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_aws_tag_filter";
+
   // ===========
   // INITIALIZER
   // ===========

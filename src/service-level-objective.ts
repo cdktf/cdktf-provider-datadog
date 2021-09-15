@@ -18,7 +18,7 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#force_delete ServiceLevelObjective#force_delete}
   */
-  readonly forceDelete?: boolean;
+  readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
   * A static set of groups to filter monitor-based SLOs
   * 
@@ -54,7 +54,7 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#validate ServiceLevelObjective#validate}
   */
-  readonly validate?: boolean;
+  readonly validate?: boolean | cdktf.IResolvable;
   /**
   * query block
   * 
@@ -141,6 +141,11 @@ function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevelObjecti
 */
 export class ServiceLevelObjective extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_service_level_objective";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -196,11 +201,11 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean;
+  private _forceDelete?: boolean | cdktf.IResolvable;
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean ) {
+  public set forceDelete(value: boolean | cdktf.IResolvable ) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -291,11 +296,11 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean;
+  private _validate?: boolean | cdktf.IResolvable;
   public get validate() {
     return this.getBooleanAttribute('validate');
   }
-  public set validate(value: boolean ) {
+  public set validate(value: boolean | cdktf.IResolvable ) {
     this._validate = value;
   }
   public resetValidate() {

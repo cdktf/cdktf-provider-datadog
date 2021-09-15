@@ -125,6 +125,11 @@ function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrence): any {
 */
 export class Downtime extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_downtime";
+
   // ===========
   // INITIALIZER
   // ===========

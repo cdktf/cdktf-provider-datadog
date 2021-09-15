@@ -26,6 +26,11 @@ export interface LogsPipelineOrderConfig extends cdktf.TerraformMetaArguments {
 */
 export class LogsPipelineOrder extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_pipeline_order";
+
   // ===========
   // INITIALIZER
   // ===========

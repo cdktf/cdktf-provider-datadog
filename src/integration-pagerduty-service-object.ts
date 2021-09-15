@@ -26,6 +26,11 @@ export interface IntegrationPagerdutyServiceObjectConfig extends cdktf.Terraform
 */
 export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_pagerduty_service_object";
+
   // ===========
   // INITIALIZER
   // ===========

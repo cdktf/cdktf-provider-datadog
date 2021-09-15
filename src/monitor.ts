@@ -12,7 +12,7 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#enable_logs_sample Monitor#enable_logs_sample}
   */
-  readonly enableLogsSample?: boolean;
+  readonly enableLogsSample?: boolean | cdktf.IResolvable;
   /**
   * A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
   * 
@@ -32,25 +32,25 @@ For example, if the value is set to `300` (5min), the `timeframe` is set to `las
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#force_delete Monitor#force_delete}
   */
-  readonly forceDelete?: boolean;
+  readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
   * Whether or not to trigger one alert if any source breaches a threshold. This is only used by log monitors. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#groupby_simple_monitor Monitor#groupby_simple_monitor}
   */
-  readonly groupbySimpleMonitor?: boolean;
+  readonly groupbySimpleMonitor?: boolean | cdktf.IResolvable;
   /**
   * A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#include_tags Monitor#include_tags}
   */
-  readonly includeTags?: boolean;
+  readonly includeTags?: boolean | cdktf.IResolvable;
   /**
   * A boolean indicating whether changes to to this monitor should be restricted to the creator or admins. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#locked Monitor#locked}
   */
-  readonly locked?: boolean;
+  readonly locked?: boolean | cdktf.IResolvable;
   /**
   * A message to include with notifications for this monitor.
 
@@ -66,7 +66,17 @@ Email notifications can be sent to specific users by using the same `@username` 
   */
   readonly name: string;
   /**
-  * Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non negative integer. Defaults to `300`.
+  * Time (in seconds) to skip evaluations for new groups.
+
+`new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
+
+To disable group delay for monitors grouped by host, `new_host_delay` must be set to zero due to the default value of `300` for that field (`new_group_delay` defaults to zero, so setting it to zero is not required).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#new_group_delay Monitor#new_group_delay}
+  */
+  readonly newGroupDelay?: number;
+  /**
+  * Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. Defaults to `300` (this default will be removed in a major version release and `new_host_delay` will be removed entirely in a subsequent major version release). **Deprecated.** Prefer using new_group_delay (except when setting `new_host_delay` to zero).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#new_host_delay Monitor#new_host_delay}
   */
@@ -84,13 +94,13 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#notify_audit Monitor#notify_audit}
   */
-  readonly notifyAudit?: boolean;
+  readonly notifyAudit?: boolean | cdktf.IResolvable;
   /**
   * A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#notify_no_data Monitor#notify_no_data}
   */
-  readonly notifyNoData?: boolean;
+  readonly notifyNoData?: boolean | cdktf.IResolvable;
   /**
   * Integer from 1 (high) to 5 (low) indicating alert severity.
   * 
@@ -118,7 +128,7 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#require_full_window Monitor#require_full_window}
   */
-  readonly requireFullWindow?: boolean;
+  readonly requireFullWindow?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#restricted_roles Monitor#restricted_roles}
   */
@@ -136,7 +146,7 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   */
   readonly timeoutH?: number;
   /**
-  * The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`.
+  * The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#type Monitor#type}
   */
@@ -146,7 +156,7 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#validate Monitor#validate}
   */
-  readonly validate?: boolean;
+  readonly validate?: boolean | cdktf.IResolvable;
   /**
   * monitor_threshold_windows block
   * 
@@ -240,6 +250,11 @@ function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholds):
 */
 export class Monitor extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_monitor";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -271,6 +286,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._locked = config.locked;
     this._message = config.message;
     this._name = config.name;
+    this._newGroupDelay = config.newGroupDelay;
     this._newHostDelay = config.newHostDelay;
     this._noDataTimeframe = config.noDataTimeframe;
     this._notifyAudit = config.notifyAudit;
@@ -293,11 +309,11 @@ export class Monitor extends cdktf.TerraformResource {
   // ==========
 
   // enable_logs_sample - computed: false, optional: true, required: false
-  private _enableLogsSample?: boolean;
+  private _enableLogsSample?: boolean | cdktf.IResolvable;
   public get enableLogsSample() {
     return this.getBooleanAttribute('enable_logs_sample');
   }
-  public set enableLogsSample(value: boolean ) {
+  public set enableLogsSample(value: boolean | cdktf.IResolvable ) {
     this._enableLogsSample = value;
   }
   public resetEnableLogsSample() {
@@ -341,11 +357,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean;
+  private _forceDelete?: boolean | cdktf.IResolvable;
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean ) {
+  public set forceDelete(value: boolean | cdktf.IResolvable ) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -357,11 +373,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // groupby_simple_monitor - computed: false, optional: true, required: false
-  private _groupbySimpleMonitor?: boolean;
+  private _groupbySimpleMonitor?: boolean | cdktf.IResolvable;
   public get groupbySimpleMonitor() {
     return this.getBooleanAttribute('groupby_simple_monitor');
   }
-  public set groupbySimpleMonitor(value: boolean ) {
+  public set groupbySimpleMonitor(value: boolean | cdktf.IResolvable ) {
     this._groupbySimpleMonitor = value;
   }
   public resetGroupbySimpleMonitor() {
@@ -378,11 +394,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // include_tags - computed: false, optional: true, required: false
-  private _includeTags?: boolean;
+  private _includeTags?: boolean | cdktf.IResolvable;
   public get includeTags() {
     return this.getBooleanAttribute('include_tags');
   }
-  public set includeTags(value: boolean ) {
+  public set includeTags(value: boolean | cdktf.IResolvable ) {
     this._includeTags = value;
   }
   public resetIncludeTags() {
@@ -394,11 +410,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // locked - computed: false, optional: true, required: false
-  private _locked?: boolean;
+  private _locked?: boolean | cdktf.IResolvable;
   public get locked() {
     return this.getBooleanAttribute('locked');
   }
-  public set locked(value: boolean ) {
+  public set locked(value: boolean | cdktf.IResolvable ) {
     this._locked = value;
   }
   public resetLocked() {
@@ -435,6 +451,22 @@ export class Monitor extends cdktf.TerraformResource {
     return this._name
   }
 
+  // new_group_delay - computed: false, optional: true, required: false
+  private _newGroupDelay?: number;
+  public get newGroupDelay() {
+    return this.getNumberAttribute('new_group_delay');
+  }
+  public set newGroupDelay(value: number ) {
+    this._newGroupDelay = value;
+  }
+  public resetNewGroupDelay() {
+    this._newGroupDelay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get newGroupDelayInput() {
+    return this._newGroupDelay
+  }
+
   // new_host_delay - computed: false, optional: true, required: false
   private _newHostDelay?: number;
   public get newHostDelay() {
@@ -468,11 +500,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // notify_audit - computed: false, optional: true, required: false
-  private _notifyAudit?: boolean;
+  private _notifyAudit?: boolean | cdktf.IResolvable;
   public get notifyAudit() {
     return this.getBooleanAttribute('notify_audit');
   }
-  public set notifyAudit(value: boolean ) {
+  public set notifyAudit(value: boolean | cdktf.IResolvable ) {
     this._notifyAudit = value;
   }
   public resetNotifyAudit() {
@@ -484,11 +516,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // notify_no_data - computed: false, optional: true, required: false
-  private _notifyNoData?: boolean;
+  private _notifyNoData?: boolean | cdktf.IResolvable;
   public get notifyNoData() {
     return this.getBooleanAttribute('notify_no_data');
   }
-  public set notifyNoData(value: boolean ) {
+  public set notifyNoData(value: boolean | cdktf.IResolvable ) {
     this._notifyNoData = value;
   }
   public resetNotifyNoData() {
@@ -545,11 +577,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // require_full_window - computed: false, optional: true, required: false
-  private _requireFullWindow?: boolean;
+  private _requireFullWindow?: boolean | cdktf.IResolvable;
   public get requireFullWindow() {
     return this.getBooleanAttribute('require_full_window');
   }
-  public set requireFullWindow(value: boolean ) {
+  public set requireFullWindow(value: boolean | cdktf.IResolvable ) {
     this._requireFullWindow = value;
   }
   public resetRequireFullWindow() {
@@ -622,11 +654,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean;
+  private _validate?: boolean | cdktf.IResolvable;
   public get validate() {
     return this.getBooleanAttribute('validate');
   }
-  public set validate(value: boolean ) {
+  public set validate(value: boolean | cdktf.IResolvable ) {
     this._validate = value;
   }
   public resetValidate() {
@@ -684,6 +716,7 @@ export class Monitor extends cdktf.TerraformResource {
       locked: cdktf.booleanToTerraform(this._locked),
       message: cdktf.stringToTerraform(this._message),
       name: cdktf.stringToTerraform(this._name),
+      new_group_delay: cdktf.numberToTerraform(this._newGroupDelay),
       new_host_delay: cdktf.numberToTerraform(this._newHostDelay),
       no_data_timeframe: cdktf.numberToTerraform(this._noDataTimeframe),
       notify_audit: cdktf.booleanToTerraform(this._notifyAudit),

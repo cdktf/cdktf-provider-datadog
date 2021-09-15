@@ -55,6 +55,11 @@ export class DataDatadogServiceLevelObjectivesSlos extends cdktf.ComplexComputed
 */
 export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_service_level_objectives";
+
   // ===========
   // INITIALIZER
   // ===========

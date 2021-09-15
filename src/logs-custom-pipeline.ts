@@ -10,7 +10,7 @@ export interface LogsCustomPipelineConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}
   */
@@ -56,13 +56,13 @@ export interface LogsCustomPipelineProcessorArithmeticProcessor {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean;
+  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
   /**
   * Your pipeline name.
   * 
@@ -94,7 +94,7 @@ export interface LogsCustomPipelineProcessorAttributeRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -106,13 +106,13 @@ export interface LogsCustomPipelineProcessorAttributeRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
-  readonly overrideOnConflict?: boolean;
+  readonly overrideOnConflict?: boolean | cdktf.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean;
+  readonly preserveSource?: boolean | cdktf.IResolvable;
   /**
   * Defines where the sources are from (log `attribute` or `tag`).
   * 
@@ -203,7 +203,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessor {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the category
   * 
@@ -240,7 +240,7 @@ export interface LogsCustomPipelineProcessorDateRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -270,7 +270,7 @@ export interface LogsCustomPipelineProcessorGeoIpParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -330,7 +330,7 @@ export interface LogsCustomPipelineProcessorGrokParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -380,7 +380,7 @@ export interface LogsCustomPipelineProcessorLookupProcessor {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * List of entries of the lookup table using `key,value` format.
   * 
@@ -425,7 +425,7 @@ export interface LogsCustomPipelineProcessorMessageRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -477,13 +477,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean;
+  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
   /**
   * Your pipeline name.
   * 
@@ -515,7 +515,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -527,13 +527,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
-  readonly overrideOnConflict?: boolean;
+  readonly overrideOnConflict?: boolean | cdktf.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean;
+  readonly preserveSource?: boolean | cdktf.IResolvable;
   /**
   * Defines where the sources are from (log `attribute` or `tag`).
   * 
@@ -624,7 +624,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the category
   * 
@@ -661,7 +661,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -691,7 +691,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -751,7 +751,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -801,7 +801,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * List of entries of the lookup table using `key,value` format.
   * 
@@ -846,7 +846,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -876,7 +876,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -906,7 +906,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -936,13 +936,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStringBuilderProces
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * If it replaces all missing attributes of template by an empty string.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean;
+  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
   /**
   * The name of the processor.
   * 
@@ -980,7 +980,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -1010,7 +1010,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -1022,7 +1022,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
   */
-  readonly normalizeEndingSlashes?: boolean;
+  readonly normalizeEndingSlashes?: boolean | cdktf.IResolvable;
   /**
   * List of source attributes.
   * 
@@ -1054,13 +1054,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * If the source attribute is URL encoded or not.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_encoded LogsCustomPipeline#is_encoded}
   */
-  readonly isEncoded?: boolean;
+  readonly isEncoded?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -1203,7 +1203,7 @@ export interface LogsCustomPipelineProcessorPipeline {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}
   */
@@ -1238,7 +1238,7 @@ export interface LogsCustomPipelineProcessorServiceRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -1268,7 +1268,7 @@ export interface LogsCustomPipelineProcessorStatusRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -1298,13 +1298,13 @@ export interface LogsCustomPipelineProcessorStringBuilderProcessor {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * If it replaces all missing attributes of template by an empty string.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean;
+  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
   /**
   * The name of the processor.
   * 
@@ -1342,7 +1342,7 @@ export interface LogsCustomPipelineProcessorTraceIdRemapper {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor.
   * 
@@ -1372,7 +1372,7 @@ export interface LogsCustomPipelineProcessorUrlParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -1384,7 +1384,7 @@ export interface LogsCustomPipelineProcessorUrlParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
   */
-  readonly normalizeEndingSlashes?: boolean;
+  readonly normalizeEndingSlashes?: boolean | cdktf.IResolvable;
   /**
   * List of source attributes.
   * 
@@ -1416,13 +1416,13 @@ export interface LogsCustomPipelineProcessorUserAgentParser {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * If the source attribute is URL encoded or not.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_encoded LogsCustomPipeline#is_encoded}
   */
-  readonly isEncoded?: boolean;
+  readonly isEncoded?: boolean | cdktf.IResolvable;
   /**
   * Name of the processor
   * 
@@ -1574,6 +1574,11 @@ function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipelineProce
 */
 export class LogsCustomPipeline extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_custom_pipeline";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -1612,11 +1617,11 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean;
+  private _isEnabled?: boolean | cdktf.IResolvable;
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean ) {
+  public set isEnabled(value: boolean | cdktf.IResolvable ) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {

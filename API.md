@@ -4,9 +4,22 @@
 
 Name|Description
 ----|-----------
+[ApiKey](#cdktf-provider-datadog-apikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}.
+[ApplicationKey](#cdktf-provider-datadog-applicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}.
+[ChildOrganization](#cdktf-provider-datadog-childorganization)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}.
+[ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)|*No description*
+[ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)|*No description*
+[ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)|*No description*
+[ChildOrganizationSettingsSaml](#cdktf-provider-datadog-childorganizationsettingssaml)|*No description*
+[ChildOrganizationSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains)|*No description*
+[ChildOrganizationSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin)|*No description*
+[ChildOrganizationSettingsSamlStrictMode](#cdktf-provider-datadog-childorganizationsettingssamlstrictmode)|*No description*
+[ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)|*No description*
 [Dashboard](#cdktf-provider-datadog-dashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}.
 [DashboardJson](#cdktf-provider-datadog-dashboardjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}.
 [DashboardList](#cdktf-provider-datadog-dashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}.
+[DataDatadogApiKey](#cdktf-provider-datadog-datadatadogapikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}.
+[DataDatadogApplicationKey](#cdktf-provider-datadog-datadatadogapplicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key}.
 [DataDatadogDashboard](#cdktf-provider-datadog-datadatadogdashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
 [DataDatadogDashboardList](#cdktf-provider-datadog-datadatadogdashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
 [DataDatadogIpRanges](#cdktf-provider-datadog-datadatadogipranges)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
@@ -17,6 +30,9 @@ Name|Description
 [DataDatadogMonitorsMonitors](#cdktf-provider-datadog-datadatadogmonitorsmonitors)|*No description*
 [DataDatadogPermissions](#cdktf-provider-datadog-datadatadogpermissions)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}.
 [DataDatadogRole](#cdktf-provider-datadog-datadatadogrole)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}.
+[DataDatadogSecurityMonitoringFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfilters)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}.
+[DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)|*No description*
+[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter)|*No description*
 [DataDatadogSecurityMonitoringRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
 [DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)|*No description*
@@ -27,7 +43,9 @@ Name|Description
 [DataDatadogServiceLevelObjective](#cdktf-provider-datadog-datadatadogservicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
 [DataDatadogServiceLevelObjectives](#cdktf-provider-datadog-datadatadogservicelevelobjectives)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
 [DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)|*No description*
+[DataDatadogSyntheticsGlobalVariable](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}.
 [DataDatadogSyntheticsLocations](#cdktf-provider-datadog-datadatadogsyntheticslocations)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}.
+[DataDatadogUser](#cdktf-provider-datadog-datadatadoguser)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}.
 [DatadogProvider](#cdktf-provider-datadog-datadogprovider)|Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}.
 [Downtime](#cdktf-provider-datadog-downtime)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}.
 [IntegrationAws](#cdktf-provider-datadog-integrationaws)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}.
@@ -50,8 +68,10 @@ Name|Description
 [MetricMetadata](#cdktf-provider-datadog-metricmetadata)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata}.
 [MetricTagConfiguration](#cdktf-provider-datadog-metrictagconfiguration)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}.
 [Monitor](#cdktf-provider-datadog-monitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}.
+[OrganizationSettings](#cdktf-provider-datadog-organizationsettings)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings}.
 [Role](#cdktf-provider-datadog-role)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}.
 [SecurityMonitoringDefaultRule](#cdktf-provider-datadog-securitymonitoringdefaultrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}.
+[SecurityMonitoringFilter](#cdktf-provider-datadog-securitymonitoringfilter)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}.
 [SecurityMonitoringRule](#cdktf-provider-datadog-securitymonitoringrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}.
 [ServiceLevelObjective](#cdktf-provider-datadog-servicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective}.
 [SloCorrection](#cdktf-provider-datadog-slocorrection)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}.
@@ -65,6 +85,9 @@ Name|Description
 
 Name|Description
 ----|-----------
+[ApiKeyConfig](#cdktf-provider-datadog-apikeyconfig)|*No description*
+[ApplicationKeyConfig](#cdktf-provider-datadog-applicationkeyconfig)|*No description*
+[ChildOrganizationConfig](#cdktf-provider-datadog-childorganizationconfig)|*No description*
 [DashboardConfig](#cdktf-provider-datadog-dashboardconfig)|*No description*
 [DashboardJsonConfig](#cdktf-provider-datadog-dashboardjsonconfig)|*No description*
 [DashboardListConfig](#cdktf-provider-datadog-dashboardlistconfig)|*No description*
@@ -131,6 +154,7 @@ Name|Description
 [DashboardWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitioncustomlink)|*No description*
 [DashboardWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequest)|*No description*
 [DashboardWidgetGeomapDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformula)|*No description*
+[DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetGeomapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGeomapDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquery)|*No description*
 [DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerycomputequery)|*No description*
@@ -212,6 +236,7 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitioncustomlink)|*No description*
 [DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequest)|*No description*
 [DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerycomputequery)|*No description*
@@ -325,12 +350,23 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquerycolumns)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestconditionalformats)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulaconditionalformats)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerycomputequery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerymulticompute)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestprocessquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerycompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupbysort)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearch)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquerymetricquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryprocessquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerycomputequery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupby)|*No description*
@@ -349,8 +385,14 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerymulticompute)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestconditionalformats)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerycomputequery)|*No description*
@@ -438,7 +480,13 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupbysortquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerymulticompute)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerycomputequery)|*No description*
@@ -481,8 +529,14 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupbysortquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerymulticompute)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestconditionalformats)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerycomputequery)|*No description*
@@ -603,12 +657,23 @@ Name|Description
 [DashboardWidgetQueryTableDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquerycolumns)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestconditionalformats)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformula)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulaconditionalformats)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulalimit)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerycomputequery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupby)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupbysortquery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerymulticompute)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestprocessquery)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquery)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquery)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerycompute)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupby)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupbysort)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearch)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquerymetricquery)|*No description*
+[DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryprocessquery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerycomputequery)|*No description*
 [DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupby)|*No description*
@@ -627,8 +692,14 @@ Name|Description
 [DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetQueryValueDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquery)|*No description*
+[DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequery)|*No description*
+[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupby)|*No description*
+[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery)|*No description*
+[DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerymulticompute)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestconditionalformats)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformula)|*No description*
+[DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformulalimit)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquery)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerycomputequery)|*No description*
@@ -716,7 +787,13 @@ Name|Description
 [DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetTimeseriesDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquery)|*No description*
+[DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequery)|*No description*
+[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupby)|*No description*
+[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupbysortquery)|*No description*
+[DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerymulticompute)|*No description*
 [DashboardWidgetTimeseriesDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformula)|*No description*
+[DashboardWidgetTimeseriesDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetTimeseriesDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformulalimit)|*No description*
 [DashboardWidgetTimeseriesDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquery)|*No description*
 [DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerycomputequery)|*No description*
@@ -759,8 +836,14 @@ Name|Description
 [DashboardWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetToplistDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquery)|*No description*
+[DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequery)|*No description*
+[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupby)|*No description*
+[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupbysortquery)|*No description*
+[DashboardWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerymulticompute)|*No description*
 [DashboardWidgetToplistDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestconditionalformats)|*No description*
 [DashboardWidgetToplistDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformula)|*No description*
+[DashboardWidgetToplistDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformulaconditionalformats)|*No description*
 [DashboardWidgetToplistDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformulalimit)|*No description*
 [DashboardWidgetToplistDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquery)|*No description*
 [DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerycomputequery)|*No description*
@@ -789,6 +872,8 @@ Name|Description
 [DashboardWidgetToplistDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequeststyle)|*No description*
 [DashboardWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgettraceservicedefinition)|*No description*
 [DashboardWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetwidgetlayout)|*No description*
+[DataDatadogApiKeyConfig](#cdktf-provider-datadog-datadatadogapikeyconfig)|*No description*
+[DataDatadogApplicationKeyConfig](#cdktf-provider-datadog-datadatadogapplicationkeyconfig)|*No description*
 [DataDatadogDashboardConfig](#cdktf-provider-datadog-datadatadogdashboardconfig)|*No description*
 [DataDatadogDashboardListConfig](#cdktf-provider-datadog-datadatadogdashboardlistconfig)|*No description*
 [DataDatadogIpRangesConfig](#cdktf-provider-datadog-datadatadogiprangesconfig)|*No description*
@@ -796,10 +881,13 @@ Name|Description
 [DataDatadogMonitorsConfig](#cdktf-provider-datadog-datadatadogmonitorsconfig)|*No description*
 [DataDatadogPermissionsConfig](#cdktf-provider-datadog-datadatadogpermissionsconfig)|*No description*
 [DataDatadogRoleConfig](#cdktf-provider-datadog-datadatadogroleconfig)|*No description*
+[DataDatadogSecurityMonitoringFiltersConfig](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersconfig)|*No description*
 [DataDatadogSecurityMonitoringRulesConfig](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesconfig)|*No description*
 [DataDatadogServiceLevelObjectiveConfig](#cdktf-provider-datadog-datadatadogservicelevelobjectiveconfig)|*No description*
 [DataDatadogServiceLevelObjectivesConfig](#cdktf-provider-datadog-datadatadogservicelevelobjectivesconfig)|*No description*
+[DataDatadogSyntheticsGlobalVariableConfig](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariableconfig)|*No description*
 [DataDatadogSyntheticsLocationsConfig](#cdktf-provider-datadog-datadatadogsyntheticslocationsconfig)|*No description*
+[DataDatadogUserConfig](#cdktf-provider-datadog-datadatadoguserconfig)|*No description*
 [DatadogProviderConfig](#cdktf-provider-datadog-datadogproviderconfig)|*No description*
 [DowntimeConfig](#cdktf-provider-datadog-downtimeconfig)|*No description*
 [DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)|*No description*
@@ -874,11 +962,19 @@ Name|Description
 [MonitorConfig](#cdktf-provider-datadog-monitorconfig)|*No description*
 [MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)|*No description*
 [MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)|*No description*
+[OrganizationSettingsConfig](#cdktf-provider-datadog-organizationsettingsconfig)|*No description*
+[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)|*No description*
+[OrganizationSettingsSettingsSaml](#cdktf-provider-datadog-organizationsettingssettingssaml)|*No description*
+[OrganizationSettingsSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomains)|*No description*
+[OrganizationSettingsSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedlogin)|*No description*
+[OrganizationSettingsSettingsSamlStrictMode](#cdktf-provider-datadog-organizationsettingssettingssamlstrictmode)|*No description*
 [RoleConfig](#cdktf-provider-datadog-roleconfig)|*No description*
 [RolePermission](#cdktf-provider-datadog-rolepermission)|*No description*
 [SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)|*No description*
 [SecurityMonitoringDefaultRuleConfig](#cdktf-provider-datadog-securitymonitoringdefaultruleconfig)|*No description*
 [SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)|*No description*
+[SecurityMonitoringFilterConfig](#cdktf-provider-datadog-securitymonitoringfilterconfig)|*No description*
+[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)|*No description*
 [SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)|*No description*
 [SecurityMonitoringRuleConfig](#cdktf-provider-datadog-securitymonitoringruleconfig)|*No description*
 [SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)|*No description*
@@ -923,11 +1019,484 @@ Name|Description
 
 
 
+## class ApiKey  <a id="cdktf-provider-datadog-apikey"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key} Resource.
+
+```ts
+new ApiKey(scope: Construct, id: string, config: ApiKeyConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[ApiKeyConfig](#cdktf-provider-datadog-apikeyconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **name** (<code>string</code>)  Name for API Key. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**key** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-apikey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class ApplicationKey  <a id="cdktf-provider-datadog-applicationkey"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key} Resource.
+
+```ts
+new ApplicationKey(scope: Construct, id: string, config: ApplicationKeyConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[ApplicationKeyConfig](#cdktf-provider-datadog-applicationkeyconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **name** (<code>string</code>)  Name for Application Key. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**key** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-applicationkey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class ChildOrganization  <a id="cdktf-provider-datadog-childorganization"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization} Resource.
+
+```ts
+new ChildOrganization(scope: Construct, id: string, config: ChildOrganizationConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[ChildOrganizationConfig](#cdktf-provider-datadog-childorganizationconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **name** (<code>string</code>)  Name for Child Organization after creation. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**description** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+**publicId** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### apiKey(index) <a id="cdktf-provider-datadog-childorganization-apikey"></a>
+
+
+
+```ts
+apiKey(index: string): ChildOrganizationApiKey
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)</code>
+
+#### applicationKey(index) <a id="cdktf-provider-datadog-childorganization-applicationkey"></a>
+
+
+
+```ts
+applicationKey(index: string): ChildOrganizationApplicationKey
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)</code>
+
+#### settings(index) <a id="cdktf-provider-datadog-childorganization-settings"></a>
+
+
+
+```ts
+settings(index: string): ChildOrganizationSettings
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)</code>
+
+#### user(index) <a id="cdktf-provider-datadog-childorganization-user"></a>
+
+
+
+```ts
+user(index: string): ChildOrganizationUser
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)</code>
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-childorganization-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class ChildOrganizationApiKey  <a id="cdktf-provider-datadog-childorganizationapikey"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationApiKey(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**key** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+
+
+
+## class ChildOrganizationApplicationKey  <a id="cdktf-provider-datadog-childorganizationapplicationkey"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationApplicationKey(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**hash** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**owner** | <code>string</code> | <span></span>
+
+
+
+## class ChildOrganizationSettings  <a id="cdktf-provider-datadog-childorganizationsettings"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettings(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**privateWidgetShare** | <code>any</code> | <span></span>
+**saml** | <code>any</code> | <span></span>
+**samlAutocreateAccessRole** | <code>string</code> | <span></span>
+**samlAutocreateUsersDomains** | <code>any</code> | <span></span>
+**samlCanBeEnabled** | <code>any</code> | <span></span>
+**samlIdpEndpoint** | <code>string</code> | <span></span>
+**samlIdpInitiatedLogin** | <code>any</code> | <span></span>
+**samlIdpMetadataUploaded** | <code>any</code> | <span></span>
+**samlLoginUrl** | <code>string</code> | <span></span>
+**samlStrictMode** | <code>any</code> | <span></span>
+
+
+
+## class ChildOrganizationSettingsSaml  <a id="cdktf-provider-datadog-childorganizationsettingssaml"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSaml(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled** | <code>any</code> | <span></span>
+
+
+
+## class ChildOrganizationSettingsSamlAutocreateUsersDomains  <a id="cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSamlAutocreateUsersDomains(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**domains** | <code>Array<string></code> | <span></span>
+**enabled** | <code>any</code> | <span></span>
+
+
+
+## class ChildOrganizationSettingsSamlIdpInitiatedLogin  <a id="cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSamlIdpInitiatedLogin(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled** | <code>any</code> | <span></span>
+
+
+
+## class ChildOrganizationSettingsSamlStrictMode  <a id="cdktf-provider-datadog-childorganizationsettingssamlstrictmode"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSamlStrictMode(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled** | <code>any</code> | <span></span>
+
+
+
+## class ChildOrganizationUser  <a id="cdktf-provider-datadog-childorganizationuser"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationUser(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**accessRole** | <code>string</code> | <span></span>
+**email** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+
+
+
 ## class Dashboard  <a id="cdktf-provider-datadog-dashboard"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -949,10 +1518,10 @@ new Dashboard(scope: Construct, id: string, config: DashboardConfig)
   * **layoutType** (<code>string</code>)  The layout type of the dashboard. Valid values are `ordered`, `free`. 
   * **title** (<code>string</code>)  The title of the dashboard. 
   * **widget** (<code>Array<[DashboardWidget](#cdktf-provider-datadog-dashboardwidget)></code>)  widget block. 
-  * **dashboardLists** (<code>Array<number></code>)  The list of dashboard lists this dashboard belongs to. __*Optional*__
+  * **dashboardLists** (<code>Array<number></code>)  A list of dashboard lists this dashboard belongs to. __*Optional*__
   * **description** (<code>string</code>)  The description of the dashboard. __*Optional*__
-  * **isReadOnly** (<code>boolean</code>)  Whether this dashboard is read-only. __*Optional*__
-  * **notifyList** (<code>Array<string></code>)  The list of handles of users to notify when changes are made to this dashboard. __*Optional*__
+  * **isReadOnly** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether this dashboard is read-only. __*Optional*__
+  * **notifyList** (<code>Array<string></code>)  The list of handles for the users to notify when changes are made to this dashboard. __*Optional*__
   * **reflowType** (<code>string</code>)  The reflow type of a new dashboard layout. __*Optional*__
   * **restrictedRoles** (<code>Array<string></code>)  Role UUIDs corresponding to users authorized to edit the dashboard. **This feature is currently in beta.**. __*Optional*__
   * **templateVariable** (<code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code>)  template_variable block. __*Optional*__
@@ -970,7 +1539,7 @@ Name | Type | Description
 **dashboardListsRemoved** | <code>any</code> | <span></span>
 **description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**isReadOnly** | <code>boolean</code> | <span></span>
+**isReadOnly** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **layoutType** | <code>string</code> | <span></span>
 **layoutTypeInput** | <code>string</code> | <span></span>
 **notifyList** | <code>Array<string></code> | <span></span>
@@ -985,13 +1554,14 @@ Name | Type | Description
 **widgetInput** | <code>Array<[DashboardWidget](#cdktf-provider-datadog-dashboardwidget)></code> | <span></span>
 **dashboardListsInput**? | <code>Array<number></code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**isReadOnlyInput**? | <code>boolean</code> | __*Optional*__
+**isReadOnlyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **notifyListInput**? | <code>Array<string></code> | __*Optional*__
 **reflowTypeInput**? | <code>string</code> | __*Optional*__
 **restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
 **templateVariableInput**? | <code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code> | __*Optional*__
 **templateVariablePresetInput**? | <code>Array<[DashboardTemplateVariablePreset](#cdktf-provider-datadog-dashboardtemplatevariablepreset)></code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1122,7 +1692,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1160,6 +1730,7 @@ Name | Type | Description
 **url** | <code>string</code> | <span></span>
 **dashboardListsInput**? | <code>Array<number></code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1206,7 +1777,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1240,6 +1811,7 @@ Name | Type | Description
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
 **dashItemInput**? | <code>Array<[DashboardListDashItem](#cdktf-provider-datadog-dashboardlistdashitem)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1270,11 +1842,173 @@ __Returns__:
 
 
 
+## class DataDatadogApiKey  <a id="cdktf-provider-datadog-datadatadogapikey"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key} Data Source.
+
+```ts
+new DataDatadogApiKey(scope: Construct, id: string, config?: DataDatadogApiKeyConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogApiKeyConfig](#cdktf-provider-datadog-datadatadogapikeyconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **id** (<code>string</code>)  Id for API Key. __*Optional*__
+  * **name** (<code>string</code>)  Name for API Key. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**key** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-datadog-datadatadogapikey-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### resetName() <a id="cdktf-provider-datadog-datadatadogapikey-resetname"></a>
+
+
+
+```ts
+resetName(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogapikey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataDatadogApplicationKey  <a id="cdktf-provider-datadog-datadatadogapplicationkey"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key} Data Source.
+
+```ts
+new DataDatadogApplicationKey(scope: Construct, id: string, config?: DataDatadogApplicationKeyConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogApplicationKeyConfig](#cdktf-provider-datadog-datadatadogapplicationkeyconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **id** (<code>string</code>)  Id for Application Key. __*Optional*__
+  * **name** (<code>string</code>)  Name for Application Key. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**key** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-datadog-datadatadogapplicationkey-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### resetName() <a id="cdktf-provider-datadog-datadatadogapplicationkey-resetname"></a>
+
+
+
+```ts
+resetName(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogapplicationkey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataDatadogDashboard  <a id="cdktf-provider-datadog-datadatadogdashboard"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1307,6 +2041,7 @@ Name | Type | Description
 **nameInput** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1329,7 +2064,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1360,6 +2095,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1382,7 +2118,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1424,6 +2160,7 @@ Name | Type | Description
 **syntheticsIpv6** | <code>Array<string></code> | <span></span>
 **webhooksIpv4** | <code>Array<string></code> | <span></span>
 **webhooksIpv6** | <code>Array<string></code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1472,7 +2209,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1502,24 +2239,25 @@ new DataDatadogMonitor(scope: Construct, id: string, config?: DataDatadogMonitor
 
 Name | Type | Description 
 -----|------|-------------
-**enableLogsSample** | <code>boolean</code> | <span></span>
+**enableLogsSample** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **escalationMessage** | <code>string</code> | <span></span>
 **evaluationDelay** | <code>number</code> | <span></span>
-**groupbySimpleMonitor** | <code>boolean</code> | <span></span>
+**groupbySimpleMonitor** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**includeTags** | <code>boolean</code> | <span></span>
-**locked** | <code>boolean</code> | <span></span>
+**includeTags** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**locked** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **monitorTagsFilter** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameFilter** | <code>string</code> | <span></span>
+**newGroupDelay** | <code>number</code> | <span></span>
 **newHostDelay** | <code>number</code> | <span></span>
 **noDataTimeframe** | <code>number</code> | <span></span>
-**notifyAudit** | <code>boolean</code> | <span></span>
-**notifyNoData** | <code>boolean</code> | <span></span>
+**notifyAudit** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**notifyNoData** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **query** | <code>string</code> | <span></span>
 **renotifyInterval** | <code>number</code> | <span></span>
-**requireFullWindow** | <code>boolean</code> | <span></span>
+**requireFullWindow** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **restrictedRoles** | <code>Array<string></code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **tagsFilter** | <code>Array<string></code> | <span></span>
@@ -1528,6 +2266,7 @@ Name | Type | Description
 **monitorTagsFilterInput**? | <code>Array<string></code> | __*Optional*__
 **nameFilterInput**? | <code>string</code> | __*Optional*__
 **tagsFilterInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1678,7 +2417,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors.html datadog_monitors}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1715,6 +2454,7 @@ Name | Type | Description
 **monitorTagsFilterInput**? | <code>Array<string></code> | __*Optional*__
 **nameFilterInput**? | <code>string</code> | __*Optional*__
 **tagsFilterInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1818,7 +2558,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1846,6 +2586,7 @@ new DataDatadogPermissions(scope: Construct, id: string, config?: DataDatadogPer
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1881,7 +2622,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1914,6 +2655,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **userCount** | <code>number</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -1932,11 +2674,142 @@ __Returns__:
 
 
 
+## class DataDatadogSecurityMonitoringFilters  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfilters"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters} Data Source.
+
+```ts
+new DataDatadogSecurityMonitoringFilters(scope: Construct, id: string, config?: DataDatadogSecurityMonitoringFiltersConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogSecurityMonitoringFiltersConfig](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**filtersIds** | <code>Array<string></code> | <span></span>
+**id** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### filters(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfilters-filters"></a>
+
+
+
+```ts
+filters(index: string): DataDatadogSecurityMonitoringFiltersFilters
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)</code>
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfilters-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataDatadogSecurityMonitoringFiltersFilters  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringFiltersFilters(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**exclusionFilter** | <code>any</code> | <span></span>
+**filteredDataType** | <code>string</code> | <span></span>
+**isEnabled** | <code>any</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**version** | <code>number</code> | <span></span>
+
+
+
+## class DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+
+
+
 ## class DataDatadogSecurityMonitoringRules  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrules"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1955,10 +2828,10 @@ new DataDatadogSecurityMonitoringRules(scope: Construct, id: string, config?: Da
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **defaultOnlyFilter** (<code>boolean</code>)  Limit the search to default rules. __*Optional*__
+  * **defaultOnlyFilter** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Limit the search to default rules. __*Optional*__
   * **nameFilter** (<code>string</code>)  A rule name to limit the search. __*Optional*__
   * **tagsFilter** (<code>Array<string></code>)  A list of tags to limit the search. __*Optional*__
-  * **userOnlyFilter** (<code>boolean</code>)  Limit the search to user rules. __*Optional*__
+  * **userOnlyFilter** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Limit the search to user rules. __*Optional*__
 
 
 
@@ -1967,16 +2840,17 @@ new DataDatadogSecurityMonitoringRules(scope: Construct, id: string, config?: Da
 
 Name | Type | Description 
 -----|------|-------------
-**defaultOnlyFilter** | <code>boolean</code> | <span></span>
+**defaultOnlyFilter** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **nameFilter** | <code>string</code> | <span></span>
 **ruleIds** | <code>Array<string></code> | <span></span>
 **tagsFilter** | <code>Array<string></code> | <span></span>
-**userOnlyFilter** | <code>boolean</code> | <span></span>
-**defaultOnlyFilterInput**? | <code>boolean</code> | __*Optional*__
+**userOnlyFilter** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**defaultOnlyFilterInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameFilterInput**? | <code>string</code> | __*Optional*__
 **tagsFilterInput**? | <code>Array<string></code> | __*Optional*__
-**userOnlyFilterInput**? | <code>boolean</code> | __*Optional*__
+**userOnlyFilterInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -2083,9 +2957,9 @@ new DataDatadogSecurityMonitoringRulesRules(terraformResource: ITerraformResourc
 Name | Type | Description 
 -----|------|-------------
 **case** | <code>any</code> | <span></span>
-**enabled** | <code>boolean</code> | <span></span>
+**enabled** | <code>any</code> | <span></span>
 **filter** | <code>any</code> | <span></span>
-**hasExtendedTitle** | <code>boolean</code> | <span></span>
+**hasExtendedTitle** | <code>any</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **options** | <code>any</code> | <span></span>
@@ -2262,7 +3136,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2303,6 +3177,7 @@ Name | Type | Description
 **metricsQueryInput**? | <code>string</code> | __*Optional*__
 **nameQueryInput**? | <code>string</code> | __*Optional*__
 **tagsQueryInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -2373,7 +3248,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2413,6 +3288,7 @@ Name | Type | Description
 **metricsQueryInput**? | <code>string</code> | __*Optional*__
 **nameQueryInput**? | <code>string</code> | __*Optional*__
 **tagsQueryInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -2524,11 +3400,66 @@ Name | Type | Description
 
 
 
+## class DataDatadogSyntheticsGlobalVariable  <a id="cdktf-provider-datadog-datadatadogsyntheticsglobalvariable"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable} Data Source.
+
+```ts
+new DataDatadogSyntheticsGlobalVariable(scope: Construct, id: string, config: DataDatadogSyntheticsGlobalVariableConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogSyntheticsGlobalVariableConfig](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariableconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **name** (<code>string</code>)  The synthetics global variable name to search for. Must only match one global variable. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogsyntheticsglobalvariable-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataDatadogSyntheticsLocations  <a id="cdktf-provider-datadog-datadatadogsyntheticslocations"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2556,6 +3487,7 @@ new DataDatadogSyntheticsLocations(scope: Construct, id: string, config?: DataDa
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -2587,11 +3519,67 @@ __Returns__:
 
 
 
+## class DataDatadogUser  <a id="cdktf-provider-datadog-datadatadoguser"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user} Data Source.
+
+```ts
+new DataDatadogUser(scope: Construct, id: string, config: DataDatadogUserConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogUserConfig](#cdktf-provider-datadog-datadatadoguserconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **filter** (<code>string</code>)  Filter all users by the given string. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**email** | <code>string</code> | <span></span>
+**filter** | <code>string</code> | <span></span>
+**filterInput** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadoguser-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DatadogProvider  <a id="cdktf-provider-datadog-datadogprovider"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 
 ### Initializer
@@ -2610,9 +3598,9 @@ new DatadogProvider(scope: Construct, id: string, config?: DatadogProviderConfig
   * **apiKey** (<code>string</code>)  (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable. __*Optional*__
   * **apiUrl** (<code>string</code>)  The API URL. __*Optional*__
   * **appKey** (<code>string</code>)  (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. __*Optional*__
-  * **httpClientRetryEnabled** (<code>boolean</code>)  Enables request retries on HTTP status codes 429 and 5xx. __*Optional*__
+  * **httpClientRetryEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enables request retries on HTTP status codes 429 and 5xx. __*Optional*__
   * **httpClientRetryTimeout** (<code>number</code>)  The HTTP request retry timeout period. __*Optional*__
-  * **validate** (<code>boolean</code>)  Enables validation of the provided API and APP keys during provider initialization. __*Optional*__
+  * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enables validation of the provided API and APP keys during provider initialization. __*Optional*__
 
 
 
@@ -2629,12 +3617,13 @@ Name | Type | Description
 **apiUrlInput**? | <code>string</code> | __*Optional*__
 **appKey**? | <code>string</code> | __*Optional*__
 **appKeyInput**? | <code>string</code> | __*Optional*__
-**httpClientRetryEnabled**? | <code>boolean</code> | __*Optional*__
-**httpClientRetryEnabledInput**? | <code>boolean</code> | __*Optional*__
+**httpClientRetryEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**httpClientRetryEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **httpClientRetryTimeout**? | <code>number</code> | __*Optional*__
 **httpClientRetryTimeoutInput**? | <code>number</code> | __*Optional*__
-**validate**? | <code>boolean</code> | __*Optional*__
-**validateInput**? | <code>boolean</code> | __*Optional*__
+**validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**validateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -2741,7 +3730,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2778,9 +3767,9 @@ new Downtime(scope: Construct, id: string, config: DowntimeConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**active** | <code>boolean</code> | <span></span>
+**active** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **activeChildId** | <code>number</code> | <span></span>
-**disabled** | <code>boolean</code> | <span></span>
+**disabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **end** | <code>number</code> | <span></span>
 **endDate** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
@@ -2802,6 +3791,7 @@ Name | Type | Description
 **startDateInput**? | <code>string</code> | __*Optional*__
 **startInput**? | <code>number</code> | __*Optional*__
 **timezoneInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -2932,7 +3922,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2953,7 +3943,7 @@ new IntegrationAws(scope: Construct, id: string, config?: IntegrationAwsConfig)
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **accessKeyId** (<code>string</code>)  Your AWS access key ID. Only required if your AWS account is a GovCloud or China account. __*Optional*__
   * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. __*Optional*__
-  * **accountSpecificNamespaceRules** (<code>Map<string, boolean></code>)  Enables or disables metric collection for specific AWS namespaces for this AWS account only. __*Optional*__
+  * **accountSpecificNamespaceRules** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code>)  Enables or disables metric collection for specific AWS namespaces for this AWS account only. __*Optional*__
   * **excludedRegions** (<code>Array<string></code>)  An array of AWS regions to exclude from metrics collection. __*Optional*__
   * **filterTags** (<code>Array<string></code>)  Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses when collecting metrics from EC2. __*Optional*__
   * **hostTags** (<code>Array<string></code>)  Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration. __*Optional*__
@@ -2969,7 +3959,7 @@ Name | Type | Description
 -----|------|-------------
 **accessKeyId** | <code>string</code> | <span></span>
 **accountId** | <code>string</code> | <span></span>
-**accountSpecificNamespaceRules** | <code>Map<string, boolean></code> | <span></span>
+**accountSpecificNamespaceRules** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code> | <span></span>
 **excludedRegions** | <code>Array<string></code> | <span></span>
 **externalId** | <code>string</code> | <span></span>
 **filterTags** | <code>Array<string></code> | <span></span>
@@ -2979,12 +3969,13 @@ Name | Type | Description
 **secretAccessKey** | <code>string</code> | <span></span>
 **accessKeyIdInput**? | <code>string</code> | __*Optional*__
 **accountIdInput**? | <code>string</code> | __*Optional*__
-**accountSpecificNamespaceRulesInput**? | <code>Map<string, boolean></code> | __*Optional*__
+**accountSpecificNamespaceRulesInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code> | __*Optional*__
 **excludedRegionsInput**? | <code>Array<string></code> | __*Optional*__
 **filterTagsInput**? | <code>Array<string></code> | __*Optional*__
 **hostTagsInput**? | <code>Array<string></code> | __*Optional*__
 **roleNameInput**? | <code>string</code> | __*Optional*__
 **secretAccessKeyInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3103,7 +4094,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3137,6 +4128,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **lambdaArn** | <code>string</code> | <span></span>
 **lambdaArnInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3159,7 +4151,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3193,6 +4185,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **services** | <code>Array<string></code> | <span></span>
 **servicesInput** | <code>Array<string></code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3215,7 +4208,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3252,6 +4245,7 @@ Name | Type | Description
 **namespaceInput** | <code>string</code> | <span></span>
 **tagFilterStr** | <code>string</code> | <span></span>
 **tagFilterStrInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3274,7 +4268,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html datadog_integration_azure}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3314,6 +4308,7 @@ Name | Type | Description
 **tenantName** | <code>string</code> | <span></span>
 **tenantNameInput** | <code>string</code> | <span></span>
 **hostFiltersInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3348,7 +4343,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3372,7 +4367,7 @@ new IntegrationGcp(scope: Construct, id: string, config: IntegrationGcpConfig)
   * **privateKey** (<code>string</code>)  Your private key name found in your JSON service account key. 
   * **privateKeyId** (<code>string</code>)  Your private key ID found in your JSON service account key. 
   * **projectId** (<code>string</code>)  Your Google Cloud project ID found in your JSON service account key. 
-  * **automute** (<code>boolean</code>)  Silence monitors for expected GCE instance shutdowns. __*Optional*__
+  * **automute** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Silence monitors for expected GCE instance shutdowns. __*Optional*__
   * **hostFilters** (<code>string</code>)  Limit the GCE instances that are pulled into Datadog by using tags. __*Optional*__
 
 
@@ -3382,7 +4377,7 @@ new IntegrationGcp(scope: Construct, id: string, config: IntegrationGcpConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**automute** | <code>boolean</code> | <span></span>
+**automute** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **clientEmail** | <code>string</code> | <span></span>
 **clientEmailInput** | <code>string</code> | <span></span>
 **clientId** | <code>string</code> | <span></span>
@@ -3395,8 +4390,9 @@ Name | Type | Description
 **privateKeyInput** | <code>string</code> | <span></span>
 **projectId** | <code>string</code> | <span></span>
 **projectIdInput** | <code>string</code> | <span></span>
-**automuteInput**? | <code>boolean</code> | __*Optional*__
+**automuteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hostFiltersInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3443,7 +4439,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3480,6 +4476,7 @@ Name | Type | Description
 **subdomainInput** | <code>string</code> | <span></span>
 **apiTokenInput**? | <code>string</code> | __*Optional*__
 **schedulesInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3526,7 +4523,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3560,6 +4557,7 @@ Name | Type | Description
 **serviceKeyInput** | <code>string</code> | <span></span>
 **serviceName** | <code>string</code> | <span></span>
 **serviceNameInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3582,7 +4580,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3619,6 +4617,7 @@ Name | Type | Description
 **display** | <code>Array<[IntegrationSlackChannelDisplay](#cdktf-provider-datadog-integrationslackchanneldisplay)></code> | <span></span>
 **displayInput** | <code>Array<[IntegrationSlackChannelDisplay](#cdktf-provider-datadog-integrationslackchanneldisplay)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3641,7 +4640,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3664,7 +4663,7 @@ new LogsArchive(scope: Construct, id: string, config: LogsArchiveConfig)
   * **query** (<code>string</code>)  The archive query/filter. Logs matching this query are included in the archive. 
   * **azureArchive** (<code>Array<[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)></code>)  azure_archive block. __*Optional*__
   * **gcsArchive** (<code>Array<[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)></code>)  gcs_archive block. __*Optional*__
-  * **includeTags** (<code>boolean</code>)  To store the tags in the archive, set the value `true`. __*Optional*__
+  * **includeTags** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  To store the tags in the archive, set the value `true`. __*Optional*__
   * **rehydrationTags** (<code>Array<string></code>)  An array of tags to add to rehydrated logs from an archive. __*Optional*__
   * **s3Archive** (<code>Array<[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)></code>)  s3_archive block. __*Optional*__
 
@@ -3678,7 +4677,7 @@ Name | Type | Description
 **azureArchive** | <code>Array<[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)></code> | <span></span>
 **gcsArchive** | <code>Array<[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**includeTags** | <code>boolean</code> | <span></span>
+**includeTags** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
@@ -3687,9 +4686,10 @@ Name | Type | Description
 **s3Archive** | <code>Array<[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)></code> | <span></span>
 **azureArchiveInput**? | <code>Array<[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)></code> | __*Optional*__
 **gcsArchiveInput**? | <code>Array<[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)></code> | __*Optional*__
-**includeTagsInput**? | <code>boolean</code> | __*Optional*__
+**includeTagsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **rehydrationTagsInput**? | <code>Array<string></code> | __*Optional*__
 **s3ArchiveInput**? | <code>Array<[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3772,7 +4772,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3803,6 +4803,7 @@ Name | Type | Description
 **archiveIds** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **archiveIdsInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3837,7 +4838,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html datadog_logs_custom_pipeline}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3858,7 +4859,7 @@ new LogsCustomPipeline(scope: Construct, id: string, config: LogsCustomPipelineC
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **filter** (<code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code>)  filter block. 
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}. 
-  * **isEnabled** (<code>boolean</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}. __*Optional*__
+  * **isEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}. __*Optional*__
   * **processor** (<code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code>)  processor block. __*Optional*__
 
 
@@ -3871,12 +4872,13 @@ Name | Type | Description
 **filter** | <code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code> | <span></span>
 **filterInput** | <code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**isEnabled** | <code>boolean</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
 **processor** | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | <span></span>
-**isEnabledInput**? | <code>boolean</code> | __*Optional*__
+**isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **processorInput**? | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -3923,7 +4925,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3945,7 +4947,7 @@ new LogsIndex(scope: Construct, id: string, config: LogsIndexConfig)
   * **filter** (<code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code>)  filter block. 
   * **name** (<code>string</code>)  The name of the index. 
   * **dailyLimit** (<code>number</code>)  The number of log events you can send in this index per day before you are rate-limited. __*Optional*__
-  * **disableDailyLimit** (<code>boolean</code>)  If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). __*Optional*__
+  * **disableDailyLimit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). __*Optional*__
   * **exclusionFilter** (<code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code>)  exclusion_filter block. __*Optional*__
   * **retentionDays** (<code>number</code>)  The number of days before logs are deleted from this index. __*Optional*__
 
@@ -3957,7 +4959,7 @@ new LogsIndex(scope: Construct, id: string, config: LogsIndexConfig)
 Name | Type | Description 
 -----|------|-------------
 **dailyLimit** | <code>number</code> | <span></span>
-**disableDailyLimit** | <code>boolean</code> | <span></span>
+**disableDailyLimit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **exclusionFilter** | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | <span></span>
 **filter** | <code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code> | <span></span>
 **filterInput** | <code>Array<[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)></code> | <span></span>
@@ -3966,9 +4968,10 @@ Name | Type | Description
 **nameInput** | <code>string</code> | <span></span>
 **retentionDays** | <code>number</code> | <span></span>
 **dailyLimitInput**? | <code>number</code> | __*Optional*__
-**disableDailyLimitInput**? | <code>boolean</code> | __*Optional*__
+**disableDailyLimitInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **exclusionFilterInput**? | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | __*Optional*__
 **retentionDaysInput**? | <code>number</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4039,7 +5042,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4073,6 +5076,7 @@ Name | Type | Description
 **indexesInput** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4095,7 +5099,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4114,7 +5118,7 @@ new LogsIntegrationPipeline(scope: Construct, id: string, config?: LogsIntegrati
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **isEnabled** (<code>boolean</code>)  Boolean value to enable your pipeline. __*Optional*__
+  * **isEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Boolean value to enable your pipeline. __*Optional*__
 
 
 
@@ -4124,8 +5128,9 @@ new LogsIntegrationPipeline(scope: Construct, id: string, config?: LogsIntegrati
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**isEnabled** | <code>boolean</code> | <span></span>
-**isEnabledInput**? | <code>boolean</code> | __*Optional*__
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4160,7 +5165,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4200,6 +5205,7 @@ Name | Type | Description
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
 **groupByInput**? | <code>Array<[LogsMetricGroupBy](#cdktf-provider-datadog-logsmetricgroupby)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4234,7 +5240,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4268,6 +5274,7 @@ Name | Type | Description
 **nameInput** | <code>string</code> | <span></span>
 **pipelines** | <code>Array<string></code> | <span></span>
 **pipelinesInput** | <code>Array<string></code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4290,7 +5297,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4339,6 +5346,7 @@ Name | Type | Description
 **statsdIntervalInput**? | <code>number</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
 **unitInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4433,7 +5441,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4455,7 +5463,7 @@ new MetricTagConfiguration(scope: Construct, id: string, config: MetricTagConfig
   * **metricName** (<code>string</code>)  The metric name for this resource. 
   * **metricType** (<code>string</code>)  The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`. 
   * **tags** (<code>Array<string></code>)  A list of tag keys that will be queryable for your metric. 
-  * **includePercentiles** (<code>boolean</code>)  Toggle to include/exclude percentiles for a distribution metric. __*Optional*__
+  * **includePercentiles** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Toggle to include/exclude percentiles for a distribution metric. __*Optional*__
 
 
 
@@ -4465,14 +5473,15 @@ new MetricTagConfiguration(scope: Construct, id: string, config: MetricTagConfig
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**includePercentiles** | <code>boolean</code> | <span></span>
+**includePercentiles** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **metricName** | <code>string</code> | <span></span>
 **metricNameInput** | <code>string</code> | <span></span>
 **metricType** | <code>string</code> | <span></span>
 **metricTypeInput** | <code>string</code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **tagsInput** | <code>Array<string></code> | <span></span>
-**includePercentilesInput**? | <code>boolean</code> | __*Optional*__
+**includePercentilesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4507,7 +5516,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4530,26 +5539,27 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **name** (<code>string</code>)  Name of Datadog monitor. 
   * **query** (<code>string</code>)  The monitor query to notify on. 
   * **type** (<code>string</code>)  The type of the monitor. 
-  * **enableLogsSample** (<code>boolean</code>)  A boolean indicating whether or not to include a list of log values which triggered the alert. __*Optional*__
+  * **enableLogsSample** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether or not to include a list of log values which triggered the alert. __*Optional*__
   * **escalationMessage** (<code>string</code>)  A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. __*Optional*__
   * **evaluationDelay** (<code>number</code>)  (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. __*Optional*__
-  * **forceDelete** (<code>boolean</code>)  A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). __*Optional*__
-  * **groupbySimpleMonitor** (<code>boolean</code>)  Whether or not to trigger one alert if any source breaches a threshold. __*Optional*__
-  * **includeTags** (<code>boolean</code>)  A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. __*Optional*__
-  * **locked** (<code>boolean</code>)  A boolean indicating whether changes to to this monitor should be restricted to the creator or admins. __*Optional*__
+  * **forceDelete** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). __*Optional*__
+  * **groupbySimpleMonitor** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not to trigger one alert if any source breaches a threshold. __*Optional*__
+  * **includeTags** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. __*Optional*__
+  * **locked** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether changes to to this monitor should be restricted to the creator or admins. __*Optional*__
   * **monitorThresholds** (<code>Array<[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)></code>)  monitor_thresholds block. __*Optional*__
   * **monitorThresholdWindows** (<code>Array<[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)></code>)  monitor_threshold_windows block. __*Optional*__
+  * **newGroupDelay** (<code>number</code>)  Time (in seconds) to skip evaluations for new groups. __*Optional*__
   * **newHostDelay** (<code>number</code>)  Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. __*Optional*__
   * **noDataTimeframe** (<code>number</code>)  The number of minutes before a monitor will notify when data stops reporting. Provider defaults to 10 minutes. __*Optional*__
-  * **notifyAudit** (<code>boolean</code>)  A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. __*Optional*__
-  * **notifyNoData** (<code>boolean</code>)  A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. __*Optional*__
+  * **notifyAudit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. __*Optional*__
+  * **notifyNoData** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. __*Optional*__
   * **priority** (<code>number</code>)  Integer from 1 (high) to 5 (low) indicating alert severity. __*Optional*__
   * **renotifyInterval** (<code>number</code>)  The number of minutes after the last notification before a monitor will re-notify on the current status. __*Optional*__
-  * **requireFullWindow** (<code>boolean</code>)  A boolean indicating whether this monitor needs a full window of data before it's evaluated. __*Optional*__
+  * **requireFullWindow** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor needs a full window of data before it's evaluated. __*Optional*__
   * **restrictedRoles** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#restricted_roles Monitor#restricted_roles}. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your monitor. __*Optional*__
   * **timeoutH** (<code>number</code>)  The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state. __*Optional*__
-  * **validate** (<code>boolean</code>)  If set to `false`, skip the validation call done during plan. __*Optional*__
+  * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If set to `false`, skip the validation call done during plan. __*Optional*__
 
 
 
@@ -4558,55 +5568,58 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**enableLogsSample** | <code>boolean</code> | <span></span>
+**enableLogsSample** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **escalationMessage** | <code>string</code> | <span></span>
 **evaluationDelay** | <code>number</code> | <span></span>
-**forceDelete** | <code>boolean</code> | <span></span>
-**groupbySimpleMonitor** | <code>boolean</code> | <span></span>
+**forceDelete** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**groupbySimpleMonitor** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**includeTags** | <code>boolean</code> | <span></span>
-**locked** | <code>boolean</code> | <span></span>
+**includeTags** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**locked** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **messageInput** | <code>string</code> | <span></span>
 **monitorThresholdWindows** | <code>Array<[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)></code> | <span></span>
 **monitorThresholds** | <code>Array<[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameInput** | <code>string</code> | <span></span>
+**newGroupDelay** | <code>number</code> | <span></span>
 **newHostDelay** | <code>number</code> | <span></span>
 **noDataTimeframe** | <code>number</code> | <span></span>
-**notifyAudit** | <code>boolean</code> | <span></span>
-**notifyNoData** | <code>boolean</code> | <span></span>
+**notifyAudit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**notifyNoData** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **priority** | <code>number</code> | <span></span>
 **query** | <code>string</code> | <span></span>
 **queryInput** | <code>string</code> | <span></span>
 **renotifyInterval** | <code>number</code> | <span></span>
-**requireFullWindow** | <code>boolean</code> | <span></span>
+**requireFullWindow** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **restrictedRoles** | <code>Array<string></code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **timeoutH** | <code>number</code> | <span></span>
 **type** | <code>string</code> | <span></span>
 **typeInput** | <code>string</code> | <span></span>
-**validate** | <code>boolean</code> | <span></span>
-**enableLogsSampleInput**? | <code>boolean</code> | __*Optional*__
+**validate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**enableLogsSampleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **escalationMessageInput**? | <code>string</code> | __*Optional*__
 **evaluationDelayInput**? | <code>number</code> | __*Optional*__
-**forceDeleteInput**? | <code>boolean</code> | __*Optional*__
-**groupbySimpleMonitorInput**? | <code>boolean</code> | __*Optional*__
-**includeTagsInput**? | <code>boolean</code> | __*Optional*__
-**lockedInput**? | <code>boolean</code> | __*Optional*__
+**forceDeleteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**groupbySimpleMonitorInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeTagsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**lockedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **monitorThresholdWindowsInput**? | <code>Array<[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)></code> | __*Optional*__
 **monitorThresholdsInput**? | <code>Array<[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)></code> | __*Optional*__
+**newGroupDelayInput**? | <code>number</code> | __*Optional*__
 **newHostDelayInput**? | <code>number</code> | __*Optional*__
 **noDataTimeframeInput**? | <code>number</code> | __*Optional*__
-**notifyAuditInput**? | <code>boolean</code> | __*Optional*__
-**notifyNoDataInput**? | <code>boolean</code> | __*Optional*__
+**notifyAuditInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**notifyNoDataInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **priorityInput**? | <code>number</code> | __*Optional*__
 **renotifyIntervalInput**? | <code>number</code> | __*Optional*__
-**requireFullWindowInput**? | <code>boolean</code> | __*Optional*__
+**requireFullWindowInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 **timeoutHInput**? | <code>number</code> | __*Optional*__
-**validateInput**? | <code>boolean</code> | __*Optional*__
+**validateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4713,6 +5726,18 @@ resetMonitorThresholdWindows(): void
 
 ```ts
 resetMonitorThresholds(): void
+```
+
+
+
+
+
+#### resetNewGroupDelay() <a id="cdktf-provider-datadog-monitor-resetnewgroupdelay"></a>
+
+
+
+```ts
+resetNewGroupDelay(): void
 ```
 
 
@@ -4865,11 +5890,94 @@ __Returns__:
 
 
 
+## class OrganizationSettings  <a id="cdktf-provider-datadog-organizationsettings"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings} Resource.
+
+```ts
+new OrganizationSettings(scope: Construct, id: string, config?: OrganizationSettingsConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[OrganizationSettingsConfig](#cdktf-provider-datadog-organizationsettingsconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **name** (<code>string</code>)  Name for Organization. __*Optional*__
+  * **settings** (<code>Array<[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)></code>)  settings block. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**description** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**publicId** | <code>string</code> | <span></span>
+**settings** | <code>Array<[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)></code> | <span></span>
+**nameInput**? | <code>string</code> | __*Optional*__
+**settingsInput**? | <code>Array<[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetName() <a id="cdktf-provider-datadog-organizationsettings-resetname"></a>
+
+
+
+```ts
+resetName(): void
+```
+
+
+
+
+
+#### resetSettings() <a id="cdktf-provider-datadog-organizationsettings-resetsettings"></a>
+
+
+
+```ts
+resetSettings(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-organizationsettings-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class Role  <a id="cdktf-provider-datadog-role"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4904,6 +6012,7 @@ Name | Type | Description
 **permission** | <code>Array<[RolePermission](#cdktf-provider-datadog-rolepermission)></code> | <span></span>
 **userCount** | <code>number</code> | <span></span>
 **permissionInput**? | <code>Array<[RolePermission](#cdktf-provider-datadog-rolepermission)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -4938,7 +6047,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4958,7 +6067,7 @@ new SecurityMonitoringDefaultRule(scope: Construct, id: string, config?: Securit
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **case** (<code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code>)  case block. __*Optional*__
-  * **enabled** (<code>boolean</code>)  Enable the rule. __*Optional*__
+  * **enabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enable the rule. __*Optional*__
   * **filter** (<code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code>)  filter block. __*Optional*__
 
 
@@ -4969,12 +6078,13 @@ new SecurityMonitoringDefaultRule(scope: Construct, id: string, config?: Securit
 Name | Type | Description 
 -----|------|-------------
 **case** | <code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code> | <span></span>
-**enabled** | <code>boolean</code> | <span></span>
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **filter** | <code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **caseInput**? | <code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code> | __*Optional*__
-**enabledInput**? | <code>boolean</code> | __*Optional*__
+**enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **filterInput**? | <code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5029,11 +6139,102 @@ __Returns__:
 
 
 
+## class SecurityMonitoringFilter  <a id="cdktf-provider-datadog-securitymonitoringfilter"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter} Resource.
+
+```ts
+new SecurityMonitoringFilter(scope: Construct, id: string, config: SecurityMonitoringFilterConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[SecurityMonitoringFilterConfig](#cdktf-provider-datadog-securitymonitoringfilterconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **isEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether the security filter is enabled. 
+  * **name** (<code>string</code>)  The name of the security filter. 
+  * **query** (<code>string</code>)  The query of the security filter. 
+  * **exclusionFilter** (<code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code>)  exclusion_filter block. __*Optional*__
+  * **filteredDataType** (<code>string</code>)  The filtered data type. Valid values are `logs`. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**exclusionFilter** | <code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code> | <span></span>
+**filteredDataType** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isEnabledInput** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**nameInput** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**queryInput** | <code>string</code> | <span></span>
+**version** | <code>number</code> | <span></span>
+**exclusionFilterInput**? | <code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code> | __*Optional*__
+**filteredDataTypeInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetExclusionFilter() <a id="cdktf-provider-datadog-securitymonitoringfilter-resetexclusionfilter"></a>
+
+
+
+```ts
+resetExclusionFilter(): void
+```
+
+
+
+
+
+#### resetFilteredDataType() <a id="cdktf-provider-datadog-securitymonitoringfilter-resetfiltereddatatype"></a>
+
+
+
+```ts
+resetFilteredDataType(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-securitymonitoringfilter-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class SecurityMonitoringRule  <a id="cdktf-provider-datadog-securitymonitoringrule"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5056,9 +6257,9 @@ new SecurityMonitoringRule(scope: Construct, id: string, config: SecurityMonitor
   * **message** (<code>string</code>)  Message for generated signals. 
   * **name** (<code>string</code>)  The name of the rule. 
   * **query** (<code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code>)  query block. 
-  * **enabled** (<code>boolean</code>)  Whether the rule is enabled. __*Optional*__
+  * **enabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether the rule is enabled. __*Optional*__
   * **filter** (<code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code>)  filter block. __*Optional*__
-  * **hasExtendedTitle** (<code>boolean</code>)  Whether the notifications include the triggering group-by values in their title. __*Optional*__
+  * **hasExtendedTitle** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether the notifications include the triggering group-by values in their title. __*Optional*__
   * **options** (<code>Array<[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)></code>)  options block. __*Optional*__
   * **tags** (<code>Array<string></code>)  Tags for generated signals. __*Optional*__
 
@@ -5071,9 +6272,9 @@ Name | Type | Description
 -----|------|-------------
 **case** | <code>Array<[SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)></code> | <span></span>
 **caseInput** | <code>Array<[SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)></code> | <span></span>
-**enabled** | <code>boolean</code> | <span></span>
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **filter** | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | <span></span>
-**hasExtendedTitle** | <code>boolean</code> | <span></span>
+**hasExtendedTitle** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **messageInput** | <code>string</code> | <span></span>
@@ -5083,11 +6284,12 @@ Name | Type | Description
 **query** | <code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code> | <span></span>
 **queryInput** | <code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
-**enabledInput**? | <code>boolean</code> | __*Optional*__
+**enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **filterInput**? | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | __*Optional*__
-**hasExtendedTitleInput**? | <code>boolean</code> | __*Optional*__
+**hasExtendedTitleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **optionsInput**? | <code>Array<[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5170,7 +6372,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5193,12 +6395,12 @@ new ServiceLevelObjective(scope: Construct, id: string, config: ServiceLevelObje
   * **thresholds** (<code>Array<[ServiceLevelObjectiveThresholds](#cdktf-provider-datadog-servicelevelobjectivethresholds)></code>)  thresholds block. 
   * **type** (<code>string</code>)  The type of the service level objective. 
   * **description** (<code>string</code>)  A description of this service level objective. __*Optional*__
-  * **forceDelete** (<code>boolean</code>)  A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards). __*Optional*__
+  * **forceDelete** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards). __*Optional*__
   * **groups** (<code>Array<string></code>)  A static set of groups to filter monitor-based SLOs. __*Optional*__
   * **monitorIds** (<code>Array<number></code>)  A static set of monitor IDs to use as part of the SLO. __*Optional*__
   * **query** (<code>Array<[ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)></code>)  query block. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your service level objective. __*Optional*__
-  * **validate** (<code>boolean</code>)  Whether or not to validate the SLO. __*Optional*__
+  * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not to validate the SLO. __*Optional*__
 
 
 
@@ -5208,7 +6410,7 @@ new ServiceLevelObjective(scope: Construct, id: string, config: ServiceLevelObje
 Name | Type | Description 
 -----|------|-------------
 **description** | <code>string</code> | <span></span>
-**forceDelete** | <code>boolean</code> | <span></span>
+**forceDelete** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **groups** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **monitorIds** | <code>Array<number></code> | <span></span>
@@ -5220,14 +6422,15 @@ Name | Type | Description
 **thresholdsInput** | <code>Array<[ServiceLevelObjectiveThresholds](#cdktf-provider-datadog-servicelevelobjectivethresholds)></code> | <span></span>
 **type** | <code>string</code> | <span></span>
 **typeInput** | <code>string</code> | <span></span>
-**validate** | <code>boolean</code> | <span></span>
+**validate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**forceDeleteInput**? | <code>boolean</code> | __*Optional*__
+**forceDeleteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **groupsInput**? | <code>Array<string></code> | __*Optional*__
 **monitorIdsInput**? | <code>Array<number></code> | __*Optional*__
 **queryInput**? | <code>Array<[ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
-**validateInput**? | <code>boolean</code> | __*Optional*__
+**validateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5334,7 +6537,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5380,6 +6583,7 @@ Name | Type | Description
 **timezone** | <code>string</code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **timezoneInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5426,7 +6630,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5450,7 +6654,8 @@ new SyntheticsGlobalVariable(scope: Construct, id: string, config: SyntheticsGlo
   * **description** (<code>string</code>)  Description of the global variable. __*Optional*__
   * **parseTestId** (<code>string</code>)  Id of the Synthetics test to use for a variable from test. __*Optional*__
   * **parseTestOptions** (<code>Array<[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)></code>)  parse_test_options block. __*Optional*__
-  * **secure** (<code>boolean</code>)  Sets the variable as secure. Defaults to `false`. __*Optional*__
+  * **restrictedRoles** (<code>Array<string></code>)  A list of role identifiers to associate with the Synthetics global variable. __*Optional*__
+  * **secure** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If set to true, the value of the global variable is hidden. Defaults to `false`. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your synthetics global variable. __*Optional*__
 
 
@@ -5466,15 +6671,18 @@ Name | Type | Description
 **nameInput** | <code>string</code> | <span></span>
 **parseTestId** | <code>string</code> | <span></span>
 **parseTestOptions** | <code>Array<[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)></code> | <span></span>
-**secure** | <code>boolean</code> | <span></span>
+**restrictedRoles** | <code>Array<string></code> | <span></span>
+**secure** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **value** | <code>string</code> | <span></span>
 **valueInput** | <code>string</code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **parseTestIdInput**? | <code>string</code> | __*Optional*__
 **parseTestOptionsInput**? | <code>Array<[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)></code> | __*Optional*__
-**secureInput**? | <code>boolean</code> | __*Optional*__
+**restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
+**secureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5509,6 +6717,18 @@ resetParseTestId(): void
 
 ```ts
 resetParseTestOptions(): void
+```
+
+
+
+
+
+#### resetRestrictedRoles() <a id="cdktf-provider-datadog-syntheticsglobalvariable-resetrestrictedroles"></a>
+
+
+
+```ts
+resetRestrictedRoles(): void
 ```
 
 
@@ -5557,7 +6777,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5595,6 +6815,7 @@ Name | Type | Description
 **tags** | <code>Array<string></code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5641,7 +6862,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5675,8 +6896,8 @@ new SyntheticsTest(scope: Construct, id: string, config: SyntheticsTestConfig)
   * **requestBasicauth** (<code>Array<[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)></code>)  request_basicauth block. __*Optional*__
   * **requestClientCertificate** (<code>Array<[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)></code>)  request_client_certificate block. __*Optional*__
   * **requestDefinition** (<code>Array<[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)></code>)  request_definition block. __*Optional*__
-  * **requestHeaders** (<code>Map<string, string></code>)  Header name and value map. __*Optional*__
-  * **requestQuery** (<code>Map<string, string></code>)  Query arguments name and value map. __*Optional*__
+  * **requestHeaders** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Header name and value map. __*Optional*__
+  * **requestQuery** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Query arguments name and value map. __*Optional*__
   * **setCookie** (<code>string</code>)  Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax. __*Optional*__
   * **subtype** (<code>string</code>)  The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your synthetics test. __*Optional*__
@@ -5705,8 +6926,8 @@ Name | Type | Description
 **requestBasicauth** | <code>Array<[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)></code> | <span></span>
 **requestClientCertificate** | <code>Array<[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)></code> | <span></span>
 **requestDefinition** | <code>Array<[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)></code> | <span></span>
-**requestHeaders** | <code>Map<string, string></code> | <span></span>
-**requestQuery** | <code>Map<string, string></code> | <span></span>
+**requestHeaders** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
+**requestQuery** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
 **setCookie** | <code>string</code> | <span></span>
 **status** | <code>string</code> | <span></span>
 **statusInput** | <code>string</code> | <span></span>
@@ -5725,11 +6946,12 @@ Name | Type | Description
 **requestBasicauthInput**? | <code>Array<[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)></code> | __*Optional*__
 **requestClientCertificateInput**? | <code>Array<[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)></code> | __*Optional*__
 **requestDefinitionInput**? | <code>Array<[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)></code> | __*Optional*__
-**requestHeadersInput**? | <code>Map<string, string></code> | __*Optional*__
-**requestQueryInput**? | <code>Map<string, string></code> | __*Optional*__
+**requestHeadersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
+**requestQueryInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 **setCookieInput**? | <code>string</code> | __*Optional*__
 **subtypeInput**? | <code>string</code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -5944,7 +7166,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5964,10 +7186,10 @@ new User(scope: Construct, id: string, config: UserConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **email** (<code>string</code>)  Email address for user. 
-  * **disabled** (<code>boolean</code>)  Whether the user is disabled. __*Optional*__
+  * **disabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether the user is disabled. __*Optional*__
   * **name** (<code>string</code>)  Name for user. __*Optional*__
   * **roles** (<code>Array<string></code>)  A list a role IDs to assign to the user. __*Optional*__
-  * **sendUserInvitation** (<code>boolean</code>)  Whether an invitation email should be sent when the user is created. __*Optional*__
+  * **sendUserInvitation** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether an invitation email should be sent when the user is created. __*Optional*__
 
 
 
@@ -5976,19 +7198,20 @@ new User(scope: Construct, id: string, config: UserConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**disabled** | <code>boolean</code> | <span></span>
+**disabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **email** | <code>string</code> | <span></span>
 **emailInput** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **roles** | <code>Array<string></code> | <span></span>
-**sendUserInvitation** | <code>boolean</code> | <span></span>
+**sendUserInvitation** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **userInvitationId** | <code>string</code> | <span></span>
-**verified** | <code>boolean</code> | <span></span>
-**disabledInput**? | <code>boolean</code> | __*Optional*__
+**verified** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**disabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **rolesInput**? | <code>Array<string></code> | __*Optional*__
-**sendUserInvitationInput**? | <code>boolean</code> | __*Optional*__
+**sendUserInvitationInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -6055,6 +7278,57 @@ __Returns__:
 
 
 
+## struct ApiKeyConfig  <a id="cdktf-provider-datadog-apikeyconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | Name for API Key.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct ApplicationKeyConfig  <a id="cdktf-provider-datadog-applicationkeyconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | Name for Application Key.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct ChildOrganizationConfig  <a id="cdktf-provider-datadog-childorganizationconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | Name for Child Organization after creation.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DashboardConfig  <a id="cdktf-provider-datadog-dashboardconfig"></a>
 
 
@@ -6068,12 +7342,12 @@ Name | Type | Description
 **title** | <code>string</code> | The title of the dashboard.
 **widget** | <code>Array<[DashboardWidget](#cdktf-provider-datadog-dashboardwidget)></code> | widget block.
 **count**?🔹 | <code>number</code> | __*Optional*__
-**dashboardLists**? | <code>Array<number></code> | The list of dashboard lists this dashboard belongs to.<br/>__*Optional*__
+**dashboardLists**? | <code>Array<number></code> | A list of dashboard lists this dashboard belongs to.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **description**? | <code>string</code> | The description of the dashboard.<br/>__*Optional*__
-**isReadOnly**? | <code>boolean</code> | Whether this dashboard is read-only.<br/>__*Optional*__
+**isReadOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether this dashboard is read-only.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**notifyList**? | <code>Array<string></code> | The list of handles of users to notify when changes are made to this dashboard.<br/>__*Optional*__
+**notifyList**? | <code>Array<string></code> | The list of handles for the users to notify when changes are made to this dashboard.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **reflowType**? | <code>string</code> | The reflow type of a new dashboard layout.<br/>__*Optional*__
 **restrictedRoles**? | <code>Array<string></code> | Role UUIDs corresponding to users authorized to edit the dashboard. **This feature is currently in beta.**.<br/>__*Optional*__
@@ -6145,7 +7419,7 @@ Name | Type | Description
 -----|------|-------------
 **name** | <code>string</code> | The name of the variable.
 **default**? | <code>string</code> | The default value for the template variable on dashboard load.<br/>__*Optional*__
-**prefix**? | <code>string</code> | The tag prefix associated with the variable. Only tags with this prefix will appear in the variable dropdown.<br/>__*Optional*__
+**prefix**? | <code>string</code> | The tag prefix associated with the variable. Only tags with this prefix appear in the variable dropdown.<br/>__*Optional*__
 
 
 
@@ -6229,7 +7503,7 @@ Name | Type | Description
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -6247,7 +7521,7 @@ Name | Type | Description
 **textAlign**? | <code>string</code> | The alignment of the text in the widget. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **unit**? | <code>string</code> | The unit for the value displayed in the widget.<br/>__*Optional*__
 
 
@@ -6266,7 +7540,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -6279,7 +7553,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -6298,7 +7572,7 @@ Name | Type | Description
 **apmQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
 **changeType**? | <code>string</code> | Whether to show absolute or relative change. Valid values are `absolute`, `relative`.<br/>__*Optional*__
 **compareTo**? | <code>string</code> | Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.<br/>__*Optional*__
-**increaseGood**? | <code>boolean</code> | Boolean indicating whether an increase in the value is good (thus displayed in green) or not (thus displayed in red).<br/>__*Optional*__
+**increaseGood**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether an increase in the value is good (displayed in green) or not (displayed in red).<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
 **orderBy**? | <code>string</code> | What to order by. Valid values are `change`, `name`, `present`, `past`.<br/>__*Optional*__
 **orderDir**? | <code>string</code> | Widget sorting method. Valid values are `asc`, `desc`.<br/>__*Optional*__
@@ -6306,7 +7580,7 @@ Name | Type | Description
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
 **rumQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquery)></code> | rum_query block.<br/>__*Optional*__
 **securityQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquery)></code> | security_query block.<br/>__*Optional*__
-**showPresent**? | <code>boolean</code> | If set to `true`, displays current value.<br/>__*Optional*__
+**showPresent**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `true`, displays the current value.<br/>__*Optional*__
 
 
 
@@ -6319,7 +7593,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6337,8 +7611,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6351,8 +7625,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6368,7 +7642,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6382,8 +7656,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6396,7 +7670,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6414,8 +7688,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6428,8 +7702,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6445,7 +7719,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6459,8 +7733,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6474,8 +7748,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -6489,7 +7763,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6507,8 +7781,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6521,8 +7795,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6538,7 +7812,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6552,8 +7826,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6566,7 +7840,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6584,8 +7858,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6598,8 +7872,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6615,7 +7889,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6629,8 +7903,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6648,10 +7922,10 @@ Name | Type | Description
 **group**? | <code>string</code> | The check group to use in the widget.<br/>__*Optional*__
 **groupBy**? | <code>Array<string></code> | When `grouping = "cluster"`, indicates a list of tags to use for grouping.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**tags**? | <code>Array<string></code> | List of tags to use in the widget.<br/>__*Optional*__
+**tags**? | <code>Array<string></code> | A list of tags to use in the widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -6667,10 +7941,10 @@ Name | Type | Description
 **legendSize**? | <code>string</code> | The size of the legend displayed in the widget.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequest)></code> | request block.<br/>__*Optional*__
-**showLegend**? | <code>boolean</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
+**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -6702,7 +7976,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6720,8 +7994,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6734,8 +8008,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6751,7 +8025,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6765,8 +8039,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6779,7 +8053,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6797,8 +8071,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6811,8 +8085,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6828,7 +8102,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6842,8 +8116,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6857,8 +8131,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -6872,7 +8146,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6890,8 +8164,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6904,8 +8178,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6921,7 +8195,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -6935,8 +8209,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6949,7 +8223,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -6967,8 +8241,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -6981,8 +8255,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -6998,7 +8272,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7012,8 +8286,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7026,7 +8300,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -7042,10 +8316,10 @@ Name | Type | Description
 **query** | <code>string</code> | The query to use in the widget.
 **eventSize**? | <code>string</code> | The size to use to display an event. Valid values are `s`, `l`.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**tagsExecution**? | <code>string</code> | The execution method for multi-value filters. Can be either `and` or `or`.<br/>__*Optional*__
+**tagsExecution**? | <code>string</code> | The execution method for multi-value filters, options: `and` or `or`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -7060,10 +8334,10 @@ Name | Type | Description
 -----|------|-------------
 **query** | <code>string</code> | The query to use in the widget.
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**tagsExecution**? | <code>string</code> | The execution method for multi-value filters. Can be either `and` or `or`.<br/>__*Optional*__
+**tagsExecution**? | <code>string</code> | The execution method for multi-value filters, options: `and` or `or`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -7099,7 +8373,7 @@ Name | Type | Description
 **style**? | <code>Array<[DashboardWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionstyle)></code> | style block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -7112,7 +8386,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -7145,9 +8419,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -7160,8 +8457,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -7174,7 +8471,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -7192,8 +8489,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7206,8 +8503,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -7223,7 +8520,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7237,8 +8534,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7267,8 +8564,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -7284,9 +8581,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -7299,8 +8596,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -7314,8 +8611,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -7329,7 +8626,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -7342,10 +8639,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -7358,15 +8655,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -7379,7 +8676,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -7397,8 +8694,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7411,8 +8708,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -7428,7 +8725,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7442,8 +8739,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7457,7 +8754,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **palette** | <code>string</code> | The color palette to apply to the widget.
-**paletteFlip** | <code>boolean</code> | Boolean indicating whether to flip the palette tones.
+**paletteFlip** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to flip the palette tones.
 
 
 
@@ -7470,7 +8767,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**focus** | <code>string</code> | The 2-letter ISO code of a country to focus the map on. Or `WORLD`.
+**focus** | <code>string</code> | The two-letter ISO code of a country to focus the map on (or `WORLD`).
 
 
 
@@ -7485,9 +8782,9 @@ Name | Type | Description
 -----|------|-------------
 **layoutType** | <code>string</code> | The layout type of the group. Valid values are `ordered`.
 **widget** | <code>Array<[DashboardWidgetGroupDefinitionWidget](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidget)></code> | widget block.
-**backgroundColor**? | <code>string</code> | Background color of the group title.<br/>__*Optional*__
-**bannerImg**? | <code>string</code> | URL of image to display as a banner for the group.<br/>__*Optional*__
-**showTitle**? | <code>boolean</code> | Whether to show the title or not.<br/>__*Optional*__
+**backgroundColor**? | <code>string</code> | The background color of the group title, options: `vivid_blue`, `vivid_purple`, `vivid_pink`, `vivid_orange`, `vivid_yellow`, `vivid_green`, `blue`, `purple`, `pink`, `orange`, `yellow`, `green`, `gray` or `white`.<br/>__*Optional*__
+**bannerImg**? | <code>string</code> | The image URL to display as a banner for the group.<br/>__*Optional*__
+**showTitle**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the title or not.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the group.<br/>__*Optional*__
 
 
@@ -7543,7 +8840,7 @@ Name | Type | Description
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -7561,7 +8858,7 @@ Name | Type | Description
 **textAlign**? | <code>string</code> | The alignment of the text in the widget. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **unit**? | <code>string</code> | The unit for the value displayed in the widget.<br/>__*Optional*__
 
 
@@ -7580,7 +8877,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -7593,7 +8890,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -7612,7 +8909,7 @@ Name | Type | Description
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
 **changeType**? | <code>string</code> | Whether to show absolute or relative change. Valid values are `absolute`, `relative`.<br/>__*Optional*__
 **compareTo**? | <code>string</code> | Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.<br/>__*Optional*__
-**increaseGood**? | <code>boolean</code> | Boolean indicating whether an increase in the value is good (thus displayed in green) or not (thus displayed in red).<br/>__*Optional*__
+**increaseGood**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether an increase in the value is good (displayed in green) or not (displayed in red).<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
 **orderBy**? | <code>string</code> | What to order by. Valid values are `change`, `name`, `present`, `past`.<br/>__*Optional*__
 **orderDir**? | <code>string</code> | Widget sorting method. Valid values are `asc`, `desc`.<br/>__*Optional*__
@@ -7620,7 +8917,7 @@ Name | Type | Description
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
 **rumQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquery)></code> | rum_query block.<br/>__*Optional*__
 **securityQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquery)></code> | security_query block.<br/>__*Optional*__
-**showPresent**? | <code>boolean</code> | If set to `true`, displays current value.<br/>__*Optional*__
+**showPresent**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `true`, displays the current value.<br/>__*Optional*__
 
 
 
@@ -7633,7 +8930,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -7651,8 +8948,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7665,8 +8962,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -7682,7 +8979,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7696,8 +8993,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7710,7 +9007,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -7728,8 +9025,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7742,8 +9039,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -7759,7 +9056,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7773,8 +9070,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7788,8 +9085,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -7803,7 +9100,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -7821,8 +9118,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7835,8 +9132,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -7852,7 +9149,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7866,8 +9163,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7880,7 +9177,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -7898,8 +9195,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7912,8 +9209,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -7929,7 +9226,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -7943,8 +9240,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -7962,10 +9259,10 @@ Name | Type | Description
 **group**? | <code>string</code> | The check group to use in the widget.<br/>__*Optional*__
 **groupBy**? | <code>Array<string></code> | When `grouping = "cluster"`, indicates a list of tags to use for grouping.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**tags**? | <code>Array<string></code> | List of tags to use in the widget.<br/>__*Optional*__
+**tags**? | <code>Array<string></code> | A list of tags to use in the widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -7981,10 +9278,10 @@ Name | Type | Description
 **legendSize**? | <code>string</code> | The size of the legend displayed in the widget.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequest)></code> | request block.<br/>__*Optional*__
-**showLegend**? | <code>boolean</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
+**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -8016,7 +9313,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8034,8 +9331,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8048,8 +9345,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8065,7 +9362,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8079,8 +9376,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8093,7 +9390,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8111,8 +9408,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8125,8 +9422,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8142,7 +9439,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8156,8 +9453,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8171,8 +9468,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -8186,7 +9483,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8204,8 +9501,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8218,8 +9515,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8235,7 +9532,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8249,8 +9546,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8263,7 +9560,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8281,8 +9578,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8295,8 +9592,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8312,7 +9609,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8326,8 +9623,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8340,7 +9637,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -8356,10 +9653,10 @@ Name | Type | Description
 **query** | <code>string</code> | The query to use in the widget.
 **eventSize**? | <code>string</code> | The size to use to display an event. Valid values are `s`, `l`.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**tagsExecution**? | <code>string</code> | The execution method for multi-value filters. Can be either `and` or `or`.<br/>__*Optional*__
+**tagsExecution**? | <code>string</code> | The execution method for multi-value filters, options: `and` or `or`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -8374,10 +9671,10 @@ Name | Type | Description
 -----|------|-------------
 **query** | <code>string</code> | The query to use in the widget.
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**tagsExecution**? | <code>string</code> | The execution method for multi-value filters. Can be either `and` or `or`.<br/>__*Optional*__
+**tagsExecution**? | <code>string</code> | The execution method for multi-value filters, options: `and` or `or`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -8413,7 +9710,7 @@ Name | Type | Description
 **style**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionstyle)></code> | style block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -8426,7 +9723,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -8459,9 +9756,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -8474,8 +9794,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -8488,7 +9808,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8506,8 +9826,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8520,8 +9840,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8537,7 +9857,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8551,8 +9871,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8581,8 +9901,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -8598,9 +9918,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -8613,8 +9933,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -8628,8 +9948,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -8643,7 +9963,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -8656,10 +9976,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -8672,15 +9992,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -8693,7 +10013,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8711,8 +10031,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8725,8 +10045,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8742,7 +10062,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8756,8 +10076,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8771,7 +10091,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **palette** | <code>string</code> | The color palette to apply to the widget.
-**paletteFlip** | <code>boolean</code> | Boolean indicating whether to flip the palette tones.
+**paletteFlip** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to flip the palette tones.
 
 
 
@@ -8784,7 +10104,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**focus** | <code>string</code> | The 2-letter ISO code of a country to focus the map on. Or `WORLD`.
+**focus** | <code>string</code> | The two-letter ISO code of a country to focus the map on (or `WORLD`).
 
 
 
@@ -8802,10 +10122,10 @@ Name | Type | Description
 **legendSize**? | <code>string</code> | The size of the legend displayed in the widget.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequest)></code> | request block.<br/>__*Optional*__
-**showLegend**? | <code>boolean</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
+**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **yaxis**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionyaxis)></code> | yaxis block.<br/>__*Optional*__
 
 
@@ -8819,7 +10139,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -8868,7 +10188,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8886,8 +10206,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8900,8 +10220,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8917,7 +10237,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -8931,8 +10251,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8945,7 +10265,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -8963,8 +10283,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -8977,8 +10297,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -8994,7 +10314,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9008,8 +10328,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9023,8 +10343,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -9038,7 +10358,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9056,8 +10376,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9070,8 +10390,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9087,7 +10407,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9101,8 +10421,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9115,7 +10435,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9133,8 +10453,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9147,8 +10467,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9164,7 +10484,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9178,8 +10498,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9192,7 +10512,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -9205,11 +10525,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -9224,15 +10544,15 @@ Name | Type | Description
 -----|------|-------------
 **customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitioncustomlink)></code> | custom_link block.<br/>__*Optional*__
 **group**? | <code>Array<string></code> | The list of tags to group nodes by.<br/>__*Optional*__
-**noGroupHosts**? | <code>boolean</code> | Boolean indicating whether to show ungrouped nodes.<br/>__*Optional*__
-**noMetricHosts**? | <code>boolean</code> | Boolean indicating whether to show nodes with no metrics.<br/>__*Optional*__
+**noGroupHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to show ungrouped nodes.<br/>__*Optional*__
+**noMetricHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to show nodes with no metrics.<br/>__*Optional*__
 **nodeType**? | <code>string</code> | The type of node used. Valid values are `host`, `container`.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **scope**? | <code>Array<string></code> | The list of tags to filter nodes by.<br/>__*Optional*__
 **style**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionstyle)></code> | style block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -9245,7 +10565,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -9293,7 +10613,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9311,8 +10631,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9325,8 +10645,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9342,7 +10662,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9356,8 +10676,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9370,7 +10690,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9388,8 +10708,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9402,8 +10722,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9419,7 +10739,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9433,8 +10753,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9448,8 +10768,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -9463,7 +10783,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9481,8 +10801,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9495,8 +10815,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9512,7 +10832,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9526,8 +10846,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9540,7 +10860,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9558,8 +10878,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9572,8 +10892,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9589,7 +10909,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9603,8 +10923,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9635,7 +10955,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9653,8 +10973,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9667,8 +10987,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9684,7 +11004,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9698,8 +11018,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9712,7 +11032,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9730,8 +11050,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9744,8 +11064,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9761,7 +11081,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9775,8 +11095,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9790,8 +11110,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -9805,7 +11125,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9823,8 +11143,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9837,8 +11157,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9854,7 +11174,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9868,8 +11188,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9882,7 +11202,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -9900,8 +11220,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9914,8 +11234,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -9931,7 +11251,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -9945,8 +11265,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -9959,10 +11279,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**fillMax**? | <code>string</code> | Max value to use to color the map.<br/>__*Optional*__
-**fillMin**? | <code>string</code> | Min value to use to color the map.<br/>__*Optional*__
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
-**paletteFlip**? | <code>boolean</code> | Boolean indicating whether to flip the palette tones.<br/>__*Optional*__
+**fillMax**? | <code>string</code> | The max value to use to color the map.<br/>__*Optional*__
+**fillMin**? | <code>string</code> | The min value to use to color the map.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**paletteFlip**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to flip the palette tones.<br/>__*Optional*__
 
 
 
@@ -9989,8 +11309,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **url** | <code>string</code> | The URL to use as a data source for the widget.
-**hasBackground**? | <code>boolean</code> | Whether to display a background or not.<br/>__*Optional*__
-**hasBorder**? | <code>boolean</code> | Whether to display a border or not.<br/>__*Optional*__
+**hasBackground**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to display a background or not.<br/>__*Optional*__
+**hasBorder**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to display a border or not.<br/>__*Optional*__
 **horizontalAlign**? | <code>string</code> | The horizontal alignment for the widget. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **margin**? | <code>string</code> | The margins to use around the image.<br/>__*Optional*__
 **sizing**? | <code>string</code> | The preferred method to adapt the dimensions of the image.<br/>__*Optional*__
@@ -10008,17 +11328,17 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**columns**? | <code>Array<string></code> | Stringified list of columns to use. Example: `["column1","column2","column3"]`.<br/>__*Optional*__
+**columns**? | <code>Array<string></code> | Stringified list of columns to use, for example: `["column1","column2","column3"]`.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**messageDisplay**? | <code>string</code> | Amount of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.<br/>__*Optional*__
+**messageDisplay**? | <code>string</code> | The number of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.<br/>__*Optional*__
 **query**? | <code>string</code> | The query to use in the widget.<br/>__*Optional*__
-**showDateColumn**? | <code>boolean</code> | If the date column should be displayed.<br/>__*Optional*__
-**showMessageColumn**? | <code>boolean</code> | If the message column should be displayed.<br/>__*Optional*__
+**showDateColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the date column should be displayed.<br/>__*Optional*__
+**showMessageColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the message column should be displayed.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionsort)></code> | sort block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -10031,7 +11351,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**column** | <code>string</code> | Facet path for the column.
+**column** | <code>string</code> | The facet path for the column.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
 
 
@@ -10048,13 +11368,13 @@ Name | Type | Description
 **query** | <code>string</code> | The query to use in the widget.
 **colorPreference**? | <code>string</code> | Whether to colorize text or background. Valid values are `background`, `text`.<br/>__*Optional*__
 **displayFormat**? | <code>string</code> | The display setting to use. Valid values are `counts`, `countsAndList`, `list`.<br/>__*Optional*__
-**hideZeroCounts**? | <code>boolean</code> | Boolean indicating whether to hide empty categories.<br/>__*Optional*__
-**showLastTriggered**? | <code>boolean</code> | Boolean indicating whether to show when monitors/groups last triggered.<br/>__*Optional*__
-**sort**? | <code>string</code> | The method to use to sort monitors.<br/>__*Optional*__
-**summaryType**? | <code>string</code> | Which summary type should be used. Valid values are `monitors`, `groups`, `combined`.<br/>__*Optional*__
+**hideZeroCounts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to hide empty categories.<br/>__*Optional*__
+**showLastTriggered**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to show when monitors/groups last triggered.<br/>__*Optional*__
+**sort**? | <code>string</code> | The method to sort the monitors.<br/>__*Optional*__
+**summaryType**? | <code>string</code> | The summary type to use. Valid values are `monitors`, `groups`, `combined`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -10067,14 +11387,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**content** | <code>string</code> | Content of the note.
-**backgroundColor**? | <code>string</code> | Background color of the note.<br/>__*Optional*__
-**fontSize**? | <code>string</code> | Size of the text.<br/>__*Optional*__
-**hasPadding**? | <code>boolean</code> | Whether to add padding or not.<br/>__*Optional*__
-**showTick**? | <code>boolean</code> | Whether to show a tick or not.<br/>__*Optional*__
+**content** | <code>string</code> | The content of the note.
+**backgroundColor**? | <code>string</code> | The background color of the note.<br/>__*Optional*__
+**fontSize**? | <code>string</code> | The size of the text.<br/>__*Optional*__
+**hasPadding**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to add padding or not.<br/>__*Optional*__
+**showTick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show a tick or not.<br/>__*Optional*__
 **textAlign**? | <code>string</code> | The alignment of the widget's text. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**tickEdge**? | <code>string</code> | When `tick = true`, string indicating on which side of the widget the tick should be displayed.<br/>__*Optional*__
-**tickPos**? | <code>string</code> | When `tick = true`, string with a percent sign indicating the position of the tick.<br/>__*Optional*__
+**tickEdge**? | <code>string</code> | When `tick = true`, a string indicating on which side of the widget the tick should be displayed.<br/>__*Optional*__
+**tickPos**? | <code>string</code> | When `tick = true`, a string with a percent sign indicating the position of the tick, for example: `tick_pos = "50%"` is centered alignment.<br/>__*Optional*__
 **verticalAlign**? | <code>string</code> | The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.<br/>__*Optional*__
 
 
@@ -10094,7 +11414,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -10107,7 +11427,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -10123,17 +11443,19 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
-**alias**? | <code>string</code> | The alias for the column name. Default is the metric name.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
+**alias**? | <code>string</code> | The alias for the column name (defaults to metric name).<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
 **apmStatsQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquery)></code> | apm_stats_query block.<br/>__*Optional*__
 **cellDisplayMode**? | <code>Array<string></code> | A list of display modes for each table cell.<br/>__*Optional*__
 **conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**formula**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **limit**? | <code>number</code> | The number of lines to show in the table.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
 **order**? | <code>string</code> | The sort order for the rows. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestprocessquery)></code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
+**query**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquery)></code> | query block.<br/>__*Optional*__
 **rumQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquery)></code> | rum_query block.<br/>__*Optional*__
 **securityQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquery)></code> | security_query block.<br/>__*Optional*__
 
@@ -10148,7 +11470,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10166,8 +11488,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10180,8 +11502,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10197,7 +11519,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10211,8 +11533,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10225,13 +11547,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**env** | <code>string</code> | Environment name.
-**name** | <code>string</code> | Operation name associated with service.
+**env** | <code>string</code> | The environment name.
+**name** | <code>string</code> | The operation name associated with the service.
 **primaryTag** | <code>string</code> | The organization's host group name and value.
 **rowType** | <code>string</code> | The level of detail for the request. Valid values are `service`, `resource`, `span`.
-**service** | <code>string</code> | Service name.
+**service** | <code>string</code> | The service name.
 **columns**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | columns block.<br/>__*Optional*__
-**resource**? | <code>string</code> | Resource name.<br/>__*Optional*__
+**resource**? | <code>string</code> | The resource name.<br/>__*Optional*__
 
 
 
@@ -10244,7 +11566,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Column name.
+**name** | <code>string</code> | The column name.
 **alias**? | <code>string</code> | A user-assigned alias for the column.<br/>__*Optional*__
 **cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
 **order**? | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.<br/>__*Optional*__
@@ -10260,15 +11582,67 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**comparator** | <code>string</code> | Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
-**palette** | <code>string</code> | Color palette to apply.
-**value** | <code>number</code> | Value for the comparator.
-**customBgColor**? | <code>string</code> | Color palette to apply to the background, same values available as palette.<br/>__*Optional*__
-**customFgColor**? | <code>string</code> | Color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
-**hideValue**? | <code>boolean</code> | Setting this to True hides values.<br/>__*Optional*__
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
 **imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
-**metric**? | <code>string</code> | Metric from the request to correlate this conditional format with.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
 **timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormula  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**limit**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimit  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulalimit"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -10281,7 +11655,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10299,8 +11673,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10313,8 +11687,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10330,7 +11704,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10344,8 +11718,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10359,9 +11733,137 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**eventQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquery)></code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquerymetricquery)></code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryprocessquery)></code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -10374,7 +11876,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10392,8 +11894,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10406,8 +11908,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10423,7 +11925,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10437,8 +11939,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10451,7 +11953,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10469,8 +11971,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10483,8 +11985,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10500,7 +12002,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10514,8 +12016,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10528,7 +12030,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**autoscale**? | <code>boolean</code> | Boolean indicating whether to automatically scale the tile.<br/>__*Optional*__
+**autoscale**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to automatically scale the tile.<br/>__*Optional*__
 **customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitioncustomlink)></code> | custom_link block.<br/>__*Optional*__
 **customUnit**? | <code>string</code> | The unit for the value displayed in the widget.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
@@ -10537,7 +12039,7 @@ Name | Type | Description
 **textAlign**? | <code>string</code> | The alignment of the widget's text. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -10550,7 +12052,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -10566,8 +12068,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
+**auditQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquery)></code> | audit_query block.<br/>__*Optional*__
 **conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **formula**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
@@ -10588,7 +12091,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10606,8 +12109,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10620,8 +12123,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10637,7 +12140,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10651,8 +12154,85 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**index** | <code>string</code> | The name of the index to query.
+**computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
+**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
+**searchQuery**? | <code>string</code> | The search query to use.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
+**sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryMultiCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerymulticompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10665,14 +12245,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**comparator** | <code>string</code> | Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
-**palette** | <code>string</code> | Color palette to apply.
-**value** | <code>number</code> | Value for the comparator.
-**customBgColor**? | <code>string</code> | Color palette to apply to the background, same values available as palette.<br/>__*Optional*__
-**customFgColor**? | <code>string</code> | Color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
-**hideValue**? | <code>boolean</code> | Setting this to True hides values.<br/>__*Optional*__
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
 **imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
-**metric**? | <code>string</code> | Metric from the request to correlate this conditional format with.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
 **timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
@@ -10686,9 +12266,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -10701,8 +12304,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -10715,7 +12318,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10733,8 +12336,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10747,8 +12350,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10764,7 +12367,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10778,8 +12381,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10793,8 +12396,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -10824,8 +12427,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -10841,9 +12444,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -10856,8 +12459,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -10871,8 +12474,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -10886,7 +12489,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -10899,10 +12502,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -10915,15 +12518,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -10936,7 +12539,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -10954,8 +12557,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -10968,8 +12571,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -10985,7 +12588,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -10999,8 +12602,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11013,7 +12616,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11031,8 +12634,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11045,8 +12648,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11062,7 +12665,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11076,8 +12679,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11096,7 +12699,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **xaxis**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionxaxis)></code> | xaxis block.<br/>__*Optional*__
 **yaxis**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionyaxis)></code> | yaxis block.<br/>__*Optional*__
 
@@ -11111,7 +12714,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -11141,7 +12744,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquery)></code> | apm_query block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquery)></code> | log_query block.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxprocessquery)></code> | process_query block.<br/>__*Optional*__
@@ -11160,7 +12763,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11178,8 +12781,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11192,8 +12795,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11209,7 +12812,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11223,8 +12826,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11237,7 +12840,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11255,8 +12858,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11269,8 +12872,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11286,7 +12889,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11300,8 +12903,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11315,8 +12918,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -11330,7 +12933,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11348,8 +12951,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11362,8 +12965,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11379,7 +12982,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11393,8 +12996,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11407,7 +13010,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11425,8 +13028,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11439,8 +13042,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11456,7 +13059,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11470,8 +13073,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11484,7 +13087,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquery)></code> | apm_query block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquery)></code> | log_query block.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyprocessquery)></code> | process_query block.<br/>__*Optional*__
@@ -11503,7 +13106,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11521,8 +13124,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11535,8 +13138,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11552,7 +13155,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11566,8 +13169,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11580,7 +13183,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11598,8 +13201,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11612,8 +13215,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11629,7 +13232,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11643,8 +13246,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11658,8 +13261,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -11673,7 +13276,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11691,8 +13294,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11705,8 +13308,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11722,7 +13325,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11736,8 +13339,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11750,7 +13353,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -11768,8 +13371,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11782,8 +13385,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -11799,7 +13402,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -11813,8 +13416,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -11827,11 +13430,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -11844,11 +13447,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -11862,14 +13465,14 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sloId** | <code>string</code> | The ID of the service level objective used by the widget.
-**timeWindows** | <code>Array<string></code> | List of time windows to display in the widget.
-**viewMode** | <code>string</code> | View mode for the widget. Valid values are `overall`, `component`, `both`.
-**viewType** | <code>string</code> | Type of view to use when displaying the widget. Only `detail` is currently supported.
+**timeWindows** | <code>Array<string></code> | A list of time windows to display in the widget.
+**viewMode** | <code>string</code> | The view mode for the widget. Valid values are `overall`, `component`, `both`.
+**viewType** | <code>string</code> | The type of view to use when displaying the widget. Only `detail` is supported.
 **globalTimeTarget**? | <code>string</code> | The global time target of the widget.<br/>__*Optional*__
-**showErrorBudget**? | <code>boolean</code> | Whether to show the error budget or not.<br/>__*Optional*__
+**showErrorBudget**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the error budget or not.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -11883,11 +13486,11 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filters** | <code>Array<string></code> | Your environment and primary tag (or `*` if enabled for your account).
-**service** | <code>string</code> | The ID of the service you want to map.
+**service** | <code>string</code> | The ID of the service to map.
 **customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetservicemapdefinitioncustomlink)></code> | custom_link block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -11900,7 +13503,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -11925,10 +13528,10 @@ Name | Type | Description
 **marker**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionmarker)></code> | marker block.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **rightYaxis**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrightyaxis)></code> | right_yaxis block.<br/>__*Optional*__
-**showLegend**? | <code>boolean</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
+**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **yaxis**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionyaxis)></code> | yaxis block.<br/>__*Optional*__
 
 
@@ -11942,7 +13545,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -11972,8 +13575,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**value** | <code>string</code> | Mathematical expression describing the marker. Examples: `y > 1`, `-5 < y < 0`, `y = 19`.
-**displayType**? | <code>string</code> | How the marker lines will look.<br/>__*Optional*__
+**value** | <code>string</code> | A mathematical expression describing the marker, for example: `y > 1`, `-5 < y < 0`, `y = 19`.
+**displayType**? | <code>string</code> | How the marker lines are displayed, options are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}.<br/>__*Optional*__
 **label**? | <code>string</code> | A label for the line or range.<br/>__*Optional*__
 
 
@@ -11988,12 +13591,13 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
-**displayType**? | <code>string</code> | How the marker lines will look. Valid values are `area`, `bars`, `line`.<br/>__*Optional*__
+**auditQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquery)></code> | audit_query block.<br/>__*Optional*__
+**displayType**? | <code>string</code> | How to display the marker lines. Valid values are `area`, `bars`, `line`.<br/>__*Optional*__
 **formula**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
 **metadata**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestmetadata)></code> | metadata block.<br/>__*Optional*__
 **networkQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquery)></code> | network_query block.<br/>__*Optional*__
-**onRightYaxis**? | <code>boolean</code> | Boolean indicating whether the request will use the right or left Y-Axis.<br/>__*Optional*__
+**onRightYaxis**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether the request uses the right or left Y-Axis.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestprocessquery)></code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
 **query**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestquery)></code> | query block.<br/>__*Optional*__
@@ -12012,7 +13616,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12030,8 +13634,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12044,8 +13648,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12061,7 +13665,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12075,8 +13679,85 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**index** | <code>string</code> | The name of the index to query.
+**computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
+**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
+**searchQuery**? | <code>string</code> | The search query to use.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
+**sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupbysortquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerymulticompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12089,9 +13770,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -12104,8 +13808,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -12118,7 +13822,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12136,8 +13840,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12150,8 +13854,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12167,7 +13871,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12181,8 +13885,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12195,8 +13899,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**expression** | <code>string</code> | Expression name.
-**aliasName**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**expression** | <code>string</code> | The expression name.
+**aliasName**? | <code>string</code> | The expression alias.<br/>__*Optional*__
 
 
 
@@ -12209,7 +13913,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12227,8 +13931,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12241,8 +13945,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12258,7 +13962,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12272,8 +13976,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12287,8 +13991,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -12318,8 +14022,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -12335,9 +14039,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -12350,8 +14054,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -12365,8 +14069,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -12380,7 +14084,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -12393,10 +14097,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -12409,15 +14113,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -12430,7 +14134,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12448,8 +14152,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12462,8 +14166,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12479,7 +14183,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12493,8 +14197,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12507,7 +14211,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12525,8 +14229,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12539,8 +14243,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12556,7 +14260,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12570,8 +14274,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12584,9 +14288,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**lineType**? | <code>string</code> | Type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.<br/>__*Optional*__
-**lineWidth**? | <code>string</code> | Width of line displayed. Valid values are `normal`, `thick`, `thin`.<br/>__*Optional*__
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**lineType**? | <code>string</code> | The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.<br/>__*Optional*__
+**lineWidth**? | <code>string</code> | The width of line displayed. Valid values are `normal`, `thick`, `thin`.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -12599,11 +14303,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -12616,11 +14320,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -12638,7 +14342,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -12651,7 +14355,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -12668,6 +14372,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **apmQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
+**auditQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquery)></code> | audit_query block.<br/>__*Optional*__
 **conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **formula**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
@@ -12689,7 +14394,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12707,8 +14412,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12721,8 +14426,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12738,7 +14443,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12752,8 +14457,85 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**index** | <code>string</code> | The name of the index to query.
+**computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
+**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
+**searchQuery**? | <code>string</code> | The search query to use.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
+**sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupbysortquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerymulticompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12766,14 +14548,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**comparator** | <code>string</code> | Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
-**palette** | <code>string</code> | Color palette to apply.
-**value** | <code>number</code> | Value for the comparator.
-**customBgColor**? | <code>string</code> | Color palette to apply to the background, same values available as palette.<br/>__*Optional*__
-**customFgColor**? | <code>string</code> | Color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
-**hideValue**? | <code>boolean</code> | Setting this to True hides values.<br/>__*Optional*__
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
 **imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
-**metric**? | <code>string</code> | Metric from the request to correlate this conditional format with.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
 **timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
@@ -12787,9 +14569,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -12802,8 +14607,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -12816,7 +14621,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -12834,8 +14639,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12848,8 +14653,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -12865,7 +14670,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -12879,8 +14684,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -12894,8 +14699,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -12925,8 +14730,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -12942,9 +14747,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -12957,8 +14762,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -12972,8 +14777,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -12987,7 +14792,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -13000,10 +14805,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -13016,15 +14821,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -13037,7 +14842,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13055,8 +14860,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13069,8 +14874,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13086,7 +14891,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13100,8 +14905,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13114,7 +14919,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13132,8 +14937,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13146,8 +14951,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13163,7 +14968,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13177,8 +14982,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13191,7 +14996,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -13207,18 +15012,18 @@ Name | Type | Description
 **env** | <code>string</code> | APM environment.
 **service** | <code>string</code> | APM service.
 **spanName** | <code>string</code> | APM span name.
-**displayFormat**? | <code>string</code> | Number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.<br/>__*Optional*__
+**displayFormat**? | <code>string</code> | The number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**showBreakdown**? | <code>boolean</code> | Whether to show the latency breakdown or not.<br/>__*Optional*__
-**showDistribution**? | <code>boolean</code> | Whether to show the latency distribution or not.<br/>__*Optional*__
-**showErrors**? | <code>boolean</code> | Whether to show the error metrics or not.<br/>__*Optional*__
-**showHits**? | <code>boolean</code> | Whether to show the hits metrics or not.<br/>__*Optional*__
-**showLatency**? | <code>boolean</code> | Whether to show the latency metrics or not.<br/>__*Optional*__
-**showResourceList**? | <code>boolean</code> | Whether to show the resource list or not.<br/>__*Optional*__
-**sizeFormat**? | <code>string</code> | Size of the widget. Valid values are `small`, `medium`, `large`.<br/>__*Optional*__
+**showBreakdown**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the latency breakdown or not.<br/>__*Optional*__
+**showDistribution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the latency distribution or not.<br/>__*Optional*__
+**showErrors**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the error metrics or not.<br/>__*Optional*__
+**showHits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the hits metrics or not.<br/>__*Optional*__
+**showLatency**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the latency metrics or not.<br/>__*Optional*__
+**showResourceList**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the resource list or not.<br/>__*Optional*__
+**sizeFormat**? | <code>string</code> | The size of the widget. Valid values are `small`, `medium`, `large`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -13233,9 +15038,9 @@ Name | Type | Description
 -----|------|-------------
 **height** | <code>number</code> | The height of the widget.
 **width** | <code>number</code> | The width of the widget.
-**x** | <code>number</code> | The position of the widget on the x (horizontal) axis. Should be greater or equal to 0.
-**y** | <code>number</code> | The position of the widget on the y (vertical) axis. Should be greater or equal to 0.
-**isColumnBreak**? | <code>boolean</code> | Whether the widget should be the first one on the second column in high density or not.<br/>__*Optional*__
+**x** | <code>number</code> | The position of the widget on the x (horizontal) axis. Should be greater than or equal to 0.
+**y** | <code>number</code> | The position of the widget on the y (vertical) axis. Should be greater than or equal to 0.
+**isColumnBreak**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the widget should be the first one on the second column in high density or not.<br/>__*Optional*__
 
 
 
@@ -13253,10 +15058,10 @@ Name | Type | Description
 **legendSize**? | <code>string</code> | The size of the legend displayed in the widget.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequest)></code> | request block.<br/>__*Optional*__
-**showLegend**? | <code>boolean</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
+**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **yaxis**? | <code>Array<[DashboardWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionyaxis)></code> | yaxis block.<br/>__*Optional*__
 
 
@@ -13270,7 +15075,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -13319,7 +15124,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13337,8 +15142,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13351,8 +15156,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13368,7 +15173,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13382,8 +15187,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13396,7 +15201,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13414,8 +15219,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13428,8 +15233,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13445,7 +15250,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13459,8 +15264,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13474,8 +15279,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -13489,7 +15294,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13507,8 +15312,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13521,8 +15326,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13538,7 +15343,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13552,8 +15357,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13566,7 +15371,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13584,8 +15389,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13598,8 +15403,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13615,7 +15420,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13629,8 +15434,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13643,7 +15448,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -13656,11 +15461,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -13675,15 +15480,15 @@ Name | Type | Description
 -----|------|-------------
 **customLink**? | <code>Array<[DashboardWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgethostmapdefinitioncustomlink)></code> | custom_link block.<br/>__*Optional*__
 **group**? | <code>Array<string></code> | The list of tags to group nodes by.<br/>__*Optional*__
-**noGroupHosts**? | <code>boolean</code> | Boolean indicating whether to show ungrouped nodes.<br/>__*Optional*__
-**noMetricHosts**? | <code>boolean</code> | Boolean indicating whether to show nodes with no metrics.<br/>__*Optional*__
+**noGroupHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to show ungrouped nodes.<br/>__*Optional*__
+**noMetricHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to show nodes with no metrics.<br/>__*Optional*__
 **nodeType**? | <code>string</code> | The type of node used. Valid values are `host`, `container`.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **scope**? | <code>Array<string></code> | The list of tags to filter nodes by.<br/>__*Optional*__
 **style**? | <code>Array<[DashboardWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionstyle)></code> | style block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -13696,7 +15501,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -13744,7 +15549,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13762,8 +15567,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13776,8 +15581,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13793,7 +15598,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13807,8 +15612,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13821,7 +15626,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13839,8 +15644,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13853,8 +15658,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13870,7 +15675,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13884,8 +15689,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13899,8 +15704,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -13914,7 +15719,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -13932,8 +15737,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13946,8 +15751,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -13963,7 +15768,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -13977,8 +15782,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -13991,7 +15796,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14009,8 +15814,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14023,8 +15828,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14040,7 +15845,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14054,8 +15859,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14086,7 +15891,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14104,8 +15909,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14118,8 +15923,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14135,7 +15940,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14149,8 +15954,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14163,7 +15968,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14181,8 +15986,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14195,8 +16000,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14212,7 +16017,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14226,8 +16031,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14241,8 +16046,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -14256,7 +16061,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14274,8 +16079,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14288,8 +16093,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14305,7 +16110,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14319,8 +16124,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14333,7 +16138,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14351,8 +16156,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14365,8 +16170,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14382,7 +16187,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14396,8 +16201,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14410,10 +16215,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**fillMax**? | <code>string</code> | Max value to use to color the map.<br/>__*Optional*__
-**fillMin**? | <code>string</code> | Min value to use to color the map.<br/>__*Optional*__
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
-**paletteFlip**? | <code>boolean</code> | Boolean indicating whether to flip the palette tones.<br/>__*Optional*__
+**fillMax**? | <code>string</code> | The max value to use to color the map.<br/>__*Optional*__
+**fillMin**? | <code>string</code> | The min value to use to color the map.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**paletteFlip**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to flip the palette tones.<br/>__*Optional*__
 
 
 
@@ -14440,8 +16245,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **url** | <code>string</code> | The URL to use as a data source for the widget.
-**hasBackground**? | <code>boolean</code> | Whether to display a background or not.<br/>__*Optional*__
-**hasBorder**? | <code>boolean</code> | Whether to display a border or not.<br/>__*Optional*__
+**hasBackground**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to display a background or not.<br/>__*Optional*__
+**hasBorder**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to display a border or not.<br/>__*Optional*__
 **horizontalAlign**? | <code>string</code> | The horizontal alignment for the widget. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **margin**? | <code>string</code> | The margins to use around the image.<br/>__*Optional*__
 **sizing**? | <code>string</code> | The preferred method to adapt the dimensions of the image.<br/>__*Optional*__
@@ -14459,17 +16264,17 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**columns**? | <code>Array<string></code> | Stringified list of columns to use. Example: `["column1","column2","column3"]`.<br/>__*Optional*__
+**columns**? | <code>Array<string></code> | Stringified list of columns to use, for example: `["column1","column2","column3"]`.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**messageDisplay**? | <code>string</code> | Amount of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.<br/>__*Optional*__
+**messageDisplay**? | <code>string</code> | The number of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.<br/>__*Optional*__
 **query**? | <code>string</code> | The query to use in the widget.<br/>__*Optional*__
-**showDateColumn**? | <code>boolean</code> | If the date column should be displayed.<br/>__*Optional*__
-**showMessageColumn**? | <code>boolean</code> | If the message column should be displayed.<br/>__*Optional*__
+**showDateColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the date column should be displayed.<br/>__*Optional*__
+**showMessageColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the message column should be displayed.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionsort)></code> | sort block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -14482,7 +16287,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**column** | <code>string</code> | Facet path for the column.
+**column** | <code>string</code> | The facet path for the column.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
 
 
@@ -14499,13 +16304,13 @@ Name | Type | Description
 **query** | <code>string</code> | The query to use in the widget.
 **colorPreference**? | <code>string</code> | Whether to colorize text or background. Valid values are `background`, `text`.<br/>__*Optional*__
 **displayFormat**? | <code>string</code> | The display setting to use. Valid values are `counts`, `countsAndList`, `list`.<br/>__*Optional*__
-**hideZeroCounts**? | <code>boolean</code> | Boolean indicating whether to hide empty categories.<br/>__*Optional*__
-**showLastTriggered**? | <code>boolean</code> | Boolean indicating whether to show when monitors/groups last triggered.<br/>__*Optional*__
-**sort**? | <code>string</code> | The method to use to sort monitors.<br/>__*Optional*__
-**summaryType**? | <code>string</code> | Which summary type should be used. Valid values are `monitors`, `groups`, `combined`.<br/>__*Optional*__
+**hideZeroCounts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to hide empty categories.<br/>__*Optional*__
+**showLastTriggered**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to show when monitors/groups last triggered.<br/>__*Optional*__
+**sort**? | <code>string</code> | The method to sort the monitors.<br/>__*Optional*__
+**summaryType**? | <code>string</code> | The summary type to use. Valid values are `monitors`, `groups`, `combined`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -14518,14 +16323,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**content** | <code>string</code> | Content of the note.
-**backgroundColor**? | <code>string</code> | Background color of the note.<br/>__*Optional*__
-**fontSize**? | <code>string</code> | Size of the text.<br/>__*Optional*__
-**hasPadding**? | <code>boolean</code> | Whether to add padding or not.<br/>__*Optional*__
-**showTick**? | <code>boolean</code> | Whether to show a tick or not.<br/>__*Optional*__
+**content** | <code>string</code> | The content of the note.
+**backgroundColor**? | <code>string</code> | The background color of the note.<br/>__*Optional*__
+**fontSize**? | <code>string</code> | The size of the text.<br/>__*Optional*__
+**hasPadding**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to add padding or not.<br/>__*Optional*__
+**showTick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show a tick or not.<br/>__*Optional*__
 **textAlign**? | <code>string</code> | The alignment of the widget's text. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**tickEdge**? | <code>string</code> | When `tick = true`, string indicating on which side of the widget the tick should be displayed.<br/>__*Optional*__
-**tickPos**? | <code>string</code> | When `tick = true`, string with a percent sign indicating the position of the tick.<br/>__*Optional*__
+**tickEdge**? | <code>string</code> | When `tick = true`, a string indicating on which side of the widget the tick should be displayed.<br/>__*Optional*__
+**tickPos**? | <code>string</code> | When `tick = true`, a string with a percent sign indicating the position of the tick, for example: `tick_pos = "50%"` is centered alignment.<br/>__*Optional*__
 **verticalAlign**? | <code>string</code> | The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.<br/>__*Optional*__
 
 
@@ -14545,7 +16350,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -14558,7 +16363,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -14574,17 +16379,19 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
-**alias**? | <code>string</code> | The alias for the column name. Default is the metric name.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
+**alias**? | <code>string</code> | The alias for the column name (defaults to metric name).<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
 **apmStatsQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquery)></code> | apm_stats_query block.<br/>__*Optional*__
 **cellDisplayMode**? | <code>Array<string></code> | A list of display modes for each table cell.<br/>__*Optional*__
 **conditionalFormats**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**formula**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **limit**? | <code>number</code> | The number of lines to show in the table.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
 **order**? | <code>string</code> | The sort order for the rows. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestprocessquery)></code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
+**query**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquery)></code> | query block.<br/>__*Optional*__
 **rumQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquery)></code> | rum_query block.<br/>__*Optional*__
 **securityQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquery)></code> | security_query block.<br/>__*Optional*__
 
@@ -14599,7 +16406,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14617,8 +16424,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14631,8 +16438,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14648,7 +16455,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14662,8 +16469,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14676,13 +16483,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**env** | <code>string</code> | Environment name.
-**name** | <code>string</code> | Operation name associated with service.
+**env** | <code>string</code> | The environment name.
+**name** | <code>string</code> | The operation name associated with the service.
 **primaryTag** | <code>string</code> | The organization's host group name and value.
 **rowType** | <code>string</code> | The level of detail for the request. Valid values are `service`, `resource`, `span`.
-**service** | <code>string</code> | Service name.
+**service** | <code>string</code> | The service name.
 **columns**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | columns block.<br/>__*Optional*__
-**resource**? | <code>string</code> | Resource name.<br/>__*Optional*__
+**resource**? | <code>string</code> | The resource name.<br/>__*Optional*__
 
 
 
@@ -14695,7 +16502,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Column name.
+**name** | <code>string</code> | The column name.
 **alias**? | <code>string</code> | A user-assigned alias for the column.<br/>__*Optional*__
 **cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
 **order**? | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.<br/>__*Optional*__
@@ -14711,15 +16518,67 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**comparator** | <code>string</code> | Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
-**palette** | <code>string</code> | Color palette to apply.
-**value** | <code>number</code> | Value for the comparator.
-**customBgColor**? | <code>string</code> | Color palette to apply to the background, same values available as palette.<br/>__*Optional*__
-**customFgColor**? | <code>string</code> | Color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
-**hideValue**? | <code>boolean</code> | Setting this to True hides values.<br/>__*Optional*__
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
 **imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
-**metric**? | <code>string</code> | Metric from the request to correlate this conditional format with.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
 **timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestFormula  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**limit**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestFormulaLimit  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulalimit"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -14732,7 +16591,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14750,8 +16609,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14764,8 +16623,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14781,7 +16640,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14795,8 +16654,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14810,9 +16669,137 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQuery  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**eventQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquery)></code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquerymetricquery)></code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryprocessquery)></code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -14825,7 +16812,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14843,8 +16830,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14857,8 +16844,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14874,7 +16861,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14888,8 +16875,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14902,7 +16889,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -14920,8 +16907,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14934,8 +16921,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -14951,7 +16938,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -14965,8 +16952,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -14979,7 +16966,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**autoscale**? | <code>boolean</code> | Boolean indicating whether to automatically scale the tile.<br/>__*Optional*__
+**autoscale**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether to automatically scale the tile.<br/>__*Optional*__
 **customLink**? | <code>Array<[DashboardWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitioncustomlink)></code> | custom_link block.<br/>__*Optional*__
 **customUnit**? | <code>string</code> | The unit for the value displayed in the widget.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
@@ -14988,7 +16975,7 @@ Name | Type | Description
 **textAlign**? | <code>string</code> | The alignment of the widget's text. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -15001,7 +16988,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -15017,8 +17004,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
+**auditQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquery)></code> | audit_query block.<br/>__*Optional*__
 **conditionalFormats**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **formula**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
@@ -15039,7 +17027,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15057,8 +17045,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15071,8 +17059,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15088,7 +17076,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15102,8 +17090,85 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionRequestAuditQuery  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**index** | <code>string</code> | The name of the index to query.
+**computeQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
+**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
+**searchQuery**? | <code>string</code> | The search query to use.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
+**sortQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerymulticompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15116,14 +17181,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**comparator** | <code>string</code> | Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
-**palette** | <code>string</code> | Color palette to apply.
-**value** | <code>number</code> | Value for the comparator.
-**customBgColor**? | <code>string</code> | Color palette to apply to the background, same values available as palette.<br/>__*Optional*__
-**customFgColor**? | <code>string</code> | Color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
-**hideValue**? | <code>boolean</code> | Setting this to True hides values.<br/>__*Optional*__
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
 **imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
-**metric**? | <code>string</code> | Metric from the request to correlate this conditional format with.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
 **timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
@@ -15137,9 +17202,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -15152,8 +17240,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -15166,7 +17254,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15184,8 +17272,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15198,8 +17286,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15215,7 +17303,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15229,8 +17317,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15244,8 +17332,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -15275,8 +17363,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -15292,9 +17380,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -15307,8 +17395,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -15322,8 +17410,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -15337,7 +17425,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -15350,10 +17438,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -15366,15 +17454,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -15387,7 +17475,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15405,8 +17493,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15419,8 +17507,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15436,7 +17524,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15450,8 +17538,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15464,7 +17552,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15482,8 +17570,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15496,8 +17584,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15513,7 +17601,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15527,8 +17615,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15547,7 +17635,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **xaxis**? | <code>Array<[DashboardWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionxaxis)></code> | xaxis block.<br/>__*Optional*__
 **yaxis**? | <code>Array<[DashboardWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionyaxis)></code> | yaxis block.<br/>__*Optional*__
 
@@ -15562,7 +17650,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -15592,7 +17680,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquery)></code> | apm_query block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquery)></code> | log_query block.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxprocessquery)></code> | process_query block.<br/>__*Optional*__
@@ -15611,7 +17699,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15629,8 +17717,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15643,8 +17731,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15660,7 +17748,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15674,8 +17762,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15688,7 +17776,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15706,8 +17794,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15720,8 +17808,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15737,7 +17825,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15751,8 +17839,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15766,8 +17854,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -15781,7 +17869,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15799,8 +17887,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15813,8 +17901,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15830,7 +17918,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15844,8 +17932,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15858,7 +17946,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15876,8 +17964,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15890,8 +17978,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -15907,7 +17995,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -15921,8 +18009,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15935,7 +18023,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`.<br/>__*Optional*__
+**aggregator**? | <code>string</code> | Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.<br/>__*Optional*__
 **apmQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquery)></code> | apm_query block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquery)></code> | log_query block.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyprocessquery)></code> | process_query block.<br/>__*Optional*__
@@ -15954,7 +18042,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -15972,8 +18060,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -15986,8 +18074,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16003,7 +18091,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16017,8 +18105,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16031,7 +18119,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16049,8 +18137,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16063,8 +18151,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16080,7 +18168,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16094,8 +18182,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16109,8 +18197,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -16124,7 +18212,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16142,8 +18230,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16156,8 +18244,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16173,7 +18261,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16187,8 +18275,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16201,7 +18289,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16219,8 +18307,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16233,8 +18321,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16250,7 +18338,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16264,8 +18352,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16278,11 +18366,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -16295,11 +18383,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -16313,14 +18401,14 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sloId** | <code>string</code> | The ID of the service level objective used by the widget.
-**timeWindows** | <code>Array<string></code> | List of time windows to display in the widget.
-**viewMode** | <code>string</code> | View mode for the widget. Valid values are `overall`, `component`, `both`.
-**viewType** | <code>string</code> | Type of view to use when displaying the widget. Only `detail` is currently supported.
+**timeWindows** | <code>Array<string></code> | A list of time windows to display in the widget.
+**viewMode** | <code>string</code> | The view mode for the widget. Valid values are `overall`, `component`, `both`.
+**viewType** | <code>string</code> | The type of view to use when displaying the widget. Only `detail` is supported.
 **globalTimeTarget**? | <code>string</code> | The global time target of the widget.<br/>__*Optional*__
-**showErrorBudget**? | <code>boolean</code> | Whether to show the error budget or not.<br/>__*Optional*__
+**showErrorBudget**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the error budget or not.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -16334,11 +18422,11 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filters** | <code>Array<string></code> | Your environment and primary tag (or `*` if enabled for your account).
-**service** | <code>string</code> | The ID of the service you want to map.
+**service** | <code>string</code> | The ID of the service to map.
 **customLink**? | <code>Array<[DashboardWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetservicemapdefinitioncustomlink)></code> | custom_link block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -16351,7 +18439,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -16376,10 +18464,10 @@ Name | Type | Description
 **marker**? | <code>Array<[DashboardWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionmarker)></code> | marker block.<br/>__*Optional*__
 **request**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **rightYaxis**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrightyaxis)></code> | right_yaxis block.<br/>__*Optional*__
-**showLegend**? | <code>boolean</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
+**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to show the legend on this widget.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 **yaxis**? | <code>Array<[DashboardWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionyaxis)></code> | yaxis block.<br/>__*Optional*__
 
 
@@ -16393,7 +18481,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -16423,8 +18511,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**value** | <code>string</code> | Mathematical expression describing the marker. Examples: `y > 1`, `-5 < y < 0`, `y = 19`.
-**displayType**? | <code>string</code> | How the marker lines will look.<br/>__*Optional*__
+**value** | <code>string</code> | A mathematical expression describing the marker, for example: `y > 1`, `-5 < y < 0`, `y = 19`.
+**displayType**? | <code>string</code> | How the marker lines are displayed, options are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}.<br/>__*Optional*__
 **label**? | <code>string</code> | A label for the line or range.<br/>__*Optional*__
 
 
@@ -16439,12 +18527,13 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **apmQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
-**displayType**? | <code>string</code> | How the marker lines will look. Valid values are `area`, `bars`, `line`.<br/>__*Optional*__
+**auditQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquery)></code> | audit_query block.<br/>__*Optional*__
+**displayType**? | <code>string</code> | How to display the marker lines. Valid values are `area`, `bars`, `line`.<br/>__*Optional*__
 **formula**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
 **metadata**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestMetadata](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestmetadata)></code> | metadata block.<br/>__*Optional*__
 **networkQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquery)></code> | network_query block.<br/>__*Optional*__
-**onRightYaxis**? | <code>boolean</code> | Boolean indicating whether the request will use the right or left Y-Axis.<br/>__*Optional*__
+**onRightYaxis**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether the request uses the right or left Y-Axis.<br/>__*Optional*__
 **processQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestprocessquery)></code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
 **query**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestquery)></code> | query block.<br/>__*Optional*__
@@ -16463,7 +18552,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16481,8 +18570,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16495,8 +18584,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16512,7 +18601,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16526,8 +18615,85 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTimeseriesDefinitionRequestAuditQuery  <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**index** | <code>string</code> | The name of the index to query.
+**computeQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
+**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
+**searchQuery**? | <code>string</code> | The search query to use.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery  <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
+**sortQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery  <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupbysortquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute  <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerymulticompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16540,9 +18706,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTimeseriesDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -16555,8 +18744,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -16569,7 +18758,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16587,8 +18776,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16601,8 +18790,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16618,7 +18807,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16632,8 +18821,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16646,8 +18835,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**expression** | <code>string</code> | Expression name.
-**aliasName**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**expression** | <code>string</code> | The expression name.
+**aliasName**? | <code>string</code> | The expression alias.<br/>__*Optional*__
 
 
 
@@ -16660,7 +18849,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16678,8 +18867,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16692,8 +18881,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16709,7 +18898,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16723,8 +18912,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16738,8 +18927,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -16769,8 +18958,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -16786,9 +18975,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -16801,8 +18990,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -16816,8 +19005,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -16831,7 +19020,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -16844,10 +19033,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -16860,15 +19049,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -16881,7 +19070,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16899,8 +19088,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16913,8 +19102,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -16930,7 +19119,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -16944,8 +19133,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16958,7 +19147,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -16976,8 +19165,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -16990,8 +19179,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -17007,7 +19196,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -17021,8 +19210,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17035,9 +19224,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**lineType**? | <code>string</code> | Type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.<br/>__*Optional*__
-**lineWidth**? | <code>string</code> | Width of line displayed. Valid values are `normal`, `thick`, `thin`.<br/>__*Optional*__
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**lineType**? | <code>string</code> | The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.<br/>__*Optional*__
+**lineWidth**? | <code>string</code> | The width of line displayed. Valid values are `normal`, `thick`, `thin`.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -17050,11 +19239,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -17067,11 +19256,11 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
 **label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
 **max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
 **min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
-**scale**? | <code>string</code> | Specifies the scale type. One of `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -17089,7 +19278,7 @@ Name | Type | Description
 **request**? | <code>Array<[DashboardWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequest)></code> | request block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -17102,7 +19291,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**isHidden**? | <code>boolean</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
+**isHidden**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | The flag for toggling context menu link visibility.<br/>__*Optional*__
 **label**? | <code>string</code> | The label for the custom link URL.<br/>__*Optional*__
 **link**? | <code>string</code> | The URL of the custom link.<br/>__*Optional*__
 **overrideLabel**? | <code>string</code> | The label id that refers to a context menu link item.<br/>__*Optional*__
@@ -17119,6 +19308,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **apmQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquery)></code> | apm_query block.<br/>__*Optional*__
+**auditQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquery)></code> | audit_query block.<br/>__*Optional*__
 **conditionalFormats**? | <code>Array<[DashboardWidgetToplistDefinitionRequestConditionalFormats](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **formula**? | <code>Array<[DashboardWidgetToplistDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **logQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquery)></code> | log_query block.<br/>__*Optional*__
@@ -17140,7 +19330,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -17158,8 +19348,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17172,8 +19362,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -17189,7 +19379,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -17203,8 +19393,85 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetToplistDefinitionRequestAuditQuery  <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**index** | <code>string</code> | The name of the index to query.
+**computeQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
+**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
+**searchQuery**? | <code>string</code> | The search query to use.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery  <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetToplistDefinitionRequestAuditQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
+**sortQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery  <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupbysortquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetToplistDefinitionRequestAuditQueryMultiCompute  <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerymulticompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation method.
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17217,14 +19484,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**comparator** | <code>string</code> | Comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
-**palette** | <code>string</code> | Color palette to apply.
-**value** | <code>number</code> | Value for the comparator.
-**customBgColor**? | <code>string</code> | Color palette to apply to the background, same values available as palette.<br/>__*Optional*__
-**customFgColor**? | <code>string</code> | Color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
-**hideValue**? | <code>boolean</code> | Setting this to True hides values.<br/>__*Optional*__
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
 **imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
-**metric**? | <code>string</code> | Metric from the request to correlate this conditional format with.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
 **timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
@@ -17238,9 +19505,32 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**formulaExpression** | <code>string</code> | String expression built from queries, formulas and functions.
-**alias**? | <code>string</code> | Expression alias.<br/>__*Optional*__
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetToplistDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
 **limit**? | <code>Array<[DashboardWidgetToplistDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformulalimit)></code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetToplistDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
 
 
 
@@ -17253,8 +19543,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | Number of results to return.<br/>__*Optional*__
-**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -17267,7 +19557,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -17285,8 +19575,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17299,8 +19589,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -17316,7 +19606,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -17330,8 +19620,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17345,8 +19635,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **metric** | <code>string</code> | Your chosen metric.
-**filterBy**? | <code>Array<string></code> | List of processes.<br/>__*Optional*__
-**limit**? | <code>number</code> | Max number of items in the filter list.<br/>__*Optional*__
+**filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
+**limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
 
 
@@ -17376,8 +19666,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerycompute)></code> | compute block.
-**dataSource** | <code>string</code> | Data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`.
-**name** | <code>string</code> | Name of query for use in formulas.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
 **groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
 **search**? | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerysearch)></code> | search block.<br/>__*Optional*__
@@ -17393,9 +19683,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
 **interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
-**metric**? | <code>string</code> | Measurable attribute to compute.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
 
 
 
@@ -17408,8 +19698,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet** | <code>string</code> | Event facet.
-**limit**? | <code>number</code> | Number of groups to return.<br/>__*Optional*__
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
 **sort**? | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerygroupbysort)></code> | sort block.<br/>__*Optional*__
 
 
@@ -17423,8 +19713,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**aggregation** | <code>string</code> | Aggregation methods for event platform queries.
-**metric**? | <code>string</code> | Metric used for sorting group by results.<br/>__*Optional*__
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
 **order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
@@ -17438,7 +19728,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**query** | <code>string</code> | Events search string.
+**query** | <code>string</code> | The events search string.
 
 
 
@@ -17451,10 +19741,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Name of the query for use in formulas.
-**query** | <code>string</code> | Metrics query definition.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**dataSource**? | <code>string</code> | Data source for metrics queries.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
 
 
 
@@ -17467,15 +19757,15 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dataSource** | <code>string</code> | Data source for process queries. Valid values are `process`, `container`.
-**metric** | <code>string</code> | Process metric name.
-**name** | <code>string</code> | Name of query for use in formulas.
-**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`.<br/>__*Optional*__
-**isNormalizedCpu**? | <code>boolean</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
-**limit**? | <code>number</code> | Number of hits to return.<br/>__*Optional*__
-**sort**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
-**textFilter**? | <code>string</code> | Text to use as filter.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -17488,7 +19778,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -17506,8 +19796,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17520,8 +19810,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -17537,7 +19827,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -17551,8 +19841,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17565,7 +19855,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**index** | <code>string</code> | Name of the index to query.
+**index** | <code>string</code> | The name of the index to query.
 **computeQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerycomputequery)></code> | compute_query block.<br/>__*Optional*__
 **groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | group_by block.<br/>__*Optional*__
 **multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | multi_compute block.<br/>__*Optional*__
@@ -17583,8 +19873,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17597,8 +19887,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**limit**? | <code>number</code> | Maximum number of items in the group.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**limit**? | <code>number</code> | The maximum number of items in the group.<br/>__*Optional*__
 **sortQuery**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerygroupbysortquery)></code> | sort_query block.<br/>__*Optional*__
 
 
@@ -17614,7 +19904,7 @@ Name | Type | Description
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
 **order** | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 
 
 
@@ -17628,8 +19918,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | The aggregation method.
-**facet**? | <code>string</code> | Facet name.<br/>__*Optional*__
-**interval**? | <code>number</code> | Define a time interval in seconds.<br/>__*Optional*__
+**facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
+**interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
 
 
 
@@ -17642,7 +19932,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | Color palette to apply to the widget. The available options are available here: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
+**palette**? | <code>string</code> | A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.<br/>__*Optional*__
 
 
 
@@ -17658,18 +19948,18 @@ Name | Type | Description
 **env** | <code>string</code> | APM environment.
 **service** | <code>string</code> | APM service.
 **spanName** | <code>string</code> | APM span name.
-**displayFormat**? | <code>string</code> | Number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.<br/>__*Optional*__
+**displayFormat**? | <code>string</code> | The number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.<br/>__*Optional*__
 **liveSpan**? | <code>string</code> | The timeframe to use when displaying the widget.<br/>__*Optional*__
-**showBreakdown**? | <code>boolean</code> | Whether to show the latency breakdown or not.<br/>__*Optional*__
-**showDistribution**? | <code>boolean</code> | Whether to show the latency distribution or not.<br/>__*Optional*__
-**showErrors**? | <code>boolean</code> | Whether to show the error metrics or not.<br/>__*Optional*__
-**showHits**? | <code>boolean</code> | Whether to show the hits metrics or not.<br/>__*Optional*__
-**showLatency**? | <code>boolean</code> | Whether to show the latency metrics or not.<br/>__*Optional*__
-**showResourceList**? | <code>boolean</code> | Whether to show the resource list or not.<br/>__*Optional*__
-**sizeFormat**? | <code>string</code> | Size of the widget. Valid values are `small`, `medium`, `large`.<br/>__*Optional*__
+**showBreakdown**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the latency breakdown or not.<br/>__*Optional*__
+**showDistribution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the latency distribution or not.<br/>__*Optional*__
+**showErrors**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the error metrics or not.<br/>__*Optional*__
+**showHits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the hits metrics or not.<br/>__*Optional*__
+**showLatency**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the latency metrics or not.<br/>__*Optional*__
+**showResourceList**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to show the resource list or not.<br/>__*Optional*__
+**sizeFormat**? | <code>string</code> | The size of the widget. Valid values are `small`, `medium`, `large`.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
-**titleSize**? | <code>string</code> | The size of the widget's title. Default is 16.<br/>__*Optional*__
+**titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
 
 
 
@@ -17684,9 +19974,45 @@ Name | Type | Description
 -----|------|-------------
 **height** | <code>number</code> | The height of the widget.
 **width** | <code>number</code> | The width of the widget.
-**x** | <code>number</code> | The position of the widget on the x (horizontal) axis. Should be greater or equal to 0.
-**y** | <code>number</code> | The position of the widget on the y (vertical) axis. Should be greater or equal to 0.
-**isColumnBreak**? | <code>boolean</code> | Whether the widget should be the first one on the second column in high density or not.<br/>__*Optional*__
+**x** | <code>number</code> | The position of the widget on the x (horizontal) axis. Should be greater than or equal to 0.
+**y** | <code>number</code> | The position of the widget on the y (vertical) axis. Should be greater than or equal to 0.
+**isColumnBreak**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the widget should be the first one on the second column in high density or not.<br/>__*Optional*__
+
+
+
+## struct DataDatadogApiKeyConfig  <a id="cdktf-provider-datadog-datadatadogapikeyconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**id**? | <code>string</code> | Id for API Key.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**name**? | <code>string</code> | Name for API Key.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DataDatadogApplicationKeyConfig  <a id="cdktf-provider-datadog-datadatadogapplicationkeyconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**id**? | <code>string</code> | Id for Application Key.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**name**? | <code>string</code> | Name for Application Key.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
 
 
@@ -17811,6 +20137,22 @@ Name | Type | Description
 
 
 
+## struct DataDatadogSecurityMonitoringFiltersConfig  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataDatadogSecurityMonitoringRulesConfig  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesconfig"></a>
 
 
@@ -17821,13 +20163,13 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **count**?🔹 | <code>number</code> | __*Optional*__
-**defaultOnlyFilter**? | <code>boolean</code> | Limit the search to default rules.<br/>__*Optional*__
+**defaultOnlyFilter**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Limit the search to default rules.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **nameFilter**? | <code>string</code> | A rule name to limit the search.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **tagsFilter**? | <code>Array<string></code> | A list of tags to limit the search.<br/>__*Optional*__
-**userOnlyFilter**? | <code>boolean</code> | Limit the search to user rules.<br/>__*Optional*__
+**userOnlyFilter**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Limit the search to user rules.<br/>__*Optional*__
 
 
 
@@ -17871,6 +20213,23 @@ Name | Type | Description
 
 
 
+## struct DataDatadogSyntheticsGlobalVariableConfig  <a id="cdktf-provider-datadog-datadatadogsyntheticsglobalvariableconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The synthetics global variable name to search for. Must only match one global variable.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataDatadogSyntheticsLocationsConfig  <a id="cdktf-provider-datadog-datadatadogsyntheticslocationsconfig"></a>
 
 
@@ -17880,6 +20239,23 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DataDatadogUserConfig  <a id="cdktf-provider-datadog-datadatadoguserconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**filter** | <code>string</code> | Filter all users by the given string.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
@@ -17900,9 +20276,9 @@ Name | Type | Description
 **apiKey**? | <code>string</code> | (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.<br/>__*Optional*__
 **apiUrl**? | <code>string</code> | The API URL.<br/>__*Optional*__
 **appKey**? | <code>string</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.<br/>__*Optional*__
-**httpClientRetryEnabled**? | <code>boolean</code> | Enables request retries on HTTP status codes 429 and 5xx.<br/>__*Optional*__
+**httpClientRetryEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enables request retries on HTTP status codes 429 and 5xx.<br/>__*Optional*__
 **httpClientRetryTimeout**? | <code>number</code> | The HTTP request retry timeout period.<br/>__*Optional*__
-**validate**? | <code>boolean</code> | Enables validation of the provided API and APP keys during provider initialization.<br/>__*Optional*__
+**validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enables validation of the provided API and APP keys during provider initialization.<br/>__*Optional*__
 
 
 
@@ -17961,7 +20337,7 @@ Name | Type | Description
 -----|------|-------------
 **accessKeyId**? | <code>string</code> | Your AWS access key ID. Only required if your AWS account is a GovCloud or China account.<br/>__*Optional*__
 **accountId**? | <code>string</code> | Your AWS Account ID without dashes.<br/>__*Optional*__
-**accountSpecificNamespaceRules**? | <code>Map<string, boolean></code> | Enables or disables metric collection for specific AWS namespaces for this AWS account only.<br/>__*Optional*__
+**accountSpecificNamespaceRules**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code> | Enables or disables metric collection for specific AWS namespaces for this AWS account only.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **excludedRegions**? | <code>Array<string></code> | An array of AWS regions to exclude from metrics collection.<br/>__*Optional*__
@@ -18063,7 +20439,7 @@ Name | Type | Description
 **privateKey** | <code>string</code> | Your private key name found in your JSON service account key.
 **privateKeyId** | <code>string</code> | Your private key ID found in your JSON service account key.
 **projectId** | <code>string</code> | Your Google Cloud project ID found in your JSON service account key.
-**automute**? | <code>boolean</code> | Silence monitors for expected GCE instance shutdowns.<br/>__*Optional*__
+**automute**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Silence monitors for expected GCE instance shutdowns.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **hostFilters**? | <code>string</code> | Limit the GCE instances that are pulled into Datadog by using tags.<br/>__*Optional*__
@@ -18137,10 +20513,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**message**? | <code>boolean</code> | Show the main body of the alert event.<br/>__*Optional*__
-**notified**? | <code>boolean</code> | Show the list of @-handles in the alert event.<br/>__*Optional*__
-**snapshot**? | <code>boolean</code> | Show the alert event's snapshot image.<br/>__*Optional*__
-**tags**? | <code>boolean</code> | Show the scopes on which the monitor alerted.<br/>__*Optional*__
+**message**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Show the main body of the alert event.<br/>__*Optional*__
+**notified**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Show the list of @-handles in the alert event.<br/>__*Optional*__
+**snapshot**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Show the alert event's snapshot image.<br/>__*Optional*__
+**tags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Show the scopes on which the monitor alerted.<br/>__*Optional*__
 
 
 
@@ -18176,7 +20552,7 @@ Name | Type | Description
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **gcsArchive**? | <code>Array<[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)></code> | gcs_archive block.<br/>__*Optional*__
-**includeTags**? | <code>boolean</code> | To store the tags in the archive, set the value `true`.<br/>__*Optional*__
+**includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | To store the tags in the archive, set the value `true`.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **rehydrationTags**? | <code>Array<string></code> | An array of tags to add to rehydrated logs from an archive.<br/>__*Optional*__
@@ -18246,7 +20622,7 @@ Name | Type | Description
 **name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**isEnabled**? | <code>boolean</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **processor**? | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | processor block.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
@@ -18304,8 +20680,8 @@ Name | Type | Description
 -----|------|-------------
 **expression** | <code>string</code> | Arithmetic operation between one or more log attributes.
 **target** | <code>string</code> | Name of the attribute that contains the result of the arithmetic operation.
-**isEnabled**? | <code>boolean</code> | Boolean value to enable your pipeline.<br/>__*Optional*__
-**isReplaceMissing**? | <code>boolean</code> | If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Boolean value to enable your pipeline.<br/>__*Optional*__
+**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.<br/>__*Optional*__
 **name**? | <code>string</code> | Your pipeline name.<br/>__*Optional*__
 
 
@@ -18323,10 +20699,10 @@ Name | Type | Description
 **sources** | <code>Array<string></code> | List of source attributes or tags.
 **target** | <code>string</code> | Final attribute or tag name to remap the sources.
 **targetType** | <code>string</code> | Defines if the target is a log `attribute` or `tag`.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
-**overrideOnConflict**? | <code>boolean</code> | Override the target element if already set.<br/>__*Optional*__
-**preserveSource**? | <code>boolean</code> | Remove or preserve the remapped source element.<br/>__*Optional*__
+**overrideOnConflict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Override the target element if already set.<br/>__*Optional*__
+**preserveSource**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Remove or preserve the remapped source element.<br/>__*Optional*__
 **targetFormat**? | <code>string</code> | If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type.<br/>__*Optional*__
 
 
@@ -18342,7 +20718,7 @@ Name | Type | Description
 -----|------|-------------
 **category** | <code>Array<[LogsCustomPipelineProcessorCategoryProcessorCategory](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessorcategory)></code> | category block.
 **target** | <code>string</code> | Name of the target attribute whose value is defined by the matching category.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the category.<br/>__*Optional*__
 
 
@@ -18384,7 +20760,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18400,7 +20776,7 @@ Name | Type | Description
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
 **target** | <code>string</code> | Name of the parent attribute that contains all the extracted details from the sources.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18416,7 +20792,7 @@ Name | Type | Description
 -----|------|-------------
 **grok** | <code>Array<[LogsCustomPipelineProcessorGrokParserGrok](#cdktf-provider-datadog-logscustompipelineprocessorgrokparsergrok)></code> | grok block.
 **source** | <code>string</code> | Name of the log attribute to parse.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 **samples**? | <code>Array<string></code> | List of sample logs for this parser.<br/>__*Optional*__
 
@@ -18449,7 +20825,7 @@ Name | Type | Description
 **source** | <code>string</code> | Name of the source attribute used to do the lookup.
 **target** | <code>string</code> | Name of the attribute that contains the result of the lookup.
 **defaultLookup**? | <code>string</code> | Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.<br/>__*Optional*__
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18464,7 +20840,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18480,7 +20856,7 @@ Name | Type | Description
 -----|------|-------------
 **filter** | <code>Array<[LogsCustomPipelineProcessorPipelineFilter](#cdktf-provider-datadog-logscustompipelineprocessorpipelinefilter)></code> | filter block.
 **name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}.
-**isEnabled**? | <code>boolean</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
 **processor**? | <code>Array<[LogsCustomPipelineProcessorPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessor)></code> | processor block.<br/>__*Optional*__
 
 
@@ -18535,8 +20911,8 @@ Name | Type | Description
 -----|------|-------------
 **expression** | <code>string</code> | Arithmetic operation between one or more log attributes.
 **target** | <code>string</code> | Name of the attribute that contains the result of the arithmetic operation.
-**isEnabled**? | <code>boolean</code> | Boolean value to enable your pipeline.<br/>__*Optional*__
-**isReplaceMissing**? | <code>boolean</code> | If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Boolean value to enable your pipeline.<br/>__*Optional*__
+**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.<br/>__*Optional*__
 **name**? | <code>string</code> | Your pipeline name.<br/>__*Optional*__
 
 
@@ -18554,10 +20930,10 @@ Name | Type | Description
 **sources** | <code>Array<string></code> | List of source attributes or tags.
 **target** | <code>string</code> | Final attribute or tag name to remap the sources.
 **targetType** | <code>string</code> | Defines if the target is a log `attribute` or `tag`.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
-**overrideOnConflict**? | <code>boolean</code> | Override the target element if already set.<br/>__*Optional*__
-**preserveSource**? | <code>boolean</code> | Remove or preserve the remapped source element.<br/>__*Optional*__
+**overrideOnConflict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Override the target element if already set.<br/>__*Optional*__
+**preserveSource**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Remove or preserve the remapped source element.<br/>__*Optional*__
 **targetFormat**? | <code>string</code> | If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type.<br/>__*Optional*__
 
 
@@ -18573,7 +20949,7 @@ Name | Type | Description
 -----|------|-------------
 **category** | <code>Array<[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory)></code> | category block.
 **target** | <code>string</code> | Name of the target attribute whose value is defined by the matching category.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the category.<br/>__*Optional*__
 
 
@@ -18615,7 +20991,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18631,7 +21007,7 @@ Name | Type | Description
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
 **target** | <code>string</code> | Name of the parent attribute that contains all the extracted details from the sources.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18647,7 +21023,7 @@ Name | Type | Description
 -----|------|-------------
 **grok** | <code>Array<[LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorgrokparsergrok)></code> | grok block.
 **source** | <code>string</code> | Name of the log attribute to parse.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 **samples**? | <code>Array<string></code> | List of sample logs for this parser.<br/>__*Optional*__
 
@@ -18680,7 +21056,7 @@ Name | Type | Description
 **source** | <code>string</code> | Name of the source attribute used to do the lookup.
 **target** | <code>string</code> | Name of the attribute that contains the result of the lookup.
 **defaultLookup**? | <code>string</code> | Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.<br/>__*Optional*__
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18695,7 +21071,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18710,7 +21086,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18725,7 +21101,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18741,8 +21117,8 @@ Name | Type | Description
 -----|------|-------------
 **target** | <code>string</code> | The name of the attribute that contains the result of the template.
 **template** | <code>string</code> | The formula with one or more attributes and raw text.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
-**isReplaceMissing**? | <code>boolean</code> | If it replaces all missing attributes of template by an empty string.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If it replaces all missing attributes of template by an empty string.<br/>__*Optional*__
 **name**? | <code>string</code> | The name of the processor.<br/>__*Optional*__
 
 
@@ -18757,7 +21133,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18773,9 +21149,9 @@ Name | Type | Description
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
 **target** | <code>string</code> | Name of the parent attribute that contains all the extracted details from the sources.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
-**normalizeEndingSlashes**? | <code>boolean</code> | Normalize the ending slashes or not.<br/>__*Optional*__
+**normalizeEndingSlashes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Normalize the ending slashes or not.<br/>__*Optional*__
 
 
 
@@ -18790,8 +21166,8 @@ Name | Type | Description
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
 **target** | <code>string</code> | Name of the parent attribute that contains all the extracted details from the sources.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
-**isEncoded**? | <code>boolean</code> | If the source attribute is URL encoded or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEncoded**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the source attribute is URL encoded or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18806,7 +21182,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18821,7 +21197,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18837,8 +21213,8 @@ Name | Type | Description
 -----|------|-------------
 **target** | <code>string</code> | The name of the attribute that contains the result of the template.
 **template** | <code>string</code> | The formula with one or more attributes and raw text.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
-**isReplaceMissing**? | <code>boolean</code> | If it replaces all missing attributes of template by an empty string.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If it replaces all missing attributes of template by an empty string.<br/>__*Optional*__
 **name**? | <code>string</code> | The name of the processor.<br/>__*Optional*__
 
 
@@ -18853,7 +21229,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18869,9 +21245,9 @@ Name | Type | Description
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
 **target** | <code>string</code> | Name of the parent attribute that contains all the extracted details from the sources.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
-**normalizeEndingSlashes**? | <code>boolean</code> | Normalize the ending slashes or not.<br/>__*Optional*__
+**normalizeEndingSlashes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Normalize the ending slashes or not.<br/>__*Optional*__
 
 
 
@@ -18886,8 +21262,8 @@ Name | Type | Description
 -----|------|-------------
 **sources** | <code>Array<string></code> | List of source attributes.
 **target** | <code>string</code> | Name of the parent attribute that contains all the extracted details from the sources.
-**isEnabled**? | <code>boolean</code> | If the processor is enabled or not.<br/>__*Optional*__
-**isEncoded**? | <code>boolean</code> | If the source attribute is URL encoded or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the processor is enabled or not.<br/>__*Optional*__
+**isEncoded**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If the source attribute is URL encoded or not.<br/>__*Optional*__
 **name**? | <code>string</code> | Name of the processor.<br/>__*Optional*__
 
 
@@ -18906,7 +21282,7 @@ Name | Type | Description
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dailyLimit**? | <code>number</code> | The number of log events you can send in this index per day before you are rate-limited.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**disableDailyLimit**? | <code>boolean</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored).<br/>__*Optional*__
+**disableDailyLimit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored).<br/>__*Optional*__
 **exclusionFilter**? | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | exclusion_filter block.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
@@ -18924,7 +21300,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filter**? | <code>Array<[LogsIndexExclusionFilterFilter](#cdktf-provider-datadog-logsindexexclusionfilterfilter)></code> | filter block.<br/>__*Optional*__
-**isEnabled**? | <code>boolean</code> | A boolean stating if the exclusion is active or not.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean stating if the exclusion is active or not.<br/>__*Optional*__
 **name**? | <code>string</code> | The name of the exclusion filter.<br/>__*Optional*__
 
 
@@ -18985,7 +21361,7 @@ Name | Type | Description
 -----|------|-------------
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**isEnabled**? | <code>boolean</code> | Boolean value to enable your pipeline.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Boolean value to enable your pipeline.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -19107,7 +21483,7 @@ Name | Type | Description
 **tags** | <code>Array<string></code> | A list of tag keys that will be queryable for your metric.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**includePercentiles**? | <code>boolean</code> | Toggle to include/exclude percentiles for a distribution metric.<br/>__*Optional*__
+**includePercentiles**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Toggle to include/exclude percentiles for a distribution metric.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -19128,28 +21504,29 @@ Name | Type | Description
 **type** | <code>string</code> | The type of the monitor.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enableLogsSample**? | <code>boolean</code> | A boolean indicating whether or not to include a list of log values which triggered the alert.<br/>__*Optional*__
+**enableLogsSample**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether or not to include a list of log values which triggered the alert.<br/>__*Optional*__
 **escalationMessage**? | <code>string</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.<br/>__*Optional*__
 **evaluationDelay**? | <code>number</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer.<br/>__*Optional*__
-**forceDelete**? | <code>boolean</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).<br/>__*Optional*__
-**groupbySimpleMonitor**? | <code>boolean</code> | Whether or not to trigger one alert if any source breaches a threshold.<br/>__*Optional*__
-**includeTags**? | <code>boolean</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.<br/>__*Optional*__
+**forceDelete**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).<br/>__*Optional*__
+**groupbySimpleMonitor**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to trigger one alert if any source breaches a threshold.<br/>__*Optional*__
+**includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**locked**? | <code>boolean</code> | A boolean indicating whether changes to to this monitor should be restricted to the creator or admins.<br/>__*Optional*__
+**locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether changes to to this monitor should be restricted to the creator or admins.<br/>__*Optional*__
 **monitorThresholdWindows**? | <code>Array<[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)></code> | monitor_threshold_windows block.<br/>__*Optional*__
 **monitorThresholds**? | <code>Array<[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)></code> | monitor_thresholds block.<br/>__*Optional*__
+**newGroupDelay**? | <code>number</code> | Time (in seconds) to skip evaluations for new groups.<br/>__*Optional*__
 **newHostDelay**? | <code>number</code> | Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results.<br/>__*Optional*__
 **noDataTimeframe**? | <code>number</code> | The number of minutes before a monitor will notify when data stops reporting. Provider defaults to 10 minutes.<br/>__*Optional*__
-**notifyAudit**? | <code>boolean</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.<br/>__*Optional*__
-**notifyNoData**? | <code>boolean</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.<br/>__*Optional*__
+**notifyAudit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.<br/>__*Optional*__
+**notifyNoData**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.<br/>__*Optional*__
 **priority**? | <code>number</code> | Integer from 1 (high) to 5 (low) indicating alert severity.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **renotifyInterval**? | <code>number</code> | The number of minutes after the last notification before a monitor will re-notify on the current status.<br/>__*Optional*__
-**requireFullWindow**? | <code>boolean</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated.<br/>__*Optional*__
+**requireFullWindow**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated.<br/>__*Optional*__
 **restrictedRoles**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#restricted_roles Monitor#restricted_roles}.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your monitor.<br/>__*Optional*__
 **timeoutH**? | <code>number</code> | The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state.<br/>__*Optional*__
-**validate**? | <code>boolean</code> | If set to `false`, skip the validation call done during plan.<br/>__*Optional*__
+**validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `false`, skip the validation call done during plan.<br/>__*Optional*__
 
 
 
@@ -19182,6 +21559,95 @@ Name | Type | Description
 **unknown**? | <code>string</code> | The monitor `UNKNOWN` threshold. Must be a number.<br/>__*Optional*__
 **warning**? | <code>string</code> | The monitor `WARNING` threshold. Must be a number.<br/>__*Optional*__
 **warningRecovery**? | <code>string</code> | The monitor `WARNING` recovery threshold. Must be a number.<br/>__*Optional*__
+
+
+
+## struct OrganizationSettingsConfig  <a id="cdktf-provider-datadog-organizationsettingsconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**name**? | <code>string</code> | Name for Organization.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**settings**? | <code>Array<[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)></code> | settings block.<br/>__*Optional*__
+
+
+
+## struct OrganizationSettingsSettings  <a id="cdktf-provider-datadog-organizationsettingssettings"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**saml** | <code>Array<[OrganizationSettingsSettingsSaml](#cdktf-provider-datadog-organizationsettingssettingssaml)></code> | saml block.
+**samlAutocreateUsersDomains** | <code>Array<[OrganizationSettingsSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomains)></code> | saml_autocreate_users_domains block.
+**samlIdpInitiatedLogin** | <code>Array<[OrganizationSettingsSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedlogin)></code> | saml_idp_initiated_login block.
+**samlStrictMode** | <code>Array<[OrganizationSettingsSettingsSamlStrictMode](#cdktf-provider-datadog-organizationsettingssettingssamlstrictmode)></code> | saml_strict_mode block.
+**privateWidgetShare**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not the organization users can share widgets outside of Datadog.<br/>__*Optional*__
+**samlAutocreateAccessRole**? | <code>string</code> | The access role of the user.<br/>__*Optional*__
+
+
+
+## struct OrganizationSettingsSettingsSaml  <a id="cdktf-provider-datadog-organizationsettingssettingssaml"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not SAML is enabled for this organization.<br/>__*Optional*__
+
+
+
+## struct OrganizationSettingsSettingsSamlAutocreateUsersDomains  <a id="cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomains"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**domains**? | <code>Array<string></code> | List of domains where the SAML automated user creation is enabled.<br/>__*Optional*__
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not the automated user creation based on SAML domain is enabled.<br/>__*Optional*__
+
+
+
+## struct OrganizationSettingsSettingsSamlIdpInitiatedLogin  <a id="cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedlogin"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not a SAML identity provider metadata file was provided to the Datadog organization.<br/>__*Optional*__
+
+
+
+## struct OrganizationSettingsSettingsSamlStrictMode  <a id="cdktf-provider-datadog-organizationsettingssettingssamlstrictmode"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not the SAML strict mode is enabled. If true, all users must log in with SAML.<br/>__*Optional*__
 
 
 
@@ -19242,7 +21708,7 @@ Name | Type | Description
 **case**? | <code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code> | case block.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enabled**? | <code>boolean</code> | Enable the rule.<br/>__*Optional*__
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enable the rule.<br/>__*Optional*__
 **filter**? | <code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code> | filter block.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
@@ -19260,6 +21726,41 @@ Name | Type | Description
 -----|------|-------------
 **action** | <code>string</code> | The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
 **query** | <code>string</code> | Query for selecting logs to apply the filtering action.
+
+
+
+## struct SecurityMonitoringFilterConfig  <a id="cdktf-provider-datadog-securitymonitoringfilterconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the security filter is enabled.
+**name** | <code>string</code> | The name of the security filter.
+**query** | <code>string</code> | The query of the security filter.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**exclusionFilter**? | <code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code> | exclusion_filter block.<br/>__*Optional*__
+**filteredDataType**? | <code>string</code> | The filtered data type. Valid values are `logs`.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct SecurityMonitoringFilterExclusionFilter  <a id="cdktf-provider-datadog-securitymonitoringfilterexclusionfilter"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | Exclusion filter name.
+**query** | <code>string</code> | Exclusion filter query. Logs that match this query are excluded from the security filter.
 
 
 
@@ -19294,9 +21795,9 @@ Name | Type | Description
 **query** | <code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code> | query block.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enabled**? | <code>boolean</code> | Whether the rule is enabled.<br/>__*Optional*__
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the rule is enabled.<br/>__*Optional*__
 **filter**? | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | filter block.<br/>__*Optional*__
-**hasExtendedTitle**? | <code>boolean</code> | Whether the notifications include the triggering group-by values in their title.<br/>__*Optional*__
+**hasExtendedTitle**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the notifications include the triggering group-by values in their title.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **options**? | <code>Array<[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)></code> | options block.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
@@ -19382,14 +21883,14 @@ Name | Type | Description
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **description**? | <code>string</code> | A description of this service level objective.<br/>__*Optional*__
-**forceDelete**? | <code>boolean</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards).<br/>__*Optional*__
+**forceDelete**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards).<br/>__*Optional*__
 **groups**? | <code>Array<string></code> | A static set of groups to filter monitor-based SLOs.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **monitorIds**? | <code>Array<number></code> | A static set of monitor IDs to use as part of the SLO.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **query**? | <code>Array<[ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)></code> | query block.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your service level objective.<br/>__*Optional*__
-**validate**? | <code>boolean</code> | Whether or not to validate the SLO.<br/>__*Optional*__
+**validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to validate the SLO.<br/>__*Optional*__
 
 
 
@@ -19464,7 +21965,8 @@ Name | Type | Description
 **parseTestId**? | <code>string</code> | Id of the Synthetics test to use for a variable from test.<br/>__*Optional*__
 **parseTestOptions**? | <code>Array<[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)></code> | parse_test_options block.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**secure**? | <code>boolean</code> | Sets the variable as secure. Defaults to `false`.<br/>__*Optional*__
+**restrictedRoles**? | <code>Array<string></code> | A list of role identifiers to associate with the Synthetics global variable.<br/>__*Optional*__
+**secure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to true, the value of the global variable is hidden. Defaults to `false`.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your synthetics global variable.<br/>__*Optional*__
 
 
@@ -19493,7 +21995,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**type** | <code>string</code> | Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`.
+**type** | <code>string</code> | Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 **value**? | <code>string</code> | Value for the parser to use, required for type `json_path` or `regex`.<br/>__*Optional*__
 
 
@@ -19527,15 +22029,15 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **name** | <code>string</code> | The name of the step.
-**allowFailure**? | <code>boolean</code> | Determines whether or not to continue with test if this step fails.<br/>__*Optional*__
+**allowFailure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to continue with test if this step fails.<br/>__*Optional*__
 **assertion**? | <code>Array<[SyntheticsTestApiStepAssertion](#cdktf-provider-datadog-syntheticstestapistepassertion)></code> | assertion block.<br/>__*Optional*__
 **extractedValue**? | <code>Array<[SyntheticsTestApiStepExtractedValue](#cdktf-provider-datadog-syntheticstestapistepextractedvalue)></code> | extracted_value block.<br/>__*Optional*__
-**isCritical**? | <code>boolean</code> | Determines whether or not to consider the entire test as failed if this step fails.<br/>__*Optional*__
+**isCritical**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to consider the entire test as failed if this step fails.<br/>__*Optional*__
 **requestBasicauth**? | <code>Array<[SyntheticsTestApiStepRequestBasicauth](#cdktf-provider-datadog-syntheticstestapisteprequestbasicauth)></code> | request_basicauth block.<br/>__*Optional*__
 **requestClientCertificate**? | <code>Array<[SyntheticsTestApiStepRequestClientCertificate](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificate)></code> | request_client_certificate block.<br/>__*Optional*__
 **requestDefinition**? | <code>Array<[SyntheticsTestApiStepRequestDefinition](#cdktf-provider-datadog-syntheticstestapisteprequestdefinition)></code> | request_definition block.<br/>__*Optional*__
-**requestHeaders**? | <code>Map<string, string></code> | Header name and value map.<br/>__*Optional*__
-**requestQuery**? | <code>Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
+**requestHeaders**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Header name and value map.<br/>__*Optional*__
+**requestQuery**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
 **subtype**? | <code>string</code> | The subtype of the Synthetic multistep API test step. Valid values are `http`.<br/>__*Optional*__
 
 
@@ -19597,7 +22099,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**type** | <code>string</code> | Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`.
+**type** | <code>string</code> | Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 **value**? | <code>string</code> | Regex or JSON path used for the parser. Not used with type `raw`.<br/>__*Optional*__
 
 
@@ -19667,15 +22169,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**allowInsecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Allows loading insecure content for an HTTP test.<br/>__*Optional*__
 **body**? | <code>string</code> | The request body.<br/>__*Optional*__
 **dnsServer**? | <code>string</code> | DNS server to use for DNS tests (`subtype = "dns"`).<br/>__*Optional*__
 **dnsServerPort**? | <code>number</code> | DNS server port to use for DNS tests.<br/>__*Optional*__
 **host**? | <code>string</code> | Host name to perform the test with.<br/>__*Optional*__
 **method**? | <code>string</code> | The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.<br/>__*Optional*__
-**noSavingResponseBody**? | <code>boolean</code> | Determines whether or not to save the response body.<br/>__*Optional*__
+**noSavingResponseBody**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to save the response body.<br/>__*Optional*__
 **numberOfPackets**? | <code>number</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.<br/>__*Optional*__
 **port**? | <code>number</code> | Port to use when performing the test.<br/>__*Optional*__
-**shouldTrackHops**? | <code>boolean</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination.<br/>__*Optional*__
+**shouldTrackHops**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination.<br/>__*Optional*__
 **timeout**? | <code>number</code> | Timeout in seconds for the test. Defaults to `60`.<br/>__*Optional*__
 **url**? | <code>string</code> | The URL to send the request to.<br/>__*Optional*__
 
@@ -19725,8 +22228,8 @@ Name | Type | Description
 **name** | <code>string</code> | Name of the step.
 **params** | <code>Array<[SyntheticsTestBrowserStepParams](#cdktf-provider-datadog-syntheticstestbrowserstepparams)></code> | params block.
 **type** | <code>string</code> | Type of the step.
-**allowFailure**? | <code>boolean</code> | Determines if the step should be allowed to fail.<br/>__*Optional*__
-**forceElementUpdate**? | <code>boolean</code> | Force update of the "element" parameter for the step.<br/>__*Optional*__
+**allowFailure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines if the step should be allowed to fail.<br/>__*Optional*__
+**forceElementUpdate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Force update of the "element" parameter for the step.<br/>__*Optional*__
 **timeout**? | <code>number</code> | Used to override the default timeout of a step.<br/>__*Optional*__
 
 
@@ -19755,7 +22258,7 @@ Name | Type | Description
 **subtestPublicId**? | <code>string</code> | ID of the Synthetics test to use as subtest.<br/>__*Optional*__
 **value**? | <code>string</code> | Value of the step.<br/>__*Optional*__
 **variable**? | <code>Array<[SyntheticsTestBrowserStepParamsVariable](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariable)></code> | variable block.<br/>__*Optional*__
-**withClick**? | <code>boolean</code> | For "file upload" steps.<br/>__*Optional*__
+**withClick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | For "file upload" steps.<br/>__*Optional*__
 **x**? | <code>number</code> | X coordinates for a "scroll step".<br/>__*Optional*__
 **y**? | <code>number</code> | Y coordinates for a "scroll step".<br/>__*Optional*__
 
@@ -19820,8 +22323,8 @@ Name | Type | Description
 **requestBasicauth**? | <code>Array<[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)></code> | request_basicauth block.<br/>__*Optional*__
 **requestClientCertificate**? | <code>Array<[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)></code> | request_client_certificate block.<br/>__*Optional*__
 **requestDefinition**? | <code>Array<[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)></code> | request_definition block.<br/>__*Optional*__
-**requestHeaders**? | <code>Map<string, string></code> | Header name and value map.<br/>__*Optional*__
-**requestQuery**? | <code>Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
+**requestHeaders**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Header name and value map.<br/>__*Optional*__
+**requestQuery**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
 **setCookie**? | <code>string</code> | Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.<br/>__*Optional*__
 **subtype**? | <code>string</code> | The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your synthetics test.<br/>__*Optional*__
@@ -19855,15 +22358,15 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **tickEvery** | <code>number</code> | How often the test should run (in seconds).
-**acceptSelfSigned**? | <code>boolean</code> | For SSL test, whether or not the test should allow self signed certificates.<br/>__*Optional*__
-**allowInsecure**? | <code>boolean</code> | Allows loading insecure content for an HTTP test.<br/>__*Optional*__
-**followRedirects**? | <code>boolean</code> | For API HTTP test, whether or not the test should follow redirects.<br/>__*Optional*__
+**acceptSelfSigned**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | For SSL test, whether or not the test should allow self signed certificates.<br/>__*Optional*__
+**allowInsecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Allows loading insecure content for an HTTP test.<br/>__*Optional*__
+**followRedirects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | For API HTTP test, whether or not the test should follow redirects.<br/>__*Optional*__
 **minFailureDuration**? | <code>number</code> | Minimum amount of time in failure required to trigger an alert. Default is `0`.<br/>__*Optional*__
 **minLocationFailed**? | <code>number</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`.<br/>__*Optional*__
 **monitorName**? | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.<br/>__*Optional*__
 **monitorOptions**? | <code>Array<[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)></code> | monitor_options block.<br/>__*Optional*__
 **monitorPriority**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#monitor_priority SyntheticsTest#monitor_priority}.<br/>__*Optional*__
-**noScreenshot**? | <code>boolean</code> | Prevents saving screenshots of the steps.<br/>__*Optional*__
+**noScreenshot**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Prevents saving screenshots of the steps.<br/>__*Optional*__
 **retry**? | <code>Array<[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)></code> | retry block.<br/>__*Optional*__
 
 
@@ -19965,10 +22468,10 @@ Name | Type | Description
 **dnsServerPort**? | <code>number</code> | DNS server port to use for DNS tests.<br/>__*Optional*__
 **host**? | <code>string</code> | Host name to perform the test with.<br/>__*Optional*__
 **method**? | <code>string</code> | The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.<br/>__*Optional*__
-**noSavingResponseBody**? | <code>boolean</code> | Determines whether or not to save the response body.<br/>__*Optional*__
+**noSavingResponseBody**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to save the response body.<br/>__*Optional*__
 **numberOfPackets**? | <code>number</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.<br/>__*Optional*__
 **port**? | <code>number</code> | Port to use when performing the test.<br/>__*Optional*__
-**shouldTrackHops**? | <code>boolean</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination.<br/>__*Optional*__
+**shouldTrackHops**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination.<br/>__*Optional*__
 **timeout**? | <code>number</code> | Timeout in seconds for the test. Defaults to `60`.<br/>__*Optional*__
 **url**? | <code>string</code> | The URL to send the request to.<br/>__*Optional*__
 
@@ -19986,12 +22489,12 @@ Name | Type | Description
 **email** | <code>string</code> | Email address for user.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**disabled**? | <code>boolean</code> | Whether the user is disabled.<br/>__*Optional*__
+**disabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the user is disabled.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **name**? | <code>string</code> | Name for user.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **roles**? | <code>Array<string></code> | A list a role IDs to assign to the user.<br/>__*Optional*__
-**sendUserInvitation**? | <code>boolean</code> | Whether an invitation email should be sent when the user is created.<br/>__*Optional*__
+**sendUserInvitation**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether an invitation email should be sent when the user is created.<br/>__*Optional*__
 
 
 

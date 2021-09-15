@@ -12,7 +12,7 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
   */
-  readonly defaultOnlyFilter?: boolean;
+  readonly defaultOnlyFilter?: boolean | cdktf.IResolvable;
   /**
   * A rule name to limit the search
   * 
@@ -30,7 +30,7 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
   */
-  readonly userOnlyFilter?: boolean;
+  readonly userOnlyFilter?: boolean | cdktf.IResolvable;
 }
 export class DataDatadogSecurityMonitoringRulesRulesCase extends cdktf.ComplexComputedList {
 
@@ -190,6 +190,11 @@ export class DataDatadogSecurityMonitoringRulesRules extends cdktf.ComplexComput
 */
 export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_security_monitoring_rules";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -223,11 +228,11 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // ==========
 
   // default_only_filter - computed: false, optional: true, required: false
-  private _defaultOnlyFilter?: boolean;
+  private _defaultOnlyFilter?: boolean | cdktf.IResolvable;
   public get defaultOnlyFilter() {
     return this.getBooleanAttribute('default_only_filter');
   }
-  public set defaultOnlyFilter(value: boolean ) {
+  public set defaultOnlyFilter(value: boolean | cdktf.IResolvable ) {
     this._defaultOnlyFilter = value;
   }
   public resetDefaultOnlyFilter() {
@@ -286,11 +291,11 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
 
   // user_only_filter - computed: false, optional: true, required: false
-  private _userOnlyFilter?: boolean;
+  private _userOnlyFilter?: boolean | cdktf.IResolvable;
   public get userOnlyFilter() {
     return this.getBooleanAttribute('user_only_filter');
   }
-  public set userOnlyFilter(value: boolean ) {
+  public set userOnlyFilter(value: boolean | cdktf.IResolvable ) {
     this._userOnlyFilter = value;
   }
   public resetUserOnlyFilter() {

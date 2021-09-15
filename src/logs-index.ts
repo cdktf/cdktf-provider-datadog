@@ -18,7 +18,7 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#disable_daily_limit LogsIndex#disable_daily_limit}
   */
-  readonly disableDailyLimit?: boolean;
+  readonly disableDailyLimit?: boolean | cdktf.IResolvable;
   /**
   * The name of the index.
   * 
@@ -73,7 +73,7 @@ export interface LogsIndexExclusionFilter {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#is_enabled LogsIndex#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * The name of the exclusion filter.
   * 
@@ -118,6 +118,11 @@ function logsIndexFilterToTerraform(struct?: LogsIndexFilter): any {
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}
 */
 export class LogsIndex extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_index";
 
   // ===========
   // INITIALIZER
@@ -170,11 +175,11 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // disable_daily_limit - computed: true, optional: true, required: false
-  private _disableDailyLimit?: boolean;
+  private _disableDailyLimit?: boolean | cdktf.IResolvable;
   public get disableDailyLimit() {
     return this.getBooleanAttribute('disable_daily_limit');
   }
-  public set disableDailyLimit(value: boolean) {
+  public set disableDailyLimit(value: boolean | cdktf.IResolvable) {
     this._disableDailyLimit = value;
   }
   public resetDisableDailyLimit() {

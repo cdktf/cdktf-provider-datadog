@@ -24,7 +24,7 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html#account_specific_namespace_rules IntegrationAws#account_specific_namespace_rules}
   */
-  readonly accountSpecificNamespaceRules?: { [key: string]: boolean };
+  readonly accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable;
   /**
   * An array of AWS regions to exclude from metrics collection.
   * 
@@ -61,6 +61,11 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}
 */
 export class IntegrationAws extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_aws";
 
   // ===========
   // INITIALIZER
@@ -131,11 +136,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // account_specific_namespace_rules - computed: false, optional: true, required: false
-  private _accountSpecificNamespaceRules?: { [key: string]: boolean };
+  private _accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable;
   public get accountSpecificNamespaceRules() {
-    return this.interpolationForAttribute('account_specific_namespace_rules') as any;
+    return this.getBooleanAttribute('account_specific_namespace_rules');
   }
-  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } ) {
+  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } | cdktf.IResolvable ) {
     this._accountSpecificNamespaceRules = value;
   }
   public resetAccountSpecificNamespaceRules() {

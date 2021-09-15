@@ -30,7 +30,7 @@ export interface DatadogProviderConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
   */
-  readonly httpClientRetryEnabled?: boolean;
+  readonly httpClientRetryEnabled?: boolean | cdktf.IResolvable;
   /**
   * The HTTP request retry timeout period.
   * 
@@ -42,7 +42,7 @@ export interface DatadogProviderConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#validate DatadogProvider#validate}
   */
-  readonly validate?: boolean;
+  readonly validate?: boolean | cdktf.IResolvable;
   /**
   * Alias name
   * 
@@ -55,6 +55,11 @@ export interface DatadogProviderConfig {
 * Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}
 */
 export class DatadogProvider extends cdktf.TerraformProvider {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog";
 
   // ===========
   // INITIALIZER
@@ -138,11 +143,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // http_client_retry_enabled - computed: false, optional: true, required: false
-  private _httpClientRetryEnabled?: boolean;
+  private _httpClientRetryEnabled?: boolean | cdktf.IResolvable;
   public get httpClientRetryEnabled() {
     return this._httpClientRetryEnabled;
   }
-  public set httpClientRetryEnabled(value: boolean  | undefined) {
+  public set httpClientRetryEnabled(value: boolean | cdktf.IResolvable  | undefined) {
     this._httpClientRetryEnabled = value;
   }
   public resetHttpClientRetryEnabled() {
@@ -170,11 +175,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean;
+  private _validate?: boolean | cdktf.IResolvable;
   public get validate() {
     return this._validate;
   }
-  public set validate(value: boolean  | undefined) {
+  public set validate(value: boolean | cdktf.IResolvable  | undefined) {
     this._validate = value;
   }
   public resetValidate() {

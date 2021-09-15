@@ -12,7 +12,7 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#enabled SecurityMonitoringDefaultRule#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * case block
   * 
@@ -78,6 +78,11 @@ function securityMonitoringDefaultRuleFilterToTerraform(struct?: SecurityMonitor
 */
 export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_security_monitoring_default_rule";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -110,11 +115,11 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {

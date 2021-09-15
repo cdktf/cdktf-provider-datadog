@@ -14,6 +14,11 @@ export interface DataDatadogSyntheticsLocationsConfig extends cdktf.TerraformMet
 */
 export class DataDatadogSyntheticsLocations extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_synthetics_locations";
+
   // ===========
   // INITIALIZER
   // ===========

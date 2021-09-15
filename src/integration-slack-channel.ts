@@ -32,25 +32,25 @@ export interface IntegrationSlackChannelDisplay {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#message IntegrationSlackChannel#message}
   */
-  readonly message?: boolean;
+  readonly message?: boolean | cdktf.IResolvable;
   /**
   * Show the list of @-handles in the alert event.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#notified IntegrationSlackChannel#notified}
   */
-  readonly notified?: boolean;
+  readonly notified?: boolean | cdktf.IResolvable;
   /**
   * Show the alert event's snapshot image.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#snapshot IntegrationSlackChannel#snapshot}
   */
-  readonly snapshot?: boolean;
+  readonly snapshot?: boolean | cdktf.IResolvable;
   /**
   * Show the scopes on which the monitor alerted.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#tags IntegrationSlackChannel#tags}
   */
-  readonly tags?: boolean;
+  readonly tags?: boolean | cdktf.IResolvable;
 }
 
 function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChannelDisplay): any {
@@ -68,6 +68,11 @@ function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChan
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}
 */
 export class IntegrationSlackChannel extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_slack_channel";
 
   // ===========
   // INITIALIZER

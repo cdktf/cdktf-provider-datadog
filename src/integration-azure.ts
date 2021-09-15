@@ -38,6 +38,11 @@ export interface IntegrationAzureConfig extends cdktf.TerraformMetaArguments {
 */
 export class IntegrationAzure extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_integration_azure";
+
   // ===========
   // INITIALIZER
   // ===========

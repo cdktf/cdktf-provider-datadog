@@ -12,13 +12,18 @@ export interface LogsIntegrationPipelineConfig extends cdktf.TerraformMetaArgume
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html#is_enabled LogsIntegrationPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}
 */
 export class LogsIntegrationPipeline extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_integration_pipeline";
 
   // ===========
   // INITIALIZER
@@ -55,11 +60,11 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean;
+  private _isEnabled?: boolean | cdktf.IResolvable;
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean ) {
+  public set isEnabled(value: boolean | cdktf.IResolvable ) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {

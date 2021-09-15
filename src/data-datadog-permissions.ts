@@ -14,6 +14,11 @@ export interface DataDatadogPermissionsConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataDatadogPermissions extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_permissions";
+
   // ===========
   // INITIALIZER
   // ===========

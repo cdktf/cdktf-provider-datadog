@@ -20,6 +20,11 @@ export interface LogsArchiveOrderConfig extends cdktf.TerraformMetaArguments {
 */
 export class LogsArchiveOrder extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_logs_archive_order";
+
   // ===========
   // INITIALIZER
   // ===========

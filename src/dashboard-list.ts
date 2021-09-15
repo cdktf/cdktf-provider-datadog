@@ -49,6 +49,11 @@ function dashboardListDashItemToTerraform(struct?: DashboardListDashItem): any {
 */
 export class DashboardList extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_dashboard_list";
+
   // ===========
   // INITIALIZER
   // ===========
