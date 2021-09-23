@@ -82,6 +82,12 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
 }
 export interface DashboardTemplateVariable {
   /**
+  * The list of values that the template variable drop-down is be limited to
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#available_values Dashboard#available_values}
+  */
+  readonly availableValues?: string[];
+  /**
   * The default value for the template variable on dashboard load.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#default Dashboard#default}
@@ -104,6 +110,7 @@ export interface DashboardTemplateVariable {
 function dashboardTemplateVariableToTerraform(struct?: DashboardTemplateVariable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    available_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.availableValues),
     default: cdktf.stringToTerraform(struct!.default),
     name: cdktf.stringToTerraform(struct!.name),
     prefix: cdktf.stringToTerraform(struct!.prefix),

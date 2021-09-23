@@ -4113,7 +4113,7 @@ new IntegrationAwsLambdaArn(scope: Construct, id: string, config: IntegrationAws
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. 
+  * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here. 
   * **lambdaArn** (<code>string</code>)  The ARN of the Datadog forwarder Lambda. 
 
 
@@ -4170,7 +4170,7 @@ new IntegrationAwsLogCollection(scope: Construct, id: string, config: Integratio
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. 
+  * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here. 
   * **services** (<code>Array<string></code>)  A list of services to collect logs from. 
 
 
@@ -4227,7 +4227,7 @@ new IntegrationAwsTagFilter(scope: Construct, id: string, config: IntegrationAws
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. 
+  * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here. 
   * **namespace** (<code>string</code>)  The namespace associated with the tag filter entry. Valid values are `elb`, `application_elb`, `sqs`, `rds`, `custom`, `network_elb`, `lambda`. 
   * **tagFilterStr** (<code>string</code>)  The tag filter string. 
 
@@ -7418,6 +7418,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **name** | <code>string</code> | The name of the variable.
+**availableValues**? | <code>Array<string></code> | The list of values that the template variable drop-down is be limited to.<br/>__*Optional*__
 **default**? | <code>string</code> | The default value for the template variable on dashboard load.<br/>__*Optional*__
 **prefix**? | <code>string</code> | The tag prefix associated with the variable. Only tags with this prefix appear in the variable dropdown.<br/>__*Optional*__
 
@@ -20359,7 +20360,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**accountId** | <code>string</code> | Your AWS Account ID without dashes.
+**accountId** | <code>string</code> | Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
 **lambdaArn** | <code>string</code> | The ARN of the Datadog forwarder Lambda.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -20377,7 +20378,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**accountId** | <code>string</code> | Your AWS Account ID without dashes.
+**accountId** | <code>string</code> | Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
 **services** | <code>Array<string></code> | A list of services to collect logs from.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -20395,7 +20396,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**accountId** | <code>string</code> | Your AWS Account ID without dashes.
+**accountId** | <code>string</code> | Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
 **namespace** | <code>string</code> | The namespace associated with the tag filter entry. Valid values are `elb`, `application_elb`, `sqs`, `rds`, `custom`, `network_elb`, `lambda`.
 **tagFilterStr** | <code>string</code> | The tag filter string.
 **count**?🔹 | <code>number</code> | __*Optional*__

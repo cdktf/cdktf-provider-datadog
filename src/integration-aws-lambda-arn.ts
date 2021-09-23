@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Your AWS Account ID without dashes.
+  * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html#account_id IntegrationAwsLambdaArn#account_id}
   */
