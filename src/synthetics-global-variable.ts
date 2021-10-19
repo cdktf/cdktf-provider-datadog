@@ -54,7 +54,7 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#parse_test_options SyntheticsGlobalVariable#parse_test_options}
   */
-  readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions[];
+  readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions;
 }
 export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
@@ -71,14 +71,56 @@ export interface SyntheticsGlobalVariableParseTestOptionsParser {
   readonly value?: string;
 }
 
-function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParser): any {
+function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParserOutputReference | SyntheticsGlobalVariableParseTestOptionsParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
 }
 
+export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string | undefined; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string | undefined) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value
+  }
+}
 export interface SyntheticsGlobalVariableParseTestOptions {
   /**
   * Required when type = `http_header`. Defines the header to use to extract the value
@@ -97,18 +139,74 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#parser SyntheticsGlobalVariable#parser}
   */
-  readonly parser: SyntheticsGlobalVariableParseTestOptionsParser[];
+  readonly parser: SyntheticsGlobalVariableParseTestOptionsParser;
 }
 
-function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptions): any {
+function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsOutputReference | SyntheticsGlobalVariableParseTestOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     field: cdktf.stringToTerraform(struct!.field),
     type: cdktf.stringToTerraform(struct!.type),
-    parser: cdktf.listMapper(syntheticsGlobalVariableParseTestOptionsParserToTerraform)(struct!.parser),
+    parser: syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct!.parser),
   }
 }
 
+export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // field - computed: false, optional: true, required: false
+  private _field?: string | undefined; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string | undefined) {
+    this._field = value;
+  }
+  public resetField() {
+    this._field = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
+  }
+
+  // parser - computed: false, optional: false, required: true
+  private _parser?: SyntheticsGlobalVariableParseTestOptionsParser; 
+  private __parserOutput = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this as any, "parser", true);
+  public get parser() {
+    return this.__parserOutput;
+  }
+  public putParser(value: SyntheticsGlobalVariableParseTestOptionsParser) {
+    this._parser = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parserInput() {
+    return this._parser
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}
@@ -157,11 +255,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -178,7 +276,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -191,11 +289,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // parse_test_id - computed: false, optional: true, required: false
-  private _parseTestId?: string;
+  private _parseTestId?: string | undefined; 
   public get parseTestId() {
     return this.getStringAttribute('parse_test_id');
   }
-  public set parseTestId(value: string ) {
+  public set parseTestId(value: string | undefined) {
     this._parseTestId = value;
   }
   public resetParseTestId() {
@@ -207,11 +305,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // restricted_roles - computed: false, optional: true, required: false
-  private _restrictedRoles?: string[];
+  private _restrictedRoles?: string[] | undefined; 
   public get restrictedRoles() {
     return this.getListAttribute('restricted_roles');
   }
-  public set restrictedRoles(value: string[] ) {
+  public set restrictedRoles(value: string[] | undefined) {
     this._restrictedRoles = value;
   }
   public resetRestrictedRoles() {
@@ -223,11 +321,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // secure - computed: false, optional: true, required: false
-  private _secure?: boolean | cdktf.IResolvable;
+  private _secure?: boolean | cdktf.IResolvable | undefined; 
   public get secure() {
-    return this.getBooleanAttribute('secure');
+    return this.getBooleanAttribute('secure') as any;
   }
-  public set secure(value: boolean | cdktf.IResolvable ) {
+  public set secure(value: boolean | cdktf.IResolvable | undefined) {
     this._secure = value;
   }
   public resetSecure() {
@@ -239,11 +337,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[];
+  private _tags?: string[] | undefined; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] ) {
+  public set tags(value: string[] | undefined) {
     this._tags = value;
   }
   public resetTags() {
@@ -255,7 +353,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // value - computed: false, optional: false, required: true
-  private _value: string;
+  private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
@@ -268,11 +366,12 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // parse_test_options - computed: false, optional: true, required: false
-  private _parseTestOptions?: SyntheticsGlobalVariableParseTestOptions[];
+  private _parseTestOptions?: SyntheticsGlobalVariableParseTestOptions | undefined; 
+  private __parseTestOptionsOutput = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this as any, "parse_test_options", true);
   public get parseTestOptions() {
-    return this.interpolationForAttribute('parse_test_options') as any;
+    return this.__parseTestOptionsOutput;
   }
-  public set parseTestOptions(value: SyntheticsGlobalVariableParseTestOptions[] ) {
+  public putParseTestOptions(value: SyntheticsGlobalVariableParseTestOptions | undefined) {
     this._parseTestOptions = value;
   }
   public resetParseTestOptions() {
@@ -296,7 +395,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       secure: cdktf.booleanToTerraform(this._secure),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       value: cdktf.stringToTerraform(this._value),
-      parse_test_options: cdktf.listMapper(syntheticsGlobalVariableParseTestOptionsToTerraform)(this._parseTestOptions),
+      parse_test_options: syntheticsGlobalVariableParseTestOptionsToTerraform(this._parseTestOptions),
     };
   }
 }

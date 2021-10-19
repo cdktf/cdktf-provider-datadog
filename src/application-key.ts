@@ -65,7 +65,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }

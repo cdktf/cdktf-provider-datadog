@@ -55,11 +55,11 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
   // ==========
 
   // archive_ids - computed: true, optional: true, required: false
-  private _archiveIds?: string[];
+  private _archiveIds?: string[] | undefined; 
   public get archiveIds() {
     return this.getListAttribute('archive_ids');
   }
-  public set archiveIds(value: string[]) {
+  public set archiveIds(value: string[] | undefined) {
     this._archiveIds = value;
   }
   public resetArchiveIds() {

@@ -55,7 +55,7 @@ export class DataDatadogRole extends cdktf.TerraformDataSource {
   // ==========
 
   // filter - computed: false, optional: false, required: true
-  private _filter: string;
+  private _filter?: string; 
   public get filter() {
     return this.getStringAttribute('filter');
   }

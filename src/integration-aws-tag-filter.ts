@@ -69,7 +69,7 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: false, optional: false, required: true
-  private _accountId: string;
+  private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
@@ -87,7 +87,7 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
   }
 
   // namespace - computed: false, optional: false, required: true
-  private _namespace: string;
+  private _namespace?: string; 
   public get namespace() {
     return this.getStringAttribute('namespace');
   }
@@ -100,7 +100,7 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
   }
 
   // tag_filter_str - computed: false, optional: false, required: true
-  private _tagFilterStr: string;
+  private _tagFilterStr?: string; 
   public get tagFilterStr() {
     return this.getStringAttribute('tag_filter_str');
   }

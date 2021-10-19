@@ -31,6 +31,9 @@ export interface RolePermission {
 
 function rolePermissionToTerraform(struct?: RolePermission): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
@@ -83,7 +86,7 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -101,11 +104,12 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: RolePermission[];
+  private _permission?: RolePermission[] | undefined; 
   public get permission() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('permission') as any;
   }
-  public set permission(value: RolePermission[] ) {
+  public set permission(value: RolePermission[] | undefined) {
     this._permission = value;
   }
   public resetPermission() {

@@ -114,7 +114,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // enable_logs_sample - computed: true, optional: false, required: false
   public get enableLogsSample() {
-    return this.getBooleanAttribute('enable_logs_sample');
+    return this.getBooleanAttribute('enable_logs_sample') as any;
   }
 
   // escalation_message - computed: true, optional: false, required: false
@@ -129,7 +129,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // groupby_simple_monitor - computed: true, optional: false, required: false
   public get groupbySimpleMonitor() {
-    return this.getBooleanAttribute('groupby_simple_monitor');
+    return this.getBooleanAttribute('groupby_simple_monitor') as any;
   }
 
   // id - computed: true, optional: true, required: false
@@ -139,12 +139,12 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // include_tags - computed: true, optional: false, required: false
   public get includeTags() {
-    return this.getBooleanAttribute('include_tags');
+    return this.getBooleanAttribute('include_tags') as any;
   }
 
   // locked - computed: true, optional: false, required: false
   public get locked() {
-    return this.getBooleanAttribute('locked');
+    return this.getBooleanAttribute('locked') as any;
   }
 
   // message - computed: true, optional: false, required: false
@@ -153,11 +153,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // monitor_tags_filter - computed: false, optional: true, required: false
-  private _monitorTagsFilter?: string[];
+  private _monitorTagsFilter?: string[] | undefined; 
   public get monitorTagsFilter() {
     return this.getListAttribute('monitor_tags_filter');
   }
-  public set monitorTagsFilter(value: string[] ) {
+  public set monitorTagsFilter(value: string[] | undefined) {
     this._monitorTagsFilter = value;
   }
   public resetMonitorTagsFilter() {
@@ -184,11 +184,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // name_filter - computed: false, optional: true, required: false
-  private _nameFilter?: string;
+  private _nameFilter?: string | undefined; 
   public get nameFilter() {
     return this.getStringAttribute('name_filter');
   }
-  public set nameFilter(value: string ) {
+  public set nameFilter(value: string | undefined) {
     this._nameFilter = value;
   }
   public resetNameFilter() {
@@ -216,12 +216,12 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // notify_audit - computed: true, optional: false, required: false
   public get notifyAudit() {
-    return this.getBooleanAttribute('notify_audit');
+    return this.getBooleanAttribute('notify_audit') as any;
   }
 
   // notify_no_data - computed: true, optional: false, required: false
   public get notifyNoData() {
-    return this.getBooleanAttribute('notify_no_data');
+    return this.getBooleanAttribute('notify_no_data') as any;
   }
 
   // query - computed: true, optional: false, required: false
@@ -236,7 +236,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // require_full_window - computed: true, optional: false, required: false
   public get requireFullWindow() {
-    return this.getBooleanAttribute('require_full_window');
+    return this.getBooleanAttribute('require_full_window') as any;
   }
 
   // restricted_roles - computed: true, optional: false, required: false
@@ -250,11 +250,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // tags_filter - computed: false, optional: true, required: false
-  private _tagsFilter?: string[];
+  private _tagsFilter?: string[] | undefined; 
   public get tagsFilter() {
     return this.getListAttribute('tags_filter');
   }
-  public set tagsFilter(value: string[] ) {
+  public set tagsFilter(value: string[] | undefined) {
     this._tagsFilter = value;
   }
   public resetTagsFilter() {

@@ -55,6 +55,9 @@ export interface SecurityMonitoringFilterExclusionFilter {
 
 function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     query: cdktf.stringToTerraform(struct!.query),
@@ -106,11 +109,11 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   // ==========
 
   // filtered_data_type - computed: false, optional: true, required: false
-  private _filteredDataType?: string;
+  private _filteredDataType?: string | undefined; 
   public get filteredDataType() {
     return this.getStringAttribute('filtered_data_type');
   }
-  public set filteredDataType(value: string ) {
+  public set filteredDataType(value: string | undefined) {
     this._filteredDataType = value;
   }
   public resetFilteredDataType() {
@@ -127,9 +130,9 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: false, required: true
-  private _isEnabled: boolean | cdktf.IResolvable;
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled');
+    return this.getBooleanAttribute('is_enabled') as any;
   }
   public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
@@ -140,7 +143,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -153,7 +156,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // query - computed: false, optional: false, required: true
-  private _query: string;
+  private _query?: string; 
   public get query() {
     return this.getStringAttribute('query');
   }
@@ -171,11 +174,12 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
-  private _exclusionFilter?: SecurityMonitoringFilterExclusionFilter[];
+  private _exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | undefined; 
   public get exclusionFilter() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('exclusion_filter') as any;
   }
-  public set exclusionFilter(value: SecurityMonitoringFilterExclusionFilter[] ) {
+  public set exclusionFilter(value: SecurityMonitoringFilterExclusionFilter[] | undefined) {
     this._exclusionFilter = value;
   }
   public resetExclusionFilter() {

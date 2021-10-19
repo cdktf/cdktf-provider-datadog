@@ -69,7 +69,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   // ==========
 
   // dashboard - computed: false, optional: false, required: true
-  private _dashboard: string;
+  private _dashboard?: string; 
   public get dashboard() {
     return this.getStringAttribute('dashboard');
   }
@@ -82,11 +82,12 @@ export class DashboardJson extends cdktf.TerraformResource {
   }
 
   // dashboard_lists - computed: false, optional: true, required: false
-  private _dashboardLists?: number[];
+  private _dashboardLists?: number[] | undefined; 
   public get dashboardLists() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('dashboard_lists') as any;
   }
-  public set dashboardLists(value: number[] ) {
+  public set dashboardLists(value: number[] | undefined) {
     this._dashboardLists = value;
   }
   public resetDashboardLists() {
@@ -99,6 +100,7 @@ export class DashboardJson extends cdktf.TerraformResource {
 
   // dashboard_lists_removed - computed: true, optional: false, required: false
   public get dashboardListsRemoved() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('dashboard_lists_removed') as any;
   }
 
@@ -108,11 +110,11 @@ export class DashboardJson extends cdktf.TerraformResource {
   }
 
   // url - computed: true, optional: true, required: false
-  private _url?: string;
+  private _url?: string | undefined; 
   public get url() {
     return this.getStringAttribute('url');
   }
-  public set url(value: string) {
+  public set url(value: string | undefined) {
     this._url = value;
   }
   public resetUrl() {

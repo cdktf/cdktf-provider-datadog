@@ -97,11 +97,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -118,7 +118,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
 
   // metric - computed: false, optional: false, required: true
-  private _metric: string;
+  private _metric?: string; 
   public get metric() {
     return this.getStringAttribute('metric');
   }
@@ -131,11 +131,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
 
   // per_unit - computed: false, optional: true, required: false
-  private _perUnit?: string;
+  private _perUnit?: string | undefined; 
   public get perUnit() {
     return this.getStringAttribute('per_unit');
   }
-  public set perUnit(value: string ) {
+  public set perUnit(value: string | undefined) {
     this._perUnit = value;
   }
   public resetPerUnit() {
@@ -147,11 +147,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
 
   // short_name - computed: false, optional: true, required: false
-  private _shortName?: string;
+  private _shortName?: string | undefined; 
   public get shortName() {
     return this.getStringAttribute('short_name');
   }
-  public set shortName(value: string ) {
+  public set shortName(value: string | undefined) {
     this._shortName = value;
   }
   public resetShortName() {
@@ -163,11 +163,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
 
   // statsd_interval - computed: false, optional: true, required: false
-  private _statsdInterval?: number;
+  private _statsdInterval?: number | undefined; 
   public get statsdInterval() {
     return this.getNumberAttribute('statsd_interval');
   }
-  public set statsdInterval(value: number ) {
+  public set statsdInterval(value: number | undefined) {
     this._statsdInterval = value;
   }
   public resetStatsdInterval() {
@@ -179,11 +179,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string;
+  private _type?: string | undefined; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string ) {
+  public set type(value: string | undefined) {
     this._type = value;
   }
   public resetType() {
@@ -195,11 +195,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
 
   // unit - computed: false, optional: true, required: false
-  private _unit?: string;
+  private _unit?: string | undefined; 
   public get unit() {
     return this.getStringAttribute('unit');
   }
-  public set unit(value: string ) {
+  public set unit(value: string | undefined) {
     this._unit = value;
   }
   public resetUnit() {

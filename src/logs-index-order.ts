@@ -67,7 +67,7 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
   }
 
   // indexes - computed: false, optional: false, required: true
-  private _indexes: string[];
+  private _indexes?: string[]; 
   public get indexes() {
     return this.getListAttribute('indexes');
   }
@@ -80,7 +80,7 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }

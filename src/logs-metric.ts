@@ -18,13 +18,13 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#compute LogsMetric#compute}
   */
-  readonly compute: LogsMetricCompute[];
+  readonly compute: LogsMetricCompute;
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#filter LogsMetric#filter}
   */
-  readonly filter: LogsMetricFilter[];
+  readonly filter: LogsMetricFilter;
   /**
   * group_by block
   * 
@@ -47,14 +47,56 @@ export interface LogsMetricCompute {
   readonly path?: string;
 }
 
-function logsMetricComputeToTerraform(struct?: LogsMetricCompute): any {
+function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     aggregation_type: cdktf.stringToTerraform(struct!.aggregationType),
     path: cdktf.stringToTerraform(struct!.path),
   }
 }
 
+export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // aggregation_type - computed: false, optional: false, required: true
+  private _aggregationType?: string; 
+  public get aggregationType() {
+    return this.getStringAttribute('aggregation_type');
+  }
+  public set aggregationType(value: string) {
+    this._aggregationType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationTypeInput() {
+    return this._aggregationType
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string | undefined; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string | undefined) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path
+  }
+}
 export interface LogsMetricFilter {
   /**
   * The search query - following the log search syntax.
@@ -64,13 +106,39 @@ export interface LogsMetricFilter {
   readonly query: string;
 }
 
-function logsMetricFilterToTerraform(struct?: LogsMetricFilter): any {
+function logsMetricFilterToTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     query: cdktf.stringToTerraform(struct!.query),
   }
 }
 
+export class LogsMetricFilterOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query
+  }
+}
 export interface LogsMetricGroupBy {
   /**
   * The path to the value the log-based metric will be aggregated over.
@@ -88,6 +156,9 @@ export interface LogsMetricGroupBy {
 
 function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     path: cdktf.stringToTerraform(struct!.path),
     tag_name: cdktf.stringToTerraform(struct!.tagName),
@@ -143,7 +214,7 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -156,11 +227,12 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute: LogsMetricCompute[];
+  private _compute?: LogsMetricCompute; 
+  private __computeOutput = new LogsMetricComputeOutputReference(this as any, "compute", true);
   public get compute() {
-    return this.interpolationForAttribute('compute') as any;
+    return this.__computeOutput;
   }
-  public set compute(value: LogsMetricCompute[]) {
+  public putCompute(value: LogsMetricCompute) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -169,11 +241,12 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter: LogsMetricFilter[];
+  private _filter?: LogsMetricFilter; 
+  private __filterOutput = new LogsMetricFilterOutputReference(this as any, "filter", true);
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this.__filterOutput;
   }
-  public set filter(value: LogsMetricFilter[]) {
+  public putFilter(value: LogsMetricFilter) {
     this._filter = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -182,11 +255,12 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: LogsMetricGroupBy[];
+  private _groupBy?: LogsMetricGroupBy[] | undefined; 
   public get groupBy() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('group_by') as any;
   }
-  public set groupBy(value: LogsMetricGroupBy[] ) {
+  public set groupBy(value: LogsMetricGroupBy[] | undefined) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -204,8 +278,8 @@ export class LogsMetric extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      compute: cdktf.listMapper(logsMetricComputeToTerraform)(this._compute),
-      filter: cdktf.listMapper(logsMetricFilterToTerraform)(this._filter),
+      compute: logsMetricComputeToTerraform(this._compute),
+      filter: logsMetricFilterToTerraform(this._filter),
       group_by: cdktf.listMapper(logsMetricGroupByToTerraform)(this._groupBy),
     };
   }

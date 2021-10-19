@@ -24,6 +24,7 @@ export class DataDatadogSecurityMonitoringFiltersFilters extends cdktf.ComplexCo
 
   // exclusion_filter - computed: true, optional: false, required: false
   public get exclusionFilter() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('exclusion_filter') as any;
   }
 
@@ -34,7 +35,7 @@ export class DataDatadogSecurityMonitoringFiltersFilters extends cdktf.ComplexCo
 
   // is_enabled - computed: true, optional: false, required: false
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled');
+    return this.getBooleanAttribute('is_enabled') as any;
   }
 
   // name - computed: true, optional: false, required: false

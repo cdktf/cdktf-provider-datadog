@@ -97,11 +97,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // ==========
 
   // automute - computed: false, optional: true, required: false
-  private _automute?: boolean | cdktf.IResolvable;
+  private _automute?: boolean | cdktf.IResolvable | undefined; 
   public get automute() {
-    return this.getBooleanAttribute('automute');
+    return this.getBooleanAttribute('automute') as any;
   }
-  public set automute(value: boolean | cdktf.IResolvable ) {
+  public set automute(value: boolean | cdktf.IResolvable | undefined) {
     this._automute = value;
   }
   public resetAutomute() {
@@ -113,7 +113,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // client_email - computed: false, optional: false, required: true
-  private _clientEmail: string;
+  private _clientEmail?: string; 
   public get clientEmail() {
     return this.getStringAttribute('client_email');
   }
@@ -126,7 +126,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // client_id - computed: false, optional: false, required: true
-  private _clientId: string;
+  private _clientId?: string; 
   public get clientId() {
     return this.getStringAttribute('client_id');
   }
@@ -139,11 +139,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // host_filters - computed: false, optional: true, required: false
-  private _hostFilters?: string;
+  private _hostFilters?: string | undefined; 
   public get hostFilters() {
     return this.getStringAttribute('host_filters');
   }
-  public set hostFilters(value: string ) {
+  public set hostFilters(value: string | undefined) {
     this._hostFilters = value;
   }
   public resetHostFilters() {
@@ -160,7 +160,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // private_key - computed: false, optional: false, required: true
-  private _privateKey: string;
+  private _privateKey?: string; 
   public get privateKey() {
     return this.getStringAttribute('private_key');
   }
@@ -173,7 +173,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // private_key_id - computed: false, optional: false, required: true
-  private _privateKeyId: string;
+  private _privateKeyId?: string; 
   public get privateKeyId() {
     return this.getStringAttribute('private_key_id');
   }
@@ -186,7 +186,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // project_id - computed: false, optional: false, required: true
-  private _projectId: string;
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }

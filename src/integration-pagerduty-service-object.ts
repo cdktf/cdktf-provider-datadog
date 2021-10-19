@@ -67,7 +67,7 @@ export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
   }
 
   // service_key - computed: false, optional: false, required: true
-  private _serviceKey: string;
+  private _serviceKey?: string; 
   public get serviceKey() {
     return this.getStringAttribute('service_key');
   }
@@ -80,7 +80,7 @@ export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
   }
 
   // service_name - computed: false, optional: false, required: true
-  private _serviceName: string;
+  private _serviceName?: string; 
   public get serviceName() {
     return this.getStringAttribute('service_name');
   }

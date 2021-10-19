@@ -54,7 +54,7 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#options SecurityMonitoringRule#options}
   */
-  readonly options?: SecurityMonitoringRuleOptions[];
+  readonly options?: SecurityMonitoringRuleOptions;
   /**
   * query block
   * 
@@ -91,6 +91,9 @@ export interface SecurityMonitoringRuleCase {
 
 function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitoringRuleCase): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     condition: cdktf.stringToTerraform(struct!.condition),
     name: cdktf.stringToTerraform(struct!.name),
@@ -116,6 +119,9 @@ export interface SecurityMonitoringRuleFilter {
 
 function securityMonitoringRuleFilterToTerraform(struct?: SecurityMonitoringRuleFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     action: cdktf.stringToTerraform(struct!.action),
     query: cdktf.stringToTerraform(struct!.query),
@@ -137,14 +143,53 @@ export interface SecurityMonitoringRuleOptionsNewValueOptions {
   readonly learningDuration: number;
 }
 
-function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsNewValueOptions): any {
+function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsNewValueOptionsOutputReference | SecurityMonitoringRuleOptionsNewValueOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     forget_after: cdktf.numberToTerraform(struct!.forgetAfter),
     learning_duration: cdktf.numberToTerraform(struct!.learningDuration),
   }
 }
 
+export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // forget_after - computed: false, optional: false, required: true
+  private _forgetAfter?: number; 
+  public get forgetAfter() {
+    return this.getNumberAttribute('forget_after');
+  }
+  public set forgetAfter(value: number) {
+    this._forgetAfter = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forgetAfterInput() {
+    return this._forgetAfter
+  }
+
+  // learning_duration - computed: false, optional: false, required: true
+  private _learningDuration?: number; 
+  public get learningDuration() {
+    return this.getNumberAttribute('learning_duration');
+  }
+  public set learningDuration(value: number) {
+    this._learningDuration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get learningDurationInput() {
+    return this._learningDuration
+  }
+}
 export interface SecurityMonitoringRuleOptions {
   /**
   * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`.
@@ -175,20 +220,105 @@ export interface SecurityMonitoringRuleOptions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#new_value_options SecurityMonitoringRule#new_value_options}
   */
-  readonly newValueOptions?: SecurityMonitoringRuleOptionsNewValueOptions[];
+  readonly newValueOptions?: SecurityMonitoringRuleOptionsNewValueOptions;
 }
 
-function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonitoringRuleOptions): any {
+function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsOutputReference | SecurityMonitoringRuleOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     detection_method: cdktf.stringToTerraform(struct!.detectionMethod),
     evaluation_window: cdktf.numberToTerraform(struct!.evaluationWindow),
     keep_alive: cdktf.numberToTerraform(struct!.keepAlive),
     max_signal_duration: cdktf.numberToTerraform(struct!.maxSignalDuration),
-    new_value_options: cdktf.listMapper(securityMonitoringRuleOptionsNewValueOptionsToTerraform)(struct!.newValueOptions),
+    new_value_options: securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct!.newValueOptions),
   }
 }
 
+export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // detection_method - computed: false, optional: true, required: false
+  private _detectionMethod?: string | undefined; 
+  public get detectionMethod() {
+    return this.getStringAttribute('detection_method');
+  }
+  public set detectionMethod(value: string | undefined) {
+    this._detectionMethod = value;
+  }
+  public resetDetectionMethod() {
+    this._detectionMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get detectionMethodInput() {
+    return this._detectionMethod
+  }
+
+  // evaluation_window - computed: false, optional: false, required: true
+  private _evaluationWindow?: number; 
+  public get evaluationWindow() {
+    return this.getNumberAttribute('evaluation_window');
+  }
+  public set evaluationWindow(value: number) {
+    this._evaluationWindow = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluationWindowInput() {
+    return this._evaluationWindow
+  }
+
+  // keep_alive - computed: false, optional: false, required: true
+  private _keepAlive?: number; 
+  public get keepAlive() {
+    return this.getNumberAttribute('keep_alive');
+  }
+  public set keepAlive(value: number) {
+    this._keepAlive = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keepAliveInput() {
+    return this._keepAlive
+  }
+
+  // max_signal_duration - computed: false, optional: false, required: true
+  private _maxSignalDuration?: number; 
+  public get maxSignalDuration() {
+    return this.getNumberAttribute('max_signal_duration');
+  }
+  public set maxSignalDuration(value: number) {
+    this._maxSignalDuration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSignalDurationInput() {
+    return this._maxSignalDuration
+  }
+
+  // new_value_options - computed: false, optional: true, required: false
+  private _newValueOptions?: SecurityMonitoringRuleOptionsNewValueOptions | undefined; 
+  private __newValueOptionsOutput = new SecurityMonitoringRuleOptionsNewValueOptionsOutputReference(this as any, "new_value_options", true);
+  public get newValueOptions() {
+    return this.__newValueOptionsOutput;
+  }
+  public putNewValueOptions(value: SecurityMonitoringRuleOptionsNewValueOptions | undefined) {
+    this._newValueOptions = value;
+  }
+  public resetNewValueOptions() {
+    this._newValueOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get newValueOptionsInput() {
+    return this._newValueOptions
+  }
+}
 export interface SecurityMonitoringRuleQuery {
   /**
   * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`.
@@ -230,6 +360,9 @@ export interface SecurityMonitoringRuleQuery {
 
 function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitoringRuleQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     aggregation: cdktf.stringToTerraform(struct!.aggregation),
     distinct_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.distinctFields),
@@ -289,11 +422,11 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable;
+  private _enabled?: boolean | cdktf.IResolvable | undefined; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable ) {
+  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -305,11 +438,11 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // has_extended_title - computed: false, optional: true, required: false
-  private _hasExtendedTitle?: boolean | cdktf.IResolvable;
+  private _hasExtendedTitle?: boolean | cdktf.IResolvable | undefined; 
   public get hasExtendedTitle() {
-    return this.getBooleanAttribute('has_extended_title');
+    return this.getBooleanAttribute('has_extended_title') as any;
   }
-  public set hasExtendedTitle(value: boolean | cdktf.IResolvable ) {
+  public set hasExtendedTitle(value: boolean | cdktf.IResolvable | undefined) {
     this._hasExtendedTitle = value;
   }
   public resetHasExtendedTitle() {
@@ -326,7 +459,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // message - computed: false, optional: false, required: true
-  private _message: string;
+  private _message?: string; 
   public get message() {
     return this.getStringAttribute('message');
   }
@@ -339,7 +472,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -352,11 +485,11 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[];
+  private _tags?: string[] | undefined; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] ) {
+  public set tags(value: string[] | undefined) {
     this._tags = value;
   }
   public resetTags() {
@@ -368,8 +501,9 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // case - computed: false, optional: false, required: true
-  private _case: SecurityMonitoringRuleCase[];
+  private _case?: SecurityMonitoringRuleCase[]; 
   public get case() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('case') as any;
   }
   public set case(value: SecurityMonitoringRuleCase[]) {
@@ -381,11 +515,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: SecurityMonitoringRuleFilter[];
+  private _filter?: SecurityMonitoringRuleFilter[] | undefined; 
   public get filter() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: SecurityMonitoringRuleFilter[] ) {
+  public set filter(value: SecurityMonitoringRuleFilter[] | undefined) {
     this._filter = value;
   }
   public resetFilter() {
@@ -397,11 +532,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // options - computed: false, optional: true, required: false
-  private _options?: SecurityMonitoringRuleOptions[];
+  private _options?: SecurityMonitoringRuleOptions | undefined; 
+  private __optionsOutput = new SecurityMonitoringRuleOptionsOutputReference(this as any, "options", true);
   public get options() {
-    return this.interpolationForAttribute('options') as any;
+    return this.__optionsOutput;
   }
-  public set options(value: SecurityMonitoringRuleOptions[] ) {
+  public putOptions(value: SecurityMonitoringRuleOptions | undefined) {
     this._options = value;
   }
   public resetOptions() {
@@ -413,8 +549,9 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // query - computed: false, optional: false, required: true
-  private _query: SecurityMonitoringRuleQuery[];
+  private _query?: SecurityMonitoringRuleQuery[]; 
   public get query() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('query') as any;
   }
   public set query(value: SecurityMonitoringRuleQuery[]) {
@@ -438,7 +575,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       case: cdktf.listMapper(securityMonitoringRuleCaseToTerraform)(this._case),
       filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform)(this._filter),
-      options: cdktf.listMapper(securityMonitoringRuleOptionsToTerraform)(this._options),
+      options: securityMonitoringRuleOptionsToTerraform(this._options),
       query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform)(this._query),
     };
   }

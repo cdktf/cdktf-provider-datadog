@@ -104,11 +104,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   // ==========
 
   // access_key_id - computed: false, optional: true, required: false
-  private _accessKeyId?: string;
+  private _accessKeyId?: string | undefined; 
   public get accessKeyId() {
     return this.getStringAttribute('access_key_id');
   }
-  public set accessKeyId(value: string ) {
+  public set accessKeyId(value: string | undefined) {
     this._accessKeyId = value;
   }
   public resetAccessKeyId() {
@@ -120,11 +120,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // account_id - computed: false, optional: true, required: false
-  private _accountId?: string;
+  private _accountId?: string | undefined; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string ) {
+  public set accountId(value: string | undefined) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -136,11 +136,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // account_specific_namespace_rules - computed: false, optional: true, required: false
-  private _accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable;
+  private _accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable | undefined; 
   public get accountSpecificNamespaceRules() {
-    return this.getBooleanAttribute('account_specific_namespace_rules');
+    return this.getBooleanAttribute('account_specific_namespace_rules') as any;
   }
-  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } | cdktf.IResolvable ) {
+  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } | cdktf.IResolvable | undefined) {
     this._accountSpecificNamespaceRules = value;
   }
   public resetAccountSpecificNamespaceRules() {
@@ -152,11 +152,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // excluded_regions - computed: false, optional: true, required: false
-  private _excludedRegions?: string[];
+  private _excludedRegions?: string[] | undefined; 
   public get excludedRegions() {
     return this.getListAttribute('excluded_regions');
   }
-  public set excludedRegions(value: string[] ) {
+  public set excludedRegions(value: string[] | undefined) {
     this._excludedRegions = value;
   }
   public resetExcludedRegions() {
@@ -173,11 +173,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // filter_tags - computed: false, optional: true, required: false
-  private _filterTags?: string[];
+  private _filterTags?: string[] | undefined; 
   public get filterTags() {
     return this.getListAttribute('filter_tags');
   }
-  public set filterTags(value: string[] ) {
+  public set filterTags(value: string[] | undefined) {
     this._filterTags = value;
   }
   public resetFilterTags() {
@@ -189,11 +189,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // host_tags - computed: false, optional: true, required: false
-  private _hostTags?: string[];
+  private _hostTags?: string[] | undefined; 
   public get hostTags() {
     return this.getListAttribute('host_tags');
   }
-  public set hostTags(value: string[] ) {
+  public set hostTags(value: string[] | undefined) {
     this._hostTags = value;
   }
   public resetHostTags() {
@@ -210,11 +210,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // role_name - computed: false, optional: true, required: false
-  private _roleName?: string;
+  private _roleName?: string | undefined; 
   public get roleName() {
     return this.getStringAttribute('role_name');
   }
-  public set roleName(value: string ) {
+  public set roleName(value: string | undefined) {
     this._roleName = value;
   }
   public resetRoleName() {
@@ -226,11 +226,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // secret_access_key - computed: false, optional: true, required: false
-  private _secretAccessKey?: string;
+  private _secretAccessKey?: string | undefined; 
   public get secretAccessKey() {
     return this.getStringAttribute('secret_access_key');
   }
-  public set secretAccessKey(value: string ) {
+  public set secretAccessKey(value: string | undefined) {
     this._secretAccessKey = value;
   }
   public resetSecretAccessKey() {
