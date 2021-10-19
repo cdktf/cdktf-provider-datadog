@@ -62,7 +62,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: false, optional: false, required: true
-  private _accountId: string;
+  private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
@@ -80,7 +80,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
   }
 
   // services - computed: false, optional: false, required: true
-  private _services: string[];
+  private _services?: string[]; 
   public get services() {
     return this.getListAttribute('services');
   }

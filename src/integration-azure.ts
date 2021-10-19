@@ -76,7 +76,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // ==========
 
   // client_id - computed: false, optional: false, required: true
-  private _clientId: string;
+  private _clientId?: string; 
   public get clientId() {
     return this.getStringAttribute('client_id');
   }
@@ -89,7 +89,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
 
   // client_secret - computed: false, optional: false, required: true
-  private _clientSecret: string;
+  private _clientSecret?: string; 
   public get clientSecret() {
     return this.getStringAttribute('client_secret');
   }
@@ -102,11 +102,11 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
 
   // host_filters - computed: false, optional: true, required: false
-  private _hostFilters?: string;
+  private _hostFilters?: string | undefined; 
   public get hostFilters() {
     return this.getStringAttribute('host_filters');
   }
-  public set hostFilters(value: string ) {
+  public set hostFilters(value: string | undefined) {
     this._hostFilters = value;
   }
   public resetHostFilters() {
@@ -123,7 +123,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
 
   // tenant_name - computed: false, optional: false, required: true
-  private _tenantName: string;
+  private _tenantName?: string; 
   public get tenantName() {
     return this.getStringAttribute('tenant_name');
   }

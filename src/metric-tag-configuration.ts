@@ -81,11 +81,11 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // include_percentiles - computed: false, optional: true, required: false
-  private _includePercentiles?: boolean | cdktf.IResolvable;
+  private _includePercentiles?: boolean | cdktf.IResolvable | undefined; 
   public get includePercentiles() {
-    return this.getBooleanAttribute('include_percentiles');
+    return this.getBooleanAttribute('include_percentiles') as any;
   }
-  public set includePercentiles(value: boolean | cdktf.IResolvable ) {
+  public set includePercentiles(value: boolean | cdktf.IResolvable | undefined) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {
@@ -97,7 +97,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // metric_name - computed: false, optional: false, required: true
-  private _metricName: string;
+  private _metricName?: string; 
   public get metricName() {
     return this.getStringAttribute('metric_name');
   }
@@ -110,7 +110,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // metric_type - computed: false, optional: false, required: true
-  private _metricType: string;
+  private _metricType?: string; 
   public get metricType() {
     return this.getStringAttribute('metric_type');
   }
@@ -123,7 +123,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: false, required: true
-  private _tags: string[];
+  private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
   }

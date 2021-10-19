@@ -98,11 +98,11 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   }
 
   // ids - computed: false, optional: true, required: false
-  private _ids?: string[];
+  private _ids?: string[] | undefined; 
   public get ids() {
     return this.getListAttribute('ids');
   }
-  public set ids(value: string[] ) {
+  public set ids(value: string[] | undefined) {
     this._ids = value;
   }
   public resetIds() {
@@ -114,11 +114,11 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   }
 
   // metrics_query - computed: false, optional: true, required: false
-  private _metricsQuery?: string;
+  private _metricsQuery?: string | undefined; 
   public get metricsQuery() {
     return this.getStringAttribute('metrics_query');
   }
-  public set metricsQuery(value: string ) {
+  public set metricsQuery(value: string | undefined) {
     this._metricsQuery = value;
   }
   public resetMetricsQuery() {
@@ -130,11 +130,11 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   }
 
   // name_query - computed: false, optional: true, required: false
-  private _nameQuery?: string;
+  private _nameQuery?: string | undefined; 
   public get nameQuery() {
     return this.getStringAttribute('name_query');
   }
-  public set nameQuery(value: string ) {
+  public set nameQuery(value: string | undefined) {
     this._nameQuery = value;
   }
   public resetNameQuery() {
@@ -151,11 +151,11 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   }
 
   // tags_query - computed: false, optional: true, required: false
-  private _tagsQuery?: string;
+  private _tagsQuery?: string | undefined; 
   public get tagsQuery() {
     return this.getStringAttribute('tags_query');
   }
-  public set tagsQuery(value: string ) {
+  public set tagsQuery(value: string | undefined) {
     this._tagsQuery = value;
   }
   public resetTagsQuery() {

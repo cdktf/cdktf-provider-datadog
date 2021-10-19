@@ -62,7 +62,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   // ==========
 
   // account_id - computed: false, optional: false, required: true
-  private _accountId: string;
+  private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
@@ -80,7 +80,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   }
 
   // lambda_arn - computed: false, optional: false, required: true
-  private _lambdaArn: string;
+  private _lambdaArn?: string; 
   public get lambdaArn() {
     return this.getStringAttribute('lambda_arn');
   }

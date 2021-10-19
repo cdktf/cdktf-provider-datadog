@@ -43,6 +43,9 @@ export interface SecurityMonitoringDefaultRuleCase {
 
 function securityMonitoringDefaultRuleCaseToTerraform(struct?: SecurityMonitoringDefaultRuleCase): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     notifications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notifications),
     status: cdktf.stringToTerraform(struct!.status),
@@ -66,6 +69,9 @@ export interface SecurityMonitoringDefaultRuleFilter {
 
 function securityMonitoringDefaultRuleFilterToTerraform(struct?: SecurityMonitoringDefaultRuleFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     action: cdktf.stringToTerraform(struct!.action),
     query: cdktf.stringToTerraform(struct!.query),
@@ -115,11 +121,11 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable;
+  private _enabled?: boolean | cdktf.IResolvable | undefined; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable ) {
+  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -136,11 +142,12 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   }
 
   // case - computed: false, optional: true, required: false
-  private _case?: SecurityMonitoringDefaultRuleCase[];
+  private _case?: SecurityMonitoringDefaultRuleCase[] | undefined; 
   public get case() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('case') as any;
   }
-  public set case(value: SecurityMonitoringDefaultRuleCase[] ) {
+  public set case(value: SecurityMonitoringDefaultRuleCase[] | undefined) {
     this._case = value;
   }
   public resetCase() {
@@ -152,11 +159,12 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: SecurityMonitoringDefaultRuleFilter[];
+  private _filter?: SecurityMonitoringDefaultRuleFilter[] | undefined; 
   public get filter() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: SecurityMonitoringDefaultRuleFilter[] ) {
+  public set filter(value: SecurityMonitoringDefaultRuleFilter[] | undefined) {
     this._filter = value;
   }
   public resetFilter() {

@@ -83,11 +83,11 @@ export class User extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable;
+  private _disabled?: boolean | cdktf.IResolvable | undefined; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled');
+    return this.getBooleanAttribute('disabled') as any;
   }
-  public set disabled(value: boolean | cdktf.IResolvable ) {
+  public set disabled(value: boolean | cdktf.IResolvable | undefined) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -99,7 +99,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // email - computed: false, optional: false, required: true
-  private _email: string;
+  private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
@@ -117,11 +117,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {
@@ -133,11 +133,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // roles - computed: false, optional: true, required: false
-  private _roles?: string[];
+  private _roles?: string[] | undefined; 
   public get roles() {
     return this.getListAttribute('roles');
   }
-  public set roles(value: string[] ) {
+  public set roles(value: string[] | undefined) {
     this._roles = value;
   }
   public resetRoles() {
@@ -149,11 +149,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // send_user_invitation - computed: false, optional: true, required: false
-  private _sendUserInvitation?: boolean | cdktf.IResolvable;
+  private _sendUserInvitation?: boolean | cdktf.IResolvable | undefined; 
   public get sendUserInvitation() {
-    return this.getBooleanAttribute('send_user_invitation');
+    return this.getBooleanAttribute('send_user_invitation') as any;
   }
-  public set sendUserInvitation(value: boolean | cdktf.IResolvable ) {
+  public set sendUserInvitation(value: boolean | cdktf.IResolvable | undefined) {
     this._sendUserInvitation = value;
   }
   public resetSendUserInvitation() {
@@ -171,7 +171,7 @@ export class User extends cdktf.TerraformResource {
 
   // verified - computed: true, optional: false, required: false
   public get verified() {
-    return this.getBooleanAttribute('verified');
+    return this.getBooleanAttribute('verified') as any;
   }
 
   // =========

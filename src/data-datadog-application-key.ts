@@ -62,11 +62,11 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: false, optional: true, required: false
-  private _id?: string;
+  private _id?: string | undefined; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string ) {
+  public set id(value: string | undefined) {
     this._id = value;
   }
   public resetId() {
@@ -83,11 +83,11 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {

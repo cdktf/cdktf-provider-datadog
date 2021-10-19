@@ -162,13 +162,13 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#monitor_threshold_windows Monitor#monitor_threshold_windows}
   */
-  readonly monitorThresholdWindows?: MonitorMonitorThresholdWindows[];
+  readonly monitorThresholdWindows?: MonitorMonitorThresholdWindows;
   /**
   * monitor_thresholds block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#monitor_thresholds Monitor#monitor_thresholds}
   */
-  readonly monitorThresholds?: MonitorMonitorThresholds[];
+  readonly monitorThresholds?: MonitorMonitorThresholds;
 }
 export interface MonitorMonitorThresholdWindows {
   /**
@@ -185,14 +185,59 @@ export interface MonitorMonitorThresholdWindows {
   readonly triggerWindow?: string;
 }
 
-function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonitorThresholdWindows): any {
+function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     recovery_window: cdktf.stringToTerraform(struct!.recoveryWindow),
     trigger_window: cdktf.stringToTerraform(struct!.triggerWindow),
   }
 }
 
+export class MonitorMonitorThresholdWindowsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // recovery_window - computed: false, optional: true, required: false
+  private _recoveryWindow?: string | undefined; 
+  public get recoveryWindow() {
+    return this.getStringAttribute('recovery_window');
+  }
+  public set recoveryWindow(value: string | undefined) {
+    this._recoveryWindow = value;
+  }
+  public resetRecoveryWindow() {
+    this._recoveryWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recoveryWindowInput() {
+    return this._recoveryWindow
+  }
+
+  // trigger_window - computed: false, optional: true, required: false
+  private _triggerWindow?: string | undefined; 
+  public get triggerWindow() {
+    return this.getStringAttribute('trigger_window');
+  }
+  public set triggerWindow(value: string | undefined) {
+    this._triggerWindow = value;
+  }
+  public resetTriggerWindow() {
+    this._triggerWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerWindowInput() {
+    return this._triggerWindow
+  }
+}
 export interface MonitorMonitorThresholds {
   /**
   * The monitor `CRITICAL` threshold. Must be a number.
@@ -232,8 +277,11 @@ export interface MonitorMonitorThresholds {
   readonly warningRecovery?: string;
 }
 
-function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholds): any {
+function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholdsOutputReference | MonitorMonitorThresholds): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     critical: cdktf.stringToTerraform(struct!.critical),
     critical_recovery: cdktf.stringToTerraform(struct!.criticalRecovery),
@@ -244,6 +292,112 @@ function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholds):
   }
 }
 
+export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // critical - computed: false, optional: true, required: false
+  private _critical?: string | undefined; 
+  public get critical() {
+    return this.getStringAttribute('critical');
+  }
+  public set critical(value: string | undefined) {
+    this._critical = value;
+  }
+  public resetCritical() {
+    this._critical = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get criticalInput() {
+    return this._critical
+  }
+
+  // critical_recovery - computed: false, optional: true, required: false
+  private _criticalRecovery?: string | undefined; 
+  public get criticalRecovery() {
+    return this.getStringAttribute('critical_recovery');
+  }
+  public set criticalRecovery(value: string | undefined) {
+    this._criticalRecovery = value;
+  }
+  public resetCriticalRecovery() {
+    this._criticalRecovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get criticalRecoveryInput() {
+    return this._criticalRecovery
+  }
+
+  // ok - computed: false, optional: true, required: false
+  private _ok?: string | undefined; 
+  public get ok() {
+    return this.getStringAttribute('ok');
+  }
+  public set ok(value: string | undefined) {
+    this._ok = value;
+  }
+  public resetOk() {
+    this._ok = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get okInput() {
+    return this._ok
+  }
+
+  // unknown - computed: false, optional: true, required: false
+  private _unknown?: string | undefined; 
+  public get unknown() {
+    return this.getStringAttribute('unknown');
+  }
+  public set unknown(value: string | undefined) {
+    this._unknown = value;
+  }
+  public resetUnknown() {
+    this._unknown = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unknownInput() {
+    return this._unknown
+  }
+
+  // warning - computed: false, optional: true, required: false
+  private _warning?: string | undefined; 
+  public get warning() {
+    return this.getStringAttribute('warning');
+  }
+  public set warning(value: string | undefined) {
+    this._warning = value;
+  }
+  public resetWarning() {
+    this._warning = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warningInput() {
+    return this._warning
+  }
+
+  // warning_recovery - computed: false, optional: true, required: false
+  private _warningRecovery?: string | undefined; 
+  public get warningRecovery() {
+    return this.getStringAttribute('warning_recovery');
+  }
+  public set warningRecovery(value: string | undefined) {
+    this._warningRecovery = value;
+  }
+  public resetWarningRecovery() {
+    this._warningRecovery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warningRecoveryInput() {
+    return this._warningRecovery
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}
@@ -309,11 +463,11 @@ export class Monitor extends cdktf.TerraformResource {
   // ==========
 
   // enable_logs_sample - computed: false, optional: true, required: false
-  private _enableLogsSample?: boolean | cdktf.IResolvable;
+  private _enableLogsSample?: boolean | cdktf.IResolvable | undefined; 
   public get enableLogsSample() {
-    return this.getBooleanAttribute('enable_logs_sample');
+    return this.getBooleanAttribute('enable_logs_sample') as any;
   }
-  public set enableLogsSample(value: boolean | cdktf.IResolvable ) {
+  public set enableLogsSample(value: boolean | cdktf.IResolvable | undefined) {
     this._enableLogsSample = value;
   }
   public resetEnableLogsSample() {
@@ -325,11 +479,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // escalation_message - computed: false, optional: true, required: false
-  private _escalationMessage?: string;
+  private _escalationMessage?: string | undefined; 
   public get escalationMessage() {
     return this.getStringAttribute('escalation_message');
   }
-  public set escalationMessage(value: string ) {
+  public set escalationMessage(value: string | undefined) {
     this._escalationMessage = value;
   }
   public resetEscalationMessage() {
@@ -341,11 +495,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // evaluation_delay - computed: true, optional: true, required: false
-  private _evaluationDelay?: number;
+  private _evaluationDelay?: number | undefined; 
   public get evaluationDelay() {
     return this.getNumberAttribute('evaluation_delay');
   }
-  public set evaluationDelay(value: number) {
+  public set evaluationDelay(value: number | undefined) {
     this._evaluationDelay = value;
   }
   public resetEvaluationDelay() {
@@ -357,11 +511,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable;
+  private _forceDelete?: boolean | cdktf.IResolvable | undefined; 
   public get forceDelete() {
-    return this.getBooleanAttribute('force_delete');
+    return this.getBooleanAttribute('force_delete') as any;
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable ) {
+  public set forceDelete(value: boolean | cdktf.IResolvable | undefined) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -373,11 +527,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // groupby_simple_monitor - computed: false, optional: true, required: false
-  private _groupbySimpleMonitor?: boolean | cdktf.IResolvable;
+  private _groupbySimpleMonitor?: boolean | cdktf.IResolvable | undefined; 
   public get groupbySimpleMonitor() {
-    return this.getBooleanAttribute('groupby_simple_monitor');
+    return this.getBooleanAttribute('groupby_simple_monitor') as any;
   }
-  public set groupbySimpleMonitor(value: boolean | cdktf.IResolvable ) {
+  public set groupbySimpleMonitor(value: boolean | cdktf.IResolvable | undefined) {
     this._groupbySimpleMonitor = value;
   }
   public resetGroupbySimpleMonitor() {
@@ -394,11 +548,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // include_tags - computed: false, optional: true, required: false
-  private _includeTags?: boolean | cdktf.IResolvable;
+  private _includeTags?: boolean | cdktf.IResolvable | undefined; 
   public get includeTags() {
-    return this.getBooleanAttribute('include_tags');
+    return this.getBooleanAttribute('include_tags') as any;
   }
-  public set includeTags(value: boolean | cdktf.IResolvable ) {
+  public set includeTags(value: boolean | cdktf.IResolvable | undefined) {
     this._includeTags = value;
   }
   public resetIncludeTags() {
@@ -410,11 +564,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // locked - computed: false, optional: true, required: false
-  private _locked?: boolean | cdktf.IResolvable;
+  private _locked?: boolean | cdktf.IResolvable | undefined; 
   public get locked() {
-    return this.getBooleanAttribute('locked');
+    return this.getBooleanAttribute('locked') as any;
   }
-  public set locked(value: boolean | cdktf.IResolvable ) {
+  public set locked(value: boolean | cdktf.IResolvable | undefined) {
     this._locked = value;
   }
   public resetLocked() {
@@ -426,7 +580,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // message - computed: false, optional: false, required: true
-  private _message: string;
+  private _message?: string; 
   public get message() {
     return this.getStringAttribute('message');
   }
@@ -439,7 +593,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -452,11 +606,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // new_group_delay - computed: false, optional: true, required: false
-  private _newGroupDelay?: number;
+  private _newGroupDelay?: number | undefined; 
   public get newGroupDelay() {
     return this.getNumberAttribute('new_group_delay');
   }
-  public set newGroupDelay(value: number ) {
+  public set newGroupDelay(value: number | undefined) {
     this._newGroupDelay = value;
   }
   public resetNewGroupDelay() {
@@ -468,11 +622,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // new_host_delay - computed: false, optional: true, required: false
-  private _newHostDelay?: number;
+  private _newHostDelay?: number | undefined; 
   public get newHostDelay() {
     return this.getNumberAttribute('new_host_delay');
   }
-  public set newHostDelay(value: number ) {
+  public set newHostDelay(value: number | undefined) {
     this._newHostDelay = value;
   }
   public resetNewHostDelay() {
@@ -484,11 +638,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // no_data_timeframe - computed: false, optional: true, required: false
-  private _noDataTimeframe?: number;
+  private _noDataTimeframe?: number | undefined; 
   public get noDataTimeframe() {
     return this.getNumberAttribute('no_data_timeframe');
   }
-  public set noDataTimeframe(value: number ) {
+  public set noDataTimeframe(value: number | undefined) {
     this._noDataTimeframe = value;
   }
   public resetNoDataTimeframe() {
@@ -500,11 +654,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // notify_audit - computed: false, optional: true, required: false
-  private _notifyAudit?: boolean | cdktf.IResolvable;
+  private _notifyAudit?: boolean | cdktf.IResolvable | undefined; 
   public get notifyAudit() {
-    return this.getBooleanAttribute('notify_audit');
+    return this.getBooleanAttribute('notify_audit') as any;
   }
-  public set notifyAudit(value: boolean | cdktf.IResolvable ) {
+  public set notifyAudit(value: boolean | cdktf.IResolvable | undefined) {
     this._notifyAudit = value;
   }
   public resetNotifyAudit() {
@@ -516,11 +670,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // notify_no_data - computed: false, optional: true, required: false
-  private _notifyNoData?: boolean | cdktf.IResolvable;
+  private _notifyNoData?: boolean | cdktf.IResolvable | undefined; 
   public get notifyNoData() {
-    return this.getBooleanAttribute('notify_no_data');
+    return this.getBooleanAttribute('notify_no_data') as any;
   }
-  public set notifyNoData(value: boolean | cdktf.IResolvable ) {
+  public set notifyNoData(value: boolean | cdktf.IResolvable | undefined) {
     this._notifyNoData = value;
   }
   public resetNotifyNoData() {
@@ -532,11 +686,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // priority - computed: false, optional: true, required: false
-  private _priority?: number;
+  private _priority?: number | undefined; 
   public get priority() {
     return this.getNumberAttribute('priority');
   }
-  public set priority(value: number ) {
+  public set priority(value: number | undefined) {
     this._priority = value;
   }
   public resetPriority() {
@@ -548,7 +702,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // query - computed: false, optional: false, required: true
-  private _query: string;
+  private _query?: string; 
   public get query() {
     return this.getStringAttribute('query');
   }
@@ -561,11 +715,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // renotify_interval - computed: false, optional: true, required: false
-  private _renotifyInterval?: number;
+  private _renotifyInterval?: number | undefined; 
   public get renotifyInterval() {
     return this.getNumberAttribute('renotify_interval');
   }
-  public set renotifyInterval(value: number ) {
+  public set renotifyInterval(value: number | undefined) {
     this._renotifyInterval = value;
   }
   public resetRenotifyInterval() {
@@ -577,11 +731,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // require_full_window - computed: false, optional: true, required: false
-  private _requireFullWindow?: boolean | cdktf.IResolvable;
+  private _requireFullWindow?: boolean | cdktf.IResolvable | undefined; 
   public get requireFullWindow() {
-    return this.getBooleanAttribute('require_full_window');
+    return this.getBooleanAttribute('require_full_window') as any;
   }
-  public set requireFullWindow(value: boolean | cdktf.IResolvable ) {
+  public set requireFullWindow(value: boolean | cdktf.IResolvable | undefined) {
     this._requireFullWindow = value;
   }
   public resetRequireFullWindow() {
@@ -593,11 +747,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // restricted_roles - computed: false, optional: true, required: false
-  private _restrictedRoles?: string[];
+  private _restrictedRoles?: string[] | undefined; 
   public get restrictedRoles() {
     return this.getListAttribute('restricted_roles');
   }
-  public set restrictedRoles(value: string[] ) {
+  public set restrictedRoles(value: string[] | undefined) {
     this._restrictedRoles = value;
   }
   public resetRestrictedRoles() {
@@ -609,11 +763,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[];
+  private _tags?: string[] | undefined; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] ) {
+  public set tags(value: string[] | undefined) {
     this._tags = value;
   }
   public resetTags() {
@@ -625,11 +779,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // timeout_h - computed: false, optional: true, required: false
-  private _timeoutH?: number;
+  private _timeoutH?: number | undefined; 
   public get timeoutH() {
     return this.getNumberAttribute('timeout_h');
   }
-  public set timeoutH(value: number ) {
+  public set timeoutH(value: number | undefined) {
     this._timeoutH = value;
   }
   public resetTimeoutH() {
@@ -641,7 +795,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // type - computed: false, optional: false, required: true
-  private _type: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -654,11 +808,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean | cdktf.IResolvable;
+  private _validate?: boolean | cdktf.IResolvable | undefined; 
   public get validate() {
-    return this.getBooleanAttribute('validate');
+    return this.getBooleanAttribute('validate') as any;
   }
-  public set validate(value: boolean | cdktf.IResolvable ) {
+  public set validate(value: boolean | cdktf.IResolvable | undefined) {
     this._validate = value;
   }
   public resetValidate() {
@@ -670,11 +824,12 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // monitor_threshold_windows - computed: false, optional: true, required: false
-  private _monitorThresholdWindows?: MonitorMonitorThresholdWindows[];
+  private _monitorThresholdWindows?: MonitorMonitorThresholdWindows | undefined; 
+  private __monitorThresholdWindowsOutput = new MonitorMonitorThresholdWindowsOutputReference(this as any, "monitor_threshold_windows", true);
   public get monitorThresholdWindows() {
-    return this.interpolationForAttribute('monitor_threshold_windows') as any;
+    return this.__monitorThresholdWindowsOutput;
   }
-  public set monitorThresholdWindows(value: MonitorMonitorThresholdWindows[] ) {
+  public putMonitorThresholdWindows(value: MonitorMonitorThresholdWindows | undefined) {
     this._monitorThresholdWindows = value;
   }
   public resetMonitorThresholdWindows() {
@@ -686,11 +841,12 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // monitor_thresholds - computed: false, optional: true, required: false
-  private _monitorThresholds?: MonitorMonitorThresholds[];
+  private _monitorThresholds?: MonitorMonitorThresholds | undefined; 
+  private __monitorThresholdsOutput = new MonitorMonitorThresholdsOutputReference(this as any, "monitor_thresholds", true);
   public get monitorThresholds() {
-    return this.interpolationForAttribute('monitor_thresholds') as any;
+    return this.__monitorThresholdsOutput;
   }
-  public set monitorThresholds(value: MonitorMonitorThresholds[] ) {
+  public putMonitorThresholds(value: MonitorMonitorThresholds | undefined) {
     this._monitorThresholds = value;
   }
   public resetMonitorThresholds() {
@@ -730,8 +886,8 @@ export class Monitor extends cdktf.TerraformResource {
       timeout_h: cdktf.numberToTerraform(this._timeoutH),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),
-      monitor_threshold_windows: cdktf.listMapper(monitorMonitorThresholdWindowsToTerraform)(this._monitorThresholdWindows),
-      monitor_thresholds: cdktf.listMapper(monitorMonitorThresholdsToTerraform)(this._monitorThresholds),
+      monitor_threshold_windows: monitorMonitorThresholdWindowsToTerraform(this._monitorThresholdWindows),
+      monitor_thresholds: monitorMonitorThresholdsToTerraform(this._monitorThresholds),
     };
   }
 }

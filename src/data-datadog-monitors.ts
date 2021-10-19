@@ -91,11 +91,11 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   }
 
   // monitor_tags_filter - computed: false, optional: true, required: false
-  private _monitorTagsFilter?: string[];
+  private _monitorTagsFilter?: string[] | undefined; 
   public get monitorTagsFilter() {
     return this.getListAttribute('monitor_tags_filter');
   }
-  public set monitorTagsFilter(value: string[] ) {
+  public set monitorTagsFilter(value: string[] | undefined) {
     this._monitorTagsFilter = value;
   }
   public resetMonitorTagsFilter() {
@@ -112,11 +112,11 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   }
 
   // name_filter - computed: false, optional: true, required: false
-  private _nameFilter?: string;
+  private _nameFilter?: string | undefined; 
   public get nameFilter() {
     return this.getStringAttribute('name_filter');
   }
-  public set nameFilter(value: string ) {
+  public set nameFilter(value: string | undefined) {
     this._nameFilter = value;
   }
   public resetNameFilter() {
@@ -128,11 +128,11 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   }
 
   // tags_filter - computed: false, optional: true, required: false
-  private _tagsFilter?: string[];
+  private _tagsFilter?: string[] | undefined; 
   public get tagsFilter() {
     return this.getListAttribute('tags_filter');
   }
-  public set tagsFilter(value: string[] ) {
+  public set tagsFilter(value: string[] | undefined) {
     this._tagsFilter = value;
   }
   public resetTagsFilter() {

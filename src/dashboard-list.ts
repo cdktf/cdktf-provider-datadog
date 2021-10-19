@@ -37,6 +37,9 @@ export interface DashboardListDashItem {
 
 function dashboardListDashItemToTerraform(struct?: DashboardListDashItem): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     dash_id: cdktf.stringToTerraform(struct!.dashId),
     type: cdktf.stringToTerraform(struct!.type),
@@ -90,7 +93,7 @@ export class DashboardList extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -103,11 +106,12 @@ export class DashboardList extends cdktf.TerraformResource {
   }
 
   // dash_item - computed: false, optional: true, required: false
-  private _dashItem?: DashboardListDashItem[];
+  private _dashItem?: DashboardListDashItem[] | undefined; 
   public get dashItem() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('dash_item') as any;
   }
-  public set dashItem(value: DashboardListDashItem[] ) {
+  public set dashItem(value: DashboardListDashItem[] | undefined) {
     this._dashItem = value;
   }
   public resetDashItem() {

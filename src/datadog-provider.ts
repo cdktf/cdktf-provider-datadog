@@ -95,11 +95,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   // ==========
 
   // api_key - computed: false, optional: true, required: false
-  private _apiKey?: string;
+  private _apiKey?: string | undefined; 
   public get apiKey() {
     return this._apiKey;
   }
-  public set apiKey(value: string  | undefined) {
+  public set apiKey(value: string | undefined| undefined) {
     this._apiKey = value;
   }
   public resetApiKey() {
@@ -111,11 +111,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // api_url - computed: false, optional: true, required: false
-  private _apiUrl?: string;
+  private _apiUrl?: string | undefined; 
   public get apiUrl() {
     return this._apiUrl;
   }
-  public set apiUrl(value: string  | undefined) {
+  public set apiUrl(value: string | undefined| undefined) {
     this._apiUrl = value;
   }
   public resetApiUrl() {
@@ -127,11 +127,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // app_key - computed: false, optional: true, required: false
-  private _appKey?: string;
+  private _appKey?: string | undefined; 
   public get appKey() {
     return this._appKey;
   }
-  public set appKey(value: string  | undefined) {
+  public set appKey(value: string | undefined| undefined) {
     this._appKey = value;
   }
   public resetAppKey() {
@@ -143,11 +143,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // http_client_retry_enabled - computed: false, optional: true, required: false
-  private _httpClientRetryEnabled?: boolean | cdktf.IResolvable;
+  private _httpClientRetryEnabled?: boolean | cdktf.IResolvable | undefined; 
   public get httpClientRetryEnabled() {
     return this._httpClientRetryEnabled;
   }
-  public set httpClientRetryEnabled(value: boolean | cdktf.IResolvable  | undefined) {
+  public set httpClientRetryEnabled(value: boolean | cdktf.IResolvable | undefined| undefined) {
     this._httpClientRetryEnabled = value;
   }
   public resetHttpClientRetryEnabled() {
@@ -159,11 +159,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // http_client_retry_timeout - computed: false, optional: true, required: false
-  private _httpClientRetryTimeout?: number;
+  private _httpClientRetryTimeout?: number | undefined; 
   public get httpClientRetryTimeout() {
     return this._httpClientRetryTimeout;
   }
-  public set httpClientRetryTimeout(value: number  | undefined) {
+  public set httpClientRetryTimeout(value: number | undefined| undefined) {
     this._httpClientRetryTimeout = value;
   }
   public resetHttpClientRetryTimeout() {
@@ -175,11 +175,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean | cdktf.IResolvable;
+  private _validate?: boolean | cdktf.IResolvable | undefined; 
   public get validate() {
     return this._validate;
   }
-  public set validate(value: boolean | cdktf.IResolvable  | undefined) {
+  public set validate(value: boolean | cdktf.IResolvable | undefined| undefined) {
     this._validate = value;
   }
   public resetValidate() {
@@ -191,11 +191,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string;
+  private _alias?: string | undefined; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string  | undefined) {
+  public set alias(value: string | undefined| undefined) {
     this._alias = value;
   }
   public resetAlias() {

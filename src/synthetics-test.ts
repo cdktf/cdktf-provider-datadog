@@ -108,25 +108,25 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#options_list SyntheticsTest#options_list}
   */
-  readonly optionsList?: SyntheticsTestOptionsList[];
+  readonly optionsList?: SyntheticsTestOptionsList;
   /**
   * request_basicauth block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_basicauth SyntheticsTest#request_basicauth}
   */
-  readonly requestBasicauth?: SyntheticsTestRequestBasicauth[];
+  readonly requestBasicauth?: SyntheticsTestRequestBasicauth;
   /**
   * request_client_certificate block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_client_certificate SyntheticsTest#request_client_certificate}
   */
-  readonly requestClientCertificate?: SyntheticsTestRequestClientCertificate[];
+  readonly requestClientCertificate?: SyntheticsTestRequestClientCertificate;
   /**
   * request_definition block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_definition SyntheticsTest#request_definition}
   */
-  readonly requestDefinition?: SyntheticsTestRequestDefinition[];
+  readonly requestDefinition?: SyntheticsTestRequestDefinition;
 }
 export interface SyntheticsTestApiStepAssertionTargetjsonpath {
   /**
@@ -149,8 +149,11 @@ export interface SyntheticsTestApiStepAssertionTargetjsonpath {
   readonly targetvalue: string;
 }
 
-function syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct?: SyntheticsTestApiStepAssertionTargetjsonpath): any {
+function syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct?: SyntheticsTestApiStepAssertionTargetjsonpathOutputReference | SyntheticsTestApiStepAssertionTargetjsonpath): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     jsonpath: cdktf.stringToTerraform(struct!.jsonpath),
     operator: cdktf.stringToTerraform(struct!.operator),
@@ -158,6 +161,55 @@ function syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct?: Synthe
   }
 }
 
+export class SyntheticsTestApiStepAssertionTargetjsonpathOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // jsonpath - computed: false, optional: false, required: true
+  private _jsonpath?: string; 
+  public get jsonpath() {
+    return this.getStringAttribute('jsonpath');
+  }
+  public set jsonpath(value: string) {
+    this._jsonpath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsonpathInput() {
+    return this._jsonpath
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator
+  }
+
+  // targetvalue - computed: false, optional: false, required: true
+  private _targetvalue?: string; 
+  public get targetvalue() {
+    return this.getStringAttribute('targetvalue');
+  }
+  public set targetvalue(value: string) {
+    this._targetvalue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetvalueInput() {
+    return this._targetvalue
+  }
+}
 export interface SyntheticsTestApiStepAssertion {
   /**
   * Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
@@ -188,17 +240,20 @@ export interface SyntheticsTestApiStepAssertion {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#targetjsonpath SyntheticsTest#targetjsonpath}
   */
-  readonly targetjsonpath?: SyntheticsTestApiStepAssertionTargetjsonpath[];
+  readonly targetjsonpath?: SyntheticsTestApiStepAssertionTargetjsonpath;
 }
 
 function syntheticsTestApiStepAssertionToTerraform(struct?: SyntheticsTestApiStepAssertion): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
     property: cdktf.stringToTerraform(struct!.property),
     target: cdktf.stringToTerraform(struct!.target),
     type: cdktf.stringToTerraform(struct!.type),
-    targetjsonpath: cdktf.listMapper(syntheticsTestApiStepAssertionTargetjsonpathToTerraform)(struct!.targetjsonpath),
+    targetjsonpath: syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct!.targetjsonpath),
   }
 }
 
@@ -217,14 +272,56 @@ export interface SyntheticsTestApiStepExtractedValueParser {
   readonly value?: string;
 }
 
-function syntheticsTestApiStepExtractedValueParserToTerraform(struct?: SyntheticsTestApiStepExtractedValueParser): any {
+function syntheticsTestApiStepExtractedValueParserToTerraform(struct?: SyntheticsTestApiStepExtractedValueParserOutputReference | SyntheticsTestApiStepExtractedValueParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
 }
 
+export class SyntheticsTestApiStepExtractedValueParserOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string | undefined; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string | undefined) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value
+  }
+}
 export interface SyntheticsTestApiStepExtractedValue {
   /**
   * When type is `http_header`, name of the header to use to extract the value.
@@ -247,16 +344,19 @@ export interface SyntheticsTestApiStepExtractedValue {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#parser SyntheticsTest#parser}
   */
-  readonly parser: SyntheticsTestApiStepExtractedValueParser[];
+  readonly parser: SyntheticsTestApiStepExtractedValueParser;
 }
 
 function syntheticsTestApiStepExtractedValueToTerraform(struct?: SyntheticsTestApiStepExtractedValue): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     field: cdktf.stringToTerraform(struct!.field),
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
-    parser: cdktf.listMapper(syntheticsTestApiStepExtractedValueParserToTerraform)(struct!.parser),
+    parser: syntheticsTestApiStepExtractedValueParserToTerraform(struct!.parser),
   }
 }
 
@@ -275,14 +375,53 @@ export interface SyntheticsTestApiStepRequestBasicauth {
   readonly username: string;
 }
 
-function syntheticsTestApiStepRequestBasicauthToTerraform(struct?: SyntheticsTestApiStepRequestBasicauth): any {
+function syntheticsTestApiStepRequestBasicauthToTerraform(struct?: SyntheticsTestApiStepRequestBasicauthOutputReference | SyntheticsTestApiStepRequestBasicauth): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
 }
 
+export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username
+  }
+}
 export interface SyntheticsTestApiStepRequestClientCertificateCert {
   /**
   * Content of the certificate.
@@ -298,14 +437,56 @@ export interface SyntheticsTestApiStepRequestClientCertificateCert {
   readonly filename?: string;
 }
 
-function syntheticsTestApiStepRequestClientCertificateCertToTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateCert): any {
+function syntheticsTestApiStepRequestClientCertificateCertToTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateCertOutputReference | SyntheticsTestApiStepRequestClientCertificateCert): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     content: cdktf.stringToTerraform(struct!.content),
     filename: cdktf.stringToTerraform(struct!.filename),
   }
 }
 
+export class SyntheticsTestApiStepRequestClientCertificateCertOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
+  }
+
+  // filename - computed: false, optional: true, required: false
+  private _filename?: string | undefined; 
+  public get filename() {
+    return this.getStringAttribute('filename');
+  }
+  public set filename(value: string | undefined) {
+    this._filename = value;
+  }
+  public resetFilename() {
+    this._filename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filenameInput() {
+    return this._filename
+  }
+}
 export interface SyntheticsTestApiStepRequestClientCertificateKey {
   /**
   * Content of the certificate.
@@ -321,37 +502,120 @@ export interface SyntheticsTestApiStepRequestClientCertificateKey {
   readonly filename?: string;
 }
 
-function syntheticsTestApiStepRequestClientCertificateKeyToTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateKey): any {
+function syntheticsTestApiStepRequestClientCertificateKeyToTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateKeyOutputReference | SyntheticsTestApiStepRequestClientCertificateKey): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     content: cdktf.stringToTerraform(struct!.content),
     filename: cdktf.stringToTerraform(struct!.filename),
   }
 }
 
+export class SyntheticsTestApiStepRequestClientCertificateKeyOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
+  }
+
+  // filename - computed: false, optional: true, required: false
+  private _filename?: string | undefined; 
+  public get filename() {
+    return this.getStringAttribute('filename');
+  }
+  public set filename(value: string | undefined) {
+    this._filename = value;
+  }
+  public resetFilename() {
+    this._filename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filenameInput() {
+    return this._filename
+  }
+}
 export interface SyntheticsTestApiStepRequestClientCertificate {
   /**
   * cert block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#cert SyntheticsTest#cert}
   */
-  readonly cert: SyntheticsTestApiStepRequestClientCertificateCert[];
+  readonly cert: SyntheticsTestApiStepRequestClientCertificateCert;
   /**
   * key block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#key SyntheticsTest#key}
   */
-  readonly key: SyntheticsTestApiStepRequestClientCertificateKey[];
+  readonly key: SyntheticsTestApiStepRequestClientCertificateKey;
 }
 
-function syntheticsTestApiStepRequestClientCertificateToTerraform(struct?: SyntheticsTestApiStepRequestClientCertificate): any {
+function syntheticsTestApiStepRequestClientCertificateToTerraform(struct?: SyntheticsTestApiStepRequestClientCertificateOutputReference | SyntheticsTestApiStepRequestClientCertificate): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
-    cert: cdktf.listMapper(syntheticsTestApiStepRequestClientCertificateCertToTerraform)(struct!.cert),
-    key: cdktf.listMapper(syntheticsTestApiStepRequestClientCertificateKeyToTerraform)(struct!.key),
+    cert: syntheticsTestApiStepRequestClientCertificateCertToTerraform(struct!.cert),
+    key: syntheticsTestApiStepRequestClientCertificateKeyToTerraform(struct!.key),
   }
 }
 
+export class SyntheticsTestApiStepRequestClientCertificateOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // cert - computed: false, optional: false, required: true
+  private _cert?: SyntheticsTestApiStepRequestClientCertificateCert; 
+  private __certOutput = new SyntheticsTestApiStepRequestClientCertificateCertOutputReference(this as any, "cert", true);
+  public get cert() {
+    return this.__certOutput;
+  }
+  public putCert(value: SyntheticsTestApiStepRequestClientCertificateCert) {
+    this._cert = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certInput() {
+    return this._cert
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: SyntheticsTestApiStepRequestClientCertificateKey; 
+  private __keyOutput = new SyntheticsTestApiStepRequestClientCertificateKeyOutputReference(this as any, "key", true);
+  public get key() {
+    return this.__keyOutput;
+  }
+  public putKey(value: SyntheticsTestApiStepRequestClientCertificateKey) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key
+  }
+}
 export interface SyntheticsTestApiStepRequestDefinition {
   /**
   * Allows loading insecure content for an HTTP test.
@@ -427,8 +691,11 @@ export interface SyntheticsTestApiStepRequestDefinition {
   readonly url?: string;
 }
 
-function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: SyntheticsTestApiStepRequestDefinition): any {
+function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: SyntheticsTestApiStepRequestDefinitionOutputReference | SyntheticsTestApiStepRequestDefinition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     body: cdktf.stringToTerraform(struct!.body),
@@ -445,6 +712,208 @@ function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: SyntheticsTe
   }
 }
 
+export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // allow_insecure - computed: false, optional: true, required: false
+  private _allowInsecure?: boolean | cdktf.IResolvable | undefined; 
+  public get allowInsecure() {
+    return this.getBooleanAttribute('allow_insecure') as any;
+  }
+  public set allowInsecure(value: boolean | cdktf.IResolvable | undefined) {
+    this._allowInsecure = value;
+  }
+  public resetAllowInsecure() {
+    this._allowInsecure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowInsecureInput() {
+    return this._allowInsecure
+  }
+
+  // body - computed: false, optional: true, required: false
+  private _body?: string | undefined; 
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+  public set body(value: string | undefined) {
+    this._body = value;
+  }
+  public resetBody() {
+    this._body = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
+  }
+
+  // dns_server - computed: false, optional: true, required: false
+  private _dnsServer?: string | undefined; 
+  public get dnsServer() {
+    return this.getStringAttribute('dns_server');
+  }
+  public set dnsServer(value: string | undefined) {
+    this._dnsServer = value;
+  }
+  public resetDnsServer() {
+    this._dnsServer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsServerInput() {
+    return this._dnsServer
+  }
+
+  // dns_server_port - computed: false, optional: true, required: false
+  private _dnsServerPort?: number | undefined; 
+  public get dnsServerPort() {
+    return this.getNumberAttribute('dns_server_port');
+  }
+  public set dnsServerPort(value: number | undefined) {
+    this._dnsServerPort = value;
+  }
+  public resetDnsServerPort() {
+    this._dnsServerPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsServerPortInput() {
+    return this._dnsServerPort
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: string | undefined; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string | undefined) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host
+  }
+
+  // method - computed: false, optional: true, required: false
+  private _method?: string | undefined; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string | undefined) {
+    this._method = value;
+  }
+  public resetMethod() {
+    this._method = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method
+  }
+
+  // no_saving_response_body - computed: false, optional: true, required: false
+  private _noSavingResponseBody?: boolean | cdktf.IResolvable | undefined; 
+  public get noSavingResponseBody() {
+    return this.getBooleanAttribute('no_saving_response_body') as any;
+  }
+  public set noSavingResponseBody(value: boolean | cdktf.IResolvable | undefined) {
+    this._noSavingResponseBody = value;
+  }
+  public resetNoSavingResponseBody() {
+    this._noSavingResponseBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noSavingResponseBodyInput() {
+    return this._noSavingResponseBody
+  }
+
+  // number_of_packets - computed: false, optional: true, required: false
+  private _numberOfPackets?: number | undefined; 
+  public get numberOfPackets() {
+    return this.getNumberAttribute('number_of_packets');
+  }
+  public set numberOfPackets(value: number | undefined) {
+    this._numberOfPackets = value;
+  }
+  public resetNumberOfPackets() {
+    this._numberOfPackets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfPacketsInput() {
+    return this._numberOfPackets
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number | undefined; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number | undefined) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
+  }
+
+  // should_track_hops - computed: false, optional: true, required: false
+  private _shouldTrackHops?: boolean | cdktf.IResolvable | undefined; 
+  public get shouldTrackHops() {
+    return this.getBooleanAttribute('should_track_hops') as any;
+  }
+  public set shouldTrackHops(value: boolean | cdktf.IResolvable | undefined) {
+    this._shouldTrackHops = value;
+  }
+  public resetShouldTrackHops() {
+    this._shouldTrackHops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shouldTrackHopsInput() {
+    return this._shouldTrackHops
+  }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: number | undefined; 
+  public get timeout() {
+    return this.getNumberAttribute('timeout');
+  }
+  public set timeout(value: number | undefined) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string | undefined; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string | undefined) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url
+  }
+}
 export interface SyntheticsTestApiStep {
   /**
   * Determines whether or not to continue with test if this step fails.
@@ -499,23 +968,26 @@ export interface SyntheticsTestApiStep {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_basicauth SyntheticsTest#request_basicauth}
   */
-  readonly requestBasicauth?: SyntheticsTestApiStepRequestBasicauth[];
+  readonly requestBasicauth?: SyntheticsTestApiStepRequestBasicauth;
   /**
   * request_client_certificate block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_client_certificate SyntheticsTest#request_client_certificate}
   */
-  readonly requestClientCertificate?: SyntheticsTestApiStepRequestClientCertificate[];
+  readonly requestClientCertificate?: SyntheticsTestApiStepRequestClientCertificate;
   /**
   * request_definition block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#request_definition SyntheticsTest#request_definition}
   */
-  readonly requestDefinition?: SyntheticsTestApiStepRequestDefinition[];
+  readonly requestDefinition?: SyntheticsTestApiStepRequestDefinition;
 }
 
 function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     allow_failure: cdktf.booleanToTerraform(struct!.allowFailure),
     is_critical: cdktf.booleanToTerraform(struct!.isCritical),
@@ -525,9 +997,9 @@ function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep): any {
     subtype: cdktf.stringToTerraform(struct!.subtype),
     assertion: cdktf.listMapper(syntheticsTestApiStepAssertionToTerraform)(struct!.assertion),
     extracted_value: cdktf.listMapper(syntheticsTestApiStepExtractedValueToTerraform)(struct!.extractedValue),
-    request_basicauth: cdktf.listMapper(syntheticsTestApiStepRequestBasicauthToTerraform)(struct!.requestBasicauth),
-    request_client_certificate: cdktf.listMapper(syntheticsTestApiStepRequestClientCertificateToTerraform)(struct!.requestClientCertificate),
-    request_definition: cdktf.listMapper(syntheticsTestApiStepRequestDefinitionToTerraform)(struct!.requestDefinition),
+    request_basicauth: syntheticsTestApiStepRequestBasicauthToTerraform(struct!.requestBasicauth),
+    request_client_certificate: syntheticsTestApiStepRequestClientCertificateToTerraform(struct!.requestClientCertificate),
+    request_definition: syntheticsTestApiStepRequestDefinitionToTerraform(struct!.requestDefinition),
   }
 }
 
@@ -552,8 +1024,11 @@ export interface SyntheticsTestAssertionTargetjsonpath {
   readonly targetvalue: string;
 }
 
-function syntheticsTestAssertionTargetjsonpathToTerraform(struct?: SyntheticsTestAssertionTargetjsonpath): any {
+function syntheticsTestAssertionTargetjsonpathToTerraform(struct?: SyntheticsTestAssertionTargetjsonpathOutputReference | SyntheticsTestAssertionTargetjsonpath): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     jsonpath: cdktf.stringToTerraform(struct!.jsonpath),
     operator: cdktf.stringToTerraform(struct!.operator),
@@ -561,6 +1036,55 @@ function syntheticsTestAssertionTargetjsonpathToTerraform(struct?: SyntheticsTes
   }
 }
 
+export class SyntheticsTestAssertionTargetjsonpathOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // jsonpath - computed: false, optional: false, required: true
+  private _jsonpath?: string; 
+  public get jsonpath() {
+    return this.getStringAttribute('jsonpath');
+  }
+  public set jsonpath(value: string) {
+    this._jsonpath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsonpathInput() {
+    return this._jsonpath
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator
+  }
+
+  // targetvalue - computed: false, optional: false, required: true
+  private _targetvalue?: string; 
+  public get targetvalue() {
+    return this.getStringAttribute('targetvalue');
+  }
+  public set targetvalue(value: string) {
+    this._targetvalue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetvalueInput() {
+    return this._targetvalue
+  }
+}
 export interface SyntheticsTestAssertion {
   /**
   * Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
@@ -591,17 +1115,20 @@ export interface SyntheticsTestAssertion {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#targetjsonpath SyntheticsTest#targetjsonpath}
   */
-  readonly targetjsonpath?: SyntheticsTestAssertionTargetjsonpath[];
+  readonly targetjsonpath?: SyntheticsTestAssertionTargetjsonpath;
 }
 
 function syntheticsTestAssertionToTerraform(struct?: SyntheticsTestAssertion): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
     property: cdktf.stringToTerraform(struct!.property),
     target: cdktf.stringToTerraform(struct!.target),
     type: cdktf.stringToTerraform(struct!.type),
-    targetjsonpath: cdktf.listMapper(syntheticsTestAssertionTargetjsonpathToTerraform)(struct!.targetjsonpath),
+    targetjsonpath: syntheticsTestAssertionTargetjsonpathToTerraform(struct!.targetjsonpath),
   }
 }
 
@@ -620,14 +1147,59 @@ export interface SyntheticsTestBrowserStepParamsVariable {
   readonly name?: string;
 }
 
-function syntheticsTestBrowserStepParamsVariableToTerraform(struct?: SyntheticsTestBrowserStepParamsVariable): any {
+function syntheticsTestBrowserStepParamsVariableToTerraform(struct?: SyntheticsTestBrowserStepParamsVariableOutputReference | SyntheticsTestBrowserStepParamsVariable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     example: cdktf.stringToTerraform(struct!.example),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
 
+export class SyntheticsTestBrowserStepParamsVariableOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // example - computed: false, optional: true, required: false
+  private _example?: string | undefined; 
+  public get example() {
+    return this.getStringAttribute('example');
+  }
+  public set example(value: string | undefined) {
+    this._example = value;
+  }
+  public resetExample() {
+    this._example = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exampleInput() {
+    return this._example
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string | undefined; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string | undefined) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+}
 export interface SyntheticsTestBrowserStepParams {
   /**
   * Name of the attribute to use for an "assert attribute" step.
@@ -736,11 +1308,14 @@ export interface SyntheticsTestBrowserStepParams {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#variable SyntheticsTest#variable}
   */
-  readonly variable?: SyntheticsTestBrowserStepParamsVariable[];
+  readonly variable?: SyntheticsTestBrowserStepParamsVariable;
 }
 
-function syntheticsTestBrowserStepParamsToTerraform(struct?: SyntheticsTestBrowserStepParams): any {
+function syntheticsTestBrowserStepParamsToTerraform(struct?: SyntheticsTestBrowserStepParamsOutputReference | SyntheticsTestBrowserStepParams): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     attribute: cdktf.stringToTerraform(struct!.attribute),
     check: cdktf.stringToTerraform(struct!.check),
@@ -759,10 +1334,309 @@ function syntheticsTestBrowserStepParamsToTerraform(struct?: SyntheticsTestBrows
     with_click: cdktf.booleanToTerraform(struct!.withClick),
     x: cdktf.numberToTerraform(struct!.x),
     y: cdktf.numberToTerraform(struct!.y),
-    variable: cdktf.listMapper(syntheticsTestBrowserStepParamsVariableToTerraform)(struct!.variable),
+    variable: syntheticsTestBrowserStepParamsVariableToTerraform(struct!.variable),
   }
 }
 
+export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // attribute - computed: false, optional: true, required: false
+  private _attribute?: string | undefined; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string | undefined) {
+    this._attribute = value;
+  }
+  public resetAttribute() {
+    this._attribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute
+  }
+
+  // check - computed: false, optional: true, required: false
+  private _check?: string | undefined; 
+  public get check() {
+    return this.getStringAttribute('check');
+  }
+  public set check(value: string | undefined) {
+    this._check = value;
+  }
+  public resetCheck() {
+    this._check = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkInput() {
+    return this._check
+  }
+
+  // click_type - computed: false, optional: true, required: false
+  private _clickType?: string | undefined; 
+  public get clickType() {
+    return this.getStringAttribute('click_type');
+  }
+  public set clickType(value: string | undefined) {
+    this._clickType = value;
+  }
+  public resetClickType() {
+    this._clickType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clickTypeInput() {
+    return this._clickType
+  }
+
+  // code - computed: false, optional: true, required: false
+  private _code?: string | undefined; 
+  public get code() {
+    return this.getStringAttribute('code');
+  }
+  public set code(value: string | undefined) {
+    this._code = value;
+  }
+  public resetCode() {
+    this._code = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeInput() {
+    return this._code
+  }
+
+  // delay - computed: false, optional: true, required: false
+  private _delay?: number | undefined; 
+  public get delay() {
+    return this.getNumberAttribute('delay');
+  }
+  public set delay(value: number | undefined) {
+    this._delay = value;
+  }
+  public resetDelay() {
+    this._delay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delayInput() {
+    return this._delay
+  }
+
+  // element - computed: false, optional: true, required: false
+  private _element?: string | undefined; 
+  public get element() {
+    return this.getStringAttribute('element');
+  }
+  public set element(value: string | undefined) {
+    this._element = value;
+  }
+  public resetElement() {
+    this._element = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elementInput() {
+    return this._element
+  }
+
+  // email - computed: false, optional: true, required: false
+  private _email?: string | undefined; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string | undefined) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email
+  }
+
+  // file - computed: false, optional: true, required: false
+  private _file?: string | undefined; 
+  public get file() {
+    return this.getStringAttribute('file');
+  }
+  public set file(value: string | undefined) {
+    this._file = value;
+  }
+  public resetFile() {
+    this._file = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file
+  }
+
+  // files - computed: false, optional: true, required: false
+  private _files?: string | undefined; 
+  public get files() {
+    return this.getStringAttribute('files');
+  }
+  public set files(value: string | undefined) {
+    this._files = value;
+  }
+  public resetFiles() {
+    this._files = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filesInput() {
+    return this._files
+  }
+
+  // modifiers - computed: false, optional: true, required: false
+  private _modifiers?: string[] | undefined; 
+  public get modifiers() {
+    return this.getListAttribute('modifiers');
+  }
+  public set modifiers(value: string[] | undefined) {
+    this._modifiers = value;
+  }
+  public resetModifiers() {
+    this._modifiers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiersInput() {
+    return this._modifiers
+  }
+
+  // playing_tab_id - computed: false, optional: true, required: false
+  private _playingTabId?: string | undefined; 
+  public get playingTabId() {
+    return this.getStringAttribute('playing_tab_id');
+  }
+  public set playingTabId(value: string | undefined) {
+    this._playingTabId = value;
+  }
+  public resetPlayingTabId() {
+    this._playingTabId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get playingTabIdInput() {
+    return this._playingTabId
+  }
+
+  // request - computed: false, optional: true, required: false
+  private _request?: string | undefined; 
+  public get request() {
+    return this.getStringAttribute('request');
+  }
+  public set request(value: string | undefined) {
+    this._request = value;
+  }
+  public resetRequest() {
+    this._request = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestInput() {
+    return this._request
+  }
+
+  // subtest_public_id - computed: false, optional: true, required: false
+  private _subtestPublicId?: string | undefined; 
+  public get subtestPublicId() {
+    return this.getStringAttribute('subtest_public_id');
+  }
+  public set subtestPublicId(value: string | undefined) {
+    this._subtestPublicId = value;
+  }
+  public resetSubtestPublicId() {
+    this._subtestPublicId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subtestPublicIdInput() {
+    return this._subtestPublicId
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string | undefined; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string | undefined) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value
+  }
+
+  // with_click - computed: false, optional: true, required: false
+  private _withClick?: boolean | cdktf.IResolvable | undefined; 
+  public get withClick() {
+    return this.getBooleanAttribute('with_click') as any;
+  }
+  public set withClick(value: boolean | cdktf.IResolvable | undefined) {
+    this._withClick = value;
+  }
+  public resetWithClick() {
+    this._withClick = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get withClickInput() {
+    return this._withClick
+  }
+
+  // x - computed: false, optional: true, required: false
+  private _x?: number | undefined; 
+  public get x() {
+    return this.getNumberAttribute('x');
+  }
+  public set x(value: number | undefined) {
+    this._x = value;
+  }
+  public resetX() {
+    this._x = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xInput() {
+    return this._x
+  }
+
+  // y - computed: false, optional: true, required: false
+  private _y?: number | undefined; 
+  public get y() {
+    return this.getNumberAttribute('y');
+  }
+  public set y(value: number | undefined) {
+    this._y = value;
+  }
+  public resetY() {
+    this._y = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yInput() {
+    return this._y
+  }
+
+  // variable - computed: false, optional: true, required: false
+  private _variable?: SyntheticsTestBrowserStepParamsVariable | undefined; 
+  private __variableOutput = new SyntheticsTestBrowserStepParamsVariableOutputReference(this as any, "variable", true);
+  public get variable() {
+    return this.__variableOutput;
+  }
+  public putVariable(value: SyntheticsTestBrowserStepParamsVariable | undefined) {
+    this._variable = value;
+  }
+  public resetVariable() {
+    this._variable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableInput() {
+    return this._variable
+  }
+}
 export interface SyntheticsTestBrowserStep {
   /**
   * Determines if the step should be allowed to fail.
@@ -799,18 +1673,21 @@ export interface SyntheticsTestBrowserStep {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#params SyntheticsTest#params}
   */
-  readonly params: SyntheticsTestBrowserStepParams[];
+  readonly params: SyntheticsTestBrowserStepParams;
 }
 
 function syntheticsTestBrowserStepToTerraform(struct?: SyntheticsTestBrowserStep): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     allow_failure: cdktf.booleanToTerraform(struct!.allowFailure),
     force_element_update: cdktf.booleanToTerraform(struct!.forceElementUpdate),
     name: cdktf.stringToTerraform(struct!.name),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     type: cdktf.stringToTerraform(struct!.type),
-    params: cdktf.listMapper(syntheticsTestBrowserStepParamsToTerraform)(struct!.params),
+    params: syntheticsTestBrowserStepParamsToTerraform(struct!.params),
   }
 }
 
@@ -849,6 +1726,9 @@ export interface SyntheticsTestBrowserVariable {
 
 function syntheticsTestBrowserVariableToTerraform(struct?: SyntheticsTestBrowserVariable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     example: cdktf.stringToTerraform(struct!.example),
     id: cdktf.stringToTerraform(struct!.id),
@@ -893,6 +1773,9 @@ export interface SyntheticsTestConfigVariable {
 
 function syntheticsTestConfigVariableToTerraform(struct?: SyntheticsTestConfigVariable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     example: cdktf.stringToTerraform(struct!.example),
     id: cdktf.stringToTerraform(struct!.id),
@@ -911,13 +1794,42 @@ export interface SyntheticsTestOptionsListMonitorOptions {
   readonly renotifyInterval?: number;
 }
 
-function syntheticsTestOptionsListMonitorOptionsToTerraform(struct?: SyntheticsTestOptionsListMonitorOptions): any {
+function syntheticsTestOptionsListMonitorOptionsToTerraform(struct?: SyntheticsTestOptionsListMonitorOptionsOutputReference | SyntheticsTestOptionsListMonitorOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     renotify_interval: cdktf.numberToTerraform(struct!.renotifyInterval),
   }
 }
 
+export class SyntheticsTestOptionsListMonitorOptionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // renotify_interval - computed: false, optional: true, required: false
+  private _renotifyInterval?: number | undefined; 
+  public get renotifyInterval() {
+    return this.getNumberAttribute('renotify_interval');
+  }
+  public set renotifyInterval(value: number | undefined) {
+    this._renotifyInterval = value;
+  }
+  public resetRenotifyInterval() {
+    this._renotifyInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renotifyIntervalInput() {
+    return this._renotifyInterval
+  }
+}
 export interface SyntheticsTestOptionsListRetry {
   /**
   * Number of retries needed to consider a location as failed before sending a notification alert.
@@ -933,14 +1845,59 @@ export interface SyntheticsTestOptionsListRetry {
   readonly interval?: number;
 }
 
-function syntheticsTestOptionsListRetryToTerraform(struct?: SyntheticsTestOptionsListRetry): any {
+function syntheticsTestOptionsListRetryToTerraform(struct?: SyntheticsTestOptionsListRetryOutputReference | SyntheticsTestOptionsListRetry): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     count: cdktf.numberToTerraform(struct!.count),
     interval: cdktf.numberToTerraform(struct!.interval),
   }
 }
 
+export class SyntheticsTestOptionsListRetryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // count - computed: false, optional: true, required: false
+  private _count?: number | undefined; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number | undefined) {
+    this._count = value;
+  }
+  public resetCount() {
+    this._count = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count
+  }
+
+  // interval - computed: false, optional: true, required: false
+  private _interval?: number | undefined; 
+  public get interval() {
+    return this.getNumberAttribute('interval');
+  }
+  public set interval(value: number | undefined) {
+    this._interval = value;
+  }
+  public resetInterval() {
+    this._interval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval
+  }
+}
 export interface SyntheticsTestOptionsList {
   /**
   * For SSL test, whether or not the test should allow self signed certificates.
@@ -999,17 +1956,20 @@ export interface SyntheticsTestOptionsList {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#monitor_options SyntheticsTest#monitor_options}
   */
-  readonly monitorOptions?: SyntheticsTestOptionsListMonitorOptions[];
+  readonly monitorOptions?: SyntheticsTestOptionsListMonitorOptions;
   /**
   * retry block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#retry SyntheticsTest#retry}
   */
-  readonly retry?: SyntheticsTestOptionsListRetry[];
+  readonly retry?: SyntheticsTestOptionsListRetry;
 }
 
-function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsList): any {
+function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsListOutputReference | SyntheticsTestOptionsList): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     accept_self_signed: cdktf.booleanToTerraform(struct!.acceptSelfSigned),
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
@@ -1020,11 +1980,196 @@ function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsList
     monitor_priority: cdktf.numberToTerraform(struct!.monitorPriority),
     no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
     tick_every: cdktf.numberToTerraform(struct!.tickEvery),
-    monitor_options: cdktf.listMapper(syntheticsTestOptionsListMonitorOptionsToTerraform)(struct!.monitorOptions),
-    retry: cdktf.listMapper(syntheticsTestOptionsListRetryToTerraform)(struct!.retry),
+    monitor_options: syntheticsTestOptionsListMonitorOptionsToTerraform(struct!.monitorOptions),
+    retry: syntheticsTestOptionsListRetryToTerraform(struct!.retry),
   }
 }
 
+export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // accept_self_signed - computed: false, optional: true, required: false
+  private _acceptSelfSigned?: boolean | cdktf.IResolvable | undefined; 
+  public get acceptSelfSigned() {
+    return this.getBooleanAttribute('accept_self_signed') as any;
+  }
+  public set acceptSelfSigned(value: boolean | cdktf.IResolvable | undefined) {
+    this._acceptSelfSigned = value;
+  }
+  public resetAcceptSelfSigned() {
+    this._acceptSelfSigned = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptSelfSignedInput() {
+    return this._acceptSelfSigned
+  }
+
+  // allow_insecure - computed: false, optional: true, required: false
+  private _allowInsecure?: boolean | cdktf.IResolvable | undefined; 
+  public get allowInsecure() {
+    return this.getBooleanAttribute('allow_insecure') as any;
+  }
+  public set allowInsecure(value: boolean | cdktf.IResolvable | undefined) {
+    this._allowInsecure = value;
+  }
+  public resetAllowInsecure() {
+    this._allowInsecure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowInsecureInput() {
+    return this._allowInsecure
+  }
+
+  // follow_redirects - computed: false, optional: true, required: false
+  private _followRedirects?: boolean | cdktf.IResolvable | undefined; 
+  public get followRedirects() {
+    return this.getBooleanAttribute('follow_redirects') as any;
+  }
+  public set followRedirects(value: boolean | cdktf.IResolvable | undefined) {
+    this._followRedirects = value;
+  }
+  public resetFollowRedirects() {
+    this._followRedirects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get followRedirectsInput() {
+    return this._followRedirects
+  }
+
+  // min_failure_duration - computed: false, optional: true, required: false
+  private _minFailureDuration?: number | undefined; 
+  public get minFailureDuration() {
+    return this.getNumberAttribute('min_failure_duration');
+  }
+  public set minFailureDuration(value: number | undefined) {
+    this._minFailureDuration = value;
+  }
+  public resetMinFailureDuration() {
+    this._minFailureDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minFailureDurationInput() {
+    return this._minFailureDuration
+  }
+
+  // min_location_failed - computed: false, optional: true, required: false
+  private _minLocationFailed?: number | undefined; 
+  public get minLocationFailed() {
+    return this.getNumberAttribute('min_location_failed');
+  }
+  public set minLocationFailed(value: number | undefined) {
+    this._minLocationFailed = value;
+  }
+  public resetMinLocationFailed() {
+    this._minLocationFailed = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minLocationFailedInput() {
+    return this._minLocationFailed
+  }
+
+  // monitor_name - computed: false, optional: true, required: false
+  private _monitorName?: string | undefined; 
+  public get monitorName() {
+    return this.getStringAttribute('monitor_name');
+  }
+  public set monitorName(value: string | undefined) {
+    this._monitorName = value;
+  }
+  public resetMonitorName() {
+    this._monitorName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorNameInput() {
+    return this._monitorName
+  }
+
+  // monitor_priority - computed: false, optional: true, required: false
+  private _monitorPriority?: number | undefined; 
+  public get monitorPriority() {
+    return this.getNumberAttribute('monitor_priority');
+  }
+  public set monitorPriority(value: number | undefined) {
+    this._monitorPriority = value;
+  }
+  public resetMonitorPriority() {
+    this._monitorPriority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorPriorityInput() {
+    return this._monitorPriority
+  }
+
+  // no_screenshot - computed: false, optional: true, required: false
+  private _noScreenshot?: boolean | cdktf.IResolvable | undefined; 
+  public get noScreenshot() {
+    return this.getBooleanAttribute('no_screenshot') as any;
+  }
+  public set noScreenshot(value: boolean | cdktf.IResolvable | undefined) {
+    this._noScreenshot = value;
+  }
+  public resetNoScreenshot() {
+    this._noScreenshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noScreenshotInput() {
+    return this._noScreenshot
+  }
+
+  // tick_every - computed: false, optional: false, required: true
+  private _tickEvery?: number; 
+  public get tickEvery() {
+    return this.getNumberAttribute('tick_every');
+  }
+  public set tickEvery(value: number) {
+    this._tickEvery = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tickEveryInput() {
+    return this._tickEvery
+  }
+
+  // monitor_options - computed: false, optional: true, required: false
+  private _monitorOptions?: SyntheticsTestOptionsListMonitorOptions | undefined; 
+  private __monitorOptionsOutput = new SyntheticsTestOptionsListMonitorOptionsOutputReference(this as any, "monitor_options", true);
+  public get monitorOptions() {
+    return this.__monitorOptionsOutput;
+  }
+  public putMonitorOptions(value: SyntheticsTestOptionsListMonitorOptions | undefined) {
+    this._monitorOptions = value;
+  }
+  public resetMonitorOptions() {
+    this._monitorOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorOptionsInput() {
+    return this._monitorOptions
+  }
+
+  // retry - computed: false, optional: true, required: false
+  private _retry?: SyntheticsTestOptionsListRetry | undefined; 
+  private __retryOutput = new SyntheticsTestOptionsListRetryOutputReference(this as any, "retry", true);
+  public get retry() {
+    return this.__retryOutput;
+  }
+  public putRetry(value: SyntheticsTestOptionsListRetry | undefined) {
+    this._retry = value;
+  }
+  public resetRetry() {
+    this._retry = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryInput() {
+    return this._retry
+  }
+}
 export interface SyntheticsTestRequestBasicauth {
   /**
   * Password for authentication.
@@ -1040,14 +2185,53 @@ export interface SyntheticsTestRequestBasicauth {
   readonly username: string;
 }
 
-function syntheticsTestRequestBasicauthToTerraform(struct?: SyntheticsTestRequestBasicauth): any {
+function syntheticsTestRequestBasicauthToTerraform(struct?: SyntheticsTestRequestBasicauthOutputReference | SyntheticsTestRequestBasicauth): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
 }
 
+export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // password - computed: false, optional: false, required: true
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password
+  }
+
+  // username - computed: false, optional: false, required: true
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username
+  }
+}
 export interface SyntheticsTestRequestClientCertificateCert {
   /**
   * Content of the certificate.
@@ -1063,14 +2247,56 @@ export interface SyntheticsTestRequestClientCertificateCert {
   readonly filename?: string;
 }
 
-function syntheticsTestRequestClientCertificateCertToTerraform(struct?: SyntheticsTestRequestClientCertificateCert): any {
+function syntheticsTestRequestClientCertificateCertToTerraform(struct?: SyntheticsTestRequestClientCertificateCertOutputReference | SyntheticsTestRequestClientCertificateCert): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     content: cdktf.stringToTerraform(struct!.content),
     filename: cdktf.stringToTerraform(struct!.filename),
   }
 }
 
+export class SyntheticsTestRequestClientCertificateCertOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
+  }
+
+  // filename - computed: false, optional: true, required: false
+  private _filename?: string | undefined; 
+  public get filename() {
+    return this.getStringAttribute('filename');
+  }
+  public set filename(value: string | undefined) {
+    this._filename = value;
+  }
+  public resetFilename() {
+    this._filename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filenameInput() {
+    return this._filename
+  }
+}
 export interface SyntheticsTestRequestClientCertificateKey {
   /**
   * Content of the certificate.
@@ -1086,37 +2312,120 @@ export interface SyntheticsTestRequestClientCertificateKey {
   readonly filename?: string;
 }
 
-function syntheticsTestRequestClientCertificateKeyToTerraform(struct?: SyntheticsTestRequestClientCertificateKey): any {
+function syntheticsTestRequestClientCertificateKeyToTerraform(struct?: SyntheticsTestRequestClientCertificateKeyOutputReference | SyntheticsTestRequestClientCertificateKey): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     content: cdktf.stringToTerraform(struct!.content),
     filename: cdktf.stringToTerraform(struct!.filename),
   }
 }
 
+export class SyntheticsTestRequestClientCertificateKeyOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
+  }
+
+  // filename - computed: false, optional: true, required: false
+  private _filename?: string | undefined; 
+  public get filename() {
+    return this.getStringAttribute('filename');
+  }
+  public set filename(value: string | undefined) {
+    this._filename = value;
+  }
+  public resetFilename() {
+    this._filename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filenameInput() {
+    return this._filename
+  }
+}
 export interface SyntheticsTestRequestClientCertificate {
   /**
   * cert block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#cert SyntheticsTest#cert}
   */
-  readonly cert: SyntheticsTestRequestClientCertificateCert[];
+  readonly cert: SyntheticsTestRequestClientCertificateCert;
   /**
   * key block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#key SyntheticsTest#key}
   */
-  readonly key: SyntheticsTestRequestClientCertificateKey[];
+  readonly key: SyntheticsTestRequestClientCertificateKey;
 }
 
-function syntheticsTestRequestClientCertificateToTerraform(struct?: SyntheticsTestRequestClientCertificate): any {
+function syntheticsTestRequestClientCertificateToTerraform(struct?: SyntheticsTestRequestClientCertificateOutputReference | SyntheticsTestRequestClientCertificate): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
-    cert: cdktf.listMapper(syntheticsTestRequestClientCertificateCertToTerraform)(struct!.cert),
-    key: cdktf.listMapper(syntheticsTestRequestClientCertificateKeyToTerraform)(struct!.key),
+    cert: syntheticsTestRequestClientCertificateCertToTerraform(struct!.cert),
+    key: syntheticsTestRequestClientCertificateKeyToTerraform(struct!.key),
   }
 }
 
+export class SyntheticsTestRequestClientCertificateOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // cert - computed: false, optional: false, required: true
+  private _cert?: SyntheticsTestRequestClientCertificateCert; 
+  private __certOutput = new SyntheticsTestRequestClientCertificateCertOutputReference(this as any, "cert", true);
+  public get cert() {
+    return this.__certOutput;
+  }
+  public putCert(value: SyntheticsTestRequestClientCertificateCert) {
+    this._cert = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certInput() {
+    return this._cert
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: SyntheticsTestRequestClientCertificateKey; 
+  private __keyOutput = new SyntheticsTestRequestClientCertificateKeyOutputReference(this as any, "key", true);
+  public get key() {
+    return this.__keyOutput;
+  }
+  public putKey(value: SyntheticsTestRequestClientCertificateKey) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key
+  }
+}
 export interface SyntheticsTestRequestDefinition {
   /**
   * The request body.
@@ -1186,8 +2495,11 @@ export interface SyntheticsTestRequestDefinition {
   readonly url?: string;
 }
 
-function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTestRequestDefinition): any {
+function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTestRequestDefinitionOutputReference | SyntheticsTestRequestDefinition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     body: cdktf.stringToTerraform(struct!.body),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
@@ -1203,6 +2515,192 @@ function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTestReque
   }
 }
 
+export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // body - computed: false, optional: true, required: false
+  private _body?: string | undefined; 
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+  public set body(value: string | undefined) {
+    this._body = value;
+  }
+  public resetBody() {
+    this._body = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
+  }
+
+  // dns_server - computed: false, optional: true, required: false
+  private _dnsServer?: string | undefined; 
+  public get dnsServer() {
+    return this.getStringAttribute('dns_server');
+  }
+  public set dnsServer(value: string | undefined) {
+    this._dnsServer = value;
+  }
+  public resetDnsServer() {
+    this._dnsServer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsServerInput() {
+    return this._dnsServer
+  }
+
+  // dns_server_port - computed: false, optional: true, required: false
+  private _dnsServerPort?: number | undefined; 
+  public get dnsServerPort() {
+    return this.getNumberAttribute('dns_server_port');
+  }
+  public set dnsServerPort(value: number | undefined) {
+    this._dnsServerPort = value;
+  }
+  public resetDnsServerPort() {
+    this._dnsServerPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsServerPortInput() {
+    return this._dnsServerPort
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: string | undefined; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string | undefined) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host
+  }
+
+  // method - computed: false, optional: true, required: false
+  private _method?: string | undefined; 
+  public get method() {
+    return this.getStringAttribute('method');
+  }
+  public set method(value: string | undefined) {
+    this._method = value;
+  }
+  public resetMethod() {
+    this._method = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodInput() {
+    return this._method
+  }
+
+  // no_saving_response_body - computed: false, optional: true, required: false
+  private _noSavingResponseBody?: boolean | cdktf.IResolvable | undefined; 
+  public get noSavingResponseBody() {
+    return this.getBooleanAttribute('no_saving_response_body') as any;
+  }
+  public set noSavingResponseBody(value: boolean | cdktf.IResolvable | undefined) {
+    this._noSavingResponseBody = value;
+  }
+  public resetNoSavingResponseBody() {
+    this._noSavingResponseBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noSavingResponseBodyInput() {
+    return this._noSavingResponseBody
+  }
+
+  // number_of_packets - computed: false, optional: true, required: false
+  private _numberOfPackets?: number | undefined; 
+  public get numberOfPackets() {
+    return this.getNumberAttribute('number_of_packets');
+  }
+  public set numberOfPackets(value: number | undefined) {
+    this._numberOfPackets = value;
+  }
+  public resetNumberOfPackets() {
+    this._numberOfPackets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfPacketsInput() {
+    return this._numberOfPackets
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number | undefined; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number | undefined) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
+  }
+
+  // should_track_hops - computed: false, optional: true, required: false
+  private _shouldTrackHops?: boolean | cdktf.IResolvable | undefined; 
+  public get shouldTrackHops() {
+    return this.getBooleanAttribute('should_track_hops') as any;
+  }
+  public set shouldTrackHops(value: boolean | cdktf.IResolvable | undefined) {
+    this._shouldTrackHops = value;
+  }
+  public resetShouldTrackHops() {
+    this._shouldTrackHops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shouldTrackHopsInput() {
+    return this._shouldTrackHops
+  }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: number | undefined; 
+  public get timeout() {
+    return this.getNumberAttribute('timeout');
+  }
+  public set timeout(value: number | undefined) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string | undefined; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string | undefined) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}
@@ -1263,11 +2761,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   // ==========
 
   // device_ids - computed: false, optional: true, required: false
-  private _deviceIds?: string[];
+  private _deviceIds?: string[] | undefined; 
   public get deviceIds() {
     return this.getListAttribute('device_ids');
   }
-  public set deviceIds(value: string[] ) {
+  public set deviceIds(value: string[] | undefined) {
     this._deviceIds = value;
   }
   public resetDeviceIds() {
@@ -1284,7 +2782,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // locations - computed: false, optional: false, required: true
-  private _locations: string[];
+  private _locations?: string[]; 
   public get locations() {
     return this.getListAttribute('locations');
   }
@@ -1297,11 +2795,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // message - computed: false, optional: true, required: false
-  private _message?: string;
+  private _message?: string | undefined; 
   public get message() {
     return this.getStringAttribute('message');
   }
-  public set message(value: string ) {
+  public set message(value: string | undefined) {
     this._message = value;
   }
   public resetMessage() {
@@ -1318,7 +2816,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -1331,11 +2829,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_headers - computed: false, optional: true, required: false
-  private _requestHeaders?: { [key: string]: string } | cdktf.IResolvable;
+  private _requestHeaders?: { [key: string]: string } | cdktf.IResolvable | undefined; 
   public get requestHeaders() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('request_headers') as any;
   }
-  public set requestHeaders(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set requestHeaders(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
     this._requestHeaders = value;
   }
   public resetRequestHeaders() {
@@ -1347,11 +2846,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_query - computed: false, optional: true, required: false
-  private _requestQuery?: { [key: string]: string } | cdktf.IResolvable;
+  private _requestQuery?: { [key: string]: string } | cdktf.IResolvable | undefined; 
   public get requestQuery() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('request_query') as any;
   }
-  public set requestQuery(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set requestQuery(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
     this._requestQuery = value;
   }
   public resetRequestQuery() {
@@ -1363,11 +2863,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // set_cookie - computed: false, optional: true, required: false
-  private _setCookie?: string;
+  private _setCookie?: string | undefined; 
   public get setCookie() {
     return this.getStringAttribute('set_cookie');
   }
-  public set setCookie(value: string ) {
+  public set setCookie(value: string | undefined) {
     this._setCookie = value;
   }
   public resetSetCookie() {
@@ -1379,7 +2879,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // status - computed: false, optional: false, required: true
-  private _status: string;
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -1392,11 +2892,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // subtype - computed: false, optional: true, required: false
-  private _subtype?: string;
+  private _subtype?: string | undefined; 
   public get subtype() {
     return this.getStringAttribute('subtype');
   }
-  public set subtype(value: string ) {
+  public set subtype(value: string | undefined) {
     this._subtype = value;
   }
   public resetSubtype() {
@@ -1408,11 +2908,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[];
+  private _tags?: string[] | undefined; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] ) {
+  public set tags(value: string[] | undefined) {
     this._tags = value;
   }
   public resetTags() {
@@ -1424,7 +2924,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // type - computed: false, optional: false, required: true
-  private _type: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -1437,11 +2937,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // api_step - computed: false, optional: true, required: false
-  private _apiStep?: SyntheticsTestApiStep[];
+  private _apiStep?: SyntheticsTestApiStep[] | undefined; 
   public get apiStep() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('api_step') as any;
   }
-  public set apiStep(value: SyntheticsTestApiStep[] ) {
+  public set apiStep(value: SyntheticsTestApiStep[] | undefined) {
     this._apiStep = value;
   }
   public resetApiStep() {
@@ -1453,11 +2954,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // assertion - computed: false, optional: true, required: false
-  private _assertion?: SyntheticsTestAssertion[];
+  private _assertion?: SyntheticsTestAssertion[] | undefined; 
   public get assertion() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('assertion') as any;
   }
-  public set assertion(value: SyntheticsTestAssertion[] ) {
+  public set assertion(value: SyntheticsTestAssertion[] | undefined) {
     this._assertion = value;
   }
   public resetAssertion() {
@@ -1469,11 +2971,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // browser_step - computed: false, optional: true, required: false
-  private _browserStep?: SyntheticsTestBrowserStep[];
+  private _browserStep?: SyntheticsTestBrowserStep[] | undefined; 
   public get browserStep() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('browser_step') as any;
   }
-  public set browserStep(value: SyntheticsTestBrowserStep[] ) {
+  public set browserStep(value: SyntheticsTestBrowserStep[] | undefined) {
     this._browserStep = value;
   }
   public resetBrowserStep() {
@@ -1485,11 +2988,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // browser_variable - computed: false, optional: true, required: false
-  private _browserVariable?: SyntheticsTestBrowserVariable[];
+  private _browserVariable?: SyntheticsTestBrowserVariable[] | undefined; 
   public get browserVariable() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('browser_variable') as any;
   }
-  public set browserVariable(value: SyntheticsTestBrowserVariable[] ) {
+  public set browserVariable(value: SyntheticsTestBrowserVariable[] | undefined) {
     this._browserVariable = value;
   }
   public resetBrowserVariable() {
@@ -1501,11 +3005,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // config_variable - computed: false, optional: true, required: false
-  private _configVariable?: SyntheticsTestConfigVariable[];
+  private _configVariable?: SyntheticsTestConfigVariable[] | undefined; 
   public get configVariable() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('config_variable') as any;
   }
-  public set configVariable(value: SyntheticsTestConfigVariable[] ) {
+  public set configVariable(value: SyntheticsTestConfigVariable[] | undefined) {
     this._configVariable = value;
   }
   public resetConfigVariable() {
@@ -1517,11 +3022,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // options_list - computed: false, optional: true, required: false
-  private _optionsList?: SyntheticsTestOptionsList[];
+  private _optionsList?: SyntheticsTestOptionsList | undefined; 
+  private __optionsListOutput = new SyntheticsTestOptionsListOutputReference(this as any, "options_list", true);
   public get optionsList() {
-    return this.interpolationForAttribute('options_list') as any;
+    return this.__optionsListOutput;
   }
-  public set optionsList(value: SyntheticsTestOptionsList[] ) {
+  public putOptionsList(value: SyntheticsTestOptionsList | undefined) {
     this._optionsList = value;
   }
   public resetOptionsList() {
@@ -1533,11 +3039,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_basicauth - computed: false, optional: true, required: false
-  private _requestBasicauth?: SyntheticsTestRequestBasicauth[];
+  private _requestBasicauth?: SyntheticsTestRequestBasicauth | undefined; 
+  private __requestBasicauthOutput = new SyntheticsTestRequestBasicauthOutputReference(this as any, "request_basicauth", true);
   public get requestBasicauth() {
-    return this.interpolationForAttribute('request_basicauth') as any;
+    return this.__requestBasicauthOutput;
   }
-  public set requestBasicauth(value: SyntheticsTestRequestBasicauth[] ) {
+  public putRequestBasicauth(value: SyntheticsTestRequestBasicauth | undefined) {
     this._requestBasicauth = value;
   }
   public resetRequestBasicauth() {
@@ -1549,11 +3056,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_client_certificate - computed: false, optional: true, required: false
-  private _requestClientCertificate?: SyntheticsTestRequestClientCertificate[];
+  private _requestClientCertificate?: SyntheticsTestRequestClientCertificate | undefined; 
+  private __requestClientCertificateOutput = new SyntheticsTestRequestClientCertificateOutputReference(this as any, "request_client_certificate", true);
   public get requestClientCertificate() {
-    return this.interpolationForAttribute('request_client_certificate') as any;
+    return this.__requestClientCertificateOutput;
   }
-  public set requestClientCertificate(value: SyntheticsTestRequestClientCertificate[] ) {
+  public putRequestClientCertificate(value: SyntheticsTestRequestClientCertificate | undefined) {
     this._requestClientCertificate = value;
   }
   public resetRequestClientCertificate() {
@@ -1565,11 +3073,12 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_definition - computed: false, optional: true, required: false
-  private _requestDefinition?: SyntheticsTestRequestDefinition[];
+  private _requestDefinition?: SyntheticsTestRequestDefinition | undefined; 
+  private __requestDefinitionOutput = new SyntheticsTestRequestDefinitionOutputReference(this as any, "request_definition", true);
   public get requestDefinition() {
-    return this.interpolationForAttribute('request_definition') as any;
+    return this.__requestDefinitionOutput;
   }
-  public set requestDefinition(value: SyntheticsTestRequestDefinition[] ) {
+  public putRequestDefinition(value: SyntheticsTestRequestDefinition | undefined) {
     this._requestDefinition = value;
   }
   public resetRequestDefinition() {
@@ -1602,10 +3111,10 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       browser_step: cdktf.listMapper(syntheticsTestBrowserStepToTerraform)(this._browserStep),
       browser_variable: cdktf.listMapper(syntheticsTestBrowserVariableToTerraform)(this._browserVariable),
       config_variable: cdktf.listMapper(syntheticsTestConfigVariableToTerraform)(this._configVariable),
-      options_list: cdktf.listMapper(syntheticsTestOptionsListToTerraform)(this._optionsList),
-      request_basicauth: cdktf.listMapper(syntheticsTestRequestBasicauthToTerraform)(this._requestBasicauth),
-      request_client_certificate: cdktf.listMapper(syntheticsTestRequestClientCertificateToTerraform)(this._requestClientCertificate),
-      request_definition: cdktf.listMapper(syntheticsTestRequestDefinitionToTerraform)(this._requestDefinition),
+      options_list: syntheticsTestOptionsListToTerraform(this._optionsList),
+      request_basicauth: syntheticsTestRequestBasicauthToTerraform(this._requestBasicauth),
+      request_client_certificate: syntheticsTestRequestClientCertificateToTerraform(this._requestClientCertificate),
+      request_definition: syntheticsTestRequestDefinitionToTerraform(this._requestDefinition),
     };
   }
 }

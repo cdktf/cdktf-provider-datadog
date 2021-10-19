@@ -90,7 +90,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   // ==========
 
   // category - computed: false, optional: false, required: true
-  private _category: string;
+  private _category?: string; 
   public get category() {
     return this.getStringAttribute('category');
   }
@@ -103,11 +103,11 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -119,7 +119,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
 
   // end - computed: false, optional: false, required: true
-  private _end: number;
+  private _end?: number; 
   public get end() {
     return this.getNumberAttribute('end');
   }
@@ -137,7 +137,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
 
   // slo_id - computed: false, optional: false, required: true
-  private _sloId: string;
+  private _sloId?: string; 
   public get sloId() {
     return this.getStringAttribute('slo_id');
   }
@@ -150,7 +150,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
 
   // start - computed: false, optional: false, required: true
-  private _start: number;
+  private _start?: number; 
   public get start() {
     return this.getNumberAttribute('start');
   }
@@ -163,11 +163,11 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
 
   // timezone - computed: false, optional: true, required: false
-  private _timezone?: string;
+  private _timezone?: string | undefined; 
   public get timezone() {
     return this.getStringAttribute('timezone');
   }
-  public set timezone(value: string ) {
+  public set timezone(value: string | undefined) {
     this._timezone = value;
   }
   public resetTimezone() {
