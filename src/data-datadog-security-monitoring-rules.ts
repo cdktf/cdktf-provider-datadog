@@ -106,7 +106,25 @@ export class DataDatadogSecurityMonitoringRulesRulesOptions extends cdktf.Comple
     return this.interpolationForAttribute('new_value_options') as any;
   }
 }
+export class DataDatadogSecurityMonitoringRulesRulesQueryAgentRule extends cdktf.ComplexComputedList {
+
+  // agent_rule_id - computed: true, optional: false, required: false
+  public get agentRuleId() {
+    return this.getStringAttribute('agent_rule_id');
+  }
+
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+}
 export class DataDatadogSecurityMonitoringRulesRulesQuery extends cdktf.ComplexComputedList {
+
+  // agent_rule - computed: true, optional: false, required: false
+  public get agentRule() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('agent_rule') as any;
+  }
 
   // aggregation - computed: true, optional: false, required: false
   public get aggregation() {
@@ -187,6 +205,11 @@ export class DataDatadogSecurityMonitoringRulesRules extends cdktf.ComplexComput
   // tags - computed: true, optional: false, required: false
   public get tags() {
     return this.getListAttribute('tags');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
   }
 }
 

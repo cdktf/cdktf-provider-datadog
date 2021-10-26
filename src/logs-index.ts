@@ -42,7 +42,7 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html#filter LogsIndex#filter}
   */
-  readonly filter: LogsIndexFilter[];
+  readonly filter: LogsIndexFilter;
 }
 export interface LogsIndexExclusionFilterFilter {
   /**
@@ -112,7 +112,7 @@ export interface LogsIndexFilter {
   readonly query: string;
 }
 
-function logsIndexFilterToTerraform(struct?: LogsIndexFilter): any {
+function logsIndexFilterToTerraform(struct?: LogsIndexFilterOutputReference | LogsIndexFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -122,6 +122,29 @@ function logsIndexFilterToTerraform(struct?: LogsIndexFilter): any {
   }
 }
 
+export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}
@@ -251,12 +274,12 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter?: LogsIndexFilter[]; 
+  private _filter?: LogsIndexFilter; 
+  private __filterOutput = new LogsIndexFilterOutputReference(this as any, "filter", true);
   public get filter() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return this.__filterOutput;
   }
-  public set filter(value: LogsIndexFilter[]) {
+  public putFilter(value: LogsIndexFilter) {
     this._filter = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -275,7 +298,7 @@ export class LogsIndex extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       retention_days: cdktf.numberToTerraform(this._retentionDays),
       exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter),
-      filter: cdktf.listMapper(logsIndexFilterToTerraform)(this._filter),
+      filter: logsIndexFilterToTerraform(this._filter),
     };
   }
 }

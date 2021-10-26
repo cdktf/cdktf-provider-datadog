@@ -234,6 +234,16 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('renotify_interval');
   }
 
+  // renotify_occurrences - computed: true, optional: false, required: false
+  public get renotifyOccurrences() {
+    return this.getNumberAttribute('renotify_occurrences');
+  }
+
+  // renotify_statuses - computed: true, optional: false, required: false
+  public get renotifyStatuses() {
+    return this.getListAttribute('renotify_statuses');
+  }
+
   // require_full_window - computed: true, optional: false, required: false
   public get requireFullWindow() {
     return this.getBooleanAttribute('require_full_window') as any;

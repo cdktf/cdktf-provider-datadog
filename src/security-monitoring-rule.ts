@@ -38,6 +38,12 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   */
   readonly tags?: string[];
   /**
+  * The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#type SecurityMonitoringRule#type}
+  */
+  readonly type?: string;
+  /**
   * case block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#case SecurityMonitoringRule#case}
@@ -319,6 +325,32 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
     return this._newValueOptions
   }
 }
+export interface SecurityMonitoringRuleQueryAgentRule {
+  /**
+  * The Agent rule ID. Must be unique within the rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#agent_rule_id SecurityMonitoringRule#agent_rule_id}
+  */
+  readonly agentRuleId: string;
+  /**
+  * A Runtime Security expression determines what activity should be collected by the Datadog Agent. These logical expressions can use predefined operators and attributes. Tags cannot be used in Runtime Security expressions. Instead, allow or deny based on tags under the advanced option.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#expression SecurityMonitoringRule#expression}
+  */
+  readonly expression: string;
+}
+
+function securityMonitoringRuleQueryAgentRuleToTerraform(struct?: SecurityMonitoringRuleQueryAgentRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    agent_rule_id: cdktf.stringToTerraform(struct!.agentRuleId),
+    expression: cdktf.stringToTerraform(struct!.expression),
+  }
+}
+
 export interface SecurityMonitoringRuleQuery {
   /**
   * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`.
@@ -356,6 +388,12 @@ export interface SecurityMonitoringRuleQuery {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#query SecurityMonitoringRule#query}
   */
   readonly query: string;
+  /**
+  * agent_rule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#agent_rule SecurityMonitoringRule#agent_rule}
+  */
+  readonly agentRule?: SecurityMonitoringRuleQueryAgentRule[];
 }
 
 function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitoringRuleQuery): any {
@@ -370,6 +408,7 @@ function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitoringRuleQ
     metric: cdktf.stringToTerraform(struct!.metric),
     name: cdktf.stringToTerraform(struct!.name),
     query: cdktf.stringToTerraform(struct!.query),
+    agent_rule: cdktf.listMapper(securityMonitoringRuleQueryAgentRuleToTerraform)(struct!.agentRule),
   }
 }
 
@@ -411,6 +450,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     this._message = config.message;
     this._name = config.name;
     this._tags = config.tags;
+    this._type = config.type;
     this._case = config.case;
     this._filter = config.filter;
     this._options = config.options;
@@ -500,6 +540,22 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // type - computed: false, optional: true, required: false
+  private _type?: string | undefined; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string | undefined) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
+  }
+
   // case - computed: false, optional: false, required: true
   private _case?: SecurityMonitoringRuleCase[]; 
   public get case() {
@@ -573,6 +629,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       message: cdktf.stringToTerraform(this._message),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
       case: cdktf.listMapper(securityMonitoringRuleCaseToTerraform)(this._case),
       filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform)(this._filter),
       options: securityMonitoringRuleOptionsToTerraform(this._options),

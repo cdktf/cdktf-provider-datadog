@@ -122,6 +122,18 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   */
   readonly renotifyInterval?: number;
   /**
+  * The number of re-notification messages that should be sent on the current status.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#renotify_occurrences Monitor#renotify_occurrences}
+  */
+  readonly renotifyOccurrences?: number;
+  /**
+  * The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#renotify_statuses Monitor#renotify_statuses}
+  */
+  readonly renotifyStatuses?: string[];
+  /**
   * A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
 We highly recommend you set this to `false` for sparse metrics, otherwise some evaluations will be skipped. Default: `true` for `on average`, `at all times` and `in total` aggregation. `false` otherwise.
@@ -448,6 +460,8 @@ export class Monitor extends cdktf.TerraformResource {
     this._priority = config.priority;
     this._query = config.query;
     this._renotifyInterval = config.renotifyInterval;
+    this._renotifyOccurrences = config.renotifyOccurrences;
+    this._renotifyStatuses = config.renotifyStatuses;
     this._requireFullWindow = config.requireFullWindow;
     this._restrictedRoles = config.restrictedRoles;
     this._tags = config.tags;
@@ -730,6 +744,38 @@ export class Monitor extends cdktf.TerraformResource {
     return this._renotifyInterval
   }
 
+  // renotify_occurrences - computed: false, optional: true, required: false
+  private _renotifyOccurrences?: number | undefined; 
+  public get renotifyOccurrences() {
+    return this.getNumberAttribute('renotify_occurrences');
+  }
+  public set renotifyOccurrences(value: number | undefined) {
+    this._renotifyOccurrences = value;
+  }
+  public resetRenotifyOccurrences() {
+    this._renotifyOccurrences = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renotifyOccurrencesInput() {
+    return this._renotifyOccurrences
+  }
+
+  // renotify_statuses - computed: false, optional: true, required: false
+  private _renotifyStatuses?: string[] | undefined; 
+  public get renotifyStatuses() {
+    return this.getListAttribute('renotify_statuses');
+  }
+  public set renotifyStatuses(value: string[] | undefined) {
+    this._renotifyStatuses = value;
+  }
+  public resetRenotifyStatuses() {
+    this._renotifyStatuses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renotifyStatusesInput() {
+    return this._renotifyStatuses
+  }
+
   // require_full_window - computed: false, optional: true, required: false
   private _requireFullWindow?: boolean | cdktf.IResolvable | undefined; 
   public get requireFullWindow() {
@@ -880,6 +926,8 @@ export class Monitor extends cdktf.TerraformResource {
       priority: cdktf.numberToTerraform(this._priority),
       query: cdktf.stringToTerraform(this._query),
       renotify_interval: cdktf.numberToTerraform(this._renotifyInterval),
+      renotify_occurrences: cdktf.numberToTerraform(this._renotifyOccurrences),
+      renotify_statuses: cdktf.listMapper(cdktf.stringToTerraform)(this._renotifyStatuses),
       require_full_window: cdktf.booleanToTerraform(this._requireFullWindow),
       restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._restrictedRoles),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
