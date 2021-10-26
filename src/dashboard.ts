@@ -78,7 +78,7 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#widget Dashboard#widget}
   */
-  readonly widget: DashboardWidget[];
+  readonly widget?: DashboardWidget[];
 }
 export interface DashboardTemplateVariable {
   /**
@@ -5601,6 +5601,474 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference exten
     return this._multiCompute
   }
 }
+export interface DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -6281,6 +6749,18 @@ export class DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputRefere
 }
 export interface DashboardWidgetGeomapDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -6306,6 +6786,8 @@ function dashboardWidgetGeomapDefinitionRequestQueryToTerraform(struct?: Dashboa
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetGeomapDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetGeomapDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetGeomapDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -12475,6 +12957,474 @@ export class DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQuery
     return this._multiCompute
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -13155,6 +14105,18 @@ export class DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryPro
 }
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -13180,6 +14142,8 @@ function dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryToTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -22375,6 +23339,474 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProc
     return this._searchBy
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -23055,6 +24487,18 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuer
 }
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -23080,6 +24524,8 @@ function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -25684,6 +27130,474 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestProc
     return this._searchBy
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -26364,6 +28278,18 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
 }
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -26389,6 +28315,8 @@ function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -33801,6 +35729,474 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProc
     return this._searchBy
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -34481,6 +36877,18 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
 }
 export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -34506,6 +36914,8 @@ function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -37633,6 +40043,474 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcess
     return this._searchBy
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -38313,6 +41191,18 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryPr
 }
 export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -38338,6 +41228,8 @@ function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -48672,6 +51564,474 @@ export class DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReferen
     return this._searchBy
   }
 }
+export interface DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -49352,6 +52712,18 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputRe
 }
 export interface DashboardWidgetQueryTableDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -49377,6 +52749,8 @@ function dashboardWidgetQueryTableDefinitionRequestQueryToTerraform(struct?: Das
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetQueryTableDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetQueryTableDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetQueryTableDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -51981,6 +55355,474 @@ export class DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReferen
     return this._searchBy
   }
 }
+export interface DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -52661,6 +56503,18 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputRe
 }
 export interface DashboardWidgetQueryValueDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -52686,6 +56540,8 @@ function dashboardWidgetQueryValueDefinitionRequestQueryToTerraform(struct?: Das
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetQueryValueDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetQueryValueDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetQueryValueDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -60098,6 +63954,474 @@ export class DashboardWidgetTimeseriesDefinitionRequestProcessQueryOutputReferen
     return this._searchBy
   }
 }
+export interface DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -60778,6 +65102,18 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputRe
 }
 export interface DashboardWidgetTimeseriesDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -60803,6 +65139,8 @@ function dashboardWidgetTimeseriesDefinitionRequestQueryToTerraform(struct?: Das
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetTimeseriesDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetTimeseriesDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -63930,6 +68268,474 @@ export class DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference 
     return this._searchBy
   }
 }
+export interface DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery {
+  /**
+  * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Determines whether stats for upstream or downstream dependencies should be queried.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  */
+  readonly isUpstream?: boolean | cdktf.IResolvable;
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // is_upstream - computed: false, optional: true, required: false
+  private _isUpstream?: boolean | cdktf.IResolvable | undefined; 
+  public get isUpstream() {
+    return this.getBooleanAttribute('is_upstream') as any;
+  }
+  public set isUpstream(value: boolean | cdktf.IResolvable | undefined) {
+    this._isUpstream = value;
+  }
+  public resetIsUpstream() {
+    this._isUpstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isUpstreamInput() {
+    return this._isUpstream
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: false, required: true
+  private _operationName?: string; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string) {
+    this._operationName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: false, required: true
+  private _resourceName?: string; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string) {
+    this._resourceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
+export interface DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQuery {
+  /**
+  * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * APM Environment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  */
+  readonly env: string;
+  /**
+  * Array of fields to group results by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  */
+  readonly name: string;
+  /**
+  * Name of operation on service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  */
+  readonly operationName?: string;
+  /**
+  * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  */
+  readonly primaryTagName?: string;
+  /**
+  * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  */
+  readonly primaryTagValue?: string;
+  /**
+  * APM resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  */
+  readonly resourceName?: string;
+  /**
+  * APM service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  */
+  readonly service: string;
+  /**
+  * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  */
+  readonly stat: string;
+}
+
+function dashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    env: cdktf.stringToTerraform(struct!.env),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    name: cdktf.stringToTerraform(struct!.name),
+    operation_name: cdktf.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktf.stringToTerraform(struct!.resourceName),
+    service: cdktf.stringToTerraform(struct!.service),
+    stat: cdktf.stringToTerraform(struct!.stat),
+  }
+}
+
+export class DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
+  }
+
+  // env - computed: false, optional: false, required: true
+  private _env?: string; 
+  public get env() {
+    return this.getStringAttribute('env');
+  }
+  public set env(value: string) {
+    this._env = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envInput() {
+    return this._env
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[] | undefined; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[] | undefined) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string | undefined; 
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
+  // primary_tag_name - computed: false, optional: true, required: false
+  private _primaryTagName?: string | undefined; 
+  public get primaryTagName() {
+    return this.getStringAttribute('primary_tag_name');
+  }
+  public set primaryTagName(value: string | undefined) {
+    this._primaryTagName = value;
+  }
+  public resetPrimaryTagName() {
+    this._primaryTagName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagNameInput() {
+    return this._primaryTagName
+  }
+
+  // primary_tag_value - computed: false, optional: true, required: false
+  private _primaryTagValue?: string | undefined; 
+  public get primaryTagValue() {
+    return this.getStringAttribute('primary_tag_value');
+  }
+  public set primaryTagValue(value: string | undefined) {
+    this._primaryTagValue = value;
+  }
+  public resetPrimaryTagValue() {
+    this._primaryTagValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryTagValueInput() {
+    return this._primaryTagValue
+  }
+
+  // resource_name - computed: false, optional: true, required: false
+  private _resourceName?: string | undefined; 
+  public get resourceName() {
+    return this.getStringAttribute('resource_name');
+  }
+  public set resourceName(value: string | undefined) {
+    this._resourceName = value;
+  }
+  public resetResourceName() {
+    this._resourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceNameInput() {
+    return this._resourceName
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service
+  }
+
+  // stat - computed: false, optional: false, required: true
+  private _stat?: string; 
+  public get stat() {
+    return this.getStringAttribute('stat');
+  }
+  public set stat(value: string) {
+    this._stat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statInput() {
+    return this._stat
+  }
+}
 export interface DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
@@ -64610,6 +69416,18 @@ export class DashboardWidgetToplistDefinitionRequestQueryProcessQueryOutputRefer
 }
 export interface DashboardWidgetToplistDefinitionRequestQuery {
   /**
+  * apm_dependency_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  */
+  readonly apmDependencyStatsQuery?: DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery;
+  /**
+  * apm_resource_stats_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  */
+  readonly apmResourceStatsQuery?: DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQuery;
+  /**
   * event_query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
@@ -64635,6 +69453,8 @@ function dashboardWidgetToplistDefinitionRequestQueryToTerraform(struct?: Dashbo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    apm_dependency_stats_query: dashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
+    apm_resource_stats_query: dashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
     event_query: dashboardWidgetToplistDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
     metric_query: dashboardWidgetToplistDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
     process_query: dashboardWidgetToplistDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
@@ -66601,14 +71421,17 @@ export class Dashboard extends cdktf.TerraformResource {
     return this._templateVariablePreset
   }
 
-  // widget - computed: false, optional: false, required: true
-  private _widget?: DashboardWidget[]; 
+  // widget - computed: false, optional: true, required: false
+  private _widget?: DashboardWidget[] | undefined; 
   public get widget() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('widget') as any;
   }
-  public set widget(value: DashboardWidget[]) {
+  public set widget(value: DashboardWidget[] | undefined) {
     this._widget = value;
+  }
+  public resetWidget() {
+    this._widget = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get widgetInput() {

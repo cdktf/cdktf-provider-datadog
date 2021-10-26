@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Array with the different device IDs used to run the test (only for `browser` tests). Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`, `edge.laptop_large`, `edge.tablet`, `edge.mobile_small`.
+  * Required if `type = "browser"`. Array with the different device IDs used to run the test. Valid values are `laptop_large`, `tablet`, `mobile_small`, `chrome.laptop_large`, `chrome.tablet`, `chrome.mobile_small`, `firefox.laptop_large`, `firefox.tablet`, `firefox.mobile_small`, `edge.laptop_large`, `edge.tablet`, `edge.mobile_small`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#device_ids SyntheticsTest#device_ids}
   */
@@ -642,6 +642,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly dnsServerPort?: number;
   /**
+  * Determines whether or not the API HTTP test should follow redirects.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#follow_redirects SyntheticsTest#follow_redirects}
+  */
+  readonly followRedirects?: boolean | cdktf.IResolvable;
+  /**
   * Host name to perform the test with.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#host SyntheticsTest#host}
@@ -672,6 +678,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly port?: number;
   /**
+  * For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#servername SyntheticsTest#servername}
+  */
+  readonly servername?: string;
+  /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#should_track_hops SyntheticsTest#should_track_hops}
@@ -701,11 +713,13 @@ function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: SyntheticsTe
     body: cdktf.stringToTerraform(struct!.body),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
+    follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
     host: cdktf.stringToTerraform(struct!.host),
     method: cdktf.stringToTerraform(struct!.method),
     no_saving_response_body: cdktf.booleanToTerraform(struct!.noSavingResponseBody),
     number_of_packets: cdktf.numberToTerraform(struct!.numberOfPackets),
     port: cdktf.numberToTerraform(struct!.port),
+    servername: cdktf.stringToTerraform(struct!.servername),
     should_track_hops: cdktf.booleanToTerraform(struct!.shouldTrackHops),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     url: cdktf.stringToTerraform(struct!.url),
@@ -786,6 +800,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
     return this._dnsServerPort
   }
 
+  // follow_redirects - computed: false, optional: true, required: false
+  private _followRedirects?: boolean | cdktf.IResolvable | undefined; 
+  public get followRedirects() {
+    return this.getBooleanAttribute('follow_redirects') as any;
+  }
+  public set followRedirects(value: boolean | cdktf.IResolvable | undefined) {
+    this._followRedirects = value;
+  }
+  public resetFollowRedirects() {
+    this._followRedirects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get followRedirectsInput() {
+    return this._followRedirects
+  }
+
   // host - computed: false, optional: true, required: false
   private _host?: string | undefined; 
   public get host() {
@@ -864,6 +894,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port
+  }
+
+  // servername - computed: false, optional: true, required: false
+  private _servername?: string | undefined; 
+  public get servername() {
+    return this.getStringAttribute('servername');
+  }
+  public set servername(value: string | undefined) {
+    this._servername = value;
+  }
+  public resetServername() {
+    this._servername = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servernameInput() {
+    return this._servername
   }
 
   // should_track_hops - computed: false, optional: true, required: false
@@ -1912,7 +1958,7 @@ export interface SyntheticsTestOptionsList {
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
-  * For API HTTP test, whether or not the test should follow redirects.
+  * Determines whether or not the API HTTP test should follow redirects.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#follow_redirects SyntheticsTest#follow_redirects}
   */
@@ -2476,6 +2522,12 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly port?: number;
   /**
+  * For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#servername SyntheticsTest#servername}
+  */
+  readonly servername?: string;
+  /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#should_track_hops SyntheticsTest#should_track_hops}
@@ -2509,6 +2561,7 @@ function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTestReque
     no_saving_response_body: cdktf.booleanToTerraform(struct!.noSavingResponseBody),
     number_of_packets: cdktf.numberToTerraform(struct!.numberOfPackets),
     port: cdktf.numberToTerraform(struct!.port),
+    servername: cdktf.stringToTerraform(struct!.servername),
     should_track_hops: cdktf.booleanToTerraform(struct!.shouldTrackHops),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     url: cdktf.stringToTerraform(struct!.url),
@@ -2651,6 +2704,22 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port
+  }
+
+  // servername - computed: false, optional: true, required: false
+  private _servername?: string | undefined; 
+  public get servername() {
+    return this.getStringAttribute('servername');
+  }
+  public set servername(value: string | undefined) {
+    this._servername = value;
+  }
+  public resetServername() {
+    this._servername = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servernameInput() {
+    return this._servername
   }
 
   // should_track_hops - computed: false, optional: true, required: false
