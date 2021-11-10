@@ -20,11 +20,23 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
-  * Ending time of the correction in epoch seconds.
+  * Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#duration SloCorrection#duration}
+  */
+  readonly duration?: number;
+  /**
+  * Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#end SloCorrection#end}
   */
-  readonly end: number;
+  readonly end?: number;
+  /**
+  * Recurrence rules as defined in the iCalendar RFC 5545.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#rrule SloCorrection#rrule}
+  */
+  readonly rrule?: string;
   /**
   * ID of the SLO that this correction will be applied to.
   * 
@@ -79,7 +91,9 @@ export class SloCorrection extends cdktf.TerraformResource {
     });
     this._category = config.category;
     this._description = config.description;
+    this._duration = config.duration;
     this._end = config.end;
+    this._rrule = config.rrule;
     this._sloId = config.sloId;
     this._start = config.start;
     this._timezone = config.timezone;
@@ -118,13 +132,32 @@ export class SloCorrection extends cdktf.TerraformResource {
     return this._description
   }
 
-  // end - computed: false, optional: false, required: true
-  private _end?: number; 
+  // duration - computed: false, optional: true, required: false
+  private _duration?: number | undefined; 
+  public get duration() {
+    return this.getNumberAttribute('duration');
+  }
+  public set duration(value: number | undefined) {
+    this._duration = value;
+  }
+  public resetDuration() {
+    this._duration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationInput() {
+    return this._duration
+  }
+
+  // end - computed: false, optional: true, required: false
+  private _end?: number | undefined; 
   public get end() {
     return this.getNumberAttribute('end');
   }
-  public set end(value: number) {
+  public set end(value: number | undefined) {
     this._end = value;
+  }
+  public resetEnd() {
+    this._end = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get endInput() {
@@ -134,6 +167,22 @@ export class SloCorrection extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // rrule - computed: false, optional: true, required: false
+  private _rrule?: string | undefined; 
+  public get rrule() {
+    return this.getStringAttribute('rrule');
+  }
+  public set rrule(value: string | undefined) {
+    this._rrule = value;
+  }
+  public resetRrule() {
+    this._rrule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rruleInput() {
+    return this._rrule
   }
 
   // slo_id - computed: false, optional: false, required: true
@@ -186,7 +235,9 @@ export class SloCorrection extends cdktf.TerraformResource {
     return {
       category: cdktf.stringToTerraform(this._category),
       description: cdktf.stringToTerraform(this._description),
+      duration: cdktf.numberToTerraform(this._duration),
       end: cdktf.numberToTerraform(this._end),
+      rrule: cdktf.stringToTerraform(this._rrule),
       slo_id: cdktf.stringToTerraform(this._sloId),
       start: cdktf.numberToTerraform(this._start),
       timezone: cdktf.stringToTerraform(this._timezone),

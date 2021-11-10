@@ -20,7 +20,7 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
-  * Whether this dashboard is read-only.
+  * Whether this dashboard is read-only. **Deprecated.** Prefer using `restricted_roles` to define which roles are required to edit the dashboard.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_read_only Dashboard#is_read_only}
   */
@@ -44,7 +44,7 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly reflowType?: string;
   /**
-  * Role UUIDs corresponding to users authorized to edit the dashboard. **This feature is currently in beta.**
+  * UUIDs of roles whose associated users are authorized to edit the dashboard.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#restricted_roles Dashboard#restricted_roles}
   */
