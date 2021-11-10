@@ -45,6 +45,7 @@ export * from './data-datadog-application-key';
 export * from './data-datadog-dashboard';
 export * from './data-datadog-dashboard-list';
 export * from './data-datadog-ip-ranges';
+export * from './data-datadog-logs-indexes-order';
 export * from './data-datadog-monitor';
 export * from './data-datadog-monitors';
 export * from './data-datadog-permissions';

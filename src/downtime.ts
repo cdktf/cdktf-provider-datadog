@@ -32,7 +32,7 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly monitorId?: number;
   /**
-  * A list of monitor tags (up to 25), i.e. tags that are applied directly to monitors to which the downtime applies
+  * A list of monitor tags (up to 32) to base the scheduled downtime on. Only monitors that have all selected tags are silenced
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#monitor_tags Downtime#monitor_tags}
   */

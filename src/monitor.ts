@@ -46,7 +46,7 @@ For example, if the value is set to `300` (5min), the `timeframe` is set to `las
   */
   readonly includeTags?: boolean | cdktf.IResolvable;
   /**
-  * A boolean indicating whether changes to to this monitor should be restricted to the creator or admins. Defaults to `false`.
+  * A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#locked Monitor#locked}
   */

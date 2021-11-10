@@ -508,6 +508,7 @@ Name|Description
 [DataDatadogDashboard](#cdktf-provider-datadog-datadatadogdashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
 [DataDatadogDashboardList](#cdktf-provider-datadog-datadatadogdashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
 [DataDatadogIpRanges](#cdktf-provider-datadog-datadatadogipranges)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
+[DataDatadogLogsIndexesOrder](#cdktf-provider-datadog-datadatadoglogsindexesorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}.
 [DataDatadogMonitor](#cdktf-provider-datadog-datadatadogmonitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
 [DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)|*No description*
 [DataDatadogMonitorMonitorThresholds](#cdktf-provider-datadog-datadatadogmonitormonitorthresholds)|*No description*
@@ -1459,6 +1460,7 @@ Name|Description
 [DataDatadogDashboardConfig](#cdktf-provider-datadog-datadatadogdashboardconfig)|*No description*
 [DataDatadogDashboardListConfig](#cdktf-provider-datadog-datadatadogdashboardlistconfig)|*No description*
 [DataDatadogIpRangesConfig](#cdktf-provider-datadog-datadatadogiprangesconfig)|*No description*
+[DataDatadogLogsIndexesOrderConfig](#cdktf-provider-datadog-datadatadoglogsindexesorderconfig)|*No description*
 [DataDatadogMonitorConfig](#cdktf-provider-datadog-datadatadogmonitorconfig)|*No description*
 [DataDatadogMonitorsConfig](#cdktf-provider-datadog-datadatadogmonitorsconfig)|*No description*
 [DataDatadogPermissionsConfig](#cdktf-provider-datadog-datadatadogpermissionsconfig)|*No description*
@@ -1541,6 +1543,7 @@ Name|Description
 [LogsMetricGroupBy](#cdktf-provider-datadog-logsmetricgroupby)|*No description*
 [LogsPipelineOrderConfig](#cdktf-provider-datadog-logspipelineorderconfig)|*No description*
 [MetricMetadataConfig](#cdktf-provider-datadog-metricmetadataconfig)|*No description*
+[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)|*No description*
 [MetricTagConfigurationConfig](#cdktf-provider-datadog-metrictagconfigurationconfig)|*No description*
 [MonitorConfig](#cdktf-provider-datadog-monitorconfig)|*No description*
 [MonitorJsonConfig](#cdktf-provider-datadog-monitorjsonconfig)|*No description*
@@ -2106,10 +2109,10 @@ new Dashboard(scope: Construct, id: string, config: DashboardConfig)
   * **title** (<code>string</code>)  The title of the dashboard. 
   * **dashboardLists** (<code>Array<number></code>)  A list of dashboard lists this dashboard belongs to. __*Optional*__
   * **description** (<code>string</code>)  The description of the dashboard. __*Optional*__
-  * **isReadOnly** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether this dashboard is read-only. __*Optional*__
+  * **isReadOnly** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether this dashboard is read-only. **Deprecated.** Prefer using `restricted_roles` to define which roles are required to edit the dashboard. __*Optional*__
   * **notifyList** (<code>Array<string></code>)  The list of handles for the users to notify when changes are made to this dashboard. __*Optional*__
   * **reflowType** (<code>string</code>)  The reflow type of a new dashboard layout. __*Optional*__
-  * **restrictedRoles** (<code>Array<string></code>)  Role UUIDs corresponding to users authorized to edit the dashboard. **This feature is currently in beta.**. __*Optional*__
+  * **restrictedRoles** (<code>Array<string></code>)  UUIDs of roles whose associated users are authorized to edit the dashboard. __*Optional*__
   * **templateVariable** (<code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code>)  template_variable block. __*Optional*__
   * **templateVariablePreset** (<code>Array<[DashboardTemplateVariablePreset](#cdktf-provider-datadog-dashboardtemplatevariablepreset)></code>)  template_variable_preset block. __*Optional*__
   * **url** (<code>string</code>)  The URL of the dashboard. __*Optional*__
@@ -41852,6 +41855,58 @@ __Returns__:
 
 
 
+## class DataDatadogLogsIndexesOrder  <a id="cdktf-provider-datadog-datadatadoglogsindexesorder"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order} Data Source.
+
+```ts
+new DataDatadogLogsIndexesOrder(scope: Construct, id: string, config?: DataDatadogLogsIndexesOrderConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogLogsIndexesOrderConfig](#cdktf-provider-datadog-datadatadoglogsindexesorderconfig)</code>)  *No description*
+  * **count** (<code>number &#124; [IResolvable](#cdktf-iresolvable)</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**indexNames** | <code>Array<string></code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadoglogsindexesorder-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataDatadogMonitor  <a id="cdktf-provider-datadog-datadatadogmonitor"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
@@ -43547,7 +43602,7 @@ new Downtime(scope: Construct, id: string, config: DowntimeConfig)
   * **endDate** (<code>string</code>)  String representing date and time to end the downtime in RFC3339 format. __*Optional*__
   * **message** (<code>string</code>)  An optional message to provide when creating the downtime, can include notification handles. __*Optional*__
   * **monitorId** (<code>number</code>)  When specified, this downtime will only apply to this monitor. __*Optional*__
-  * **monitorTags** (<code>Array<string></code>)  A list of monitor tags (up to 25), i.e. tags that are applied directly to monitors to which the downtime applies. __*Optional*__
+  * **monitorTags** (<code>Array<string></code>)  A list of monitor tags (up to 32) to base the scheduled downtime on. __*Optional*__
   * **recurrence** (<code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code>)  recurrence block. __*Optional*__
   * **start** (<code>number</code>)  Specify when this downtime should start. __*Optional*__
   * **startDate** (<code>string</code>)  String representing date and time to start the downtime in RFC3339 format. __*Optional*__
@@ -44206,6 +44261,7 @@ new IntegrationAzure(scope: Construct, id: string, config: IntegrationAzureConfi
   * **clientId** (<code>string</code>)  Your Azure web application ID. 
   * **clientSecret** (<code>string</code>)  (Required for Initial Creation) Your Azure web application secret key. 
   * **tenantName** (<code>string</code>)  Your Azure Active Directory ID. 
+  * **automute** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Silence monitors for expected Azure VM shutdowns. __*Optional*__
   * **hostFilters** (<code>string</code>)  String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. __*Optional*__
 
 
@@ -44219,6 +44275,8 @@ Name | Type | Description
 **clientSecret** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **tenantName** | <code>string</code> | <span></span>
+**automute**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**automuteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **clientIdInput**? | <code>string</code> | __*Optional*__
 **clientSecretInput**? | <code>string</code> | __*Optional*__
 **hostFilters**? | <code>string</code> | __*Optional*__
@@ -44227,6 +44285,18 @@ Name | Type | Description
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
+
+
+#### resetAutomute() <a id="cdktf-provider-datadog-integrationazure-resetautomute"></a>
+
+
+
+```ts
+resetAutomute(): void
+```
+
+
+
 
 
 #### resetHostFilters() <a id="cdktf-provider-datadog-integrationazure-resethostfilters"></a>
@@ -48075,6 +48145,7 @@ new MetricTagConfiguration(scope: Construct, id: string, config: MetricTagConfig
   * **metricName** (<code>string</code>)  The metric name for this resource. 
   * **metricType** (<code>string</code>)  The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`. 
   * **tags** (<code>Array<string></code>)  A list of tag keys that will be queryable for your metric. 
+  * **aggregations** (<code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code>)  aggregations block. __*Optional*__
   * **includePercentiles** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Toggle to include/exclude percentiles for a distribution metric. __*Optional*__
 
 
@@ -48088,6 +48159,8 @@ Name | Type | Description
 **metricName** | <code>string</code> | <span></span>
 **metricType** | <code>string</code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
+**aggregations**? | <code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code> | __*Optional*__
+**aggregationsInput**? | <code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code> | __*Optional*__
 **includePercentiles**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **includePercentilesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **metricNameInput**? | <code>string</code> | __*Optional*__
@@ -48096,6 +48169,18 @@ Name | Type | Description
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
+
+
+#### resetAggregations() <a id="cdktf-provider-datadog-metrictagconfiguration-resetaggregations"></a>
+
+
+
+```ts
+resetAggregations(): void
+```
+
+
+
 
 
 #### resetIncludePercentiles() <a id="cdktf-provider-datadog-metrictagconfiguration-resetincludepercentiles"></a>
@@ -48157,7 +48242,7 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **forceDelete** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). __*Optional*__
   * **groupbySimpleMonitor** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not to trigger one alert if any source breaches a threshold. __*Optional*__
   * **includeTags** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. __*Optional*__
-  * **locked** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether changes to to this monitor should be restricted to the creator or admins. __*Optional*__
+  * **locked** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`. __*Optional*__
   * **monitorThresholds** (<code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code>)  monitor_thresholds block. __*Optional*__
   * **monitorThresholdWindows** (<code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code>)  monitor_threshold_windows block. __*Optional*__
   * **newGroupDelay** (<code>number</code>)  Time (in seconds) to skip evaluations for new groups. __*Optional*__
@@ -50015,10 +50100,12 @@ new SloCorrection(scope: Construct, id: string, config: SloCorrectionConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **category** (<code>string</code>)  Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`. 
-  * **end** (<code>number</code>)  Ending time of the correction in epoch seconds. 
   * **sloId** (<code>string</code>)  ID of the SLO that this correction will be applied to. 
   * **start** (<code>number</code>)  Starting time of the correction in epoch seconds. 
   * **description** (<code>string</code>)  Description of the correction being made. __*Optional*__
+  * **duration** (<code>number</code>)  Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`). __*Optional*__
+  * **end** (<code>number</code>)  Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified. __*Optional*__
+  * **rrule** (<code>string</code>)  Recurrence rules as defined in the iCalendar RFC 5545. __*Optional*__
   * **timezone** (<code>string</code>)  The timezone to display in the UI for the correction times (defaults to "UTC"). __*Optional*__
 
 
@@ -50029,14 +50116,18 @@ new SloCorrection(scope: Construct, id: string, config: SloCorrectionConfig)
 Name | Type | Description 
 -----|------|-------------
 **category** | <code>string</code> | <span></span>
-**end** | <code>number</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **sloId** | <code>string</code> | <span></span>
 **start** | <code>number</code> | <span></span>
 **categoryInput**? | <code>string</code> | __*Optional*__
 **description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
+**duration**? | <code>number</code> | __*Optional*__
+**durationInput**? | <code>number</code> | __*Optional*__
+**end**? | <code>number</code> | __*Optional*__
 **endInput**? | <code>number</code> | __*Optional*__
+**rrule**? | <code>string</code> | __*Optional*__
+**rruleInput**? | <code>string</code> | __*Optional*__
 **sloIdInput**? | <code>string</code> | __*Optional*__
 **startInput**? | <code>number</code> | __*Optional*__
 **timezone**? | <code>string</code> | __*Optional*__
@@ -50052,6 +50143,42 @@ Name | Type | Description
 
 ```ts
 resetDescription(): void
+```
+
+
+
+
+
+#### resetDuration() <a id="cdktf-provider-datadog-slocorrection-resetduration"></a>
+
+
+
+```ts
+resetDuration(): void
+```
+
+
+
+
+
+#### resetEnd() <a id="cdktf-provider-datadog-slocorrection-resetend"></a>
+
+
+
+```ts
+resetEnd(): void
+```
+
+
+
+
+
+#### resetRrule() <a id="cdktf-provider-datadog-slocorrection-resetrrule"></a>
+
+
+
+```ts
+resetRrule(): void
 ```
 
 
@@ -52776,12 +52903,12 @@ Name | Type | Description
 **dashboardLists**? | <code>Array<number></code> | A list of dashboard lists this dashboard belongs to.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **description**? | <code>string</code> | The description of the dashboard.<br/>__*Optional*__
-**isReadOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether this dashboard is read-only.<br/>__*Optional*__
+**isReadOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether this dashboard is read-only. **Deprecated.** Prefer using `restricted_roles` to define which roles are required to edit the dashboard.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **notifyList**? | <code>Array<string></code> | The list of handles for the users to notify when changes are made to this dashboard.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **reflowType**? | <code>string</code> | The reflow type of a new dashboard layout.<br/>__*Optional*__
-**restrictedRoles**? | <code>Array<string></code> | Role UUIDs corresponding to users authorized to edit the dashboard. **This feature is currently in beta.**.<br/>__*Optional*__
+**restrictedRoles**? | <code>Array<string></code> | UUIDs of roles whose associated users are authorized to edit the dashboard.<br/>__*Optional*__
 **templateVariable**? | <code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code> | template_variable block.<br/>__*Optional*__
 **templateVariablePreset**? | <code>Array<[DashboardTemplateVariablePreset](#cdktf-provider-datadog-dashboardtemplatevariablepreset)></code> | template_variable_preset block.<br/>__*Optional*__
 **url**? | <code>string</code> | The URL of the dashboard.<br/>__*Optional*__
@@ -65959,6 +66086,22 @@ Name | Type | Description
 
 
 
+## struct DataDatadogLogsIndexesOrderConfig  <a id="cdktf-provider-datadog-datadatadoglogsindexesorderconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataDatadogMonitorConfig  <a id="cdktf-provider-datadog-datadatadogmonitorconfig"></a>
 
 
@@ -66209,7 +66352,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **message**? | <code>string</code> | An optional message to provide when creating the downtime, can include notification handles.<br/>__*Optional*__
 **monitorId**? | <code>number</code> | When specified, this downtime will only apply to this monitor.<br/>__*Optional*__
-**monitorTags**? | <code>Array<string></code> | A list of monitor tags (up to 25), i.e. tags that are applied directly to monitors to which the downtime applies.<br/>__*Optional*__
+**monitorTags**? | <code>Array<string></code> | A list of monitor tags (up to 32) to base the scheduled downtime on.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **recurrence**? | <code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code> | recurrence block.<br/>__*Optional*__
 **start**? | <code>number</code> | Specify when this downtime should start.<br/>__*Optional*__
@@ -66327,6 +66470,7 @@ Name | Type | Description
 **clientId** | <code>string</code> | Your Azure web application ID.
 **clientSecret** | <code>string</code> | (Required for Initial Creation) Your Azure web application secret key.
 **tenantName** | <code>string</code> | Your Azure Active Directory ID.
+**automute**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Silence monitors for expected Azure VM shutdowns.<br/>__*Optional*__
 **count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **hostFilters**? | <code>string</code> | String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure.<br/>__*Optional*__
@@ -67379,6 +67523,20 @@ Name | Type | Description
 
 
 
+## struct MetricTagConfigurationAggregations  <a id="cdktf-provider-datadog-metrictagconfigurationaggregations"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**space** | <code>string</code> | A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
+**time** | <code>string</code> | A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
+
+
+
 ## struct MetricTagConfigurationConfig  <a id="cdktf-provider-datadog-metrictagconfigurationconfig"></a>
 
 
@@ -67391,6 +67549,7 @@ Name | Type | Description
 **metricName** | <code>string</code> | The metric name for this resource.
 **metricType** | <code>string</code> | The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
 **tags** | <code>Array<string></code> | A list of tag keys that will be queryable for your metric.
+**aggregations**? | <code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code> | aggregations block.<br/>__*Optional*__
 **count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **includePercentiles**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Toggle to include/exclude percentiles for a distribution metric.<br/>__*Optional*__
@@ -67421,7 +67580,7 @@ Name | Type | Description
 **groupbySimpleMonitor**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to trigger one alert if any source breaches a threshold.<br/>__*Optional*__
 **includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether changes to to this monitor should be restricted to the creator or admins.<br/>__*Optional*__
+**locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`.<br/>__*Optional*__
 **monitorThresholdWindows**? | <code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code> | monitor_threshold_windows block.<br/>__*Optional*__
 **monitorThresholds**? | <code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code> | monitor_thresholds block.<br/>__*Optional*__
 **newGroupDelay**? | <code>number</code> | Time (in seconds) to skip evaluations for new groups.<br/>__*Optional*__
@@ -67881,14 +68040,16 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **category** | <code>string</code> | Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
-**end** | <code>number</code> | Ending time of the correction in epoch seconds.
 **sloId** | <code>string</code> | ID of the SLO that this correction will be applied to.
 **start** | <code>number</code> | Starting time of the correction in epoch seconds.
 **count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **description**? | <code>string</code> | Description of the correction being made.<br/>__*Optional*__
+**duration**? | <code>number</code> | Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`).<br/>__*Optional*__
+**end**? | <code>number</code> | Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**rrule**? | <code>string</code> | Recurrence rules as defined in the iCalendar RFC 5545.<br/>__*Optional*__
 **timezone**? | <code>string</code> | The timezone to display in the UI for the correction times (defaults to "UTC").<br/>__*Optional*__
 
 

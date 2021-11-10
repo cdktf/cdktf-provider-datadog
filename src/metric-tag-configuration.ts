@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have a metric_type of distribution.
+  * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#include_percentiles MetricTagConfiguration#include_percentiles}
   */
@@ -31,7 +31,39 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#tags MetricTagConfiguration#tags}
   */
   readonly tags: string[];
+  /**
+  * aggregations block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#aggregations MetricTagConfiguration#aggregations}
+  */
+  readonly aggregations?: MetricTagConfigurationAggregations[];
 }
+export interface MetricTagConfigurationAggregations {
+  /**
+  * A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#space MetricTagConfiguration#space}
+  */
+  readonly space: string;
+  /**
+  * A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html#time MetricTagConfiguration#time}
+  */
+  readonly time: string;
+}
+
+function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    space: cdktf.stringToTerraform(struct!.space),
+    time: cdktf.stringToTerraform(struct!.time),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}
@@ -69,6 +101,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
     this._metricName = config.metricName;
     this._metricType = config.metricType;
     this._tags = config.tags;
+    this._aggregations = config.aggregations;
   }
 
   // ==========
@@ -135,6 +168,23 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // aggregations - computed: false, optional: true, required: false
+  private _aggregations?: MetricTagConfigurationAggregations[] | undefined; 
+  public get aggregations() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('aggregations') as any;
+  }
+  public set aggregations(value: MetricTagConfigurationAggregations[] | undefined) {
+    this._aggregations = value;
+  }
+  public resetAggregations() {
+    this._aggregations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationsInput() {
+    return this._aggregations
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -145,6 +195,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
       metric_name: cdktf.stringToTerraform(this._metricName),
       metric_type: cdktf.stringToTerraform(this._metricType),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      aggregations: cdktf.listMapper(metricTagConfigurationAggregationsToTerraform)(this._aggregations),
     };
   }
 }

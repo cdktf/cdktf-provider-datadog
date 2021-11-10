@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface IntegrationAzureConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Silence monitors for expected Azure VM shutdowns.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html#automute IntegrationAzure#automute}
+  */
+  readonly automute?: boolean | cdktf.IResolvable;
+  /**
   * Your Azure web application ID.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html#client_id IntegrationAzure#client_id}
@@ -65,6 +71,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._automute = config.automute;
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
     this._hostFilters = config.hostFilters;
@@ -74,6 +81,22 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // automute - computed: false, optional: true, required: false
+  private _automute?: boolean | cdktf.IResolvable | undefined; 
+  public get automute() {
+    return this.getBooleanAttribute('automute') as any;
+  }
+  public set automute(value: boolean | cdktf.IResolvable | undefined) {
+    this._automute = value;
+  }
+  public resetAutomute() {
+    this._automute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automuteInput() {
+    return this._automute
+  }
 
   // client_id - computed: false, optional: false, required: true
   private _clientId?: string; 
@@ -141,6 +164,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      automute: cdktf.booleanToTerraform(this._automute),
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
       host_filters: cdktf.stringToTerraform(this._hostFilters),
