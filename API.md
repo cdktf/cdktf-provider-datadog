@@ -1613,7 +1613,7 @@ Name|Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1668,7 +1668,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1723,7 +1723,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2086,7 +2086,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2294,7 +2294,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2379,7 +2379,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -41496,7 +41496,7 @@ resetIsColumnBreak(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41577,7 +41577,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41658,7 +41658,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41714,7 +41714,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41768,7 +41768,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41859,7 +41859,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41911,7 +41911,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42121,7 +42121,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors.html datadog_monitors}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42262,7 +42262,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42326,7 +42326,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42382,7 +42382,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42493,7 +42493,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42624,7 +42624,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42984,7 +42984,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43096,7 +43096,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43252,7 +43252,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43307,7 +43307,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43371,7 +43371,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43578,7 +43578,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -43893,7 +43893,7 @@ resetWeekDays(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44065,7 +44065,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44122,7 +44122,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44179,7 +44179,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44239,7 +44239,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html datadog_integration_azure}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44329,7 +44329,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44425,7 +44425,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44509,7 +44509,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44566,7 +44566,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44731,7 +44731,7 @@ resetTags(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -45006,7 +45006,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -45109,7 +45109,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html datadog_logs_custom_pipeline}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47454,7 +47454,7 @@ resetName(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47616,7 +47616,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47673,7 +47673,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47739,7 +47739,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47922,7 +47922,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47979,7 +47979,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48123,7 +48123,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48213,7 +48213,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48655,7 +48655,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48900,7 +48900,7 @@ resetWarningRecovery(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49325,7 +49325,7 @@ resetEnabled(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49395,7 +49395,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49491,7 +49491,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49582,7 +49582,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49867,7 +49867,7 @@ resetNewValueOptions(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50080,7 +50080,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50215,7 +50215,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50491,7 +50491,7 @@ resetValue(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50576,7 +50576,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -52563,7 +52563,7 @@ resetUrl(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -52679,7 +52679,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook.html datadog_webhook}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -52781,7 +52781,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable.html datadog_webhook_custom_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
