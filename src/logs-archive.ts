@@ -83,7 +83,7 @@ export interface LogsArchiveAzureArchive {
   readonly tenantId: string;
 }
 
-function logsArchiveAzureArchiveToTerraform(struct?: LogsArchiveAzureArchiveOutputReference | LogsArchiveAzureArchive): any {
+export function logsArchiveAzureArchiveToTerraform(struct?: LogsArchiveAzureArchiveOutputReference | LogsArchiveAzureArchive): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -98,6 +98,8 @@ function logsArchiveAzureArchiveToTerraform(struct?: LogsArchiveAzureArchiveOutp
 }
 
 export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -105,6 +107,51 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsArchiveAzureArchive | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientId) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._container) {
+      hasAnyValues = true;
+      internalValueResult.container = this._container;
+    }
+    if (this._path) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._storageAccount) {
+      hasAnyValues = true;
+      internalValueResult.storageAccount = this._storageAccount;
+    }
+    if (this._tenantId) {
+      hasAnyValues = true;
+      internalValueResult.tenantId = this._tenantId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsArchiveAzureArchive | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clientId = undefined;
+      this._container = undefined;
+      this._path = undefined;
+      this._storageAccount = undefined;
+      this._tenantId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clientId = value.clientId;
+      this._container = value.container;
+      this._path = value.path;
+      this._storageAccount = value.storageAccount;
+      this._tenantId = value.tenantId;
+    }
   }
 
   // client_id - computed: false, optional: false, required: true
@@ -117,7 +164,7 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get clientIdInput() {
-    return this._clientId
+    return this._clientId;
   }
 
   // container - computed: false, optional: false, required: true
@@ -130,15 +177,15 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get containerInput() {
-    return this._container
+    return this._container;
   }
 
   // path - computed: false, optional: true, required: false
-  private _path?: string | undefined; 
+  private _path?: string; 
   public get path() {
     return this.getStringAttribute('path');
   }
-  public set path(value: string | undefined) {
+  public set path(value: string) {
     this._path = value;
   }
   public resetPath() {
@@ -146,7 +193,7 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
-    return this._path
+    return this._path;
   }
 
   // storage_account - computed: false, optional: false, required: true
@@ -159,7 +206,7 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get storageAccountInput() {
-    return this._storageAccount
+    return this._storageAccount;
   }
 
   // tenant_id - computed: false, optional: false, required: true
@@ -172,7 +219,7 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 }
 export interface LogsArchiveGcsArchive {
@@ -202,7 +249,7 @@ export interface LogsArchiveGcsArchive {
   readonly projectId: string;
 }
 
-function logsArchiveGcsArchiveToTerraform(struct?: LogsArchiveGcsArchiveOutputReference | LogsArchiveGcsArchive): any {
+export function logsArchiveGcsArchiveToTerraform(struct?: LogsArchiveGcsArchiveOutputReference | LogsArchiveGcsArchive): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -216,6 +263,8 @@ function logsArchiveGcsArchiveToTerraform(struct?: LogsArchiveGcsArchiveOutputRe
 }
 
 export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -223,6 +272,45 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsArchiveGcsArchive | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucket) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._clientEmail) {
+      hasAnyValues = true;
+      internalValueResult.clientEmail = this._clientEmail;
+    }
+    if (this._path) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._projectId) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsArchiveGcsArchive | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bucket = undefined;
+      this._clientEmail = undefined;
+      this._path = undefined;
+      this._projectId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucket = value.bucket;
+      this._clientEmail = value.clientEmail;
+      this._path = value.path;
+      this._projectId = value.projectId;
+    }
   }
 
   // bucket - computed: false, optional: false, required: true
@@ -235,7 +323,7 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // client_email - computed: false, optional: false, required: true
@@ -248,7 +336,7 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get clientEmailInput() {
-    return this._clientEmail
+    return this._clientEmail;
   }
 
   // path - computed: false, optional: false, required: true
@@ -261,7 +349,7 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
-    return this._path
+    return this._path;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -274,7 +362,7 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 }
 export interface LogsArchiveS3Archive {
@@ -304,7 +392,7 @@ export interface LogsArchiveS3Archive {
   readonly roleName: string;
 }
 
-function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
+export function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -318,6 +406,8 @@ function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOutputRefe
 }
 
 export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -325,6 +415,45 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsArchiveS3Archive | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accountId) {
+      hasAnyValues = true;
+      internalValueResult.accountId = this._accountId;
+    }
+    if (this._bucket) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._path) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._roleName) {
+      hasAnyValues = true;
+      internalValueResult.roleName = this._roleName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsArchiveS3Archive | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accountId = undefined;
+      this._bucket = undefined;
+      this._path = undefined;
+      this._roleName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accountId = value.accountId;
+      this._bucket = value.bucket;
+      this._path = value.path;
+      this._roleName = value.roleName;
+    }
   }
 
   // account_id - computed: false, optional: false, required: true
@@ -337,7 +466,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // bucket - computed: false, optional: false, required: true
@@ -350,7 +479,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // path - computed: false, optional: false, required: true
@@ -363,7 +492,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
-    return this._path
+    return this._path;
   }
 
   // role_name - computed: false, optional: false, required: true
@@ -376,7 +505,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get roleNameInput() {
-    return this._roleName
+    return this._roleName;
   }
 }
 
@@ -416,9 +545,9 @@ export class LogsArchive extends cdktf.TerraformResource {
     this._name = config.name;
     this._query = config.query;
     this._rehydrationTags = config.rehydrationTags;
-    this._azureArchive = config.azureArchive;
-    this._gcsArchive = config.gcsArchive;
-    this._s3Archive = config.s3Archive;
+    this._azureArchive.internalValue = config.azureArchive;
+    this._gcsArchive.internalValue = config.gcsArchive;
+    this._s3Archive.internalValue = config.s3Archive;
   }
 
   // ==========
@@ -431,11 +560,11 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // include_tags - computed: false, optional: true, required: false
-  private _includeTags?: boolean | cdktf.IResolvable | undefined; 
+  private _includeTags?: boolean | cdktf.IResolvable; 
   public get includeTags() {
     return this.getBooleanAttribute('include_tags') as any;
   }
-  public set includeTags(value: boolean | cdktf.IResolvable | undefined) {
+  public set includeTags(value: boolean | cdktf.IResolvable) {
     this._includeTags = value;
   }
   public resetIncludeTags() {
@@ -443,7 +572,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get includeTagsInput() {
-    return this._includeTags
+    return this._includeTags;
   }
 
   // name - computed: false, optional: false, required: true
@@ -456,7 +585,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // query - computed: false, optional: false, required: true
@@ -469,15 +598,15 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 
   // rehydration_tags - computed: false, optional: true, required: false
-  private _rehydrationTags?: string[] | undefined; 
+  private _rehydrationTags?: string[]; 
   public get rehydrationTags() {
     return this.getListAttribute('rehydration_tags');
   }
-  public set rehydrationTags(value: string[] | undefined) {
+  public set rehydrationTags(value: string[]) {
     this._rehydrationTags = value;
   }
   public resetRehydrationTags() {
@@ -485,58 +614,55 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rehydrationTagsInput() {
-    return this._rehydrationTags
+    return this._rehydrationTags;
   }
 
   // azure_archive - computed: false, optional: true, required: false
-  private _azureArchive?: LogsArchiveAzureArchive | undefined; 
-  private __azureArchiveOutput = new LogsArchiveAzureArchiveOutputReference(this as any, "azure_archive", true);
+  private _azureArchive = new LogsArchiveAzureArchiveOutputReference(this as any, "azure_archive", true);
   public get azureArchive() {
-    return this.__azureArchiveOutput;
+    return this._azureArchive;
   }
-  public putAzureArchive(value: LogsArchiveAzureArchive | undefined) {
-    this._azureArchive = value;
+  public putAzureArchive(value: LogsArchiveAzureArchive) {
+    this._azureArchive.internalValue = value;
   }
   public resetAzureArchive() {
-    this._azureArchive = undefined;
+    this._azureArchive.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get azureArchiveInput() {
-    return this._azureArchive
+    return this._azureArchive.internalValue;
   }
 
   // gcs_archive - computed: false, optional: true, required: false
-  private _gcsArchive?: LogsArchiveGcsArchive | undefined; 
-  private __gcsArchiveOutput = new LogsArchiveGcsArchiveOutputReference(this as any, "gcs_archive", true);
+  private _gcsArchive = new LogsArchiveGcsArchiveOutputReference(this as any, "gcs_archive", true);
   public get gcsArchive() {
-    return this.__gcsArchiveOutput;
+    return this._gcsArchive;
   }
-  public putGcsArchive(value: LogsArchiveGcsArchive | undefined) {
-    this._gcsArchive = value;
+  public putGcsArchive(value: LogsArchiveGcsArchive) {
+    this._gcsArchive.internalValue = value;
   }
   public resetGcsArchive() {
-    this._gcsArchive = undefined;
+    this._gcsArchive.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get gcsArchiveInput() {
-    return this._gcsArchive
+    return this._gcsArchive.internalValue;
   }
 
   // s3_archive - computed: false, optional: true, required: false
-  private _s3Archive?: LogsArchiveS3Archive | undefined; 
-  private __s3ArchiveOutput = new LogsArchiveS3ArchiveOutputReference(this as any, "s3_archive", true);
+  private _s3Archive = new LogsArchiveS3ArchiveOutputReference(this as any, "s3_archive", true);
   public get s3Archive() {
-    return this.__s3ArchiveOutput;
+    return this._s3Archive;
   }
-  public putS3Archive(value: LogsArchiveS3Archive | undefined) {
-    this._s3Archive = value;
+  public putS3Archive(value: LogsArchiveS3Archive) {
+    this._s3Archive.internalValue = value;
   }
   public resetS3Archive() {
-    this._s3Archive = undefined;
+    this._s3Archive.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get s3ArchiveInput() {
-    return this._s3Archive
+    return this._s3Archive.internalValue;
   }
 
   // =========
@@ -549,9 +675,9 @@ export class LogsArchive extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),
       rehydration_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._rehydrationTags),
-      azure_archive: logsArchiveAzureArchiveToTerraform(this._azureArchive),
-      gcs_archive: logsArchiveGcsArchiveToTerraform(this._gcsArchive),
-      s3_archive: logsArchiveS3ArchiveToTerraform(this._s3Archive),
+      azure_archive: logsArchiveAzureArchiveToTerraform(this._azureArchive.internalValue),
+      gcs_archive: logsArchiveGcsArchiveToTerraform(this._gcsArchive.internalValue),
+      s3_archive: logsArchiveS3ArchiveToTerraform(this._s3Archive.internalValue),
     };
   }
 }

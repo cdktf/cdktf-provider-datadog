@@ -59,7 +59,7 @@ export interface LogsIndexExclusionFilterFilter {
   readonly sampleRate?: number;
 }
 
-function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExclusionFilterFilter): any {
+export function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExclusionFilterFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -91,7 +91,7 @@ export interface LogsIndexExclusionFilter {
   readonly filter?: LogsIndexExclusionFilterFilter[];
 }
 
-function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionFilter): any {
+export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -112,7 +112,7 @@ export interface LogsIndexFilter {
   readonly query: string;
 }
 
-function logsIndexFilterToTerraform(struct?: LogsIndexFilterOutputReference | LogsIndexFilter): any {
+export function logsIndexFilterToTerraform(struct?: LogsIndexFilterOutputReference | LogsIndexFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -123,6 +123,8 @@ function logsIndexFilterToTerraform(struct?: LogsIndexFilterOutputReference | Lo
 }
 
 export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -130,6 +132,27 @@ export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsIndexFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsIndexFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._query = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._query = value.query;
+    }
   }
 
   // query - computed: false, optional: false, required: true
@@ -142,7 +165,7 @@ export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 }
 
@@ -183,7 +206,7 @@ export class LogsIndex extends cdktf.TerraformResource {
     this._name = config.name;
     this._retentionDays = config.retentionDays;
     this._exclusionFilter = config.exclusionFilter;
-    this._filter = config.filter;
+    this._filter.internalValue = config.filter;
   }
 
   // ==========
@@ -191,11 +214,11 @@ export class LogsIndex extends cdktf.TerraformResource {
   // ==========
 
   // daily_limit - computed: false, optional: true, required: false
-  private _dailyLimit?: number | undefined; 
+  private _dailyLimit?: number; 
   public get dailyLimit() {
     return this.getNumberAttribute('daily_limit');
   }
-  public set dailyLimit(value: number | undefined) {
+  public set dailyLimit(value: number) {
     this._dailyLimit = value;
   }
   public resetDailyLimit() {
@@ -203,15 +226,15 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dailyLimitInput() {
-    return this._dailyLimit
+    return this._dailyLimit;
   }
 
   // disable_daily_limit - computed: true, optional: true, required: false
-  private _disableDailyLimit?: boolean | cdktf.IResolvable | undefined; 
+  private _disableDailyLimit?: boolean | cdktf.IResolvable; 
   public get disableDailyLimit() {
     return this.getBooleanAttribute('disable_daily_limit') as any;
   }
-  public set disableDailyLimit(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableDailyLimit(value: boolean | cdktf.IResolvable) {
     this._disableDailyLimit = value;
   }
   public resetDisableDailyLimit() {
@@ -219,7 +242,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get disableDailyLimitInput() {
-    return this._disableDailyLimit
+    return this._disableDailyLimit;
   }
 
   // id - computed: true, optional: true, required: false
@@ -237,15 +260,15 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // retention_days - computed: true, optional: true, required: false
-  private _retentionDays?: number | undefined; 
+  private _retentionDays?: number; 
   public get retentionDays() {
     return this.getNumberAttribute('retention_days');
   }
-  public set retentionDays(value: number | undefined) {
+  public set retentionDays(value: number) {
     this._retentionDays = value;
   }
   public resetRetentionDays() {
@@ -253,16 +276,16 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get retentionDaysInput() {
-    return this._retentionDays
+    return this._retentionDays;
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
-  private _exclusionFilter?: LogsIndexExclusionFilter[] | undefined; 
+  private _exclusionFilter?: LogsIndexExclusionFilter[]; 
   public get exclusionFilter() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('exclusion_filter') as any;
   }
-  public set exclusionFilter(value: LogsIndexExclusionFilter[] | undefined) {
+  public set exclusionFilter(value: LogsIndexExclusionFilter[]) {
     this._exclusionFilter = value;
   }
   public resetExclusionFilter() {
@@ -270,21 +293,20 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get exclusionFilterInput() {
-    return this._exclusionFilter
+    return this._exclusionFilter;
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter?: LogsIndexFilter; 
-  private __filterOutput = new LogsIndexFilterOutputReference(this as any, "filter", true);
+  private _filter = new LogsIndexFilterOutputReference(this as any, "filter", true);
   public get filter() {
-    return this.__filterOutput;
+    return this._filter;
   }
   public putFilter(value: LogsIndexFilter) {
-    this._filter = value;
+    this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter.internalValue;
   }
 
   // =========
@@ -298,7 +320,7 @@ export class LogsIndex extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       retention_days: cdktf.numberToTerraform(this._retentionDays),
       exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter),
-      filter: logsIndexFilterToTerraform(this._filter),
+      filter: logsIndexFilterToTerraform(this._filter.internalValue),
     };
   }
 }

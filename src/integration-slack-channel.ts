@@ -53,7 +53,7 @@ export interface IntegrationSlackChannelDisplay {
   readonly tags?: boolean | cdktf.IResolvable;
 }
 
-function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChannelDisplayOutputReference | IntegrationSlackChannelDisplay): any {
+export function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChannelDisplayOutputReference | IntegrationSlackChannelDisplay): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -67,6 +67,8 @@ function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChan
 }
 
 export class IntegrationSlackChannelDisplayOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -76,12 +78,51 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): IntegrationSlackChannelDisplay | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._message) {
+      hasAnyValues = true;
+      internalValueResult.message = this._message;
+    }
+    if (this._notified) {
+      hasAnyValues = true;
+      internalValueResult.notified = this._notified;
+    }
+    if (this._snapshot) {
+      hasAnyValues = true;
+      internalValueResult.snapshot = this._snapshot;
+    }
+    if (this._tags) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IntegrationSlackChannelDisplay | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._message = undefined;
+      this._notified = undefined;
+      this._snapshot = undefined;
+      this._tags = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._message = value.message;
+      this._notified = value.notified;
+      this._snapshot = value.snapshot;
+      this._tags = value.tags;
+    }
+  }
+
   // message - computed: false, optional: true, required: false
-  private _message?: boolean | cdktf.IResolvable | undefined; 
+  private _message?: boolean | cdktf.IResolvable; 
   public get message() {
     return this.getBooleanAttribute('message') as any;
   }
-  public set message(value: boolean | cdktf.IResolvable | undefined) {
+  public set message(value: boolean | cdktf.IResolvable) {
     this._message = value;
   }
   public resetMessage() {
@@ -89,15 +130,15 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message
+    return this._message;
   }
 
   // notified - computed: false, optional: true, required: false
-  private _notified?: boolean | cdktf.IResolvable | undefined; 
+  private _notified?: boolean | cdktf.IResolvable; 
   public get notified() {
     return this.getBooleanAttribute('notified') as any;
   }
-  public set notified(value: boolean | cdktf.IResolvable | undefined) {
+  public set notified(value: boolean | cdktf.IResolvable) {
     this._notified = value;
   }
   public resetNotified() {
@@ -105,15 +146,15 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get notifiedInput() {
-    return this._notified
+    return this._notified;
   }
 
   // snapshot - computed: false, optional: true, required: false
-  private _snapshot?: boolean | cdktf.IResolvable | undefined; 
+  private _snapshot?: boolean | cdktf.IResolvable; 
   public get snapshot() {
     return this.getBooleanAttribute('snapshot') as any;
   }
-  public set snapshot(value: boolean | cdktf.IResolvable | undefined) {
+  public set snapshot(value: boolean | cdktf.IResolvable) {
     this._snapshot = value;
   }
   public resetSnapshot() {
@@ -121,15 +162,15 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get snapshotInput() {
-    return this._snapshot
+    return this._snapshot;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: boolean | cdktf.IResolvable | undefined; 
+  private _tags?: boolean | cdktf.IResolvable; 
   public get tags() {
     return this.getBooleanAttribute('tags') as any;
   }
-  public set tags(value: boolean | cdktf.IResolvable | undefined) {
+  public set tags(value: boolean | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -137,7 +178,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 }
 
@@ -175,7 +216,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
     });
     this._accountName = config.accountName;
     this._channelName = config.channelName;
-    this._display = config.display;
+    this._display.internalValue = config.display;
   }
 
   // ==========
@@ -192,7 +233,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountNameInput() {
-    return this._accountName
+    return this._accountName;
   }
 
   // channel_name - computed: false, optional: false, required: true
@@ -205,7 +246,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get channelNameInput() {
-    return this._channelName
+    return this._channelName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -214,17 +255,16 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   }
 
   // display - computed: false, optional: false, required: true
-  private _display?: IntegrationSlackChannelDisplay; 
-  private __displayOutput = new IntegrationSlackChannelDisplayOutputReference(this as any, "display", true);
+  private _display = new IntegrationSlackChannelDisplayOutputReference(this as any, "display", true);
   public get display() {
-    return this.__displayOutput;
+    return this._display;
   }
   public putDisplay(value: IntegrationSlackChannelDisplay) {
-    this._display = value;
+    this._display.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get displayInput() {
-    return this._display
+    return this._display.internalValue;
   }
 
   // =========
@@ -235,7 +275,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
     return {
       account_name: cdktf.stringToTerraform(this._accountName),
       channel_name: cdktf.stringToTerraform(this._channelName),
-      display: integrationSlackChannelDisplayToTerraform(this._display),
+      display: integrationSlackChannelDisplayToTerraform(this._display.internalValue),
     };
   }
 }

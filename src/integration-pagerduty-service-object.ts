@@ -76,7 +76,7 @@ export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceKeyInput() {
-    return this._serviceKey
+    return this._serviceKey;
   }
 
   // service_name - computed: false, optional: false, required: true
@@ -89,7 +89,7 @@ export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceNameInput() {
-    return this._serviceName
+    return this._serviceName;
   }
 
   // =========

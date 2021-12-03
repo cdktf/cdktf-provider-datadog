@@ -95,11 +95,11 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   // ==========
 
   // api_key - computed: false, optional: true, required: false
-  private _apiKey?: string | undefined; 
+  private _apiKey?: string; 
   public get apiKey() {
     return this._apiKey;
   }
-  public set apiKey(value: string | undefined| undefined) {
+  public set apiKey(value: string | undefined) {
     this._apiKey = value;
   }
   public resetApiKey() {
@@ -107,15 +107,15 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get apiKeyInput() {
-    return this._apiKey
+    return this._apiKey;
   }
 
   // api_url - computed: false, optional: true, required: false
-  private _apiUrl?: string | undefined; 
+  private _apiUrl?: string; 
   public get apiUrl() {
     return this._apiUrl;
   }
-  public set apiUrl(value: string | undefined| undefined) {
+  public set apiUrl(value: string | undefined) {
     this._apiUrl = value;
   }
   public resetApiUrl() {
@@ -123,15 +123,15 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get apiUrlInput() {
-    return this._apiUrl
+    return this._apiUrl;
   }
 
   // app_key - computed: false, optional: true, required: false
-  private _appKey?: string | undefined; 
+  private _appKey?: string; 
   public get appKey() {
     return this._appKey;
   }
-  public set appKey(value: string | undefined| undefined) {
+  public set appKey(value: string | undefined) {
     this._appKey = value;
   }
   public resetAppKey() {
@@ -139,15 +139,15 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get appKeyInput() {
-    return this._appKey
+    return this._appKey;
   }
 
   // http_client_retry_enabled - computed: false, optional: true, required: false
-  private _httpClientRetryEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _httpClientRetryEnabled?: boolean | cdktf.IResolvable; 
   public get httpClientRetryEnabled() {
     return this._httpClientRetryEnabled;
   }
-  public set httpClientRetryEnabled(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set httpClientRetryEnabled(value: boolean | cdktf.IResolvable | undefined) {
     this._httpClientRetryEnabled = value;
   }
   public resetHttpClientRetryEnabled() {
@@ -155,15 +155,15 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get httpClientRetryEnabledInput() {
-    return this._httpClientRetryEnabled
+    return this._httpClientRetryEnabled;
   }
 
   // http_client_retry_timeout - computed: false, optional: true, required: false
-  private _httpClientRetryTimeout?: number | undefined; 
+  private _httpClientRetryTimeout?: number; 
   public get httpClientRetryTimeout() {
     return this._httpClientRetryTimeout;
   }
-  public set httpClientRetryTimeout(value: number | undefined| undefined) {
+  public set httpClientRetryTimeout(value: number | undefined) {
     this._httpClientRetryTimeout = value;
   }
   public resetHttpClientRetryTimeout() {
@@ -171,15 +171,15 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get httpClientRetryTimeoutInput() {
-    return this._httpClientRetryTimeout
+    return this._httpClientRetryTimeout;
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean | cdktf.IResolvable | undefined; 
+  private _validate?: boolean | cdktf.IResolvable; 
   public get validate() {
     return this._validate;
   }
-  public set validate(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set validate(value: boolean | cdktf.IResolvable | undefined) {
     this._validate = value;
   }
   public resetValidate() {
@@ -187,15 +187,15 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get validateInput() {
-    return this._validate
+    return this._validate;
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string | undefined; 
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined| undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -203,7 +203,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // =========

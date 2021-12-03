@@ -83,11 +83,11 @@ export class Webhook extends cdktf.TerraformResource {
   // ==========
 
   // custom_headers - computed: false, optional: true, required: false
-  private _customHeaders?: string | undefined; 
+  private _customHeaders?: string; 
   public get customHeaders() {
     return this.getStringAttribute('custom_headers');
   }
-  public set customHeaders(value: string | undefined) {
+  public set customHeaders(value: string) {
     this._customHeaders = value;
   }
   public resetCustomHeaders() {
@@ -95,15 +95,15 @@ export class Webhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get customHeadersInput() {
-    return this._customHeaders
+    return this._customHeaders;
   }
 
   // encode_as - computed: true, optional: true, required: false
-  private _encodeAs?: string | undefined; 
+  private _encodeAs?: string; 
   public get encodeAs() {
     return this.getStringAttribute('encode_as');
   }
-  public set encodeAs(value: string | undefined) {
+  public set encodeAs(value: string) {
     this._encodeAs = value;
   }
   public resetEncodeAs() {
@@ -111,7 +111,7 @@ export class Webhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encodeAsInput() {
-    return this._encodeAs
+    return this._encodeAs;
   }
 
   // id - computed: true, optional: true, required: false
@@ -129,15 +129,15 @@ export class Webhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // payload - computed: true, optional: true, required: false
-  private _payload?: string | undefined; 
+  private _payload?: string; 
   public get payload() {
     return this.getStringAttribute('payload');
   }
-  public set payload(value: string | undefined) {
+  public set payload(value: string) {
     this._payload = value;
   }
   public resetPayload() {
@@ -145,7 +145,7 @@ export class Webhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get payloadInput() {
-    return this._payload
+    return this._payload;
   }
 
   // url - computed: false, optional: false, required: true
@@ -158,7 +158,7 @@ export class Webhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url
+    return this._url;
   }
 
   // =========

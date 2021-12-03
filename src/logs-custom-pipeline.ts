@@ -37,7 +37,7 @@ export interface LogsCustomPipelineFilter {
   readonly query: string;
 }
 
-function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineFilter): any {
+export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -80,7 +80,7 @@ export interface LogsCustomPipelineProcessorArithmeticProcessor {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
+export function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,6 +95,8 @@ function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct?: Logs
 }
 
 export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -102,6 +104,51 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorArithmeticProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._isReplaceMissing) {
+      hasAnyValues = true;
+      internalValueResult.isReplaceMissing = this._isReplaceMissing;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorArithmeticProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._expression = undefined;
+      this._isEnabled = undefined;
+      this._isReplaceMissing = undefined;
+      this._name = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._expression = value.expression;
+      this._isEnabled = value.isEnabled;
+      this._isReplaceMissing = value.isReplaceMissing;
+      this._name = value.name;
+      this._target = value.target;
+    }
   }
 
   // expression - computed: false, optional: false, required: true
@@ -114,15 +161,15 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get expressionInput() {
-    return this._expression
+    return this._expression;
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -130,15 +177,15 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable | undefined; 
+  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing') as any;
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable | undefined) {
+  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -146,15 +193,15 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get isReplaceMissingInput() {
-    return this._isReplaceMissing
+    return this._isReplaceMissing;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -162,7 +209,7 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // target - computed: false, optional: false, required: true
@@ -175,7 +222,7 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorAttributeRemapper {
@@ -235,7 +282,7 @@ export interface LogsCustomPipelineProcessorAttributeRemapper {
   readonly targetType: string;
 }
 
-function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
+export function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -254,6 +301,8 @@ function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCu
 }
 
 export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -263,12 +312,81 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorAttributeRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._overrideOnConflict) {
+      hasAnyValues = true;
+      internalValueResult.overrideOnConflict = this._overrideOnConflict;
+    }
+    if (this._preserveSource) {
+      hasAnyValues = true;
+      internalValueResult.preserveSource = this._preserveSource;
+    }
+    if (this._sourceType) {
+      hasAnyValues = true;
+      internalValueResult.sourceType = this._sourceType;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._targetFormat) {
+      hasAnyValues = true;
+      internalValueResult.targetFormat = this._targetFormat;
+    }
+    if (this._targetType) {
+      hasAnyValues = true;
+      internalValueResult.targetType = this._targetType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorAttributeRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._overrideOnConflict = undefined;
+      this._preserveSource = undefined;
+      this._sourceType = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+      this._targetFormat = undefined;
+      this._targetType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._overrideOnConflict = value.overrideOnConflict;
+      this._preserveSource = value.preserveSource;
+      this._sourceType = value.sourceType;
+      this._sources = value.sources;
+      this._target = value.target;
+      this._targetFormat = value.targetFormat;
+      this._targetType = value.targetType;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -276,15 +394,15 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -292,15 +410,15 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // override_on_conflict - computed: false, optional: true, required: false
-  private _overrideOnConflict?: boolean | cdktf.IResolvable | undefined; 
+  private _overrideOnConflict?: boolean | cdktf.IResolvable; 
   public get overrideOnConflict() {
     return this.getBooleanAttribute('override_on_conflict') as any;
   }
-  public set overrideOnConflict(value: boolean | cdktf.IResolvable | undefined) {
+  public set overrideOnConflict(value: boolean | cdktf.IResolvable) {
     this._overrideOnConflict = value;
   }
   public resetOverrideOnConflict() {
@@ -308,15 +426,15 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get overrideOnConflictInput() {
-    return this._overrideOnConflict
+    return this._overrideOnConflict;
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable | undefined; 
+  private _preserveSource?: boolean | cdktf.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source') as any;
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable | undefined) {
+  public set preserveSource(value: boolean | cdktf.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -324,7 +442,7 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get preserveSourceInput() {
-    return this._preserveSource
+    return this._preserveSource;
   }
 
   // source_type - computed: false, optional: false, required: true
@@ -337,7 +455,7 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get sourceTypeInput() {
-    return this._sourceType
+    return this._sourceType;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -350,7 +468,7 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -363,15 +481,15 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // target_format - computed: false, optional: true, required: false
-  private _targetFormat?: string | undefined; 
+  private _targetFormat?: string; 
   public get targetFormat() {
     return this.getStringAttribute('target_format');
   }
-  public set targetFormat(value: string | undefined) {
+  public set targetFormat(value: string) {
     this._targetFormat = value;
   }
   public resetTargetFormat() {
@@ -379,7 +497,7 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get targetFormatInput() {
-    return this._targetFormat
+    return this._targetFormat;
   }
 
   // target_type - computed: false, optional: false, required: true
@@ -392,7 +510,7 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get targetTypeInput() {
-    return this._targetType
+    return this._targetType;
   }
 }
 export interface LogsCustomPipelineProcessorCategoryProcessorCategoryFilter {
@@ -404,7 +522,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessorCategoryFilter {
   readonly query: string;
 }
 
-function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
+export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -415,6 +533,8 @@ function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(s
 }
 
 export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -422,6 +542,27 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputRef
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorCategoryProcessorCategoryFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorCategoryProcessorCategoryFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._query = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._query = value.query;
+    }
   }
 
   // query - computed: false, optional: false, required: true
@@ -434,7 +575,7 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputRef
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 }
 export interface LogsCustomPipelineProcessorCategoryProcessorCategory {
@@ -450,7 +591,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessorCategory {
   readonly filter: LogsCustomPipelineProcessorCategoryProcessorCategoryFilter;
 }
 
-function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory): any {
+export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -488,7 +629,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessor {
   readonly category: LogsCustomPipelineProcessorCategoryProcessorCategory[];
 }
 
-function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
+export function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -502,6 +643,8 @@ function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCu
 }
 
 export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -511,12 +654,51 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorCategoryProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._category) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorCategoryProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._target = undefined;
+      this._category = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._target = value.target;
+      this._category = value.category;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -524,15 +706,15 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -540,7 +722,7 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // target - computed: false, optional: false, required: true
@@ -553,7 +735,7 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // category - computed: false, optional: false, required: true
@@ -567,7 +749,7 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
-    return this._category
+    return this._category;
   }
 }
 export interface LogsCustomPipelineProcessorDateRemapper {
@@ -591,7 +773,7 @@ export interface LogsCustomPipelineProcessorDateRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
+export function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -604,6 +786,8 @@ function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomP
 }
 
 export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -613,12 +797,45 @@ export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdkt
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorDateRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorDateRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -626,15 +843,15 @@ export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdkt
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -642,7 +859,7 @@ export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdkt
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -655,7 +872,7 @@ export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdkt
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorGeoIpParser {
@@ -685,7 +902,7 @@ export interface LogsCustomPipelineProcessorGeoIpParser {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
+export function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -699,6 +916,8 @@ function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPi
 }
 
 export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -708,12 +927,51 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorGeoIpParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorGeoIpParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+      this._target = value.target;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -721,15 +979,15 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -737,7 +995,7 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -750,7 +1008,7 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -763,7 +1021,7 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorGrokParserGrok {
@@ -781,7 +1039,7 @@ export interface LogsCustomPipelineProcessorGrokParserGrok {
   readonly supportRules: string;
 }
 
-function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
+export function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -793,6 +1051,8 @@ function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCusto
 }
 
 export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -800,6 +1060,33 @@ export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cd
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorGrokParserGrok | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._matchRules) {
+      hasAnyValues = true;
+      internalValueResult.matchRules = this._matchRules;
+    }
+    if (this._supportRules) {
+      hasAnyValues = true;
+      internalValueResult.supportRules = this._supportRules;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorGrokParserGrok | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._matchRules = undefined;
+      this._supportRules = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._matchRules = value.matchRules;
+      this._supportRules = value.supportRules;
+    }
   }
 
   // match_rules - computed: false, optional: false, required: true
@@ -812,7 +1099,7 @@ export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cd
   }
   // Temporarily expose input value. Use with caution.
   public get matchRulesInput() {
-    return this._matchRules
+    return this._matchRules;
   }
 
   // support_rules - computed: false, optional: false, required: true
@@ -825,7 +1112,7 @@ export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cd
   }
   // Temporarily expose input value. Use with caution.
   public get supportRulesInput() {
-    return this._supportRules
+    return this._supportRules;
   }
 }
 export interface LogsCustomPipelineProcessorGrokParser {
@@ -861,7 +1148,7 @@ export interface LogsCustomPipelineProcessorGrokParser {
   readonly grok: LogsCustomPipelineProcessorGrokParserGrok;
 }
 
-function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
+export function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -876,6 +1163,8 @@ function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPip
 }
 
 export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -885,12 +1174,57 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorGrokParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._samples) {
+      hasAnyValues = true;
+      internalValueResult.samples = this._samples;
+    }
+    if (this._source) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._grok?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.grok = this._grok?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorGrokParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._samples = undefined;
+      this._source = undefined;
+      this._grok.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._samples = value.samples;
+      this._source = value.source;
+      this._grok.internalValue = value.grok;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -898,15 +1232,15 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -914,15 +1248,15 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // samples - computed: false, optional: true, required: false
-  private _samples?: string[] | undefined; 
+  private _samples?: string[]; 
   public get samples() {
     return this.getListAttribute('samples');
   }
-  public set samples(value: string[] | undefined) {
+  public set samples(value: string[]) {
     this._samples = value;
   }
   public resetSamples() {
@@ -930,7 +1264,7 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
   }
   // Temporarily expose input value. Use with caution.
   public get samplesInput() {
-    return this._samples
+    return this._samples;
   }
 
   // source - computed: false, optional: false, required: true
@@ -943,21 +1277,20 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
   }
   // Temporarily expose input value. Use with caution.
   public get sourceInput() {
-    return this._source
+    return this._source;
   }
 
   // grok - computed: false, optional: false, required: true
-  private _grok?: LogsCustomPipelineProcessorGrokParserGrok; 
-  private __grokOutput = new LogsCustomPipelineProcessorGrokParserGrokOutputReference(this as any, "grok", true);
+  private _grok = new LogsCustomPipelineProcessorGrokParserGrokOutputReference(this as any, "grok", true);
   public get grok() {
-    return this.__grokOutput;
+    return this._grok;
   }
   public putGrok(value: LogsCustomPipelineProcessorGrokParserGrok) {
-    this._grok = value;
+    this._grok.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get grokInput() {
-    return this._grok
+    return this._grok.internalValue;
   }
 }
 export interface LogsCustomPipelineProcessorLookupProcessor {
@@ -999,7 +1332,7 @@ export interface LogsCustomPipelineProcessorLookupProcessor {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
+export function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1015,6 +1348,8 @@ function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: LogsCust
 }
 
 export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1024,12 +1359,63 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorLookupProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultLookup) {
+      hasAnyValues = true;
+      internalValueResult.defaultLookup = this._defaultLookup;
+    }
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._lookupTable) {
+      hasAnyValues = true;
+      internalValueResult.lookupTable = this._lookupTable;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorLookupProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultLookup = undefined;
+      this._isEnabled = undefined;
+      this._lookupTable = undefined;
+      this._name = undefined;
+      this._source = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultLookup = value.defaultLookup;
+      this._isEnabled = value.isEnabled;
+      this._lookupTable = value.lookupTable;
+      this._name = value.name;
+      this._source = value.source;
+      this._target = value.target;
+    }
+  }
+
   // default_lookup - computed: false, optional: true, required: false
-  private _defaultLookup?: string | undefined; 
+  private _defaultLookup?: string; 
   public get defaultLookup() {
     return this.getStringAttribute('default_lookup');
   }
-  public set defaultLookup(value: string | undefined) {
+  public set defaultLookup(value: string) {
     this._defaultLookup = value;
   }
   public resetDefaultLookup() {
@@ -1037,15 +1423,15 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get defaultLookupInput() {
-    return this._defaultLookup
+    return this._defaultLookup;
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1053,7 +1439,7 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // lookup_table - computed: false, optional: false, required: true
@@ -1066,15 +1452,15 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get lookupTableInput() {
-    return this._lookupTable
+    return this._lookupTable;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1082,7 +1468,7 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // source - computed: false, optional: false, required: true
@@ -1095,7 +1481,7 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get sourceInput() {
-    return this._source
+    return this._source;
   }
 
   // target - computed: false, optional: false, required: true
@@ -1108,7 +1494,7 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorMessageRemapper {
@@ -1132,7 +1518,7 @@ export interface LogsCustomPipelineProcessorMessageRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
+export function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1145,6 +1531,8 @@ function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: LogsCust
 }
 
 export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1154,12 +1542,45 @@ export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorMessageRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorMessageRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1167,15 +1588,15 @@ export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1183,7 +1604,7 @@ export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -1196,7 +1617,7 @@ export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineFilter {
@@ -1208,7 +1629,7 @@ export interface LogsCustomPipelineProcessorPipelineFilter {
   readonly query: string;
 }
 
-function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter): any {
+export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1251,7 +1672,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
+export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1266,6 +1687,8 @@ function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToTerraf
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1273,6 +1696,51 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._isReplaceMissing) {
+      hasAnyValues = true;
+      internalValueResult.isReplaceMissing = this._isReplaceMissing;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._expression = undefined;
+      this._isEnabled = undefined;
+      this._isReplaceMissing = undefined;
+      this._name = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._expression = value.expression;
+      this._isEnabled = value.isEnabled;
+      this._isReplaceMissing = value.isReplaceMissing;
+      this._name = value.name;
+      this._target = value.target;
+    }
   }
 
   // expression - computed: false, optional: false, required: true
@@ -1285,15 +1753,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
   // Temporarily expose input value. Use with caution.
   public get expressionInput() {
-    return this._expression
+    return this._expression;
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1301,15 +1769,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable | undefined; 
+  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing') as any;
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable | undefined) {
+  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -1317,15 +1785,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
   // Temporarily expose input value. Use with caution.
   public get isReplaceMissingInput() {
-    return this._isReplaceMissing
+    return this._isReplaceMissing;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1333,7 +1801,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // target - computed: false, optional: false, required: true
@@ -1346,7 +1814,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
@@ -1406,7 +1874,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
   readonly targetType: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
+export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1425,6 +1893,8 @@ function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToTerrafor
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1434,12 +1904,81 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._overrideOnConflict) {
+      hasAnyValues = true;
+      internalValueResult.overrideOnConflict = this._overrideOnConflict;
+    }
+    if (this._preserveSource) {
+      hasAnyValues = true;
+      internalValueResult.preserveSource = this._preserveSource;
+    }
+    if (this._sourceType) {
+      hasAnyValues = true;
+      internalValueResult.sourceType = this._sourceType;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._targetFormat) {
+      hasAnyValues = true;
+      internalValueResult.targetFormat = this._targetFormat;
+    }
+    if (this._targetType) {
+      hasAnyValues = true;
+      internalValueResult.targetType = this._targetType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._overrideOnConflict = undefined;
+      this._preserveSource = undefined;
+      this._sourceType = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+      this._targetFormat = undefined;
+      this._targetType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._overrideOnConflict = value.overrideOnConflict;
+      this._preserveSource = value.preserveSource;
+      this._sourceType = value.sourceType;
+      this._sources = value.sources;
+      this._target = value.target;
+      this._targetFormat = value.targetFormat;
+      this._targetType = value.targetType;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1447,15 +1986,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1463,15 +2002,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // override_on_conflict - computed: false, optional: true, required: false
-  private _overrideOnConflict?: boolean | cdktf.IResolvable | undefined; 
+  private _overrideOnConflict?: boolean | cdktf.IResolvable; 
   public get overrideOnConflict() {
     return this.getBooleanAttribute('override_on_conflict') as any;
   }
-  public set overrideOnConflict(value: boolean | cdktf.IResolvable | undefined) {
+  public set overrideOnConflict(value: boolean | cdktf.IResolvable) {
     this._overrideOnConflict = value;
   }
   public resetOverrideOnConflict() {
@@ -1479,15 +2018,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get overrideOnConflictInput() {
-    return this._overrideOnConflict
+    return this._overrideOnConflict;
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable | undefined; 
+  private _preserveSource?: boolean | cdktf.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source') as any;
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable | undefined) {
+  public set preserveSource(value: boolean | cdktf.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -1495,7 +2034,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get preserveSourceInput() {
-    return this._preserveSource
+    return this._preserveSource;
   }
 
   // source_type - computed: false, optional: false, required: true
@@ -1508,7 +2047,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get sourceTypeInput() {
-    return this._sourceType
+    return this._sourceType;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -1521,7 +2060,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -1534,15 +2073,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // target_format - computed: false, optional: true, required: false
-  private _targetFormat?: string | undefined; 
+  private _targetFormat?: string; 
   public get targetFormat() {
     return this.getStringAttribute('target_format');
   }
-  public set targetFormat(value: string | undefined) {
+  public set targetFormat(value: string) {
     this._targetFormat = value;
   }
   public resetTargetFormat() {
@@ -1550,7 +2089,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get targetFormatInput() {
-    return this._targetFormat
+    return this._targetFormat;
   }
 
   // target_type - computed: false, optional: false, required: true
@@ -1563,7 +2102,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
   // Temporarily expose input value. Use with caution.
   public get targetTypeInput() {
-    return this._targetType
+    return this._targetType;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter {
@@ -1575,7 +2114,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCa
   readonly query: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1586,6 +2125,8 @@ function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFi
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1593,6 +2134,27 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._query = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._query = value.query;
+    }
   }
 
   // query - computed: false, optional: false, required: true
@@ -1605,7 +2167,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory {
@@ -1621,7 +2183,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCa
   readonly filter: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory): any {
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1659,7 +2221,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
   readonly category: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[];
 }
 
-function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1673,6 +2235,8 @@ function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToTerrafor
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1682,12 +2246,51 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._category) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._target = undefined;
+      this._category = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._target = value.target;
+      this._category = value.category;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1695,15 +2298,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1711,7 +2314,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // target - computed: false, optional: false, required: true
@@ -1724,7 +2327,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // category - computed: false, optional: false, required: true
@@ -1738,7 +2341,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   }
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
-    return this._category
+    return this._category;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
@@ -1762,7 +2365,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
+export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1775,6 +2378,8 @@ function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraform(str
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1784,12 +2389,45 @@ export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputRefer
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorDateRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorDateRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1797,15 +2435,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputRefer
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1813,7 +2451,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputRefer
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -1826,7 +2464,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputRefer
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
@@ -1856,7 +2494,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
+export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1870,6 +2508,8 @@ function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerraform(stru
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1879,12 +2519,51 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorGeoIpParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorGeoIpParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+      this._target = value.target;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1892,15 +2571,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -1908,7 +2587,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -1921,7 +2600,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -1934,7 +2613,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok {
@@ -1952,7 +2631,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok {
   readonly supportRules: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
+export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1964,6 +2643,8 @@ function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(s
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -1971,6 +2652,33 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputRef
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._matchRules) {
+      hasAnyValues = true;
+      internalValueResult.matchRules = this._matchRules;
+    }
+    if (this._supportRules) {
+      hasAnyValues = true;
+      internalValueResult.supportRules = this._supportRules;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._matchRules = undefined;
+      this._supportRules = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._matchRules = value.matchRules;
+      this._supportRules = value.supportRules;
+    }
   }
 
   // match_rules - computed: false, optional: false, required: true
@@ -1983,7 +2691,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputRef
   }
   // Temporarily expose input value. Use with caution.
   public get matchRulesInput() {
-    return this._matchRules
+    return this._matchRules;
   }
 
   // support_rules - computed: false, optional: false, required: true
@@ -1996,7 +2704,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputRef
   }
   // Temporarily expose input value. Use with caution.
   public get supportRulesInput() {
-    return this._supportRules
+    return this._supportRules;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorGrokParser {
@@ -2032,7 +2740,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParser {
   readonly grok: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
+export function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2047,6 +2755,8 @@ function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerraform(struc
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2056,12 +2766,57 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorGrokParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._samples) {
+      hasAnyValues = true;
+      internalValueResult.samples = this._samples;
+    }
+    if (this._source) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._grok?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.grok = this._grok?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorGrokParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._samples = undefined;
+      this._source = undefined;
+      this._grok.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._samples = value.samples;
+      this._source = value.source;
+      this._grok.internalValue = value.grok;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2069,15 +2824,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2085,15 +2840,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // samples - computed: false, optional: true, required: false
-  private _samples?: string[] | undefined; 
+  private _samples?: string[]; 
   public get samples() {
     return this.getListAttribute('samples');
   }
-  public set samples(value: string[] | undefined) {
+  public set samples(value: string[]) {
     this._samples = value;
   }
   public resetSamples() {
@@ -2101,7 +2856,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
   }
   // Temporarily expose input value. Use with caution.
   public get samplesInput() {
-    return this._samples
+    return this._samples;
   }
 
   // source - computed: false, optional: false, required: true
@@ -2114,21 +2869,20 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
   }
   // Temporarily expose input value. Use with caution.
   public get sourceInput() {
-    return this._source
+    return this._source;
   }
 
   // grok - computed: false, optional: false, required: true
-  private _grok?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok; 
-  private __grokOutput = new LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference(this as any, "grok", true);
+  private _grok = new LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference(this as any, "grok", true);
   public get grok() {
-    return this.__grokOutput;
+    return this._grok;
   }
   public putGrok(value: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok) {
-    this._grok = value;
+    this._grok.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get grokInput() {
-    return this._grok
+    return this._grok.internalValue;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
@@ -2170,7 +2924,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
+export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2186,6 +2940,8 @@ function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTerraform(
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2195,12 +2951,63 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorLookupProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultLookup) {
+      hasAnyValues = true;
+      internalValueResult.defaultLookup = this._defaultLookup;
+    }
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._lookupTable) {
+      hasAnyValues = true;
+      internalValueResult.lookupTable = this._lookupTable;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorLookupProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultLookup = undefined;
+      this._isEnabled = undefined;
+      this._lookupTable = undefined;
+      this._name = undefined;
+      this._source = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultLookup = value.defaultLookup;
+      this._isEnabled = value.isEnabled;
+      this._lookupTable = value.lookupTable;
+      this._name = value.name;
+      this._source = value.source;
+      this._target = value.target;
+    }
+  }
+
   // default_lookup - computed: false, optional: true, required: false
-  private _defaultLookup?: string | undefined; 
+  private _defaultLookup?: string; 
   public get defaultLookup() {
     return this.getStringAttribute('default_lookup');
   }
-  public set defaultLookup(value: string | undefined) {
+  public set defaultLookup(value: string) {
     this._defaultLookup = value;
   }
   public resetDefaultLookup() {
@@ -2208,15 +3015,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get defaultLookupInput() {
-    return this._defaultLookup
+    return this._defaultLookup;
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2224,7 +3031,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // lookup_table - computed: false, optional: false, required: true
@@ -2237,15 +3044,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get lookupTableInput() {
-    return this._lookupTable
+    return this._lookupTable;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2253,7 +3060,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // source - computed: false, optional: false, required: true
@@ -2266,7 +3073,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get sourceInput() {
-    return this._source
+    return this._source;
   }
 
   // target - computed: false, optional: false, required: true
@@ -2279,7 +3086,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
@@ -2303,7 +3110,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
+export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2316,6 +3123,8 @@ function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTerraform(
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2325,12 +3134,45 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorMessageRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorMessageRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2338,15 +3180,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2354,7 +3196,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -2367,7 +3209,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
@@ -2391,7 +3233,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
+export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2404,6 +3246,8 @@ function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTerraform(
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2413,12 +3257,45 @@ export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputRe
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorServiceRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorServiceRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2426,15 +3303,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2442,7 +3319,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -2455,7 +3332,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
@@ -2479,7 +3356,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
+export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2492,6 +3369,8 @@ function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerraform(s
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2501,12 +3380,45 @@ export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputRef
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorStatusRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorStatusRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2514,15 +3426,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputRef
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2530,7 +3442,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputRef
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -2543,7 +3455,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputRef
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor {
@@ -2579,7 +3491,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStringBuilderProces
   readonly template: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
+export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2594,6 +3506,8 @@ function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToTer
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2603,12 +3517,57 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._isReplaceMissing) {
+      hasAnyValues = true;
+      internalValueResult.isReplaceMissing = this._isReplaceMissing;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._template) {
+      hasAnyValues = true;
+      internalValueResult.template = this._template;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._isReplaceMissing = undefined;
+      this._name = undefined;
+      this._target = undefined;
+      this._template = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._isReplaceMissing = value.isReplaceMissing;
+      this._name = value.name;
+      this._target = value.target;
+      this._template = value.template;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2616,15 +3575,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable | undefined; 
+  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing') as any;
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable | undefined) {
+  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -2632,15 +3591,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
   // Temporarily expose input value. Use with caution.
   public get isReplaceMissingInput() {
-    return this._isReplaceMissing
+    return this._isReplaceMissing;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2648,7 +3607,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // target - computed: false, optional: false, required: true
@@ -2661,7 +3620,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // template - computed: false, optional: false, required: true
@@ -2674,7 +3633,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
   // Temporarily expose input value. Use with caution.
   public get templateInput() {
-    return this._template
+    return this._template;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
@@ -2698,7 +3657,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
+export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2711,6 +3670,8 @@ function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTerraform(
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2720,12 +3681,45 @@ export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputRe
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2733,15 +3727,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2749,7 +3743,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -2762,7 +3756,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
@@ -2798,7 +3792,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
+export function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2813,6 +3807,8 @@ function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform(struct
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2822,12 +3818,57 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorUrlParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._normalizeEndingSlashes) {
+      hasAnyValues = true;
+      internalValueResult.normalizeEndingSlashes = this._normalizeEndingSlashes;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorUrlParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._normalizeEndingSlashes = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._normalizeEndingSlashes = value.normalizeEndingSlashes;
+      this._sources = value.sources;
+      this._target = value.target;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2835,15 +3876,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2851,15 +3892,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // normalize_ending_slashes - computed: false, optional: true, required: false
-  private _normalizeEndingSlashes?: boolean | cdktf.IResolvable | undefined; 
+  private _normalizeEndingSlashes?: boolean | cdktf.IResolvable; 
   public get normalizeEndingSlashes() {
     return this.getBooleanAttribute('normalize_ending_slashes') as any;
   }
-  public set normalizeEndingSlashes(value: boolean | cdktf.IResolvable | undefined) {
+  public set normalizeEndingSlashes(value: boolean | cdktf.IResolvable) {
     this._normalizeEndingSlashes = value;
   }
   public resetNormalizeEndingSlashes() {
@@ -2867,7 +3908,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
   // Temporarily expose input value. Use with caution.
   public get normalizeEndingSlashesInput() {
-    return this._normalizeEndingSlashes
+    return this._normalizeEndingSlashes;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -2880,7 +3921,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -2893,7 +3934,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
@@ -2929,7 +3970,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
+export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2944,6 +3985,8 @@ function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTerraform(
 }
 
 export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -2953,12 +3996,57 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorUserAgentParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._isEncoded) {
+      hasAnyValues = true;
+      internalValueResult.isEncoded = this._isEncoded;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorUserAgentParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._isEncoded = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._isEncoded = value.isEncoded;
+      this._name = value.name;
+      this._sources = value.sources;
+      this._target = value.target;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2966,15 +4054,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // is_encoded - computed: false, optional: true, required: false
-  private _isEncoded?: boolean | cdktf.IResolvable | undefined; 
+  private _isEncoded?: boolean | cdktf.IResolvable; 
   public get isEncoded() {
     return this.getBooleanAttribute('is_encoded') as any;
   }
-  public set isEncoded(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEncoded(value: boolean | cdktf.IResolvable) {
     this._isEncoded = value;
   }
   public resetIsEncoded() {
@@ -2982,15 +4070,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get isEncodedInput() {
-    return this._isEncoded
+    return this._isEncoded;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -2998,7 +4086,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -3011,7 +4099,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -3024,7 +4112,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessor {
@@ -3114,7 +4202,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessor {
   readonly userAgentParser?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParser;
 }
 
-function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor): any {
+export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3160,7 +4248,7 @@ export interface LogsCustomPipelineProcessorPipeline {
   readonly processor?: LogsCustomPipelineProcessorPipelineProcessor[];
 }
 
-function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
+export function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3174,6 +4262,8 @@ function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCustomPipel
 }
 
 export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3183,12 +4273,51 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorPipeline | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._filter) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
+    if (this._processor) {
+      hasAnyValues = true;
+      internalValueResult.processor = this._processor;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipeline | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._filter = undefined;
+      this._processor = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._filter = value.filter;
+      this._processor = value.processor;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3196,7 +4325,7 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: false, required: true
@@ -3209,7 +4338,7 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // filter - computed: false, optional: false, required: true
@@ -3223,16 +4352,16 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter;
   }
 
   // processor - computed: false, optional: true, required: false
-  private _processor?: LogsCustomPipelineProcessorPipelineProcessor[] | undefined; 
+  private _processor?: LogsCustomPipelineProcessorPipelineProcessor[]; 
   public get processor() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('processor') as any;
   }
-  public set processor(value: LogsCustomPipelineProcessorPipelineProcessor[] | undefined) {
+  public set processor(value: LogsCustomPipelineProcessorPipelineProcessor[]) {
     this._processor = value;
   }
   public resetProcessor() {
@@ -3240,7 +4369,7 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get processorInput() {
-    return this._processor
+    return this._processor;
   }
 }
 export interface LogsCustomPipelineProcessorServiceRemapper {
@@ -3264,7 +4393,7 @@ export interface LogsCustomPipelineProcessorServiceRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
+export function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3277,6 +4406,8 @@ function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: LogsCust
 }
 
 export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3286,12 +4417,45 @@ export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorServiceRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorServiceRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3299,15 +4463,15 @@ export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -3315,7 +4479,7 @@ export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -3328,7 +4492,7 @@ export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorStatusRemapper {
@@ -3352,7 +4516,7 @@ export interface LogsCustomPipelineProcessorStatusRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
+export function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3365,6 +4529,8 @@ function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: LogsCusto
 }
 
 export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3374,12 +4540,45 @@ export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cd
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorStatusRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorStatusRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3387,15 +4586,15 @@ export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cd
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -3403,7 +4602,7 @@ export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cd
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -3416,7 +4615,7 @@ export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cd
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorStringBuilderProcessor {
@@ -3452,7 +4651,7 @@ export interface LogsCustomPipelineProcessorStringBuilderProcessor {
   readonly template: string;
 }
 
-function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
+export function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3467,6 +4666,8 @@ function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(struct?: L
 }
 
 export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3476,12 +4677,57 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorStringBuilderProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._isReplaceMissing) {
+      hasAnyValues = true;
+      internalValueResult.isReplaceMissing = this._isReplaceMissing;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._template) {
+      hasAnyValues = true;
+      internalValueResult.template = this._template;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorStringBuilderProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._isReplaceMissing = undefined;
+      this._name = undefined;
+      this._target = undefined;
+      this._template = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._isReplaceMissing = value.isReplaceMissing;
+      this._name = value.name;
+      this._target = value.target;
+      this._template = value.template;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3489,15 +4735,15 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable | undefined; 
+  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing') as any;
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable | undefined) {
+  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -3505,15 +4751,15 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
   // Temporarily expose input value. Use with caution.
   public get isReplaceMissingInput() {
-    return this._isReplaceMissing
+    return this._isReplaceMissing;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -3521,7 +4767,7 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // target - computed: false, optional: false, required: true
@@ -3534,7 +4780,7 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // template - computed: false, optional: false, required: true
@@ -3547,7 +4793,7 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
   // Temporarily expose input value. Use with caution.
   public get templateInput() {
-    return this._template
+    return this._template;
   }
 }
 export interface LogsCustomPipelineProcessorTraceIdRemapper {
@@ -3571,7 +4817,7 @@ export interface LogsCustomPipelineProcessorTraceIdRemapper {
   readonly sources: string[];
 }
 
-function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
+export function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3584,6 +4830,8 @@ function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCust
 }
 
 export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3593,12 +4841,45 @@ export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorTraceIdRemapper | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorTraceIdRemapper | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._sources = value.sources;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3606,15 +4887,15 @@ export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -3622,7 +4903,7 @@ export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -3635,7 +4916,7 @@ export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 }
 export interface LogsCustomPipelineProcessorUrlParser {
@@ -3671,7 +4952,7 @@ export interface LogsCustomPipelineProcessorUrlParser {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
+export function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3686,6 +4967,8 @@ function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipe
 }
 
 export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3695,12 +4978,57 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorUrlParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._normalizeEndingSlashes) {
+      hasAnyValues = true;
+      internalValueResult.normalizeEndingSlashes = this._normalizeEndingSlashes;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorUrlParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._normalizeEndingSlashes = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._normalizeEndingSlashes = value.normalizeEndingSlashes;
+      this._sources = value.sources;
+      this._target = value.target;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3708,15 +5036,15 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -3724,15 +5052,15 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // normalize_ending_slashes - computed: false, optional: true, required: false
-  private _normalizeEndingSlashes?: boolean | cdktf.IResolvable | undefined; 
+  private _normalizeEndingSlashes?: boolean | cdktf.IResolvable; 
   public get normalizeEndingSlashes() {
     return this.getBooleanAttribute('normalize_ending_slashes') as any;
   }
-  public set normalizeEndingSlashes(value: boolean | cdktf.IResolvable | undefined) {
+  public set normalizeEndingSlashes(value: boolean | cdktf.IResolvable) {
     this._normalizeEndingSlashes = value;
   }
   public resetNormalizeEndingSlashes() {
@@ -3740,7 +5068,7 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get normalizeEndingSlashesInput() {
-    return this._normalizeEndingSlashes
+    return this._normalizeEndingSlashes;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -3753,7 +5081,7 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -3766,7 +5094,7 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorUserAgentParser {
@@ -3802,7 +5130,7 @@ export interface LogsCustomPipelineProcessorUserAgentParser {
   readonly target: string;
 }
 
-function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
+export function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -3817,6 +5145,8 @@ function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: LogsCust
 }
 
 export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -3826,12 +5156,57 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LogsCustomPipelineProcessorUserAgentParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._isEncoded) {
+      hasAnyValues = true;
+      internalValueResult.isEncoded = this._isEncoded;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sources) {
+      hasAnyValues = true;
+      internalValueResult.sources = this._sources;
+    }
+    if (this._target) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorUserAgentParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._isEncoded = undefined;
+      this._name = undefined;
+      this._sources = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._isEncoded = value.isEncoded;
+      this._name = value.name;
+      this._sources = value.sources;
+      this._target = value.target;
+    }
+  }
+
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3839,15 +5214,15 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // is_encoded - computed: false, optional: true, required: false
-  private _isEncoded?: boolean | cdktf.IResolvable | undefined; 
+  private _isEncoded?: boolean | cdktf.IResolvable; 
   public get isEncoded() {
     return this.getBooleanAttribute('is_encoded') as any;
   }
-  public set isEncoded(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEncoded(value: boolean | cdktf.IResolvable) {
     this._isEncoded = value;
   }
   public resetIsEncoded() {
@@ -3855,15 +5230,15 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get isEncodedInput() {
-    return this._isEncoded
+    return this._isEncoded;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -3871,7 +5246,7 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // sources - computed: false, optional: false, required: true
@@ -3884,7 +5259,7 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get sourcesInput() {
-    return this._sources
+    return this._sources;
   }
 
   // target - computed: false, optional: false, required: true
@@ -3897,7 +5272,7 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessor {
@@ -3993,7 +5368,7 @@ export interface LogsCustomPipelineProcessor {
   readonly userAgentParser?: LogsCustomPipelineProcessorUserAgentParser;
 }
 
-function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessor): any {
+export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4066,11 +5441,11 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -4078,7 +5453,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: false, required: true
@@ -4091,7 +5466,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // filter - computed: false, optional: false, required: true
@@ -4105,16 +5480,16 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter;
   }
 
   // processor - computed: false, optional: true, required: false
-  private _processor?: LogsCustomPipelineProcessor[] | undefined; 
+  private _processor?: LogsCustomPipelineProcessor[]; 
   public get processor() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('processor') as any;
   }
-  public set processor(value: LogsCustomPipelineProcessor[] | undefined) {
+  public set processor(value: LogsCustomPipelineProcessor[]) {
     this._processor = value;
   }
   public resetProcessor() {
@@ -4122,7 +5497,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get processorInput() {
-    return this._processor
+    return this._processor;
   }
 
   // =========

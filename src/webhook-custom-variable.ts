@@ -83,7 +83,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isSecretInput() {
-    return this._isSecret
+    return this._isSecret;
   }
 
   // name - computed: false, optional: false, required: true
@@ -96,7 +96,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // value - computed: false, optional: false, required: true
@@ -109,7 +109,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 
   // =========

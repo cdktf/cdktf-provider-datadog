@@ -107,7 +107,7 @@ export interface DowntimeRecurrence {
   readonly weekDays?: string[];
 }
 
-function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputReference | DowntimeRecurrence): any {
+export function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputReference | DowntimeRecurrence): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -123,6 +123,8 @@ function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputReferenc
 }
 
 export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -132,12 +134,63 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DowntimeRecurrence | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._period) {
+      hasAnyValues = true;
+      internalValueResult.period = this._period;
+    }
+    if (this._rrule) {
+      hasAnyValues = true;
+      internalValueResult.rrule = this._rrule;
+    }
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._untilDate) {
+      hasAnyValues = true;
+      internalValueResult.untilDate = this._untilDate;
+    }
+    if (this._untilOccurrences) {
+      hasAnyValues = true;
+      internalValueResult.untilOccurrences = this._untilOccurrences;
+    }
+    if (this._weekDays) {
+      hasAnyValues = true;
+      internalValueResult.weekDays = this._weekDays;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DowntimeRecurrence | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._period = undefined;
+      this._rrule = undefined;
+      this._type = undefined;
+      this._untilDate = undefined;
+      this._untilOccurrences = undefined;
+      this._weekDays = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._period = value.period;
+      this._rrule = value.rrule;
+      this._type = value.type;
+      this._untilDate = value.untilDate;
+      this._untilOccurrences = value.untilOccurrences;
+      this._weekDays = value.weekDays;
+    }
+  }
+
   // period - computed: false, optional: true, required: false
-  private _period?: number | undefined; 
+  private _period?: number; 
   public get period() {
     return this.getNumberAttribute('period');
   }
-  public set period(value: number | undefined) {
+  public set period(value: number) {
     this._period = value;
   }
   public resetPeriod() {
@@ -145,15 +198,15 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get periodInput() {
-    return this._period
+    return this._period;
   }
 
   // rrule - computed: false, optional: true, required: false
-  private _rrule?: string | undefined; 
+  private _rrule?: string; 
   public get rrule() {
     return this.getStringAttribute('rrule');
   }
-  public set rrule(value: string | undefined) {
+  public set rrule(value: string) {
     this._rrule = value;
   }
   public resetRrule() {
@@ -161,7 +214,7 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get rruleInput() {
-    return this._rrule
+    return this._rrule;
   }
 
   // type - computed: false, optional: false, required: true
@@ -174,15 +227,15 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // until_date - computed: false, optional: true, required: false
-  private _untilDate?: number | undefined; 
+  private _untilDate?: number; 
   public get untilDate() {
     return this.getNumberAttribute('until_date');
   }
-  public set untilDate(value: number | undefined) {
+  public set untilDate(value: number) {
     this._untilDate = value;
   }
   public resetUntilDate() {
@@ -190,15 +243,15 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get untilDateInput() {
-    return this._untilDate
+    return this._untilDate;
   }
 
   // until_occurrences - computed: false, optional: true, required: false
-  private _untilOccurrences?: number | undefined; 
+  private _untilOccurrences?: number; 
   public get untilOccurrences() {
     return this.getNumberAttribute('until_occurrences');
   }
-  public set untilOccurrences(value: number | undefined) {
+  public set untilOccurrences(value: number) {
     this._untilOccurrences = value;
   }
   public resetUntilOccurrences() {
@@ -206,15 +259,15 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get untilOccurrencesInput() {
-    return this._untilOccurrences
+    return this._untilOccurrences;
   }
 
   // week_days - computed: false, optional: true, required: false
-  private _weekDays?: string[] | undefined; 
+  private _weekDays?: string[]; 
   public get weekDays() {
     return this.getListAttribute('week_days');
   }
-  public set weekDays(value: string[] | undefined) {
+  public set weekDays(value: string[]) {
     this._weekDays = value;
   }
   public resetWeekDays() {
@@ -222,7 +275,7 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get weekDaysInput() {
-    return this._weekDays
+    return this._weekDays;
   }
 }
 
@@ -267,7 +320,7 @@ export class Downtime extends cdktf.TerraformResource {
     this._start = config.start;
     this._startDate = config.startDate;
     this._timezone = config.timezone;
-    this._recurrence = config.recurrence;
+    this._recurrence.internalValue = config.recurrence;
   }
 
   // ==========
@@ -290,11 +343,11 @@ export class Downtime extends cdktf.TerraformResource {
   }
 
   // end - computed: false, optional: true, required: false
-  private _end?: number | undefined; 
+  private _end?: number; 
   public get end() {
     return this.getNumberAttribute('end');
   }
-  public set end(value: number | undefined) {
+  public set end(value: number) {
     this._end = value;
   }
   public resetEnd() {
@@ -302,15 +355,15 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endInput() {
-    return this._end
+    return this._end;
   }
 
   // end_date - computed: false, optional: true, required: false
-  private _endDate?: string | undefined; 
+  private _endDate?: string; 
   public get endDate() {
     return this.getStringAttribute('end_date');
   }
-  public set endDate(value: string | undefined) {
+  public set endDate(value: string) {
     this._endDate = value;
   }
   public resetEndDate() {
@@ -318,7 +371,7 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endDateInput() {
-    return this._endDate
+    return this._endDate;
   }
 
   // id - computed: true, optional: true, required: false
@@ -327,11 +380,11 @@ export class Downtime extends cdktf.TerraformResource {
   }
 
   // message - computed: false, optional: true, required: false
-  private _message?: string | undefined; 
+  private _message?: string; 
   public get message() {
     return this.getStringAttribute('message');
   }
-  public set message(value: string | undefined) {
+  public set message(value: string) {
     this._message = value;
   }
   public resetMessage() {
@@ -339,15 +392,15 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get messageInput() {
-    return this._message
+    return this._message;
   }
 
   // monitor_id - computed: false, optional: true, required: false
-  private _monitorId?: number | undefined; 
+  private _monitorId?: number; 
   public get monitorId() {
     return this.getNumberAttribute('monitor_id');
   }
-  public set monitorId(value: number | undefined) {
+  public set monitorId(value: number) {
     this._monitorId = value;
   }
   public resetMonitorId() {
@@ -355,15 +408,15 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorIdInput() {
-    return this._monitorId
+    return this._monitorId;
   }
 
   // monitor_tags - computed: false, optional: true, required: false
-  private _monitorTags?: string[] | undefined; 
+  private _monitorTags?: string[]; 
   public get monitorTags() {
     return this.getListAttribute('monitor_tags');
   }
-  public set monitorTags(value: string[] | undefined) {
+  public set monitorTags(value: string[]) {
     this._monitorTags = value;
   }
   public resetMonitorTags() {
@@ -371,7 +424,7 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorTagsInput() {
-    return this._monitorTags
+    return this._monitorTags;
   }
 
   // scope - computed: false, optional: false, required: true
@@ -384,15 +437,15 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scopeInput() {
-    return this._scope
+    return this._scope;
   }
 
   // start - computed: false, optional: true, required: false
-  private _start?: number | undefined; 
+  private _start?: number; 
   public get start() {
     return this.getNumberAttribute('start');
   }
-  public set start(value: number | undefined) {
+  public set start(value: number) {
     this._start = value;
   }
   public resetStart() {
@@ -400,15 +453,15 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startInput() {
-    return this._start
+    return this._start;
   }
 
   // start_date - computed: false, optional: true, required: false
-  private _startDate?: string | undefined; 
+  private _startDate?: string; 
   public get startDate() {
     return this.getStringAttribute('start_date');
   }
-  public set startDate(value: string | undefined) {
+  public set startDate(value: string) {
     this._startDate = value;
   }
   public resetStartDate() {
@@ -416,15 +469,15 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startDateInput() {
-    return this._startDate
+    return this._startDate;
   }
 
   // timezone - computed: false, optional: true, required: false
-  private _timezone?: string | undefined; 
+  private _timezone?: string; 
   public get timezone() {
     return this.getStringAttribute('timezone');
   }
-  public set timezone(value: string | undefined) {
+  public set timezone(value: string) {
     this._timezone = value;
   }
   public resetTimezone() {
@@ -432,24 +485,23 @@ export class Downtime extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timezoneInput() {
-    return this._timezone
+    return this._timezone;
   }
 
   // recurrence - computed: false, optional: true, required: false
-  private _recurrence?: DowntimeRecurrence | undefined; 
-  private __recurrenceOutput = new DowntimeRecurrenceOutputReference(this as any, "recurrence", true);
+  private _recurrence = new DowntimeRecurrenceOutputReference(this as any, "recurrence", true);
   public get recurrence() {
-    return this.__recurrenceOutput;
+    return this._recurrence;
   }
-  public putRecurrence(value: DowntimeRecurrence | undefined) {
-    this._recurrence = value;
+  public putRecurrence(value: DowntimeRecurrence) {
+    this._recurrence.internalValue = value;
   }
   public resetRecurrence() {
-    this._recurrence = undefined;
+    this._recurrence.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get recurrenceInput() {
-    return this._recurrence
+    return this._recurrence.internalValue;
   }
 
   // =========
@@ -467,7 +519,7 @@ export class Downtime extends cdktf.TerraformResource {
       start: cdktf.numberToTerraform(this._start),
       start_date: cdktf.stringToTerraform(this._startDate),
       timezone: cdktf.stringToTerraform(this._timezone),
-      recurrence: downtimeRecurrenceToTerraform(this._recurrence),
+      recurrence: downtimeRecurrenceToTerraform(this._recurrence.internalValue),
     };
   }
 }

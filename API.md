@@ -1613,7 +1613,7 @@ Name|Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1668,7 +1668,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1723,7 +1723,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2086,7 +2086,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2125,31 +2125,31 @@ new Dashboard(scope: Construct, id: string, config: DashboardConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**dashboardLists** | <code>Array<number></code> | <span></span>
 **dashboardListsRemoved** | <code>any</code> | <span></span>
+**description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**isReadOnly** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **layoutType** | <code>string</code> | <span></span>
+**notifyList** | <code>Array<string></code> | <span></span>
+**reflowType** | <code>string</code> | <span></span>
+**restrictedRoles** | <code>Array<string></code> | <span></span>
+**templateVariable** | <code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code> | <span></span>
+**templateVariablePreset** | <code>Array<[DashboardTemplateVariablePreset](#cdktf-provider-datadog-dashboardtemplatevariablepreset)></code> | <span></span>
 **title** | <code>string</code> | <span></span>
-**dashboardLists**? | <code>Array<number></code> | __*Optional*__
+**url** | <code>string</code> | <span></span>
+**widget** | <code>Array<[DashboardWidget](#cdktf-provider-datadog-dashboardwidget)></code> | <span></span>
 **dashboardListsInput**? | <code>Array<number></code> | __*Optional*__
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**isReadOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isReadOnlyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **layoutTypeInput**? | <code>string</code> | __*Optional*__
-**notifyList**? | <code>Array<string></code> | __*Optional*__
 **notifyListInput**? | <code>Array<string></code> | __*Optional*__
-**reflowType**? | <code>string</code> | __*Optional*__
 **reflowTypeInput**? | <code>string</code> | __*Optional*__
-**restrictedRoles**? | <code>Array<string></code> | __*Optional*__
 **restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
-**templateVariable**? | <code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code> | __*Optional*__
 **templateVariableInput**? | <code>Array<[DashboardTemplateVariable](#cdktf-provider-datadog-dashboardtemplatevariable)></code> | __*Optional*__
-**templateVariablePreset**? | <code>Array<[DashboardTemplateVariablePreset](#cdktf-provider-datadog-dashboardtemplatevariablepreset)></code> | __*Optional*__
 **templateVariablePresetInput**? | <code>Array<[DashboardTemplateVariablePreset](#cdktf-provider-datadog-dashboardtemplatevariablepreset)></code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**url**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
-**widget**? | <code>Array<[DashboardWidget](#cdktf-provider-datadog-dashboardwidget)></code> | __*Optional*__
 **widgetInput**? | <code>Array<[DashboardWidget](#cdktf-provider-datadog-dashboardwidget)></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2294,7 +2294,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2325,12 +2325,12 @@ new DashboardJson(scope: Construct, id: string, config: DashboardJsonConfig)
 Name | Type | Description 
 -----|------|-------------
 **dashboard** | <code>string</code> | <span></span>
+**dashboardLists** | <code>Array<number></code> | <span></span>
 **dashboardListsRemoved** | <code>any</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**url** | <code>string</code> | <span></span>
 **dashboardInput**? | <code>string</code> | __*Optional*__
-**dashboardLists**? | <code>Array<number></code> | __*Optional*__
 **dashboardListsInput**? | <code>Array<number></code> | __*Optional*__
-**url**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2379,7 +2379,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -2408,9 +2408,9 @@ new DashboardList(scope: Construct, id: string, config: DashboardListConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**dashItem** | <code>Array<[DashboardListDashItem](#cdktf-provider-datadog-dashboardlistdashitem)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**dashItem**? | <code>Array<[DashboardListDashItem](#cdktf-provider-datadog-dashboardlistdashitem)></code> | __*Optional*__
 **dashItemInput**? | <code>Array<[DashboardListDashItem](#cdktf-provider-datadog-dashboardlistdashitem)></code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -2471,15 +2471,16 @@ new DashboardWidgetAlertGraphDefinitionOutputReference(terraformResource: ITerra
 Name | Type | Description 
 -----|------|-------------
 **alertId** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **vizType** | <code>string</code> | <span></span>
 **alertIdInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetAlertGraphDefinition](#cdktf-provider-datadog-dashboardwidgetalertgraphdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **vizTypeInput**? | <code>string</code> | __*Optional*__
 
@@ -2563,18 +2564,19 @@ new DashboardWidgetAlertValueDefinitionOutputReference(terraformResource: ITerra
 Name | Type | Description 
 -----|------|-------------
 **alertId** | <code>string</code> | <span></span>
+**precision** | <code>number</code> | <span></span>
+**textAlign** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
+**unit** | <code>string</code> | <span></span>
 **alertIdInput**? | <code>string</code> | __*Optional*__
-**precision**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetAlertValueDefinition](#cdktf-provider-datadog-dashboardwidgetalertvaluedefinition)</code> | __*Optional*__
 **precisionInput**? | <code>number</code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
-**unit**? | <code>string</code> | __*Optional*__
 **unitInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -2680,17 +2682,18 @@ new DashboardWidgetChangeDefinitionOutputReference(terraformResource: ITerraform
 
 Name | Type | Description 
 -----|------|-------------
-**customLink**? | <code>Array<[DashboardWidgetChangeDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetchangedefinitioncustomlink)></code> | __*Optional*__
+**customLink** | <code>Array<[DashboardWidgetChangeDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetchangedefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetChangeDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetchangedefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinition](#cdktf-provider-datadog-dashboardwidgetchangedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequest)></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -2797,10 +2800,11 @@ new DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference(te
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -2859,10 +2863,11 @@ new DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -2909,25 +2914,26 @@ new DashboardWidgetChangeDefinitionRequestApmQueryOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -3015,10 +3021,11 @@ new DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference(te
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -3077,10 +3084,11 @@ new DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -3127,25 +3135,26 @@ new DashboardWidgetChangeDefinitionRequestLogQueryOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -3232,13 +3241,14 @@ new DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference(terraformR
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -3309,10 +3319,11 @@ new DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference(te
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -3371,10 +3382,11 @@ new DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -3421,25 +3433,26 @@ new DashboardWidgetChangeDefinitionRequestRumQueryOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -3527,10 +3540,11 @@ new DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -3589,10 +3603,11 @@ new DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -3639,25 +3654,26 @@ new DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -3745,22 +3761,23 @@ new DashboardWidgetCheckStatusDefinitionOutputReference(terraformResource: ITerr
 Name | Type | Description 
 -----|------|-------------
 **check** | <code>string</code> | <span></span>
+**group** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **grouping** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **checkInput**? | <code>string</code> | __*Optional*__
-**group**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
 **groupInput**? | <code>string</code> | __*Optional*__
 **groupingInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetCheckStatusDefinition](#cdktf-provider-datadog-dashboardwidgetcheckstatusdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -3878,19 +3895,20 @@ new DashboardWidgetDistributionDefinitionOutputReference(terraformResource: ITer
 
 Name | Type | Description 
 -----|------|-------------
-**legendSize**? | <code>string</code> | __*Optional*__
+**legendSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequest)></code> | <span></span>
+**showLegend** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetDistributionDefinition](#cdktf-provider-datadog-dashboardwidgetdistributiondefinition)</code> | __*Optional*__
 **legendSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequest)></code> | __*Optional*__
-**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLegendInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -4009,10 +4027,11 @@ new DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -4071,10 +4090,11 @@ new DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -4121,25 +4141,26 @@ new DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -4227,10 +4248,11 @@ new DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -4289,10 +4311,11 @@ new DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -4339,25 +4362,26 @@ new DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -4444,13 +4468,14 @@ new DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -4521,10 +4546,11 @@ new DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -4583,10 +4609,11 @@ new DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -4633,25 +4660,26 @@ new DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -4739,10 +4767,11 @@ new DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputR
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -4801,10 +4830,11 @@ new DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOut
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -4851,25 +4881,26 @@ new DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference(ter
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -4956,7 +4987,8 @@ new DashboardWidgetDistributionDefinitionRequestStyleOutputReference(terraformRe
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | __*Optional*__
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequeststyle)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -5002,19 +5034,20 @@ new DashboardWidgetEventStreamDefinitionOutputReference(terraformResource: ITerr
 
 Name | Type | Description 
 -----|------|-------------
+**eventSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**eventSize**? | <code>string</code> | __*Optional*__
+**tagsExecution** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **eventSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetEventStreamDefinition](#cdktf-provider-datadog-dashboardwidgeteventstreamdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**tagsExecution**? | <code>string</code> | __*Optional*__
 **tagsExecutionInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -5120,17 +5153,18 @@ new DashboardWidgetEventTimelineDefinitionOutputReference(terraformResource: ITe
 
 Name | Type | Description 
 -----|------|-------------
+**liveSpan** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**liveSpan**? | <code>string</code> | __*Optional*__
+**tagsExecution** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetEventTimelineDefinition](#cdktf-provider-datadog-dashboardwidgeteventtimelinedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**tagsExecution**? | <code>string</code> | __*Optional*__
 **tagsExecutionInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -5224,12 +5258,13 @@ new DashboardWidgetFreeTextDefinitionOutputReference(terraformResource: ITerrafo
 
 Name | Type | Description 
 -----|------|-------------
+**color** | <code>string</code> | <span></span>
+**fontSize** | <code>string</code> | <span></span>
 **text** | <code>string</code> | <span></span>
-**color**? | <code>string</code> | __*Optional*__
+**textAlign** | <code>string</code> | <span></span>
 **colorInput**? | <code>string</code> | __*Optional*__
-**fontSize**? | <code>string</code> | __*Optional*__
 **fontSizeInput**? | <code>string</code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetFreeTextDefinition](#cdktf-provider-datadog-dashboardwidgetfreetextdefinition)</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
 **textInput**? | <code>string</code> | __*Optional*__
 
@@ -5300,32 +5335,33 @@ new DashboardWidgetGeomapDefinitionOutputReference(terraformResource: ITerraform
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequest)></code> | <span></span>
 **style** | <code>[DashboardWidgetGeomapDefinitionStyleOutputReference](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionstyleoutputreference)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **view** | <code>[DashboardWidgetGeomapDefinitionViewOutputReference](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionviewoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinition](#cdktf-provider-datadog-dashboardwidgetgeomapdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequest)></code> | __*Optional*__
 **styleInput**? | <code>[DashboardWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionstyle)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **viewInput**? | <code>[DashboardWidgetGeomapDefinitionView](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionview)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putStyle(value?) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionoutputreference-putstyle"></a>
+#### putStyle(value) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionoutputreference-putstyle"></a>
 
 
 
 ```ts
-putStyle(value?: DashboardWidgetGeomapDefinitionStyle): void
+putStyle(value: DashboardWidgetGeomapDefinitionStyle): void
 ```
 
 * **value** (<code>[DashboardWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionstyle)</code>)  *No description*
@@ -5461,9 +5497,10 @@ new DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference(terraformR
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -5522,10 +5559,11 @@ new DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference(te
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -5584,10 +5622,11 @@ new DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -5634,25 +5673,26 @@ new DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -5741,20 +5781,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -5829,21 +5870,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -5940,10 +5982,11 @@ new DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -6003,26 +6046,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -6096,6 +6140,7 @@ new DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -6126,12 +6171,13 @@ new DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -6190,23 +6236,24 @@ new DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -6313,10 +6360,11 @@ new DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference(te
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -6375,10 +6423,11 @@ new DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -6425,25 +6474,26 @@ new DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -6532,6 +6582,7 @@ Name | Type | Description
 -----|------|-------------
 **palette** | <code>string</code> | <span></span>
 **paletteFlip** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionstyle)</code> | __*Optional*__
 **paletteFlipInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
@@ -6565,6 +6616,7 @@ Name | Type | Description
 -----|------|-------------
 **focus** | <code>string</code> | <span></span>
 **focusInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGeomapDefinitionView](#cdktf-provider-datadog-dashboardwidgetgeomapdefinitionview)</code> | __*Optional*__
 
 
 
@@ -6594,16 +6646,17 @@ new DashboardWidgetGroupDefinitionOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
+**backgroundColor** | <code>string</code> | <span></span>
+**bannerImg** | <code>string</code> | <span></span>
 **layoutType** | <code>string</code> | <span></span>
+**showTitle** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
 **widget** | <code>Array<[DashboardWidgetGroupDefinitionWidget](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidget)></code> | <span></span>
-**backgroundColor**? | <code>string</code> | __*Optional*__
 **backgroundColorInput**? | <code>string</code> | __*Optional*__
-**bannerImg**? | <code>string</code> | __*Optional*__
 **bannerImgInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinition)</code> | __*Optional*__
 **layoutTypeInput**? | <code>string</code> | __*Optional*__
-**showTitle**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showTitleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
 **widgetInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidget](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidget)></code> | __*Optional*__
 
@@ -6687,15 +6740,16 @@ new DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference(terr
 Name | Type | Description 
 -----|------|-------------
 **alertId** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **vizType** | <code>string</code> | <span></span>
 **alertIdInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetalertgraphdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **vizTypeInput**? | <code>string</code> | __*Optional*__
 
@@ -6779,18 +6833,19 @@ new DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference(terr
 Name | Type | Description 
 -----|------|-------------
 **alertId** | <code>string</code> | <span></span>
+**precision** | <code>number</code> | <span></span>
+**textAlign** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
+**unit** | <code>string</code> | <span></span>
 **alertIdInput**? | <code>string</code> | __*Optional*__
-**precision**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetAlertValueDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetalertvaluedefinition)</code> | __*Optional*__
 **precisionInput**? | <code>number</code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
-**unit**? | <code>string</code> | __*Optional*__
 **unitInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -6896,17 +6951,18 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionOutputReference(terrafor
 
 Name | Type | Description 
 -----|------|-------------
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitioncustomlink)></code> | __*Optional*__
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequest)></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -7013,10 +7069,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -7075,10 +7132,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySo
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -7125,25 +7183,26 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -7231,10 +7290,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -7293,10 +7353,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySo
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -7343,25 +7404,26 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -7448,13 +7510,14 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQueryOutpu
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -7525,10 +7588,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -7587,10 +7651,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBySo
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -7637,25 +7702,26 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -7743,10 +7809,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -7805,10 +7872,11 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -7855,25 +7923,26 @@ new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -7961,22 +8030,23 @@ new DashboardWidgetGroupDefinitionWidgetCheckStatusDefinitionOutputReference(ter
 Name | Type | Description 
 -----|------|-------------
 **check** | <code>string</code> | <span></span>
+**group** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **grouping** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **checkInput**? | <code>string</code> | __*Optional*__
-**group**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
 **groupInput**? | <code>string</code> | __*Optional*__
 **groupingInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetCheckStatusDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetcheckstatusdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -8094,19 +8164,20 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
-**legendSize**? | <code>string</code> | __*Optional*__
+**legendSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequest)></code> | <span></span>
+**showLegend** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinition)</code> | __*Optional*__
 **legendSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequest)></code> | __*Optional*__
-**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLegendInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -8225,10 +8296,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -8287,10 +8359,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -8337,25 +8410,26 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -8443,10 +8517,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -8505,10 +8580,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -8555,25 +8631,26 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -8660,13 +8737,14 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestProcessQuer
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -8737,10 +8815,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -8799,10 +8878,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -8849,25 +8929,26 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -8955,10 +9036,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -9017,10 +9099,11 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -9067,25 +9150,26 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -9172,7 +9256,8 @@ new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestStyleOutput
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | __*Optional*__
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequeststyle)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -9218,19 +9303,20 @@ new DashboardWidgetGroupDefinitionWidgetEventStreamDefinitionOutputReference(ter
 
 Name | Type | Description 
 -----|------|-------------
+**eventSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**eventSize**? | <code>string</code> | __*Optional*__
+**tagsExecution** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **eventSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetEventStreamDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgeteventstreamdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**tagsExecution**? | <code>string</code> | __*Optional*__
 **tagsExecutionInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -9336,17 +9422,18 @@ new DashboardWidgetGroupDefinitionWidgetEventTimelineDefinitionOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**liveSpan** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**liveSpan**? | <code>string</code> | __*Optional*__
+**tagsExecution** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetEventTimelineDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgeteventtimelinedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**tagsExecution**? | <code>string</code> | __*Optional*__
 **tagsExecutionInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -9440,12 +9527,13 @@ new DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
+**color** | <code>string</code> | <span></span>
+**fontSize** | <code>string</code> | <span></span>
 **text** | <code>string</code> | <span></span>
-**color**? | <code>string</code> | __*Optional*__
+**textAlign** | <code>string</code> | <span></span>
 **colorInput**? | <code>string</code> | __*Optional*__
-**fontSize**? | <code>string</code> | __*Optional*__
 **fontSizeInput**? | <code>string</code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetFreeTextDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetfreetextdefinition)</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
 **textInput**? | <code>string</code> | __*Optional*__
 
@@ -9516,32 +9604,33 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionOutputReference(terrafor
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequest)></code> | <span></span>
 **style** | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyleOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionstyleoutputreference)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **view** | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionViewOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionviewoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequest)></code> | __*Optional*__
 **styleInput**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionstyle)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **viewInput**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionView](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionview)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putStyle(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionoutputreference-putstyle"></a>
+#### putStyle(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionoutputreference-putstyle"></a>
 
 
 
 ```ts
-putStyle(value?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyle): void
+putStyle(value: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyle): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionstyle)</code>)  *No description*
@@ -9677,9 +9766,10 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimitOutpu
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -9738,10 +9828,11 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -9800,10 +9891,11 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBySo
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -9850,25 +9942,26 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -9957,20 +10050,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -10045,21 +10139,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -10156,10 +10251,11 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGr
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -10219,26 +10315,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -10312,6 +10409,7 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySe
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -10342,12 +10440,13 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQueryO
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -10406,23 +10505,24 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryProcessQuery
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -10529,10 +10629,11 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -10591,10 +10692,11 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBySo
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -10641,25 +10743,26 @@ new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -10748,6 +10851,7 @@ Name | Type | Description
 -----|------|-------------
 **palette** | <code>string</code> | <span></span>
 **paletteFlip** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionstyle)</code> | __*Optional*__
 **paletteFlipInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
@@ -10781,6 +10885,7 @@ Name | Type | Description
 -----|------|-------------
 **focus** | <code>string</code> | <span></span>
 **focusInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetGeomapDefinitionView](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetgeomapdefinitionview)</code> | __*Optional*__
 
 
 
@@ -10810,36 +10915,37 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(terrafo
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitioncustomlink)></code> | <span></span>
+**event** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionevent)></code> | <span></span>
+**legendSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequest)></code> | <span></span>
+**showLegend** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **yaxis** | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionyaxisoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitioncustomlink)></code> | __*Optional*__
-**event**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionevent)></code> | __*Optional*__
 **eventInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionevent)></code> | __*Optional*__
-**legendSize**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinition)</code> | __*Optional*__
 **legendSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequest)></code> | __*Optional*__
-**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLegendInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **yaxisInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionyaxis)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionoutputreference-putyaxis"></a>
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionoutputreference-putyaxis"></a>
 
 
 
 ```ts
-putYaxis(value?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis): void
+putYaxis(value: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionyaxis)</code>)  *No description*
@@ -11001,10 +11107,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQ
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -11063,10 +11170,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupByS
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -11113,25 +11221,26 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -11219,10 +11328,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQ
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -11281,10 +11391,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupByS
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -11331,25 +11442,26 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -11436,13 +11548,14 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQueryOutp
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -11513,10 +11626,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQ
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -11575,10 +11689,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupByS
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -11625,25 +11740,26 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -11731,10 +11847,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -11793,10 +11910,11 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -11843,25 +11961,26 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -11948,7 +12067,8 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestStyleOutputRefer
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | __*Optional*__
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionrequeststyle)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -11994,15 +12114,16 @@ new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxisOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetheatmapdefinitionyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -12096,38 +12217,39 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionOutputReference(terrafo
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitioncustomlink)></code> | <span></span>
+**group** | <code>Array<string></code> | <span></span>
+**noGroupHosts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**noMetricHosts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**nodeType** | <code>string</code> | <span></span>
 **request** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestoutputreference)</code> | <span></span>
+**scope** | <code>Array<string></code> | <span></span>
 **style** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyleOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionstyleoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitioncustomlink)></code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitioncustomlink)></code> | __*Optional*__
-**group**? | <code>Array<string></code> | __*Optional*__
 **groupInput**? | <code>Array<string></code> | __*Optional*__
-**noGroupHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinition)</code> | __*Optional*__
 **noGroupHostsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**noMetricHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **noMetricHostsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**nodeType**? | <code>string</code> | __*Optional*__
 **nodeTypeInput**? | <code>string</code> | __*Optional*__
 **requestInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequest)</code> | __*Optional*__
-**scope**? | <code>Array<string></code> | __*Optional*__
 **scopeInput**? | <code>Array<string></code> | __*Optional*__
 **styleInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionstyle)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putRequest(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionoutputreference-putrequest"></a>
+#### putRequest(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionoutputreference-putrequest"></a>
 
 
 
 ```ts
-putRequest(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest): void
+putRequest(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequest)</code>)  *No description*
@@ -12137,12 +12259,12 @@ putRequest(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest)
 
 
 
-#### putStyle(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionoutputreference-putstyle"></a>
+#### putStyle(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionoutputreference-putstyle"></a>
 
 
 
 ```ts
-putStyle(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyle): void
+putStyle(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyle): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionstyle)</code>)  *No description*
@@ -12315,10 +12437,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -12377,10 +12500,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -12427,25 +12551,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillapmquerycomputequery)</code>)  *No description*
@@ -12533,10 +12658,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -12595,10 +12721,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -12645,25 +12772,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfilllogquerycomputequery)</code>)  *No description*
@@ -12750,13 +12878,14 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -12827,10 +12956,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -12889,10 +13019,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -12939,25 +13070,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillrumquerycomputequery)</code>)  *No description*
@@ -13045,10 +13177,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQuer
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -13107,10 +13240,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQuer
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -13157,25 +13291,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQuer
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfillsecurityquerycomputequery)</code>)  *No description*
@@ -13262,9 +13397,10 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestOutputReference(
 
 Name | Type | Description 
 -----|------|-------------
-**fill**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFill](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfill)></code> | __*Optional*__
+**fill** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFill](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfill)></code> | <span></span>
+**size** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSize](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsize)></code> | <span></span>
 **fillInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFill](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestfill)></code> | __*Optional*__
-**size**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSize](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsize)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequest)</code> | __*Optional*__
 **sizeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSize](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsize)></code> | __*Optional*__
 
 ### Methods
@@ -13323,10 +13459,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -13385,10 +13522,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -13435,25 +13573,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeapmquerycomputequery)</code>)  *No description*
@@ -13541,10 +13680,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -13603,10 +13743,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -13653,25 +13794,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizelogquerycomputequery)</code>)  *No description*
@@ -13758,13 +13900,14 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeProcessQuery
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizeprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -13835,10 +13978,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -13897,10 +14041,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGrou
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -13947,25 +14092,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizerumquerycomputequery)</code>)  *No description*
@@ -14053,10 +14199,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQuer
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -14115,10 +14262,11 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQuer
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -14165,25 +14313,26 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQuer
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionrequestsizesecurityquerycomputequery)</code>)  *No description*
@@ -14270,12 +14419,13 @@ new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyleOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
-**fillMax**? | <code>string</code> | __*Optional*__
+**fillMax** | <code>string</code> | <span></span>
+**fillMin** | <code>string</code> | <span></span>
+**palette** | <code>string</code> | <span></span>
+**paletteFlip** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **fillMaxInput**? | <code>string</code> | __*Optional*__
-**fillMin**? | <code>string</code> | __*Optional*__
 **fillMinInput**? | <code>string</code> | __*Optional*__
-**palette**? | <code>string</code> | __*Optional*__
-**paletteFlip**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgethostmapdefinitionstyle)</code> | __*Optional*__
 **paletteFlipInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
@@ -14359,6 +14509,7 @@ new DashboardWidgetGroupDefinitionWidgetIframeDefinitionOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **url** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetIframeDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetiframedefinition)</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
 
@@ -14389,21 +14540,22 @@ new DashboardWidgetGroupDefinitionWidgetImageDefinitionOutputReference(terraform
 
 Name | Type | Description 
 -----|------|-------------
+**hasBackground** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**hasBorder** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**horizontalAlign** | <code>string</code> | <span></span>
+**margin** | <code>string</code> | <span></span>
+**sizing** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**hasBackground**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**urlDarkTheme** | <code>string</code> | <span></span>
+**verticalAlign** | <code>string</code> | <span></span>
 **hasBackgroundInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**hasBorder**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasBorderInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**horizontalAlign**? | <code>string</code> | __*Optional*__
 **horizontalAlignInput**? | <code>string</code> | __*Optional*__
-**margin**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetImageDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetimagedefinition)</code> | __*Optional*__
 **marginInput**? | <code>string</code> | __*Optional*__
-**sizing**? | <code>string</code> | __*Optional*__
 **sizingInput**? | <code>string</code> | __*Optional*__
-**urlDarkTheme**? | <code>string</code> | __*Optional*__
 **urlDarkThemeInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
-**verticalAlign**? | <code>string</code> | __*Optional*__
 **verticalAlignInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -14521,38 +14673,39 @@ new DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**columns** | <code>Array<string></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**messageDisplay** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**showDateColumn** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showMessageColumn** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sort** | <code>[DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSortOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionsortoutputreference)</code> | <span></span>
-**columns**? | <code>Array<string></code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **columnsInput**? | <code>Array<string></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetLogStreamDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**messageDisplay**? | <code>string</code> | __*Optional*__
 **messageDisplayInput**? | <code>string</code> | __*Optional*__
-**query**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**showDateColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showDateColumnInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showMessageColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showMessageColumnInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sortInput**? | <code>[DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionsort)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSort(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionoutputreference-putsort"></a>
+#### putSort(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionoutputreference-putsort"></a>
 
 
 
 ```ts
-putSort(value?: DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort): void
+putSort(value: DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionsort)</code>)  *No description*
@@ -14725,6 +14878,7 @@ Name | Type | Description
 **column** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **columnInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetlogstreamdefinitionsort)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 
@@ -14755,25 +14909,26 @@ new DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
+**colorPreference** | <code>string</code> | <span></span>
+**displayFormat** | <code>string</code> | <span></span>
+**hideZeroCounts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**colorPreference**? | <code>string</code> | __*Optional*__
+**showLastTriggered** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**summaryType** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **colorPreferenceInput**? | <code>string</code> | __*Optional*__
-**displayFormat**? | <code>string</code> | __*Optional*__
 **displayFormatInput**? | <code>string</code> | __*Optional*__
-**hideZeroCounts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hideZeroCountsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetManageStatusDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetmanagestatusdefinition)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**showLastTriggered**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLastTriggeredInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**summaryType**? | <code>string</code> | __*Optional*__
 **summaryTypeInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -14915,23 +15070,24 @@ new DashboardWidgetGroupDefinitionWidgetNoteDefinitionOutputReference(terraformR
 
 Name | Type | Description 
 -----|------|-------------
+**backgroundColor** | <code>string</code> | <span></span>
 **content** | <code>string</code> | <span></span>
-**backgroundColor**? | <code>string</code> | __*Optional*__
+**fontSize** | <code>string</code> | <span></span>
+**hasPadding** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showTick** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**textAlign** | <code>string</code> | <span></span>
+**tickEdge** | <code>string</code> | <span></span>
+**tickPos** | <code>string</code> | <span></span>
+**verticalAlign** | <code>string</code> | <span></span>
 **backgroundColorInput**? | <code>string</code> | __*Optional*__
 **contentInput**? | <code>string</code> | __*Optional*__
-**fontSize**? | <code>string</code> | __*Optional*__
 **fontSizeInput**? | <code>string</code> | __*Optional*__
-**hasPadding**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasPaddingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showTick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetNoteDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetnotedefinition)</code> | __*Optional*__
 **showTickInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
-**tickEdge**? | <code>string</code> | __*Optional*__
 **tickEdgeInput**? | <code>string</code> | __*Optional*__
-**tickPos**? | <code>string</code> | __*Optional*__
 **tickPosInput**? | <code>string</code> | __*Optional*__
-**verticalAlign**? | <code>string</code> | __*Optional*__
 **verticalAlignInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -15061,19 +15217,20 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitioncustomlink)></code> | __*Optional*__
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitioncustomlink)></code> | <span></span>
+**hasSearchBar** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitioncustomlink)></code> | __*Optional*__
-**hasSearchBar**? | <code>string</code> | __*Optional*__
 **hasSearchBarInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequest)></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -15192,10 +15349,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -15254,10 +15412,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -15304,25 +15463,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -15409,17 +15569,18 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQuery
 
 Name | Type | Description 
 -----|------|-------------
+**columns** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | <span></span>
 **env** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **primaryTag** | <code>string</code> | <span></span>
+**resource** | <code>string</code> | <span></span>
 **rowType** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
-**columns**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | __*Optional*__
 **columnsInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestapmstatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **primaryTagInput**? | <code>string</code> | __*Optional*__
-**resource**? | <code>string</code> | __*Optional*__
 **resourceInput**? | <code>string</code> | __*Optional*__
 **rowTypeInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -15479,9 +15640,10 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimitO
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -15540,10 +15702,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -15602,10 +15765,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -15652,25 +15816,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -15757,13 +15922,14 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProcessQueryO
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -15835,20 +16001,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -15923,21 +16090,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -16034,10 +16202,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -16097,26 +16266,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -16190,6 +16360,7 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQue
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -16220,12 +16391,13 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQu
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -16284,23 +16456,24 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQ
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -16407,10 +16580,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -16469,10 +16643,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -16519,25 +16694,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -16625,10 +16801,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -16687,10 +16864,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -16737,25 +16915,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetquerytabledefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -16842,25 +17021,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
-**autoscale**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**autoscale** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitioncustomlink)></code> | <span></span>
+**customUnit** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**precision** | <code>number</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequest)></code> | <span></span>
+**textAlign** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **autoscaleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitioncustomlink)></code> | __*Optional*__
-**customUnit**? | <code>string</code> | __*Optional*__
 **customUnitInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**precision**? | <code>number</code> | __*Optional*__
 **precisionInput**? | <code>number</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequest)></code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -17015,10 +17195,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -17077,10 +17258,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -17127,25 +17309,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -17233,10 +17416,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -17295,10 +17479,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -17345,25 +17530,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestauditquerycomputequery)</code>)  *No description*
@@ -17450,9 +17636,10 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimitO
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -17511,10 +17698,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -17573,10 +17761,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -17623,25 +17812,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -17728,13 +17918,14 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestProcessQueryO
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -17806,20 +17997,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -17894,21 +18086,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -18005,10 +18198,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -18068,26 +18262,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -18161,6 +18356,7 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQue
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -18191,12 +18387,13 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQu
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -18255,23 +18452,24 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQ
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -18378,10 +18576,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -18440,10 +18639,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -18490,25 +18690,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -18596,10 +18797,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -18658,10 +18860,11 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -18708,25 +18911,26 @@ new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -18813,21 +19017,22 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference(ter
 
 Name | Type | Description 
 -----|------|-------------
+**colorByGroups** | <code>Array<string></code> | <span></span>
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
 **request** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestoutputreference)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **xaxis** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionxaxisoutputreference)</code> | <span></span>
 **yaxis** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionyaxisoutputreference)</code> | <span></span>
-**colorByGroups**? | <code>Array<string></code> | __*Optional*__
 **colorByGroupsInput**? | <code>Array<string></code> | __*Optional*__
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **requestInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **xaxisInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionxaxis)</code> | __*Optional*__
 **yaxisInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionyaxis)</code> | __*Optional*__
@@ -18835,12 +19040,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putRequest(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference-putrequest"></a>
+#### putRequest(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference-putrequest"></a>
 
 
 
 ```ts
-putRequest(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest): void
+putRequest(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)</code>)  *No description*
@@ -18850,12 +19055,12 @@ putRequest(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequ
 
 
 
-#### putXaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference-putxaxis"></a>
+#### putXaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference-putxaxis"></a>
 
 
 
 ```ts
-putXaxis(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis): void
+putXaxis(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionxaxis)</code>)  *No description*
@@ -18868,12 +19073,12 @@ putXaxis(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis)
 
 
 
-#### putYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference-putyaxis"></a>
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference-putyaxis"></a>
 
 
 
 ```ts
-putYaxis(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis): void
+putYaxis(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionyaxis)</code>)  *No description*
@@ -19022,9 +19227,10 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputRefere
 
 Name | Type | Description 
 -----|------|-------------
-**x**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code> | __*Optional*__
+**x** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code> | <span></span>
+**y** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)</code> | __*Optional*__
 **xInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code> | __*Optional*__
-**y**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code> | __*Optional*__
 **yInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code> | __*Optional*__
 
 ### Methods
@@ -19083,10 +19289,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -19145,10 +19352,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -19195,25 +19403,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequery)</code>)  *No description*
@@ -19301,10 +19510,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -19363,10 +19573,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -19413,25 +19624,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxlogquerycomputequery)</code>)  *No description*
@@ -19518,13 +19730,14 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXProcessQuer
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -19595,10 +19808,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -19657,10 +19871,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -19707,25 +19922,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxrumquerycomputequery)</code>)  *No description*
@@ -19813,10 +20029,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -19875,10 +20092,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -19925,25 +20143,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)</code>)  *No description*
@@ -20031,10 +20250,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -20093,10 +20313,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -20143,25 +20364,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyapmquerycomputequery)</code>)  *No description*
@@ -20249,10 +20471,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -20311,10 +20534,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -20361,25 +20585,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestylogquerycomputequery)</code>)  *No description*
@@ -20466,13 +20691,14 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQuer
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -20543,10 +20769,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -20605,10 +20832,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -20655,25 +20883,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestyrumquerycomputequery)</code>)  *No description*
@@ -20761,10 +20990,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -20823,10 +21053,11 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -20873,25 +21104,26 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQue
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestysecurityquerycomputequery)</code>)  *No description*
@@ -20978,15 +21210,16 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReferenc
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionxaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -21080,15 +21313,16 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReferenc
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -21182,21 +21416,22 @@ new DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputRef
 
 Name | Type | Description 
 -----|------|-------------
+**globalTimeTarget** | <code>string</code> | <span></span>
+**showErrorBudget** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sloId** | <code>string</code> | <span></span>
 **timeWindows** | <code>Array<string></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **viewMode** | <code>string</code> | <span></span>
 **viewType** | <code>string</code> | <span></span>
-**globalTimeTarget**? | <code>string</code> | __*Optional*__
 **globalTimeTargetInput**? | <code>string</code> | __*Optional*__
-**showErrorBudget**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetservicelevelobjectivedefinition)</code> | __*Optional*__
 **showErrorBudgetInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sloIdInput**? | <code>string</code> | __*Optional*__
 **timeWindowsInput**? | <code>Array<string></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **viewModeInput**? | <code>string</code> | __*Optional*__
 **viewTypeInput**? | <code>string</code> | __*Optional*__
@@ -21292,17 +21527,18 @@ new DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetservicemapdefinitioncustomlink)></code> | <span></span>
 **filters** | <code>Array<string></code> | <span></span>
 **service** | <code>string</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetservicemapdefinitioncustomlink)></code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetservicemapdefinitioncustomlink)></code> | __*Optional*__
 **filtersInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetServicemapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetservicemapdefinition)</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -21384,44 +21620,45 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitioncustomlink)></code> | <span></span>
+**event** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionevent)></code> | <span></span>
+**legendColumns** | <code>Array<string></code> | <span></span>
+**legendLayout** | <code>string</code> | <span></span>
+**legendSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**marker** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionmarker)></code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequest)></code> | <span></span>
 **rightYaxis** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrightyaxisoutputreference)</code> | <span></span>
+**showLegend** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **yaxis** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionyaxisoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitioncustomlink)></code> | __*Optional*__
-**event**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionevent)></code> | __*Optional*__
 **eventInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionevent)></code> | __*Optional*__
-**legendColumns**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinition)</code> | __*Optional*__
 **legendColumnsInput**? | <code>Array<string></code> | __*Optional*__
-**legendLayout**? | <code>string</code> | __*Optional*__
 **legendLayoutInput**? | <code>string</code> | __*Optional*__
-**legendSize**? | <code>string</code> | __*Optional*__
 **legendSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**marker**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionmarker)></code> | __*Optional*__
 **markerInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionmarker)></code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequest)></code> | __*Optional*__
 **rightYaxisInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrightyaxis)</code> | __*Optional*__
-**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLegendInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **yaxisInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionyaxis)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putRightYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionoutputreference-putrightyaxis"></a>
+#### putRightYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionoutputreference-putrightyaxis"></a>
 
 
 
 ```ts
-putRightYaxis(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis): void
+putRightYaxis(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrightyaxis)</code>)  *No description*
@@ -21434,12 +21671,12 @@ putRightYaxis(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRi
 
 
 
-#### putYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionoutputreference-putyaxis"></a>
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionoutputreference-putyaxis"></a>
 
 
 
 ```ts
-putYaxis(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis): void
+putYaxis(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionyaxis)</code>)  *No description*
@@ -21649,10 +21886,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -21711,10 +21949,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -21761,25 +22000,26 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -21867,10 +22107,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -21929,10 +22170,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -21979,25 +22221,26 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestauditquerycomputequery)</code>)  *No description*
@@ -22084,9 +22327,10 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitO
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -22145,10 +22389,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -22207,10 +22452,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -22257,25 +22503,26 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -22363,10 +22610,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryC
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -22425,10 +22673,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryG
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -22475,25 +22724,26 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryO
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestnetworkquerycomputequery)</code>)  *No description*
@@ -22580,13 +22830,14 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryO
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -22658,20 +22909,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -22746,21 +22998,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -22857,10 +23110,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQue
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -22920,26 +23174,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -23013,6 +23268,7 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQue
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -23043,12 +23299,13 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQu
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -23107,23 +23364,24 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQ
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -23230,10 +23488,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryCompu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -23292,10 +23551,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroup
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -23342,25 +23602,26 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -23448,10 +23709,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -23510,10 +23772,11 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -23560,25 +23823,26 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -23665,11 +23929,12 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleOutputRe
 
 Name | Type | Description 
 -----|------|-------------
-**lineType**? | <code>string</code> | __*Optional*__
+**lineType** | <code>string</code> | <span></span>
+**lineWidth** | <code>string</code> | <span></span>
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrequeststyle)</code> | __*Optional*__
 **lineTypeInput**? | <code>string</code> | __*Optional*__
-**lineWidth**? | <code>string</code> | __*Optional*__
 **lineWidthInput**? | <code>string</code> | __*Optional*__
-**palette**? | <code>string</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -23739,15 +24004,16 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputRefe
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionrightyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -23841,15 +24107,16 @@ new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinitionyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -23943,17 +24210,18 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference(terrafo
 
 Name | Type | Description 
 -----|------|-------------
-**customLink**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitioncustomlink)></code> | __*Optional*__
+**customLink** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequest)></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -24060,10 +24328,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQ
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -24122,10 +24391,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupByS
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -24172,25 +24442,26 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -24278,10 +24549,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComput
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -24340,10 +24612,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupB
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -24390,25 +24663,26 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryOutput
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestauditquerycomputequery)</code>)  *No description*
@@ -24495,9 +24769,10 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitOutp
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -24556,10 +24831,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQ
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -24618,10 +24894,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupByS
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -24668,25 +24945,26 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -24773,13 +25051,14 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQueryOutp
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -24851,20 +25130,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -24939,21 +25219,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -25050,10 +25331,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryG
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -25113,26 +25395,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -25206,6 +25489,7 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryS
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -25236,12 +25520,13 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -25300,23 +25585,24 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuer
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -25423,10 +25709,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQ
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -25485,10 +25772,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupByS
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -25535,25 +25823,26 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -25641,10 +25930,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryCom
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -25703,10 +25993,11 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGro
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -25753,25 +26044,26 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryOut
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -25858,7 +26150,8 @@ new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOutputRefer
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | __*Optional*__
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequeststyle)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -25904,35 +26197,36 @@ new DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
+**displayFormat** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
+**showBreakdown** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showDistribution** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showErrors** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showHits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showLatency** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showResourceList** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**sizeFormat** | <code>string</code> | <span></span>
 **spanName** | <code>string</code> | <span></span>
-**displayFormat**? | <code>string</code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **displayFormatInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettraceservicedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
-**showBreakdown**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showBreakdownInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showDistribution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showDistributionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showErrors**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showErrorsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showHits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showHitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showLatency**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLatencyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showResourceList**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showResourceListInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**sizeFormat**? | <code>string</code> | __*Optional*__
 **sizeFormatInput**? | <code>string</code> | __*Optional*__
 **spanNameInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -26111,11 +26405,12 @@ new DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference(terraformRes
 Name | Type | Description 
 -----|------|-------------
 **height** | <code>number</code> | <span></span>
+**isColumnBreak** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **width** | <code>number</code> | <span></span>
 **x** | <code>number</code> | <span></span>
 **y** | <code>number</code> | <span></span>
 **heightInput**? | <code>number</code> | __*Optional*__
-**isColumnBreak**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetwidgetlayout)</code> | __*Optional*__
 **isColumnBreakInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **widthInput**? | <code>number</code> | __*Optional*__
 **xInput**? | <code>number</code> | __*Optional*__
@@ -26164,36 +26459,37 @@ new DashboardWidgetHeatmapDefinitionOutputReference(terraformResource: ITerrafor
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitioncustomlink)></code> | <span></span>
+**event** | <code>Array<[DashboardWidgetHeatmapDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionevent)></code> | <span></span>
+**legendSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequest)></code> | <span></span>
+**showLegend** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **yaxis** | <code>[DashboardWidgetHeatmapDefinitionYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionyaxisoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitioncustomlink)></code> | __*Optional*__
-**event**? | <code>Array<[DashboardWidgetHeatmapDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionevent)></code> | __*Optional*__
 **eventInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionEvent](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionevent)></code> | __*Optional*__
-**legendSize**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinition](#cdktf-provider-datadog-dashboardwidgetheatmapdefinition)</code> | __*Optional*__
 **legendSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequest)></code> | __*Optional*__
-**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLegendInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **yaxisInput**? | <code>[DashboardWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionyaxis)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionoutputreference-putyaxis"></a>
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionoutputreference-putyaxis"></a>
 
 
 
 ```ts
-putYaxis(value?: DashboardWidgetHeatmapDefinitionYaxis): void
+putYaxis(value: DashboardWidgetHeatmapDefinitionYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionyaxis)</code>)  *No description*
@@ -26355,10 +26651,11 @@ new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -26417,10 +26714,11 @@ new DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -26467,25 +26765,26 @@ new DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference(terraformReso
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -26573,10 +26872,11 @@ new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -26635,10 +26935,11 @@ new DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -26685,25 +26986,26 @@ new DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference(terraformReso
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -26790,13 +27092,14 @@ new DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference(terraform
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -26867,10 +27170,11 @@ new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -26929,10 +27233,11 @@ new DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -26979,25 +27284,26 @@ new DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference(terraformReso
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -27085,10 +27391,11 @@ new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -27147,10 +27454,11 @@ new DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -27197,25 +27505,26 @@ new DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -27302,7 +27611,8 @@ new DashboardWidgetHeatmapDefinitionRequestStyleOutputReference(terraformResourc
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | __*Optional*__
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequeststyle)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -27348,15 +27658,16 @@ new DashboardWidgetHeatmapDefinitionYaxisOutputReference(terraformResource: ITer
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHeatmapDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -27450,38 +27761,39 @@ new DashboardWidgetHostmapDefinitionOutputReference(terraformResource: ITerrafor
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgethostmapdefinitioncustomlink)></code> | <span></span>
+**group** | <code>Array<string></code> | <span></span>
+**noGroupHosts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**noMetricHosts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**nodeType** | <code>string</code> | <span></span>
 **request** | <code>[DashboardWidgetHostmapDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestoutputreference)</code> | <span></span>
+**scope** | <code>Array<string></code> | <span></span>
 **style** | <code>[DashboardWidgetHostmapDefinitionStyleOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionstyleoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgethostmapdefinitioncustomlink)></code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetHostmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgethostmapdefinitioncustomlink)></code> | __*Optional*__
-**group**? | <code>Array<string></code> | __*Optional*__
 **groupInput**? | <code>Array<string></code> | __*Optional*__
-**noGroupHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinition](#cdktf-provider-datadog-dashboardwidgethostmapdefinition)</code> | __*Optional*__
 **noGroupHostsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**noMetricHosts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **noMetricHostsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**nodeType**? | <code>string</code> | __*Optional*__
 **nodeTypeInput**? | <code>string</code> | __*Optional*__
 **requestInput**? | <code>[DashboardWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequest)</code> | __*Optional*__
-**scope**? | <code>Array<string></code> | __*Optional*__
 **scopeInput**? | <code>Array<string></code> | __*Optional*__
 **styleInput**? | <code>[DashboardWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionstyle)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putRequest(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionoutputreference-putrequest"></a>
+#### putRequest(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionoutputreference-putrequest"></a>
 
 
 
 ```ts
-putRequest(value?: DashboardWidgetHostmapDefinitionRequest): void
+putRequest(value: DashboardWidgetHostmapDefinitionRequest): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequest)</code>)  *No description*
@@ -27491,12 +27803,12 @@ putRequest(value?: DashboardWidgetHostmapDefinitionRequest): void
 
 
 
-#### putStyle(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionoutputreference-putstyle"></a>
+#### putStyle(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionoutputreference-putstyle"></a>
 
 
 
 ```ts
-putStyle(value?: DashboardWidgetHostmapDefinitionStyle): void
+putStyle(value: DashboardWidgetHostmapDefinitionStyle): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionstyle)</code>)  *No description*
@@ -27669,10 +27981,11 @@ new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -27731,10 +28044,11 @@ new DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -27781,25 +28095,26 @@ new DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillApmQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillapmquerycomputequery)</code>)  *No description*
@@ -27887,10 +28202,11 @@ new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -27949,10 +28265,11 @@ new DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -27999,25 +28316,26 @@ new DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillLogQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfilllogquerycomputequery)</code>)  *No description*
@@ -28104,13 +28422,14 @@ new DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillProcessQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -28181,10 +28500,11 @@ new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -28243,10 +28563,11 @@ new DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -28293,25 +28614,26 @@ new DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillRumQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillrumquerycomputequery)</code>)  *No description*
@@ -28399,10 +28721,11 @@ new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -28461,10 +28784,11 @@ new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -28511,25 +28835,26 @@ new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference(terr
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestFillSecurityQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfillsecurityquerycomputequery)</code>)  *No description*
@@ -28616,9 +28941,10 @@ new DashboardWidgetHostmapDefinitionRequestOutputReference(terraformResource: IT
 
 Name | Type | Description 
 -----|------|-------------
-**fill**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFill](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfill)></code> | __*Optional*__
+**fill** | <code>Array<[DashboardWidgetHostmapDefinitionRequestFill](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfill)></code> | <span></span>
+**size** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSize](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsize)></code> | <span></span>
 **fillInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestFill](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestfill)></code> | __*Optional*__
-**size**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSize](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsize)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequest)</code> | __*Optional*__
 **sizeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSize](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsize)></code> | __*Optional*__
 
 ### Methods
@@ -28677,10 +29003,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -28739,10 +29066,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -28789,25 +29117,26 @@ new DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeApmQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeapmquerycomputequery)</code>)  *No description*
@@ -28895,10 +29224,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -28957,10 +29287,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -29007,25 +29338,26 @@ new DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeLogQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizelogquerycomputequery)</code>)  *No description*
@@ -29112,13 +29444,14 @@ new DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeProcessQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizeprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -29189,10 +29522,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -29251,10 +29585,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -29301,25 +29636,26 @@ new DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference(terraform
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeRumQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizerumquerycomputequery)</code>)  *No description*
@@ -29407,10 +29743,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -29469,10 +29806,11 @@ new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutp
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -29519,25 +29857,26 @@ new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference(terr
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionrequestsizesecurityquerycomputequery)</code>)  *No description*
@@ -29624,12 +29963,13 @@ new DashboardWidgetHostmapDefinitionStyleOutputReference(terraformResource: ITer
 
 Name | Type | Description 
 -----|------|-------------
-**fillMax**? | <code>string</code> | __*Optional*__
+**fillMax** | <code>string</code> | <span></span>
+**fillMin** | <code>string</code> | <span></span>
+**palette** | <code>string</code> | <span></span>
+**paletteFlip** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **fillMaxInput**? | <code>string</code> | __*Optional*__
-**fillMin**? | <code>string</code> | __*Optional*__
 **fillMinInput**? | <code>string</code> | __*Optional*__
-**palette**? | <code>string</code> | __*Optional*__
-**paletteFlip**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetHostmapDefinitionStyle](#cdktf-provider-datadog-dashboardwidgethostmapdefinitionstyle)</code> | __*Optional*__
 **paletteFlipInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
@@ -29713,6 +30053,7 @@ new DashboardWidgetIframeDefinitionOutputReference(terraformResource: ITerraform
 Name | Type | Description 
 -----|------|-------------
 **url** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetIframeDefinition](#cdktf-provider-datadog-dashboardwidgetiframedefinition)</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
 
@@ -29743,21 +30084,22 @@ new DashboardWidgetImageDefinitionOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
+**hasBackground** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**hasBorder** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**horizontalAlign** | <code>string</code> | <span></span>
+**margin** | <code>string</code> | <span></span>
+**sizing** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**hasBackground**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**urlDarkTheme** | <code>string</code> | <span></span>
+**verticalAlign** | <code>string</code> | <span></span>
 **hasBackgroundInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**hasBorder**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasBorderInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**horizontalAlign**? | <code>string</code> | __*Optional*__
 **horizontalAlignInput**? | <code>string</code> | __*Optional*__
-**margin**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetImageDefinition](#cdktf-provider-datadog-dashboardwidgetimagedefinition)</code> | __*Optional*__
 **marginInput**? | <code>string</code> | __*Optional*__
-**sizing**? | <code>string</code> | __*Optional*__
 **sizingInput**? | <code>string</code> | __*Optional*__
-**urlDarkTheme**? | <code>string</code> | __*Optional*__
 **urlDarkThemeInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
-**verticalAlign**? | <code>string</code> | __*Optional*__
 **verticalAlignInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -29875,38 +30217,39 @@ new DashboardWidgetLogStreamDefinitionOutputReference(terraformResource: ITerraf
 
 Name | Type | Description 
 -----|------|-------------
+**columns** | <code>Array<string></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**messageDisplay** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**showDateColumn** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showMessageColumn** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sort** | <code>[DashboardWidgetLogStreamDefinitionSortOutputReference](#cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionsortoutputreference)</code> | <span></span>
-**columns**? | <code>Array<string></code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **columnsInput**? | <code>Array<string></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetLogStreamDefinition](#cdktf-provider-datadog-dashboardwidgetlogstreamdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**messageDisplay**? | <code>string</code> | __*Optional*__
 **messageDisplayInput**? | <code>string</code> | __*Optional*__
-**query**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**showDateColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showDateColumnInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showMessageColumn**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showMessageColumnInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sortInput**? | <code>[DashboardWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionsort)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSort(value?) <a id="cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionoutputreference-putsort"></a>
+#### putSort(value) <a id="cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionoutputreference-putsort"></a>
 
 
 
 ```ts
-putSort(value?: DashboardWidgetLogStreamDefinitionSort): void
+putSort(value: DashboardWidgetLogStreamDefinitionSort): void
 ```
 
 * **value** (<code>[DashboardWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionsort)</code>)  *No description*
@@ -30079,6 +30422,7 @@ Name | Type | Description
 **column** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **columnInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetLogStreamDefinitionSort](#cdktf-provider-datadog-dashboardwidgetlogstreamdefinitionsort)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 
@@ -30109,25 +30453,26 @@ new DashboardWidgetManageStatusDefinitionOutputReference(terraformResource: ITer
 
 Name | Type | Description 
 -----|------|-------------
+**colorPreference** | <code>string</code> | <span></span>
+**displayFormat** | <code>string</code> | <span></span>
+**hideZeroCounts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**colorPreference**? | <code>string</code> | __*Optional*__
+**showLastTriggered** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**summaryType** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **colorPreferenceInput**? | <code>string</code> | __*Optional*__
-**displayFormat**? | <code>string</code> | __*Optional*__
 **displayFormatInput**? | <code>string</code> | __*Optional*__
-**hideZeroCounts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hideZeroCountsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetManageStatusDefinition](#cdktf-provider-datadog-dashboardwidgetmanagestatusdefinition)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**showLastTriggered**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLastTriggeredInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**summaryType**? | <code>string</code> | __*Optional*__
 **summaryTypeInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -30269,23 +30614,24 @@ new DashboardWidgetNoteDefinitionOutputReference(terraformResource: ITerraformRe
 
 Name | Type | Description 
 -----|------|-------------
+**backgroundColor** | <code>string</code> | <span></span>
 **content** | <code>string</code> | <span></span>
-**backgroundColor**? | <code>string</code> | __*Optional*__
+**fontSize** | <code>string</code> | <span></span>
+**hasPadding** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showTick** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**textAlign** | <code>string</code> | <span></span>
+**tickEdge** | <code>string</code> | <span></span>
+**tickPos** | <code>string</code> | <span></span>
+**verticalAlign** | <code>string</code> | <span></span>
 **backgroundColorInput**? | <code>string</code> | __*Optional*__
 **contentInput**? | <code>string</code> | __*Optional*__
-**fontSize**? | <code>string</code> | __*Optional*__
 **fontSizeInput**? | <code>string</code> | __*Optional*__
-**hasPadding**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasPaddingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showTick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetNoteDefinition](#cdktf-provider-datadog-dashboardwidgetnotedefinition)</code> | __*Optional*__
 **showTickInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
-**tickEdge**? | <code>string</code> | __*Optional*__
 **tickEdgeInput**? | <code>string</code> | __*Optional*__
-**tickPos**? | <code>string</code> | __*Optional*__
 **tickPosInput**? | <code>string</code> | __*Optional*__
-**verticalAlign**? | <code>string</code> | __*Optional*__
 **verticalAlignInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -30415,19 +30761,20 @@ new DashboardWidgetQueryTableDefinitionOutputReference(terraformResource: ITerra
 
 Name | Type | Description 
 -----|------|-------------
-**customLink**? | <code>Array<[DashboardWidgetQueryTableDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitioncustomlink)></code> | __*Optional*__
+**customLink** | <code>Array<[DashboardWidgetQueryTableDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitioncustomlink)></code> | <span></span>
+**hasSearchBar** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitioncustomlink)></code> | __*Optional*__
-**hasSearchBar**? | <code>string</code> | __*Optional*__
 **hasSearchBarInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinition](#cdktf-provider-datadog-dashboardwidgetquerytabledefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequest)></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -30546,10 +30893,11 @@ new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -30608,10 +30956,11 @@ new DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -30658,25 +31007,26 @@ new DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -30763,17 +31113,18 @@ new DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**columns** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | <span></span>
 **env** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **primaryTag** | <code>string</code> | <span></span>
+**resource** | <code>string</code> | <span></span>
 **rowType** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
-**columns**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | __*Optional*__
 **columnsInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquerycolumns)></code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestapmstatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **primaryTagInput**? | <code>string</code> | __*Optional*__
-**resource**? | <code>string</code> | __*Optional*__
 **resourceInput**? | <code>string</code> | __*Optional*__
 **rowTypeInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -30833,9 +31184,10 @@ new DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -30894,10 +31246,11 @@ new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -30956,10 +31309,11 @@ new DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -31006,25 +31360,26 @@ new DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -31111,13 +31466,14 @@ new DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -31189,20 +31545,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -31277,21 +31634,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -31388,10 +31746,11 @@ new DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -31451,26 +31810,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -31544,6 +31904,7 @@ new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -31574,12 +31935,13 @@ new DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -31638,23 +32000,24 @@ new DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -31761,10 +32124,11 @@ new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -31823,10 +32187,11 @@ new DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -31873,25 +32238,26 @@ new DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -31979,10 +32345,11 @@ new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -32041,10 +32408,11 @@ new DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -32091,25 +32459,26 @@ new DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputReference(terra
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryTableDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetquerytabledefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -32196,25 +32565,26 @@ new DashboardWidgetQueryValueDefinitionOutputReference(terraformResource: ITerra
 
 Name | Type | Description 
 -----|------|-------------
-**autoscale**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**autoscale** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**customLink** | <code>Array<[DashboardWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitioncustomlink)></code> | <span></span>
+**customUnit** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**precision** | <code>number</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequest)></code> | <span></span>
+**textAlign** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **autoscaleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**customLink**? | <code>Array<[DashboardWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitioncustomlink)></code> | __*Optional*__
-**customUnit**? | <code>string</code> | __*Optional*__
 **customUnitInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinition](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**precision**? | <code>number</code> | __*Optional*__
 **precisionInput**? | <code>number</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequest)></code> | __*Optional*__
-**textAlign**? | <code>string</code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -32369,10 +32739,11 @@ new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -32431,10 +32802,11 @@ new DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -32481,25 +32853,26 @@ new DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -32587,10 +32960,11 @@ new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -32649,10 +33023,11 @@ new DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -32699,25 +33074,26 @@ new DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestauditquerycomputequery)</code>)  *No description*
@@ -32804,9 +33180,10 @@ new DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -32865,10 +33242,11 @@ new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -32927,10 +33305,11 @@ new DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -32977,25 +33356,26 @@ new DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -33082,13 +33462,14 @@ new DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -33160,20 +33541,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -33248,21 +33630,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -33359,10 +33742,11 @@ new DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -33422,26 +33806,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -33515,6 +33900,7 @@ new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -33545,12 +33931,13 @@ new DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -33609,23 +33996,24 @@ new DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -33732,10 +34120,11 @@ new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -33794,10 +34183,11 @@ new DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -33844,25 +34234,26 @@ new DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -33950,10 +34341,11 @@ new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -34012,10 +34404,11 @@ new DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -34062,25 +34455,26 @@ new DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputReference(terra
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -34167,21 +34561,22 @@ new DashboardWidgetScatterplotDefinitionOutputReference(terraformResource: ITerr
 
 Name | Type | Description 
 -----|------|-------------
+**colorByGroups** | <code>Array<string></code> | <span></span>
+**customLink** | <code>Array<[DashboardWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
 **request** | <code>[DashboardWidgetScatterplotDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestoutputreference)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **xaxis** | <code>[DashboardWidgetScatterplotDefinitionXaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionxaxisoutputreference)</code> | <span></span>
 **yaxis** | <code>[DashboardWidgetScatterplotDefinitionYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionyaxisoutputreference)</code> | <span></span>
-**colorByGroups**? | <code>Array<string></code> | __*Optional*__
 **colorByGroupsInput**? | <code>Array<string></code> | __*Optional*__
-**customLink**? | <code>Array<[DashboardWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinition](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **requestInput**? | <code>[DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **xaxisInput**? | <code>[DashboardWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionxaxis)</code> | __*Optional*__
 **yaxisInput**? | <code>[DashboardWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionyaxis)</code> | __*Optional*__
@@ -34189,12 +34584,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putRequest(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference-putrequest"></a>
+#### putRequest(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference-putrequest"></a>
 
 
 
 ```ts
-putRequest(value?: DashboardWidgetScatterplotDefinitionRequest): void
+putRequest(value: DashboardWidgetScatterplotDefinitionRequest): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)</code>)  *No description*
@@ -34204,12 +34599,12 @@ putRequest(value?: DashboardWidgetScatterplotDefinitionRequest): void
 
 
 
-#### putXaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference-putxaxis"></a>
+#### putXaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference-putxaxis"></a>
 
 
 
 ```ts
-putXaxis(value?: DashboardWidgetScatterplotDefinitionXaxis): void
+putXaxis(value: DashboardWidgetScatterplotDefinitionXaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionxaxis)</code>)  *No description*
@@ -34222,12 +34617,12 @@ putXaxis(value?: DashboardWidgetScatterplotDefinitionXaxis): void
 
 
 
-#### putYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference-putyaxis"></a>
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference-putyaxis"></a>
 
 
 
 ```ts
-putYaxis(value?: DashboardWidgetScatterplotDefinitionYaxis): void
+putYaxis(value: DashboardWidgetScatterplotDefinitionYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionyaxis)</code>)  *No description*
@@ -34376,9 +34771,10 @@ new DashboardWidgetScatterplotDefinitionRequestOutputReference(terraformResource
 
 Name | Type | Description 
 -----|------|-------------
-**x**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code> | __*Optional*__
+**x** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code> | <span></span>
+**y** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)</code> | __*Optional*__
 **xInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code> | __*Optional*__
-**y**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code> | __*Optional*__
 **yInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code> | __*Optional*__
 
 ### Methods
@@ -34437,10 +34833,11 @@ new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -34499,10 +34896,11 @@ new DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -34549,25 +34947,26 @@ new DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXApmQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequery)</code>)  *No description*
@@ -34655,10 +35054,11 @@ new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -34717,10 +35117,11 @@ new DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -34767,25 +35168,26 @@ new DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXLogQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxlogquerycomputequery)</code>)  *No description*
@@ -34872,13 +35274,14 @@ new DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -34949,10 +35352,11 @@ new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -35011,10 +35415,11 @@ new DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -35061,25 +35466,26 @@ new DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXRumQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxrumquerycomputequery)</code>)  *No description*
@@ -35167,10 +35573,11 @@ new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputR
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -35229,10 +35636,11 @@ new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOut
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -35279,25 +35687,26 @@ new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference(ter
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestXSecurityQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxsecurityquerycomputequery)</code>)  *No description*
@@ -35385,10 +35794,11 @@ new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -35447,10 +35857,11 @@ new DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -35497,25 +35908,26 @@ new DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYApmQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyapmquerycomputequery)</code>)  *No description*
@@ -35603,10 +36015,11 @@ new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -35665,10 +36078,11 @@ new DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -35715,25 +36129,26 @@ new DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYLogQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestylogquerycomputequery)</code>)  *No description*
@@ -35820,13 +36235,14 @@ new DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -35897,10 +36313,11 @@ new DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -35959,10 +36376,11 @@ new DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -36009,25 +36427,26 @@ new DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYRumQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestyrumquerycomputequery)</code>)  *No description*
@@ -36115,10 +36534,11 @@ new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputR
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -36177,10 +36597,11 @@ new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOut
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -36227,25 +36648,26 @@ new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference(ter
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestYSecurityQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestysecurityquerycomputequery)</code>)  *No description*
@@ -36332,15 +36754,16 @@ new DashboardWidgetScatterplotDefinitionXaxisOutputReference(terraformResource: 
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionXaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionxaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -36434,15 +36857,16 @@ new DashboardWidgetScatterplotDefinitionYaxisOutputReference(terraformResource: 
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -36536,21 +36960,22 @@ new DashboardWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResou
 
 Name | Type | Description 
 -----|------|-------------
+**globalTimeTarget** | <code>string</code> | <span></span>
+**showErrorBudget** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sloId** | <code>string</code> | <span></span>
 **timeWindows** | <code>Array<string></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **viewMode** | <code>string</code> | <span></span>
 **viewType** | <code>string</code> | <span></span>
-**globalTimeTarget**? | <code>string</code> | __*Optional*__
 **globalTimeTargetInput**? | <code>string</code> | __*Optional*__
-**showErrorBudget**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetServiceLevelObjectiveDefinition](#cdktf-provider-datadog-dashboardwidgetservicelevelobjectivedefinition)</code> | __*Optional*__
 **showErrorBudgetInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sloIdInput**? | <code>string</code> | __*Optional*__
 **timeWindowsInput**? | <code>Array<string></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **viewModeInput**? | <code>string</code> | __*Optional*__
 **viewTypeInput**? | <code>string</code> | __*Optional*__
@@ -36646,17 +37071,18 @@ new DashboardWidgetServicemapDefinitionOutputReference(terraformResource: ITerra
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetservicemapdefinitioncustomlink)></code> | <span></span>
 **filters** | <code>Array<string></code> | <span></span>
 **service** | <code>string</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetservicemapdefinitioncustomlink)></code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetServicemapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetservicemapdefinitioncustomlink)></code> | __*Optional*__
 **filtersInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetServicemapDefinition](#cdktf-provider-datadog-dashboardwidgetservicemapdefinition)</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -36738,44 +37164,45 @@ new DashboardWidgetTimeseriesDefinitionOutputReference(terraformResource: ITerra
 
 Name | Type | Description 
 -----|------|-------------
+**customLink** | <code>Array<[DashboardWidgetTimeseriesDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitioncustomlink)></code> | <span></span>
+**event** | <code>Array<[DashboardWidgetTimeseriesDefinitionEvent](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionevent)></code> | <span></span>
+**legendColumns** | <code>Array<string></code> | <span></span>
+**legendLayout** | <code>string</code> | <span></span>
+**legendSize** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**marker** | <code>Array<[DashboardWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionmarker)></code> | <span></span>
+**request** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequest)></code> | <span></span>
 **rightYaxis** | <code>[DashboardWidgetTimeseriesDefinitionRightYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrightyaxisoutputreference)</code> | <span></span>
+**showLegend** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **yaxis** | <code>[DashboardWidgetTimeseriesDefinitionYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionyaxisoutputreference)</code> | <span></span>
-**customLink**? | <code>Array<[DashboardWidgetTimeseriesDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitioncustomlink)></code> | __*Optional*__
 **customLinkInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitioncustomlink)></code> | __*Optional*__
-**event**? | <code>Array<[DashboardWidgetTimeseriesDefinitionEvent](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionevent)></code> | __*Optional*__
 **eventInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionEvent](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionevent)></code> | __*Optional*__
-**legendColumns**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinition](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinition)</code> | __*Optional*__
 **legendColumnsInput**? | <code>Array<string></code> | __*Optional*__
-**legendLayout**? | <code>string</code> | __*Optional*__
 **legendLayoutInput**? | <code>string</code> | __*Optional*__
-**legendSize**? | <code>string</code> | __*Optional*__
 **legendSizeInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**marker**? | <code>Array<[DashboardWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionmarker)></code> | __*Optional*__
 **markerInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionMarker](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionmarker)></code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequest)></code> | __*Optional*__
 **rightYaxisInput**? | <code>[DashboardWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrightyaxis)</code> | __*Optional*__
-**showLegend**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLegendInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 **yaxisInput**? | <code>[DashboardWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionyaxis)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putRightYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionoutputreference-putrightyaxis"></a>
+#### putRightYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionoutputreference-putrightyaxis"></a>
 
 
 
 ```ts
-putRightYaxis(value?: DashboardWidgetTimeseriesDefinitionRightYaxis): void
+putRightYaxis(value: DashboardWidgetTimeseriesDefinitionRightYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrightyaxis)</code>)  *No description*
@@ -36788,12 +37215,12 @@ putRightYaxis(value?: DashboardWidgetTimeseriesDefinitionRightYaxis): void
 
 
 
-#### putYaxis(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionoutputreference-putyaxis"></a>
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionoutputreference-putyaxis"></a>
 
 
 
 ```ts
-putYaxis(value?: DashboardWidgetTimeseriesDefinitionYaxis): void
+putYaxis(value: DashboardWidgetTimeseriesDefinitionYaxis): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionyaxis)</code>)  *No description*
@@ -37003,10 +37430,11 @@ new DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -37065,10 +37493,11 @@ new DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -37115,25 +37544,26 @@ new DashboardWidgetTimeseriesDefinitionRequestApmQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -37221,10 +37651,11 @@ new DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -37283,10 +37714,11 @@ new DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -37333,25 +37765,26 @@ new DashboardWidgetTimeseriesDefinitionRequestAuditQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestauditquerycomputequery)</code>)  *No description*
@@ -37438,9 +37871,10 @@ new DashboardWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -37499,10 +37933,11 @@ new DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -37561,10 +37996,11 @@ new DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -37611,25 +38047,26 @@ new DashboardWidgetTimeseriesDefinitionRequestLogQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -37717,10 +38154,11 @@ new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -37779,10 +38217,11 @@ new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutput
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -37829,25 +38268,26 @@ new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference(terraf
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestNetworkQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestnetworkquerycomputequery)</code>)  *No description*
@@ -37934,13 +38374,14 @@ new DashboardWidgetTimeseriesDefinitionRequestProcessQueryOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -38012,20 +38453,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -38100,21 +38542,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -38211,10 +38654,11 @@ new DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -38274,26 +38718,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -38367,6 +38812,7 @@ new DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -38397,12 +38843,13 @@ new DashboardWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -38461,23 +38908,24 @@ new DashboardWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -38584,10 +39032,11 @@ new DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReferenc
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -38646,10 +39095,11 @@ new DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputRefe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -38696,25 +39146,26 @@ new DashboardWidgetTimeseriesDefinitionRequestRumQueryOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -38802,10 +39253,11 @@ new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputRef
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -38864,10 +39316,11 @@ new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutpu
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -38914,25 +39367,26 @@ new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference(terra
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -39019,11 +39473,12 @@ new DashboardWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformReso
 
 Name | Type | Description 
 -----|------|-------------
-**lineType**? | <code>string</code> | __*Optional*__
+**lineType** | <code>string</code> | <span></span>
+**lineWidth** | <code>string</code> | <span></span>
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrequeststyle)</code> | __*Optional*__
 **lineTypeInput**? | <code>string</code> | __*Optional*__
-**lineWidth**? | <code>string</code> | __*Optional*__
 **lineWidthInput**? | <code>string</code> | __*Optional*__
-**palette**? | <code>string</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39093,15 +39548,16 @@ new DashboardWidgetTimeseriesDefinitionRightYaxisOutputReference(terraformResour
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionRightYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionrightyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39195,15 +39651,16 @@ new DashboardWidgetTimeseriesDefinitionYaxisOutputReference(terraformResource: I
 
 Name | Type | Description 
 -----|------|-------------
-**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
 **includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**label**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTimeseriesDefinitionYaxis](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinitionyaxis)</code> | __*Optional*__
 **labelInput**? | <code>string</code> | __*Optional*__
-**max**? | <code>string</code> | __*Optional*__
 **maxInput**? | <code>string</code> | __*Optional*__
-**min**? | <code>string</code> | __*Optional*__
 **minInput**? | <code>string</code> | __*Optional*__
-**scale**? | <code>string</code> | __*Optional*__
 **scaleInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39297,17 +39754,18 @@ new DashboardWidgetToplistDefinitionOutputReference(terraformResource: ITerrafor
 
 Name | Type | Description 
 -----|------|-------------
-**customLink**? | <code>Array<[DashboardWidgetToplistDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgettoplistdefinitioncustomlink)></code> | __*Optional*__
+**customLink** | <code>Array<[DashboardWidgetToplistDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgettoplistdefinitioncustomlink)></code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
+**request** | <code>Array<[DashboardWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **customLinkInput**? | <code>Array<[DashboardWidgetToplistDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgettoplistdefinitioncustomlink)></code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinition](#cdktf-provider-datadog-dashboardwidgettoplistdefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>Array<[DashboardWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequest)></code> | __*Optional*__
 **requestInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequest)></code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39414,10 +39872,11 @@ new DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -39476,10 +39935,11 @@ new DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39526,25 +39986,26 @@ new DashboardWidgetToplistDefinitionRequestApmQueryOutputReference(terraformReso
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestapmquerycomputequery)</code>)  *No description*
@@ -39632,10 +40093,11 @@ new DashboardWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -39694,10 +40156,11 @@ new DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputRefer
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39744,25 +40207,26 @@ new DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference(terraformRe
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestAuditQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestAuditQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestauditquerycomputequery)</code>)  *No description*
@@ -39849,9 +40313,10 @@ new DashboardWidgetToplistDefinitionRequestFormulaLimitOutputReference(terraform
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestformulalimit)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -39910,10 +40375,11 @@ new DashboardWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -39972,10 +40438,11 @@ new DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -40022,25 +40489,26 @@ new DashboardWidgetToplistDefinitionRequestLogQueryOutputReference(terraformReso
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestlogquerycomputequery)</code>)  *No description*
@@ -40127,13 +40595,14 @@ new DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference(terraform
 
 Name | Type | Description 
 -----|------|-------------
+**filterBy** | <code>Array<string></code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**filterBy**? | <code>Array<string></code> | __*Optional*__
+**searchBy** | <code>string</code> | <span></span>
 **filterByInput**? | <code>Array<string></code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestprocessquery)</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**searchBy**? | <code>string</code> | __*Optional*__
 **searchByInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -40205,20 +40674,21 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
 **resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
 **isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
@@ -40293,21 +40763,22 @@ Name | Type | Description
 -----|------|-------------
 **dataSource** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
 **stat** | <code>string</code> | <span></span>
 **dataSourceInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<string></code> | __*Optional*__
 **groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**operationName**? | <code>string</code> | __*Optional*__
 **operationNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagName**? | <code>string</code> | __*Optional*__
 **primaryTagNameInput**? | <code>string</code> | __*Optional*__
-**primaryTagValue**? | <code>string</code> | __*Optional*__
 **primaryTagValueInput**? | <code>string</code> | __*Optional*__
-**resourceName**? | <code>string</code> | __*Optional*__
 **resourceNameInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
 **statInput**? | <code>string</code> | __*Optional*__
@@ -40404,10 +40875,11 @@ new DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputRefer
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**metric**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**order**? | <code>string</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -40467,26 +40939,27 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerycompute)></code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **search** | <code>[DashboardWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
 **computeInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
-**indexes**? | <code>Array<string></code> | __*Optional*__
 **indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **searchInput**? | <code>[DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 
 ### Methods
 
 
-#### putSearch(value?) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
 
 
 
 ```ts
-putSearch(value?: DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch): void
+putSearch(value: DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch): void
 ```
 
 * **value** (<code>[DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerysearch)</code>)  *No description*
@@ -40560,6 +41033,7 @@ new DashboardWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -40590,12 +41064,13 @@ new DashboardWidgetToplistDefinitionRequestQueryMetricQueryOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
 **aggregatorInput**? | <code>string</code> | __*Optional*__
-**dataSource**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestquerymetricquery)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
@@ -40654,23 +41129,24 @@ new DashboardWidgetToplistDefinitionRequestQueryProcessQueryOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
 **dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**aggregator**? | <code>string</code> | __*Optional*__
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
 **aggregatorInput**? | <code>string</code> | __*Optional*__
 **dataSourceInput**? | <code>string</code> | __*Optional*__
-**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestqueryprocessquery)</code> | __*Optional*__
 **isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**limit**? | <code>number</code> | __*Optional*__
 **limitInput**? | <code>number</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
-**tagFilters**? | <code>Array<string></code> | __*Optional*__
 **tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
-**textFilter**? | <code>string</code> | __*Optional*__
 **textFilterInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -40777,10 +41253,11 @@ new DashboardWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(t
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -40839,10 +41316,11 @@ new DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -40889,25 +41367,26 @@ new DashboardWidgetToplistDefinitionRequestRumQueryOutputReference(terraformReso
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestRumQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestrumquerycomputequery)</code>)  *No description*
@@ -40995,10 +41474,11 @@ new DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputRefere
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -41057,10 +41537,11 @@ new DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputRe
 Name | Type | Description 
 -----|------|-------------
 **aggregation** | <code>string</code> | <span></span>
+**facet** | <code>string</code> | <span></span>
 **order** | <code>string</code> | <span></span>
 **aggregationInput**? | <code>string</code> | __*Optional*__
-**facet**? | <code>string</code> | __*Optional*__
 **facetInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerygroupbysortquery)</code> | __*Optional*__
 **orderInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -41107,25 +41588,26 @@ new DashboardWidgetToplistDefinitionRequestSecurityQueryOutputReference(terrafor
 Name | Type | Description 
 -----|------|-------------
 **computeQuery** | <code>[DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerycomputequeryoutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | <span></span>
 **index** | <code>string</code> | <span></span>
+**multiCompute** | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | <span></span>
+**searchQuery** | <code>string</code> | <span></span>
 **computeQueryInput**? | <code>[DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerycomputequery)</code> | __*Optional*__
-**groupBy**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerygroupby)></code> | __*Optional*__
 **indexInput**? | <code>string</code> | __*Optional*__
-**multiCompute**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquery)</code> | __*Optional*__
 **multiComputeInput**? | <code>Array<[DashboardWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerymulticompute)></code> | __*Optional*__
-**searchQuery**? | <code>string</code> | __*Optional*__
 **searchQueryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### putComputeQuery(value?) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
+#### putComputeQuery(value) <a id="cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityqueryoutputreference-putcomputequery"></a>
 
 
 
 ```ts
-putComputeQuery(value?: DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery): void
+putComputeQuery(value: DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery): void
 ```
 
 * **value** (<code>[DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerycomputequery)</code>)  *No description*
@@ -41212,7 +41694,8 @@ new DashboardWidgetToplistDefinitionRequestStyleOutputReference(terraformResourc
 
 Name | Type | Description 
 -----|------|-------------
-**palette**? | <code>string</code> | __*Optional*__
+**palette** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetToplistDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequeststyle)</code> | __*Optional*__
 **paletteInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -41258,35 +41741,36 @@ new DashboardWidgetTraceServiceDefinitionOutputReference(terraformResource: ITer
 
 Name | Type | Description 
 -----|------|-------------
+**displayFormat** | <code>string</code> | <span></span>
 **env** | <code>string</code> | <span></span>
+**liveSpan** | <code>string</code> | <span></span>
 **service** | <code>string</code> | <span></span>
+**showBreakdown** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showDistribution** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showErrors** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showHits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showLatency** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**showResourceList** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**sizeFormat** | <code>string</code> | <span></span>
 **spanName** | <code>string</code> | <span></span>
-**displayFormat**? | <code>string</code> | __*Optional*__
+**title** | <code>string</code> | <span></span>
+**titleAlign** | <code>string</code> | <span></span>
+**titleSize** | <code>string</code> | <span></span>
 **displayFormatInput**? | <code>string</code> | __*Optional*__
 **envInput**? | <code>string</code> | __*Optional*__
-**liveSpan**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgettraceservicedefinition)</code> | __*Optional*__
 **liveSpanInput**? | <code>string</code> | __*Optional*__
 **serviceInput**? | <code>string</code> | __*Optional*__
-**showBreakdown**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showBreakdownInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showDistribution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showDistributionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showErrors**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showErrorsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showHits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showHitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showLatency**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showLatencyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**showResourceList**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **showResourceListInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**sizeFormat**? | <code>string</code> | __*Optional*__
 **sizeFormatInput**? | <code>string</code> | __*Optional*__
 **spanNameInput**? | <code>string</code> | __*Optional*__
-**title**? | <code>string</code> | __*Optional*__
-**titleAlign**? | <code>string</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
-**titleSize**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -41465,11 +41949,12 @@ new DashboardWidgetWidgetLayoutOutputReference(terraformResource: ITerraformReso
 Name | Type | Description 
 -----|------|-------------
 **height** | <code>number</code> | <span></span>
+**isColumnBreak** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **width** | <code>number</code> | <span></span>
 **x** | <code>number</code> | <span></span>
 **y** | <code>number</code> | <span></span>
 **heightInput**? | <code>number</code> | __*Optional*__
-**isColumnBreak**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetwidgetlayout)</code> | __*Optional*__
 **isColumnBreakInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **widthInput**? | <code>number</code> | __*Optional*__
 **xInput**? | <code>number</code> | __*Optional*__
@@ -41496,7 +41981,7 @@ resetIsColumnBreak(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41525,10 +42010,10 @@ new DataDatadogApiKey(scope: Construct, id: string, config?: DataDatadogApiKeyCo
 
 Name | Type | Description 
 -----|------|-------------
+**id** | <code>string</code> | <span></span>
 **key** | <code>string</code> | <span></span>
-**id**? | <code>string</code> | __*Optional*__
+**name** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -41577,7 +42062,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41606,10 +42091,10 @@ new DataDatadogApplicationKey(scope: Construct, id: string, config?: DataDatadog
 
 Name | Type | Description 
 -----|------|-------------
+**id** | <code>string</code> | <span></span>
 **key** | <code>string</code> | <span></span>
-**id**? | <code>string</code> | __*Optional*__
+**name** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -41658,7 +42143,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41714,7 +42199,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41768,7 +42253,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41859,7 +42344,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41911,7 +42396,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41949,7 +42434,9 @@ Name | Type | Description
 **includeTags** | <code>any</code> | <span></span>
 **locked** | <code>any</code> | <span></span>
 **message** | <code>string</code> | <span></span>
+**monitorTagsFilter** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**nameFilter** | <code>string</code> | <span></span>
 **newGroupDelay** | <code>number</code> | <span></span>
 **newHostDelay** | <code>number</code> | <span></span>
 **noDataTimeframe** | <code>number</code> | <span></span>
@@ -41962,13 +42449,11 @@ Name | Type | Description
 **requireFullWindow** | <code>any</code> | <span></span>
 **restrictedRoles** | <code>Array<string></code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
+**tagsFilter** | <code>Array<string></code> | <span></span>
 **timeoutH** | <code>number</code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**monitorTagsFilter**? | <code>Array<string></code> | __*Optional*__
 **monitorTagsFilterInput**? | <code>Array<string></code> | __*Optional*__
-**nameFilter**? | <code>string</code> | __*Optional*__
 **nameFilterInput**? | <code>string</code> | __*Optional*__
-**tagsFilter**? | <code>Array<string></code> | __*Optional*__
 **tagsFilterInput**? | <code>Array<string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -42121,7 +42606,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors.html datadog_monitors}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42152,11 +42637,11 @@ new DataDatadogMonitors(scope: Construct, id: string, config?: DataDatadogMonito
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**monitorTagsFilter**? | <code>Array<string></code> | __*Optional*__
+**monitorTagsFilter** | <code>Array<string></code> | <span></span>
+**nameFilter** | <code>string</code> | <span></span>
+**tagsFilter** | <code>Array<string></code> | <span></span>
 **monitorTagsFilterInput**? | <code>Array<string></code> | __*Optional*__
-**nameFilter**? | <code>string</code> | __*Optional*__
 **nameFilterInput**? | <code>string</code> | __*Optional*__
-**tagsFilter**? | <code>Array<string></code> | __*Optional*__
 **tagsFilterInput**? | <code>Array<string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -42262,7 +42747,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42326,7 +42811,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42382,7 +42867,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42410,8 +42895,8 @@ new DataDatadogRoles(scope: Construct, id: string, config?: DataDatadogRolesConf
 
 Name | Type | Description 
 -----|------|-------------
+**filter** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**filter**? | <code>string</code> | __*Optional*__
 **filterInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -42493,7 +42978,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42624,7 +43109,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -42655,15 +43140,15 @@ new DataDatadogSecurityMonitoringRules(scope: Construct, id: string, config?: Da
 
 Name | Type | Description 
 -----|------|-------------
+**defaultOnlyFilter** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**nameFilter** | <code>string</code> | <span></span>
 **ruleIds** | <code>Array<string></code> | <span></span>
-**defaultOnlyFilter**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**tagsFilter** | <code>Array<string></code> | <span></span>
+**userOnlyFilter** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **defaultOnlyFilterInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**nameFilter**? | <code>string</code> | __*Optional*__
 **nameFilterInput**? | <code>string</code> | __*Optional*__
-**tagsFilter**? | <code>Array<string></code> | __*Optional*__
 **tagsFilterInput**? | <code>Array<string></code> | __*Optional*__
-**userOnlyFilter**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **userOnlyFilterInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -42984,7 +43469,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43015,15 +43500,15 @@ new DataDatadogServiceLevelObjective(scope: Construct, id: string, config?: Data
 
 Name | Type | Description 
 -----|------|-------------
+**id** | <code>string</code> | <span></span>
+**metricsQuery** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**nameQuery** | <code>string</code> | <span></span>
+**tagsQuery** | <code>string</code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**id**? | <code>string</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
-**metricsQuery**? | <code>string</code> | __*Optional*__
 **metricsQueryInput**? | <code>string</code> | __*Optional*__
-**nameQuery**? | <code>string</code> | __*Optional*__
 **nameQueryInput**? | <code>string</code> | __*Optional*__
-**tagsQuery**? | <code>string</code> | __*Optional*__
 **tagsQueryInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -43096,7 +43581,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43128,13 +43613,13 @@ new DataDatadogServiceLevelObjectives(scope: Construct, id: string, config?: Dat
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**ids**? | <code>Array<string></code> | __*Optional*__
+**ids** | <code>Array<string></code> | <span></span>
+**metricsQuery** | <code>string</code> | <span></span>
+**nameQuery** | <code>string</code> | <span></span>
+**tagsQuery** | <code>string</code> | <span></span>
 **idsInput**? | <code>Array<string></code> | __*Optional*__
-**metricsQuery**? | <code>string</code> | __*Optional*__
 **metricsQueryInput**? | <code>string</code> | __*Optional*__
-**nameQuery**? | <code>string</code> | __*Optional*__
 **nameQueryInput**? | <code>string</code> | __*Optional*__
-**tagsQuery**? | <code>string</code> | __*Optional*__
 **tagsQueryInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -43252,7 +43737,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43307,7 +43792,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43371,7 +43856,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43578,7 +44063,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -43618,38 +44103,38 @@ Name | Type | Description
 **active** | <code>any</code> | <span></span>
 **activeChildId** | <code>number</code> | <span></span>
 **disabled** | <code>any</code> | <span></span>
+**end** | <code>number</code> | <span></span>
+**endDate** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**message** | <code>string</code> | <span></span>
+**monitorId** | <code>number</code> | <span></span>
+**monitorTags** | <code>Array<string></code> | <span></span>
 **recurrence** | <code>[DowntimeRecurrenceOutputReference](#cdktf-provider-datadog-downtimerecurrenceoutputreference)</code> | <span></span>
 **scope** | <code>Array<string></code> | <span></span>
-**end**? | <code>number</code> | __*Optional*__
-**endDate**? | <code>string</code> | __*Optional*__
+**start** | <code>number</code> | <span></span>
+**startDate** | <code>string</code> | <span></span>
+**timezone** | <code>string</code> | <span></span>
 **endDateInput**? | <code>string</code> | __*Optional*__
 **endInput**? | <code>number</code> | __*Optional*__
-**message**? | <code>string</code> | __*Optional*__
 **messageInput**? | <code>string</code> | __*Optional*__
-**monitorId**? | <code>number</code> | __*Optional*__
 **monitorIdInput**? | <code>number</code> | __*Optional*__
-**monitorTags**? | <code>Array<string></code> | __*Optional*__
 **monitorTagsInput**? | <code>Array<string></code> | __*Optional*__
 **recurrenceInput**? | <code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code> | __*Optional*__
 **scopeInput**? | <code>Array<string></code> | __*Optional*__
-**start**? | <code>number</code> | __*Optional*__
-**startDate**? | <code>string</code> | __*Optional*__
 **startDateInput**? | <code>string</code> | __*Optional*__
 **startInput**? | <code>number</code> | __*Optional*__
-**timezone**? | <code>string</code> | __*Optional*__
 **timezoneInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putRecurrence(value?) <a id="cdktf-provider-datadog-downtime-putrecurrence"></a>
+#### putRecurrence(value) <a id="cdktf-provider-datadog-downtime-putrecurrence"></a>
 
 
 
 ```ts
-putRecurrence(value?: DowntimeRecurrence): void
+putRecurrence(value: DowntimeRecurrence): void
 ```
 
 * **value** (<code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code>)  *No description*
@@ -43811,17 +44296,18 @@ new DowntimeRecurrenceOutputReference(terraformResource: ITerraformResource, ter
 
 Name | Type | Description 
 -----|------|-------------
+**period** | <code>number</code> | <span></span>
+**rrule** | <code>string</code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**period**? | <code>number</code> | __*Optional*__
+**untilDate** | <code>number</code> | <span></span>
+**untilOccurrences** | <code>number</code> | <span></span>
+**weekDays** | <code>Array<string></code> | <span></span>
+**internalValue**? | <code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code> | __*Optional*__
 **periodInput**? | <code>number</code> | __*Optional*__
-**rrule**? | <code>string</code> | __*Optional*__
 **rruleInput**? | <code>string</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
-**untilDate**? | <code>number</code> | __*Optional*__
 **untilDateInput**? | <code>number</code> | __*Optional*__
-**untilOccurrences**? | <code>number</code> | __*Optional*__
 **untilOccurrencesInput**? | <code>number</code> | __*Optional*__
-**weekDays**? | <code>Array<string></code> | __*Optional*__
 **weekDaysInput**? | <code>Array<string></code> | __*Optional*__
 
 ### Methods
@@ -43893,7 +44379,7 @@ resetWeekDays(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -43928,23 +44414,23 @@ new IntegrationAws(scope: Construct, id: string, config?: IntegrationAwsConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**accessKeyId** | <code>string</code> | <span></span>
+**accountId** | <code>string</code> | <span></span>
+**accountSpecificNamespaceRules** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code> | <span></span>
+**excludedRegions** | <code>Array<string></code> | <span></span>
 **externalId** | <code>string</code> | <span></span>
+**filterTags** | <code>Array<string></code> | <span></span>
+**hostTags** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**accessKeyId**? | <code>string</code> | __*Optional*__
+**roleName** | <code>string</code> | <span></span>
+**secretAccessKey** | <code>string</code> | <span></span>
 **accessKeyIdInput**? | <code>string</code> | __*Optional*__
-**accountId**? | <code>string</code> | __*Optional*__
 **accountIdInput**? | <code>string</code> | __*Optional*__
-**accountSpecificNamespaceRules**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code> | __*Optional*__
 **accountSpecificNamespaceRulesInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, boolean></code> | __*Optional*__
-**excludedRegions**? | <code>Array<string></code> | __*Optional*__
 **excludedRegionsInput**? | <code>Array<string></code> | __*Optional*__
-**filterTags**? | <code>Array<string></code> | __*Optional*__
 **filterTagsInput**? | <code>Array<string></code> | __*Optional*__
-**hostTags**? | <code>Array<string></code> | __*Optional*__
 **hostTagsInput**? | <code>Array<string></code> | __*Optional*__
-**roleName**? | <code>string</code> | __*Optional*__
 **roleNameInput**? | <code>string</code> | __*Optional*__
-**secretAccessKey**? | <code>string</code> | __*Optional*__
 **secretAccessKeyInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -44065,7 +44551,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44122,7 +44608,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44179,7 +44665,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44239,7 +44725,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html datadog_integration_azure}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44271,15 +44757,15 @@ new IntegrationAzure(scope: Construct, id: string, config: IntegrationAzureConfi
 
 Name | Type | Description 
 -----|------|-------------
+**automute** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **clientId** | <code>string</code> | <span></span>
 **clientSecret** | <code>string</code> | <span></span>
+**hostFilters** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **tenantName** | <code>string</code> | <span></span>
-**automute**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **automuteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **clientIdInput**? | <code>string</code> | __*Optional*__
 **clientSecretInput**? | <code>string</code> | __*Optional*__
-**hostFilters**? | <code>string</code> | __*Optional*__
 **hostFiltersInput**? | <code>string</code> | __*Optional*__
 **tenantNameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -44329,7 +44815,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44363,17 +44849,17 @@ new IntegrationGcp(scope: Construct, id: string, config: IntegrationGcpConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**automute** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **clientEmail** | <code>string</code> | <span></span>
 **clientId** | <code>string</code> | <span></span>
+**hostFilters** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **privateKey** | <code>string</code> | <span></span>
 **privateKeyId** | <code>string</code> | <span></span>
 **projectId** | <code>string</code> | <span></span>
-**automute**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **automuteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **clientEmailInput**? | <code>string</code> | __*Optional*__
 **clientIdInput**? | <code>string</code> | __*Optional*__
-**hostFilters**? | <code>string</code> | __*Optional*__
 **hostFiltersInput**? | <code>string</code> | __*Optional*__
 **privateKeyIdInput**? | <code>string</code> | __*Optional*__
 **privateKeyInput**? | <code>string</code> | __*Optional*__
@@ -44425,7 +44911,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44455,11 +44941,11 @@ new IntegrationPagerduty(scope: Construct, id: string, config: IntegrationPagerd
 
 Name | Type | Description 
 -----|------|-------------
+**apiToken** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**schedules** | <code>Array<string></code> | <span></span>
 **subdomain** | <code>string</code> | <span></span>
-**apiToken**? | <code>string</code> | __*Optional*__
 **apiTokenInput**? | <code>string</code> | __*Optional*__
-**schedules**? | <code>Array<string></code> | __*Optional*__
 **schedulesInput**? | <code>Array<string></code> | __*Optional*__
 **subdomainInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -44509,7 +44995,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44566,7 +45052,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44665,13 +45151,14 @@ new IntegrationSlackChannelDisplayOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
-**message**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**message** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**notified** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**snapshot** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**tags** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[IntegrationSlackChannelDisplay](#cdktf-provider-datadog-integrationslackchanneldisplay)</code> | __*Optional*__
 **messageInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**notified**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **notifiedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**snapshot**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **snapshotInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**tags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **tagsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
@@ -44731,7 +45218,7 @@ resetTags(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -44768,16 +45255,16 @@ Name | Type | Description
 **azureArchive** | <code>[LogsArchiveAzureArchiveOutputReference](#cdktf-provider-datadog-logsarchiveazurearchiveoutputreference)</code> | <span></span>
 **gcsArchive** | <code>[LogsArchiveGcsArchiveOutputReference](#cdktf-provider-datadog-logsarchivegcsarchiveoutputreference)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**includeTags** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
+**rehydrationTags** | <code>Array<string></code> | <span></span>
 **s3Archive** | <code>[LogsArchiveS3ArchiveOutputReference](#cdktf-provider-datadog-logsarchives3archiveoutputreference)</code> | <span></span>
 **azureArchiveInput**? | <code>[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)</code> | __*Optional*__
 **gcsArchiveInput**? | <code>[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)</code> | __*Optional*__
-**includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **includeTagsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**rehydrationTags**? | <code>Array<string></code> | __*Optional*__
 **rehydrationTagsInput**? | <code>Array<string></code> | __*Optional*__
 **s3ArchiveInput**? | <code>[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -44785,12 +45272,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putAzureArchive(value?) <a id="cdktf-provider-datadog-logsarchive-putazurearchive"></a>
+#### putAzureArchive(value) <a id="cdktf-provider-datadog-logsarchive-putazurearchive"></a>
 
 
 
 ```ts
-putAzureArchive(value?: LogsArchiveAzureArchive): void
+putAzureArchive(value: LogsArchiveAzureArchive): void
 ```
 
 * **value** (<code>[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)</code>)  *No description*
@@ -44803,12 +45290,12 @@ putAzureArchive(value?: LogsArchiveAzureArchive): void
 
 
 
-#### putGcsArchive(value?) <a id="cdktf-provider-datadog-logsarchive-putgcsarchive"></a>
+#### putGcsArchive(value) <a id="cdktf-provider-datadog-logsarchive-putgcsarchive"></a>
 
 
 
 ```ts
-putGcsArchive(value?: LogsArchiveGcsArchive): void
+putGcsArchive(value: LogsArchiveGcsArchive): void
 ```
 
 * **value** (<code>[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)</code>)  *No description*
@@ -44820,12 +45307,12 @@ putGcsArchive(value?: LogsArchiveGcsArchive): void
 
 
 
-#### putS3Archive(value?) <a id="cdktf-provider-datadog-logsarchive-puts3archive"></a>
+#### putS3Archive(value) <a id="cdktf-provider-datadog-logsarchive-puts3archive"></a>
 
 
 
 ```ts
-putS3Archive(value?: LogsArchiveS3Archive): void
+putS3Archive(value: LogsArchiveS3Archive): void
 ```
 
 * **value** (<code>[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)</code>)  *No description*
@@ -44939,11 +45426,12 @@ Name | Type | Description
 -----|------|-------------
 **clientId** | <code>string</code> | <span></span>
 **container** | <code>string</code> | <span></span>
+**path** | <code>string</code> | <span></span>
 **storageAccount** | <code>string</code> | <span></span>
 **tenantId** | <code>string</code> | <span></span>
 **clientIdInput**? | <code>string</code> | __*Optional*__
 **containerInput**? | <code>string</code> | __*Optional*__
-**path**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)</code> | __*Optional*__
 **pathInput**? | <code>string</code> | __*Optional*__
 **storageAccountInput**? | <code>string</code> | __*Optional*__
 **tenantIdInput**? | <code>string</code> | __*Optional*__
@@ -44997,6 +45485,7 @@ Name | Type | Description
 **projectId** | <code>string</code> | <span></span>
 **bucketInput**? | <code>string</code> | __*Optional*__
 **clientEmailInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)</code> | __*Optional*__
 **pathInput**? | <code>string</code> | __*Optional*__
 **projectIdInput**? | <code>string</code> | __*Optional*__
 
@@ -45006,7 +45495,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -45034,8 +45523,8 @@ new LogsArchiveOrder(scope: Construct, id: string, config?: LogsArchiveOrderConf
 
 Name | Type | Description 
 -----|------|-------------
+**archiveIds** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**archiveIds**? | <code>Array<string></code> | __*Optional*__
 **archiveIdsInput**? | <code>Array<string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -45100,6 +45589,7 @@ Name | Type | Description
 **roleName** | <code>string</code> | <span></span>
 **accountIdInput**? | <code>string</code> | __*Optional*__
 **bucketInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)</code> | __*Optional*__
 **pathInput**? | <code>string</code> | __*Optional*__
 **roleNameInput**? | <code>string</code> | __*Optional*__
 
@@ -45109,7 +45599,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html datadog_logs_custom_pipeline}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -45142,12 +45632,12 @@ Name | Type | Description
 -----|------|-------------
 **filter** | <code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**processor** | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | <span></span>
 **filterInput**? | <code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**processor**? | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | __*Optional*__
 **processorInput**? | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -45219,13 +45709,14 @@ new LogsCustomPipelineProcessorArithmeticProcessorOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **expression** | <code>string</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isReplaceMissing** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
 **expressionInput**? | <code>string</code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorArithmeticProcessor](#cdktf-provider-datadog-logscustompipelineprocessorarithmeticprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isReplaceMissingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 
@@ -45296,21 +45787,22 @@ new LogsCustomPipelineProcessorAttributeRemapperOutputReference(terraformResourc
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**overrideOnConflict** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**preserveSource** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sourceType** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
+**targetFormat** | <code>string</code> | <span></span>
 **targetType** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorAttributeRemapper](#cdktf-provider-datadog-logscustompipelineprocessorattributeremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**overrideOnConflict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **overrideOnConflictInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**preserveSource**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **preserveSourceInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sourceTypeInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
-**targetFormat**? | <code>string</code> | __*Optional*__
 **targetFormatInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 **targetTypeInput**? | <code>string</code> | __*Optional*__
@@ -45407,6 +45899,7 @@ new LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference(te
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[LogsCustomPipelineProcessorCategoryProcessorCategoryFilter](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessorcategoryfilter)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -45438,11 +45931,12 @@ new LogsCustomPipelineProcessorCategoryProcessorOutputReference(terraformResourc
 Name | Type | Description 
 -----|------|-------------
 **category** | <code>Array<[LogsCustomPipelineProcessorCategoryProcessorCategory](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessorcategory)></code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
 **categoryInput**? | <code>Array<[LogsCustomPipelineProcessorCategoryProcessorCategory](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessorcategory)></code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorCategoryProcessor](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 
@@ -45501,10 +45995,11 @@ new LogsCustomPipelineProcessorDateRemapperOutputReference(terraformResource: IT
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorDateRemapper](#cdktf-provider-datadog-logscustompipelineprocessordateremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -45563,11 +46058,12 @@ new LogsCustomPipelineProcessorGeoIpParserOutputReference(terraformResource: ITe
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorGeoIpParser](#cdktf-provider-datadog-logscustompipelineprocessorgeoipparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -45629,6 +46125,7 @@ Name | Type | Description
 -----|------|-------------
 **matchRules** | <code>string</code> | <span></span>
 **supportRules** | <code>string</code> | <span></span>
+**internalValue**? | <code>[LogsCustomPipelineProcessorGrokParserGrok](#cdktf-provider-datadog-logscustompipelineprocessorgrokparsergrok)</code> | __*Optional*__
 **matchRulesInput**? | <code>string</code> | __*Optional*__
 **supportRulesInput**? | <code>string</code> | __*Optional*__
 
@@ -45661,13 +46158,14 @@ new LogsCustomPipelineProcessorGrokParserOutputReference(terraformResource: ITer
 Name | Type | Description 
 -----|------|-------------
 **grok** | <code>[LogsCustomPipelineProcessorGrokParserGrokOutputReference](#cdktf-provider-datadog-logscustompipelineprocessorgrokparsergrokoutputreference)</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**samples** | <code>Array<string></code> | <span></span>
 **source** | <code>string</code> | <span></span>
 **grokInput**? | <code>[LogsCustomPipelineProcessorGrokParserGrok](#cdktf-provider-datadog-logscustompipelineprocessorgrokparsergrok)</code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorGrokParser](#cdktf-provider-datadog-logscustompipelineprocessorgrokparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**samples**? | <code>Array<string></code> | __*Optional*__
 **samplesInput**? | <code>Array<string></code> | __*Optional*__
 **sourceInput**? | <code>string</code> | __*Optional*__
 
@@ -45753,15 +46251,16 @@ new LogsCustomPipelineProcessorLookupProcessorOutputReference(terraformResource:
 
 Name | Type | Description 
 -----|------|-------------
+**defaultLookup** | <code>string</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **lookupTable** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **source** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**defaultLookup**? | <code>string</code> | __*Optional*__
 **defaultLookupInput**? | <code>string</code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorLookupProcessor](#cdktf-provider-datadog-logscustompipelineprocessorlookupprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **lookupTableInput**? | <code>Array<string></code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourceInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -45833,10 +46332,11 @@ new LogsCustomPipelineProcessorMessageRemapperOutputReference(terraformResource:
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorMessageRemapper](#cdktf-provider-datadog-logscustompipelineprocessormessageremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -45896,12 +46396,13 @@ new LogsCustomPipelineProcessorPipelineOutputReference(terraformResource: ITerra
 Name | Type | Description 
 -----|------|-------------
 **filter** | <code>Array<[LogsCustomPipelineProcessorPipelineFilter](#cdktf-provider-datadog-logscustompipelineprocessorpipelinefilter)></code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**processor** | <code>Array<[LogsCustomPipelineProcessorPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessor)></code> | <span></span>
 **filterInput**? | <code>Array<[LogsCustomPipelineProcessorPipelineFilter](#cdktf-provider-datadog-logscustompipelineprocessorpipelinefilter)></code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipeline](#cdktf-provider-datadog-logscustompipelineprocessorpipeline)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**processor**? | <code>Array<[LogsCustomPipelineProcessorPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessor)></code> | __*Optional*__
 **processorInput**? | <code>Array<[LogsCustomPipelineProcessorPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessor)></code> | __*Optional*__
 
 ### Methods
@@ -45960,13 +46461,14 @@ new LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReferen
 Name | Type | Description 
 -----|------|-------------
 **expression** | <code>string</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isReplaceMissing** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
 **expressionInput**? | <code>string</code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorarithmeticprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isReplaceMissingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 
@@ -46037,21 +46539,22 @@ new LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**overrideOnConflict** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**preserveSource** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sourceType** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
+**targetFormat** | <code>string</code> | <span></span>
 **targetType** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorattributeremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**overrideOnConflict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **overrideOnConflictInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**preserveSource**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **preserveSourceInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sourceTypeInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
-**targetFormat**? | <code>string</code> | __*Optional*__
 **targetFormatInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 **targetTypeInput**? | <code>string</code> | __*Optional*__
@@ -46148,6 +46651,7 @@ new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterO
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorcategoryprocessorcategoryfilter)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -46179,11 +46683,12 @@ new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference
 Name | Type | Description 
 -----|------|-------------
 **category** | <code>Array<[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory)></code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
 **categoryInput**? | <code>Array<[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorcategoryprocessorcategory)></code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorcategoryprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 
@@ -46242,10 +46747,11 @@ new LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference(terr
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorDateRemapper](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessordateremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -46304,11 +46810,12 @@ new LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference(terra
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorGeoIpParser](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorgeoipparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -46370,6 +46877,7 @@ Name | Type | Description
 -----|------|-------------
 **matchRules** | <code>string</code> | <span></span>
 **supportRules** | <code>string</code> | <span></span>
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorgrokparsergrok)</code> | __*Optional*__
 **matchRulesInput**? | <code>string</code> | __*Optional*__
 **supportRulesInput**? | <code>string</code> | __*Optional*__
 
@@ -46402,13 +46910,14 @@ new LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference(terraf
 Name | Type | Description 
 -----|------|-------------
 **grok** | <code>[LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorgrokparsergrokoutputreference)</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**samples** | <code>Array<string></code> | <span></span>
 **source** | <code>string</code> | <span></span>
 **grokInput**? | <code>[LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorgrokparsergrok)</code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorGrokParser](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorgrokparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**samples**? | <code>Array<string></code> | __*Optional*__
 **samplesInput**? | <code>Array<string></code> | __*Optional*__
 **sourceInput**? | <code>string</code> | __*Optional*__
 
@@ -46494,15 +47003,16 @@ new LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**defaultLookup** | <code>string</code> | <span></span>
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **lookupTable** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **source** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**defaultLookup**? | <code>string</code> | __*Optional*__
 **defaultLookupInput**? | <code>string</code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorLookupProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorlookupprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **lookupTableInput**? | <code>Array<string></code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourceInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -46574,10 +47084,11 @@ new LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorMessageRemapper](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessormessageremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -46636,10 +47147,11 @@ new LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorServiceRemapper](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorserviceremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -46698,10 +47210,11 @@ new LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference(te
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorStatusRemapper](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorstatusremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -46760,13 +47273,14 @@ new LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputRefe
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isReplaceMissing** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
 **template** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorstringbuilderprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isReplaceMissingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 **templateInput**? | <code>string</code> | __*Optional*__
@@ -46838,10 +47352,11 @@ new LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessortraceidremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -46900,13 +47415,14 @@ new LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference(terrafo
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**normalizeEndingSlashes** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorUrlParser](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorurlparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**normalizeEndingSlashes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **normalizeEndingSlashesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -46978,13 +47494,14 @@ new LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference(t
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isEncoded** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorPipelineProcessorUserAgentParser](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessoruseragentparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**isEncoded**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isEncodedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -47056,10 +47573,11 @@ new LogsCustomPipelineProcessorServiceRemapperOutputReference(terraformResource:
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorServiceRemapper](#cdktf-provider-datadog-logscustompipelineprocessorserviceremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -47118,10 +47636,11 @@ new LogsCustomPipelineProcessorStatusRemapperOutputReference(terraformResource: 
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorStatusRemapper](#cdktf-provider-datadog-logscustompipelineprocessorstatusremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -47180,13 +47699,14 @@ new LogsCustomPipelineProcessorStringBuilderProcessorOutputReference(terraformRe
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isReplaceMissing** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **target** | <code>string</code> | <span></span>
 **template** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorStringBuilderProcessor](#cdktf-provider-datadog-logscustompipelineprocessorstringbuilderprocessor)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**isReplaceMissing**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isReplaceMissingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
 **templateInput**? | <code>string</code> | __*Optional*__
@@ -47258,10 +47778,11 @@ new LogsCustomPipelineProcessorTraceIdRemapperOutputReference(terraformResource:
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorTraceIdRemapper](#cdktf-provider-datadog-logscustompipelineprocessortraceidremapper)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 
@@ -47320,13 +47841,14 @@ new LogsCustomPipelineProcessorUrlParserOutputReference(terraformResource: ITerr
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**normalizeEndingSlashes** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorUrlParser](#cdktf-provider-datadog-logscustompipelineprocessorurlparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**normalizeEndingSlashes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **normalizeEndingSlashesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -47398,13 +47920,14 @@ new LogsCustomPipelineProcessorUserAgentParserOutputReference(terraformResource:
 
 Name | Type | Description 
 -----|------|-------------
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isEncoded** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **sources** | <code>Array<string></code> | <span></span>
 **target** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[LogsCustomPipelineProcessorUserAgentParser](#cdktf-provider-datadog-logscustompipelineprocessoruseragentparser)</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**isEncoded**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isEncodedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **sourcesInput**? | <code>Array<string></code> | __*Optional*__
 **targetInput**? | <code>string</code> | __*Optional*__
@@ -47454,7 +47977,7 @@ resetName(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47487,18 +48010,18 @@ new LogsIndex(scope: Construct, id: string, config: LogsIndexConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**dailyLimit** | <code>number</code> | <span></span>
+**disableDailyLimit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**exclusionFilter** | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | <span></span>
 **filter** | <code>[LogsIndexFilterOutputReference](#cdktf-provider-datadog-logsindexfilteroutputreference)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**dailyLimit**? | <code>number</code> | __*Optional*__
+**retentionDays** | <code>number</code> | <span></span>
 **dailyLimitInput**? | <code>number</code> | __*Optional*__
-**disableDailyLimit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **disableDailyLimitInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**exclusionFilter**? | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | __*Optional*__
 **exclusionFilterInput**? | <code>Array<[LogsIndexExclusionFilter](#cdktf-provider-datadog-logsindexexclusionfilter)></code> | __*Optional*__
 **filterInput**? | <code>[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**retentionDays**? | <code>number</code> | __*Optional*__
 **retentionDaysInput**? | <code>number</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -47608,6 +48131,7 @@ new LogsIndexFilterOutputReference(terraformResource: ITerraformResource, terraf
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[LogsIndexFilter](#cdktf-provider-datadog-logsindexfilter)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -47616,7 +48140,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47673,7 +48197,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47702,7 +48226,7 @@ new LogsIntegrationPipeline(scope: Construct, id: string, config?: LogsIntegrati
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -47739,7 +48263,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47772,11 +48296,11 @@ Name | Type | Description
 -----|------|-------------
 **compute** | <code>[LogsMetricComputeOutputReference](#cdktf-provider-datadog-logsmetriccomputeoutputreference)</code> | <span></span>
 **filter** | <code>[LogsMetricFilterOutputReference](#cdktf-provider-datadog-logsmetricfilteroutputreference)</code> | <span></span>
+**groupBy** | <code>Array<[LogsMetricGroupBy](#cdktf-provider-datadog-logsmetricgroupby)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **computeInput**? | <code>[LogsMetricCompute](#cdktf-provider-datadog-logsmetriccompute)</code> | __*Optional*__
 **filterInput**? | <code>[LogsMetricFilter](#cdktf-provider-datadog-logsmetricfilter)</code> | __*Optional*__
-**groupBy**? | <code>Array<[LogsMetricGroupBy](#cdktf-provider-datadog-logsmetricgroupby)></code> | __*Optional*__
 **groupByInput**? | <code>Array<[LogsMetricGroupBy](#cdktf-provider-datadog-logsmetricgroupby)></code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -47866,8 +48390,9 @@ new LogsMetricComputeOutputReference(terraformResource: ITerraformResource, terr
 Name | Type | Description 
 -----|------|-------------
 **aggregationType** | <code>string</code> | <span></span>
+**path** | <code>string</code> | <span></span>
 **aggregationTypeInput**? | <code>string</code> | __*Optional*__
-**path**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[LogsMetricCompute](#cdktf-provider-datadog-logsmetriccompute)</code> | __*Optional*__
 **pathInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -47914,6 +48439,7 @@ new LogsMetricFilterOutputReference(terraformResource: ITerraformResource, terra
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[LogsMetricFilter](#cdktf-provider-datadog-logsmetricfilter)</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
 
 
@@ -47922,7 +48448,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -47979,7 +48505,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48013,20 +48539,20 @@ new MetricMetadata(scope: Construct, id: string, config: MetricMetadataConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **metric** | <code>string</code> | <span></span>
-**description**? | <code>string</code> | __*Optional*__
+**perUnit** | <code>string</code> | <span></span>
+**shortName** | <code>string</code> | <span></span>
+**statsdInterval** | <code>number</code> | <span></span>
+**type** | <code>string</code> | <span></span>
+**unit** | <code>string</code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **metricInput**? | <code>string</code> | __*Optional*__
-**perUnit**? | <code>string</code> | __*Optional*__
 **perUnitInput**? | <code>string</code> | __*Optional*__
-**shortName**? | <code>string</code> | __*Optional*__
 **shortNameInput**? | <code>string</code> | __*Optional*__
-**statsdInterval**? | <code>number</code> | __*Optional*__
 **statsdIntervalInput**? | <code>number</code> | __*Optional*__
-**type**? | <code>string</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
-**unit**? | <code>string</code> | __*Optional*__
 **unitInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -48123,7 +48649,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48155,13 +48681,13 @@ new MetricTagConfiguration(scope: Construct, id: string, config: MetricTagConfig
 
 Name | Type | Description 
 -----|------|-------------
+**aggregations** | <code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**includePercentiles** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **metricName** | <code>string</code> | <span></span>
 **metricType** | <code>string</code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
-**aggregations**? | <code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code> | __*Optional*__
 **aggregationsInput**? | <code>Array<[MetricTagConfigurationAggregations](#cdktf-provider-datadog-metrictagconfigurationaggregations)></code> | __*Optional*__
-**includePercentiles**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **includePercentilesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **metricNameInput**? | <code>string</code> | __*Optional*__
 **metricTypeInput**? | <code>string</code> | __*Optional*__
@@ -48213,7 +48739,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48267,72 +48793,72 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**enableLogsSample** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**escalationMessage** | <code>string</code> | <span></span>
+**evaluationDelay** | <code>number</code> | <span></span>
+**forceDelete** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**groupbySimpleMonitor** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**includeTags** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**locked** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **monitorThresholdWindows** | <code>[MonitorMonitorThresholdWindowsOutputReference](#cdktf-provider-datadog-monitormonitorthresholdwindowsoutputreference)</code> | <span></span>
 **monitorThresholds** | <code>[MonitorMonitorThresholdsOutputReference](#cdktf-provider-datadog-monitormonitorthresholdsoutputreference)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**newGroupDelay** | <code>number</code> | <span></span>
+**newHostDelay** | <code>number</code> | <span></span>
+**noDataTimeframe** | <code>number</code> | <span></span>
+**notifyAudit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**notifyNoData** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**priority** | <code>number</code> | <span></span>
 **query** | <code>string</code> | <span></span>
+**renotifyInterval** | <code>number</code> | <span></span>
+**renotifyOccurrences** | <code>number</code> | <span></span>
+**renotifyStatuses** | <code>Array<string></code> | <span></span>
+**requireFullWindow** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**restrictedRoles** | <code>Array<string></code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+**timeoutH** | <code>number</code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**enableLogsSample**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**validate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **enableLogsSampleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**escalationMessage**? | <code>string</code> | __*Optional*__
 **escalationMessageInput**? | <code>string</code> | __*Optional*__
-**evaluationDelay**? | <code>number</code> | __*Optional*__
 **evaluationDelayInput**? | <code>number</code> | __*Optional*__
-**forceDelete**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **forceDeleteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**groupbySimpleMonitor**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **groupbySimpleMonitorInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **includeTagsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **lockedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **messageInput**? | <code>string</code> | __*Optional*__
 **monitorThresholdWindowsInput**? | <code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code> | __*Optional*__
 **monitorThresholdsInput**? | <code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**newGroupDelay**? | <code>number</code> | __*Optional*__
 **newGroupDelayInput**? | <code>number</code> | __*Optional*__
-**newHostDelay**? | <code>number</code> | __*Optional*__
 **newHostDelayInput**? | <code>number</code> | __*Optional*__
-**noDataTimeframe**? | <code>number</code> | __*Optional*__
 **noDataTimeframeInput**? | <code>number</code> | __*Optional*__
-**notifyAudit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **notifyAuditInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**notifyNoData**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **notifyNoDataInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**priority**? | <code>number</code> | __*Optional*__
 **priorityInput**? | <code>number</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
-**renotifyInterval**? | <code>number</code> | __*Optional*__
 **renotifyIntervalInput**? | <code>number</code> | __*Optional*__
-**renotifyOccurrences**? | <code>number</code> | __*Optional*__
 **renotifyOccurrencesInput**? | <code>number</code> | __*Optional*__
-**renotifyStatuses**? | <code>Array<string></code> | __*Optional*__
 **renotifyStatusesInput**? | <code>Array<string></code> | __*Optional*__
-**requireFullWindow**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireFullWindowInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**restrictedRoles**? | <code>Array<string></code> | __*Optional*__
 **restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
-**timeoutH**? | <code>number</code> | __*Optional*__
 **timeoutHInput**? | <code>number</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
-**validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **validateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putMonitorThresholdWindows(value?) <a id="cdktf-provider-datadog-monitor-putmonitorthresholdwindows"></a>
+#### putMonitorThresholdWindows(value) <a id="cdktf-provider-datadog-monitor-putmonitorthresholdwindows"></a>
 
 
 
 ```ts
-putMonitorThresholdWindows(value?: MonitorMonitorThresholdWindows): void
+putMonitorThresholdWindows(value: MonitorMonitorThresholdWindows): void
 ```
 
 * **value** (<code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code>)  *No description*
@@ -48342,12 +48868,12 @@ putMonitorThresholdWindows(value?: MonitorMonitorThresholdWindows): void
 
 
 
-#### putMonitorThresholds(value?) <a id="cdktf-provider-datadog-monitor-putmonitorthresholds"></a>
+#### putMonitorThresholds(value) <a id="cdktf-provider-datadog-monitor-putmonitorthresholds"></a>
 
 
 
 ```ts
-putMonitorThresholds(value?: MonitorMonitorThresholds): void
+putMonitorThresholds(value: MonitorMonitorThresholds): void
 ```
 
 * **value** (<code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code>)  *No description*
@@ -48655,7 +49181,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48686,8 +49212,8 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **monitor** | <code>string</code> | <span></span>
+**url** | <code>string</code> | <span></span>
 **monitorInput**? | <code>string</code> | __*Optional*__
-**url**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -48746,9 +49272,10 @@ new MonitorMonitorThresholdWindowsOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
-**recoveryWindow**? | <code>string</code> | __*Optional*__
+**recoveryWindow** | <code>string</code> | <span></span>
+**triggerWindow** | <code>string</code> | <span></span>
+**internalValue**? | <code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code> | __*Optional*__
 **recoveryWindowInput**? | <code>string</code> | __*Optional*__
-**triggerWindow**? | <code>string</code> | __*Optional*__
 **triggerWindowInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -48806,17 +49333,18 @@ new MonitorMonitorThresholdsOutputReference(terraformResource: ITerraformResourc
 
 Name | Type | Description 
 -----|------|-------------
-**critical**? | <code>string</code> | __*Optional*__
+**critical** | <code>string</code> | <span></span>
+**criticalRecovery** | <code>string</code> | <span></span>
+**ok** | <code>string</code> | <span></span>
+**unknown** | <code>string</code> | <span></span>
+**warning** | <code>string</code> | <span></span>
+**warningRecovery** | <code>string</code> | <span></span>
 **criticalInput**? | <code>string</code> | __*Optional*__
-**criticalRecovery**? | <code>string</code> | __*Optional*__
 **criticalRecoveryInput**? | <code>string</code> | __*Optional*__
-**ok**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code> | __*Optional*__
 **okInput**? | <code>string</code> | __*Optional*__
-**unknown**? | <code>string</code> | __*Optional*__
 **unknownInput**? | <code>string</code> | __*Optional*__
-**warning**? | <code>string</code> | __*Optional*__
 **warningInput**? | <code>string</code> | __*Optional*__
-**warningRecovery**? | <code>string</code> | __*Optional*__
 **warningRecoveryInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -48900,7 +49428,7 @@ resetWarningRecovery(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -48931,9 +49459,9 @@ Name | Type | Description
 -----|------|-------------
 **description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **publicId** | <code>string</code> | <span></span>
 **settings** | <code>[OrganizationSettingsSettingsOutputReference](#cdktf-provider-datadog-organizationsettingssettingsoutputreference)</code> | <span></span>
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **settingsInput**? | <code>[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -48941,12 +49469,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putSettings(value?) <a id="cdktf-provider-datadog-organizationsettings-putsettings"></a>
+#### putSettings(value) <a id="cdktf-provider-datadog-organizationsettings-putsettings"></a>
 
 
 
 ```ts
-putSettings(value?: OrganizationSettingsSettings): void
+putSettings(value: OrganizationSettingsSettings): void
 ```
 
 * **value** (<code>[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)</code>)  *No description*
@@ -49024,13 +49552,14 @@ new OrganizationSettingsSettingsOutputReference(terraformResource: ITerraformRes
 
 Name | Type | Description 
 -----|------|-------------
+**privateWidgetShare** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **saml** | <code>[OrganizationSettingsSettingsSamlOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamloutputreference)</code> | <span></span>
+**samlAutocreateAccessRole** | <code>string</code> | <span></span>
 **samlAutocreateUsersDomains** | <code>[OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomainsoutputreference)</code> | <span></span>
 **samlIdpInitiatedLogin** | <code>[OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedloginoutputreference)</code> | <span></span>
 **samlStrictMode** | <code>[OrganizationSettingsSettingsSamlStrictModeOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamlstrictmodeoutputreference)</code> | <span></span>
-**privateWidgetShare**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[OrganizationSettingsSettings](#cdktf-provider-datadog-organizationsettingssettings)</code> | __*Optional*__
 **privateWidgetShareInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**samlAutocreateAccessRole**? | <code>string</code> | __*Optional*__
 **samlAutocreateAccessRoleInput**? | <code>string</code> | __*Optional*__
 **samlAutocreateUsersDomainsInput**? | <code>[OrganizationSettingsSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomains)</code> | __*Optional*__
 **samlIdpInitiatedLoginInput**? | <code>[OrganizationSettingsSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedlogin)</code> | __*Optional*__
@@ -49149,10 +49678,11 @@ new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(terraf
 
 Name | Type | Description 
 -----|------|-------------
-**domains**? | <code>Array<string></code> | __*Optional*__
+**domains** | <code>Array<string></code> | <span></span>
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **domainsInput**? | <code>Array<string></code> | __*Optional*__
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[OrganizationSettingsSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomains)</code> | __*Optional*__
 
 ### Methods
 
@@ -49209,8 +49739,9 @@ new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(terraformRe
 
 Name | Type | Description 
 -----|------|-------------
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[OrganizationSettingsSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedlogin)</code> | __*Optional*__
 
 ### Methods
 
@@ -49255,8 +49786,9 @@ new OrganizationSettingsSettingsSamlOutputReference(terraformResource: ITerrafor
 
 Name | Type | Description 
 -----|------|-------------
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[OrganizationSettingsSettingsSaml](#cdktf-provider-datadog-organizationsettingssettingssaml)</code> | __*Optional*__
 
 ### Methods
 
@@ -49301,8 +49833,9 @@ new OrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource:
 
 Name | Type | Description 
 -----|------|-------------
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[OrganizationSettingsSettingsSamlStrictMode](#cdktf-provider-datadog-organizationsettingssettingssamlstrictmode)</code> | __*Optional*__
 
 ### Methods
 
@@ -49325,7 +49858,7 @@ resetEnabled(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49356,9 +49889,9 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**permission** | <code>Array<[RolePermission](#cdktf-provider-datadog-rolepermission)></code> | <span></span>
 **userCount** | <code>number</code> | <span></span>
 **nameInput**? | <code>string</code> | __*Optional*__
-**permission**? | <code>Array<[RolePermission](#cdktf-provider-datadog-rolepermission)></code> | __*Optional*__
 **permissionInput**? | <code>Array<[RolePermission](#cdktf-provider-datadog-rolepermission)></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -49395,7 +49928,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49425,12 +49958,12 @@ new SecurityMonitoringDefaultRule(scope: Construct, id: string, config?: Securit
 
 Name | Type | Description 
 -----|------|-------------
+**case** | <code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code> | <span></span>
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**filter** | <code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**case**? | <code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code> | __*Optional*__
 **caseInput**? | <code>Array<[SecurityMonitoringDefaultRuleCase](#cdktf-provider-datadog-securitymonitoringdefaultrulecase)></code> | __*Optional*__
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**filter**? | <code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code> | __*Optional*__
 **filterInput**? | <code>Array<[SecurityMonitoringDefaultRuleFilter](#cdktf-provider-datadog-securitymonitoringdefaultrulefilter)></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -49491,7 +50024,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49523,14 +50056,14 @@ new SecurityMonitoringFilter(scope: Construct, id: string, config: SecurityMonit
 
 Name | Type | Description 
 -----|------|-------------
+**exclusionFilter** | <code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code> | <span></span>
+**filteredDataType** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **isEnabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
 **version** | <code>number</code> | <span></span>
-**exclusionFilter**? | <code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code> | __*Optional*__
 **exclusionFilterInput**? | <code>Array<[SecurityMonitoringFilterExclusionFilter](#cdktf-provider-datadog-securitymonitoringfilterexclusionfilter)></code> | __*Optional*__
-**filteredDataType**? | <code>string</code> | __*Optional*__
 **filteredDataTypeInput**? | <code>string</code> | __*Optional*__
 **isEnabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
@@ -49582,7 +50115,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49620,37 +50153,37 @@ new SecurityMonitoringRule(scope: Construct, id: string, config: SecurityMonitor
 Name | Type | Description 
 -----|------|-------------
 **case** | <code>Array<[SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)></code> | <span></span>
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**filter** | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | <span></span>
+**hasExtendedTitle** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **options** | <code>[SecurityMonitoringRuleOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference)</code> | <span></span>
 **query** | <code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+**type** | <code>string</code> | <span></span>
 **caseInput**? | <code>Array<[SecurityMonitoringRuleCase](#cdktf-provider-datadog-securitymonitoringrulecase)></code> | __*Optional*__
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**filter**? | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | __*Optional*__
 **filterInput**? | <code>Array<[SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)></code> | __*Optional*__
-**hasExtendedTitle**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasExtendedTitleInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **messageInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **optionsInput**? | <code>[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)</code> | __*Optional*__
 **queryInput**? | <code>Array<[SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)></code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
-**type**? | <code>string</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putOptions(value?) <a id="cdktf-provider-datadog-securitymonitoringrule-putoptions"></a>
+#### putOptions(value) <a id="cdktf-provider-datadog-securitymonitoringrule-putoptions"></a>
 
 
 
 ```ts
-putOptions(value?: SecurityMonitoringRuleOptions): void
+putOptions(value: SecurityMonitoringRuleOptions): void
 ```
 
 * **value** (<code>[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)</code>)  *No description*
@@ -49778,6 +50311,7 @@ Name | Type | Description
 **forgetAfter** | <code>number</code> | <span></span>
 **learningDuration** | <code>number</code> | <span></span>
 **forgetAfterInput**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code> | __*Optional*__
 **learningDurationInput**? | <code>number</code> | __*Optional*__
 
 
@@ -49808,13 +50342,14 @@ new SecurityMonitoringRuleOptionsOutputReference(terraformResource: ITerraformRe
 
 Name | Type | Description 
 -----|------|-------------
+**detectionMethod** | <code>string</code> | <span></span>
 **evaluationWindow** | <code>number</code> | <span></span>
 **keepAlive** | <code>number</code> | <span></span>
 **maxSignalDuration** | <code>number</code> | <span></span>
 **newValueOptions** | <code>[SecurityMonitoringRuleOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptionsoutputreference)</code> | <span></span>
-**detectionMethod**? | <code>string</code> | __*Optional*__
 **detectionMethodInput**? | <code>string</code> | __*Optional*__
 **evaluationWindowInput**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)</code> | __*Optional*__
 **keepAliveInput**? | <code>number</code> | __*Optional*__
 **maxSignalDurationInput**? | <code>number</code> | __*Optional*__
 **newValueOptionsInput**? | <code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code> | __*Optional*__
@@ -49822,12 +50357,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putNewValueOptions(value?) <a id="cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference-putnewvalueoptions"></a>
+#### putNewValueOptions(value) <a id="cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference-putnewvalueoptions"></a>
 
 
 
 ```ts
-putNewValueOptions(value?: SecurityMonitoringRuleOptionsNewValueOptions): void
+putNewValueOptions(value: SecurityMonitoringRuleOptionsNewValueOptions): void
 ```
 
 * **value** (<code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code>)  *No description*
@@ -49867,7 +50402,7 @@ resetNewValueOptions(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -49904,38 +50439,38 @@ new ServiceLevelObjective(scope: Construct, id: string, config: ServiceLevelObje
 
 Name | Type | Description 
 -----|------|-------------
+**description** | <code>string</code> | <span></span>
+**forceDelete** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**groups** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**monitorIds** | <code>Array<number></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>[ServiceLevelObjectiveQueryOutputReference](#cdktf-provider-datadog-servicelevelobjectivequeryoutputreference)</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
 **thresholds** | <code>Array<[ServiceLevelObjectiveThresholds](#cdktf-provider-datadog-servicelevelobjectivethresholds)></code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**description**? | <code>string</code> | __*Optional*__
+**validate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**forceDelete**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **forceDeleteInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**groups**? | <code>Array<string></code> | __*Optional*__
 **groupsInput**? | <code>Array<string></code> | __*Optional*__
-**monitorIds**? | <code>Array<number></code> | __*Optional*__
 **monitorIdsInput**? | <code>Array<number></code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>[ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)</code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 **thresholdsInput**? | <code>Array<[ServiceLevelObjectiveThresholds](#cdktf-provider-datadog-servicelevelobjectivethresholds)></code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
-**validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **validateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putQuery(value?) <a id="cdktf-provider-datadog-servicelevelobjective-putquery"></a>
+#### putQuery(value) <a id="cdktf-provider-datadog-servicelevelobjective-putquery"></a>
 
 
 
 ```ts
-putQuery(value?: ServiceLevelObjectiveQuery): void
+putQuery(value: ServiceLevelObjectiveQuery): void
 ```
 
 * **value** (<code>[ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)</code>)  *No description*
@@ -50072,6 +50607,7 @@ Name | Type | Description
 **denominator** | <code>string</code> | <span></span>
 **numerator** | <code>string</code> | <span></span>
 **denominatorInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[ServiceLevelObjectiveQuery](#cdktf-provider-datadog-servicelevelobjectivequery)</code> | __*Optional*__
 **numeratorInput**? | <code>string</code> | __*Optional*__
 
 
@@ -50080,7 +50616,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50116,21 +50652,21 @@ new SloCorrection(scope: Construct, id: string, config: SloCorrectionConfig)
 Name | Type | Description 
 -----|------|-------------
 **category** | <code>string</code> | <span></span>
+**description** | <code>string</code> | <span></span>
+**duration** | <code>number</code> | <span></span>
+**end** | <code>number</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**rrule** | <code>string</code> | <span></span>
 **sloId** | <code>string</code> | <span></span>
 **start** | <code>number</code> | <span></span>
+**timezone** | <code>string</code> | <span></span>
 **categoryInput**? | <code>string</code> | __*Optional*__
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**duration**? | <code>number</code> | __*Optional*__
 **durationInput**? | <code>number</code> | __*Optional*__
-**end**? | <code>number</code> | __*Optional*__
 **endInput**? | <code>number</code> | __*Optional*__
-**rrule**? | <code>string</code> | __*Optional*__
 **rruleInput**? | <code>string</code> | __*Optional*__
 **sloIdInput**? | <code>string</code> | __*Optional*__
 **startInput**? | <code>number</code> | __*Optional*__
-**timezone**? | <code>string</code> | __*Optional*__
 **timezoneInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -50215,7 +50751,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50250,21 +50786,21 @@ new SyntheticsGlobalVariable(scope: Construct, id: string, config: SyntheticsGlo
 
 Name | Type | Description 
 -----|------|-------------
+**description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**parseTestId** | <code>string</code> | <span></span>
 **parseTestOptions** | <code>[SyntheticsGlobalVariableParseTestOptionsOutputReference](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsoutputreference)</code> | <span></span>
+**restrictedRoles** | <code>Array<string></code> | <span></span>
+**secure** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
 **value** | <code>string</code> | <span></span>
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**parseTestId**? | <code>string</code> | __*Optional*__
 **parseTestIdInput**? | <code>string</code> | __*Optional*__
 **parseTestOptionsInput**? | <code>[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)</code> | __*Optional*__
-**restrictedRoles**? | <code>Array<string></code> | __*Optional*__
 **restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
-**secure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **secureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 **valueInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -50272,12 +50808,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putParseTestOptions(value?) <a id="cdktf-provider-datadog-syntheticsglobalvariable-putparsetestoptions"></a>
+#### putParseTestOptions(value) <a id="cdktf-provider-datadog-syntheticsglobalvariable-putparsetestoptions"></a>
 
 
 
 ```ts
-putParseTestOptions(value?: SyntheticsGlobalVariableParseTestOptions): void
+putParseTestOptions(value: SyntheticsGlobalVariableParseTestOptions): void
 ```
 
 * **value** (<code>[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)</code>)  *No description*
@@ -50400,10 +50936,11 @@ new SyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource: I
 
 Name | Type | Description 
 -----|------|-------------
+**field** | <code>string</code> | <span></span>
 **parser** | <code>[SyntheticsGlobalVariableParseTestOptionsParserOutputReference](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsparseroutputreference)</code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**field**? | <code>string</code> | __*Optional*__
 **fieldInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)</code> | __*Optional*__
 **parserInput**? | <code>[SyntheticsGlobalVariableParseTestOptionsParser](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsparser)</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
 
@@ -50466,8 +51003,9 @@ new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(terraformResou
 Name | Type | Description 
 -----|------|-------------
 **type** | <code>string</code> | <span></span>
+**value** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsGlobalVariableParseTestOptionsParser](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsparser)</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
-**value**? | <code>string</code> | __*Optional*__
 **valueInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -50491,7 +51029,7 @@ resetValue(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50522,12 +51060,12 @@ new SyntheticsPrivateLocation(scope: Construct, id: string, config: SyntheticsPr
 Name | Type | Description 
 -----|------|-------------
 **config** | <code>string</code> | <span></span>
+**description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**description**? | <code>string</code> | __*Optional*__
+**tags** | <code>Array<string></code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -50576,7 +51114,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -50623,46 +51161,46 @@ new SyntheticsTest(scope: Construct, id: string, config: SyntheticsTestConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**apiStep** | <code>Array<[SyntheticsTestApiStep](#cdktf-provider-datadog-syntheticstestapistep)></code> | <span></span>
+**assertion** | <code>Array<[SyntheticsTestAssertion](#cdktf-provider-datadog-syntheticstestassertion)></code> | <span></span>
+**browserStep** | <code>Array<[SyntheticsTestBrowserStep](#cdktf-provider-datadog-syntheticstestbrowserstep)></code> | <span></span>
+**browserVariable** | <code>Array<[SyntheticsTestBrowserVariable](#cdktf-provider-datadog-syntheticstestbrowservariable)></code> | <span></span>
+**configVariable** | <code>Array<[SyntheticsTestConfigVariable](#cdktf-provider-datadog-syntheticstestconfigvariable)></code> | <span></span>
+**deviceIds** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **locations** | <code>Array<string></code> | <span></span>
+**message** | <code>string</code> | <span></span>
 **monitorId** | <code>number</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **optionsList** | <code>[SyntheticsTestOptionsListOutputReference](#cdktf-provider-datadog-syntheticstestoptionslistoutputreference)</code> | <span></span>
 **requestBasicauth** | <code>[SyntheticsTestRequestBasicauthOutputReference](#cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference)</code> | <span></span>
 **requestClientCertificate** | <code>[SyntheticsTestRequestClientCertificateOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificateoutputreference)</code> | <span></span>
 **requestDefinition** | <code>[SyntheticsTestRequestDefinitionOutputReference](#cdktf-provider-datadog-syntheticstestrequestdefinitionoutputreference)</code> | <span></span>
+**requestHeaders** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
+**requestQuery** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
+**setCookie** | <code>string</code> | <span></span>
 **status** | <code>string</code> | <span></span>
+**subtype** | <code>string</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**apiStep**? | <code>Array<[SyntheticsTestApiStep](#cdktf-provider-datadog-syntheticstestapistep)></code> | __*Optional*__
 **apiStepInput**? | <code>Array<[SyntheticsTestApiStep](#cdktf-provider-datadog-syntheticstestapistep)></code> | __*Optional*__
-**assertion**? | <code>Array<[SyntheticsTestAssertion](#cdktf-provider-datadog-syntheticstestassertion)></code> | __*Optional*__
 **assertionInput**? | <code>Array<[SyntheticsTestAssertion](#cdktf-provider-datadog-syntheticstestassertion)></code> | __*Optional*__
-**browserStep**? | <code>Array<[SyntheticsTestBrowserStep](#cdktf-provider-datadog-syntheticstestbrowserstep)></code> | __*Optional*__
 **browserStepInput**? | <code>Array<[SyntheticsTestBrowserStep](#cdktf-provider-datadog-syntheticstestbrowserstep)></code> | __*Optional*__
-**browserVariable**? | <code>Array<[SyntheticsTestBrowserVariable](#cdktf-provider-datadog-syntheticstestbrowservariable)></code> | __*Optional*__
 **browserVariableInput**? | <code>Array<[SyntheticsTestBrowserVariable](#cdktf-provider-datadog-syntheticstestbrowservariable)></code> | __*Optional*__
-**configVariable**? | <code>Array<[SyntheticsTestConfigVariable](#cdktf-provider-datadog-syntheticstestconfigvariable)></code> | __*Optional*__
 **configVariableInput**? | <code>Array<[SyntheticsTestConfigVariable](#cdktf-provider-datadog-syntheticstestconfigvariable)></code> | __*Optional*__
-**deviceIds**? | <code>Array<string></code> | __*Optional*__
 **deviceIdsInput**? | <code>Array<string></code> | __*Optional*__
 **locationsInput**? | <code>Array<string></code> | __*Optional*__
-**message**? | <code>string</code> | __*Optional*__
 **messageInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **optionsListInput**? | <code>[SyntheticsTestOptionsList](#cdktf-provider-datadog-syntheticstestoptionslist)</code> | __*Optional*__
 **requestBasicauthInput**? | <code>[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)</code> | __*Optional*__
 **requestClientCertificateInput**? | <code>[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)</code> | __*Optional*__
 **requestDefinitionInput**? | <code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code> | __*Optional*__
-**requestHeaders**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 **requestHeadersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
-**requestQuery**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 **requestQueryInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
-**setCookie**? | <code>string</code> | __*Optional*__
 **setCookieInput**? | <code>string</code> | __*Optional*__
 **statusInput**? | <code>string</code> | __*Optional*__
-**subtype**? | <code>string</code> | __*Optional*__
 **subtypeInput**? | <code>string</code> | __*Optional*__
-**tags**? | <code>Array<string></code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -50670,12 +51208,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putOptionsList(value?) <a id="cdktf-provider-datadog-syntheticstest-putoptionslist"></a>
+#### putOptionsList(value) <a id="cdktf-provider-datadog-syntheticstest-putoptionslist"></a>
 
 
 
 ```ts
-putOptionsList(value?: SyntheticsTestOptionsList): void
+putOptionsList(value: SyntheticsTestOptionsList): void
 ```
 
 * **value** (<code>[SyntheticsTestOptionsList](#cdktf-provider-datadog-syntheticstestoptionslist)</code>)  *No description*
@@ -50694,12 +51232,12 @@ putOptionsList(value?: SyntheticsTestOptionsList): void
 
 
 
-#### putRequestBasicauth(value?) <a id="cdktf-provider-datadog-syntheticstest-putrequestbasicauth"></a>
+#### putRequestBasicauth(value) <a id="cdktf-provider-datadog-syntheticstest-putrequestbasicauth"></a>
 
 
 
 ```ts
-putRequestBasicauth(value?: SyntheticsTestRequestBasicauth): void
+putRequestBasicauth(value: SyntheticsTestRequestBasicauth): void
 ```
 
 * **value** (<code>[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)</code>)  *No description*
@@ -50709,12 +51247,12 @@ putRequestBasicauth(value?: SyntheticsTestRequestBasicauth): void
 
 
 
-#### putRequestClientCertificate(value?) <a id="cdktf-provider-datadog-syntheticstest-putrequestclientcertificate"></a>
+#### putRequestClientCertificate(value) <a id="cdktf-provider-datadog-syntheticstest-putrequestclientcertificate"></a>
 
 
 
 ```ts
-putRequestClientCertificate(value?: SyntheticsTestRequestClientCertificate): void
+putRequestClientCertificate(value: SyntheticsTestRequestClientCertificate): void
 ```
 
 * **value** (<code>[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)</code>)  *No description*
@@ -50724,12 +51262,12 @@ putRequestClientCertificate(value?: SyntheticsTestRequestClientCertificate): voi
 
 
 
-#### putRequestDefinition(value?) <a id="cdktf-provider-datadog-syntheticstest-putrequestdefinition"></a>
+#### putRequestDefinition(value) <a id="cdktf-provider-datadog-syntheticstest-putrequestdefinition"></a>
 
 
 
 ```ts
-putRequestDefinition(value?: SyntheticsTestRequestDefinition): void
+putRequestDefinition(value: SyntheticsTestRequestDefinition): void
 ```
 
 * **value** (<code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code>)  *No description*
@@ -50984,6 +51522,7 @@ Name | Type | Description
 **jsonpath** | <code>string</code> | <span></span>
 **operator** | <code>string</code> | <span></span>
 **targetvalue** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestApiStepAssertionTargetjsonpath](#cdktf-provider-datadog-syntheticstestapistepassertiontargetjsonpath)</code> | __*Optional*__
 **jsonpathInput**? | <code>string</code> | __*Optional*__
 **operatorInput**? | <code>string</code> | __*Optional*__
 **targetvalueInput**? | <code>string</code> | __*Optional*__
@@ -51017,8 +51556,9 @@ new SyntheticsTestApiStepExtractedValueParserOutputReference(terraformResource: 
 Name | Type | Description 
 -----|------|-------------
 **type** | <code>string</code> | <span></span>
+**value** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestApiStepExtractedValueParser](#cdktf-provider-datadog-syntheticstestapistepextractedvalueparser)</code> | __*Optional*__
 **typeInput**? | <code>string</code> | __*Optional*__
-**value**? | <code>string</code> | __*Optional*__
 **valueInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -51066,6 +51606,7 @@ Name | Type | Description
 -----|------|-------------
 **password** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestApiStepRequestBasicauth](#cdktf-provider-datadog-syntheticstestapisteprequestbasicauth)</code> | __*Optional*__
 **passwordInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
 
@@ -51098,9 +51639,10 @@ new SyntheticsTestApiStepRequestClientCertificateCertOutputReference(terraformRe
 Name | Type | Description 
 -----|------|-------------
 **content** | <code>string</code> | <span></span>
+**filename** | <code>string</code> | <span></span>
 **contentInput**? | <code>string</code> | __*Optional*__
-**filename**? | <code>string</code> | __*Optional*__
 **filenameInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestApiStepRequestClientCertificateCert](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatecert)</code> | __*Optional*__
 
 ### Methods
 
@@ -51146,9 +51688,10 @@ new SyntheticsTestApiStepRequestClientCertificateKeyOutputReference(terraformRes
 Name | Type | Description 
 -----|------|-------------
 **content** | <code>string</code> | <span></span>
+**filename** | <code>string</code> | <span></span>
 **contentInput**? | <code>string</code> | __*Optional*__
-**filename**? | <code>string</code> | __*Optional*__
 **filenameInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestApiStepRequestClientCertificateKey](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatekey)</code> | __*Optional*__
 
 ### Methods
 
@@ -51196,6 +51739,7 @@ Name | Type | Description
 **cert** | <code>[SyntheticsTestApiStepRequestClientCertificateCertOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatecertoutputreference)</code> | <span></span>
 **key** | <code>[SyntheticsTestApiStepRequestClientCertificateKeyOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatekeyoutputreference)</code> | <span></span>
 **certInput**? | <code>[SyntheticsTestApiStepRequestClientCertificateCert](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatecert)</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestApiStepRequestClientCertificate](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificate)</code> | __*Optional*__
 **keyInput**? | <code>[SyntheticsTestApiStepRequestClientCertificateKey](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatekey)</code> | __*Optional*__
 
 ### Methods
@@ -51259,33 +51803,34 @@ new SyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource: ITe
 
 Name | Type | Description 
 -----|------|-------------
-**allowInsecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**allowInsecure** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**body** | <code>string</code> | <span></span>
+**dnsServer** | <code>string</code> | <span></span>
+**dnsServerPort** | <code>number</code> | <span></span>
+**followRedirects** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**host** | <code>string</code> | <span></span>
+**method** | <code>string</code> | <span></span>
+**noSavingResponseBody** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**numberOfPackets** | <code>number</code> | <span></span>
+**port** | <code>number</code> | <span></span>
+**servername** | <code>string</code> | <span></span>
+**shouldTrackHops** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**timeout** | <code>number</code> | <span></span>
+**url** | <code>string</code> | <span></span>
 **allowInsecureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**body**? | <code>string</code> | __*Optional*__
 **bodyInput**? | <code>string</code> | __*Optional*__
-**dnsServer**? | <code>string</code> | __*Optional*__
 **dnsServerInput**? | <code>string</code> | __*Optional*__
-**dnsServerPort**? | <code>number</code> | __*Optional*__
 **dnsServerPortInput**? | <code>number</code> | __*Optional*__
-**followRedirects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **followRedirectsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**host**? | <code>string</code> | __*Optional*__
 **hostInput**? | <code>string</code> | __*Optional*__
-**method**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestApiStepRequestDefinition](#cdktf-provider-datadog-syntheticstestapisteprequestdefinition)</code> | __*Optional*__
 **methodInput**? | <code>string</code> | __*Optional*__
-**noSavingResponseBody**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **noSavingResponseBodyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**numberOfPackets**? | <code>number</code> | __*Optional*__
 **numberOfPacketsInput**? | <code>number</code> | __*Optional*__
-**port**? | <code>number</code> | __*Optional*__
 **portInput**? | <code>number</code> | __*Optional*__
-**servername**? | <code>string</code> | __*Optional*__
 **servernameInput**? | <code>string</code> | __*Optional*__
-**shouldTrackHops**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **shouldTrackHopsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**timeout**? | <code>number</code> | __*Optional*__
 **timeoutInput**? | <code>number</code> | __*Optional*__
-**url**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -51490,6 +52035,7 @@ Name | Type | Description
 **jsonpath** | <code>string</code> | <span></span>
 **operator** | <code>string</code> | <span></span>
 **targetvalue** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestAssertionTargetjsonpath](#cdktf-provider-datadog-syntheticstestassertiontargetjsonpath)</code> | __*Optional*__
 **jsonpathInput**? | <code>string</code> | __*Optional*__
 **operatorInput**? | <code>string</code> | __*Optional*__
 **targetvalueInput**? | <code>string</code> | __*Optional*__
@@ -51522,52 +52068,53 @@ new SyntheticsTestBrowserStepParamsOutputReference(terraformResource: ITerraform
 
 Name | Type | Description 
 -----|------|-------------
+**attribute** | <code>string</code> | <span></span>
+**check** | <code>string</code> | <span></span>
+**clickType** | <code>string</code> | <span></span>
+**code** | <code>string</code> | <span></span>
+**delay** | <code>number</code> | <span></span>
+**element** | <code>string</code> | <span></span>
+**email** | <code>string</code> | <span></span>
+**file** | <code>string</code> | <span></span>
+**files** | <code>string</code> | <span></span>
+**modifiers** | <code>Array<string></code> | <span></span>
+**playingTabId** | <code>string</code> | <span></span>
+**request** | <code>string</code> | <span></span>
+**subtestPublicId** | <code>string</code> | <span></span>
+**value** | <code>string</code> | <span></span>
 **variable** | <code>[SyntheticsTestBrowserStepParamsVariableOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariableoutputreference)</code> | <span></span>
-**attribute**? | <code>string</code> | __*Optional*__
+**withClick** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**x** | <code>number</code> | <span></span>
+**y** | <code>number</code> | <span></span>
 **attributeInput**? | <code>string</code> | __*Optional*__
-**check**? | <code>string</code> | __*Optional*__
 **checkInput**? | <code>string</code> | __*Optional*__
-**clickType**? | <code>string</code> | __*Optional*__
 **clickTypeInput**? | <code>string</code> | __*Optional*__
-**code**? | <code>string</code> | __*Optional*__
 **codeInput**? | <code>string</code> | __*Optional*__
-**delay**? | <code>number</code> | __*Optional*__
 **delayInput**? | <code>number</code> | __*Optional*__
-**element**? | <code>string</code> | __*Optional*__
 **elementInput**? | <code>string</code> | __*Optional*__
-**email**? | <code>string</code> | __*Optional*__
 **emailInput**? | <code>string</code> | __*Optional*__
-**file**? | <code>string</code> | __*Optional*__
 **fileInput**? | <code>string</code> | __*Optional*__
-**files**? | <code>string</code> | __*Optional*__
 **filesInput**? | <code>string</code> | __*Optional*__
-**modifiers**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestBrowserStepParams](#cdktf-provider-datadog-syntheticstestbrowserstepparams)</code> | __*Optional*__
 **modifiersInput**? | <code>Array<string></code> | __*Optional*__
-**playingTabId**? | <code>string</code> | __*Optional*__
 **playingTabIdInput**? | <code>string</code> | __*Optional*__
-**request**? | <code>string</code> | __*Optional*__
 **requestInput**? | <code>string</code> | __*Optional*__
-**subtestPublicId**? | <code>string</code> | __*Optional*__
 **subtestPublicIdInput**? | <code>string</code> | __*Optional*__
-**value**? | <code>string</code> | __*Optional*__
 **valueInput**? | <code>string</code> | __*Optional*__
 **variableInput**? | <code>[SyntheticsTestBrowserStepParamsVariable](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariable)</code> | __*Optional*__
-**withClick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **withClickInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**x**? | <code>number</code> | __*Optional*__
 **xInput**? | <code>number</code> | __*Optional*__
-**y**? | <code>number</code> | __*Optional*__
 **yInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
 
 
-#### putVariable(value?) <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference-putvariable"></a>
+#### putVariable(value) <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference-putvariable"></a>
 
 
 
 ```ts
-putVariable(value?: SyntheticsTestBrowserStepParamsVariable): void
+putVariable(value: SyntheticsTestBrowserStepParamsVariable): void
 ```
 
 * **value** (<code>[SyntheticsTestBrowserStepParamsVariable](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariable)</code>)  *No description*
@@ -51821,9 +52368,10 @@ new SyntheticsTestBrowserStepParamsVariableOutputReference(terraformResource: IT
 
 Name | Type | Description 
 -----|------|-------------
-**example**? | <code>string</code> | __*Optional*__
+**example** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **exampleInput**? | <code>string</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestBrowserStepParamsVariable](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -51881,7 +52429,8 @@ new SyntheticsTestOptionsListMonitorOptionsOutputReference(terraformResource: IT
 
 Name | Type | Description 
 -----|------|-------------
-**renotifyInterval**? | <code>number</code> | __*Optional*__
+**renotifyInterval** | <code>number</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code> | __*Optional*__
 **renotifyIntervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -51927,25 +52476,26 @@ new SyntheticsTestOptionsListOutputReference(terraformResource: ITerraformResour
 
 Name | Type | Description 
 -----|------|-------------
+**acceptSelfSigned** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowInsecure** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**followRedirects** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**minFailureDuration** | <code>number</code> | <span></span>
+**minLocationFailed** | <code>number</code> | <span></span>
+**monitorName** | <code>string</code> | <span></span>
 **monitorOptions** | <code>[SyntheticsTestOptionsListMonitorOptionsOutputReference](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptionsoutputreference)</code> | <span></span>
+**monitorPriority** | <code>number</code> | <span></span>
+**noScreenshot** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **retry** | <code>[SyntheticsTestOptionsListRetryOutputReference](#cdktf-provider-datadog-syntheticstestoptionslistretryoutputreference)</code> | <span></span>
 **tickEvery** | <code>number</code> | <span></span>
-**acceptSelfSigned**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **acceptSelfSignedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**allowInsecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowInsecureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**followRedirects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **followRedirectsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**minFailureDuration**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestOptionsList](#cdktf-provider-datadog-syntheticstestoptionslist)</code> | __*Optional*__
 **minFailureDurationInput**? | <code>number</code> | __*Optional*__
-**minLocationFailed**? | <code>number</code> | __*Optional*__
 **minLocationFailedInput**? | <code>number</code> | __*Optional*__
-**monitorName**? | <code>string</code> | __*Optional*__
 **monitorNameInput**? | <code>string</code> | __*Optional*__
 **monitorOptionsInput**? | <code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code> | __*Optional*__
-**monitorPriority**? | <code>number</code> | __*Optional*__
 **monitorPriorityInput**? | <code>number</code> | __*Optional*__
-**noScreenshot**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **noScreenshotInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **retryInput**? | <code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code> | __*Optional*__
 **tickEveryInput**? | <code>number</code> | __*Optional*__
@@ -51953,12 +52503,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putMonitorOptions(value?) <a id="cdktf-provider-datadog-syntheticstestoptionslistoutputreference-putmonitoroptions"></a>
+#### putMonitorOptions(value) <a id="cdktf-provider-datadog-syntheticstestoptionslistoutputreference-putmonitoroptions"></a>
 
 
 
 ```ts
-putMonitorOptions(value?: SyntheticsTestOptionsListMonitorOptions): void
+putMonitorOptions(value: SyntheticsTestOptionsListMonitorOptions): void
 ```
 
 * **value** (<code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code>)  *No description*
@@ -51967,12 +52517,12 @@ putMonitorOptions(value?: SyntheticsTestOptionsListMonitorOptions): void
 
 
 
-#### putRetry(value?) <a id="cdktf-provider-datadog-syntheticstestoptionslistoutputreference-putretry"></a>
+#### putRetry(value) <a id="cdktf-provider-datadog-syntheticstestoptionslistoutputreference-putretry"></a>
 
 
 
 ```ts
-putRetry(value?: SyntheticsTestOptionsListRetry): void
+putRetry(value: SyntheticsTestOptionsListRetry): void
 ```
 
 * **value** (<code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code>)  *No description*
@@ -52130,9 +52680,10 @@ new SyntheticsTestOptionsListRetryOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
-**count**? | <code>number</code> | __*Optional*__
+**count** | <code>number</code> | <span></span>
+**interval** | <code>number</code> | <span></span>
 **countInput**? | <code>number</code> | __*Optional*__
-**interval**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code> | __*Optional*__
 **intervalInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -52192,6 +52743,7 @@ Name | Type | Description
 -----|------|-------------
 **password** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)</code> | __*Optional*__
 **passwordInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
 
@@ -52224,9 +52776,10 @@ new SyntheticsTestRequestClientCertificateCertOutputReference(terraformResource:
 Name | Type | Description 
 -----|------|-------------
 **content** | <code>string</code> | <span></span>
+**filename** | <code>string</code> | <span></span>
 **contentInput**? | <code>string</code> | __*Optional*__
-**filename**? | <code>string</code> | __*Optional*__
 **filenameInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestRequestClientCertificateCert](#cdktf-provider-datadog-syntheticstestrequestclientcertificatecert)</code> | __*Optional*__
 
 ### Methods
 
@@ -52272,9 +52825,10 @@ new SyntheticsTestRequestClientCertificateKeyOutputReference(terraformResource: 
 Name | Type | Description 
 -----|------|-------------
 **content** | <code>string</code> | <span></span>
+**filename** | <code>string</code> | <span></span>
 **contentInput**? | <code>string</code> | __*Optional*__
-**filename**? | <code>string</code> | __*Optional*__
 **filenameInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestRequestClientCertificateKey](#cdktf-provider-datadog-syntheticstestrequestclientcertificatekey)</code> | __*Optional*__
 
 ### Methods
 
@@ -52322,6 +52876,7 @@ Name | Type | Description
 **cert** | <code>[SyntheticsTestRequestClientCertificateCertOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificatecertoutputreference)</code> | <span></span>
 **key** | <code>[SyntheticsTestRequestClientCertificateKeyOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificatekeyoutputreference)</code> | <span></span>
 **certInput**? | <code>[SyntheticsTestRequestClientCertificateCert](#cdktf-provider-datadog-syntheticstestrequestclientcertificatecert)</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)</code> | __*Optional*__
 **keyInput**? | <code>[SyntheticsTestRequestClientCertificateKey](#cdktf-provider-datadog-syntheticstestrequestclientcertificatekey)</code> | __*Optional*__
 
 ### Methods
@@ -52385,29 +52940,30 @@ new SyntheticsTestRequestDefinitionOutputReference(terraformResource: ITerraform
 
 Name | Type | Description 
 -----|------|-------------
-**body**? | <code>string</code> | __*Optional*__
+**body** | <code>string</code> | <span></span>
+**dnsServer** | <code>string</code> | <span></span>
+**dnsServerPort** | <code>number</code> | <span></span>
+**host** | <code>string</code> | <span></span>
+**method** | <code>string</code> | <span></span>
+**noSavingResponseBody** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**numberOfPackets** | <code>number</code> | <span></span>
+**port** | <code>number</code> | <span></span>
+**servername** | <code>string</code> | <span></span>
+**shouldTrackHops** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**timeout** | <code>number</code> | <span></span>
+**url** | <code>string</code> | <span></span>
 **bodyInput**? | <code>string</code> | __*Optional*__
-**dnsServer**? | <code>string</code> | __*Optional*__
 **dnsServerInput**? | <code>string</code> | __*Optional*__
-**dnsServerPort**? | <code>number</code> | __*Optional*__
 **dnsServerPortInput**? | <code>number</code> | __*Optional*__
-**host**? | <code>string</code> | __*Optional*__
 **hostInput**? | <code>string</code> | __*Optional*__
-**method**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code> | __*Optional*__
 **methodInput**? | <code>string</code> | __*Optional*__
-**noSavingResponseBody**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **noSavingResponseBodyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**numberOfPackets**? | <code>number</code> | __*Optional*__
 **numberOfPacketsInput**? | <code>number</code> | __*Optional*__
-**port**? | <code>number</code> | __*Optional*__
 **portInput**? | <code>number</code> | __*Optional*__
-**servername**? | <code>string</code> | __*Optional*__
 **servernameInput**? | <code>string</code> | __*Optional*__
-**shouldTrackHops**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **shouldTrackHopsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**timeout**? | <code>number</code> | __*Optional*__
 **timeoutInput**? | <code>number</code> | __*Optional*__
-**url**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -52563,7 +53119,7 @@ resetUrl(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -52595,18 +53151,18 @@ new User(scope: Construct, id: string, config: UserConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**disabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **email** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**roles** | <code>Array<string></code> | <span></span>
+**sendUserInvitation** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **userInvitationId** | <code>string</code> | <span></span>
 **verified** | <code>any</code> | <span></span>
-**disabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **disabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **emailInput**? | <code>string</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**roles**? | <code>Array<string></code> | __*Optional*__
 **rolesInput**? | <code>Array<string></code> | __*Optional*__
-**sendUserInvitation**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **sendUserInvitationInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -52679,7 +53235,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook.html datadog_webhook}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -52711,15 +53267,15 @@ new Webhook(scope: Construct, id: string, config: WebhookConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**customHeaders** | <code>string</code> | <span></span>
+**encodeAs** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**payload** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**customHeaders**? | <code>string</code> | __*Optional*__
 **customHeadersInput**? | <code>string</code> | __*Optional*__
-**encodeAs**? | <code>string</code> | __*Optional*__
 **encodeAsInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**payload**? | <code>string</code> | __*Optional*__
 **payloadInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -52781,7 +53337,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable.html datadog_webhook_custom_variable}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer

@@ -256,11 +256,11 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // ==========
 
   // default_only_filter - computed: false, optional: true, required: false
-  private _defaultOnlyFilter?: boolean | cdktf.IResolvable | undefined; 
+  private _defaultOnlyFilter?: boolean | cdktf.IResolvable; 
   public get defaultOnlyFilter() {
     return this.getBooleanAttribute('default_only_filter') as any;
   }
-  public set defaultOnlyFilter(value: boolean | cdktf.IResolvable | undefined) {
+  public set defaultOnlyFilter(value: boolean | cdktf.IResolvable) {
     this._defaultOnlyFilter = value;
   }
   public resetDefaultOnlyFilter() {
@@ -268,7 +268,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get defaultOnlyFilterInput() {
-    return this._defaultOnlyFilter
+    return this._defaultOnlyFilter;
   }
 
   // id - computed: true, optional: true, required: false
@@ -277,11 +277,11 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
 
   // name_filter - computed: false, optional: true, required: false
-  private _nameFilter?: string | undefined; 
+  private _nameFilter?: string; 
   public get nameFilter() {
     return this.getStringAttribute('name_filter');
   }
-  public set nameFilter(value: string | undefined) {
+  public set nameFilter(value: string) {
     this._nameFilter = value;
   }
   public resetNameFilter() {
@@ -289,7 +289,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get nameFilterInput() {
-    return this._nameFilter
+    return this._nameFilter;
   }
 
   // rule_ids - computed: true, optional: false, required: false
@@ -303,11 +303,11 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
 
   // tags_filter - computed: false, optional: true, required: false
-  private _tagsFilter?: string[] | undefined; 
+  private _tagsFilter?: string[]; 
   public get tagsFilter() {
     return this.getListAttribute('tags_filter');
   }
-  public set tagsFilter(value: string[] | undefined) {
+  public set tagsFilter(value: string[]) {
     this._tagsFilter = value;
   }
   public resetTagsFilter() {
@@ -315,15 +315,15 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get tagsFilterInput() {
-    return this._tagsFilter
+    return this._tagsFilter;
   }
 
   // user_only_filter - computed: false, optional: true, required: false
-  private _userOnlyFilter?: boolean | cdktf.IResolvable | undefined; 
+  private _userOnlyFilter?: boolean | cdktf.IResolvable; 
   public get userOnlyFilter() {
     return this.getBooleanAttribute('user_only_filter') as any;
   }
-  public set userOnlyFilter(value: boolean | cdktf.IResolvable | undefined) {
+  public set userOnlyFilter(value: boolean | cdktf.IResolvable) {
     this._userOnlyFilter = value;
   }
   public resetUserOnlyFilter() {
@@ -331,7 +331,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get userOnlyFilterInput() {
-    return this._userOnlyFilter
+    return this._userOnlyFilter;
   }
 
   // =========

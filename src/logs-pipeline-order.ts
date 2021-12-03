@@ -76,7 +76,7 @@ export class LogsPipelineOrder extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // pipelines - computed: false, optional: false, required: true
@@ -89,7 +89,7 @@ export class LogsPipelineOrder extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pipelinesInput() {
-    return this._pipelines
+    return this._pipelines;
   }
 
   // =========

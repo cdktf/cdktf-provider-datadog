@@ -83,7 +83,7 @@ export interface ServiceLevelObjectiveQuery {
   readonly numerator: string;
 }
 
-function serviceLevelObjectiveQueryToTerraform(struct?: ServiceLevelObjectiveQueryOutputReference | ServiceLevelObjectiveQuery): any {
+export function serviceLevelObjectiveQueryToTerraform(struct?: ServiceLevelObjectiveQueryOutputReference | ServiceLevelObjectiveQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,6 +95,8 @@ function serviceLevelObjectiveQueryToTerraform(struct?: ServiceLevelObjectiveQue
 }
 
 export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -102,6 +104,33 @@ export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObje
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): ServiceLevelObjectiveQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._denominator) {
+      hasAnyValues = true;
+      internalValueResult.denominator = this._denominator;
+    }
+    if (this._numerator) {
+      hasAnyValues = true;
+      internalValueResult.numerator = this._numerator;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelObjectiveQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._denominator = undefined;
+      this._numerator = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._denominator = value.denominator;
+      this._numerator = value.numerator;
+    }
   }
 
   // denominator - computed: false, optional: false, required: true
@@ -114,7 +143,7 @@ export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get denominatorInput() {
-    return this._denominator
+    return this._denominator;
   }
 
   // numerator - computed: false, optional: false, required: true
@@ -127,7 +156,7 @@ export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get numeratorInput() {
-    return this._numerator
+    return this._numerator;
   }
 }
 export interface ServiceLevelObjectiveThresholds {
@@ -163,7 +192,7 @@ export interface ServiceLevelObjectiveThresholds {
   readonly warningDisplay?: string;
 }
 
-function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevelObjectiveThresholds): any {
+export function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevelObjectiveThresholds): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -218,7 +247,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._type = config.type;
     this._validate = config.validate;
-    this._query = config.query;
+    this._query.internalValue = config.query;
     this._thresholds = config.thresholds;
   }
 
@@ -227,11 +256,11 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -239,15 +268,15 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable | undefined; 
+  private _forceDelete?: boolean | cdktf.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete') as any;
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable | undefined) {
+  public set forceDelete(value: boolean | cdktf.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -255,15 +284,15 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get forceDeleteInput() {
-    return this._forceDelete
+    return this._forceDelete;
   }
 
   // groups - computed: false, optional: true, required: false
-  private _groups?: string[] | undefined; 
+  private _groups?: string[]; 
   public get groups() {
     return this.getListAttribute('groups');
   }
-  public set groups(value: string[] | undefined) {
+  public set groups(value: string[]) {
     this._groups = value;
   }
   public resetGroups() {
@@ -271,7 +300,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get groupsInput() {
-    return this._groups
+    return this._groups;
   }
 
   // id - computed: true, optional: true, required: false
@@ -280,12 +309,12 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // monitor_ids - computed: false, optional: true, required: false
-  private _monitorIds?: number[] | undefined; 
+  private _monitorIds?: number[]; 
   public get monitorIds() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('monitor_ids') as any;
   }
-  public set monitorIds(value: number[] | undefined) {
+  public set monitorIds(value: number[]) {
     this._monitorIds = value;
   }
   public resetMonitorIds() {
@@ -293,7 +322,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorIdsInput() {
-    return this._monitorIds
+    return this._monitorIds;
   }
 
   // name - computed: false, optional: false, required: true
@@ -306,15 +335,15 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[] | undefined; 
+  private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] | undefined) {
+  public set tags(value: string[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -322,7 +351,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // type - computed: false, optional: false, required: true
@@ -335,15 +364,15 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean | cdktf.IResolvable | undefined; 
+  private _validate?: boolean | cdktf.IResolvable; 
   public get validate() {
     return this.getBooleanAttribute('validate') as any;
   }
-  public set validate(value: boolean | cdktf.IResolvable | undefined) {
+  public set validate(value: boolean | cdktf.IResolvable) {
     this._validate = value;
   }
   public resetValidate() {
@@ -351,24 +380,23 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get validateInput() {
-    return this._validate
+    return this._validate;
   }
 
   // query - computed: false, optional: true, required: false
-  private _query?: ServiceLevelObjectiveQuery | undefined; 
-  private __queryOutput = new ServiceLevelObjectiveQueryOutputReference(this as any, "query", true);
+  private _query = new ServiceLevelObjectiveQueryOutputReference(this as any, "query", true);
   public get query() {
-    return this.__queryOutput;
+    return this._query;
   }
-  public putQuery(value: ServiceLevelObjectiveQuery | undefined) {
-    this._query = value;
+  public putQuery(value: ServiceLevelObjectiveQuery) {
+    this._query.internalValue = value;
   }
   public resetQuery() {
-    this._query = undefined;
+    this._query.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query.internalValue;
   }
 
   // thresholds - computed: false, optional: false, required: true
@@ -382,7 +410,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdsInput() {
-    return this._thresholds
+    return this._thresholds;
   }
 
   // =========
@@ -399,7 +427,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),
-      query: serviceLevelObjectiveQueryToTerraform(this._query),
+      query: serviceLevelObjectiveQueryToTerraform(this._query.internalValue),
       thresholds: cdktf.listMapper(serviceLevelObjectiveThresholdsToTerraform)(this._thresholds),
     };
   }

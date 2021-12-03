@@ -69,11 +69,11 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   // ==========
 
   // api_token - computed: false, optional: true, required: false
-  private _apiToken?: string | undefined; 
+  private _apiToken?: string; 
   public get apiToken() {
     return this.getStringAttribute('api_token');
   }
-  public set apiToken(value: string | undefined) {
+  public set apiToken(value: string) {
     this._apiToken = value;
   }
   public resetApiToken() {
@@ -81,7 +81,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get apiTokenInput() {
-    return this._apiToken
+    return this._apiToken;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,11 +90,11 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   }
 
   // schedules - computed: false, optional: true, required: false
-  private _schedules?: string[] | undefined; 
+  private _schedules?: string[]; 
   public get schedules() {
     return this.getListAttribute('schedules');
   }
-  public set schedules(value: string[] | undefined) {
+  public set schedules(value: string[]) {
     this._schedules = value;
   }
   public resetSchedules() {
@@ -102,7 +102,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get schedulesInput() {
-    return this._schedules
+    return this._schedules;
   }
 
   // subdomain - computed: false, optional: false, required: true
@@ -115,7 +115,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subdomainInput() {
-    return this._subdomain
+    return this._subdomain;
   }
 
   // =========

@@ -83,11 +83,11 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // ==========
 
   // automute - computed: false, optional: true, required: false
-  private _automute?: boolean | cdktf.IResolvable | undefined; 
+  private _automute?: boolean | cdktf.IResolvable; 
   public get automute() {
     return this.getBooleanAttribute('automute') as any;
   }
-  public set automute(value: boolean | cdktf.IResolvable | undefined) {
+  public set automute(value: boolean | cdktf.IResolvable) {
     this._automute = value;
   }
   public resetAutomute() {
@@ -95,7 +95,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get automuteInput() {
-    return this._automute
+    return this._automute;
   }
 
   // client_id - computed: false, optional: false, required: true
@@ -108,7 +108,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clientIdInput() {
-    return this._clientId
+    return this._clientId;
   }
 
   // client_secret - computed: false, optional: false, required: true
@@ -121,15 +121,15 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clientSecretInput() {
-    return this._clientSecret
+    return this._clientSecret;
   }
 
   // host_filters - computed: false, optional: true, required: false
-  private _hostFilters?: string | undefined; 
+  private _hostFilters?: string; 
   public get hostFilters() {
     return this.getStringAttribute('host_filters');
   }
-  public set hostFilters(value: string | undefined) {
+  public set hostFilters(value: string) {
     this._hostFilters = value;
   }
   public resetHostFilters() {
@@ -137,7 +137,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostFiltersInput() {
-    return this._hostFilters
+    return this._hostFilters;
   }
 
   // id - computed: true, optional: true, required: false
@@ -155,7 +155,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantNameInput() {
-    return this._tenantName
+    return this._tenantName;
   }
 
   // =========

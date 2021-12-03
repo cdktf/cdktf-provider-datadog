@@ -153,11 +153,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // monitor_tags_filter - computed: false, optional: true, required: false
-  private _monitorTagsFilter?: string[] | undefined; 
+  private _monitorTagsFilter?: string[]; 
   public get monitorTagsFilter() {
     return this.getListAttribute('monitor_tags_filter');
   }
-  public set monitorTagsFilter(value: string[] | undefined) {
+  public set monitorTagsFilter(value: string[]) {
     this._monitorTagsFilter = value;
   }
   public resetMonitorTagsFilter() {
@@ -165,7 +165,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorTagsFilterInput() {
-    return this._monitorTagsFilter
+    return this._monitorTagsFilter;
   }
 
   // monitor_threshold_windows - computed: true, optional: false, required: false
@@ -184,11 +184,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // name_filter - computed: false, optional: true, required: false
-  private _nameFilter?: string | undefined; 
+  private _nameFilter?: string; 
   public get nameFilter() {
     return this.getStringAttribute('name_filter');
   }
-  public set nameFilter(value: string | undefined) {
+  public set nameFilter(value: string) {
     this._nameFilter = value;
   }
   public resetNameFilter() {
@@ -196,7 +196,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameFilterInput() {
-    return this._nameFilter
+    return this._nameFilter;
   }
 
   // new_group_delay - computed: true, optional: false, required: false
@@ -260,11 +260,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // tags_filter - computed: false, optional: true, required: false
-  private _tagsFilter?: string[] | undefined; 
+  private _tagsFilter?: string[]; 
   public get tagsFilter() {
     return this.getListAttribute('tags_filter');
   }
-  public set tagsFilter(value: string[] | undefined) {
+  public set tagsFilter(value: string[]) {
     this._tagsFilter = value;
   }
   public resetTagsFilter() {
@@ -272,7 +272,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsFilterInput() {
-    return this._tagsFilter
+    return this._tagsFilter;
   }
 
   // timeout_h - computed: true, optional: false, required: false

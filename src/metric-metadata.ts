@@ -97,11 +97,11 @@ export class MetricMetadata extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -109,7 +109,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -127,15 +127,15 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get metricInput() {
-    return this._metric
+    return this._metric;
   }
 
   // per_unit - computed: false, optional: true, required: false
-  private _perUnit?: string | undefined; 
+  private _perUnit?: string; 
   public get perUnit() {
     return this.getStringAttribute('per_unit');
   }
-  public set perUnit(value: string | undefined) {
+  public set perUnit(value: string) {
     this._perUnit = value;
   }
   public resetPerUnit() {
@@ -143,15 +143,15 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get perUnitInput() {
-    return this._perUnit
+    return this._perUnit;
   }
 
   // short_name - computed: false, optional: true, required: false
-  private _shortName?: string | undefined; 
+  private _shortName?: string; 
   public get shortName() {
     return this.getStringAttribute('short_name');
   }
-  public set shortName(value: string | undefined) {
+  public set shortName(value: string) {
     this._shortName = value;
   }
   public resetShortName() {
@@ -159,15 +159,15 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get shortNameInput() {
-    return this._shortName
+    return this._shortName;
   }
 
   // statsd_interval - computed: false, optional: true, required: false
-  private _statsdInterval?: number | undefined; 
+  private _statsdInterval?: number; 
   public get statsdInterval() {
     return this.getNumberAttribute('statsd_interval');
   }
-  public set statsdInterval(value: number | undefined) {
+  public set statsdInterval(value: number) {
     this._statsdInterval = value;
   }
   public resetStatsdInterval() {
@@ -175,15 +175,15 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statsdIntervalInput() {
-    return this._statsdInterval
+    return this._statsdInterval;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -191,15 +191,15 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // unit - computed: false, optional: true, required: false
-  private _unit?: string | undefined; 
+  private _unit?: string; 
   public get unit() {
     return this.getStringAttribute('unit');
   }
-  public set unit(value: string | undefined) {
+  public set unit(value: string) {
     this._unit = value;
   }
   public resetUnit() {
@@ -207,7 +207,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get unitInput() {
-    return this._unit
+    return this._unit;
   }
 
   // =========
