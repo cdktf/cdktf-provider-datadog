@@ -97,11 +97,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // ==========
 
   // automute - computed: false, optional: true, required: false
-  private _automute?: boolean | cdktf.IResolvable | undefined; 
+  private _automute?: boolean | cdktf.IResolvable; 
   public get automute() {
     return this.getBooleanAttribute('automute') as any;
   }
-  public set automute(value: boolean | cdktf.IResolvable | undefined) {
+  public set automute(value: boolean | cdktf.IResolvable) {
     this._automute = value;
   }
   public resetAutomute() {
@@ -109,7 +109,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get automuteInput() {
-    return this._automute
+    return this._automute;
   }
 
   // client_email - computed: false, optional: false, required: true
@@ -122,7 +122,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clientEmailInput() {
-    return this._clientEmail
+    return this._clientEmail;
   }
 
   // client_id - computed: false, optional: false, required: true
@@ -135,15 +135,15 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clientIdInput() {
-    return this._clientId
+    return this._clientId;
   }
 
   // host_filters - computed: false, optional: true, required: false
-  private _hostFilters?: string | undefined; 
+  private _hostFilters?: string; 
   public get hostFilters() {
     return this.getStringAttribute('host_filters');
   }
-  public set hostFilters(value: string | undefined) {
+  public set hostFilters(value: string) {
     this._hostFilters = value;
   }
   public resetHostFilters() {
@@ -151,7 +151,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostFiltersInput() {
-    return this._hostFilters
+    return this._hostFilters;
   }
 
   // id - computed: true, optional: true, required: false
@@ -169,7 +169,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privateKeyInput() {
-    return this._privateKey
+    return this._privateKey;
   }
 
   // private_key_id - computed: false, optional: false, required: true
@@ -182,7 +182,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privateKeyIdInput() {
-    return this._privateKeyId
+    return this._privateKeyId;
   }
 
   // project_id - computed: false, optional: false, required: true
@@ -195,7 +195,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // =========

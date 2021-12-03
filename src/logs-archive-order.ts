@@ -55,11 +55,11 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
   // ==========
 
   // archive_ids - computed: true, optional: true, required: false
-  private _archiveIds?: string[] | undefined; 
+  private _archiveIds?: string[]; 
   public get archiveIds() {
     return this.getListAttribute('archive_ids');
   }
-  public set archiveIds(value: string[] | undefined) {
+  public set archiveIds(value: string[]) {
     this._archiveIds = value;
   }
   public resetArchiveIds() {
@@ -67,7 +67,7 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get archiveIdsInput() {
-    return this._archiveIds
+    return this._archiveIds;
   }
 
   // id - computed: true, optional: true, required: false

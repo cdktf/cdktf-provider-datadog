@@ -76,11 +76,11 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   // ==========
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -88,15 +88,15 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // metrics_query - computed: false, optional: true, required: false
-  private _metricsQuery?: string | undefined; 
+  private _metricsQuery?: string; 
   public get metricsQuery() {
     return this.getStringAttribute('metrics_query');
   }
-  public set metricsQuery(value: string | undefined) {
+  public set metricsQuery(value: string) {
     this._metricsQuery = value;
   }
   public resetMetricsQuery() {
@@ -104,7 +104,7 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get metricsQueryInput() {
-    return this._metricsQuery
+    return this._metricsQuery;
   }
 
   // name - computed: true, optional: false, required: false
@@ -113,11 +113,11 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   }
 
   // name_query - computed: false, optional: true, required: false
-  private _nameQuery?: string | undefined; 
+  private _nameQuery?: string; 
   public get nameQuery() {
     return this.getStringAttribute('name_query');
   }
-  public set nameQuery(value: string | undefined) {
+  public set nameQuery(value: string) {
     this._nameQuery = value;
   }
   public resetNameQuery() {
@@ -125,15 +125,15 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get nameQueryInput() {
-    return this._nameQuery
+    return this._nameQuery;
   }
 
   // tags_query - computed: false, optional: true, required: false
-  private _tagsQuery?: string | undefined; 
+  private _tagsQuery?: string; 
   public get tagsQuery() {
     return this.getStringAttribute('tags_query');
   }
-  public set tagsQuery(value: string | undefined) {
+  public set tagsQuery(value: string) {
     this._tagsQuery = value;
   }
   public resetTagsQuery() {
@@ -141,7 +141,7 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get tagsQueryInput() {
-    return this._tagsQuery
+    return this._tagsQuery;
   }
 
   // type - computed: true, optional: false, required: false

@@ -60,11 +60,11 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -72,7 +72,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // =========

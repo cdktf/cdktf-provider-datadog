@@ -71,7 +71,7 @@ export interface SyntheticsGlobalVariableParseTestOptionsParser {
   readonly value?: string;
 }
 
-function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParserOutputReference | SyntheticsGlobalVariableParseTestOptionsParser): any {
+export function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParserOutputReference | SyntheticsGlobalVariableParseTestOptionsParser): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -83,6 +83,8 @@ function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: Synt
 }
 
 export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -90,6 +92,33 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   */
   public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsGlobalVariableParseTestOptionsParser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsGlobalVariableParseTestOptionsParser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._value = value.value;
+    }
   }
 
   // type - computed: false, optional: false, required: true
@@ -102,15 +131,15 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // value - computed: false, optional: true, required: false
-  private _value?: string | undefined; 
+  private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
-  public set value(value: string | undefined) {
+  public set value(value: string) {
     this._value = value;
   }
   public resetValue() {
@@ -118,7 +147,7 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 }
 export interface SyntheticsGlobalVariableParseTestOptions {
@@ -142,7 +171,7 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   readonly parser: SyntheticsGlobalVariableParseTestOptionsParser;
 }
 
-function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsOutputReference | SyntheticsGlobalVariableParseTestOptions): any {
+export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsOutputReference | SyntheticsGlobalVariableParseTestOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -155,6 +184,8 @@ function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: Synthetics
 }
 
 export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -164,12 +195,45 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SyntheticsGlobalVariableParseTestOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._field) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parser?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.parser = this._parser?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsGlobalVariableParseTestOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._field = undefined;
+      this._type = undefined;
+      this._parser.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._field = value.field;
+      this._type = value.type;
+      this._parser.internalValue = value.parser;
+    }
+  }
+
   // field - computed: false, optional: true, required: false
-  private _field?: string | undefined; 
+  private _field?: string; 
   public get field() {
     return this.getStringAttribute('field');
   }
-  public set field(value: string | undefined) {
+  public set field(value: string) {
     this._field = value;
   }
   public resetField() {
@@ -177,7 +241,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get fieldInput() {
-    return this._field
+    return this._field;
   }
 
   // type - computed: false, optional: false, required: true
@@ -190,21 +254,20 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // parser - computed: false, optional: false, required: true
-  private _parser?: SyntheticsGlobalVariableParseTestOptionsParser; 
-  private __parserOutput = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this as any, "parser", true);
+  private _parser = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this as any, "parser", true);
   public get parser() {
-    return this.__parserOutput;
+    return this._parser;
   }
   public putParser(value: SyntheticsGlobalVariableParseTestOptionsParser) {
-    this._parser = value;
+    this._parser.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get parserInput() {
-    return this._parser
+    return this._parser.internalValue;
   }
 }
 
@@ -247,7 +310,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     this._secure = config.secure;
     this._tags = config.tags;
     this._value = config.value;
-    this._parseTestOptions = config.parseTestOptions;
+    this._parseTestOptions.internalValue = config.parseTestOptions;
   }
 
   // ==========
@@ -255,11 +318,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -267,7 +330,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -285,15 +348,15 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // parse_test_id - computed: false, optional: true, required: false
-  private _parseTestId?: string | undefined; 
+  private _parseTestId?: string; 
   public get parseTestId() {
     return this.getStringAttribute('parse_test_id');
   }
-  public set parseTestId(value: string | undefined) {
+  public set parseTestId(value: string) {
     this._parseTestId = value;
   }
   public resetParseTestId() {
@@ -301,15 +364,15 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get parseTestIdInput() {
-    return this._parseTestId
+    return this._parseTestId;
   }
 
   // restricted_roles - computed: false, optional: true, required: false
-  private _restrictedRoles?: string[] | undefined; 
+  private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
     return this.getListAttribute('restricted_roles');
   }
-  public set restrictedRoles(value: string[] | undefined) {
+  public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
   }
   public resetRestrictedRoles() {
@@ -317,15 +380,15 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get restrictedRolesInput() {
-    return this._restrictedRoles
+    return this._restrictedRoles;
   }
 
   // secure - computed: false, optional: true, required: false
-  private _secure?: boolean | cdktf.IResolvable | undefined; 
+  private _secure?: boolean | cdktf.IResolvable; 
   public get secure() {
     return this.getBooleanAttribute('secure') as any;
   }
-  public set secure(value: boolean | cdktf.IResolvable | undefined) {
+  public set secure(value: boolean | cdktf.IResolvable) {
     this._secure = value;
   }
   public resetSecure() {
@@ -333,15 +396,15 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get secureInput() {
-    return this._secure
+    return this._secure;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[] | undefined; 
+  private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] | undefined) {
+  public set tags(value: string[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -349,7 +412,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // value - computed: false, optional: false, required: true
@@ -362,24 +425,23 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 
   // parse_test_options - computed: false, optional: true, required: false
-  private _parseTestOptions?: SyntheticsGlobalVariableParseTestOptions | undefined; 
-  private __parseTestOptionsOutput = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this as any, "parse_test_options", true);
+  private _parseTestOptions = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this as any, "parse_test_options", true);
   public get parseTestOptions() {
-    return this.__parseTestOptionsOutput;
+    return this._parseTestOptions;
   }
-  public putParseTestOptions(value: SyntheticsGlobalVariableParseTestOptions | undefined) {
-    this._parseTestOptions = value;
+  public putParseTestOptions(value: SyntheticsGlobalVariableParseTestOptions) {
+    this._parseTestOptions.internalValue = value;
   }
   public resetParseTestOptions() {
-    this._parseTestOptions = undefined;
+    this._parseTestOptions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parseTestOptionsInput() {
-    return this._parseTestOptions
+    return this._parseTestOptions.internalValue;
   }
 
   // =========
@@ -395,7 +457,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       secure: cdktf.booleanToTerraform(this._secure),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       value: cdktf.stringToTerraform(this._value),
-      parse_test_options: syntheticsGlobalVariableParseTestOptionsToTerraform(this._parseTestOptions),
+      parse_test_options: syntheticsGlobalVariableParseTestOptionsToTerraform(this._parseTestOptions.internalValue),
     };
   }
 }

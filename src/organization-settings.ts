@@ -29,7 +29,7 @@ export interface OrganizationSettingsSettingsSaml {
   readonly enabled?: boolean | cdktf.IResolvable;
 }
 
-function organizationSettingsSettingsSamlToTerraform(struct?: OrganizationSettingsSettingsSamlOutputReference | OrganizationSettingsSettingsSaml): any {
+export function organizationSettingsSettingsSamlToTerraform(struct?: OrganizationSettingsSettingsSamlOutputReference | OrganizationSettingsSettingsSaml): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -40,6 +40,8 @@ function organizationSettingsSettingsSamlToTerraform(struct?: OrganizationSettin
 }
 
 export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -49,12 +51,33 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): OrganizationSettingsSettingsSaml | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationSettingsSettingsSaml | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -62,7 +85,7 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 }
 export interface OrganizationSettingsSettingsSamlAutocreateUsersDomains {
@@ -80,7 +103,7 @@ export interface OrganizationSettingsSettingsSamlAutocreateUsersDomains {
   readonly enabled?: boolean | cdktf.IResolvable;
 }
 
-function organizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struct?: OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference | OrganizationSettingsSettingsSamlAutocreateUsersDomains): any {
+export function organizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struct?: OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference | OrganizationSettingsSettingsSamlAutocreateUsersDomains): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -92,6 +115,8 @@ function organizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struc
 }
 
 export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -101,12 +126,39 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): OrganizationSettingsSettingsSamlAutocreateUsersDomains | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domains) {
+      hasAnyValues = true;
+      internalValueResult.domains = this._domains;
+    }
+    if (this._enabled) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationSettingsSettingsSamlAutocreateUsersDomains | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._domains = undefined;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._domains = value.domains;
+      this._enabled = value.enabled;
+    }
+  }
+
   // domains - computed: false, optional: true, required: false
-  private _domains?: string[] | undefined; 
+  private _domains?: string[]; 
   public get domains() {
     return this.getListAttribute('domains');
   }
-  public set domains(value: string[] | undefined) {
+  public set domains(value: string[]) {
     this._domains = value;
   }
   public resetDomains() {
@@ -114,15 +166,15 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   }
   // Temporarily expose input value. Use with caution.
   public get domainsInput() {
-    return this._domains
+    return this._domains;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -130,7 +182,7 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 }
 export interface OrganizationSettingsSettingsSamlIdpInitiatedLogin {
@@ -142,7 +194,7 @@ export interface OrganizationSettingsSettingsSamlIdpInitiatedLogin {
   readonly enabled?: boolean | cdktf.IResolvable;
 }
 
-function organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct?: OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference | OrganizationSettingsSettingsSamlIdpInitiatedLogin): any {
+export function organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct?: OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference | OrganizationSettingsSettingsSamlIdpInitiatedLogin): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -153,6 +205,8 @@ function organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct?: O
 }
 
 export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -162,12 +216,33 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): OrganizationSettingsSettingsSamlIdpInitiatedLogin | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationSettingsSettingsSamlIdpInitiatedLogin | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -175,7 +250,7 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 }
 export interface OrganizationSettingsSettingsSamlStrictMode {
@@ -187,7 +262,7 @@ export interface OrganizationSettingsSettingsSamlStrictMode {
   readonly enabled?: boolean | cdktf.IResolvable;
 }
 
-function organizationSettingsSettingsSamlStrictModeToTerraform(struct?: OrganizationSettingsSettingsSamlStrictModeOutputReference | OrganizationSettingsSettingsSamlStrictMode): any {
+export function organizationSettingsSettingsSamlStrictModeToTerraform(struct?: OrganizationSettingsSettingsSamlStrictModeOutputReference | OrganizationSettingsSettingsSamlStrictMode): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -198,6 +273,8 @@ function organizationSettingsSettingsSamlStrictModeToTerraform(struct?: Organiza
 }
 
 export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -207,12 +284,33 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): OrganizationSettingsSettingsSamlStrictMode | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationSettingsSettingsSamlStrictMode | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -220,7 +318,7 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 }
 export interface OrganizationSettingsSettings {
@@ -262,7 +360,7 @@ export interface OrganizationSettingsSettings {
   readonly samlStrictMode: OrganizationSettingsSettingsSamlStrictMode;
 }
 
-function organizationSettingsSettingsToTerraform(struct?: OrganizationSettingsSettingsOutputReference | OrganizationSettingsSettings): any {
+export function organizationSettingsSettingsToTerraform(struct?: OrganizationSettingsSettingsOutputReference | OrganizationSettingsSettings): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -278,6 +376,8 @@ function organizationSettingsSettingsToTerraform(struct?: OrganizationSettingsSe
 }
 
 export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -287,12 +387,63 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): OrganizationSettingsSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._privateWidgetShare) {
+      hasAnyValues = true;
+      internalValueResult.privateWidgetShare = this._privateWidgetShare;
+    }
+    if (this._samlAutocreateAccessRole) {
+      hasAnyValues = true;
+      internalValueResult.samlAutocreateAccessRole = this._samlAutocreateAccessRole;
+    }
+    if (this._saml?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.saml = this._saml?.internalValue;
+    }
+    if (this._samlAutocreateUsersDomains?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.samlAutocreateUsersDomains = this._samlAutocreateUsersDomains?.internalValue;
+    }
+    if (this._samlIdpInitiatedLogin?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.samlIdpInitiatedLogin = this._samlIdpInitiatedLogin?.internalValue;
+    }
+    if (this._samlStrictMode?.internalValue) {
+      hasAnyValues = true;
+      internalValueResult.samlStrictMode = this._samlStrictMode?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationSettingsSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._privateWidgetShare = undefined;
+      this._samlAutocreateAccessRole = undefined;
+      this._saml.internalValue = undefined;
+      this._samlAutocreateUsersDomains.internalValue = undefined;
+      this._samlIdpInitiatedLogin.internalValue = undefined;
+      this._samlStrictMode.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._privateWidgetShare = value.privateWidgetShare;
+      this._samlAutocreateAccessRole = value.samlAutocreateAccessRole;
+      this._saml.internalValue = value.saml;
+      this._samlAutocreateUsersDomains.internalValue = value.samlAutocreateUsersDomains;
+      this._samlIdpInitiatedLogin.internalValue = value.samlIdpInitiatedLogin;
+      this._samlStrictMode.internalValue = value.samlStrictMode;
+    }
+  }
+
   // private_widget_share - computed: false, optional: true, required: false
-  private _privateWidgetShare?: boolean | cdktf.IResolvable | undefined; 
+  private _privateWidgetShare?: boolean | cdktf.IResolvable; 
   public get privateWidgetShare() {
     return this.getBooleanAttribute('private_widget_share') as any;
   }
-  public set privateWidgetShare(value: boolean | cdktf.IResolvable | undefined) {
+  public set privateWidgetShare(value: boolean | cdktf.IResolvable) {
     this._privateWidgetShare = value;
   }
   public resetPrivateWidgetShare() {
@@ -300,15 +451,15 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get privateWidgetShareInput() {
-    return this._privateWidgetShare
+    return this._privateWidgetShare;
   }
 
   // saml_autocreate_access_role - computed: false, optional: true, required: false
-  private _samlAutocreateAccessRole?: string | undefined; 
+  private _samlAutocreateAccessRole?: string; 
   public get samlAutocreateAccessRole() {
     return this.getStringAttribute('saml_autocreate_access_role');
   }
-  public set samlAutocreateAccessRole(value: string | undefined) {
+  public set samlAutocreateAccessRole(value: string) {
     this._samlAutocreateAccessRole = value;
   }
   public resetSamlAutocreateAccessRole() {
@@ -316,63 +467,59 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get samlAutocreateAccessRoleInput() {
-    return this._samlAutocreateAccessRole
+    return this._samlAutocreateAccessRole;
   }
 
   // saml - computed: false, optional: false, required: true
-  private _saml?: OrganizationSettingsSettingsSaml; 
-  private __samlOutput = new OrganizationSettingsSettingsSamlOutputReference(this as any, "saml", true);
+  private _saml = new OrganizationSettingsSettingsSamlOutputReference(this as any, "saml", true);
   public get saml() {
-    return this.__samlOutput;
+    return this._saml;
   }
   public putSaml(value: OrganizationSettingsSettingsSaml) {
-    this._saml = value;
+    this._saml.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get samlInput() {
-    return this._saml
+    return this._saml.internalValue;
   }
 
   // saml_autocreate_users_domains - computed: false, optional: false, required: true
-  private _samlAutocreateUsersDomains?: OrganizationSettingsSettingsSamlAutocreateUsersDomains; 
-  private __samlAutocreateUsersDomainsOutput = new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(this as any, "saml_autocreate_users_domains", true);
+  private _samlAutocreateUsersDomains = new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(this as any, "saml_autocreate_users_domains", true);
   public get samlAutocreateUsersDomains() {
-    return this.__samlAutocreateUsersDomainsOutput;
+    return this._samlAutocreateUsersDomains;
   }
   public putSamlAutocreateUsersDomains(value: OrganizationSettingsSettingsSamlAutocreateUsersDomains) {
-    this._samlAutocreateUsersDomains = value;
+    this._samlAutocreateUsersDomains.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get samlAutocreateUsersDomainsInput() {
-    return this._samlAutocreateUsersDomains
+    return this._samlAutocreateUsersDomains.internalValue;
   }
 
   // saml_idp_initiated_login - computed: false, optional: false, required: true
-  private _samlIdpInitiatedLogin?: OrganizationSettingsSettingsSamlIdpInitiatedLogin; 
-  private __samlIdpInitiatedLoginOutput = new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(this as any, "saml_idp_initiated_login", true);
+  private _samlIdpInitiatedLogin = new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(this as any, "saml_idp_initiated_login", true);
   public get samlIdpInitiatedLogin() {
-    return this.__samlIdpInitiatedLoginOutput;
+    return this._samlIdpInitiatedLogin;
   }
   public putSamlIdpInitiatedLogin(value: OrganizationSettingsSettingsSamlIdpInitiatedLogin) {
-    this._samlIdpInitiatedLogin = value;
+    this._samlIdpInitiatedLogin.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get samlIdpInitiatedLoginInput() {
-    return this._samlIdpInitiatedLogin
+    return this._samlIdpInitiatedLogin.internalValue;
   }
 
   // saml_strict_mode - computed: false, optional: false, required: true
-  private _samlStrictMode?: OrganizationSettingsSettingsSamlStrictMode; 
-  private __samlStrictModeOutput = new OrganizationSettingsSettingsSamlStrictModeOutputReference(this as any, "saml_strict_mode", true);
+  private _samlStrictMode = new OrganizationSettingsSettingsSamlStrictModeOutputReference(this as any, "saml_strict_mode", true);
   public get samlStrictMode() {
-    return this.__samlStrictModeOutput;
+    return this._samlStrictMode;
   }
   public putSamlStrictMode(value: OrganizationSettingsSettingsSamlStrictMode) {
-    this._samlStrictMode = value;
+    this._samlStrictMode.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get samlStrictModeInput() {
-    return this._samlStrictMode
+    return this._samlStrictMode.internalValue;
   }
 }
 
@@ -409,7 +556,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
-    this._settings = config.settings;
+    this._settings.internalValue = config.settings;
   }
 
   // ==========
@@ -427,11 +574,11 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -439,7 +586,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // public_id - computed: true, optional: false, required: false
@@ -448,20 +595,19 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   }
 
   // settings - computed: false, optional: true, required: false
-  private _settings?: OrganizationSettingsSettings | undefined; 
-  private __settingsOutput = new OrganizationSettingsSettingsOutputReference(this as any, "settings", true);
+  private _settings = new OrganizationSettingsSettingsOutputReference(this as any, "settings", true);
   public get settings() {
-    return this.__settingsOutput;
+    return this._settings;
   }
-  public putSettings(value: OrganizationSettingsSettings | undefined) {
-    this._settings = value;
+  public putSettings(value: OrganizationSettingsSettings) {
+    this._settings.internalValue = value;
   }
   public resetSettings() {
-    this._settings = undefined;
+    this._settings.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get settingsInput() {
-    return this._settings
+    return this._settings.internalValue;
   }
 
   // =========
@@ -471,7 +617,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      settings: organizationSettingsSettingsToTerraform(this._settings),
+      settings: organizationSettingsSettingsToTerraform(this._settings.internalValue),
     };
   }
 }

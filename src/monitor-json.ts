@@ -76,15 +76,15 @@ export class MonitorJson extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorInput() {
-    return this._monitor
+    return this._monitor;
   }
 
   // url - computed: true, optional: true, required: false
-  private _url?: string | undefined; 
+  private _url?: string; 
   public get url() {
     return this.getStringAttribute('url');
   }
-  public set url(value: string | undefined) {
+  public set url(value: string) {
     this._url = value;
   }
   public resetUrl() {
@@ -92,7 +92,7 @@ export class MonitorJson extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url
+    return this._url;
   }
 
   // =========

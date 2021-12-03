@@ -69,7 +69,7 @@ export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // tags - computed: true, optional: false, required: false

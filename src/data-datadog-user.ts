@@ -69,7 +69,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter;
   }
 
   // id - computed: true, optional: true, required: false

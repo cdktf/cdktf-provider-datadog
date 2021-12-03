@@ -104,11 +104,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   // ==========
 
   // access_key_id - computed: false, optional: true, required: false
-  private _accessKeyId?: string | undefined; 
+  private _accessKeyId?: string; 
   public get accessKeyId() {
     return this.getStringAttribute('access_key_id');
   }
-  public set accessKeyId(value: string | undefined) {
+  public set accessKeyId(value: string) {
     this._accessKeyId = value;
   }
   public resetAccessKeyId() {
@@ -116,15 +116,15 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessKeyIdInput() {
-    return this._accessKeyId
+    return this._accessKeyId;
   }
 
   // account_id - computed: false, optional: true, required: false
-  private _accountId?: string | undefined; 
+  private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string | undefined) {
+  public set accountId(value: string) {
     this._accountId = value;
   }
   public resetAccountId() {
@@ -132,15 +132,15 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // account_specific_namespace_rules - computed: false, optional: true, required: false
-  private _accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable | undefined; 
+  private _accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable; 
   public get accountSpecificNamespaceRules() {
     return this.getBooleanAttribute('account_specific_namespace_rules') as any;
   }
-  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } | cdktf.IResolvable | undefined) {
+  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } | cdktf.IResolvable) {
     this._accountSpecificNamespaceRules = value;
   }
   public resetAccountSpecificNamespaceRules() {
@@ -148,15 +148,15 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountSpecificNamespaceRulesInput() {
-    return this._accountSpecificNamespaceRules
+    return this._accountSpecificNamespaceRules;
   }
 
   // excluded_regions - computed: false, optional: true, required: false
-  private _excludedRegions?: string[] | undefined; 
+  private _excludedRegions?: string[]; 
   public get excludedRegions() {
     return this.getListAttribute('excluded_regions');
   }
-  public set excludedRegions(value: string[] | undefined) {
+  public set excludedRegions(value: string[]) {
     this._excludedRegions = value;
   }
   public resetExcludedRegions() {
@@ -164,7 +164,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get excludedRegionsInput() {
-    return this._excludedRegions
+    return this._excludedRegions;
   }
 
   // external_id - computed: true, optional: false, required: false
@@ -173,11 +173,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // filter_tags - computed: false, optional: true, required: false
-  private _filterTags?: string[] | undefined; 
+  private _filterTags?: string[]; 
   public get filterTags() {
     return this.getListAttribute('filter_tags');
   }
-  public set filterTags(value: string[] | undefined) {
+  public set filterTags(value: string[]) {
     this._filterTags = value;
   }
   public resetFilterTags() {
@@ -185,15 +185,15 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filterTagsInput() {
-    return this._filterTags
+    return this._filterTags;
   }
 
   // host_tags - computed: false, optional: true, required: false
-  private _hostTags?: string[] | undefined; 
+  private _hostTags?: string[]; 
   public get hostTags() {
     return this.getListAttribute('host_tags');
   }
-  public set hostTags(value: string[] | undefined) {
+  public set hostTags(value: string[]) {
     this._hostTags = value;
   }
   public resetHostTags() {
@@ -201,7 +201,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostTagsInput() {
-    return this._hostTags
+    return this._hostTags;
   }
 
   // id - computed: true, optional: true, required: false
@@ -210,11 +210,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // role_name - computed: false, optional: true, required: false
-  private _roleName?: string | undefined; 
+  private _roleName?: string; 
   public get roleName() {
     return this.getStringAttribute('role_name');
   }
-  public set roleName(value: string | undefined) {
+  public set roleName(value: string) {
     this._roleName = value;
   }
   public resetRoleName() {
@@ -222,15 +222,15 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleNameInput() {
-    return this._roleName
+    return this._roleName;
   }
 
   // secret_access_key - computed: false, optional: true, required: false
-  private _secretAccessKey?: string | undefined; 
+  private _secretAccessKey?: string; 
   public get secretAccessKey() {
     return this.getStringAttribute('secret_access_key');
   }
-  public set secretAccessKey(value: string | undefined) {
+  public set secretAccessKey(value: string) {
     this._secretAccessKey = value;
   }
   public resetSecretAccessKey() {
@@ -238,7 +238,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get secretAccessKeyInput() {
-    return this._secretAccessKey
+    return this._secretAccessKey;
   }
 
   // =========

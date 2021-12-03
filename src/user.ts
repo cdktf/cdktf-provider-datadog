@@ -83,11 +83,11 @@ export class User extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable | undefined; 
+  private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled') as any;
   }
-  public set disabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -95,7 +95,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get disabledInput() {
-    return this._disabled
+    return this._disabled;
   }
 
   // email - computed: false, optional: false, required: true
@@ -108,7 +108,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
-    return this._email
+    return this._email;
   }
 
   // id - computed: true, optional: true, required: false
@@ -117,11 +117,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -129,15 +129,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // roles - computed: false, optional: true, required: false
-  private _roles?: string[] | undefined; 
+  private _roles?: string[]; 
   public get roles() {
     return this.getListAttribute('roles');
   }
-  public set roles(value: string[] | undefined) {
+  public set roles(value: string[]) {
     this._roles = value;
   }
   public resetRoles() {
@@ -145,15 +145,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
-    return this._roles
+    return this._roles;
   }
 
   // send_user_invitation - computed: false, optional: true, required: false
-  private _sendUserInvitation?: boolean | cdktf.IResolvable | undefined; 
+  private _sendUserInvitation?: boolean | cdktf.IResolvable; 
   public get sendUserInvitation() {
     return this.getBooleanAttribute('send_user_invitation') as any;
   }
-  public set sendUserInvitation(value: boolean | cdktf.IResolvable | undefined) {
+  public set sendUserInvitation(value: boolean | cdktf.IResolvable) {
     this._sendUserInvitation = value;
   }
   public resetSendUserInvitation() {
@@ -161,7 +161,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sendUserInvitationInput() {
-    return this._sendUserInvitation
+    return this._sendUserInvitation;
   }
 
   // user_invitation_id - computed: true, optional: false, required: false

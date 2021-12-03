@@ -53,7 +53,7 @@ export interface MetricTagConfigurationAggregations {
   readonly time: string;
 }
 
-function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations): any {
+export function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -114,11 +114,11 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // include_percentiles - computed: false, optional: true, required: false
-  private _includePercentiles?: boolean | cdktf.IResolvable | undefined; 
+  private _includePercentiles?: boolean | cdktf.IResolvable; 
   public get includePercentiles() {
     return this.getBooleanAttribute('include_percentiles') as any;
   }
-  public set includePercentiles(value: boolean | cdktf.IResolvable | undefined) {
+  public set includePercentiles(value: boolean | cdktf.IResolvable) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {
@@ -126,7 +126,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get includePercentilesInput() {
-    return this._includePercentiles
+    return this._includePercentiles;
   }
 
   // metric_name - computed: false, optional: false, required: true
@@ -139,7 +139,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get metricNameInput() {
-    return this._metricName
+    return this._metricName;
   }
 
   // metric_type - computed: false, optional: false, required: true
@@ -152,7 +152,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get metricTypeInput() {
-    return this._metricType
+    return this._metricType;
   }
 
   // tags - computed: false, optional: false, required: true
@@ -165,16 +165,16 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // aggregations - computed: false, optional: true, required: false
-  private _aggregations?: MetricTagConfigurationAggregations[] | undefined; 
+  private _aggregations?: MetricTagConfigurationAggregations[]; 
   public get aggregations() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('aggregations') as any;
   }
-  public set aggregations(value: MetricTagConfigurationAggregations[] | undefined) {
+  public set aggregations(value: MetricTagConfigurationAggregations[]) {
     this._aggregations = value;
   }
   public resetAggregations() {
@@ -182,7 +182,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aggregationsInput() {
-    return this._aggregations
+    return this._aggregations;
   }
 
   // =========

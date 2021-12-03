@@ -71,7 +71,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
-    return this._accountId
+    return this._accountId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -89,7 +89,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lambdaArnInput() {
-    return this._lambdaArn
+    return this._lambdaArn;
   }
 
   // =========

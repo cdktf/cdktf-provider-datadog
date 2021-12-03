@@ -53,7 +53,7 @@ export interface SecurityMonitoringFilterExclusionFilter {
   readonly query: string;
 }
 
-function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter): any {
+export function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -109,11 +109,11 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   // ==========
 
   // filtered_data_type - computed: false, optional: true, required: false
-  private _filteredDataType?: string | undefined; 
+  private _filteredDataType?: string; 
   public get filteredDataType() {
     return this.getStringAttribute('filtered_data_type');
   }
-  public set filteredDataType(value: string | undefined) {
+  public set filteredDataType(value: string) {
     this._filteredDataType = value;
   }
   public resetFilteredDataType() {
@@ -121,7 +121,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filteredDataTypeInput() {
-    return this._filteredDataType
+    return this._filteredDataType;
   }
 
   // id - computed: true, optional: true, required: false
@@ -139,7 +139,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // name - computed: false, optional: false, required: true
@@ -152,7 +152,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // query - computed: false, optional: false, required: true
@@ -165,7 +165,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 
   // version - computed: true, optional: false, required: false
@@ -174,12 +174,12 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
-  private _exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | undefined; 
+  private _exclusionFilter?: SecurityMonitoringFilterExclusionFilter[]; 
   public get exclusionFilter() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('exclusion_filter') as any;
   }
-  public set exclusionFilter(value: SecurityMonitoringFilterExclusionFilter[] | undefined) {
+  public set exclusionFilter(value: SecurityMonitoringFilterExclusionFilter[]) {
     this._exclusionFilter = value;
   }
   public resetExclusionFilter() {
@@ -187,7 +187,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get exclusionFilterInput() {
-    return this._exclusionFilter
+    return this._exclusionFilter;
   }
 
   // =========

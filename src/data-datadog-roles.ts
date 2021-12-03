@@ -72,11 +72,11 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
   // ==========
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: string | undefined; 
+  private _filter?: string; 
   public get filter() {
     return this.getStringAttribute('filter');
   }
-  public set filter(value: string | undefined) {
+  public set filter(value: string) {
     this._filter = value;
   }
   public resetFilter() {
@@ -84,7 +84,7 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter;
   }
 
   // id - computed: true, optional: true, required: false

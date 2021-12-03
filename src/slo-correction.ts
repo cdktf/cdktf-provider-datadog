@@ -113,15 +113,15 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
-    return this._category
+    return this._category;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -129,15 +129,15 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // duration - computed: false, optional: true, required: false
-  private _duration?: number | undefined; 
+  private _duration?: number; 
   public get duration() {
     return this.getNumberAttribute('duration');
   }
-  public set duration(value: number | undefined) {
+  public set duration(value: number) {
     this._duration = value;
   }
   public resetDuration() {
@@ -145,15 +145,15 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get durationInput() {
-    return this._duration
+    return this._duration;
   }
 
   // end - computed: false, optional: true, required: false
-  private _end?: number | undefined; 
+  private _end?: number; 
   public get end() {
     return this.getNumberAttribute('end');
   }
-  public set end(value: number | undefined) {
+  public set end(value: number) {
     this._end = value;
   }
   public resetEnd() {
@@ -161,7 +161,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endInput() {
-    return this._end
+    return this._end;
   }
 
   // id - computed: true, optional: true, required: false
@@ -170,11 +170,11 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
 
   // rrule - computed: false, optional: true, required: false
-  private _rrule?: string | undefined; 
+  private _rrule?: string; 
   public get rrule() {
     return this.getStringAttribute('rrule');
   }
-  public set rrule(value: string | undefined) {
+  public set rrule(value: string) {
     this._rrule = value;
   }
   public resetRrule() {
@@ -182,7 +182,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rruleInput() {
-    return this._rrule
+    return this._rrule;
   }
 
   // slo_id - computed: false, optional: false, required: true
@@ -195,7 +195,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sloIdInput() {
-    return this._sloId
+    return this._sloId;
   }
 
   // start - computed: false, optional: false, required: true
@@ -208,15 +208,15 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startInput() {
-    return this._start
+    return this._start;
   }
 
   // timezone - computed: false, optional: true, required: false
-  private _timezone?: string | undefined; 
+  private _timezone?: string; 
   public get timezone() {
     return this.getStringAttribute('timezone');
   }
-  public set timezone(value: string | undefined) {
+  public set timezone(value: string) {
     this._timezone = value;
   }
   public resetTimezone() {
@@ -224,7 +224,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timezoneInput() {
-    return this._timezone
+    return this._timezone;
   }
 
   // =========
