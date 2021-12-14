@@ -54,7 +54,7 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
   public get internalValue(): OrganizationSettingsSettingsSaml | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -129,11 +129,11 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   public get internalValue(): OrganizationSettingsSettingsSamlAutocreateUsersDomains | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._domains) {
+    if (this._domains !== undefined) {
       hasAnyValues = true;
       internalValueResult.domains = this._domains;
     }
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -219,7 +219,7 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
   public get internalValue(): OrganizationSettingsSettingsSamlIdpInitiatedLogin | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -287,7 +287,7 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
   public get internalValue(): OrganizationSettingsSettingsSamlStrictMode | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
@@ -390,27 +390,27 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   public get internalValue(): OrganizationSettingsSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._privateWidgetShare) {
+    if (this._privateWidgetShare !== undefined) {
       hasAnyValues = true;
       internalValueResult.privateWidgetShare = this._privateWidgetShare;
     }
-    if (this._samlAutocreateAccessRole) {
+    if (this._samlAutocreateAccessRole !== undefined) {
       hasAnyValues = true;
       internalValueResult.samlAutocreateAccessRole = this._samlAutocreateAccessRole;
     }
-    if (this._saml?.internalValue) {
+    if (this._saml?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.saml = this._saml?.internalValue;
     }
-    if (this._samlAutocreateUsersDomains?.internalValue) {
+    if (this._samlAutocreateUsersDomains?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.samlAutocreateUsersDomains = this._samlAutocreateUsersDomains?.internalValue;
     }
-    if (this._samlIdpInitiatedLogin?.internalValue) {
+    if (this._samlIdpInitiatedLogin?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.samlIdpInitiatedLogin = this._samlIdpInitiatedLogin?.internalValue;
     }
-    if (this._samlStrictMode?.internalValue) {
+    if (this._samlStrictMode?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.samlStrictMode = this._samlStrictMode?.internalValue;
     }

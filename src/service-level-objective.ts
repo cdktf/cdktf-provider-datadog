@@ -109,11 +109,11 @@ export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObje
   public get internalValue(): ServiceLevelObjectiveQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._denominator) {
+    if (this._denominator !== undefined) {
       hasAnyValues = true;
       internalValueResult.denominator = this._denominator;
     }
-    if (this._numerator) {
+    if (this._numerator !== undefined) {
       hasAnyValues = true;
       internalValueResult.numerator = this._numerator;
     }

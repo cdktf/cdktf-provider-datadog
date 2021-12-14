@@ -137,7 +137,7 @@ export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
   public get internalValue(): LogsIndexFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }

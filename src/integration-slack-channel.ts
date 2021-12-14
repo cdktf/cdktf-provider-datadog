@@ -81,19 +81,19 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   public get internalValue(): IntegrationSlackChannelDisplay | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._message) {
+    if (this._message !== undefined) {
       hasAnyValues = true;
       internalValueResult.message = this._message;
     }
-    if (this._notified) {
+    if (this._notified !== undefined) {
       hasAnyValues = true;
       internalValueResult.notified = this._notified;
     }
-    if (this._snapshot) {
+    if (this._snapshot !== undefined) {
       hasAnyValues = true;
       internalValueResult.snapshot = this._snapshot;
     }
-    if (this._tags) {
+    if (this._tags !== undefined) {
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }

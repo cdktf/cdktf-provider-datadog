@@ -97,11 +97,11 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   public get internalValue(): SyntheticsGlobalVariableParseTestOptionsParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -198,15 +198,15 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   public get internalValue(): SyntheticsGlobalVariableParseTestOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._field) {
+    if (this._field !== undefined) {
       hasAnyValues = true;
       internalValueResult.field = this._field;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._parser?.internalValue) {
+    if (this._parser?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.parser = this._parser?.internalValue;
     }

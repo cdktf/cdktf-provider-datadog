@@ -176,15 +176,15 @@ export class SyntheticsTestApiStepAssertionTargetjsonpathOutputReference extends
   public get internalValue(): SyntheticsTestApiStepAssertionTargetjsonpath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._jsonpath) {
+    if (this._jsonpath !== undefined) {
       hasAnyValues = true;
       internalValueResult.jsonpath = this._jsonpath;
     }
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._targetvalue) {
+    if (this._targetvalue !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetvalue = this._targetvalue;
     }
@@ -333,11 +333,11 @@ export class SyntheticsTestApiStepExtractedValueParserOutputReference extends cd
   public get internalValue(): SyntheticsTestApiStepExtractedValueParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -465,11 +465,11 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   public get internalValue(): SyntheticsTestApiStepRequestBasicauth | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._password) {
+    if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
-    if (this._username) {
+    if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
@@ -556,11 +556,11 @@ export class SyntheticsTestApiStepRequestClientCertificateCertOutputReference ex
   public get internalValue(): SyntheticsTestApiStepRequestClientCertificateCert | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._content) {
+    if (this._content !== undefined) {
       hasAnyValues = true;
       internalValueResult.content = this._content;
     }
-    if (this._filename) {
+    if (this._filename !== undefined) {
       hasAnyValues = true;
       internalValueResult.filename = this._filename;
     }
@@ -650,11 +650,11 @@ export class SyntheticsTestApiStepRequestClientCertificateKeyOutputReference ext
   public get internalValue(): SyntheticsTestApiStepRequestClientCertificateKey | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._content) {
+    if (this._content !== undefined) {
       hasAnyValues = true;
       internalValueResult.content = this._content;
     }
-    if (this._filename) {
+    if (this._filename !== undefined) {
       hasAnyValues = true;
       internalValueResult.filename = this._filename;
     }
@@ -744,11 +744,11 @@ export class SyntheticsTestApiStepRequestClientCertificateOutputReference extend
   public get internalValue(): SyntheticsTestApiStepRequestClientCertificate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cert?.internalValue) {
+    if (this._cert?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cert = this._cert?.internalValue;
     }
-    if (this._key?.internalValue) {
+    if (this._key?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key?.internalValue;
     }
@@ -919,59 +919,59 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   public get internalValue(): SyntheticsTestApiStepRequestDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowInsecure) {
+    if (this._allowInsecure !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowInsecure = this._allowInsecure;
     }
-    if (this._body) {
+    if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
     }
-    if (this._dnsServer) {
+    if (this._dnsServer !== undefined) {
       hasAnyValues = true;
       internalValueResult.dnsServer = this._dnsServer;
     }
-    if (this._dnsServerPort) {
+    if (this._dnsServerPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.dnsServerPort = this._dnsServerPort;
     }
-    if (this._followRedirects) {
+    if (this._followRedirects !== undefined) {
       hasAnyValues = true;
       internalValueResult.followRedirects = this._followRedirects;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._method) {
+    if (this._method !== undefined) {
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
-    if (this._noSavingResponseBody) {
+    if (this._noSavingResponseBody !== undefined) {
       hasAnyValues = true;
       internalValueResult.noSavingResponseBody = this._noSavingResponseBody;
     }
-    if (this._numberOfPackets) {
+    if (this._numberOfPackets !== undefined) {
       hasAnyValues = true;
       internalValueResult.numberOfPackets = this._numberOfPackets;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._servername) {
+    if (this._servername !== undefined) {
       hasAnyValues = true;
       internalValueResult.servername = this._servername;
     }
-    if (this._shouldTrackHops) {
+    if (this._shouldTrackHops !== undefined) {
       hasAnyValues = true;
       internalValueResult.shouldTrackHops = this._shouldTrackHops;
     }
-    if (this._timeout) {
+    if (this._timeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout;
     }
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
@@ -1376,15 +1376,15 @@ export class SyntheticsTestAssertionTargetjsonpathOutputReference extends cdktf.
   public get internalValue(): SyntheticsTestAssertionTargetjsonpath | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._jsonpath) {
+    if (this._jsonpath !== undefined) {
       hasAnyValues = true;
       internalValueResult.jsonpath = this._jsonpath;
     }
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._targetvalue) {
+    if (this._targetvalue !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetvalue = this._targetvalue;
     }
@@ -1533,11 +1533,11 @@ export class SyntheticsTestBrowserStepParamsVariableOutputReference extends cdkt
   public get internalValue(): SyntheticsTestBrowserStepParamsVariable | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._example) {
+    if (this._example !== undefined) {
       hasAnyValues = true;
       internalValueResult.example = this._example;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
@@ -1742,75 +1742,75 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
   public get internalValue(): SyntheticsTestBrowserStepParams | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._attribute) {
+    if (this._attribute !== undefined) {
       hasAnyValues = true;
       internalValueResult.attribute = this._attribute;
     }
-    if (this._check) {
+    if (this._check !== undefined) {
       hasAnyValues = true;
       internalValueResult.check = this._check;
     }
-    if (this._clickType) {
+    if (this._clickType !== undefined) {
       hasAnyValues = true;
       internalValueResult.clickType = this._clickType;
     }
-    if (this._code) {
+    if (this._code !== undefined) {
       hasAnyValues = true;
       internalValueResult.code = this._code;
     }
-    if (this._delay) {
+    if (this._delay !== undefined) {
       hasAnyValues = true;
       internalValueResult.delay = this._delay;
     }
-    if (this._element) {
+    if (this._element !== undefined) {
       hasAnyValues = true;
       internalValueResult.element = this._element;
     }
-    if (this._email) {
+    if (this._email !== undefined) {
       hasAnyValues = true;
       internalValueResult.email = this._email;
     }
-    if (this._file) {
+    if (this._file !== undefined) {
       hasAnyValues = true;
       internalValueResult.file = this._file;
     }
-    if (this._files) {
+    if (this._files !== undefined) {
       hasAnyValues = true;
       internalValueResult.files = this._files;
     }
-    if (this._modifiers) {
+    if (this._modifiers !== undefined) {
       hasAnyValues = true;
       internalValueResult.modifiers = this._modifiers;
     }
-    if (this._playingTabId) {
+    if (this._playingTabId !== undefined) {
       hasAnyValues = true;
       internalValueResult.playingTabId = this._playingTabId;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
-    if (this._subtestPublicId) {
+    if (this._subtestPublicId !== undefined) {
       hasAnyValues = true;
       internalValueResult.subtestPublicId = this._subtestPublicId;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
-    if (this._withClick) {
+    if (this._withClick !== undefined) {
       hasAnyValues = true;
       internalValueResult.withClick = this._withClick;
     }
-    if (this._x) {
+    if (this._x !== undefined) {
       hasAnyValues = true;
       internalValueResult.x = this._x;
     }
-    if (this._y) {
+    if (this._y !== undefined) {
       hasAnyValues = true;
       internalValueResult.y = this._y;
     }
-    if (this._variable?.internalValue) {
+    if (this._variable?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.variable = this._variable?.internalValue;
     }
@@ -2332,7 +2332,7 @@ export class SyntheticsTestOptionsListMonitorOptionsOutputReference extends cdkt
   public get internalValue(): SyntheticsTestOptionsListMonitorOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._renotifyInterval) {
+    if (this._renotifyInterval !== undefined) {
       hasAnyValues = true;
       internalValueResult.renotifyInterval = this._renotifyInterval;
     }
@@ -2407,11 +2407,11 @@ export class SyntheticsTestOptionsListRetryOutputReference extends cdktf.Complex
   public get internalValue(): SyntheticsTestOptionsListRetry | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -2565,47 +2565,47 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   public get internalValue(): SyntheticsTestOptionsList | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._acceptSelfSigned) {
+    if (this._acceptSelfSigned !== undefined) {
       hasAnyValues = true;
       internalValueResult.acceptSelfSigned = this._acceptSelfSigned;
     }
-    if (this._allowInsecure) {
+    if (this._allowInsecure !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowInsecure = this._allowInsecure;
     }
-    if (this._followRedirects) {
+    if (this._followRedirects !== undefined) {
       hasAnyValues = true;
       internalValueResult.followRedirects = this._followRedirects;
     }
-    if (this._minFailureDuration) {
+    if (this._minFailureDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.minFailureDuration = this._minFailureDuration;
     }
-    if (this._minLocationFailed) {
+    if (this._minLocationFailed !== undefined) {
       hasAnyValues = true;
       internalValueResult.minLocationFailed = this._minLocationFailed;
     }
-    if (this._monitorName) {
+    if (this._monitorName !== undefined) {
       hasAnyValues = true;
       internalValueResult.monitorName = this._monitorName;
     }
-    if (this._monitorPriority) {
+    if (this._monitorPriority !== undefined) {
       hasAnyValues = true;
       internalValueResult.monitorPriority = this._monitorPriority;
     }
-    if (this._noScreenshot) {
+    if (this._noScreenshot !== undefined) {
       hasAnyValues = true;
       internalValueResult.noScreenshot = this._noScreenshot;
     }
-    if (this._tickEvery) {
+    if (this._tickEvery !== undefined) {
       hasAnyValues = true;
       internalValueResult.tickEvery = this._tickEvery;
     }
-    if (this._monitorOptions?.internalValue) {
+    if (this._monitorOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.monitorOptions = this._monitorOptions?.internalValue;
     }
-    if (this._retry?.internalValue) {
+    if (this._retry?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.retry = this._retry?.internalValue;
     }
@@ -2857,11 +2857,11 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   public get internalValue(): SyntheticsTestRequestBasicauth | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._password) {
+    if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
-    if (this._username) {
+    if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
@@ -2948,11 +2948,11 @@ export class SyntheticsTestRequestClientCertificateCertOutputReference extends c
   public get internalValue(): SyntheticsTestRequestClientCertificateCert | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._content) {
+    if (this._content !== undefined) {
       hasAnyValues = true;
       internalValueResult.content = this._content;
     }
-    if (this._filename) {
+    if (this._filename !== undefined) {
       hasAnyValues = true;
       internalValueResult.filename = this._filename;
     }
@@ -3042,11 +3042,11 @@ export class SyntheticsTestRequestClientCertificateKeyOutputReference extends cd
   public get internalValue(): SyntheticsTestRequestClientCertificateKey | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._content) {
+    if (this._content !== undefined) {
       hasAnyValues = true;
       internalValueResult.content = this._content;
     }
-    if (this._filename) {
+    if (this._filename !== undefined) {
       hasAnyValues = true;
       internalValueResult.filename = this._filename;
     }
@@ -3136,11 +3136,11 @@ export class SyntheticsTestRequestClientCertificateOutputReference extends cdktf
   public get internalValue(): SyntheticsTestRequestClientCertificate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cert?.internalValue) {
+    if (this._cert?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cert = this._cert?.internalValue;
     }
-    if (this._key?.internalValue) {
+    if (this._key?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.key = this._key?.internalValue;
     }
@@ -3297,51 +3297,51 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   public get internalValue(): SyntheticsTestRequestDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._body) {
+    if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
     }
-    if (this._dnsServer) {
+    if (this._dnsServer !== undefined) {
       hasAnyValues = true;
       internalValueResult.dnsServer = this._dnsServer;
     }
-    if (this._dnsServerPort) {
+    if (this._dnsServerPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.dnsServerPort = this._dnsServerPort;
     }
-    if (this._host) {
+    if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
-    if (this._method) {
+    if (this._method !== undefined) {
       hasAnyValues = true;
       internalValueResult.method = this._method;
     }
-    if (this._noSavingResponseBody) {
+    if (this._noSavingResponseBody !== undefined) {
       hasAnyValues = true;
       internalValueResult.noSavingResponseBody = this._noSavingResponseBody;
     }
-    if (this._numberOfPackets) {
+    if (this._numberOfPackets !== undefined) {
       hasAnyValues = true;
       internalValueResult.numberOfPackets = this._numberOfPackets;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._servername) {
+    if (this._servername !== undefined) {
       hasAnyValues = true;
       internalValueResult.servername = this._servername;
     }
-    if (this._shouldTrackHops) {
+    if (this._shouldTrackHops !== undefined) {
       hasAnyValues = true;
       internalValueResult.shouldTrackHops = this._shouldTrackHops;
     }
-    if (this._timeout) {
+    if (this._timeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout;
     }
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }

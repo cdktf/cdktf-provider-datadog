@@ -223,11 +223,11 @@ export class MonitorMonitorThresholdWindowsOutputReference extends cdktf.Complex
   public get internalValue(): MonitorMonitorThresholdWindows | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._recoveryWindow) {
+    if (this._recoveryWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.recoveryWindow = this._recoveryWindow;
     }
-    if (this._triggerWindow) {
+    if (this._triggerWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.triggerWindow = this._triggerWindow;
     }
@@ -348,27 +348,27 @@ export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject
   public get internalValue(): MonitorMonitorThresholds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._critical) {
+    if (this._critical !== undefined) {
       hasAnyValues = true;
       internalValueResult.critical = this._critical;
     }
-    if (this._criticalRecovery) {
+    if (this._criticalRecovery !== undefined) {
       hasAnyValues = true;
       internalValueResult.criticalRecovery = this._criticalRecovery;
     }
-    if (this._ok) {
+    if (this._ok !== undefined) {
       hasAnyValues = true;
       internalValueResult.ok = this._ok;
     }
-    if (this._unknown) {
+    if (this._unknown !== undefined) {
       hasAnyValues = true;
       internalValueResult.unknown = this._unknown;
     }
-    if (this._warning) {
+    if (this._warning !== undefined) {
       hasAnyValues = true;
       internalValueResult.warning = this._warning;
     }
-    if (this._warningRecovery) {
+    if (this._warningRecovery !== undefined) {
       hasAnyValues = true;
       internalValueResult.warningRecovery = this._warningRecovery;
     }
