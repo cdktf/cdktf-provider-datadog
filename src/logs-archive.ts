@@ -112,23 +112,23 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   public get internalValue(): LogsArchiveAzureArchive | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientId) {
+    if (this._clientId !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientId = this._clientId;
     }
-    if (this._container) {
+    if (this._container !== undefined) {
       hasAnyValues = true;
       internalValueResult.container = this._container;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
-    if (this._storageAccount) {
+    if (this._storageAccount !== undefined) {
       hasAnyValues = true;
       internalValueResult.storageAccount = this._storageAccount;
     }
-    if (this._tenantId) {
+    if (this._tenantId !== undefined) {
       hasAnyValues = true;
       internalValueResult.tenantId = this._tenantId;
     }
@@ -277,19 +277,19 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   public get internalValue(): LogsArchiveGcsArchive | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bucket) {
+    if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
-    if (this._clientEmail) {
+    if (this._clientEmail !== undefined) {
       hasAnyValues = true;
       internalValueResult.clientEmail = this._clientEmail;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
-    if (this._projectId) {
+    if (this._projectId !== undefined) {
       hasAnyValues = true;
       internalValueResult.projectId = this._projectId;
     }
@@ -420,19 +420,19 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   public get internalValue(): LogsArchiveS3Archive | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._accountId) {
+    if (this._accountId !== undefined) {
       hasAnyValues = true;
       internalValueResult.accountId = this._accountId;
     }
-    if (this._bucket) {
+    if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
-    if (this._roleName) {
+    if (this._roleName !== undefined) {
       hasAnyValues = true;
       internalValueResult.roleName = this._roleName;
     }

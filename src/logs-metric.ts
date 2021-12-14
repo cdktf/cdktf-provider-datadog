@@ -73,11 +73,11 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
   public get internalValue(): LogsMetricCompute | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregationType) {
+    if (this._aggregationType !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregationType = this._aggregationType;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
@@ -160,7 +160,7 @@ export class LogsMetricFilterOutputReference extends cdktf.ComplexObject {
   public get internalValue(): LogsMetricFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }

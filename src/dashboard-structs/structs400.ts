@@ -122,15 +122,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -322,23 +322,23 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -517,15 +517,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -640,15 +640,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -840,23 +840,23 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -1016,19 +1016,19 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProc
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -1210,43 +1210,43 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._isUpstream) {
+    if (this._isUpstream !== undefined) {
       hasAnyValues = true;
       internalValueResult.isUpstream = this._isUpstream;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -1518,43 +1518,43 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -1816,15 +1816,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -1958,7 +1958,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -2058,27 +2058,27 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._compute) {
+    if (this._compute !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._search?.internalValue) {
+    if (this._search?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.search = this._search?.internalValue;
     }
@@ -2250,19 +2250,19 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -2434,39 +2434,39 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._isNormalizedCpu) {
+    if (this._isNormalizedCpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._tagFilters) {
+    if (this._tagFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagFilters = this._tagFilters;
     }
-    if (this._textFilter) {
+    if (this._textFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.textFilter = this._textFilter;
     }
@@ -2730,15 +2730,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -2853,15 +2853,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -3053,23 +3053,23 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -3222,15 +3222,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -3345,15 +3345,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -3545,23 +3545,23 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -3714,15 +3714,15 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyl
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._lineType) {
+    if (this._lineType !== undefined) {
       hasAnyValues = true;
       internalValueResult.lineType = this._lineType;
     }
-    if (this._lineWidth) {
+    if (this._lineWidth !== undefined) {
       hasAnyValues = true;
       internalValueResult.lineWidth = this._lineWidth;
     }
-    if (this._palette) {
+    if (this._palette !== undefined) {
       hasAnyValues = true;
       internalValueResult.palette = this._palette;
     }
@@ -3964,23 +3964,23 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisO
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -4148,23 +4148,23 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutput
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -4395,59 +4395,59 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._legendColumns) {
+    if (this._legendColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendColumns = this._legendColumns;
     }
-    if (this._legendLayout) {
+    if (this._legendLayout !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendLayout = this._legendLayout;
     }
-    if (this._legendSize) {
+    if (this._legendSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendSize = this._legendSize;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._showLegend) {
+    if (this._showLegend !== undefined) {
       hasAnyValues = true;
       internalValueResult.showLegend = this._showLegend;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._event) {
+    if (this._event !== undefined) {
       hasAnyValues = true;
       internalValueResult.event = this._event;
     }
-    if (this._marker) {
+    if (this._marker !== undefined) {
       hasAnyValues = true;
       internalValueResult.marker = this._marker;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
-    if (this._rightYaxis?.internalValue) {
+    if (this._rightYaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rightYaxis = this._rightYaxis?.internalValue;
     }
-    if (this._yaxis?.internalValue) {
+    if (this._yaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.yaxis = this._yaxis?.internalValue;
     }
@@ -4807,15 +4807,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -4930,15 +4930,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -5130,23 +5130,23 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -5299,15 +5299,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -5422,15 +5422,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -5622,23 +5622,23 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -5934,11 +5934,11 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -6085,15 +6085,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -6208,15 +6208,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -6408,23 +6408,23 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -6584,19 +6584,19 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcess
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -6778,43 +6778,43 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._isUpstream) {
+    if (this._isUpstream !== undefined) {
       hasAnyValues = true;
       internalValueResult.isUpstream = this._isUpstream;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -7086,43 +7086,43 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -7384,15 +7384,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -7526,7 +7526,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -7626,27 +7626,27 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._compute) {
+    if (this._compute !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._search?.internalValue) {
+    if (this._search?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.search = this._search?.internalValue;
     }
@@ -7818,19 +7818,19 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMe
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -8002,39 +8002,39 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryPr
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._isNormalizedCpu) {
+    if (this._isNormalizedCpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._tagFilters) {
+    if (this._tagFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagFilters = this._tagFilters;
     }
-    if (this._textFilter) {
+    if (this._textFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.textFilter = this._textFilter;
     }
@@ -8298,15 +8298,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -8421,15 +8421,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -8621,23 +8621,23 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -8790,15 +8790,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -8913,15 +8913,15 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -9113,23 +9113,23 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -9268,7 +9268,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOu
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._palette) {
+    if (this._palette !== undefined) {
       hasAnyValues = true;
       internalValueResult.palette = this._palette;
     }
@@ -9460,27 +9460,27 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReferenc
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
@@ -9738,63 +9738,63 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._displayFormat) {
+    if (this._displayFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.displayFormat = this._displayFormat;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._showBreakdown) {
+    if (this._showBreakdown !== undefined) {
       hasAnyValues = true;
       internalValueResult.showBreakdown = this._showBreakdown;
     }
-    if (this._showDistribution) {
+    if (this._showDistribution !== undefined) {
       hasAnyValues = true;
       internalValueResult.showDistribution = this._showDistribution;
     }
-    if (this._showErrors) {
+    if (this._showErrors !== undefined) {
       hasAnyValues = true;
       internalValueResult.showErrors = this._showErrors;
     }
-    if (this._showHits) {
+    if (this._showHits !== undefined) {
       hasAnyValues = true;
       internalValueResult.showHits = this._showHits;
     }
-    if (this._showLatency) {
+    if (this._showLatency !== undefined) {
       hasAnyValues = true;
       internalValueResult.showLatency = this._showLatency;
     }
-    if (this._showResourceList) {
+    if (this._showResourceList !== undefined) {
       hasAnyValues = true;
       internalValueResult.showResourceList = this._showResourceList;
     }
-    if (this._sizeFormat) {
+    if (this._sizeFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.sizeFormat = this._sizeFormat;
     }
-    if (this._spanName) {
+    if (this._spanName !== undefined) {
       hasAnyValues = true;
       internalValueResult.spanName = this._spanName;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
@@ -10133,23 +10133,23 @@ export class DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference ext
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetWidgetLayout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._height) {
+    if (this._height !== undefined) {
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
-    if (this._isColumnBreak) {
+    if (this._isColumnBreak !== undefined) {
       hasAnyValues = true;
       internalValueResult.isColumnBreak = this._isColumnBreak;
     }
-    if (this._width) {
+    if (this._width !== undefined) {
       hasAnyValues = true;
       internalValueResult.width = this._width;
     }
-    if (this._x) {
+    if (this._x !== undefined) {
       hasAnyValues = true;
       internalValueResult.x = this._x;
     }
-    if (this._y) {
+    if (this._y !== undefined) {
       hasAnyValues = true;
       internalValueResult.y = this._y;
     }
@@ -10499,27 +10499,27 @@ export class DashboardWidgetGroupDefinitionOutputReference extends cdktf.Complex
   public get internalValue(): DashboardWidgetGroupDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._backgroundColor) {
+    if (this._backgroundColor !== undefined) {
       hasAnyValues = true;
       internalValueResult.backgroundColor = this._backgroundColor;
     }
-    if (this._bannerImg) {
+    if (this._bannerImg !== undefined) {
       hasAnyValues = true;
       internalValueResult.bannerImg = this._bannerImg;
     }
-    if (this._layoutType) {
+    if (this._layoutType !== undefined) {
       hasAnyValues = true;
       internalValueResult.layoutType = this._layoutType;
     }
-    if (this._showTitle) {
+    if (this._showTitle !== undefined) {
       hasAnyValues = true;
       internalValueResult.showTitle = this._showTitle;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._widget) {
+    if (this._widget !== undefined) {
       hasAnyValues = true;
       internalValueResult.widget = this._widget;
     }
@@ -10752,15 +10752,15 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputRe
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -10875,15 +10875,15 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutp
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -11075,23 +11075,23 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -11244,15 +11244,15 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputRe
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -11367,15 +11367,15 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutp
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -11567,23 +11567,23 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -11743,19 +11743,19 @@ export class DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -11888,15 +11888,15 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputRe
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -12011,15 +12011,15 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutp
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -12211,23 +12211,23 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -12380,15 +12380,15 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOut
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -12503,15 +12503,15 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -12703,23 +12703,23 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -12858,7 +12858,7 @@ export class DashboardWidgetHeatmapDefinitionRequestStyleOutputReference extends
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._palette) {
+    if (this._palette !== undefined) {
       hasAnyValues = true;
       internalValueResult.palette = this._palette;
     }
@@ -13015,23 +13015,23 @@ export class DashboardWidgetHeatmapDefinitionYaxisOutputReference extends cdktf.
   public get internalValue(): DashboardWidgetHeatmapDefinitionYaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -13234,43 +13234,43 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   public get internalValue(): DashboardWidgetHeatmapDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._legendSize) {
+    if (this._legendSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendSize = this._legendSize;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._showLegend) {
+    if (this._showLegend !== undefined) {
       hasAnyValues = true;
       internalValueResult.showLegend = this._showLegend;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._event) {
+    if (this._event !== undefined) {
       hasAnyValues = true;
       internalValueResult.event = this._event;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
-    if (this._yaxis?.internalValue) {
+    if (this._yaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.yaxis = this._yaxis?.internalValue;
     }
@@ -13557,15 +13557,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutp
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -13680,15 +13680,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -13880,23 +13880,23 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -14049,15 +14049,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutp
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -14172,15 +14172,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -14372,23 +14372,23 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -14548,19 +14548,19 @@ export class DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputRefere
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -14693,15 +14693,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutp
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -14816,15 +14816,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -15016,23 +15016,23 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -15185,15 +15185,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuer
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -15308,15 +15308,15 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySort
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -15508,23 +15508,23 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -15731,15 +15731,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutp
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -15854,15 +15854,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -16054,23 +16054,23 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -16223,15 +16223,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutp
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -16346,15 +16346,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -16546,23 +16546,23 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -16722,19 +16722,19 @@ export class DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputRefere
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -16867,15 +16867,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutp
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -16990,15 +16990,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -17190,23 +17190,23 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -17359,15 +17359,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuer
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -17482,15 +17482,15 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySort
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -17682,23 +17682,23 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -17898,11 +17898,11 @@ export class DashboardWidgetHostmapDefinitionRequestOutputReference extends cdkt
   public get internalValue(): DashboardWidgetHostmapDefinitionRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fill) {
+    if (this._fill !== undefined) {
       hasAnyValues = true;
       internalValueResult.fill = this._fill;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
@@ -18011,19 +18011,19 @@ export class DashboardWidgetHostmapDefinitionStyleOutputReference extends cdktf.
   public get internalValue(): DashboardWidgetHostmapDefinitionStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._fillMax) {
+    if (this._fillMax !== undefined) {
       hasAnyValues = true;
       internalValueResult.fillMax = this._fillMax;
     }
-    if (this._fillMin) {
+    if (this._fillMin !== undefined) {
       hasAnyValues = true;
       internalValueResult.fillMin = this._fillMin;
     }
-    if (this._palette) {
+    if (this._palette !== undefined) {
       hasAnyValues = true;
       internalValueResult.palette = this._palette;
     }
-    if (this._paletteFlip) {
+    if (this._paletteFlip !== undefined) {
       hasAnyValues = true;
       internalValueResult.paletteFlip = this._paletteFlip;
     }
@@ -18215,47 +18215,47 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   public get internalValue(): DashboardWidgetHostmapDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._group) {
+    if (this._group !== undefined) {
       hasAnyValues = true;
       internalValueResult.group = this._group;
     }
-    if (this._noGroupHosts) {
+    if (this._noGroupHosts !== undefined) {
       hasAnyValues = true;
       internalValueResult.noGroupHosts = this._noGroupHosts;
     }
-    if (this._noMetricHosts) {
+    if (this._noMetricHosts !== undefined) {
       hasAnyValues = true;
       internalValueResult.noMetricHosts = this._noMetricHosts;
     }
-    if (this._nodeType) {
+    if (this._nodeType !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeType = this._nodeType;
     }
-    if (this._scope) {
+    if (this._scope !== undefined) {
       hasAnyValues = true;
       internalValueResult.scope = this._scope;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._request?.internalValue) {
+    if (this._request?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request?.internalValue;
     }
-    if (this._style?.internalValue) {
+    if (this._style?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.style = this._style?.internalValue;
     }
@@ -18504,7 +18504,7 @@ export class DashboardWidgetIframeDefinitionOutputReference extends cdktf.Comple
   public get internalValue(): DashboardWidgetIframeDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
@@ -18618,35 +18618,35 @@ export class DashboardWidgetImageDefinitionOutputReference extends cdktf.Complex
   public get internalValue(): DashboardWidgetImageDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hasBackground) {
+    if (this._hasBackground !== undefined) {
       hasAnyValues = true;
       internalValueResult.hasBackground = this._hasBackground;
     }
-    if (this._hasBorder) {
+    if (this._hasBorder !== undefined) {
       hasAnyValues = true;
       internalValueResult.hasBorder = this._hasBorder;
     }
-    if (this._horizontalAlign) {
+    if (this._horizontalAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.horizontalAlign = this._horizontalAlign;
     }
-    if (this._margin) {
+    if (this._margin !== undefined) {
       hasAnyValues = true;
       internalValueResult.margin = this._margin;
     }
-    if (this._sizing) {
+    if (this._sizing !== undefined) {
       hasAnyValues = true;
       internalValueResult.sizing = this._sizing;
     }
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }
-    if (this._urlDarkTheme) {
+    if (this._urlDarkTheme !== undefined) {
       hasAnyValues = true;
       internalValueResult.urlDarkTheme = this._urlDarkTheme;
     }
-    if (this._verticalAlign) {
+    if (this._verticalAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.verticalAlign = this._verticalAlign;
     }
@@ -18844,11 +18844,11 @@ export class DashboardWidgetLogStreamDefinitionSortOutputReference extends cdktf
   public get internalValue(): DashboardWidgetLogStreamDefinitionSort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._column) {
+    if (this._column !== undefined) {
       hasAnyValues = true;
       internalValueResult.column = this._column;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -18998,47 +18998,47 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   public get internalValue(): DashboardWidgetLogStreamDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._columns) {
+    if (this._columns !== undefined) {
       hasAnyValues = true;
       internalValueResult.columns = this._columns;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._messageDisplay) {
+    if (this._messageDisplay !== undefined) {
       hasAnyValues = true;
       internalValueResult.messageDisplay = this._messageDisplay;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
-    if (this._showDateColumn) {
+    if (this._showDateColumn !== undefined) {
       hasAnyValues = true;
       internalValueResult.showDateColumn = this._showDateColumn;
     }
-    if (this._showMessageColumn) {
+    if (this._showMessageColumn !== undefined) {
       hasAnyValues = true;
       internalValueResult.showMessageColumn = this._showMessageColumn;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._sort?.internalValue) {
+    if (this._sort?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort?.internalValue;
     }
@@ -19349,43 +19349,43 @@ export class DashboardWidgetManageStatusDefinitionOutputReference extends cdktf.
   public get internalValue(): DashboardWidgetManageStatusDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._colorPreference) {
+    if (this._colorPreference !== undefined) {
       hasAnyValues = true;
       internalValueResult.colorPreference = this._colorPreference;
     }
-    if (this._displayFormat) {
+    if (this._displayFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.displayFormat = this._displayFormat;
     }
-    if (this._hideZeroCounts) {
+    if (this._hideZeroCounts !== undefined) {
       hasAnyValues = true;
       internalValueResult.hideZeroCounts = this._hideZeroCounts;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
-    if (this._showLastTriggered) {
+    if (this._showLastTriggered !== undefined) {
       hasAnyValues = true;
       internalValueResult.showLastTriggered = this._showLastTriggered;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._summaryType) {
+    if (this._summaryType !== undefined) {
       hasAnyValues = true;
       internalValueResult.summaryType = this._summaryType;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
@@ -19668,39 +19668,39 @@ export class DashboardWidgetNoteDefinitionOutputReference extends cdktf.ComplexO
   public get internalValue(): DashboardWidgetNoteDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._backgroundColor) {
+    if (this._backgroundColor !== undefined) {
       hasAnyValues = true;
       internalValueResult.backgroundColor = this._backgroundColor;
     }
-    if (this._content) {
+    if (this._content !== undefined) {
       hasAnyValues = true;
       internalValueResult.content = this._content;
     }
-    if (this._fontSize) {
+    if (this._fontSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.fontSize = this._fontSize;
     }
-    if (this._hasPadding) {
+    if (this._hasPadding !== undefined) {
       hasAnyValues = true;
       internalValueResult.hasPadding = this._hasPadding;
     }
-    if (this._showTick) {
+    if (this._showTick !== undefined) {
       hasAnyValues = true;
       internalValueResult.showTick = this._showTick;
     }
-    if (this._textAlign) {
+    if (this._textAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.textAlign = this._textAlign;
     }
-    if (this._tickEdge) {
+    if (this._tickEdge !== undefined) {
       hasAnyValues = true;
       internalValueResult.tickEdge = this._tickEdge;
     }
-    if (this._tickPos) {
+    if (this._tickPos !== undefined) {
       hasAnyValues = true;
       internalValueResult.tickPos = this._tickPos;
     }
-    if (this._verticalAlign) {
+    if (this._verticalAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.verticalAlign = this._verticalAlign;
     }
@@ -19963,15 +19963,15 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -20086,15 +20086,15 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -20286,23 +20286,23 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -20523,31 +20523,31 @@ export class DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputRefere
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._primaryTag) {
+    if (this._primaryTag !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTag = this._primaryTag;
     }
-    if (this._resource) {
+    if (this._resource !== undefined) {
       hasAnyValues = true;
       internalValueResult.resource = this._resource;
     }
-    if (this._rowType) {
+    if (this._rowType !== undefined) {
       hasAnyValues = true;
       internalValueResult.rowType = this._rowType;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._columns) {
+    if (this._columns !== undefined) {
       hasAnyValues = true;
       internalValueResult.columns = this._columns;
     }
@@ -20866,11 +20866,11 @@ export class DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReferen
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestFormulaLimit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -21017,15 +21017,15 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -21140,15 +21140,15 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -21340,23 +21340,23 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -21516,19 +21516,19 @@ export class DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReferen
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -21710,43 +21710,43 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQu
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._isUpstream) {
+    if (this._isUpstream !== undefined) {
       hasAnyValues = true;
       internalValueResult.isUpstream = this._isUpstream;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -22018,43 +22018,43 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuer
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -22316,15 +22316,15 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySor
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -22458,7 +22458,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutp
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -22558,27 +22558,27 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._compute) {
+    if (this._compute !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._search?.internalValue) {
+    if (this._search?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.search = this._search?.internalValue;
     }
@@ -22750,19 +22750,19 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputRef
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -22934,39 +22934,39 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputRe
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._isNormalizedCpu) {
+    if (this._isNormalizedCpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._tagFilters) {
+    if (this._tagFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagFilters = this._tagFilters;
     }
-    if (this._textFilter) {
+    if (this._textFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.textFilter = this._textFilter;
     }
@@ -23230,15 +23230,15 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -23353,15 +23353,15 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -23553,23 +23553,23 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -23722,15 +23722,15 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -23845,15 +23845,15 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQ
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -24045,23 +24045,23 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -24359,31 +24359,31 @@ export class DashboardWidgetQueryTableDefinitionOutputReference extends cdktf.Co
   public get internalValue(): DashboardWidgetQueryTableDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._hasSearchBar) {
+    if (this._hasSearchBar !== undefined) {
       hasAnyValues = true;
       internalValueResult.hasSearchBar = this._hasSearchBar;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
@@ -24615,15 +24615,15 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -24738,15 +24738,15 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -24938,23 +24938,23 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -25107,15 +25107,15 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOut
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -25230,15 +25230,15 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -25430,23 +25430,23 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestAuditQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -25742,11 +25742,11 @@ export class DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReferen
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestFormulaLimit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -25893,15 +25893,15 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -26016,15 +26016,15 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -26216,23 +26216,23 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -26392,19 +26392,19 @@ export class DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReferen
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -26586,43 +26586,43 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQu
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._isUpstream) {
+    if (this._isUpstream !== undefined) {
       hasAnyValues = true;
       internalValueResult.isUpstream = this._isUpstream;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -26894,43 +26894,43 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuer
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -27192,15 +27192,15 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySor
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -27334,7 +27334,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutp
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -27434,27 +27434,27 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._compute) {
+    if (this._compute !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._search?.internalValue) {
+    if (this._search?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.search = this._search?.internalValue;
     }
@@ -27626,19 +27626,19 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputRef
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -27810,39 +27810,39 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputRe
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._isNormalizedCpu) {
+    if (this._isNormalizedCpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._tagFilters) {
+    if (this._tagFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagFilters = this._tagFilters;
     }
-    if (this._textFilter) {
+    if (this._textFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.textFilter = this._textFilter;
     }
@@ -28106,15 +28106,15 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -28229,15 +28229,15 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -28429,23 +28429,23 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -28598,15 +28598,15 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -28721,15 +28721,15 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQ
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -28921,23 +28921,23 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -29228,43 +29228,43 @@ export class DashboardWidgetQueryValueDefinitionOutputReference extends cdktf.Co
   public get internalValue(): DashboardWidgetQueryValueDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._autoscale) {
+    if (this._autoscale !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoscale = this._autoscale;
     }
-    if (this._customUnit) {
+    if (this._customUnit !== undefined) {
       hasAnyValues = true;
       internalValueResult.customUnit = this._customUnit;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._precision) {
+    if (this._precision !== undefined) {
       hasAnyValues = true;
       internalValueResult.precision = this._precision;
     }
-    if (this._textAlign) {
+    if (this._textAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.textAlign = this._textAlign;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
@@ -29550,15 +29550,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOut
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -29673,15 +29673,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -29873,23 +29873,23 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -30042,15 +30042,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOut
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -30165,15 +30165,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -30365,23 +30365,23 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -30541,19 +30541,19 @@ export class DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputRefer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -30686,15 +30686,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOut
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -30809,15 +30809,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -31009,23 +31009,23 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -31178,15 +31178,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQue
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -31301,15 +31301,15 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySor
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -31501,23 +31501,23 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -31731,15 +31731,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOut
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -31854,15 +31854,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -32054,23 +32054,23 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -32223,15 +32223,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOut
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -32346,15 +32346,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -32546,23 +32546,23 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -32722,19 +32722,19 @@ export class DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputRefer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -32867,15 +32867,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOut
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -32990,15 +32990,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -33190,23 +33190,23 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -33359,15 +33359,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQue
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -33482,15 +33482,15 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySor
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -33682,23 +33682,23 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -33905,11 +33905,11 @@ export class DashboardWidgetScatterplotDefinitionRequestOutputReference extends 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequest | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._x) {
+    if (this._x !== undefined) {
       hasAnyValues = true;
       internalValueResult.x = this._x;
     }
-    if (this._y) {
+    if (this._y !== undefined) {
       hasAnyValues = true;
       internalValueResult.y = this._y;
     }
@@ -34025,23 +34025,23 @@ export class DashboardWidgetScatterplotDefinitionXaxisOutputReference extends cd
   public get internalValue(): DashboardWidgetScatterplotDefinitionXaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -34209,23 +34209,23 @@ export class DashboardWidgetScatterplotDefinitionYaxisOutputReference extends cd
   public get internalValue(): DashboardWidgetScatterplotDefinitionYaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -34421,39 +34421,39 @@ export class DashboardWidgetScatterplotDefinitionOutputReference extends cdktf.C
   public get internalValue(): DashboardWidgetScatterplotDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._colorByGroups) {
+    if (this._colorByGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.colorByGroups = this._colorByGroups;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._request?.internalValue) {
+    if (this._request?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request?.internalValue;
     }
-    if (this._xaxis?.internalValue) {
+    if (this._xaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.xaxis = this._xaxis?.internalValue;
     }
-    if (this._yaxis?.internalValue) {
+    if (this._yaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.yaxis = this._yaxis?.internalValue;
     }
@@ -34722,39 +34722,39 @@ export class DashboardWidgetServiceLevelObjectiveDefinitionOutputReference exten
   public get internalValue(): DashboardWidgetServiceLevelObjectiveDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._globalTimeTarget) {
+    if (this._globalTimeTarget !== undefined) {
       hasAnyValues = true;
       internalValueResult.globalTimeTarget = this._globalTimeTarget;
     }
-    if (this._showErrorBudget) {
+    if (this._showErrorBudget !== undefined) {
       hasAnyValues = true;
       internalValueResult.showErrorBudget = this._showErrorBudget;
     }
-    if (this._sloId) {
+    if (this._sloId !== undefined) {
       hasAnyValues = true;
       internalValueResult.sloId = this._sloId;
     }
-    if (this._timeWindows) {
+    if (this._timeWindows !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeWindows = this._timeWindows;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._viewMode) {
+    if (this._viewMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.viewMode = this._viewMode;
     }
-    if (this._viewType) {
+    if (this._viewType !== undefined) {
       hasAnyValues = true;
       internalValueResult.viewType = this._viewType;
     }
@@ -35029,27 +35029,27 @@ export class DashboardWidgetServicemapDefinitionOutputReference extends cdktf.Co
   public get internalValue(): DashboardWidgetServicemapDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filters) {
+    if (this._filters !== undefined) {
       hasAnyValues = true;
       internalValueResult.filters = this._filters;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
@@ -35315,15 +35315,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -35438,15 +35438,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -35638,23 +35638,23 @@ export class DashboardWidgetTimeseriesDefinitionRequestApmQueryOutputReference e
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -35807,15 +35807,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOut
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -35930,15 +35930,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -36130,23 +36130,23 @@ export class DashboardWidgetTimeseriesDefinitionRequestAuditQueryOutputReference
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestAuditQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -36367,11 +36367,11 @@ export class DashboardWidgetTimeseriesDefinitionRequestFormulaLimitOutputReferen
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestFormulaLimit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -36518,15 +36518,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -36641,15 +36641,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -36841,23 +36841,23 @@ export class DashboardWidgetTimeseriesDefinitionRequestLogQueryOutputReference e
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -37036,15 +37036,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryO
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -37159,15 +37159,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQu
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -37359,23 +37359,23 @@ export class DashboardWidgetTimeseriesDefinitionRequestNetworkQueryOutputReferen
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestNetworkQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -37535,19 +37535,19 @@ export class DashboardWidgetTimeseriesDefinitionRequestProcessQueryOutputReferen
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -37729,43 +37729,43 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQu
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._isUpstream) {
+    if (this._isUpstream !== undefined) {
       hasAnyValues = true;
       internalValueResult.isUpstream = this._isUpstream;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -38037,43 +38037,43 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuer
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -38335,15 +38335,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySor
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -38477,7 +38477,7 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutp
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -38577,27 +38577,27 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputRefe
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._compute) {
+    if (this._compute !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._search?.internalValue) {
+    if (this._search?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.search = this._search?.internalValue;
     }
@@ -38769,19 +38769,19 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputRef
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -38953,39 +38953,39 @@ export class DashboardWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputRe
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._isNormalizedCpu) {
+    if (this._isNormalizedCpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._tagFilters) {
+    if (this._tagFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagFilters = this._tagFilters;
     }
-    if (this._textFilter) {
+    if (this._textFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.textFilter = this._textFilter;
     }
@@ -39249,15 +39249,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutpu
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -39372,15 +39372,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryO
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -39572,23 +39572,23 @@ export class DashboardWidgetTimeseriesDefinitionRequestRumQueryOutputReference e
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -39741,15 +39741,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -39864,15 +39864,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQ
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -40064,23 +40064,23 @@ export class DashboardWidgetTimeseriesDefinitionRequestSecurityQueryOutputRefere
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -40233,15 +40233,15 @@ export class DashboardWidgetTimeseriesDefinitionRequestStyleOutputReference exte
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRequestStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._lineType) {
+    if (this._lineType !== undefined) {
       hasAnyValues = true;
       internalValueResult.lineType = this._lineType;
     }
-    if (this._lineWidth) {
+    if (this._lineWidth !== undefined) {
       hasAnyValues = true;
       internalValueResult.lineWidth = this._lineWidth;
     }
-    if (this._palette) {
+    if (this._palette !== undefined) {
       hasAnyValues = true;
       internalValueResult.palette = this._palette;
     }
@@ -40483,23 +40483,23 @@ export class DashboardWidgetTimeseriesDefinitionRightYaxisOutputReference extend
   public get internalValue(): DashboardWidgetTimeseriesDefinitionRightYaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -40667,23 +40667,23 @@ export class DashboardWidgetTimeseriesDefinitionYaxisOutputReference extends cdk
   public get internalValue(): DashboardWidgetTimeseriesDefinitionYaxis | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._includeZero) {
+    if (this._includeZero !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeZero = this._includeZero;
     }
-    if (this._label) {
+    if (this._label !== undefined) {
       hasAnyValues = true;
       internalValueResult.label = this._label;
     }
-    if (this._max) {
+    if (this._max !== undefined) {
       hasAnyValues = true;
       internalValueResult.max = this._max;
     }
-    if (this._min) {
+    if (this._min !== undefined) {
       hasAnyValues = true;
       internalValueResult.min = this._min;
     }
-    if (this._scale) {
+    if (this._scale !== undefined) {
       hasAnyValues = true;
       internalValueResult.scale = this._scale;
     }
@@ -40914,59 +40914,59 @@ export class DashboardWidgetTimeseriesDefinitionOutputReference extends cdktf.Co
   public get internalValue(): DashboardWidgetTimeseriesDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._legendColumns) {
+    if (this._legendColumns !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendColumns = this._legendColumns;
     }
-    if (this._legendLayout) {
+    if (this._legendLayout !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendLayout = this._legendLayout;
     }
-    if (this._legendSize) {
+    if (this._legendSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendSize = this._legendSize;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._showLegend) {
+    if (this._showLegend !== undefined) {
       hasAnyValues = true;
       internalValueResult.showLegend = this._showLegend;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._event) {
+    if (this._event !== undefined) {
       hasAnyValues = true;
       internalValueResult.event = this._event;
     }
-    if (this._marker) {
+    if (this._marker !== undefined) {
       hasAnyValues = true;
       internalValueResult.marker = this._marker;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
-    if (this._rightYaxis?.internalValue) {
+    if (this._rightYaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rightYaxis = this._rightYaxis?.internalValue;
     }
-    if (this._yaxis?.internalValue) {
+    if (this._yaxis?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.yaxis = this._yaxis?.internalValue;
     }
@@ -41326,15 +41326,15 @@ export class DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputRe
   public get internalValue(): DashboardWidgetToplistDefinitionRequestApmQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -41449,15 +41449,15 @@ export class DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutp
   public get internalValue(): DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -41649,23 +41649,23 @@ export class DashboardWidgetToplistDefinitionRequestApmQueryOutputReference exte
   public get internalValue(): DashboardWidgetToplistDefinitionRequestApmQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -41818,15 +41818,15 @@ export class DashboardWidgetToplistDefinitionRequestAuditQueryComputeQueryOutput
   public get internalValue(): DashboardWidgetToplistDefinitionRequestAuditQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -41941,15 +41941,15 @@ export class DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOu
   public get internalValue(): DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -42141,23 +42141,23 @@ export class DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference ex
   public get internalValue(): DashboardWidgetToplistDefinitionRequestAuditQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -42453,11 +42453,11 @@ export class DashboardWidgetToplistDefinitionRequestFormulaLimitOutputReference 
   public get internalValue(): DashboardWidgetToplistDefinitionRequestFormulaLimit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -42604,15 +42604,15 @@ export class DashboardWidgetToplistDefinitionRequestLogQueryComputeQueryOutputRe
   public get internalValue(): DashboardWidgetToplistDefinitionRequestLogQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -42727,15 +42727,15 @@ export class DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutp
   public get internalValue(): DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -42927,23 +42927,23 @@ export class DashboardWidgetToplistDefinitionRequestLogQueryOutputReference exte
   public get internalValue(): DashboardWidgetToplistDefinitionRequestLogQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -43103,19 +43103,19 @@ export class DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference 
   public get internalValue(): DashboardWidgetToplistDefinitionRequestProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._filterBy) {
+    if (this._filterBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.filterBy = this._filterBy;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._searchBy) {
+    if (this._searchBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchBy = this._searchBy;
     }
@@ -43297,43 +43297,43 @@ export class DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._isUpstream) {
+    if (this._isUpstream !== undefined) {
       hasAnyValues = true;
       internalValueResult.isUpstream = this._isUpstream;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -43605,43 +43605,43 @@ export class DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOu
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationName) {
+    if (this._operationName !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationName = this._operationName;
     }
-    if (this._primaryTagName) {
+    if (this._primaryTagName !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagName = this._primaryTagName;
     }
-    if (this._primaryTagValue) {
+    if (this._primaryTagValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.primaryTagValue = this._primaryTagValue;
     }
-    if (this._resourceName) {
+    if (this._resourceName !== undefined) {
       hasAnyValues = true;
       internalValueResult.resourceName = this._resourceName;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._stat) {
+    if (this._stat !== undefined) {
       hasAnyValues = true;
       internalValueResult.stat = this._stat;
     }
@@ -43903,15 +43903,15 @@ export class DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOu
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySort | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -44045,7 +44045,7 @@ export class DashboardWidgetToplistDefinitionRequestQueryEventQuerySearchOutputR
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryEventQuerySearch | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -44145,27 +44145,27 @@ export class DashboardWidgetToplistDefinitionRequestQueryEventQueryOutputReferen
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryEventQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._indexes) {
+    if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._compute) {
+    if (this._compute !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._search?.internalValue) {
+    if (this._search?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.search = this._search?.internalValue;
     }
@@ -44337,19 +44337,19 @@ export class DashboardWidgetToplistDefinitionRequestQueryMetricQueryOutputRefere
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryMetricQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -44521,39 +44521,39 @@ export class DashboardWidgetToplistDefinitionRequestQueryProcessQueryOutputRefer
   public get internalValue(): DashboardWidgetToplistDefinitionRequestQueryProcessQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregator) {
+    if (this._aggregator !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregator = this._aggregator;
     }
-    if (this._dataSource) {
+    if (this._dataSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
-    if (this._isNormalizedCpu) {
+    if (this._isNormalizedCpu !== undefined) {
       hasAnyValues = true;
       internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
     }
-    if (this._limit) {
+    if (this._limit !== undefined) {
       hasAnyValues = true;
       internalValueResult.limit = this._limit;
     }
-    if (this._metric) {
+    if (this._metric !== undefined) {
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sort) {
+    if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
     }
-    if (this._tagFilters) {
+    if (this._tagFilters !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagFilters = this._tagFilters;
     }
-    if (this._textFilter) {
+    if (this._textFilter !== undefined) {
       hasAnyValues = true;
       internalValueResult.textFilter = this._textFilter;
     }
@@ -44817,15 +44817,15 @@ export class DashboardWidgetToplistDefinitionRequestRumQueryComputeQueryOutputRe
   public get internalValue(): DashboardWidgetToplistDefinitionRequestRumQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -44940,15 +44940,15 @@ export class DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutp
   public get internalValue(): DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -45140,23 +45140,23 @@ export class DashboardWidgetToplistDefinitionRequestRumQueryOutputReference exte
   public get internalValue(): DashboardWidgetToplistDefinitionRequestRumQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -45309,15 +45309,15 @@ export class DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQueryOut
   public get internalValue(): DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._interval) {
+    if (this._interval !== undefined) {
       hasAnyValues = true;
       internalValueResult.interval = this._interval;
     }
@@ -45432,15 +45432,15 @@ export class DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuer
   public get internalValue(): DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregation) {
+    if (this._aggregation !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregation = this._aggregation;
     }
-    if (this._facet) {
+    if (this._facet !== undefined) {
       hasAnyValues = true;
       internalValueResult.facet = this._facet;
     }
-    if (this._order) {
+    if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
     }
@@ -45632,23 +45632,23 @@ export class DashboardWidgetToplistDefinitionRequestSecurityQueryOutputReference
   public get internalValue(): DashboardWidgetToplistDefinitionRequestSecurityQuery | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._index) {
+    if (this._index !== undefined) {
       hasAnyValues = true;
       internalValueResult.index = this._index;
     }
-    if (this._searchQuery) {
+    if (this._searchQuery !== undefined) {
       hasAnyValues = true;
       internalValueResult.searchQuery = this._searchQuery;
     }
-    if (this._computeQuery?.internalValue) {
+    if (this._computeQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.computeQuery = this._computeQuery?.internalValue;
     }
-    if (this._groupBy) {
+    if (this._groupBy !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupBy = this._groupBy;
     }
-    if (this._multiCompute) {
+    if (this._multiCompute !== undefined) {
       hasAnyValues = true;
       internalValueResult.multiCompute = this._multiCompute;
     }
@@ -45787,7 +45787,7 @@ export class DashboardWidgetToplistDefinitionRequestStyleOutputReference extends
   public get internalValue(): DashboardWidgetToplistDefinitionRequestStyle | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._palette) {
+    if (this._palette !== undefined) {
       hasAnyValues = true;
       internalValueResult.palette = this._palette;
     }
@@ -45979,27 +45979,27 @@ export class DashboardWidgetToplistDefinitionOutputReference extends cdktf.Compl
   public get internalValue(): DashboardWidgetToplistDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
-    if (this._customLink) {
+    if (this._customLink !== undefined) {
       hasAnyValues = true;
       internalValueResult.customLink = this._customLink;
     }
-    if (this._request) {
+    if (this._request !== undefined) {
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
@@ -46257,63 +46257,63 @@ export class DashboardWidgetTraceServiceDefinitionOutputReference extends cdktf.
   public get internalValue(): DashboardWidgetTraceServiceDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._displayFormat) {
+    if (this._displayFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.displayFormat = this._displayFormat;
     }
-    if (this._env) {
+    if (this._env !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env;
     }
-    if (this._liveSpan) {
+    if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
     }
-    if (this._service) {
+    if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
-    if (this._showBreakdown) {
+    if (this._showBreakdown !== undefined) {
       hasAnyValues = true;
       internalValueResult.showBreakdown = this._showBreakdown;
     }
-    if (this._showDistribution) {
+    if (this._showDistribution !== undefined) {
       hasAnyValues = true;
       internalValueResult.showDistribution = this._showDistribution;
     }
-    if (this._showErrors) {
+    if (this._showErrors !== undefined) {
       hasAnyValues = true;
       internalValueResult.showErrors = this._showErrors;
     }
-    if (this._showHits) {
+    if (this._showHits !== undefined) {
       hasAnyValues = true;
       internalValueResult.showHits = this._showHits;
     }
-    if (this._showLatency) {
+    if (this._showLatency !== undefined) {
       hasAnyValues = true;
       internalValueResult.showLatency = this._showLatency;
     }
-    if (this._showResourceList) {
+    if (this._showResourceList !== undefined) {
       hasAnyValues = true;
       internalValueResult.showResourceList = this._showResourceList;
     }
-    if (this._sizeFormat) {
+    if (this._sizeFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.sizeFormat = this._sizeFormat;
     }
-    if (this._spanName) {
+    if (this._spanName !== undefined) {
       hasAnyValues = true;
       internalValueResult.spanName = this._spanName;
     }
-    if (this._title) {
+    if (this._title !== undefined) {
       hasAnyValues = true;
       internalValueResult.title = this._title;
     }
-    if (this._titleAlign) {
+    if (this._titleAlign !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleAlign = this._titleAlign;
     }
-    if (this._titleSize) {
+    if (this._titleSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.titleSize = this._titleSize;
     }
@@ -46652,23 +46652,23 @@ export class DashboardWidgetWidgetLayoutOutputReference extends cdktf.ComplexObj
   public get internalValue(): DashboardWidgetWidgetLayout | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._height) {
+    if (this._height !== undefined) {
       hasAnyValues = true;
       internalValueResult.height = this._height;
     }
-    if (this._isColumnBreak) {
+    if (this._isColumnBreak !== undefined) {
       hasAnyValues = true;
       internalValueResult.isColumnBreak = this._isColumnBreak;
     }
-    if (this._width) {
+    if (this._width !== undefined) {
       hasAnyValues = true;
       internalValueResult.width = this._width;
     }
-    if (this._x) {
+    if (this._x !== undefined) {
       hasAnyValues = true;
       internalValueResult.x = this._x;
     }
-    if (this._y) {
+    if (this._y !== undefined) {
       hasAnyValues = true;
       internalValueResult.y = this._y;
     }

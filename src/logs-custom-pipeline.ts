@@ -109,23 +109,23 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   public get internalValue(): LogsCustomPipelineProcessorArithmeticProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._expression) {
+    if (this._expression !== undefined) {
       hasAnyValues = true;
       internalValueResult.expression = this._expression;
     }
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._isReplaceMissing) {
+    if (this._isReplaceMissing !== undefined) {
       hasAnyValues = true;
       internalValueResult.isReplaceMissing = this._isReplaceMissing;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -315,39 +315,39 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   public get internalValue(): LogsCustomPipelineProcessorAttributeRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._overrideOnConflict) {
+    if (this._overrideOnConflict !== undefined) {
       hasAnyValues = true;
       internalValueResult.overrideOnConflict = this._overrideOnConflict;
     }
-    if (this._preserveSource) {
+    if (this._preserveSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.preserveSource = this._preserveSource;
     }
-    if (this._sourceType) {
+    if (this._sourceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourceType = this._sourceType;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._targetFormat) {
+    if (this._targetFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetFormat = this._targetFormat;
     }
-    if (this._targetType) {
+    if (this._targetType !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetType = this._targetType;
     }
@@ -547,7 +547,7 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputRef
   public get internalValue(): LogsCustomPipelineProcessorCategoryProcessorCategoryFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -657,19 +657,19 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   public get internalValue(): LogsCustomPipelineProcessorCategoryProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._category) {
+    if (this._category !== undefined) {
       hasAnyValues = true;
       internalValueResult.category = this._category;
     }
@@ -800,15 +800,15 @@ export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdkt
   public get internalValue(): LogsCustomPipelineProcessorDateRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -930,19 +930,19 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
   public get internalValue(): LogsCustomPipelineProcessorGeoIpParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -1065,11 +1065,11 @@ export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cd
   public get internalValue(): LogsCustomPipelineProcessorGrokParserGrok | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchRules) {
+    if (this._matchRules !== undefined) {
       hasAnyValues = true;
       internalValueResult.matchRules = this._matchRules;
     }
-    if (this._supportRules) {
+    if (this._supportRules !== undefined) {
       hasAnyValues = true;
       internalValueResult.supportRules = this._supportRules;
     }
@@ -1177,23 +1177,23 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
   public get internalValue(): LogsCustomPipelineProcessorGrokParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._samples) {
+    if (this._samples !== undefined) {
       hasAnyValues = true;
       internalValueResult.samples = this._samples;
     }
-    if (this._source) {
+    if (this._source !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source;
     }
-    if (this._grok?.internalValue) {
+    if (this._grok?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.grok = this._grok?.internalValue;
     }
@@ -1362,27 +1362,27 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   public get internalValue(): LogsCustomPipelineProcessorLookupProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultLookup) {
+    if (this._defaultLookup !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultLookup = this._defaultLookup;
     }
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._lookupTable) {
+    if (this._lookupTable !== undefined) {
       hasAnyValues = true;
       internalValueResult.lookupTable = this._lookupTable;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._source) {
+    if (this._source !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -1545,15 +1545,15 @@ export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends c
   public get internalValue(): LogsCustomPipelineProcessorMessageRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -1701,23 +1701,23 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._expression) {
+    if (this._expression !== undefined) {
       hasAnyValues = true;
       internalValueResult.expression = this._expression;
     }
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._isReplaceMissing) {
+    if (this._isReplaceMissing !== undefined) {
       hasAnyValues = true;
       internalValueResult.isReplaceMissing = this._isReplaceMissing;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -1907,39 +1907,39 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._overrideOnConflict) {
+    if (this._overrideOnConflict !== undefined) {
       hasAnyValues = true;
       internalValueResult.overrideOnConflict = this._overrideOnConflict;
     }
-    if (this._preserveSource) {
+    if (this._preserveSource !== undefined) {
       hasAnyValues = true;
       internalValueResult.preserveSource = this._preserveSource;
     }
-    if (this._sourceType) {
+    if (this._sourceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourceType = this._sourceType;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._targetFormat) {
+    if (this._targetFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetFormat = this._targetFormat;
     }
-    if (this._targetType) {
+    if (this._targetType !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetType = this._targetType;
     }
@@ -2139,7 +2139,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._query) {
+    if (this._query !== undefined) {
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
@@ -2249,19 +2249,19 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._category) {
+    if (this._category !== undefined) {
       hasAnyValues = true;
       internalValueResult.category = this._category;
     }
@@ -2392,15 +2392,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputRefer
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorDateRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -2522,19 +2522,19 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorGeoIpParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -2657,11 +2657,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputRef
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchRules) {
+    if (this._matchRules !== undefined) {
       hasAnyValues = true;
       internalValueResult.matchRules = this._matchRules;
     }
-    if (this._supportRules) {
+    if (this._supportRules !== undefined) {
       hasAnyValues = true;
       internalValueResult.supportRules = this._supportRules;
     }
@@ -2769,23 +2769,23 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorGrokParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._samples) {
+    if (this._samples !== undefined) {
       hasAnyValues = true;
       internalValueResult.samples = this._samples;
     }
-    if (this._source) {
+    if (this._source !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source;
     }
-    if (this._grok?.internalValue) {
+    if (this._grok?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.grok = this._grok?.internalValue;
     }
@@ -2954,27 +2954,27 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorLookupProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._defaultLookup) {
+    if (this._defaultLookup !== undefined) {
       hasAnyValues = true;
       internalValueResult.defaultLookup = this._defaultLookup;
     }
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._lookupTable) {
+    if (this._lookupTable !== undefined) {
       hasAnyValues = true;
       internalValueResult.lookupTable = this._lookupTable;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._source) {
+    if (this._source !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -3137,15 +3137,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorMessageRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -3260,15 +3260,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputRe
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorServiceRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -3383,15 +3383,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputRef
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorStatusRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -3520,23 +3520,23 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._isReplaceMissing) {
+    if (this._isReplaceMissing !== undefined) {
       hasAnyValues = true;
       internalValueResult.isReplaceMissing = this._isReplaceMissing;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._template) {
+    if (this._template !== undefined) {
       hasAnyValues = true;
       internalValueResult.template = this._template;
     }
@@ -3684,15 +3684,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputRe
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -3821,23 +3821,23 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorUrlParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._normalizeEndingSlashes) {
+    if (this._normalizeEndingSlashes !== undefined) {
       hasAnyValues = true;
       internalValueResult.normalizeEndingSlashes = this._normalizeEndingSlashes;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -3999,23 +3999,23 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorUserAgentParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._isEncoded) {
+    if (this._isEncoded !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEncoded = this._isEncoded;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -4276,19 +4276,19 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   public get internalValue(): LogsCustomPipelineProcessorPipeline | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._filter) {
+    if (this._filter !== undefined) {
       hasAnyValues = true;
       internalValueResult.filter = this._filter;
     }
-    if (this._processor) {
+    if (this._processor !== undefined) {
       hasAnyValues = true;
       internalValueResult.processor = this._processor;
     }
@@ -4420,15 +4420,15 @@ export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends c
   public get internalValue(): LogsCustomPipelineProcessorServiceRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -4543,15 +4543,15 @@ export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cd
   public get internalValue(): LogsCustomPipelineProcessorStatusRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -4680,23 +4680,23 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   public get internalValue(): LogsCustomPipelineProcessorStringBuilderProcessor | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._isReplaceMissing) {
+    if (this._isReplaceMissing !== undefined) {
       hasAnyValues = true;
       internalValueResult.isReplaceMissing = this._isReplaceMissing;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._template) {
+    if (this._template !== undefined) {
       hasAnyValues = true;
       internalValueResult.template = this._template;
     }
@@ -4844,15 +4844,15 @@ export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends c
   public get internalValue(): LogsCustomPipelineProcessorTraceIdRemapper | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
@@ -4981,23 +4981,23 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   public get internalValue(): LogsCustomPipelineProcessorUrlParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._normalizeEndingSlashes) {
+    if (this._normalizeEndingSlashes !== undefined) {
       hasAnyValues = true;
       internalValueResult.normalizeEndingSlashes = this._normalizeEndingSlashes;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
@@ -5159,23 +5159,23 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   public get internalValue(): LogsCustomPipelineProcessorUserAgentParser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._isEnabled) {
+    if (this._isEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEnabled = this._isEnabled;
     }
-    if (this._isEncoded) {
+    if (this._isEncoded !== undefined) {
       hasAnyValues = true;
       internalValueResult.isEncoded = this._isEncoded;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._sources) {
+    if (this._sources !== undefined) {
       hasAnyValues = true;
       internalValueResult.sources = this._sources;
     }
-    if (this._target) {
+    if (this._target !== undefined) {
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }

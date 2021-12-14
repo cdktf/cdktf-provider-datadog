@@ -137,27 +137,27 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DowntimeRecurrence | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._period) {
+    if (this._period !== undefined) {
       hasAnyValues = true;
       internalValueResult.period = this._period;
     }
-    if (this._rrule) {
+    if (this._rrule !== undefined) {
       hasAnyValues = true;
       internalValueResult.rrule = this._rrule;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._untilDate) {
+    if (this._untilDate !== undefined) {
       hasAnyValues = true;
       internalValueResult.untilDate = this._untilDate;
     }
-    if (this._untilOccurrences) {
+    if (this._untilOccurrences !== undefined) {
       hasAnyValues = true;
       internalValueResult.untilOccurrences = this._untilOccurrences;
     }
-    if (this._weekDays) {
+    if (this._weekDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.weekDays = this._weekDays;
     }

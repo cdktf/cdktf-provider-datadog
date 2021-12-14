@@ -175,11 +175,11 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
   public get internalValue(): SecurityMonitoringRuleOptionsNewValueOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._forgetAfter) {
+    if (this._forgetAfter !== undefined) {
       hasAnyValues = true;
       internalValueResult.forgetAfter = this._forgetAfter;
     }
-    if (this._learningDuration) {
+    if (this._learningDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.learningDuration = this._learningDuration;
     }
@@ -287,23 +287,23 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
   public get internalValue(): SecurityMonitoringRuleOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._detectionMethod) {
+    if (this._detectionMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.detectionMethod = this._detectionMethod;
     }
-    if (this._evaluationWindow) {
+    if (this._evaluationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.evaluationWindow = this._evaluationWindow;
     }
-    if (this._keepAlive) {
+    if (this._keepAlive !== undefined) {
       hasAnyValues = true;
       internalValueResult.keepAlive = this._keepAlive;
     }
-    if (this._maxSignalDuration) {
+    if (this._maxSignalDuration !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxSignalDuration = this._maxSignalDuration;
     }
-    if (this._newValueOptions?.internalValue) {
+    if (this._newValueOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.newValueOptions = this._newValueOptions?.internalValue;
     }
