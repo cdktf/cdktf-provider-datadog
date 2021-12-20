@@ -603,7 +603,7 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdktf-cli@^0.8.1:
+cdktf-cli@^0.8:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.8.3.tgz#368cb09ccfcec43059d65fc87544513d26ef1d66"
   integrity sha512-T1cFortUf0IZKKXIxlNZLAdJ+7+OGi1cD0aN+X8gx8wD4V171f+d/bP2wALGZOstABd6gTzvBZbzEjK7BZgWFg==
@@ -616,7 +616,7 @@ cdktf-cli@^0.8.1:
     jsii-pacmak "^1.46.0"
     yargs "^17.0"
 
-cdktf@0.8.3, cdktf@^0.8.1:
+cdktf@0.8.3, cdktf@^0.8:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.8.3.tgz#ace1fc9f06f83c88c2c392b83b8b6fd911b8ccb1"
   integrity sha512-XW1bmmZ71OslgcCpmippWJOzdL1prJ1rTVADk4AKN+cw0s8udJ/FDJJVdfwH0ZMvFtU82ha+epOIHO8GJjSPHA==
@@ -3101,10 +3101,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.42.0:
-  version "0.42.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.42.0.tgz#57187a876926805af2c488408e9a366480eb5150"
-  integrity sha512-gf92D+H0nDRnaep2PHcOlIgZFyFRZf036ui2imFh9K2xnDexH2MqRlnvX/uSVC4GXAWf7Ttk+b7XC0qox8+67g==
+projen@^0.45.3:
+  version "0.45.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.45.3.tgz#3b29051fa01d681d7a66519d3710b56c262b6357"
+  integrity sha512-KlbNjQI7tglP8M1u5gldV8t/czgcVBANFYOriGBT7BgoaG4w7OT6qoRbFoGvOSx374ptfqBZYbXJXUA8dDwSig==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
