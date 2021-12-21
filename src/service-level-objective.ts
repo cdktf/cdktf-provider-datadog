@@ -167,12 +167,6 @@ export interface ServiceLevelObjectiveThresholds {
   */
   readonly target: number;
   /**
-  * A string representation of the target that indicates its precision. It uses trailing zeros to show significant decimal places (e.g. `98.00`).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#target_display ServiceLevelObjective#target_display}
-  */
-  readonly targetDisplay?: string;
-  /**
   * The time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#timeframe ServiceLevelObjective#timeframe}
@@ -184,12 +178,6 @@ export interface ServiceLevelObjectiveThresholds {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#warning ServiceLevelObjective#warning}
   */
   readonly warning?: number;
-  /**
-  * A string representation of the warning target (see the description of the target_display field for details).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html#warning_display ServiceLevelObjective#warning_display}
-  */
-  readonly warningDisplay?: string;
 }
 
 export function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevelObjectiveThresholds): any {
@@ -199,10 +187,8 @@ export function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevel
   }
   return {
     target: cdktf.numberToTerraform(struct!.target),
-    target_display: cdktf.stringToTerraform(struct!.targetDisplay),
     timeframe: cdktf.stringToTerraform(struct!.timeframe),
     warning: cdktf.numberToTerraform(struct!.warning),
-    warning_display: cdktf.stringToTerraform(struct!.warningDisplay),
   }
 }
 

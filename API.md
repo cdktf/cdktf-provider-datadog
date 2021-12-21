@@ -24,10 +24,18 @@ Name|Description
 [DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestApmQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmqueryoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimitoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogqueryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestprocessqueryoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventqueryoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearchoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricqueryoutputreference)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionRequestRumQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumqueryoutputreference)|*No description*
@@ -77,10 +85,18 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimitOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimitoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestprocessqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearchoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumqueryoutputreference)|*No description*
@@ -224,6 +240,13 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearchoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmqueryoutputreference)|*No description*
@@ -414,6 +437,13 @@ Name|Description
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearchoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmqueryoutputreference)|*No description*
@@ -669,12 +699,25 @@ Name|Description
 [DashboardWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetChangeDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformula)|*No description*
+[DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulaconditionalformats)|*No description*
+[DashboardWidgetChangeDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimit)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquery)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequery)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupby)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerygroupbysortquery)|*No description*
 [DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerymulticompute)|*No description*
 [DashboardWidgetChangeDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestprocessquery)|*No description*
+[DashboardWidgetChangeDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquery)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsquery)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsquery)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquery)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerycompute)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupby)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysort)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearch)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricquery)|*No description*
+[DashboardWidgetChangeDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessquery)|*No description*
 [DashboardWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquery)|*No description*
 [DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerycomputequery)|*No description*
 [DashboardWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquerygroupby)|*No description*
@@ -753,12 +796,25 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulaconditionalformats)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimit)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerymulticompute)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestprocessquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerycompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysort)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearch)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerycomputequery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquerygroupby)|*No description*
@@ -992,6 +1048,18 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinition)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitioncustomlink)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottable)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottableformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestxapmquerycomputequery)|*No description*
@@ -1307,6 +1375,18 @@ Name|Description
 [DashboardWidgetScatterplotDefinition](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinition)|*No description*
 [DashboardWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitioncustomlink)|*No description*
 [DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottable)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottableformula)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequery)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery)|*No description*
+[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestXApmQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquery)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestxapmquerycomputequery)|*No description*
@@ -2994,6 +3074,67 @@ resetSearchQuery(): void
 
 
 
+## class DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimitoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**countInput**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimit)</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetCount() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimitoutputreference-resetcount"></a>
+
+
+
+```ts
+resetCount(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimitoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
 ## class DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquerycomputequeryoutputreference"></a>
 
 
@@ -3284,6 +3425,586 @@ resetLimit(): void
 
 ```ts
 resetSearchBy(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
+**isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIsUpstream() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference-resetisupstream"></a>
+
+
+
+```ts
+resetIsUpstream(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetOperationName() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetoperationname"></a>
+
+
+
+```ts
+resetOperationName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+#### resetResourceName() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetresourcename"></a>
+
+
+
+```ts
+resetResourceName(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**aggregationInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetMetric() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference-resetmetric"></a>
+
+
+
+```ts
+resetMetric(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerycompute)></code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**search** | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
+**computeInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
+**indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**searchInput**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+
+
+
+```ts
+putSearch(value: DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch): void
+```
+
+* **value** (<code>[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearch)</code>)  *No description*
+  * **query** (<code>string</code>)  The events search string. 
+
+
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetIndexes() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventqueryoutputreference-resetindexes"></a>
+
+
+
+```ts
+resetIndexes(): void
+```
+
+
+
+
+
+#### resetSearch() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventqueryoutputreference-resetsearch"></a>
+
+
+
+```ts
+resetSearch(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearchoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetDataSource() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricqueryoutputreference-resetdatasource"></a>
+
+
+
+```ts
+resetDataSource(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetChangeDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessquery)</code> | __*Optional*__
+**isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**limitInput**? | <code>number</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**sortInput**? | <code>string</code> | __*Optional*__
+**tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
+**textFilterInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetIsNormalizedCpu() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetisnormalizedcpu"></a>
+
+
+
+```ts
+resetIsNormalizedCpu(): void
+```
+
+
+
+
+
+#### resetLimit() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetlimit"></a>
+
+
+
+```ts
+resetLimit(): void
+```
+
+
+
+
+
+#### resetSort() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetsort"></a>
+
+
+
+```ts
+resetSort(): void
+```
+
+
+
+
+
+#### resetTagFilters() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resettagfilters"></a>
+
+
+
+```ts
+resetTagFilters(): void
+```
+
+
+
+
+
+#### resetTextFilter() <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resettextfilter"></a>
+
+
+
+```ts
+resetTextFilter(): void
 ```
 
 
@@ -7263,6 +7984,67 @@ resetSearchQuery(): void
 
 
 
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimitOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimitoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**countInput**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimit)</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetCount() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimitoutputreference-resetcount"></a>
+
+
+
+```ts
+resetCount(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimitoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
 ## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquerycomputequeryoutputreference"></a>
 
 
@@ -7553,6 +8335,586 @@ resetLimit(): void
 
 ```ts
 resetSearchBy(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
+**isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIsUpstream() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference-resetisupstream"></a>
+
+
+
+```ts
+resetIsUpstream(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetOperationName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetoperationname"></a>
+
+
+
+```ts
+resetOperationName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+#### resetResourceName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsqueryoutputreference-resetresourcename"></a>
+
+
+
+```ts
+resetResourceName(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**aggregationInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetMetric() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference-resetmetric"></a>
+
+
+
+```ts
+resetMetric(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysortoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerycompute)></code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**search** | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
+**computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
+**indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+
+
+
+```ts
+putSearch(value: DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch): void
+```
+
+* **value** (<code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearch)</code>)  *No description*
+  * **query** (<code>string</code>)  The events search string. 
+
+
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetIndexes() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventqueryoutputreference-resetindexes"></a>
+
+
+
+```ts
+resetIndexes(): void
+```
+
+
+
+
+
+#### resetSearch() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventqueryoutputreference-resetsearch"></a>
+
+
+
+```ts
+resetSearch(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearchoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetDataSource() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricqueryoutputreference-resetdatasource"></a>
+
+
+
+```ts
+resetDataSource(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessquery)</code> | __*Optional*__
+**isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**limitInput**? | <code>number</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**sortInput**? | <code>string</code> | __*Optional*__
+**tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
+**textFilterInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetIsNormalizedCpu() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetisnormalizedcpu"></a>
+
+
+
+```ts
+resetIsNormalizedCpu(): void
+```
+
+
+
+
+
+#### resetLimit() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetlimit"></a>
+
+
+
+```ts
+resetLimit(): void
+```
+
+
+
+
+
+#### resetSort() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resetsort"></a>
+
+
+
+```ts
+resetSort(): void
+```
+
+
+
+
+
+#### resetTagFilters() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resettagfilters"></a>
+
+
+
+```ts
+resetTagFilters(): void
+```
+
+
+
+
+
+#### resetTextFilter() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessqueryoutputreference-resettextfilter"></a>
+
+
+
+```ts
+resetTextFilter(): void
 ```
 
 
@@ -19049,6 +20411,7 @@ putRequest(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReque
 ```
 
 * **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)</code>)  *No description*
+  * **scatterplotTable** (<code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottable)></code>)  scatterplot_table block. __*Optional*__
   * **x** (<code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code>)  x block. __*Optional*__
   * **y** (<code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code>)  y block. __*Optional*__
 
@@ -19227,13 +20590,27 @@ new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputRefere
 
 Name | Type | Description 
 -----|------|-------------
+**scatterplotTable** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottable)></code> | <span></span>
 **x** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code> | <span></span>
 **y** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code> | <span></span>
 **internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)</code> | __*Optional*__
+**scatterplotTableInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottable)></code> | __*Optional*__
 **xInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code> | __*Optional*__
 **yInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code> | __*Optional*__
 
 ### Methods
+
+
+#### resetScatterplotTable() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestoutputreference-resetscatterplottable"></a>
+
+
+
+```ts
+resetScatterplotTable(): void
+```
+
+
+
 
 
 #### resetX() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestoutputreference-resetx"></a>
@@ -19254,6 +20631,586 @@ resetX(): void
 
 ```ts
 resetY(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery)</code> | __*Optional*__
+**isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIsUpstream() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference-resetisupstream"></a>
+
+
+
+```ts
+resetIsUpstream(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetOperationName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetoperationname"></a>
+
+
+
+```ts
+resetOperationName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+#### resetResourceName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetresourcename"></a>
+
+
+
+```ts
+resetResourceName(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**aggregationInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort)</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetMetric() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference-resetmetric"></a>
+
+
+
+```ts
+resetMetric(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)></code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**search** | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearchoutputreference)</code> | <span></span>
+**computeInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)></code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)></code> | __*Optional*__
+**indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-putsearch"></a>
+
+
+
+```ts
+putSearch(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch): void
+```
+
+* **value** (<code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code>)  *No description*
+  * **query** (<code>string</code>)  The events search string. 
+
+
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetIndexes() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-resetindexes"></a>
+
+
+
+```ts
+resetIndexes(): void
+```
+
+
+
+
+
+#### resetSearch() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-resetsearch"></a>
+
+
+
+```ts
+resetSearch(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearchoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetDataSource() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference-resetdatasource"></a>
+
+
+
+```ts
+resetDataSource(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery)</code> | __*Optional*__
+**isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**limitInput**? | <code>number</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**sortInput**? | <code>string</code> | __*Optional*__
+**tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
+**textFilterInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetIsNormalizedCpu() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetisnormalizedcpu"></a>
+
+
+
+```ts
+resetIsNormalizedCpu(): void
+```
+
+
+
+
+
+#### resetLimit() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetlimit"></a>
+
+
+
+```ts
+resetLimit(): void
+```
+
+
+
+
+
+#### resetSort() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetsort"></a>
+
+
+
+```ts
+resetSort(): void
+```
+
+
+
+
+
+#### resetTagFilters() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resettagfilters"></a>
+
+
+
+```ts
+resetTagFilters(): void
+```
+
+
+
+
+
+#### resetTextFilter() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resettextfilter"></a>
+
+
+
+```ts
+resetTextFilter(): void
 ```
 
 
@@ -34593,6 +36550,7 @@ putRequest(value: DashboardWidgetScatterplotDefinitionRequest): void
 ```
 
 * **value** (<code>[DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)</code>)  *No description*
+  * **scatterplotTable** (<code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottable)></code>)  scatterplot_table block. __*Optional*__
   * **x** (<code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code>)  x block. __*Optional*__
   * **y** (<code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code>)  y block. __*Optional*__
 
@@ -34771,13 +36729,27 @@ new DashboardWidgetScatterplotDefinitionRequestOutputReference(terraformResource
 
 Name | Type | Description 
 -----|------|-------------
+**scatterplotTable** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottable)></code> | <span></span>
 **x** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code> | <span></span>
 **y** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code> | <span></span>
 **internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)</code> | __*Optional*__
+**scatterplotTableInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottable)></code> | __*Optional*__
 **xInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code> | __*Optional*__
 **yInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code> | __*Optional*__
 
 ### Methods
+
+
+#### resetScatterplotTable() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestoutputreference-resetscatterplottable"></a>
+
+
+
+```ts
+resetScatterplotTable(): void
+```
+
+
+
 
 
 #### resetX() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestoutputreference-resetx"></a>
@@ -34798,6 +36770,586 @@ resetX(): void
 
 ```ts
 resetY(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery)</code> | __*Optional*__
+**isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIsUpstream() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference-resetisupstream"></a>
+
+
+
+```ts
+resetIsUpstream(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetOperationName() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetoperationname"></a>
+
+
+
+```ts
+resetOperationName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+#### resetResourceName() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsqueryoutputreference-resetresourcename"></a>
+
+
+
+```ts
+resetResourceName(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**aggregationInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort)</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetMetric() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference-resetmetric"></a>
+
+
+
+```ts
+resetMetric(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysortoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)></code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**search** | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearchoutputreference)</code> | <span></span>
+**computeInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)></code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)></code> | __*Optional*__
+**indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**searchInput**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-putsearch"></a>
+
+
+
+```ts
+putSearch(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch): void
+```
+
+* **value** (<code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code>)  *No description*
+  * **query** (<code>string</code>)  The events search string. 
+
+
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetIndexes() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-resetindexes"></a>
+
+
+
+```ts
+resetIndexes(): void
+```
+
+
+
+
+
+#### resetSearch() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventqueryoutputreference-resetsearch"></a>
+
+
+
+```ts
+resetSearch(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearchoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetDataSource() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricqueryoutputreference-resetdatasource"></a>
+
+
+
+```ts
+resetDataSource(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery)</code> | __*Optional*__
+**isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**limitInput**? | <code>number</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**sortInput**? | <code>string</code> | __*Optional*__
+**tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
+**textFilterInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetIsNormalizedCpu() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetisnormalizedcpu"></a>
+
+
+
+```ts
+resetIsNormalizedCpu(): void
+```
+
+
+
+
+
+#### resetLimit() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetlimit"></a>
+
+
+
+```ts
+resetLimit(): void
+```
+
+
+
+
+
+#### resetSort() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resetsort"></a>
+
+
+
+```ts
+resetSort(): void
+```
+
+
+
+
+
+#### resetTagFilters() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resettagfilters"></a>
+
+
+
+```ts
+resetTagFilters(): void
+```
+
+
+
+
+
+#### resetTextFilter() <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessqueryoutputreference-resettextfilter"></a>
+
+
+
+```ts
+resetTextFilter(): void
 ```
 
 
@@ -48771,8 +51323,8 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **locked** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`. __*Optional*__
   * **monitorThresholds** (<code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code>)  monitor_thresholds block. __*Optional*__
   * **monitorThresholdWindows** (<code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code>)  monitor_threshold_windows block. __*Optional*__
-  * **newGroupDelay** (<code>number</code>)  Time (in seconds) to skip evaluations for new groups. __*Optional*__
-  * **newHostDelay** (<code>number</code>)  Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. __*Optional*__
+  * **newGroupDelay** (<code>number</code>)  The time (in seconds) to skip evaluations for new groups. __*Optional*__
+  * **newHostDelay** (<code>number</code>)  **Deprecated**. __*Optional*__
   * **noDataTimeframe** (<code>number</code>)  The number of minutes before a monitor will notify when data stops reporting. Provider defaults to 10 minutes. __*Optional*__
   * **notifyAudit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. __*Optional*__
   * **notifyNoData** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. __*Optional*__
@@ -51151,7 +53703,7 @@ new SyntheticsTest(scope: Construct, id: string, config: SyntheticsTestConfig)
   * **requestHeaders** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Header name and value map. __*Optional*__
   * **requestQuery** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Query arguments name and value map. __*Optional*__
   * **setCookie** (<code>string</code>)  Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax. __*Optional*__
-  * **subtype** (<code>string</code>)  The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`. __*Optional*__
+  * **subtype** (<code>string</code>)  The subtype of the Synthetic API test. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your synthetics test. __*Optional*__
 
 
@@ -51275,6 +53827,7 @@ putRequestDefinition(value: SyntheticsTestRequestDefinition): void
   * **dnsServer** (<code>string</code>)  DNS server to use for DNS tests (`subtype = "dns"`). __*Optional*__
   * **dnsServerPort** (<code>number</code>)  DNS server port to use for DNS tests. __*Optional*__
   * **host** (<code>string</code>)  Host name to perform the test with. __*Optional*__
+  * **message** (<code>string</code>)  For UDP tests, message to send with the request. __*Optional*__
   * **method** (<code>string</code>)  The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`. __*Optional*__
   * **noSavingResponseBody** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Determines whether or not to save the response body. __*Optional*__
   * **numberOfPackets** (<code>number</code>)  Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10. __*Optional*__
@@ -51809,6 +54362,7 @@ Name | Type | Description
 **dnsServerPort** | <code>number</code> | <span></span>
 **followRedirects** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **host** | <code>string</code> | <span></span>
+**message** | <code>string</code> | <span></span>
 **method** | <code>string</code> | <span></span>
 **noSavingResponseBody** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **numberOfPackets** | <code>number</code> | <span></span>
@@ -51824,6 +54378,7 @@ Name | Type | Description
 **followRedirectsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hostInput**? | <code>string</code> | __*Optional*__
 **internalValue**? | <code>[SyntheticsTestApiStepRequestDefinition](#cdktf-provider-datadog-syntheticstestapisteprequestdefinition)</code> | __*Optional*__
+**messageInput**? | <code>string</code> | __*Optional*__
 **methodInput**? | <code>string</code> | __*Optional*__
 **noSavingResponseBodyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **numberOfPacketsInput**? | <code>number</code> | __*Optional*__
@@ -51902,6 +54457,18 @@ resetFollowRedirects(): void
 
 ```ts
 resetHost(): void
+```
+
+
+
+
+
+#### resetMessage() <a id="cdktf-provider-datadog-syntheticstestapisteprequestdefinitionoutputreference-resetmessage"></a>
+
+
+
+```ts
+resetMessage(): void
 ```
 
 
@@ -52944,6 +55511,7 @@ Name | Type | Description
 **dnsServer** | <code>string</code> | <span></span>
 **dnsServerPort** | <code>number</code> | <span></span>
 **host** | <code>string</code> | <span></span>
+**message** | <code>string</code> | <span></span>
 **method** | <code>string</code> | <span></span>
 **noSavingResponseBody** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **numberOfPackets** | <code>number</code> | <span></span>
@@ -52957,6 +55525,7 @@ Name | Type | Description
 **dnsServerPortInput**? | <code>number</code> | __*Optional*__
 **hostInput**? | <code>string</code> | __*Optional*__
 **internalValue**? | <code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code> | __*Optional*__
+**messageInput**? | <code>string</code> | __*Optional*__
 **methodInput**? | <code>string</code> | __*Optional*__
 **noSavingResponseBodyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **numberOfPacketsInput**? | <code>number</code> | __*Optional*__
@@ -53011,6 +55580,18 @@ resetDnsServerPort(): void
 
 ```ts
 resetHost(): void
+```
+
+
+
+
+
+#### resetMessage() <a id="cdktf-provider-datadog-syntheticstestrequestdefinitionoutputreference-resetmessage"></a>
+
+
+
+```ts
+resetMessage(): void
 ```
 
 
@@ -53688,12 +56269,14 @@ Name | Type | Description
 **apmQuery**? | <code>[DashboardWidgetChangeDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestapmquery)</code> | apm_query block.<br/>__*Optional*__
 **changeType**? | <code>string</code> | Whether to show absolute or relative change. Valid values are `absolute`, `relative`.<br/>__*Optional*__
 **compareTo**? | <code>string</code> | Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.<br/>__*Optional*__
+**formula**? | <code>Array<[DashboardWidgetChangeDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **increaseGood**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether an increase in the value is good (displayed in green) or not (displayed in red).<br/>__*Optional*__
 **logQuery**? | <code>[DashboardWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestlogquery)</code> | log_query block.<br/>__*Optional*__
 **orderBy**? | <code>string</code> | What to order by. Valid values are `change`, `name`, `present`, `past`.<br/>__*Optional*__
 **orderDir**? | <code>string</code> | Widget sorting method. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **processQuery**? | <code>[DashboardWidgetChangeDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestprocessquery)</code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
+**query**? | <code>Array<[DashboardWidgetChangeDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquery)></code> | query block.<br/>__*Optional*__
 **rumQuery**? | <code>[DashboardWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestrumquery)</code> | rum_query block.<br/>__*Optional*__
 **securityQuery**? | <code>[DashboardWidgetChangeDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestsecurityquery)</code> | security_query block.<br/>__*Optional*__
 **showPresent**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `true`, displays the current value.<br/>__*Optional*__
@@ -53774,6 +56357,58 @@ Name | Type | Description
 **aggregation** | <code>string</code> | The aggregation method.
 **facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 **interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestFormula  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**limit**? | <code>[DashboardWidgetChangeDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimit)</code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestFormulaLimit  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestformulalimit"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -53867,6 +56502,180 @@ Name | Type | Description
 **filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
 **limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQuery  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**apmDependencyStatsQuery**? | <code>[DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsquery)</code> | apm_dependency_stats_query block.<br/>__*Optional*__
+**apmResourceStatsQuery**? | <code>[DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsquery)</code> | apm_resource_stats_query block.<br/>__*Optional*__
+**eventQuery**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquery)</code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>[DashboardWidgetChangeDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricquery)</code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>[DashboardWidgetChangeDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessquery)</code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmdependencystatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**operationName** | <code>string</code> | Name of operation on service.
+**resourceName** | <code>string</code> | APM resource.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether stats for upstream or downstream dependencies should be queried.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryapmresourcestatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+**groupBy**? | <code>Array<string></code> | Array of fields to group results by.<br/>__*Optional*__
+**operationName**? | <code>string</code> | Name of operation on service.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+**resourceName**? | <code>string</code> | APM resource.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>Array<[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearch)</code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>[DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysort)</code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestquerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetChangeDefinitionRequestQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetchangedefinitionrequestqueryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -55071,12 +57880,14 @@ Name | Type | Description
 **apmQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestapmquery)</code> | apm_query block.<br/>__*Optional*__
 **changeType**? | <code>string</code> | Whether to show absolute or relative change. Valid values are `absolute`, `relative`.<br/>__*Optional*__
 **compareTo**? | <code>string</code> | Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.<br/>__*Optional*__
+**formula**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
 **increaseGood**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A Boolean indicating whether an increase in the value is good (displayed in green) or not (displayed in red).<br/>__*Optional*__
 **logQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestlogquery)</code> | log_query block.<br/>__*Optional*__
 **orderBy**? | <code>string</code> | What to order by. Valid values are `change`, `name`, `present`, `past`.<br/>__*Optional*__
 **orderDir**? | <code>string</code> | Widget sorting method. Valid values are `asc`, `desc`.<br/>__*Optional*__
 **processQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestprocessquery)</code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
+**query**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquery)></code> | query block.<br/>__*Optional*__
 **rumQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestrumquery)</code> | rum_query block.<br/>__*Optional*__
 **securityQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestsecurityquery)</code> | security_query block.<br/>__*Optional*__
 **showPresent**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `true`, displays the current value.<br/>__*Optional*__
@@ -55157,6 +57968,58 @@ Name | Type | Description
 **aggregation** | <code>string</code> | The aggregation method.
 **facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 **interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormula  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**limit**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimit)</code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimit  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestformulalimit"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -55250,6 +58113,180 @@ Name | Type | Description
 **filterBy**? | <code>Array<string></code> | A list of processes.<br/>__*Optional*__
 **limit**? | <code>number</code> | The max number of items in the filter list.<br/>__*Optional*__
 **searchBy**? | <code>string</code> | Your chosen search term.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**apmDependencyStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsquery)</code> | apm_dependency_stats_query block.<br/>__*Optional*__
+**apmResourceStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsquery)</code> | apm_resource_stats_query block.<br/>__*Optional*__
+**eventQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquery)</code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricquery)</code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessquery)</code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmdependencystatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**operationName** | <code>string</code> | Name of operation on service.
+**resourceName** | <code>string</code> | APM resource.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether stats for upstream or downstream dependencies should be queried.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryapmresourcestatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+**groupBy**? | <code>Array<string></code> | Array of fields to group results by.<br/>__*Optional*__
+**operationName**? | <code>string</code> | Name of operation on service.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+**resourceName**? | <code>string</code> | APM resource.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearch)</code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>[DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysort)</code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestquerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetchangedefinitionrequestqueryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -59030,8 +62067,212 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**scatterplotTable**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottable)></code> | scatterplot_table block.<br/>__*Optional*__
 **x**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestx)></code> | x block.<br/>__*Optional*__
 **y**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequesty)></code> | y block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottable"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formula**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottableformula)></code> | formula block.<br/>__*Optional*__
+**query**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequery)></code> | query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableFormula  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottableformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dimension** | <code>string</code> | Dimension of the Scatterplot. Valid values are `x`, `y`, `radius`, `color`.
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**apmDependencyStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery)</code> | apm_dependency_stats_query block.<br/>__*Optional*__
+**apmResourceStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery)</code> | apm_resource_stats_query block.<br/>__*Optional*__
+**eventQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery)</code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery)</code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery)</code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**operationName** | <code>string</code> | Name of operation on service.
+**resourceName** | <code>string</code> | APM resource.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether stats for upstream or downstream dependencies should be queried.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+**groupBy**? | <code>Array<string></code> | Array of fields to group results by.<br/>__*Optional*__
+**operationName**? | <code>string</code> | Name of operation on service.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+**resourceName**? | <code>string</code> | APM resource.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>Array<[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>[DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort)</code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -64150,8 +67391,212 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**scatterplotTable**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTable](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottable)></code> | scatterplot_table block.<br/>__*Optional*__
 **x**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestX](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestx)></code> | x block.<br/>__*Optional*__
 **y**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestY](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequesty)></code> | y block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTable  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottable"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formula**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottableformula)></code> | formula block.<br/>__*Optional*__
+**query**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequery)></code> | query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottableformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dimension** | <code>string</code> | Dimension of the Scatterplot. Valid values are `x`, `y`, `radius`, `color`.
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**apmDependencyStatsQuery**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery)</code> | apm_dependency_stats_query block.<br/>__*Optional*__
+**apmResourceStatsQuery**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery)</code> | apm_resource_stats_query block.<br/>__*Optional*__
+**eventQuery**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery)</code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery)</code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery)</code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**operationName** | <code>string</code> | Name of operation on service.
+**resourceName** | <code>string</code> | APM resource.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether stats for upstream or downstream dependencies should be queried.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmresourcestatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+**groupBy**? | <code>Array<string></code> | Array of fields to group results by.<br/>__*Optional*__
+**operationName**? | <code>string</code> | Name of operation on service.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+**resourceName**? | <code>string</code> | APM resource.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>Array<[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch)</code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>[DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort)</code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
 
 
 
@@ -68139,8 +71584,8 @@ Name | Type | Description
 **locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`.<br/>__*Optional*__
 **monitorThresholdWindows**? | <code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code> | monitor_threshold_windows block.<br/>__*Optional*__
 **monitorThresholds**? | <code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code> | monitor_thresholds block.<br/>__*Optional*__
-**newGroupDelay**? | <code>number</code> | Time (in seconds) to skip evaluations for new groups.<br/>__*Optional*__
-**newHostDelay**? | <code>number</code> | Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results.<br/>__*Optional*__
+**newGroupDelay**? | <code>number</code> | The time (in seconds) to skip evaluations for new groups.<br/>__*Optional*__
+**newHostDelay**? | <code>number</code> | **Deprecated**.<br/>__*Optional*__
 **noDataTimeframe**? | <code>number</code> | The number of minutes before a monitor will notify when data stops reporting. Provider defaults to 10 minutes.<br/>__*Optional*__
 **notifyAudit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.<br/>__*Optional*__
 **notifyNoData**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.<br/>__*Optional*__
@@ -68580,9 +72025,7 @@ Name | Type | Description
 -----|------|-------------
 **target** | <code>number</code> | The objective's target in`[0,100]`.
 **timeframe** | <code>string</code> | The time frame for the objective.
-**targetDisplay**? | <code>string</code> | A string representation of the target that indicates its precision.<br/>__*Optional*__
 **warning**? | <code>number</code> | The objective's warning value in `[0,100]`. This must be greater than the target value.<br/>__*Optional*__
-**warningDisplay**? | <code>string</code> | A string representation of the warning target (see the description of the target_display field for details).<br/>__*Optional*__
 
 
 
@@ -68838,6 +72281,7 @@ Name | Type | Description
 **dnsServerPort**? | <code>number</code> | DNS server port to use for DNS tests.<br/>__*Optional*__
 **followRedirects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not the API HTTP test should follow redirects.<br/>__*Optional*__
 **host**? | <code>string</code> | Host name to perform the test with.<br/>__*Optional*__
+**message**? | <code>string</code> | For UDP tests, message to send with the request.<br/>__*Optional*__
 **method**? | <code>string</code> | The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.<br/>__*Optional*__
 **noSavingResponseBody**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to save the response body.<br/>__*Optional*__
 **numberOfPackets**? | <code>number</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.<br/>__*Optional*__
@@ -68991,7 +72435,7 @@ Name | Type | Description
 **requestHeaders**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Header name and value map.<br/>__*Optional*__
 **requestQuery**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
 **setCookie**? | <code>string</code> | Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.<br/>__*Optional*__
-**subtype**? | <code>string</code> | The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`.<br/>__*Optional*__
+**subtype**? | <code>string</code> | The subtype of the Synthetic API test.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your synthetics test.<br/>__*Optional*__
 
 
@@ -69132,6 +72576,7 @@ Name | Type | Description
 **dnsServer**? | <code>string</code> | DNS server to use for DNS tests (`subtype = "dns"`).<br/>__*Optional*__
 **dnsServerPort**? | <code>number</code> | DNS server port to use for DNS tests.<br/>__*Optional*__
 **host**? | <code>string</code> | Host name to perform the test with.<br/>__*Optional*__
+**message**? | <code>string</code> | For UDP tests, message to send with the request.<br/>__*Optional*__
 **method**? | <code>string</code> | The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.<br/>__*Optional*__
 **noSavingResponseBody**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to save the response body.<br/>__*Optional*__
 **numberOfPackets**? | <code>number</code> | Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.<br/>__*Optional*__

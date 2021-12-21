@@ -56,7 +56,7 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly status: string;
   /**
-  * The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`.
+  * The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#subtype SyntheticsTest#subtype}
   */
@@ -265,7 +265,7 @@ export interface SyntheticsTestApiStepAssertion {
   */
   readonly target?: string;
   /**
-  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`.
+  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -832,6 +832,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly host?: string;
   /**
+  * For UDP tests, message to send with the request.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#message SyntheticsTest#message}
+  */
+  readonly message?: string;
+  /**
   * The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#method SyntheticsTest#method}
@@ -893,6 +899,7 @@ export function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: Synth
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
     host: cdktf.stringToTerraform(struct!.host),
+    message: cdktf.stringToTerraform(struct!.message),
     method: cdktf.stringToTerraform(struct!.method),
     no_saving_response_body: cdktf.booleanToTerraform(struct!.noSavingResponseBody),
     number_of_packets: cdktf.numberToTerraform(struct!.numberOfPackets),
@@ -943,6 +950,10 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.host = this._host;
     }
+    if (this._message !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.message = this._message;
+    }
     if (this._method !== undefined) {
       hasAnyValues = true;
       internalValueResult.method = this._method;
@@ -987,6 +998,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this._dnsServerPort = undefined;
       this._followRedirects = undefined;
       this._host = undefined;
+      this._message = undefined;
       this._method = undefined;
       this._noSavingResponseBody = undefined;
       this._numberOfPackets = undefined;
@@ -1004,6 +1016,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this._dnsServerPort = value.dnsServerPort;
       this._followRedirects = value.followRedirects;
       this._host = value.host;
+      this._message = value.message;
       this._method = value.method;
       this._noSavingResponseBody = value.noSavingResponseBody;
       this._numberOfPackets = value.numberOfPackets;
@@ -1109,6 +1122,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get hostInput() {
     return this._host;
+  }
+
+  // message - computed: false, optional: true, required: false
+  private _message?: string; 
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+  public set message(value: string) {
+    this._message = value;
+  }
+  public resetMessage() {
+    this._message = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageInput() {
+    return this._message;
   }
 
   // method - computed: false, optional: true, required: false
@@ -1465,7 +1494,7 @@ export interface SyntheticsTestAssertion {
   */
   readonly target?: string;
   /**
-  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`.
+  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#type SyntheticsTest#type}
   */
@@ -3212,6 +3241,12 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly host?: string;
   /**
+  * For UDP tests, message to send with the request.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#message SyntheticsTest#message}
+  */
+  readonly message?: string;
+  /**
   * The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#method SyntheticsTest#method}
@@ -3271,6 +3306,7 @@ export function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTe
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
     host: cdktf.stringToTerraform(struct!.host),
+    message: cdktf.stringToTerraform(struct!.message),
     method: cdktf.stringToTerraform(struct!.method),
     no_saving_response_body: cdktf.booleanToTerraform(struct!.noSavingResponseBody),
     number_of_packets: cdktf.numberToTerraform(struct!.numberOfPackets),
@@ -3312,6 +3348,10 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     if (this._host !== undefined) {
       hasAnyValues = true;
       internalValueResult.host = this._host;
+    }
+    if (this._message !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.message = this._message;
     }
     if (this._method !== undefined) {
       hasAnyValues = true;
@@ -3355,6 +3395,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
       this._host = undefined;
+      this._message = undefined;
       this._method = undefined;
       this._noSavingResponseBody = undefined;
       this._numberOfPackets = undefined;
@@ -3370,6 +3411,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
       this._host = value.host;
+      this._message = value.message;
       this._method = value.method;
       this._noSavingResponseBody = value.noSavingResponseBody;
       this._numberOfPackets = value.numberOfPackets;
@@ -3443,6 +3485,22 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get hostInput() {
     return this._host;
+  }
+
+  // message - computed: false, optional: true, required: false
+  private _message?: string; 
+  public get message() {
+    return this.getStringAttribute('message');
+  }
+  public set message(value: string) {
+    this._message = value;
+  }
+  public resetMessage() {
+    this._message = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageInput() {
+    return this._message;
   }
 
   // method - computed: false, optional: true, required: false
