@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/application_key.html
+// https://www.terraform.io/docs/providers/datadog/r/application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface ApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for Application Key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html#name ApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/application_key#name ApplicationKey#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key}
 */
 export class ApplicationKey extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

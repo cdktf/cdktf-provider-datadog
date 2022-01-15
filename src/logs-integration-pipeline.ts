@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html
+// https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface LogsIntegrationPipelineConfig extends cdktf.TerraformMetaArgume
   /**
   * Boolean value to enable your pipeline.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html#is_enabled LogsIntegrationPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline}
 */
 export class LogsIntegrationPipeline extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface IntegrationPagerdutyConfig extends cdktf.TerraformMetaArguments
   /**
   * Your PagerDuty API token.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html#api_token IntegrationPagerduty#api_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty#api_token IntegrationPagerduty#api_token}
   */
   readonly apiToken?: string;
   /**
   * Array of your schedule URLs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html#schedules IntegrationPagerduty#schedules}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty#schedules IntegrationPagerduty#schedules}
   */
   readonly schedules?: string[];
   /**
   * Your PagerDuty account’s personalized subdomain name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html#subdomain IntegrationPagerduty#subdomain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty#subdomain IntegrationPagerduty#subdomain}
   */
   readonly subdomain: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty}
 */
 export class IntegrationPagerduty extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

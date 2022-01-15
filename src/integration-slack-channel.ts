@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArgume
   /**
   * Slack account name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#account_name IntegrationSlackChannel#account_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
   */
   readonly accountName: string;
   /**
   * Slack channel name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#channel_name IntegrationSlackChannel#channel_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
   */
   readonly channelName: string;
   /**
   * display block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#display IntegrationSlackChannel#display}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#display IntegrationSlackChannel#display}
   */
   readonly display: IntegrationSlackChannelDisplay;
 }
@@ -30,25 +30,25 @@ export interface IntegrationSlackChannelDisplay {
   /**
   * Show the main body of the alert event.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#message IntegrationSlackChannel#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#message IntegrationSlackChannel#message}
   */
   readonly message?: boolean | cdktf.IResolvable;
   /**
   * Show the list of @-handles in the alert event.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#notified IntegrationSlackChannel#notified}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#notified IntegrationSlackChannel#notified}
   */
   readonly notified?: boolean | cdktf.IResolvable;
   /**
   * Show the alert event's snapshot image.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#snapshot IntegrationSlackChannel#snapshot}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
   */
   readonly snapshot?: boolean | cdktf.IResolvable;
   /**
   * Show the scopes on which the monitor alerted.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html#tags IntegrationSlackChannel#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#tags IntegrationSlackChannel#tags}
   */
   readonly tags?: boolean | cdktf.IResolvable;
 }
@@ -183,7 +183,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel datadog_integration_slack_channel}
 */
 export class IntegrationSlackChannel extends cdktf.TerraformResource {
 
@@ -197,7 +197,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel datadog_integration_slack_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArgume
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html#account_id IntegrationAwsLambdaArn#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn#account_id IntegrationAwsLambdaArn#account_id}
   */
   readonly accountId: string;
   /**
   * The ARN of the Datadog forwarder Lambda.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html#lambda_arn IntegrationAwsLambdaArn#lambda_arn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn#lambda_arn IntegrationAwsLambdaArn#lambda_arn}
   */
   readonly lambdaArn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}
 */
 export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class IntegrationAwsLambdaArn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

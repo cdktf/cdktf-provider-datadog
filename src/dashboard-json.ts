@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html
+// https://www.terraform.io/docs/providers/datadog/r/dashboard_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The JSON formatted definition of the Dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html#dashboard DashboardJson#dashboard}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#dashboard DashboardJson#dashboard}
   */
   readonly dashboard: string;
   /**
   * The list of dashboard lists this dashboard belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html#dashboard_lists DashboardJson#dashboard_lists}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
   */
   readonly dashboardLists?: number[];
   /**
   * The URL of the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html#url DashboardJson#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#url DashboardJson#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json}
 */
 export class DashboardJson extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

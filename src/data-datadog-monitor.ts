@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/monitor.html
+// https://www.terraform.io/docs/providers/datadog/d/monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataDatadogMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
   */
   readonly monitorTagsFilter?: string[];
   /**
   * A monitor name to limit the search.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html#name_filter DataDatadogMonitor#name_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitor#name_filter DataDatadogMonitor#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search. This filters on the monitor scope.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html#tags_filter DataDatadogMonitor#tags_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitor#tags_filter DataDatadogMonitor#tags_filter}
   */
   readonly tagsFilter?: string[];
 }
@@ -72,7 +72,7 @@ export class DataDatadogMonitorMonitorThresholds extends cdktf.ComplexComputedLi
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor}
 */
 export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
@@ -86,7 +86,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

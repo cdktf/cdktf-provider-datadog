@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/roles.html
+// https://www.terraform.io/docs/providers/datadog/d/roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataDatadogRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filter all roles by the given string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/roles.html#filter DataDatadogRoles#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/roles#filter DataDatadogRoles#filter}
   */
   readonly filter?: string;
 }
@@ -33,7 +33,7 @@ export class DataDatadogRolesRoles extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles}
 */
 export class DataDatadogRoles extends cdktf.TerraformDataSource {
 
@@ -47,7 +47,7 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface IntegrationAwsLogCollectionConfig extends cdktf.TerraformMetaAr
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html#account_id IntegrationAwsLogCollection#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
   */
   readonly accountId: string;
   /**
   * A list of services to collect logs from. See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html#services IntegrationAwsLogCollection#services}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
   */
   readonly services: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection datadog_integration_aws_log_collection}
 */
 export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection datadog_integration_aws_log_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

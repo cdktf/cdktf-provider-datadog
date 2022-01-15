@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_gcp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Silence monitors for expected GCE instance shutdowns.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#automute IntegrationGcp#automute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#automute IntegrationGcp#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your email found in your JSON service account key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#client_email IntegrationGcp#client_email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#client_email IntegrationGcp#client_email}
   */
   readonly clientEmail: string;
   /**
   * Your ID found in your JSON service account key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#client_id IntegrationGcp#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#client_id IntegrationGcp#client_id}
   */
   readonly clientId: string;
   /**
   * Limit the GCE instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#host_filters IntegrationGcp#host_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#host_filters IntegrationGcp#host_filters}
   */
   readonly hostFilters?: string;
   /**
   * Your private key name found in your JSON service account key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#private_key IntegrationGcp#private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#private_key IntegrationGcp#private_key}
   */
   readonly privateKey: string;
   /**
   * Your private key ID found in your JSON service account key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#private_key_id IntegrationGcp#private_key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#private_key_id IntegrationGcp#private_key_id}
   */
   readonly privateKeyId: string;
   /**
   * Your Google Cloud project ID found in your JSON service account key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html#project_id IntegrationGcp#project_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#project_id IntegrationGcp#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp datadog_integration_gcp}
 */
 export class IntegrationGcp extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp datadog_integration_gcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

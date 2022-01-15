@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/user.html
+// https://www.terraform.io/docs/providers/datadog/d/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataDatadogUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filter all users by the given string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/user.html#filter DataDatadogUser#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/user#filter DataDatadogUser#filter}
   */
   readonly filter: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}
 */
 export class DataDatadogUser extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataDatadogUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

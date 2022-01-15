@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html
+// https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
   /**
   * Description of the global variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#description SyntheticsGlobalVariable#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#description SyntheticsGlobalVariable#description}
   */
   readonly description?: string;
   /**
   * Synthetics global variable name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#name SyntheticsGlobalVariable#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#name SyntheticsGlobalVariable#name}
   */
   readonly name: string;
   /**
   * Id of the Synthetics test to use for a variable from test.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#parse_test_id SyntheticsGlobalVariable#parse_test_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
   */
   readonly parseTestId?: string;
   /**
   * A list of role identifiers to associate with the Synthetics global variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * If set to true, the value of the global variable is hidden. Defaults to `false`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#secure SyntheticsGlobalVariable#secure}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
   */
   readonly secure?: boolean | cdktf.IResolvable;
   /**
   * A list of tags to associate with your synthetics global variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#tags SyntheticsGlobalVariable#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
   */
   readonly tags?: string[];
   /**
   * The value of the global variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#value SyntheticsGlobalVariable#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#value SyntheticsGlobalVariable#value}
   */
   readonly value: string;
   /**
   * parse_test_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#parse_test_options SyntheticsGlobalVariable#parse_test_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
   */
   readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions;
 }
@@ -60,13 +60,13 @@ export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
   * Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#type SyntheticsGlobalVariable#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
   readonly type: string;
   /**
   * Value for the parser to use, required for type `json_path` or `regex`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#value SyntheticsGlobalVariable#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#value SyntheticsGlobalVariable#value}
   */
   readonly value?: string;
 }
@@ -154,19 +154,19 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   /**
   * Required when type = `http_header`. Defines the header to use to extract the value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#field SyntheticsGlobalVariable#field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#field SyntheticsGlobalVariable#field}
   */
   readonly field?: string;
   /**
   * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#type SyntheticsGlobalVariable#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
   readonly type: string;
   /**
   * parser block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html#parser SyntheticsGlobalVariable#parser}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
   */
   readonly parser: SyntheticsGlobalVariableParseTestOptionsParser;
 }
@@ -272,7 +272,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable datadog_synthetics_global_variable}
 */
 export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
 
@@ -286,7 +286,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable datadog_synthetics_global_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

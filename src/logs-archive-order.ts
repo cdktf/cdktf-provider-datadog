@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html
+// https://www.terraform.io/docs/providers/datadog/r/logs_archive_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface LogsArchiveOrderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The archive IDs list. The order of archive IDs in this attribute defines the overall archive order for logs. If `archive_ids` is empty or not specified, it will import the actual archive order, and create the resource. Otherwise, it will try to update the order.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html#archive_ids LogsArchiveOrder#archive_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order#archive_ids LogsArchiveOrder#archive_ids}
   */
   readonly archiveIds?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order}
 */
 export class LogsArchiveOrder extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

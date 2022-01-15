@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/api_key.html
+// https://www.terraform.io/docs/providers/datadog/d/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Id for API Key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html#id DataDatadogApiKey#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/api_key#id DataDatadogApiKey#id}
   */
   readonly id?: string;
   /**
   * Name for API Key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html#name DataDatadogApiKey#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/api_key#name DataDatadogApiKey#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key}
 */
 export class DataDatadogApiKey extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

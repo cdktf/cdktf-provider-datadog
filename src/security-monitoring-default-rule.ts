@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html
+// https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
   /**
   * Enable the rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#enabled SecurityMonitoringDefaultRule#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * case block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#case SecurityMonitoringDefaultRule#case}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
   */
   readonly case?: SecurityMonitoringDefaultRuleCase[];
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#filter SecurityMonitoringDefaultRule#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
   */
   readonly filter?: SecurityMonitoringDefaultRuleFilter[];
 }
@@ -30,13 +30,13 @@ export interface SecurityMonitoringDefaultRuleCase {
   /**
   * Notification targets for each rule case.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#notifications SecurityMonitoringDefaultRule#notifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
   */
   readonly notifications: string[];
   /**
   * Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#status SecurityMonitoringDefaultRule#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
   */
   readonly status: string;
 }
@@ -56,13 +56,13 @@ export interface SecurityMonitoringDefaultRuleFilter {
   /**
   * The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#action SecurityMonitoringDefaultRule#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html#query SecurityMonitoringDefaultRule#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
   */
   readonly query: string;
 }
@@ -80,7 +80,7 @@ export function securityMonitoringDefaultRuleFilterToTerraform(struct?: Security
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}
 */
 export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
 
@@ -94,7 +94,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

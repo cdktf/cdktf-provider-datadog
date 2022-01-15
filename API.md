@@ -4,9 +4,9 @@
 
 Name|Description
 ----|-----------
-[ApiKey](#cdktf-provider-datadog-apikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}.
-[ApplicationKey](#cdktf-provider-datadog-applicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}.
-[ChildOrganization](#cdktf-provider-datadog-childorganization)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}.
+[ApiKey](#cdktf-provider-datadog-apikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key datadog_api_key}.
+[ApplicationKey](#cdktf-provider-datadog-applicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key}.
+[ChildOrganization](#cdktf-provider-datadog-childorganization)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}.
 [ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)|*No description*
 [ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)|*No description*
 [ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)|*No description*
@@ -15,9 +15,9 @@ Name|Description
 [ChildOrganizationSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin)|*No description*
 [ChildOrganizationSettingsSamlStrictMode](#cdktf-provider-datadog-childorganizationsettingssamlstrictmode)|*No description*
 [ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)|*No description*
-[Dashboard](#cdktf-provider-datadog-dashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}.
-[DashboardJson](#cdktf-provider-datadog-dashboardjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}.
-[DashboardList](#cdktf-provider-datadog-dashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}.
+[Dashboard](#cdktf-provider-datadog-dashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard}.
+[DashboardJson](#cdktf-provider-datadog-dashboardjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json}.
+[DashboardList](#cdktf-provider-datadog-dashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}.
 [DashboardWidgetAlertGraphDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetalertgraphdefinitionoutputreference)|*No description*
 [DashboardWidgetAlertValueDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetalertvaluedefinitionoutputreference)|*No description*
 [DashboardWidgetChangeDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetchangedefinitionoutputreference)|*No description*
@@ -533,25 +533,25 @@ Name|Description
 [DashboardWidgetToplistDefinitionRequestStyleOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequeststyleoutputreference)|*No description*
 [DashboardWidgetTraceServiceDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgettraceservicedefinitionoutputreference)|*No description*
 [DashboardWidgetWidgetLayoutOutputReference](#cdktf-provider-datadog-dashboardwidgetwidgetlayoutoutputreference)|*No description*
-[DataDatadogApiKey](#cdktf-provider-datadog-datadatadogapikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}.
-[DataDatadogApplicationKey](#cdktf-provider-datadog-datadatadogapplicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key}.
-[DataDatadogDashboard](#cdktf-provider-datadog-datadatadogdashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
-[DataDatadogDashboardList](#cdktf-provider-datadog-datadatadogdashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
-[DataDatadogIpRanges](#cdktf-provider-datadog-datadatadogipranges)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
-[DataDatadogLogsIndexesOrder](#cdktf-provider-datadog-datadatadoglogsindexesorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}.
-[DataDatadogMonitor](#cdktf-provider-datadog-datadatadogmonitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
+[DataDatadogApiKey](#cdktf-provider-datadog-datadatadogapikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key}.
+[DataDatadogApplicationKey](#cdktf-provider-datadog-datadatadogapplicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key datadog_application_key}.
+[DataDatadogDashboard](#cdktf-provider-datadog-datadatadogdashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}.
+[DataDatadogDashboardList](#cdktf-provider-datadog-datadatadogdashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list}.
+[DataDatadogIpRanges](#cdktf-provider-datadog-datadatadogipranges)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges}.
+[DataDatadogLogsIndexesOrder](#cdktf-provider-datadog-datadatadoglogsindexesorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order}.
+[DataDatadogMonitor](#cdktf-provider-datadog-datadatadogmonitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor}.
 [DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)|*No description*
 [DataDatadogMonitorMonitorThresholds](#cdktf-provider-datadog-datadatadogmonitormonitorthresholds)|*No description*
-[DataDatadogMonitors](#cdktf-provider-datadog-datadatadogmonitors)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors.html datadog_monitors}.
+[DataDatadogMonitors](#cdktf-provider-datadog-datadatadogmonitors)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors}.
 [DataDatadogMonitorsMonitors](#cdktf-provider-datadog-datadatadogmonitorsmonitors)|*No description*
-[DataDatadogPermissions](#cdktf-provider-datadog-datadatadogpermissions)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}.
-[DataDatadogRole](#cdktf-provider-datadog-datadatadogrole)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}.
-[DataDatadogRoles](#cdktf-provider-datadog-datadatadogroles)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles}.
+[DataDatadogPermissions](#cdktf-provider-datadog-datadatadogpermissions)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions datadog_permissions}.
+[DataDatadogRole](#cdktf-provider-datadog-datadatadogrole)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role datadog_role}.
+[DataDatadogRoles](#cdktf-provider-datadog-datadatadogroles)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles}.
 [DataDatadogRolesRoles](#cdktf-provider-datadog-datadatadogrolesroles)|*No description*
-[DataDatadogSecurityMonitoringFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfilters)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}.
+[DataDatadogSecurityMonitoringFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfilters)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters datadog_security_monitoring_filters}.
 [DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)|*No description*
 [DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter)|*No description*
-[DataDatadogSecurityMonitoringRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
+[DataDatadogSecurityMonitoringRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules}.
 [DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter)|*No description*
@@ -559,31 +559,31 @@ Name|Description
 [DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesQuery](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesQueryAgentRule](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule)|*No description*
-[DataDatadogServiceLevelObjective](#cdktf-provider-datadog-datadatadogservicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
-[DataDatadogServiceLevelObjectives](#cdktf-provider-datadog-datadatadogservicelevelobjectives)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
+[DataDatadogServiceLevelObjective](#cdktf-provider-datadog-datadatadogservicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective datadog_service_level_objective}.
+[DataDatadogServiceLevelObjectives](#cdktf-provider-datadog-datadatadogservicelevelobjectives)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives}.
 [DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)|*No description*
-[DataDatadogSyntheticsGlobalVariable](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}.
-[DataDatadogSyntheticsLocations](#cdktf-provider-datadog-datadatadogsyntheticslocations)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}.
-[DataDatadogUser](#cdktf-provider-datadog-datadatadoguser)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}.
+[DataDatadogSyntheticsGlobalVariable](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}.
+[DataDatadogSyntheticsLocations](#cdktf-provider-datadog-datadatadogsyntheticslocations)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations}.
+[DataDatadogUser](#cdktf-provider-datadog-datadatadoguser)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}.
 [DatadogProvider](#cdktf-provider-datadog-datadogprovider)|Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}.
-[Downtime](#cdktf-provider-datadog-downtime)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}.
+[Downtime](#cdktf-provider-datadog-downtime)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime}.
 [DowntimeRecurrenceOutputReference](#cdktf-provider-datadog-downtimerecurrenceoutputreference)|*No description*
-[IntegrationAws](#cdktf-provider-datadog-integrationaws)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}.
-[IntegrationAwsLambdaArn](#cdktf-provider-datadog-integrationawslambdaarn)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn}.
-[IntegrationAwsLogCollection](#cdktf-provider-datadog-integrationawslogcollection)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection}.
-[IntegrationAwsTagFilter](#cdktf-provider-datadog-integrationawstagfilter)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter}.
-[IntegrationAzure](#cdktf-provider-datadog-integrationazure)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html datadog_integration_azure}.
-[IntegrationGcp](#cdktf-provider-datadog-integrationgcp)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp}.
-[IntegrationPagerduty](#cdktf-provider-datadog-integrationpagerduty)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty}.
-[IntegrationPagerdutyServiceObject](#cdktf-provider-datadog-integrationpagerdutyserviceobject)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object}.
-[IntegrationSlackChannel](#cdktf-provider-datadog-integrationslackchannel)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}.
+[IntegrationAws](#cdktf-provider-datadog-integrationaws)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws datadog_integration_aws}.
+[IntegrationAwsLambdaArn](#cdktf-provider-datadog-integrationawslambdaarn)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
+[IntegrationAwsLogCollection](#cdktf-provider-datadog-integrationawslogcollection)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection datadog_integration_aws_log_collection}.
+[IntegrationAwsTagFilter](#cdktf-provider-datadog-integrationawstagfilter)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter datadog_integration_aws_tag_filter}.
+[IntegrationAzure](#cdktf-provider-datadog-integrationazure)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure datadog_integration_azure}.
+[IntegrationGcp](#cdktf-provider-datadog-integrationgcp)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp datadog_integration_gcp}.
+[IntegrationPagerduty](#cdktf-provider-datadog-integrationpagerduty)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty}.
+[IntegrationPagerdutyServiceObject](#cdktf-provider-datadog-integrationpagerdutyserviceobject)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
+[IntegrationSlackChannel](#cdktf-provider-datadog-integrationslackchannel)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel datadog_integration_slack_channel}.
 [IntegrationSlackChannelDisplayOutputReference](#cdktf-provider-datadog-integrationslackchanneldisplayoutputreference)|*No description*
-[LogsArchive](#cdktf-provider-datadog-logsarchive)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive}.
+[LogsArchive](#cdktf-provider-datadog-logsarchive)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive datadog_logs_archive}.
 [LogsArchiveAzureArchiveOutputReference](#cdktf-provider-datadog-logsarchiveazurearchiveoutputreference)|*No description*
 [LogsArchiveGcsArchiveOutputReference](#cdktf-provider-datadog-logsarchivegcsarchiveoutputreference)|*No description*
-[LogsArchiveOrder](#cdktf-provider-datadog-logsarchiveorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order}.
+[LogsArchiveOrder](#cdktf-provider-datadog-logsarchiveorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order}.
 [LogsArchiveS3ArchiveOutputReference](#cdktf-provider-datadog-logsarchives3archiveoutputreference)|*No description*
-[LogsCustomPipeline](#cdktf-provider-datadog-logscustompipeline)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html datadog_logs_custom_pipeline}.
+[LogsCustomPipeline](#cdktf-provider-datadog-logscustompipeline)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline datadog_logs_custom_pipeline}.
 [LogsCustomPipelineProcessorArithmeticProcessorOutputReference](#cdktf-provider-datadog-logscustompipelineprocessorarithmeticprocessoroutputreference)|*No description*
 [LogsCustomPipelineProcessorAttributeRemapperOutputReference](#cdktf-provider-datadog-logscustompipelineprocessorattributeremapperoutputreference)|*No description*
 [LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessorcategoryfilteroutputreference)|*No description*
@@ -617,40 +617,40 @@ Name|Description
 [LogsCustomPipelineProcessorTraceIdRemapperOutputReference](#cdktf-provider-datadog-logscustompipelineprocessortraceidremapperoutputreference)|*No description*
 [LogsCustomPipelineProcessorUrlParserOutputReference](#cdktf-provider-datadog-logscustompipelineprocessorurlparseroutputreference)|*No description*
 [LogsCustomPipelineProcessorUserAgentParserOutputReference](#cdktf-provider-datadog-logscustompipelineprocessoruseragentparseroutputreference)|*No description*
-[LogsIndex](#cdktf-provider-datadog-logsindex)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}.
+[LogsIndex](#cdktf-provider-datadog-logsindex)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index datadog_logs_index}.
 [LogsIndexFilterOutputReference](#cdktf-provider-datadog-logsindexfilteroutputreference)|*No description*
-[LogsIndexOrder](#cdktf-provider-datadog-logsindexorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order}.
-[LogsIntegrationPipeline](#cdktf-provider-datadog-logsintegrationpipeline)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}.
-[LogsMetric](#cdktf-provider-datadog-logsmetric)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric}.
+[LogsIndexOrder](#cdktf-provider-datadog-logsindexorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order datadog_logs_index_order}.
+[LogsIntegrationPipeline](#cdktf-provider-datadog-logsintegrationpipeline)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline}.
+[LogsMetric](#cdktf-provider-datadog-logsmetric)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric}.
 [LogsMetricComputeOutputReference](#cdktf-provider-datadog-logsmetriccomputeoutputreference)|*No description*
 [LogsMetricFilterOutputReference](#cdktf-provider-datadog-logsmetricfilteroutputreference)|*No description*
-[LogsPipelineOrder](#cdktf-provider-datadog-logspipelineorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order}.
-[MetricMetadata](#cdktf-provider-datadog-metricmetadata)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata}.
-[MetricTagConfiguration](#cdktf-provider-datadog-metrictagconfiguration)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}.
-[Monitor](#cdktf-provider-datadog-monitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}.
-[MonitorJson](#cdktf-provider-datadog-monitorjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json}.
+[LogsPipelineOrder](#cdktf-provider-datadog-logspipelineorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order datadog_logs_pipeline_order}.
+[MetricMetadata](#cdktf-provider-datadog-metricmetadata)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata datadog_metric_metadata}.
+[MetricTagConfiguration](#cdktf-provider-datadog-metrictagconfiguration)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration datadog_metric_tag_configuration}.
+[Monitor](#cdktf-provider-datadog-monitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor datadog_monitor}.
+[MonitorJson](#cdktf-provider-datadog-monitorjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json datadog_monitor_json}.
 [MonitorMonitorThresholdWindowsOutputReference](#cdktf-provider-datadog-monitormonitorthresholdwindowsoutputreference)|*No description*
 [MonitorMonitorThresholdsOutputReference](#cdktf-provider-datadog-monitormonitorthresholdsoutputreference)|*No description*
-[OrganizationSettings](#cdktf-provider-datadog-organizationsettings)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings}.
+[OrganizationSettings](#cdktf-provider-datadog-organizationsettings)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings datadog_organization_settings}.
 [OrganizationSettingsSettingsOutputReference](#cdktf-provider-datadog-organizationsettingssettingsoutputreference)|*No description*
 [OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamlautocreateusersdomainsoutputreference)|*No description*
 [OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamlidpinitiatedloginoutputreference)|*No description*
 [OrganizationSettingsSettingsSamlOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamloutputreference)|*No description*
 [OrganizationSettingsSettingsSamlStrictModeOutputReference](#cdktf-provider-datadog-organizationsettingssettingssamlstrictmodeoutputreference)|*No description*
-[Role](#cdktf-provider-datadog-role)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}.
-[SecurityMonitoringDefaultRule](#cdktf-provider-datadog-securitymonitoringdefaultrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}.
-[SecurityMonitoringFilter](#cdktf-provider-datadog-securitymonitoringfilter)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}.
-[SecurityMonitoringRule](#cdktf-provider-datadog-securitymonitoringrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}.
+[Role](#cdktf-provider-datadog-role)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role}.
+[SecurityMonitoringDefaultRule](#cdktf-provider-datadog-securitymonitoringdefaultrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+[SecurityMonitoringFilter](#cdktf-provider-datadog-securitymonitoringfilter)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter}.
+[SecurityMonitoringRule](#cdktf-provider-datadog-securitymonitoringrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule}.
 [SecurityMonitoringRuleOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptionsoutputreference)|*No description*
 [SecurityMonitoringRuleOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference)|*No description*
-[ServiceLevelObjective](#cdktf-provider-datadog-servicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective}.
+[ServiceLevelObjective](#cdktf-provider-datadog-servicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective datadog_service_level_objective}.
 [ServiceLevelObjectiveQueryOutputReference](#cdktf-provider-datadog-servicelevelobjectivequeryoutputreference)|*No description*
-[SloCorrection](#cdktf-provider-datadog-slocorrection)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}.
-[SyntheticsGlobalVariable](#cdktf-provider-datadog-syntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}.
+[SloCorrection](#cdktf-provider-datadog-slocorrection)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction}.
+[SyntheticsGlobalVariable](#cdktf-provider-datadog-syntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable datadog_synthetics_global_variable}.
 [SyntheticsGlobalVariableParseTestOptionsOutputReference](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsoutputreference)|*No description*
 [SyntheticsGlobalVariableParseTestOptionsParserOutputReference](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsparseroutputreference)|*No description*
-[SyntheticsPrivateLocation](#cdktf-provider-datadog-syntheticsprivatelocation)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location}.
-[SyntheticsTest](#cdktf-provider-datadog-syntheticstest)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}.
+[SyntheticsPrivateLocation](#cdktf-provider-datadog-syntheticsprivatelocation)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location datadog_synthetics_private_location}.
+[SyntheticsTest](#cdktf-provider-datadog-syntheticstest)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test datadog_synthetics_test}.
 [SyntheticsTestApiStepAssertionTargetjsonpathOutputReference](#cdktf-provider-datadog-syntheticstestapistepassertiontargetjsonpathoutputreference)|*No description*
 [SyntheticsTestApiStepExtractedValueParserOutputReference](#cdktf-provider-datadog-syntheticstestapistepextractedvalueparseroutputreference)|*No description*
 [SyntheticsTestApiStepRequestBasicauthOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference)|*No description*
@@ -669,9 +669,9 @@ Name|Description
 [SyntheticsTestRequestClientCertificateKeyOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificatekeyoutputreference)|*No description*
 [SyntheticsTestRequestClientCertificateOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificateoutputreference)|*No description*
 [SyntheticsTestRequestDefinitionOutputReference](#cdktf-provider-datadog-syntheticstestrequestdefinitionoutputreference)|*No description*
-[User](#cdktf-provider-datadog-user)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}.
-[Webhook](#cdktf-provider-datadog-webhook)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook.html datadog_webhook}.
-[WebhookCustomVariable](#cdktf-provider-datadog-webhookcustomvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable.html datadog_webhook_custom_variable}.
+[User](#cdktf-provider-datadog-user)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
+[Webhook](#cdktf-provider-datadog-webhook)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook datadog_webhook}.
+[WebhookCustomVariable](#cdktf-provider-datadog-webhookcustomvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable datadog_webhook_custom_variable}.
 
 
 **Structs**
@@ -1691,7 +1691,7 @@ Name|Description
 
 ## class ApiKey  <a id="cdktf-provider-datadog-apikey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key datadog_api_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -1699,7 +1699,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/api_key.html datadog_api_key} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/api_key datadog_api_key} Resource.
 
 ```ts
 new ApiKey(scope: Construct, id: string, config: ApiKeyConfig)
@@ -1746,7 +1746,7 @@ __Returns__:
 
 ## class ApplicationKey  <a id="cdktf-provider-datadog-applicationkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -1754,7 +1754,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/application_key.html datadog_application_key} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key} Resource.
 
 ```ts
 new ApplicationKey(scope: Construct, id: string, config: ApplicationKeyConfig)
@@ -1801,7 +1801,7 @@ __Returns__:
 
 ## class ChildOrganization  <a id="cdktf-provider-datadog-childorganization"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -1809,7 +1809,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization} Resource.
 
 ```ts
 new ChildOrganization(scope: Construct, id: string, config: ChildOrganizationConfig)
@@ -2164,7 +2164,7 @@ Name | Type | Description
 
 ## class Dashboard  <a id="cdktf-provider-datadog-dashboard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -2172,7 +2172,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard} Resource.
 
 ```ts
 new Dashboard(scope: Construct, id: string, config: DashboardConfig)
@@ -2372,7 +2372,7 @@ __Returns__:
 
 ## class DashboardJson  <a id="cdktf-provider-datadog-dashboardjson"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -2380,7 +2380,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json.html datadog_dashboard_json} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json} Resource.
 
 ```ts
 new DashboardJson(scope: Construct, id: string, config: DashboardJsonConfig)
@@ -2457,7 +2457,7 @@ __Returns__:
 
 ## class DashboardList  <a id="cdktf-provider-datadog-dashboardlist"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -2465,7 +2465,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list} Resource.
 
 ```ts
 new DashboardList(scope: Construct, id: string, config: DashboardListConfig)
@@ -44531,7 +44531,7 @@ resetIsColumnBreak(): void
 
 ## class DataDatadogApiKey  <a id="cdktf-provider-datadog-datadatadogapikey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44539,7 +44539,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/api_key.html datadog_api_key} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key} Data Source.
 
 ```ts
 new DataDatadogApiKey(scope: Construct, id: string, config?: DataDatadogApiKeyConfig)
@@ -44612,7 +44612,7 @@ __Returns__:
 
 ## class DataDatadogApplicationKey  <a id="cdktf-provider-datadog-datadatadogapplicationkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key datadog_application_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44620,7 +44620,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/application_key.html datadog_application_key} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/application_key datadog_application_key} Data Source.
 
 ```ts
 new DataDatadogApplicationKey(scope: Construct, id: string, config?: DataDatadogApplicationKeyConfig)
@@ -44693,7 +44693,7 @@ __Returns__:
 
 ## class DataDatadogDashboard  <a id="cdktf-provider-datadog-datadatadogdashboard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44701,7 +44701,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard} Data Source.
 
 ```ts
 new DataDatadogDashboard(scope: Construct, id: string, config: DataDatadogDashboardConfig)
@@ -44749,7 +44749,7 @@ __Returns__:
 
 ## class DataDatadogDashboardList  <a id="cdktf-provider-datadog-datadatadogdashboardlist"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44757,7 +44757,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list.html datadog_dashboard_list} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list} Data Source.
 
 ```ts
 new DataDatadogDashboardList(scope: Construct, id: string, config: DataDatadogDashboardListConfig)
@@ -44803,7 +44803,7 @@ __Returns__:
 
 ## class DataDatadogIpRanges  <a id="cdktf-provider-datadog-datadatadogipranges"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44811,7 +44811,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges.html datadog_ip_ranges} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges} Data Source.
 
 ```ts
 new DataDatadogIpRanges(scope: Construct, id: string, config?: DataDatadogIpRangesConfig)
@@ -44894,7 +44894,7 @@ __Returns__:
 
 ## class DataDatadogLogsIndexesOrder  <a id="cdktf-provider-datadog-datadatadoglogsindexesorder"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44902,7 +44902,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order} Data Source.
 
 ```ts
 new DataDatadogLogsIndexesOrder(scope: Construct, id: string, config?: DataDatadogLogsIndexesOrderConfig)
@@ -44946,7 +44946,7 @@ __Returns__:
 
 ## class DataDatadogMonitor  <a id="cdktf-provider-datadog-datadatadogmonitor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -44954,7 +44954,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitor.html datadog_monitor} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor} Data Source.
 
 ```ts
 new DataDatadogMonitor(scope: Construct, id: string, config?: DataDatadogMonitorConfig)
@@ -45156,7 +45156,7 @@ Name | Type | Description
 
 ## class DataDatadogMonitors  <a id="cdktf-provider-datadog-datadatadogmonitors"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors.html datadog_monitors}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -45164,7 +45164,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitors.html datadog_monitors} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors} Data Source.
 
 ```ts
 new DataDatadogMonitors(scope: Construct, id: string, config?: DataDatadogMonitorsConfig)
@@ -45297,7 +45297,7 @@ Name | Type | Description
 
 ## class DataDatadogPermissions  <a id="cdktf-provider-datadog-datadatadogpermissions"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions datadog_permissions}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -45305,7 +45305,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/permissions datadog_permissions} Data Source.
 
 ```ts
 new DataDatadogPermissions(scope: Construct, id: string, config?: DataDatadogPermissionsConfig)
@@ -45361,7 +45361,7 @@ __Returns__:
 
 ## class DataDatadogRole  <a id="cdktf-provider-datadog-datadatadogrole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role datadog_role}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -45369,7 +45369,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/role.html datadog_role} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/role datadog_role} Data Source.
 
 ```ts
 new DataDatadogRole(scope: Construct, id: string, config: DataDatadogRoleConfig)
@@ -45417,7 +45417,7 @@ __Returns__:
 
 ## class DataDatadogRoles  <a id="cdktf-provider-datadog-datadatadogroles"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -45425,7 +45425,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/roles.html datadog_roles} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles} Data Source.
 
 ```ts
 new DataDatadogRoles(scope: Construct, id: string, config?: DataDatadogRolesConfig)
@@ -45528,7 +45528,7 @@ Name | Type | Description
 
 ## class DataDatadogSecurityMonitoringFilters  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfilters"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters datadog_security_monitoring_filters}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -45536,7 +45536,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters datadog_security_monitoring_filters} Data Source.
 
 ```ts
 new DataDatadogSecurityMonitoringFilters(scope: Construct, id: string, config?: DataDatadogSecurityMonitoringFiltersConfig)
@@ -45659,7 +45659,7 @@ Name | Type | Description
 
 ## class DataDatadogSecurityMonitoringRules  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrules"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -45667,7 +45667,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules} Data Source.
 
 ```ts
 new DataDatadogSecurityMonitoringRules(scope: Construct, id: string, config?: DataDatadogSecurityMonitoringRulesConfig)
@@ -46019,7 +46019,7 @@ Name | Type | Description
 
 ## class DataDatadogServiceLevelObjective  <a id="cdktf-provider-datadog-datadatadogservicelevelobjective"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective datadog_service_level_objective}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -46027,7 +46027,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective.html datadog_service_level_objective} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective datadog_service_level_objective} Data Source.
 
 ```ts
 new DataDatadogServiceLevelObjective(scope: Construct, id: string, config?: DataDatadogServiceLevelObjectiveConfig)
@@ -46131,7 +46131,7 @@ __Returns__:
 
 ## class DataDatadogServiceLevelObjectives  <a id="cdktf-provider-datadog-datadatadogservicelevelobjectives"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -46139,7 +46139,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives} Data Source.
 
 ```ts
 new DataDatadogServiceLevelObjectives(scope: Construct, id: string, config?: DataDatadogServiceLevelObjectivesConfig)
@@ -46287,7 +46287,7 @@ Name | Type | Description
 
 ## class DataDatadogSyntheticsGlobalVariable  <a id="cdktf-provider-datadog-datadatadogsyntheticsglobalvariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -46295,7 +46295,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable} Data Source.
 
 ```ts
 new DataDatadogSyntheticsGlobalVariable(scope: Construct, id: string, config: DataDatadogSyntheticsGlobalVariableConfig)
@@ -46342,7 +46342,7 @@ __Returns__:
 
 ## class DataDatadogSyntheticsLocations  <a id="cdktf-provider-datadog-datadatadogsyntheticslocations"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -46350,7 +46350,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations} Data Source.
 
 ```ts
 new DataDatadogSyntheticsLocations(scope: Construct, id: string, config?: DataDatadogSyntheticsLocationsConfig)
@@ -46406,7 +46406,7 @@ __Returns__:
 
 ## class DataDatadogUser  <a id="cdktf-provider-datadog-datadatadoguser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -46414,7 +46414,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user.html datadog_user} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user} Data Source.
 
 ```ts
 new DataDatadogUser(scope: Construct, id: string, config: DataDatadogUserConfig)
@@ -46613,7 +46613,7 @@ __Returns__:
 
 ## class Downtime  <a id="cdktf-provider-datadog-downtime"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -46621,7 +46621,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime} Resource.
 
 ```ts
 new Downtime(scope: Construct, id: string, config: DowntimeConfig)
@@ -46929,7 +46929,7 @@ resetWeekDays(): void
 
 ## class IntegrationAws  <a id="cdktf-provider-datadog-integrationaws"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws datadog_integration_aws}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -46937,7 +46937,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws.html datadog_integration_aws} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws datadog_integration_aws} Resource.
 
 ```ts
 new IntegrationAws(scope: Construct, id: string, config?: IntegrationAwsConfig)
@@ -47101,7 +47101,7 @@ __Returns__:
 
 ## class IntegrationAwsLambdaArn  <a id="cdktf-provider-datadog-integrationawslambdaarn"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47109,7 +47109,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn.html datadog_integration_aws_lambda_arn} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_lambda_arn datadog_integration_aws_lambda_arn} Resource.
 
 ```ts
 new IntegrationAwsLambdaArn(scope: Construct, id: string, config: IntegrationAwsLambdaArnConfig)
@@ -47158,7 +47158,7 @@ __Returns__:
 
 ## class IntegrationAwsLogCollection  <a id="cdktf-provider-datadog-integrationawslogcollection"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection datadog_integration_aws_log_collection}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47166,7 +47166,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection.html datadog_integration_aws_log_collection} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection datadog_integration_aws_log_collection} Resource.
 
 ```ts
 new IntegrationAwsLogCollection(scope: Construct, id: string, config: IntegrationAwsLogCollectionConfig)
@@ -47215,7 +47215,7 @@ __Returns__:
 
 ## class IntegrationAwsTagFilter  <a id="cdktf-provider-datadog-integrationawstagfilter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter datadog_integration_aws_tag_filter}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47223,7 +47223,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter datadog_integration_aws_tag_filter} Resource.
 
 ```ts
 new IntegrationAwsTagFilter(scope: Construct, id: string, config: IntegrationAwsTagFilterConfig)
@@ -47275,7 +47275,7 @@ __Returns__:
 
 ## class IntegrationAzure  <a id="cdktf-provider-datadog-integrationazure"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html datadog_integration_azure}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure datadog_integration_azure}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47283,7 +47283,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure.html datadog_integration_azure} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_azure datadog_integration_azure} Resource.
 
 ```ts
 new IntegrationAzure(scope: Construct, id: string, config: IntegrationAzureConfig)
@@ -47365,7 +47365,7 @@ __Returns__:
 
 ## class IntegrationGcp  <a id="cdktf-provider-datadog-integrationgcp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp datadog_integration_gcp}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47373,7 +47373,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp.html datadog_integration_gcp} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp datadog_integration_gcp} Resource.
 
 ```ts
 new IntegrationGcp(scope: Construct, id: string, config: IntegrationGcpConfig)
@@ -47461,7 +47461,7 @@ __Returns__:
 
 ## class IntegrationPagerduty  <a id="cdktf-provider-datadog-integrationpagerduty"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47469,7 +47469,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty.html datadog_integration_pagerduty} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty datadog_integration_pagerduty} Resource.
 
 ```ts
 new IntegrationPagerduty(scope: Construct, id: string, config: IntegrationPagerdutyConfig)
@@ -47545,7 +47545,7 @@ __Returns__:
 
 ## class IntegrationPagerdutyServiceObject  <a id="cdktf-provider-datadog-integrationpagerdutyserviceobject"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47553,7 +47553,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource.
 
 ```ts
 new IntegrationPagerdutyServiceObject(scope: Construct, id: string, config: IntegrationPagerdutyServiceObjectConfig)
@@ -47602,7 +47602,7 @@ __Returns__:
 
 ## class IntegrationSlackChannel  <a id="cdktf-provider-datadog-integrationslackchannel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel datadog_integration_slack_channel}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47610,7 +47610,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel.html datadog_integration_slack_channel} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel datadog_integration_slack_channel} Resource.
 
 ```ts
 new IntegrationSlackChannel(scope: Construct, id: string, config: IntegrationSlackChannelConfig)
@@ -47768,7 +47768,7 @@ resetTags(): void
 
 ## class LogsArchive  <a id="cdktf-provider-datadog-logsarchive"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive datadog_logs_archive}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -47776,7 +47776,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive datadog_logs_archive} Resource.
 
 ```ts
 new LogsArchive(scope: Construct, id: string, config: LogsArchiveConfig)
@@ -48045,7 +48045,7 @@ Name | Type | Description
 
 ## class LogsArchiveOrder  <a id="cdktf-provider-datadog-logsarchiveorder"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -48053,7 +48053,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order.html datadog_logs_archive_order} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive_order datadog_logs_archive_order} Resource.
 
 ```ts
 new LogsArchiveOrder(scope: Construct, id: string, config?: LogsArchiveOrderConfig)
@@ -48149,7 +48149,7 @@ Name | Type | Description
 
 ## class LogsCustomPipeline  <a id="cdktf-provider-datadog-logscustompipeline"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html datadog_logs_custom_pipeline}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline datadog_logs_custom_pipeline}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -48157,7 +48157,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html datadog_logs_custom_pipeline} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline datadog_logs_custom_pipeline} Resource.
 
 ```ts
 new LogsCustomPipeline(scope: Construct, id: string, config: LogsCustomPipelineConfig)
@@ -48171,8 +48171,8 @@ new LogsCustomPipeline(scope: Construct, id: string, config: LogsCustomPipelineC
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **filter** (<code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code>)  filter block. 
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}. 
-  * **isEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}. __*Optional*__
+  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}. 
+  * **isEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}. __*Optional*__
   * **processor** (<code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code>)  processor block. __*Optional*__
 
 
@@ -50527,7 +50527,7 @@ resetName(): void
 
 ## class LogsIndex  <a id="cdktf-provider-datadog-logsindex"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index datadog_logs_index}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -50535,7 +50535,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_index.html datadog_logs_index} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_index datadog_logs_index} Resource.
 
 ```ts
 new LogsIndex(scope: Construct, id: string, config: LogsIndexConfig)
@@ -50690,7 +50690,7 @@ Name | Type | Description
 
 ## class LogsIndexOrder  <a id="cdktf-provider-datadog-logsindexorder"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order datadog_logs_index_order}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -50698,7 +50698,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order datadog_logs_index_order} Resource.
 
 ```ts
 new LogsIndexOrder(scope: Construct, id: string, config: LogsIndexOrderConfig)
@@ -50747,7 +50747,7 @@ __Returns__:
 
 ## class LogsIntegrationPipeline  <a id="cdktf-provider-datadog-logsintegrationpipeline"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -50755,7 +50755,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline.html datadog_logs_integration_pipeline} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline datadog_logs_integration_pipeline} Resource.
 
 ```ts
 new LogsIntegrationPipeline(scope: Construct, id: string, config?: LogsIntegrationPipelineConfig)
@@ -50813,7 +50813,7 @@ __Returns__:
 
 ## class LogsMetric  <a id="cdktf-provider-datadog-logsmetric"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -50821,7 +50821,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric} Resource.
 
 ```ts
 new LogsMetric(scope: Construct, id: string, config: LogsMetricConfig)
@@ -50998,7 +50998,7 @@ Name | Type | Description
 
 ## class LogsPipelineOrder  <a id="cdktf-provider-datadog-logspipelineorder"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order datadog_logs_pipeline_order}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -51006,7 +51006,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order datadog_logs_pipeline_order} Resource.
 
 ```ts
 new LogsPipelineOrder(scope: Construct, id: string, config: LogsPipelineOrderConfig)
@@ -51055,7 +51055,7 @@ __Returns__:
 
 ## class MetricMetadata  <a id="cdktf-provider-datadog-metricmetadata"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata datadog_metric_metadata}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -51063,7 +51063,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata.html datadog_metric_metadata} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata datadog_metric_metadata} Resource.
 
 ```ts
 new MetricMetadata(scope: Construct, id: string, config: MetricMetadataConfig)
@@ -51199,7 +51199,7 @@ __Returns__:
 
 ## class MetricTagConfiguration  <a id="cdktf-provider-datadog-metrictagconfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration datadog_metric_tag_configuration}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -51207,7 +51207,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration.html datadog_metric_tag_configuration} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration datadog_metric_tag_configuration} Resource.
 
 ```ts
 new MetricTagConfiguration(scope: Construct, id: string, config: MetricTagConfigurationConfig)
@@ -51289,7 +51289,7 @@ __Returns__:
 
 ## class Monitor  <a id="cdktf-provider-datadog-monitor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor datadog_monitor}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -51297,7 +51297,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html datadog_monitor} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor datadog_monitor} Resource.
 
 ```ts
 new Monitor(scope: Construct, id: string, config: MonitorConfig)
@@ -51333,7 +51333,7 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **renotifyOccurrences** (<code>number</code>)  The number of re-notification messages that should be sent on the current status. __*Optional*__
   * **renotifyStatuses** (<code>Array<string></code>)  The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. __*Optional*__
   * **requireFullWindow** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor needs a full window of data before it's evaluated. __*Optional*__
-  * **restrictedRoles** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#restricted_roles Monitor#restricted_roles}. __*Optional*__
+  * **restrictedRoles** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#restricted_roles Monitor#restricted_roles}. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your monitor. __*Optional*__
   * **timeoutH** (<code>number</code>)  The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state. __*Optional*__
   * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If set to `false`, skip the validation call done during plan. __*Optional*__
@@ -51731,7 +51731,7 @@ __Returns__:
 
 ## class MonitorJson  <a id="cdktf-provider-datadog-monitorjson"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json datadog_monitor_json}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -51739,7 +51739,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json datadog_monitor_json} Resource.
 
 ```ts
 new MonitorJson(scope: Construct, id: string, config: MonitorJsonConfig)
@@ -51978,7 +51978,7 @@ resetWarningRecovery(): void
 
 ## class OrganizationSettings  <a id="cdktf-provider-datadog-organizationsettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings datadog_organization_settings}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -51986,7 +51986,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings.html datadog_organization_settings} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/organization_settings datadog_organization_settings} Resource.
 
 ```ts
 new OrganizationSettings(scope: Construct, id: string, config?: OrganizationSettingsConfig)
@@ -52408,7 +52408,7 @@ resetEnabled(): void
 
 ## class Role  <a id="cdktf-provider-datadog-role"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -52416,7 +52416,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role} Resource.
 
 ```ts
 new Role(scope: Construct, id: string, config: RoleConfig)
@@ -52478,7 +52478,7 @@ __Returns__:
 
 ## class SecurityMonitoringDefaultRule  <a id="cdktf-provider-datadog-securitymonitoringdefaultrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -52486,7 +52486,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule.html datadog_security_monitoring_default_rule} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule} Resource.
 
 ```ts
 new SecurityMonitoringDefaultRule(scope: Construct, id: string, config?: SecurityMonitoringDefaultRuleConfig)
@@ -52574,7 +52574,7 @@ __Returns__:
 
 ## class SecurityMonitoringFilter  <a id="cdktf-provider-datadog-securitymonitoringfilter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -52582,7 +52582,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter} Resource.
 
 ```ts
 new SecurityMonitoringFilter(scope: Construct, id: string, config: SecurityMonitoringFilterConfig)
@@ -52665,7 +52665,7 @@ __Returns__:
 
 ## class SecurityMonitoringRule  <a id="cdktf-provider-datadog-securitymonitoringrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -52673,7 +52673,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule} Resource.
 
 ```ts
 new SecurityMonitoringRule(scope: Construct, id: string, config: SecurityMonitoringRuleConfig)
@@ -52952,7 +52952,7 @@ resetNewValueOptions(): void
 
 ## class ServiceLevelObjective  <a id="cdktf-provider-datadog-servicelevelobjective"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective datadog_service_level_objective}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -52960,7 +52960,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective.html datadog_service_level_objective} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective datadog_service_level_objective} Resource.
 
 ```ts
 new ServiceLevelObjective(scope: Construct, id: string, config: ServiceLevelObjectiveConfig)
@@ -53166,7 +53166,7 @@ Name | Type | Description
 
 ## class SloCorrection  <a id="cdktf-provider-datadog-slocorrection"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -53174,7 +53174,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction} Resource.
 
 ```ts
 new SloCorrection(scope: Construct, id: string, config: SloCorrectionConfig)
@@ -53301,7 +53301,7 @@ __Returns__:
 
 ## class SyntheticsGlobalVariable  <a id="cdktf-provider-datadog-syntheticsglobalvariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable datadog_synthetics_global_variable}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -53309,7 +53309,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable.html datadog_synthetics_global_variable} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable datadog_synthetics_global_variable} Resource.
 
 ```ts
 new SyntheticsGlobalVariable(scope: Construct, id: string, config: SyntheticsGlobalVariableConfig)
@@ -53579,7 +53579,7 @@ resetValue(): void
 
 ## class SyntheticsPrivateLocation  <a id="cdktf-provider-datadog-syntheticsprivatelocation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location datadog_synthetics_private_location}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -53587,7 +53587,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location datadog_synthetics_private_location} Resource.
 
 ```ts
 new SyntheticsPrivateLocation(scope: Construct, id: string, config: SyntheticsPrivateLocationConfig)
@@ -53664,7 +53664,7 @@ __Returns__:
 
 ## class SyntheticsTest  <a id="cdktf-provider-datadog-syntheticstest"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test datadog_synthetics_test}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -53672,7 +53672,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html datadog_synthetics_test} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test datadog_synthetics_test} Resource.
 
 ```ts
 new SyntheticsTest(scope: Construct, id: string, config: SyntheticsTestConfig)
@@ -53777,7 +53777,7 @@ putOptionsList(value: SyntheticsTestOptionsList): void
   * **minLocationFailed** (<code>number</code>)  Minimum number of locations in failure required to trigger an alert. Default is `1`. __*Optional*__
   * **monitorName** (<code>string</code>)  The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. __*Optional*__
   * **monitorOptions** (<code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code>)  monitor_options block. __*Optional*__
-  * **monitorPriority** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#monitor_priority SyntheticsTest#monitor_priority}. __*Optional*__
+  * **monitorPriority** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. __*Optional*__
   * **noScreenshot** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Prevents saving screenshots of the steps. __*Optional*__
   * **retry** (<code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code>)  retry block. __*Optional*__
 
@@ -55698,7 +55698,7 @@ resetUrl(): void
 
 ## class User  <a id="cdktf-provider-datadog-user"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -55706,7 +55706,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user} Resource.
 
 ```ts
 new User(scope: Construct, id: string, config: UserConfig)
@@ -55814,7 +55814,7 @@ __Returns__:
 
 ## class Webhook  <a id="cdktf-provider-datadog-webhook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook.html datadog_webhook}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook datadog_webhook}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -55822,7 +55822,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/webhook.html datadog_webhook} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/webhook datadog_webhook} Resource.
 
 ```ts
 new Webhook(scope: Construct, id: string, config: WebhookConfig)
@@ -55916,7 +55916,7 @@ __Returns__:
 
 ## class WebhookCustomVariable  <a id="cdktf-provider-datadog-webhookcustomvariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable.html datadog_webhook_custom_variable}.
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable datadog_webhook_custom_variable}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -55924,7 +55924,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable.html datadog_webhook_custom_variable} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable datadog_webhook_custom_variable} Resource.
 
 ```ts
 new WebhookCustomVariable(scope: Construct, id: string, config: WebhookCustomVariableConfig)
@@ -70674,10 +70674,10 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filter** | <code>Array<[LogsCustomPipelineFilter](#cdktf-provider-datadog-logscustompipelinefilter)></code> | filter block.
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}.
+**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}.
 **count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **processor**? | <code>Array<[LogsCustomPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessor)></code> | processor block.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
@@ -70788,7 +70788,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filter** | <code>[LogsCustomPipelineProcessorCategoryProcessorCategoryFilter](#cdktf-provider-datadog-logscustompipelineprocessorcategoryprocessorcategoryfilter)</code> | filter block.
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}.
+**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 
 
@@ -70910,8 +70910,8 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filter** | <code>Array<[LogsCustomPipelineProcessorPipelineFilter](#cdktf-provider-datadog-logscustompipelineprocessorpipelinefilter)></code> | filter block.
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}.
-**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
+**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}.
+**isEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}.<br/>__*Optional*__
 **processor**? | <code>Array<[LogsCustomPipelineProcessorPipelineProcessor](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessor)></code> | processor block.<br/>__*Optional*__
 
 
@@ -71019,7 +71019,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **filter** | <code>[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter](#cdktf-provider-datadog-logscustompipelineprocessorpipelineprocessorcategoryprocessorcategoryfilter)</code> | filter block.
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline.html#name LogsCustomPipeline#name}.
+**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}.
 
 
 
@@ -71595,7 +71595,7 @@ Name | Type | Description
 **renotifyOccurrences**? | <code>number</code> | The number of re-notification messages that should be sent on the current status.<br/>__*Optional*__
 **renotifyStatuses**? | <code>Array<string></code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.<br/>__*Optional*__
 **requireFullWindow**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated.<br/>__*Optional*__
-**restrictedRoles**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor.html#restricted_roles Monitor#restricted_roles}.<br/>__*Optional*__
+**restrictedRoles**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#restricted_roles Monitor#restricted_roles}.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your monitor.<br/>__*Optional*__
 **timeoutH**? | <code>number</code> | The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state.<br/>__*Optional*__
 **validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `false`, skip the validation call done during plan.<br/>__*Optional*__
@@ -72189,7 +72189,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#name SyntheticsTest#name}.
+**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#name SyntheticsTest#name}.
 **parser** | <code>[SyntheticsTestApiStepExtractedValueParser](#cdktf-provider-datadog-syntheticstestapistepextractedvalueparser)</code> | parser block.
 **type** | <code>string</code> | Property of the Synthetics Test Response to use for the variable. Valid values are `http_body`, `http_header`.
 **field**? | <code>string</code> | When type is `http_header`, name of the header to use to extract the value.<br/>__*Optional*__
@@ -72474,7 +72474,7 @@ Name | Type | Description
 **minLocationFailed**? | <code>number</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`.<br/>__*Optional*__
 **monitorName**? | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.<br/>__*Optional*__
 **monitorOptions**? | <code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code> | monitor_options block.<br/>__*Optional*__
-**monitorPriority**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test.html#monitor_priority SyntheticsTest#monitor_priority}.<br/>__*Optional*__
+**monitorPriority**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.<br/>__*Optional*__
 **noScreenshot**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Prevents saving screenshots of the steps.<br/>__*Optional*__
 **retry**? | <code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code> | retry block.<br/>__*Optional*__
 

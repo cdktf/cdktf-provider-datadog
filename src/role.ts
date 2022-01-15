@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/role.html
+// https://www.terraform.io/docs/providers/datadog/r/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role.html#name Role#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#name Role#name}
   */
   readonly name: string;
   /**
   * permission block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role.html#permission Role#permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#permission Role#permission}
   */
   readonly permission?: RolePermission[];
 }
@@ -24,7 +24,7 @@ export interface RolePermission {
   /**
   * ID of the permission to assign.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role.html#id Role#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#id Role#id}
   */
   readonly id: string;
 }
@@ -41,7 +41,7 @@ export function rolePermissionToTerraform(struct?: RolePermission): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role}
 */
 export class Role extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class Role extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/role.html datadog_role} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

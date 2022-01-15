@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html
+// https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataDatadogLogsIndexesOrderConfig extends cdktf.TerraformMetaAr
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order}
 */
 export class DataDatadogLogsIndexesOrder extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataDatadogLogsIndexesOrder extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order.html datadog_logs_indexes_order} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

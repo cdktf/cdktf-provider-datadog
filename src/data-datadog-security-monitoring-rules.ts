@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html
+// https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   /**
   * Limit the search to default rules
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules#default_only_filter DataDatadogSecurityMonitoringRules#default_only_filter}
   */
   readonly defaultOnlyFilter?: boolean | cdktf.IResolvable;
   /**
   * A rule name to limit the search
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html#name_filter DataDatadogSecurityMonitoringRules#name_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules#name_filter DataDatadogSecurityMonitoringRules#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html#tags_filter DataDatadogSecurityMonitoringRules#tags_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules#tags_filter DataDatadogSecurityMonitoringRules#tags_filter}
   */
   readonly tagsFilter?: string[];
   /**
   * Limit the search to user rules
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules#user_only_filter DataDatadogSecurityMonitoringRules#user_only_filter}
   */
   readonly userOnlyFilter?: boolean | cdktf.IResolvable;
 }
@@ -214,7 +214,7 @@ export class DataDatadogSecurityMonitoringRulesRules extends cdktf.ComplexComput
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules}
 */
 export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSource {
 
@@ -228,7 +228,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules.html datadog_security_monitoring_rules} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -13,79 +13,79 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of dashboard lists this dashboard belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#dashboard_lists Dashboard#dashboard_lists}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#dashboard_lists Dashboard#dashboard_lists}
   */
   readonly dashboardLists?: number[];
   /**
   * The description of the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#description Dashboard#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#description Dashboard#description}
   */
   readonly description?: string;
   /**
   * Whether this dashboard is read-only. **Deprecated.** Prefer using `restricted_roles` to define which roles are required to edit the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_read_only Dashboard#is_read_only}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_read_only Dashboard#is_read_only}
   */
   readonly isReadOnly?: boolean | cdktf.IResolvable;
   /**
   * The layout type of the dashboard. Valid values are `ordered`, `free`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#layout_type Dashboard#layout_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#layout_type Dashboard#layout_type}
   */
   readonly layoutType: string;
   /**
   * The list of handles for the users to notify when changes are made to this dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#notify_list Dashboard#notify_list}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#notify_list Dashboard#notify_list}
   */
   readonly notifyList?: string[];
   /**
   * The reflow type of a new dashboard layout. Set this only when layout type is `ordered`. If set to `fixed`, the dashboard expects all widgets to have a layout, and if it's set to `auto`, widgets should not have layouts. Valid values are `auto`, `fixed`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#reflow_type Dashboard#reflow_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#reflow_type Dashboard#reflow_type}
   */
   readonly reflowType?: string;
   /**
   * UUIDs of roles whose associated users are authorized to edit the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#restricted_roles Dashboard#restricted_roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#restricted_roles Dashboard#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * The title of the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title: string;
   /**
   * The URL of the dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#url Dashboard#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#url Dashboard#url}
   */
   readonly url?: string;
   /**
   * template_variable block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#template_variable Dashboard#template_variable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#template_variable Dashboard#template_variable}
   */
   readonly templateVariable?: DashboardTemplateVariable[];
   /**
   * template_variable_preset block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#template_variable_preset Dashboard#template_variable_preset}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#template_variable_preset Dashboard#template_variable_preset}
   */
   readonly templateVariablePreset?: DashboardTemplateVariablePreset[];
   /**
   * widget block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#widget Dashboard#widget}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#widget Dashboard#widget}
   */
   readonly widget?: DashboardWidget[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard}
 */
 export class Dashboard extends cdktf.TerraformResource {
 
@@ -99,7 +99,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html datadog_dashboard} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

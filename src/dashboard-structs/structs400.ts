@@ -52,19 +52,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -85,31 +85,31 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[];
 }
@@ -268,25 +268,25 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -420,19 +420,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -543,19 +543,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -663,19 +663,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery;
 }
@@ -696,19 +696,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -729,31 +729,31 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[];
 }
@@ -912,19 +912,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -1035,19 +1035,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -1155,19 +1155,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery;
 }
@@ -1188,19 +1188,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -1221,31 +1221,31 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[];
 }
@@ -1404,43 +1404,43 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQuery;
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQuery;
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQuery;
 }
@@ -1465,19 +1465,19 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   /**
   * scatterplot_table block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scatterplot_table Dashboard#scatterplot_table}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scatterplot_table Dashboard#scatterplot_table}
   */
   readonly scatterplotTable?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[];
   /**
   * x block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#x Dashboard#x}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#x Dashboard#x}
   */
   readonly x?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[];
   /**
   * y block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#y Dashboard#y}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#y Dashboard#y}
   */
   readonly y?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[];
 }
@@ -1594,31 +1594,31 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis 
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -1778,31 +1778,31 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis 
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -1962,55 +1962,55 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinition {
   /**
   * List of groups used for colors.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#color_by_groups Dashboard#color_by_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#color_by_groups Dashboard#color_by_groups}
   */
   readonly colorByGroups?: string[];
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest;
   /**
   * xaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#xaxis Dashboard#xaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#xaxis Dashboard#xaxis}
   */
   readonly xaxis?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis;
   /**
   * yaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#yaxis Dashboard#yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#yaxis Dashboard#yaxis}
   */
   readonly yaxis?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis;
 }
@@ -2263,55 +2263,55 @@ export interface DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefini
   /**
   * The global time target of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#global_time_target Dashboard#global_time_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#global_time_target Dashboard#global_time_target}
   */
   readonly globalTimeTarget?: string;
   /**
   * Whether to show the error budget or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_error_budget Dashboard#show_error_budget}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_error_budget Dashboard#show_error_budget}
   */
   readonly showErrorBudget?: boolean | cdktf.IResolvable;
   /**
   * The ID of the service level objective used by the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#slo_id Dashboard#slo_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#slo_id Dashboard#slo_id}
   */
   readonly sloId: string;
   /**
   * A list of time windows to display in the widget. Valid values are `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, `previous_month`, `global_time`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#time_windows Dashboard#time_windows}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#time_windows Dashboard#time_windows}
   */
   readonly timeWindows: string[];
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * The view mode for the widget. Valid values are `overall`, `component`, `both`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#view_mode Dashboard#view_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#view_mode Dashboard#view_mode}
   */
   readonly viewMode: string;
   /**
   * The type of view to use when displaying the widget. Only `detail` is supported.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#view_type Dashboard#view_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#view_type Dashboard#view_type}
   */
   readonly viewType: string;
 }
@@ -2551,25 +2551,25 @@ export interface DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomL
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -2591,37 +2591,37 @@ export interface DashboardWidgetGroupDefinitionWidgetServicemapDefinition {
   /**
   * Your environment and primary tag (or `*` if enabled for your account).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filters Dashboard#filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filters Dashboard#filters}
   */
   readonly filters: string[];
   /**
   * The ID of the service to map.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[];
 }
@@ -2799,25 +2799,25 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomL
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -2839,13 +2839,13 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent {
   /**
   * The event query to use in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q: string;
   /**
   * The execution method for multi-value filters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tags_execution Dashboard#tags_execution}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tags_execution Dashboard#tags_execution}
   */
   readonly tagsExecution?: string;
 }
@@ -2865,19 +2865,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker 
   /**
   * How the marker lines are displayed, options are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}. Example: `error dashed`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_type Dashboard#display_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#display_type Dashboard#display_type}
   */
   readonly displayType?: string;
   /**
   * A label for the line or range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * A mathematical expression describing the marker, for example: `y > 1`, `-5 < y < 0`, `y = 19`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: string;
 }
@@ -2898,19 +2898,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -3021,19 +3021,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -3141,19 +3141,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -3174,19 +3174,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -3207,31 +3207,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[];
 }
@@ -3390,19 +3390,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -3513,19 +3513,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -3633,19 +3633,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -3666,19 +3666,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -3699,31 +3699,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[];
 }
@@ -3882,55 +3882,55 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -3957,13 +3957,13 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The number of results to return
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -4054,31 +4054,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * An expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[];
   /**
   * limit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit;
 }
@@ -4101,19 +4101,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -4224,19 +4224,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -4344,19 +4344,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -4377,19 +4377,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -4410,31 +4410,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[];
 }
@@ -4593,13 +4593,13 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias_name Dashboard#alias_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias_name Dashboard#alias_name}
   */
   readonly aliasName?: string;
   /**
   * The expression name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#expression Dashboard#expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#expression Dashboard#expression}
   */
   readonly expression: string;
 }
@@ -4619,19 +4619,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -4742,19 +4742,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -4862,19 +4862,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery;
 }
@@ -4895,19 +4895,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -4928,31 +4928,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[];
 }
@@ -5111,25 +5111,25 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -5263,61 +5263,61 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_upstream Dashboard#is_upstream}
   */
   readonly isUpstream?: boolean | cdktf.IResolvable;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -5571,61 +5571,61 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -5885,19 +5885,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
@@ -5918,19 +5918,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -6041,19 +6041,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The event facet.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -6074,7 +6074,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The events search string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -6139,37 +6139,37 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
   readonly compute: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[];
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[];
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch;
 }
@@ -6345,25 +6345,25 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -6494,55 +6494,55 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
   /**
   * The number of hits to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -6785,31 +6785,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * apm_dependency_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * event_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery;
 }
@@ -6832,19 +6832,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -6955,19 +6955,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -7075,19 +7075,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -7108,19 +7108,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -7141,31 +7141,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[];
 }
@@ -7324,19 +7324,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -7447,19 +7447,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -7567,19 +7567,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -7600,19 +7600,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -7633,31 +7633,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[];
 }
@@ -7816,19 +7816,19 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_type Dashboard#line_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#line_type Dashboard#line_type}
   */
   readonly lineType?: string;
   /**
   * The width of line displayed. Valid values are `normal`, `thick`, `thin`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_width Dashboard#line_width}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#line_width Dashboard#line_width}
   */
   readonly lineWidth?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
 }
@@ -7942,85 +7942,85 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   /**
   * How to display the marker lines. Valid values are `area`, `bars`, `line`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_type Dashboard#display_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#display_type Dashboard#display_type}
   */
   readonly displayType?: string;
   /**
   * A Boolean indicating whether the request uses the right or left Y-Axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#on_right_yaxis Dashboard#on_right_yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#on_right_yaxis Dashboard#on_right_yaxis}
   */
   readonly onRightYaxis?: boolean | cdktf.IResolvable;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery;
   /**
   * audit_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#audit_query Dashboard#audit_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#audit_query Dashboard#audit_query}
   */
   readonly auditQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery;
   /**
   * formula block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
   readonly formula?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula[];
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery;
   /**
   * metadata block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metadata Dashboard#metadata}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metadata Dashboard#metadata}
   */
   readonly metadata?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata[];
   /**
   * network_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#network_query Dashboard#network_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#network_query Dashboard#network_query}
   */
   readonly networkQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery;
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery[];
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery;
   /**
   * style block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle;
 }
@@ -8052,31 +8052,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYa
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -8236,31 +8236,31 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -8420,85 +8420,85 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition {
   /**
   * A list of columns to display in the legend. Valid values are `value`, `avg`, `sum`, `min`, `max`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_columns Dashboard#legend_columns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#legend_columns Dashboard#legend_columns}
   */
   readonly legendColumns?: string[];
   /**
   * The layout of the legend displayed in the widget. Valid values are `auto`, `horizontal`, `vertical`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_layout Dashboard#legend_layout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#legend_layout Dashboard#legend_layout}
   */
   readonly legendLayout?: string;
   /**
   * The size of the legend displayed in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_size Dashboard#legend_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#legend_size Dashboard#legend_size}
   */
   readonly legendSize?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * Whether or not to show the legend on this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_legend Dashboard#show_legend}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_legend Dashboard#show_legend}
   */
   readonly showLegend?: boolean | cdktf.IResolvable;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[];
   /**
   * event block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event Dashboard#event}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event Dashboard#event}
   */
   readonly event?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[];
   /**
   * marker block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#marker Dashboard#marker}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#marker Dashboard#marker}
   */
   readonly marker?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[];
   /**
   * right_yaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#right_yaxis Dashboard#right_yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#right_yaxis Dashboard#right_yaxis}
   */
   readonly rightYaxis?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis;
   /**
   * yaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#yaxis Dashboard#yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#yaxis Dashboard#yaxis}
   */
   readonly yaxis?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis;
 }
@@ -8869,25 +8869,25 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -8909,19 +8909,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -9032,19 +9032,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -9152,19 +9152,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -9185,19 +9185,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -9218,31 +9218,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[];
 }
@@ -9401,19 +9401,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -9524,19 +9524,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -9644,19 +9644,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -9677,19 +9677,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -9710,31 +9710,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[];
 }
@@ -9893,55 +9893,55 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestCon
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -9968,55 +9968,55 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -10043,13 +10043,13 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   /**
   * The number of results to return
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -10140,31 +10140,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   /**
   * An expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats[];
   /**
   * limit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit;
 }
@@ -10187,19 +10187,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -10310,19 +10310,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -10430,19 +10430,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -10463,19 +10463,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -10496,31 +10496,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[];
 }
@@ -10679,25 +10679,25 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestPro
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -10831,61 +10831,61 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_upstream Dashboard#is_upstream}
   */
   readonly isUpstream?: boolean | cdktf.IResolvable;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -11139,61 +11139,61 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -11453,19 +11453,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
@@ -11486,19 +11486,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -11609,19 +11609,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The event facet.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -11642,7 +11642,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The events search string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -11707,37 +11707,37 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
   readonly compute: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[];
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[];
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch;
 }
@@ -11913,25 +11913,25 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -12062,55 +12062,55 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
   /**
   * The number of hits to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -12353,31 +12353,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   /**
   * apm_dependency_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * event_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery;
 }
@@ -12400,19 +12400,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -12523,19 +12523,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -12643,19 +12643,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -12676,19 +12676,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -12709,31 +12709,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[];
 }
@@ -12892,19 +12892,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -13015,19 +13015,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -13135,19 +13135,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -13168,19 +13168,19 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -13201,31 +13201,31 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[];
 }
@@ -13384,7 +13384,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSty
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
 }
@@ -13452,67 +13452,67 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest {
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuery;
   /**
   * audit_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#audit_query Dashboard#audit_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#audit_query Dashboard#audit_query}
   */
   readonly auditQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats[];
   /**
   * formula block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
   readonly formula?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula[];
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQuery;
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuery[];
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQuery;
   /**
   * style block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle;
 }
@@ -13541,37 +13541,37 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinition {
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[];
 }
@@ -13756,91 +13756,91 @@ export interface DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition {
   /**
   * The number of columns to display. Valid values are `one_column`, `two_column`, `three_column`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_format Dashboard#display_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#display_format Dashboard#display_format}
   */
   readonly displayFormat?: string;
   /**
   * APM environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * Whether to show the latency breakdown or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_breakdown Dashboard#show_breakdown}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_breakdown Dashboard#show_breakdown}
   */
   readonly showBreakdown?: boolean | cdktf.IResolvable;
   /**
   * Whether to show the latency distribution or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_distribution Dashboard#show_distribution}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_distribution Dashboard#show_distribution}
   */
   readonly showDistribution?: boolean | cdktf.IResolvable;
   /**
   * Whether to show the error metrics or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_errors Dashboard#show_errors}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_errors Dashboard#show_errors}
   */
   readonly showErrors?: boolean | cdktf.IResolvable;
   /**
   * Whether to show the hits metrics or not
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_hits Dashboard#show_hits}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_hits Dashboard#show_hits}
   */
   readonly showHits?: boolean | cdktf.IResolvable;
   /**
   * Whether to show the latency metrics or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_latency Dashboard#show_latency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_latency Dashboard#show_latency}
   */
   readonly showLatency?: boolean | cdktf.IResolvable;
   /**
   * Whether to show the resource list or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_resource_list Dashboard#show_resource_list}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_resource_list Dashboard#show_resource_list}
   */
   readonly showResourceList?: boolean | cdktf.IResolvable;
   /**
   * The size of the widget. Valid values are `small`, `medium`, `large`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#size_format Dashboard#size_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#size_format Dashboard#size_format}
   */
   readonly sizeFormat?: string;
   /**
   * APM span name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#span_name Dashboard#span_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#span_name Dashboard#span_name}
   */
   readonly spanName: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
 }
@@ -14221,31 +14221,31 @@ export interface DashboardWidgetGroupDefinitionWidgetWidgetLayout {
   /**
   * The height of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#height Dashboard#height}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#height Dashboard#height}
   */
   readonly height: number;
   /**
   * Whether the widget should be the first one on the second column in high density or not. Only for the new dashboard layout and only one widget in the dashboard should have this property set to `true`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_column_break Dashboard#is_column_break}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_column_break Dashboard#is_column_break}
   */
   readonly isColumnBreak?: boolean | cdktf.IResolvable;
   /**
   * The width of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#width Dashboard#width}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#width Dashboard#width}
   */
   readonly width: number;
   /**
   * The position of the widget on the x (horizontal) axis. Should be greater than or equal to 0.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#x Dashboard#x}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#x Dashboard#x}
   */
   readonly x: number;
   /**
   * The position of the widget on the y (vertical) axis. Should be greater than or equal to 0.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#y Dashboard#y}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#y Dashboard#y}
   */
   readonly y: number;
 }
@@ -14393,151 +14393,151 @@ export interface DashboardWidgetGroupDefinitionWidget {
   /**
   * alert_graph_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alert_graph_definition Dashboard#alert_graph_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alert_graph_definition Dashboard#alert_graph_definition}
   */
   readonly alertGraphDefinition?: DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition;
   /**
   * alert_value_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alert_value_definition Dashboard#alert_value_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alert_value_definition Dashboard#alert_value_definition}
   */
   readonly alertValueDefinition?: DashboardWidgetGroupDefinitionWidgetAlertValueDefinition;
   /**
   * change_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#change_definition Dashboard#change_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#change_definition Dashboard#change_definition}
   */
   readonly changeDefinition?: DashboardWidgetGroupDefinitionWidgetChangeDefinition;
   /**
   * check_status_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#check_status_definition Dashboard#check_status_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#check_status_definition Dashboard#check_status_definition}
   */
   readonly checkStatusDefinition?: DashboardWidgetGroupDefinitionWidgetCheckStatusDefinition;
   /**
   * distribution_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#distribution_definition Dashboard#distribution_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#distribution_definition Dashboard#distribution_definition}
   */
   readonly distributionDefinition?: DashboardWidgetGroupDefinitionWidgetDistributionDefinition;
   /**
   * event_stream_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_stream_definition Dashboard#event_stream_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_stream_definition Dashboard#event_stream_definition}
   */
   readonly eventStreamDefinition?: DashboardWidgetGroupDefinitionWidgetEventStreamDefinition;
   /**
   * event_timeline_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_timeline_definition Dashboard#event_timeline_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_timeline_definition Dashboard#event_timeline_definition}
   */
   readonly eventTimelineDefinition?: DashboardWidgetGroupDefinitionWidgetEventTimelineDefinition;
   /**
   * free_text_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#free_text_definition Dashboard#free_text_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#free_text_definition Dashboard#free_text_definition}
   */
   readonly freeTextDefinition?: DashboardWidgetGroupDefinitionWidgetFreeTextDefinition;
   /**
   * geomap_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#geomap_definition Dashboard#geomap_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#geomap_definition Dashboard#geomap_definition}
   */
   readonly geomapDefinition?: DashboardWidgetGroupDefinitionWidgetGeomapDefinition;
   /**
   * heatmap_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#heatmap_definition Dashboard#heatmap_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#heatmap_definition Dashboard#heatmap_definition}
   */
   readonly heatmapDefinition?: DashboardWidgetGroupDefinitionWidgetHeatmapDefinition;
   /**
   * hostmap_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hostmap_definition Dashboard#hostmap_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hostmap_definition Dashboard#hostmap_definition}
   */
   readonly hostmapDefinition?: DashboardWidgetGroupDefinitionWidgetHostmapDefinition;
   /**
   * iframe_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#iframe_definition Dashboard#iframe_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#iframe_definition Dashboard#iframe_definition}
   */
   readonly iframeDefinition?: DashboardWidgetGroupDefinitionWidgetIframeDefinition;
   /**
   * image_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_definition Dashboard#image_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_definition Dashboard#image_definition}
   */
   readonly imageDefinition?: DashboardWidgetGroupDefinitionWidgetImageDefinition;
   /**
   * log_stream_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_stream_definition Dashboard#log_stream_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_stream_definition Dashboard#log_stream_definition}
   */
   readonly logStreamDefinition?: DashboardWidgetGroupDefinitionWidgetLogStreamDefinition;
   /**
   * manage_status_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#manage_status_definition Dashboard#manage_status_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#manage_status_definition Dashboard#manage_status_definition}
   */
   readonly manageStatusDefinition?: DashboardWidgetGroupDefinitionWidgetManageStatusDefinition;
   /**
   * note_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#note_definition Dashboard#note_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#note_definition Dashboard#note_definition}
   */
   readonly noteDefinition?: DashboardWidgetGroupDefinitionWidgetNoteDefinition;
   /**
   * query_table_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query_table_definition Dashboard#query_table_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query_table_definition Dashboard#query_table_definition}
   */
   readonly queryTableDefinition?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinition;
   /**
   * query_value_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query_value_definition Dashboard#query_value_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query_value_definition Dashboard#query_value_definition}
   */
   readonly queryValueDefinition?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinition;
   /**
   * scatterplot_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scatterplot_definition Dashboard#scatterplot_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scatterplot_definition Dashboard#scatterplot_definition}
   */
   readonly scatterplotDefinition?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinition;
   /**
   * service_level_objective_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service_level_objective_definition Dashboard#service_level_objective_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service_level_objective_definition Dashboard#service_level_objective_definition}
   */
   readonly serviceLevelObjectiveDefinition?: DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition;
   /**
   * servicemap_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#servicemap_definition Dashboard#servicemap_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#servicemap_definition Dashboard#servicemap_definition}
   */
   readonly servicemapDefinition?: DashboardWidgetGroupDefinitionWidgetServicemapDefinition;
   /**
   * timeseries_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeseries_definition Dashboard#timeseries_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeseries_definition Dashboard#timeseries_definition}
   */
   readonly timeseriesDefinition?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition;
   /**
   * toplist_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#toplist_definition Dashboard#toplist_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#toplist_definition Dashboard#toplist_definition}
   */
   readonly toplistDefinition?: DashboardWidgetGroupDefinitionWidgetToplistDefinition;
   /**
   * trace_service_definition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#trace_service_definition Dashboard#trace_service_definition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#trace_service_definition Dashboard#trace_service_definition}
   */
   readonly traceServiceDefinition?: DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition;
   /**
   * widget_layout block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#widget_layout Dashboard#widget_layout}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#widget_layout Dashboard#widget_layout}
   */
   readonly widgetLayout?: DashboardWidgetGroupDefinitionWidgetWidgetLayout;
 }
@@ -14580,37 +14580,37 @@ export interface DashboardWidgetGroupDefinition {
   /**
   * The background color of the group title, options: `vivid_blue`, `vivid_purple`, `vivid_pink`, `vivid_orange`, `vivid_yellow`, `vivid_green`, `blue`, `purple`, `pink`, `orange`, `yellow`, `green`, `gray` or `white`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#background_color Dashboard#background_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#background_color Dashboard#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * The image URL to display as a banner for the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#banner_img Dashboard#banner_img}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#banner_img Dashboard#banner_img}
   */
   readonly bannerImg?: string;
   /**
   * The layout type of the group. Valid values are `ordered`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#layout_type Dashboard#layout_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#layout_type Dashboard#layout_type}
   */
   readonly layoutType: string;
   /**
   * Whether to show the title or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_title Dashboard#show_title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_title Dashboard#show_title}
   */
   readonly showTitle?: boolean | cdktf.IResolvable;
   /**
   * The title of the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * widget block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#widget Dashboard#widget}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#widget Dashboard#widget}
   */
   readonly widget: DashboardWidgetGroupDefinitionWidget[];
 }
@@ -14788,25 +14788,25 @@ export interface DashboardWidgetHeatmapDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -14828,13 +14828,13 @@ export interface DashboardWidgetHeatmapDefinitionEvent {
   /**
   * The event query to use in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q: string;
   /**
   * The execution method for multi-value filters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tags_execution Dashboard#tags_execution}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tags_execution Dashboard#tags_execution}
   */
   readonly tagsExecution?: string;
 }
@@ -14854,19 +14854,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery {
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -14977,19 +14977,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -15097,19 +15097,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -15130,19 +15130,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute {
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -15163,31 +15163,31 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[];
 }
@@ -15346,19 +15346,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery {
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -15469,19 +15469,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -15589,19 +15589,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -15622,19 +15622,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute {
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -15655,31 +15655,31 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[];
 }
@@ -15838,25 +15838,25 @@ export interface DashboardWidgetHeatmapDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -15990,19 +15990,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery {
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -16113,19 +16113,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -16233,19 +16233,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -16266,19 +16266,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute {
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -16299,31 +16299,31 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[];
 }
@@ -16482,19 +16482,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -16605,19 +16605,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -16725,19 +16725,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -16758,19 +16758,19 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -16791,31 +16791,31 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[];
 }
@@ -16974,7 +16974,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestStyle {
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
 }
@@ -17042,43 +17042,43 @@ export interface DashboardWidgetHeatmapDefinitionRequest {
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetHeatmapDefinitionRequestApmQuery;
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetHeatmapDefinitionRequestLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetHeatmapDefinitionRequestProcessQuery;
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetHeatmapDefinitionRequestRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetHeatmapDefinitionRequestSecurityQuery;
   /**
   * style block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetHeatmapDefinitionRequestStyle;
 }
@@ -17103,31 +17103,31 @@ export interface DashboardWidgetHeatmapDefinitionYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -17287,61 +17287,61 @@ export interface DashboardWidgetHeatmapDefinition {
   /**
   * The size of the legend displayed in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#legend_size Dashboard#legend_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#legend_size Dashboard#legend_size}
   */
   readonly legendSize?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * Whether or not to show the legend on this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_legend Dashboard#show_legend}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_legend Dashboard#show_legend}
   */
   readonly showLegend?: boolean | cdktf.IResolvable;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetHeatmapDefinitionCustomLink[];
   /**
   * event block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event Dashboard#event}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event Dashboard#event}
   */
   readonly event?: DashboardWidgetHeatmapDefinitionEvent[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetHeatmapDefinitionRequest[];
   /**
   * yaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#yaxis Dashboard#yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#yaxis Dashboard#yaxis}
   */
   readonly yaxis?: DashboardWidgetHeatmapDefinitionYaxis;
 }
@@ -17619,25 +17619,25 @@ export interface DashboardWidgetHostmapDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -17659,19 +17659,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -17782,19 +17782,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -17902,19 +17902,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery;
 }
@@ -17935,19 +17935,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -17968,31 +17968,31 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[];
 }
@@ -18151,19 +18151,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -18274,19 +18274,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -18394,19 +18394,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery;
 }
@@ -18427,19 +18427,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -18460,31 +18460,31 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[];
 }
@@ -18643,25 +18643,25 @@ export interface DashboardWidgetHostmapDefinitionRequestFillProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -18795,19 +18795,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -18918,19 +18918,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -19038,19 +19038,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery;
 }
@@ -19071,19 +19071,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -19104,31 +19104,31 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[];
 }
@@ -19287,19 +19287,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -19410,19 +19410,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -19530,19 +19530,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery;
 }
@@ -19563,19 +19563,19 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCo
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -19596,31 +19596,31 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[];
 }
@@ -19779,37 +19779,37 @@ export interface DashboardWidgetHostmapDefinitionRequestFill {
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetHostmapDefinitionRequestFillApmQuery;
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetHostmapDefinitionRequestFillLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetHostmapDefinitionRequestFillProcessQuery;
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetHostmapDefinitionRequestFillRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetHostmapDefinitionRequestFillSecurityQuery;
 }
@@ -19833,19 +19833,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -19956,19 +19956,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -20076,19 +20076,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery;
 }
@@ -20109,19 +20109,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -20142,31 +20142,31 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[];
 }
@@ -20325,19 +20325,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -20448,19 +20448,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -20568,19 +20568,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery;
 }
@@ -20601,19 +20601,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -20634,31 +20634,31 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[];
 }
@@ -20817,25 +20817,25 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -20969,19 +20969,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -21092,19 +21092,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -21212,19 +21212,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery;
 }
@@ -21245,19 +21245,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -21278,31 +21278,31 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[];
 }
@@ -21461,19 +21461,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryCompute
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -21584,19 +21584,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -21704,19 +21704,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery;
 }
@@ -21737,19 +21737,19 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCo
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -21770,31 +21770,31 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[];
 }
@@ -21953,37 +21953,37 @@ export interface DashboardWidgetHostmapDefinitionRequestSize {
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetHostmapDefinitionRequestSizeApmQuery;
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetHostmapDefinitionRequestSizeLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetHostmapDefinitionRequestSizeProcessQuery;
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetHostmapDefinitionRequestSizeRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery;
 }
@@ -22007,13 +22007,13 @@ export interface DashboardWidgetHostmapDefinitionRequest {
   /**
   * fill block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#fill Dashboard#fill}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#fill Dashboard#fill}
   */
   readonly fill?: DashboardWidgetHostmapDefinitionRequestFill[];
   /**
   * size block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#size Dashboard#size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#size Dashboard#size}
   */
   readonly size?: DashboardWidgetHostmapDefinitionRequestSize[];
 }
@@ -22106,25 +22106,25 @@ export interface DashboardWidgetHostmapDefinitionStyle {
   /**
   * The max value to use to color the map.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#fill_max Dashboard#fill_max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#fill_max Dashboard#fill_max}
   */
   readonly fillMax?: string;
   /**
   * The min value to use to color the map.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#fill_min Dashboard#fill_min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#fill_min Dashboard#fill_min}
   */
   readonly fillMin?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
   /**
   * A Boolean indicating whether to flip the palette tones.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette_flip Dashboard#palette_flip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette_flip Dashboard#palette_flip}
   */
   readonly paletteFlip?: boolean | cdktf.IResolvable;
 }
@@ -22261,67 +22261,67 @@ export interface DashboardWidgetHostmapDefinition {
   /**
   * The list of tags to group nodes by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group Dashboard#group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group Dashboard#group}
   */
   readonly group?: string[];
   /**
   * A Boolean indicating whether to show ungrouped nodes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#no_group_hosts Dashboard#no_group_hosts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#no_group_hosts Dashboard#no_group_hosts}
   */
   readonly noGroupHosts?: boolean | cdktf.IResolvable;
   /**
   * A Boolean indicating whether to show nodes with no metrics.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#no_metric_hosts Dashboard#no_metric_hosts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#no_metric_hosts Dashboard#no_metric_hosts}
   */
   readonly noMetricHosts?: boolean | cdktf.IResolvable;
   /**
   * The type of node used. Valid values are `host`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#node_type Dashboard#node_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#node_type Dashboard#node_type}
   */
   readonly nodeType?: string;
   /**
   * The list of tags to filter nodes by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scope Dashboard#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scope Dashboard#scope}
   */
   readonly scope?: string[];
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetHostmapDefinitionCustomLink[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetHostmapDefinitionRequest;
   /**
   * style block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetHostmapDefinitionStyle;
 }
@@ -22620,7 +22620,7 @@ export interface DashboardWidgetIframeDefinition {
   /**
   * The URL to use as a data source for the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#url Dashboard#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#url Dashboard#url}
   */
   readonly url: string;
 }
@@ -22685,49 +22685,49 @@ export interface DashboardWidgetImageDefinition {
   /**
   * Whether to display a background or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#has_background Dashboard#has_background}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#has_background Dashboard#has_background}
   */
   readonly hasBackground?: boolean | cdktf.IResolvable;
   /**
   * Whether to display a border or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#has_border Dashboard#has_border}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#has_border Dashboard#has_border}
   */
   readonly hasBorder?: boolean | cdktf.IResolvable;
   /**
   * The horizontal alignment for the widget. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#horizontal_align Dashboard#horizontal_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#horizontal_align Dashboard#horizontal_align}
   */
   readonly horizontalAlign?: string;
   /**
   * The margins to use around the image. Note: `small` and `large` values are deprecated. Valid values are `sm`, `md`, `lg`, `small`, `large`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#margin Dashboard#margin}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#margin Dashboard#margin}
   */
   readonly margin?: string;
   /**
   * The preferred method to adapt the dimensions of the image. The values are based on the image `object-fit` CSS properties. Note: `zoom`, `fit` and `center` values are deprecated. Valid values are `fill`, `contain`, `cover`, `none`, `scale-down`, `zoom`, `fit`, `center`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sizing Dashboard#sizing}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sizing Dashboard#sizing}
   */
   readonly sizing?: string;
   /**
   * The URL to use as a data source for the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#url Dashboard#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#url Dashboard#url}
   */
   readonly url: string;
   /**
   * The URL in dark mode to use as a data source for the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#url_dark_theme Dashboard#url_dark_theme}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#url_dark_theme Dashboard#url_dark_theme}
   */
   readonly urlDarkTheme?: string;
   /**
   * The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#vertical_align Dashboard#vertical_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#vertical_align Dashboard#vertical_align}
   */
   readonly verticalAlign?: string;
 }
@@ -22953,13 +22953,13 @@ export interface DashboardWidgetLogStreamDefinitionSort {
   /**
   * The facet path for the column
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#column Dashboard#column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#column Dashboard#column}
   */
   readonly column: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -23044,67 +23044,67 @@ export interface DashboardWidgetLogStreamDefinition {
   /**
   * Stringified list of columns to use, for example: `["column1","column2","column3"]`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#columns Dashboard#columns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#columns Dashboard#columns}
   */
   readonly columns?: string[];
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The number of log lines to display. Valid values are `inline`, `expanded-md`, `expanded-lg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#message_display Dashboard#message_display}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#message_display Dashboard#message_display}
   */
   readonly messageDisplay?: string;
   /**
   * The query to use in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: string;
   /**
   * If the date column should be displayed.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_date_column Dashboard#show_date_column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_date_column Dashboard#show_date_column}
   */
   readonly showDateColumn?: boolean | cdktf.IResolvable;
   /**
   * If the message column should be displayed.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_message_column Dashboard#show_message_column}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_message_column Dashboard#show_message_column}
   */
   readonly showMessageColumn?: boolean | cdktf.IResolvable;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetLogStreamDefinitionSort;
 }
@@ -23402,61 +23402,61 @@ export interface DashboardWidgetManageStatusDefinition {
   /**
   * Whether to colorize text or background. Valid values are `background`, `text`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#color_preference Dashboard#color_preference}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#color_preference Dashboard#color_preference}
   */
   readonly colorPreference?: string;
   /**
   * The display setting to use. Valid values are `counts`, `countsAndList`, `list`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_format Dashboard#display_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#display_format Dashboard#display_format}
   */
   readonly displayFormat?: string;
   /**
   * A Boolean indicating whether to hide empty categories.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_zero_counts Dashboard#hide_zero_counts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_zero_counts Dashboard#hide_zero_counts}
   */
   readonly hideZeroCounts?: boolean | cdktf.IResolvable;
   /**
   * The query to use in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
   /**
   * A Boolean indicating whether to show when monitors/groups last triggered.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_last_triggered Dashboard#show_last_triggered}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_last_triggered Dashboard#show_last_triggered}
   */
   readonly showLastTriggered?: boolean | cdktf.IResolvable;
   /**
   * The method to sort the monitors. Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * The summary type to use. Valid values are `monitors`, `groups`, `combined`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#summary_type Dashboard#summary_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#summary_type Dashboard#summary_type}
   */
   readonly summaryType?: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
 }
@@ -23728,55 +23728,55 @@ export interface DashboardWidgetNoteDefinition {
   /**
   * The background color of the note.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#background_color Dashboard#background_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#background_color Dashboard#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * The content of the note.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#content Dashboard#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#content Dashboard#content}
   */
   readonly content: string;
   /**
   * The size of the text.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#font_size Dashboard#font_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#font_size Dashboard#font_size}
   */
   readonly fontSize?: string;
   /**
   * Whether to add padding or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#has_padding Dashboard#has_padding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#has_padding Dashboard#has_padding}
   */
   readonly hasPadding?: boolean | cdktf.IResolvable;
   /**
   * Whether to show a tick or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_tick Dashboard#show_tick}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_tick Dashboard#show_tick}
   */
   readonly showTick?: boolean | cdktf.IResolvable;
   /**
   * The alignment of the widget's text. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
   /**
   * When `tick = true`, a string indicating on which side of the widget the tick should be displayed. Valid values are `bottom`, `left`, `right`, `top`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tick_edge Dashboard#tick_edge}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tick_edge Dashboard#tick_edge}
   */
   readonly tickEdge?: string;
   /**
   * When `tick = true`, a string with a percent sign indicating the position of the tick, for example: `tick_pos = "50%"` is centered alignment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tick_pos Dashboard#tick_pos}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tick_pos Dashboard#tick_pos}
   */
   readonly tickPos?: string;
   /**
   * The vertical alignment for the widget. Valid values are `center`, `top`, `bottom`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#vertical_align Dashboard#vertical_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#vertical_align Dashboard#vertical_align}
   */
   readonly verticalAlign?: string;
 }
@@ -24025,25 +24025,25 @@ export interface DashboardWidgetQueryTableDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -24065,19 +24065,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -24188,19 +24188,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -24308,19 +24308,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -24341,19 +24341,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -24374,31 +24374,31 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[];
 }
@@ -24557,25 +24557,25 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns 
   /**
   * A user-assigned alias for the column.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * The column name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -24597,43 +24597,43 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQuery {
   /**
   * The environment name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * The operation name associated with the service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The organization's host group name and value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag Dashboard#primary_tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag Dashboard#primary_tag}
   */
   readonly primaryTag: string;
   /**
   * The resource name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource Dashboard#resource}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource Dashboard#resource}
   */
   readonly resource?: string;
   /**
   * The level of detail for the request. Valid values are `service`, `resource`, `span`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#row_type Dashboard#row_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#row_type Dashboard#row_type}
   */
   readonly rowType: string;
   /**
   * The service name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * columns block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#columns Dashboard#columns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#columns Dashboard#columns}
   */
   readonly columns?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[];
 }
@@ -24825,55 +24825,55 @@ export interface DashboardWidgetQueryTableDefinitionRequestConditionalFormats {
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -24900,55 +24900,55 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFor
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -24975,13 +24975,13 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormulaLimit {
   /**
   * The number of results to return
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -25072,31 +25072,31 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormula {
   /**
   * An expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats[];
   /**
   * limit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetQueryTableDefinitionRequestFormulaLimit;
 }
@@ -25119,19 +25119,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -25242,19 +25242,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -25362,19 +25362,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -25395,19 +25395,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -25428,31 +25428,31 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[];
 }
@@ -25611,25 +25611,25 @@ export interface DashboardWidgetQueryTableDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -25763,61 +25763,61 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryApmDependencySta
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_upstream Dashboard#is_upstream}
   */
   readonly isUpstream?: boolean | cdktf.IResolvable;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -26071,61 +26071,61 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStats
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -26385,19 +26385,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryComput
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
@@ -26418,19 +26418,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupB
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -26541,19 +26541,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupB
   /**
   * The event facet.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -26574,7 +26574,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch
   /**
   * The events search string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -26639,37 +26639,37 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
   readonly compute: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[];
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[];
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch;
 }
@@ -26845,25 +26845,25 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -26994,55 +26994,55 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
   /**
   * The number of hits to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -27285,31 +27285,31 @@ export interface DashboardWidgetQueryTableDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * event_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetQueryTableDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery;
 }
@@ -27332,19 +27332,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -27455,19 +27455,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -27575,19 +27575,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -27608,19 +27608,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -27641,31 +27641,31 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[];
 }
@@ -27824,19 +27824,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -27947,19 +27947,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupByS
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -28067,19 +28067,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy 
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -28100,19 +28100,19 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCom
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -28133,31 +28133,31 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[];
 }
@@ -28316,91 +28316,91 @@ export interface DashboardWidgetQueryTableDefinitionRequest {
   /**
   * The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The alias for the column name (defaults to metric name).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. List items one of `number`, `bar`. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string[];
   /**
   * The number of lines to show in the table.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The sort order for the rows. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetQueryTableDefinitionRequestApmQuery;
   /**
   * apm_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_stats_query Dashboard#apm_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_stats_query Dashboard#apm_stats_query}
   */
   readonly apmStatsQuery?: DashboardWidgetQueryTableDefinitionRequestApmStatsQuery;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetQueryTableDefinitionRequestConditionalFormats[];
   /**
   * formula block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
   readonly formula?: DashboardWidgetQueryTableDefinitionRequestFormula[];
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetQueryTableDefinitionRequestLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetQueryTableDefinitionRequestProcessQuery;
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: DashboardWidgetQueryTableDefinitionRequestQuery[];
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetQueryTableDefinitionRequestRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetQueryTableDefinitionRequestSecurityQuery;
 }
@@ -28433,43 +28433,43 @@ export interface DashboardWidgetQueryTableDefinition {
   /**
   * Controls the display of the search bar. Valid values are `always`, `never`, `auto`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#has_search_bar Dashboard#has_search_bar}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#has_search_bar Dashboard#has_search_bar}
   */
   readonly hasSearchBar?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetQueryTableDefinitionCustomLink[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetQueryTableDefinitionRequest[];
 }
@@ -28677,25 +28677,25 @@ export interface DashboardWidgetQueryValueDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -28717,19 +28717,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -28840,19 +28840,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -28960,19 +28960,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -28993,19 +28993,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -29026,31 +29026,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[];
 }
@@ -29209,19 +29209,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -29332,19 +29332,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -29452,19 +29452,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -29485,19 +29485,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -29518,31 +29518,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[];
 }
@@ -29701,55 +29701,55 @@ export interface DashboardWidgetQueryValueDefinitionRequestConditionalFormats {
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -29776,55 +29776,55 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFor
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -29851,13 +29851,13 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormulaLimit {
   /**
   * The number of results to return
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -29948,31 +29948,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormula {
   /**
   * An expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats[];
   /**
   * limit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetQueryValueDefinitionRequestFormulaLimit;
 }
@@ -29995,19 +29995,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -30118,19 +30118,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -30238,19 +30238,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -30271,19 +30271,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -30304,31 +30304,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[];
 }
@@ -30487,25 +30487,25 @@ export interface DashboardWidgetQueryValueDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -30639,61 +30639,61 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryApmDependencySta
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_upstream Dashboard#is_upstream}
   */
   readonly isUpstream?: boolean | cdktf.IResolvable;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -30947,61 +30947,61 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStats
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -31261,19 +31261,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComput
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
@@ -31294,19 +31294,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupB
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -31417,19 +31417,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupB
   /**
   * The event facet.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -31450,7 +31450,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch
   /**
   * The events search string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -31515,37 +31515,37 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
   readonly compute: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[];
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[];
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch;
 }
@@ -31721,25 +31721,25 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -31870,55 +31870,55 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
   /**
   * The number of hits to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -32161,31 +32161,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * event_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetQueryValueDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery;
 }
@@ -32208,19 +32208,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -32331,19 +32331,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -32451,19 +32451,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -32484,19 +32484,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -32517,31 +32517,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[];
 }
@@ -32700,19 +32700,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -32823,19 +32823,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupByS
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -32943,19 +32943,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy 
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -32976,19 +32976,19 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCom
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -33009,31 +33009,31 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[];
 }
@@ -33192,67 +33192,67 @@ export interface DashboardWidgetQueryValueDefinitionRequest {
   /**
   * The aggregator to use for time aggregation. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetQueryValueDefinitionRequestApmQuery;
   /**
   * audit_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#audit_query Dashboard#audit_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#audit_query Dashboard#audit_query}
   */
   readonly auditQuery?: DashboardWidgetQueryValueDefinitionRequestAuditQuery;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetQueryValueDefinitionRequestConditionalFormats[];
   /**
   * formula block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
   readonly formula?: DashboardWidgetQueryValueDefinitionRequestFormula[];
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetQueryValueDefinitionRequestLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetQueryValueDefinitionRequestProcessQuery;
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: DashboardWidgetQueryValueDefinitionRequestQuery[];
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetQueryValueDefinitionRequestRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetQueryValueDefinitionRequestSecurityQuery;
 }
@@ -33281,61 +33281,61 @@ export interface DashboardWidgetQueryValueDefinition {
   /**
   * A Boolean indicating whether to automatically scale the tile.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#autoscale Dashboard#autoscale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#autoscale Dashboard#autoscale}
   */
   readonly autoscale?: boolean | cdktf.IResolvable;
   /**
   * The unit for the value displayed in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_unit Dashboard#custom_unit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_unit Dashboard#custom_unit}
   */
   readonly customUnit?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The precision to use when displaying the tile.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#precision Dashboard#precision}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#precision Dashboard#precision}
   */
   readonly precision?: number;
   /**
   * The alignment of the widget's text. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_align Dashboard#text_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetQueryValueDefinitionCustomLink[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetQueryValueDefinitionRequest[];
 }
@@ -33612,25 +33612,25 @@ export interface DashboardWidgetScatterplotDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -33652,19 +33652,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableForm
   /**
   * An expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * Dimension of the Scatterplot. Valid values are `x`, `y`, `radius`, `color`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#dimension Dashboard#dimension}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#dimension Dashboard#dimension}
   */
   readonly dimension: string;
   /**
   * A string expression built from queries, formulas, and functions.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
 }
@@ -33685,61 +33685,61 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_upstream Dashboard#is_upstream}
   */
   readonly isUpstream?: boolean | cdktf.IResolvable;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -33993,61 +33993,61 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -34307,19 +34307,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
@@ -34340,19 +34340,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -34463,19 +34463,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The event facet.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort;
 }
@@ -34496,7 +34496,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The events search string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -34561,37 +34561,37 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
   readonly compute: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[];
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[];
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch;
 }
@@ -34767,25 +34767,25 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -34916,55 +34916,55 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
   /**
   * The number of hits to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -35207,31 +35207,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   /**
   * apm_dependency_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery;
   /**
   * event_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery;
   /**
   * metric_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery;
 }
@@ -35254,13 +35254,13 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTable {
   /**
   * formula block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
   readonly formula?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula[];
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery[];
 }
@@ -35280,19 +35280,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -35403,19 +35403,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -35523,19 +35523,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery;
 }
@@ -35556,19 +35556,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -35589,31 +35589,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[];
 }
@@ -35772,19 +35772,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -35895,19 +35895,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -36015,19 +36015,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery;
 }
@@ -36048,19 +36048,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -36081,31 +36081,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[];
 }
@@ -36264,25 +36264,25 @@ export interface DashboardWidgetScatterplotDefinitionRequestXProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -36416,19 +36416,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -36539,19 +36539,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -36659,19 +36659,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery;
 }
@@ -36692,19 +36692,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -36725,31 +36725,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[];
 }
@@ -36908,19 +36908,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -37031,19 +37031,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -37151,19 +37151,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery;
 }
@@ -37184,19 +37184,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiC
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -37217,31 +37217,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[];
 }
@@ -37400,43 +37400,43 @@ export interface DashboardWidgetScatterplotDefinitionRequestX {
   /**
   * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetScatterplotDefinitionRequestXApmQuery;
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetScatterplotDefinitionRequestXLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetScatterplotDefinitionRequestXProcessQuery;
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetScatterplotDefinitionRequestXRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetScatterplotDefinitionRequestXSecurityQuery;
 }
@@ -37461,19 +37461,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -37584,19 +37584,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -37704,19 +37704,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery;
 }
@@ -37737,19 +37737,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -37770,31 +37770,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[];
 }
@@ -37953,19 +37953,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -38076,19 +38076,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -38196,19 +38196,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery;
 }
@@ -38229,19 +38229,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -38262,31 +38262,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[];
 }
@@ -38445,25 +38445,25 @@ export interface DashboardWidgetScatterplotDefinitionRequestYProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -38597,19 +38597,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -38720,19 +38720,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -38840,19 +38840,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery;
 }
@@ -38873,19 +38873,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -38906,31 +38906,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[];
 }
@@ -39089,19 +39089,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -39212,19 +39212,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -39332,19 +39332,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery;
 }
@@ -39365,19 +39365,19 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiC
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -39398,31 +39398,31 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[];
 }
@@ -39581,43 +39581,43 @@ export interface DashboardWidgetScatterplotDefinitionRequestY {
   /**
   * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetScatterplotDefinitionRequestYApmQuery;
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetScatterplotDefinitionRequestYLogQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetScatterplotDefinitionRequestYProcessQuery;
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetScatterplotDefinitionRequestYRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetScatterplotDefinitionRequestYSecurityQuery;
 }
@@ -39642,19 +39642,19 @@ export interface DashboardWidgetScatterplotDefinitionRequest {
   /**
   * scatterplot_table block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scatterplot_table Dashboard#scatterplot_table}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scatterplot_table Dashboard#scatterplot_table}
   */
   readonly scatterplotTable?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[];
   /**
   * x block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#x Dashboard#x}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#x Dashboard#x}
   */
   readonly x?: DashboardWidgetScatterplotDefinitionRequestX[];
   /**
   * y block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#y Dashboard#y}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#y Dashboard#y}
   */
   readonly y?: DashboardWidgetScatterplotDefinitionRequestY[];
 }
@@ -39771,31 +39771,31 @@ export interface DashboardWidgetScatterplotDefinitionXaxis {
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -39955,31 +39955,31 @@ export interface DashboardWidgetScatterplotDefinitionYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
   */
   readonly includeZero?: boolean | cdktf.IResolvable;
   /**
   * The label of the axis to display on the graph.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
@@ -40139,55 +40139,55 @@ export interface DashboardWidgetScatterplotDefinition {
   /**
   * List of groups used for colors.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#color_by_groups Dashboard#color_by_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#color_by_groups Dashboard#color_by_groups}
   */
   readonly colorByGroups?: string[];
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `1y`, `alert`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetScatterplotDefinitionCustomLink[];
   /**
   * request block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetScatterplotDefinitionRequest;
   /**
   * xaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#xaxis Dashboard#xaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#xaxis Dashboard#xaxis}
   */
   readonly xaxis?: DashboardWidgetScatterplotDefinitionXaxis;
   /**
   * yaxis block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#yaxis Dashboard#yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#yaxis Dashboard#yaxis}
   */
   readonly yaxis?: DashboardWidgetScatterplotDefinitionYaxis;
 }
@@ -40440,55 +40440,55 @@ export interface DashboardWidgetServiceLevelObjectiveDefinition {
   /**
   * The global time target of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#global_time_target Dashboard#global_time_target}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#global_time_target Dashboard#global_time_target}
   */
   readonly globalTimeTarget?: string;
   /**
   * Whether to show the error budget or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#show_error_budget Dashboard#show_error_budget}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_error_budget Dashboard#show_error_budget}
   */
   readonly showErrorBudget?: boolean | cdktf.IResolvable;
   /**
   * The ID of the service level objective used by the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#slo_id Dashboard#slo_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#slo_id Dashboard#slo_id}
   */
   readonly sloId: string;
   /**
   * A list of time windows to display in the widget. Valid values are `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, `previous_month`, `global_time`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#time_windows Dashboard#time_windows}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#time_windows Dashboard#time_windows}
   */
   readonly timeWindows: string[];
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * The view mode for the widget. Valid values are `overall`, `component`, `both`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#view_mode Dashboard#view_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#view_mode Dashboard#view_mode}
   */
   readonly viewMode: string;
   /**
   * The type of view to use when displaying the widget. Only `detail` is supported.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#view_type Dashboard#view_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#view_type Dashboard#view_type}
   */
   readonly viewType: string;
 }
@@ -40728,25 +40728,25 @@ export interface DashboardWidgetServicemapDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -40768,37 +40768,37 @@ export interface DashboardWidgetServicemapDefinition {
   /**
   * Your environment and primary tag (or `*` if enabled for your account).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filters Dashboard#filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filters Dashboard#filters}
   */
   readonly filters: string[];
   /**
   * The ID of the service to map.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * The title of the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
   readonly customLink?: DashboardWidgetServicemapDefinitionCustomLink[];
 }
@@ -40976,25 +40976,25 @@ export interface DashboardWidgetTimeseriesDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_hidden Dashboard#is_hidden}
   */
   readonly isHidden?: boolean | cdktf.IResolvable;
   /**
   * The label for the custom link URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -41016,13 +41016,13 @@ export interface DashboardWidgetTimeseriesDefinitionEvent {
   /**
   * The event query to use in the widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q: string;
   /**
   * The execution method for multi-value filters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tags_execution Dashboard#tags_execution}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tags_execution Dashboard#tags_execution}
   */
   readonly tagsExecution?: string;
 }
@@ -41042,19 +41042,19 @@ export interface DashboardWidgetTimeseriesDefinitionMarker {
   /**
   * How the marker lines are displayed, options are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}. Example: `error dashed`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_type Dashboard#display_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#display_type Dashboard#display_type}
   */
   readonly displayType?: string;
   /**
   * A label for the line or range.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * A mathematical expression describing the marker, for example: `y > 1`, `-5 < y < 0`, `y = 19`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: string;
 }
@@ -41075,19 +41075,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -41198,19 +41198,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -41318,19 +41318,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -41351,19 +41351,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -41384,31 +41384,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[];
 }
@@ -41567,19 +41567,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuer
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -41690,19 +41690,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySort
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -41810,19 +41810,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -41843,19 +41843,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiComput
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -41876,31 +41876,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestAuditQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[];
 }
@@ -42059,55 +42059,55 @@ export interface DashboardWidgetTimeseriesDefinitionRequestFormulaConditionalFor
   /**
   * The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#hide_value Dashboard#hide_value}
   */
   readonly hideValue?: boolean | cdktf.IResolvable;
   /**
   * Displays an image as the background.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
@@ -42134,13 +42134,13 @@ export interface DashboardWidgetTimeseriesDefinitionRequestFormulaLimit {
   /**
   * The number of results to return
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -42231,31 +42231,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestFormula {
   /**
   * An expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
   readonly conditionalFormats?: DashboardWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[];
   /**
   * limit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetTimeseriesDefinitionRequestFormulaLimit;
 }
@@ -42278,19 +42278,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -42401,19 +42401,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -42521,19 +42521,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -42554,19 +42554,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestLogQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -42587,31 +42587,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[];
 }
@@ -42770,13 +42770,13 @@ export interface DashboardWidgetTimeseriesDefinitionRequestMetadata {
   /**
   * The expression alias.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#alias_name Dashboard#alias_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#alias_name Dashboard#alias_name}
   */
   readonly aliasName?: string;
   /**
   * The expression name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#expression Dashboard#expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#expression Dashboard#expression}
   */
   readonly expression: string;
 }
@@ -42796,19 +42796,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -42919,19 +42919,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySo
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -43039,19 +43039,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery;
 }
@@ -43072,19 +43072,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiComp
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -43105,31 +43105,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestNetworkQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[];
 }
@@ -43288,25 +43288,25 @@ export interface DashboardWidgetTimeseriesDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
@@ -43440,61 +43440,61 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencySta
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_upstream Dashboard#is_upstream}
   */
   readonly isUpstream?: boolean | cdktf.IResolvable;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -43748,61 +43748,61 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStats
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM Environment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
@@ -44062,19 +44062,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryComput
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
@@ -44095,19 +44095,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
@@ -44218,19 +44218,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   /**
   * The event facet.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -44251,7 +44251,7 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch
   /**
   * The events search string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -44316,37 +44316,37 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
   readonly compute: DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[];
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[];
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearch;
 }
@@ -44522,25 +44522,25 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
@@ -44671,55 +44671,55 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
   /**
   * The number of hits to return.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -44962,31 +44962,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * event_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetTimeseriesDefinitionRequestQueryProcessQuery;
 }
@@ -45009,19 +45009,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -45132,19 +45132,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQu
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -45252,19 +45252,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -45285,19 +45285,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestRumQueryMultiCompute 
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -45318,31 +45318,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[];
 }
@@ -45501,19 +45501,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQ
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -45624,19 +45624,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupByS
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
@@ -45744,19 +45744,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy 
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -45777,19 +45777,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiCom
   /**
   * The aggregation method.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
@@ -45810,31 +45810,31 @@ export interface DashboardWidgetTimeseriesDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[];
   /**
   * multi_compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
   readonly multiCompute?: DashboardWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[];
 }
@@ -45993,19 +45993,19 @@ export interface DashboardWidgetTimeseriesDefinitionRequestStyle {
   /**
   * The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_type Dashboard#line_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#line_type Dashboard#line_type}
   */
   readonly lineType?: string;
   /**
   * The width of line displayed. Valid values are `normal`, `thick`, `thin`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#line_width Dashboard#line_width}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#line_width Dashboard#line_width}
   */
   readonly lineWidth?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
 }
@@ -46119,85 +46119,85 @@ export interface DashboardWidgetTimeseriesDefinitionRequest {
   /**
   * How to display the marker lines. Valid values are `area`, `bars`, `line`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#display_type Dashboard#display_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#display_type Dashboard#display_type}
   */
   readonly displayType?: string;
   /**
   * A Boolean indicating whether the request uses the right or left Y-Axis.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#on_right_yaxis Dashboard#on_right_yaxis}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#on_right_yaxis Dashboard#on_right_yaxis}
   */
   readonly onRightYaxis?: boolean | cdktf.IResolvable;
   /**
   * The metric query to use for this widget.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetTimeseriesDefinitionRequestApmQuery;
   /**
   * audit_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#audit_query Dashboard#audit_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#audit_query Dashboard#audit_query}
   */
   readonly auditQuery?: DashboardWidgetTimeseriesDefinitionRequestAuditQuery;
   /**
   * formula block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
   readonly formula?: DashboardWidgetTimeseriesDefinitionRequestFormula[];
   /**
   * log_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetTimeseriesDefinitionRequestLogQuery;
   /**
   * metadata block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#metadata Dashboard#metadata}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metadata Dashboard#metadata}
   */
   readonly metadata?: DashboardWidgetTimeseriesDefinitionRequestMetadata[];
   /**
   * network_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#network_query Dashboard#network_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#network_query Dashboard#network_query}
   */
   readonly networkQuery?: DashboardWidgetTimeseriesDefinitionRequestNetworkQuery;
   /**
   * process_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetTimeseriesDefinitionRequestProcessQuery;
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
   readonly query?: DashboardWidgetTimeseriesDefinitionRequestQuery[];
   /**
   * rum_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetTimeseriesDefinitionRequestRumQuery;
   /**
   * security_query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetTimeseriesDefinitionRequestSecurityQuery;
   /**
   * style block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard.html#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetTimeseriesDefinitionRequestStyle;
 }

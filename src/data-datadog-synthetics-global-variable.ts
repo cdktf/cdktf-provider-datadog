@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html
+// https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataDatadogSyntheticsGlobalVariableConfig extends cdktf.Terrafo
   /**
   * The synthetics global variable name to search for. Must only match one global variable.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html#name DataDatadogSyntheticsGlobalVariable#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}
 */
 export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable.html datadog_synthetics_global_variable} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface IntegrationPagerdutyServiceObjectConfig extends cdktf.Terraform
   /**
   * Your Service name associated service key in PagerDuty. Note: Since the Datadog API never returns service keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html#service_key IntegrationPagerdutyServiceObject#service_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object#service_key IntegrationPagerdutyServiceObject#service_key}
   */
   readonly serviceKey: string;
   /**
   * Your Service name in PagerDuty.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html#service_name IntegrationPagerdutyServiceObject#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object#service_name IntegrationPagerdutyServiceObject#service_name}
   */
   readonly serviceName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}
 */
 export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class IntegrationPagerdutyServiceObject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object.html datadog_integration_pagerduty_service_object} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_pagerduty_service_object datadog_integration_pagerduty_service_object} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

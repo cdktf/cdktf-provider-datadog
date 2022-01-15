@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/permissions.html
+// https://www.terraform.io/docs/providers/datadog/d/permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataDatadogPermissionsConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions datadog_permissions}
 */
 export class DataDatadogPermissions extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/permissions.html datadog_permissions} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/permissions datadog_permissions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/child_organization.html
+// https://www.terraform.io/docs/providers/datadog/r/child_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface ChildOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for Child Organization after creation.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html#name ChildOrganization#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/child_organization#name ChildOrganization#name}
   */
   readonly name: string;
 }
@@ -151,7 +151,7 @@ export class ChildOrganizationUser extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}
 */
 export class ChildOrganization extends cdktf.TerraformResource {
 
@@ -165,7 +165,7 @@ export class ChildOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization.html datadog_child_organization} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
