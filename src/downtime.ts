@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/downtime.html
+// https://www.terraform.io/docs/providers/datadog/r/downtime
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,61 +10,61 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optionally specify an end date when this downtime should expire
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#end Downtime#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#end Downtime#end}
   */
   readonly end?: number;
   /**
   * String representing date and time to end the downtime in RFC3339 format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#end_date Downtime#end_date}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#end_date Downtime#end_date}
   */
   readonly endDate?: string;
   /**
   * An optional message to provide when creating the downtime, can include notification handles
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#message Downtime#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#message Downtime#message}
   */
   readonly message?: string;
   /**
   * When specified, this downtime will only apply to this monitor
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#monitor_id Downtime#monitor_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#monitor_id Downtime#monitor_id}
   */
   readonly monitorId?: number;
   /**
   * A list of monitor tags (up to 32) to base the scheduled downtime on. Only monitors that have all selected tags are silenced
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#monitor_tags Downtime#monitor_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#monitor_tags Downtime#monitor_tags}
   */
   readonly monitorTags?: string[];
   /**
   * specify the group scope to which this downtime applies. For everything use '*'
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#scope Downtime#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#scope Downtime#scope}
   */
   readonly scope: string[];
   /**
   * Specify when this downtime should start
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#start Downtime#start}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#start Downtime#start}
   */
   readonly start?: number;
   /**
   * String representing date and time to start the downtime in RFC3339 format.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#start_date Downtime#start_date}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#start_date Downtime#start_date}
   */
   readonly startDate?: string;
   /**
   * The timezone for the downtime, default UTC
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#timezone Downtime#timezone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#timezone Downtime#timezone}
   */
   readonly timezone?: string;
   /**
   * recurrence block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#recurrence Downtime#recurrence}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#recurrence Downtime#recurrence}
   */
   readonly recurrence?: DowntimeRecurrence;
 }
@@ -72,37 +72,37 @@ export interface DowntimeRecurrence {
   /**
   * How often to repeat as an integer. For example to repeat every 3 days, select a `type` of `days` and a `period` of `3`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#period Downtime#period}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#period Downtime#period}
   */
   readonly period?: number;
   /**
   * The RRULE standard for defining recurring events. For example, to have a recurring event on the first day of each month, use `FREQ=MONTHLY;INTERVAL=1`. Most common rrule options from the iCalendar Spec are supported. Attributes specifying the duration in RRULE are not supported (for example, `DTSTART`, `DTEND`, `DURATION`).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#rrule Downtime#rrule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#rrule Downtime#rrule}
   */
   readonly rrule?: string;
   /**
   * One of `days`, `weeks`, `months`, or `years`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#type Downtime#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#type Downtime#type}
   */
   readonly type: string;
   /**
   * The date at which the recurrence should end as a POSIX timestamp. `until_occurrences` and `until_date` are mutually exclusive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#until_date Downtime#until_date}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#until_date Downtime#until_date}
   */
   readonly untilDate?: number;
   /**
   * How many times the downtime will be rescheduled. `until_occurrences` and `until_date` are mutually exclusive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#until_occurrences Downtime#until_occurrences}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#until_occurrences Downtime#until_occurrences}
   */
   readonly untilOccurrences?: number;
   /**
   * A list of week days to repeat on. Choose from: `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat` or `Sun`. Only applicable when `type` is `weeks`. First letter must be capitalized.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html#week_days Downtime#week_days}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#week_days Downtime#week_days}
   */
   readonly weekDays?: string[];
 }
@@ -280,7 +280,7 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime}
 */
 export class Downtime extends cdktf.TerraformResource {
 
@@ -294,7 +294,7 @@ export class Downtime extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/downtime.html datadog_downtime} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

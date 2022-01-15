@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/user.html
+// https://www.terraform.io/docs/providers/datadog/r/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the user is disabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#disabled User#disabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#disabled User#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Email address for user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#email User#email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#email User#email}
   */
   readonly email: string;
   /**
   * Name for user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#name User#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#name User#name}
   */
   readonly name?: string;
   /**
   * A list a role IDs to assign to the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#roles User#roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#roles User#roles}
   */
   readonly roles?: string[];
   /**
   * Whether an invitation email should be sent when the user is created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user.html#send_user_invitation User#send_user_invitation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#send_user_invitation User#send_user_invitation}
   */
   readonly sendUserInvitation?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}
 */
 export class User extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/user.html datadog_user} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

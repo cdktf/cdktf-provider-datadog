@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html
+// https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface IntegrationAwsTagFilterConfig extends cdktf.TerraformMetaArgume
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html#account_id IntegrationAwsTagFilter#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter#account_id IntegrationAwsTagFilter#account_id}
   */
   readonly accountId: string;
   /**
   * The namespace associated with the tag filter entry. Valid values are `elb`, `application_elb`, `sqs`, `rds`, `custom`, `network_elb`, `lambda`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html#namespace IntegrationAwsTagFilter#namespace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter#namespace IntegrationAwsTagFilter#namespace}
   */
   readonly namespace: string;
   /**
   * The tag filter string.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html#tag_filter_str IntegrationAwsTagFilter#tag_filter_str}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter#tag_filter_str IntegrationAwsTagFilter#tag_filter_str}
   */
   readonly tagFilterStr: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter datadog_integration_aws_tag_filter}
 */
 export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter.html datadog_integration_aws_tag_filter} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter datadog_integration_aws_tag_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

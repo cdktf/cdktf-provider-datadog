@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/monitor_json.html
+// https://www.terraform.io/docs/providers/datadog/r/monitor_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface MonitorJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The JSON formatted definition of the monitor.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html#monitor MonitorJson#monitor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json#monitor MonitorJson#monitor}
   */
   readonly monitor: string;
   /**
   * The URL of the monitor.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html#url MonitorJson#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json#url MonitorJson#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json datadog_monitor_json}
 */
 export class MonitorJson extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class MonitorJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json.html datadog_monitor_json} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/monitor_json datadog_monitor_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html
+// https://www.terraform.io/docs/providers/datadog/d/service_level_objectives
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataDatadogServiceLevelObjectivesConfig extends cdktf.Terraform
   /**
   * An array of SLO IDs to limit the search.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html#ids DataDatadogServiceLevelObjectives#ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives#ids DataDatadogServiceLevelObjectives#ids}
   */
   readonly ids?: string[];
   /**
   * Filter results based on SLO numerator and denominator.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
   */
   readonly metricsQuery?: string;
   /**
   * Filter results based on SLO names.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html#name_query DataDatadogServiceLevelObjectives#name_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives#name_query DataDatadogServiceLevelObjectives#name_query}
   */
   readonly nameQuery?: string;
   /**
   * Filter results based on a single SLO tag.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html#tags_query DataDatadogServiceLevelObjectives#tags_query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives#tags_query DataDatadogServiceLevelObjectives#tags_query}
   */
   readonly tagsQuery?: string;
 }
@@ -51,7 +51,7 @@ export class DataDatadogServiceLevelObjectivesSlos extends cdktf.ComplexComputed
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives}
 */
 export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource {
 
@@ -65,7 +65,7 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives.html datadog_service_level_objectives} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html
+// https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArgum
   /**
   * The filtered data type. Valid values are `logs`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
   */
   readonly filteredDataType?: string;
   /**
   * Whether the security filter is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#is_enabled SecurityMonitoringFilter#is_enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
   */
   readonly isEnabled: boolean | cdktf.IResolvable;
   /**
   * The name of the security filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#name SecurityMonitoringFilter#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * The query of the security filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#query SecurityMonitoringFilter#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
   /**
   * exclusion_filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
   */
   readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[];
 }
@@ -42,13 +42,13 @@ export interface SecurityMonitoringFilterExclusionFilter {
   /**
   * Exclusion filter name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#name SecurityMonitoringFilter#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * Exclusion filter query. Logs that match this query are excluded from the security filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html#query SecurityMonitoringFilter#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
 }
@@ -66,7 +66,7 @@ export function securityMonitoringFilterExclusionFilterToTerraform(struct?: Secu
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter}
 */
 export class SecurityMonitoringFilter extends cdktf.TerraformResource {
 
@@ -80,7 +80,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter.html datadog_security_monitoring_filter} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

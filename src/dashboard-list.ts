@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html
+// https://www.terraform.io/docs/providers/datadog/r/dashboard_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DashboardListConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Dashboard List
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html#name DashboardList#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#name DashboardList#name}
   */
   readonly name: string;
   /**
   * dash_item block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html#dash_item DashboardList#dash_item}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_item DashboardList#dash_item}
   */
   readonly dashItem?: DashboardListDashItem[];
 }
@@ -24,13 +24,13 @@ export interface DashboardListDashItem {
   /**
   * The ID of the dashboard to add
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html#dash_id DashboardList#dash_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_id DashboardList#dash_id}
   */
   readonly dashId: string;
   /**
   * The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html#type DashboardList#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#type DashboardList#type}
   */
   readonly type: string;
 }
@@ -48,7 +48,7 @@ export function dashboardListDashItemToTerraform(struct?: DashboardListDashItem)
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}
 */
 export class DashboardList extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class DashboardList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list.html datadog_dashboard_list} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

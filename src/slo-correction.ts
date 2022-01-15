@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/slo_correction.html
+// https://www.terraform.io/docs/providers/datadog/r/slo_correction
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,55 +10,55 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#category SloCorrection#category}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#category SloCorrection#category}
   */
   readonly category: string;
   /**
   * Description of the correction being made.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#description SloCorrection#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#description SloCorrection#description}
   */
   readonly description?: string;
   /**
   * Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#duration SloCorrection#duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#duration SloCorrection#duration}
   */
   readonly duration?: number;
   /**
   * Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#end SloCorrection#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#end SloCorrection#end}
   */
   readonly end?: number;
   /**
   * Recurrence rules as defined in the iCalendar RFC 5545.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#rrule SloCorrection#rrule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#rrule SloCorrection#rrule}
   */
   readonly rrule?: string;
   /**
   * ID of the SLO that this correction will be applied to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#slo_id SloCorrection#slo_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#slo_id SloCorrection#slo_id}
   */
   readonly sloId: string;
   /**
   * Starting time of the correction in epoch seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#start SloCorrection#start}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#start SloCorrection#start}
   */
   readonly start: number;
   /**
   * The timezone to display in the UI for the correction times (defaults to "UTC")
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html#timezone SloCorrection#timezone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#timezone SloCorrection#timezone}
   */
   readonly timezone?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction}
 */
 export class SloCorrection extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction.html datadog_slo_correction} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

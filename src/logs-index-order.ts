@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html
+// https://www.terraform.io/docs/providers/datadog/r/logs_index_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface LogsIndexOrderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The index resource list. Logs are tested against the query filter of each index one by one following the order of the list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html#indexes LogsIndexOrder#indexes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#indexes LogsIndexOrder#indexes}
   */
   readonly indexes: string[];
   /**
   * The unique name of the index order resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html#name LogsIndexOrder#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order datadog_logs_index_order}
 */
 export class LogsIndexOrder extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order.html datadog_logs_index_order} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order datadog_logs_index_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

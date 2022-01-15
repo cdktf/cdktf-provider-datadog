@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/logs_metric.html
+// https://www.terraform.io/docs/providers/datadog/r/logs_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the log-based metric. This field can't be updated after creation.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#name LogsMetric#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#name LogsMetric#name}
   */
   readonly name: string;
   /**
   * compute block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#compute LogsMetric#compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#compute LogsMetric#compute}
   */
   readonly compute: LogsMetricCompute;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#filter LogsMetric#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#filter LogsMetric#filter}
   */
   readonly filter: LogsMetricFilter;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#group_by LogsMetric#group_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#group_by LogsMetric#group_by}
   */
   readonly groupBy?: LogsMetricGroupBy[];
 }
@@ -36,13 +36,13 @@ export interface LogsMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#aggregation_type LogsMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#aggregation_type LogsMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * The path to the value the log-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#path LogsMetric#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#path LogsMetric#path}
   */
   readonly path?: string;
 }
@@ -130,7 +130,7 @@ export interface LogsMetricFilter {
   /**
   * The search query - following the log search syntax.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#query LogsMetric#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#query LogsMetric#query}
   */
   readonly query: string;
 }
@@ -195,13 +195,13 @@ export interface LogsMetricGroupBy {
   /**
   * The path to the value the log-based metric will be aggregated over.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#path LogsMetric#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#path LogsMetric#path}
   */
   readonly path: string;
   /**
   * Name of the tag that gets created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html#tag_name LogsMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#tag_name LogsMetric#tag_name}
   */
   readonly tagName: string;
 }
@@ -219,7 +219,7 @@ export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric}
 */
 export class LogsMetric extends cdktf.TerraformResource {
 
@@ -233,7 +233,7 @@ export class LogsMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric.html datadog_logs_metric} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

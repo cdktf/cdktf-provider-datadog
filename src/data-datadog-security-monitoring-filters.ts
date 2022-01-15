@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html
+// https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -55,7 +55,7 @@ export class DataDatadogSecurityMonitoringFiltersFilters extends cdktf.ComplexCo
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters datadog_security_monitoring_filters}
 */
 export class DataDatadogSecurityMonitoringFilters extends cdktf.TerraformDataSource {
 
@@ -69,7 +69,7 @@ export class DataDatadogSecurityMonitoringFilters extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters.html datadog_security_monitoring_filters} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters datadog_security_monitoring_filters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

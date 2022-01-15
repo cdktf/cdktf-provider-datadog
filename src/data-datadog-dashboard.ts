@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/dashboard.html
+// https://www.terraform.io/docs/providers/datadog/d/dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataDatadogDashboardConfig extends cdktf.TerraformMetaArguments
   /**
   * The dashboard name to search for. Must only match one dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html#name DataDatadogDashboard#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard#name DataDatadogDashboard#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}
 */
 export class DataDatadogDashboard extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataDatadogDashboard extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard.html datadog_dashboard} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

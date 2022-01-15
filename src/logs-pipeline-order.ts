@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html
+// https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface LogsPipelineOrderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name attribute in the resource `datadog_logs_pipeline_order` needs to be unique. It's recommended to use the same value as the resource name. No related field is available in [Logs Pipeline API](https://docs.datadoghq.com/api/v1/logs-pipelines/#get-pipeline-order).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html#name LogsPipelineOrder#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order#name LogsPipelineOrder#name}
   */
   readonly name: string;
   /**
   * The pipeline IDs list. The order of pipeline IDs in this attribute defines the overall pipeline order for logs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html#pipelines LogsPipelineOrder#pipelines}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order#pipelines LogsPipelineOrder#pipelines}
   */
   readonly pipelines: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order datadog_logs_pipeline_order}
 */
 export class LogsPipelineOrder extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class LogsPipelineOrder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order.html datadog_logs_pipeline_order} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_pipeline_order datadog_logs_pipeline_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

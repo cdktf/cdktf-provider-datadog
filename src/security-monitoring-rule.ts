@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html
+// https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,61 +10,61 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Whether the rule is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#enabled SecurityMonitoringRule#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Whether the notifications include the triggering group-by values in their title.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#has_extended_title SecurityMonitoringRule#has_extended_title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
   */
   readonly hasExtendedTitle?: boolean | cdktf.IResolvable;
   /**
   * Message for generated signals.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#message SecurityMonitoringRule#message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#message SecurityMonitoringRule#message}
   */
   readonly message: string;
   /**
   * The name of the rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name: string;
   /**
   * Tags for generated signals.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#tags SecurityMonitoringRule#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#tags SecurityMonitoringRule#tags}
   */
   readonly tags?: string[];
   /**
   * The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#type SecurityMonitoringRule#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#type SecurityMonitoringRule#type}
   */
   readonly type?: string;
   /**
   * case block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#case SecurityMonitoringRule#case}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#case SecurityMonitoringRule#case}
   */
   readonly case: SecurityMonitoringRuleCase[];
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#filter SecurityMonitoringRule#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#filter SecurityMonitoringRule#filter}
   */
   readonly filter?: SecurityMonitoringRuleFilter[];
   /**
   * options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#options SecurityMonitoringRule#options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#options SecurityMonitoringRule#options}
   */
   readonly options?: SecurityMonitoringRuleOptions;
   /**
   * query block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query: SecurityMonitoringRuleQuery[];
 }
@@ -72,25 +72,25 @@ export interface SecurityMonitoringRuleCase {
   /**
   * A rule case contains logical operations (`>`,`>=`, `&&`, `||`) to determine if a signal should be generated based on the event counts in the previously defined queries.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#condition SecurityMonitoringRule#condition}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#condition SecurityMonitoringRule#condition}
   */
   readonly condition?: string;
   /**
   * Name of the case.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name?: string;
   /**
   * Notification targets for each rule case.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#notifications SecurityMonitoringRule#notifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
   */
   readonly notifications?: string[];
   /**
   * Severity of the Security Signal. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#status SecurityMonitoringRule#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#status SecurityMonitoringRule#status}
   */
   readonly status: string;
 }
@@ -112,13 +112,13 @@ export interface SecurityMonitoringRuleFilter {
   /**
   * The type of filtering action. Valid values are `require`, `suppress`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#action SecurityMonitoringRule#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#action SecurityMonitoringRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query: string;
 }
@@ -138,13 +138,13 @@ export interface SecurityMonitoringRuleOptionsNewValueOptions {
   /**
   * The duration in days after which a learned value is forgotten. Valid values are `1`, `2`, `7`, `14`, `21`, `28`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#forget_after SecurityMonitoringRule#forget_after}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
   */
   readonly forgetAfter: number;
   /**
   * The duration in days during which values are learned, and after which signals will be generated for values that weren't learned. If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#learning_duration SecurityMonitoringRule#learning_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
   */
   readonly learningDuration: number;
 }
@@ -229,31 +229,31 @@ export interface SecurityMonitoringRuleOptions {
   /**
   * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#detection_method SecurityMonitoringRule#detection_method}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
   */
   readonly detectionMethod?: string;
   /**
   * A time window is specified to match when at least one of the cases matches true. This is a sliding window and evaluates in real time. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#evaluation_window SecurityMonitoringRule#evaluation_window}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
   */
   readonly evaluationWindow: number;
   /**
   * Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#keep_alive SecurityMonitoringRule#keep_alive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
   */
   readonly keepAlive: number;
   /**
   * A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#max_signal_duration SecurityMonitoringRule#max_signal_duration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
   */
   readonly maxSignalDuration: number;
   /**
   * new_value_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#new_value_options SecurityMonitoringRule#new_value_options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
   */
   readonly newValueOptions?: SecurityMonitoringRuleOptionsNewValueOptions;
 }
@@ -404,13 +404,13 @@ export interface SecurityMonitoringRuleQueryAgentRule {
   /**
   * The Agent rule ID. Must be unique within the rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#agent_rule_id SecurityMonitoringRule#agent_rule_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#agent_rule_id SecurityMonitoringRule#agent_rule_id}
   */
   readonly agentRuleId: string;
   /**
   * A Runtime Security expression determines what activity should be collected by the Datadog Agent. These logical expressions can use predefined operators and attributes. Tags cannot be used in Runtime Security expressions. Instead, allow or deny based on tags under the advanced option.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#expression SecurityMonitoringRule#expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#expression SecurityMonitoringRule#expression}
   */
   readonly expression: string;
 }
@@ -430,43 +430,43 @@ export interface SecurityMonitoringRuleQuery {
   /**
   * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#aggregation SecurityMonitoringRule#aggregation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
   readonly aggregation?: string;
   /**
   * Field for which the cardinality is measured. Sent as an array.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#distinct_fields SecurityMonitoringRule#distinct_fields}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#distinct_fields SecurityMonitoringRule#distinct_fields}
   */
   readonly distinctFields?: string[];
   /**
   * Fields to group by.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#group_by_fields SecurityMonitoringRule#group_by_fields}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
   * The target field to aggregate over when using the sum or max aggregations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#metric SecurityMonitoringRule#metric}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metric SecurityMonitoringRule#metric}
   */
   readonly metric?: string;
   /**
   * Name of the query.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#name SecurityMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
   readonly name?: string;
   /**
   * Query to run on logs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#query SecurityMonitoringRule#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
   readonly query: string;
   /**
   * agent_rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html#agent_rule SecurityMonitoringRule#agent_rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
   */
   readonly agentRule?: SecurityMonitoringRuleQueryAgentRule[];
 }
@@ -489,7 +489,7 @@ export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitori
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule}
 */
 export class SecurityMonitoringRule extends cdktf.TerraformResource {
 
@@ -503,7 +503,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule.html datadog_security_monitoring_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

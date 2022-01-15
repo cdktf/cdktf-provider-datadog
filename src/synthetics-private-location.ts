@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html
+// https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
   /**
   * Description of the private location.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html#description SyntheticsPrivateLocation#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location#description SyntheticsPrivateLocation#description}
   */
   readonly description?: string;
   /**
   * Synthetics private location name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html#name SyntheticsPrivateLocation#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location#name SyntheticsPrivateLocation#name}
   */
   readonly name: string;
   /**
   * A list of tags to associate with your synthetics private location.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html#tags SyntheticsPrivateLocation#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location datadog_synthetics_private_location}
 */
 export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location.html datadog_synthetics_private_location} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location datadog_synthetics_private_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

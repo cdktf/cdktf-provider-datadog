@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html
+// https://www.terraform.io/docs/providers/datadog/d/synthetics_locations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataDatadogSyntheticsLocationsConfig extends cdktf.TerraformMet
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations}
 */
 export class DataDatadogSyntheticsLocations extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataDatadogSyntheticsLocations extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations.html datadog_synthetics_locations} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

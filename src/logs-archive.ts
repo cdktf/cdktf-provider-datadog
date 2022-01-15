@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/r/logs_archive.html
+// https://www.terraform.io/docs/providers/datadog/r/logs_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,43 +10,43 @@ export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
   * To store the tags in the archive, set the value `true`. If it is set to `false`, the tags will be dropped when the logs are sent to the archive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#include_tags LogsArchive#include_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#include_tags LogsArchive#include_tags}
   */
   readonly includeTags?: boolean | cdktf.IResolvable;
   /**
   * Your archive name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#name LogsArchive#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#name LogsArchive#name}
   */
   readonly name: string;
   /**
   * The archive query/filter. Logs matching this query are included in the archive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#query LogsArchive#query}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#query LogsArchive#query}
   */
   readonly query: string;
   /**
   * An array of tags to add to rehydrated logs from an archive.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#rehydration_tags LogsArchive#rehydration_tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
   */
   readonly rehydrationTags?: string[];
   /**
   * azure_archive block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#azure_archive LogsArchive#azure_archive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#azure_archive LogsArchive#azure_archive}
   */
   readonly azureArchive?: LogsArchiveAzureArchive;
   /**
   * gcs_archive block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#gcs_archive LogsArchive#gcs_archive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#gcs_archive LogsArchive#gcs_archive}
   */
   readonly gcsArchive?: LogsArchiveGcsArchive;
   /**
   * s3_archive block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#s3_archive LogsArchive#s3_archive}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#s3_archive LogsArchive#s3_archive}
   */
   readonly s3Archive?: LogsArchiveS3Archive;
 }
@@ -54,31 +54,31 @@ export interface LogsArchiveAzureArchive {
   /**
   * Your client id.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#client_id LogsArchive#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#client_id LogsArchive#client_id}
   */
   readonly clientId: string;
   /**
   * The container where the archive will be stored.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#container LogsArchive#container}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#container LogsArchive#container}
   */
   readonly container: string;
   /**
   * The path where the archive will be stored.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * The associated storage account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#storage_account LogsArchive#storage_account}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#storage_account LogsArchive#storage_account}
   */
   readonly storageAccount: string;
   /**
   * Your tenant id.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#tenant_id LogsArchive#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#tenant_id LogsArchive#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -226,25 +226,25 @@ export interface LogsArchiveGcsArchive {
   /**
   * Name of your GCS bucket.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#bucket LogsArchive#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#bucket LogsArchive#bucket}
   */
   readonly bucket: string;
   /**
   * Your client email.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#client_email LogsArchive#client_email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#client_email LogsArchive#client_email}
   */
   readonly clientEmail: string;
   /**
   * Path where the archive will be stored.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
   */
   readonly path: string;
   /**
   * Your project id.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#project_id LogsArchive#project_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#project_id LogsArchive#project_id}
   */
   readonly projectId: string;
 }
@@ -369,25 +369,25 @@ export interface LogsArchiveS3Archive {
   /**
   * Your AWS account id.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#account_id LogsArchive#account_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#account_id LogsArchive#account_id}
   */
   readonly accountId: string;
   /**
   * Name of your s3 bucket.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#bucket LogsArchive#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#bucket LogsArchive#bucket}
   */
   readonly bucket: string;
   /**
   * Path where the archive will be stored.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
   */
   readonly path: string;
   /**
   * Your AWS role name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html#role_name LogsArchive#role_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#role_name LogsArchive#role_name}
   */
   readonly roleName: string;
 }
@@ -510,7 +510,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive datadog_logs_archive}
 */
 export class LogsArchive extends cdktf.TerraformResource {
 
@@ -524,7 +524,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive.html datadog_logs_archive} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive datadog_logs_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
