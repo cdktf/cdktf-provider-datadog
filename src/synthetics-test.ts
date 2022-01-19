@@ -832,7 +832,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly host?: string;
   /**
-  * For UDP tests, message to send with the request.
+  * For UDP and websocket tests, message to send with the request.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#message SyntheticsTest#message}
   */
@@ -1268,6 +1268,103 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
     return this._url;
   }
 }
+export interface SyntheticsTestApiStepRetry {
+  /**
+  * Number of retries needed to consider a location as failed before sending a notification alert.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#count SyntheticsTest#count}
+  */
+  readonly count?: number;
+  /**
+  * Interval between a failed test and the next retry in milliseconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#interval SyntheticsTest#interval}
+  */
+  readonly interval?: number;
+}
+
+export function syntheticsTestApiStepRetryToTerraform(struct?: SyntheticsTestApiStepRetryOutputReference | SyntheticsTestApiStepRetry): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+    interval: cdktf.numberToTerraform(struct!.interval),
+  }
+}
+
+export class SyntheticsTestApiStepRetryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsTestApiStepRetry | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._interval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interval = this._interval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestApiStepRetry | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._count = undefined;
+      this._interval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._count = value.count;
+      this._interval = value.interval;
+    }
+  }
+
+  // count - computed: false, optional: true, required: false
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  public resetCount() {
+    this._count = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // interval - computed: false, optional: true, required: false
+  private _interval?: number; 
+  public get interval() {
+    return this.getNumberAttribute('interval');
+  }
+  public set interval(value: number) {
+    this._interval = value;
+  }
+  public resetInterval() {
+    this._interval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval;
+  }
+}
 export interface SyntheticsTestApiStep {
   /**
   * Determines whether or not to continue with test if this step fails.
@@ -1335,6 +1432,12 @@ export interface SyntheticsTestApiStep {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#request_definition SyntheticsTest#request_definition}
   */
   readonly requestDefinition?: SyntheticsTestApiStepRequestDefinition;
+  /**
+  * retry block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#retry SyntheticsTest#retry}
+  */
+  readonly retry?: SyntheticsTestApiStepRetry;
 }
 
 export function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep): any {
@@ -1354,6 +1457,7 @@ export function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep)
     request_basicauth: syntheticsTestApiStepRequestBasicauthToTerraform(struct!.requestBasicauth),
     request_client_certificate: syntheticsTestApiStepRequestClientCertificateToTerraform(struct!.requestClientCertificate),
     request_definition: syntheticsTestApiStepRequestDefinitionToTerraform(struct!.requestDefinition),
+    retry: syntheticsTestApiStepRetryToTerraform(struct!.retry),
   }
 }
 
@@ -3241,7 +3345,7 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly host?: string;
   /**
-  * For UDP tests, message to send with the request.
+  * For UDP and websocket tests, message to send with the request.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#message SyntheticsTest#message}
   */

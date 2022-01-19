@@ -32,7 +32,7 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly end?: number;
   /**
-  * Recurrence rules as defined in the iCalendar RFC 5545.
+  * Recurrence rules as defined in the iCalendar RFC 5545. Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#rrule SloCorrection#rrule}
   */
