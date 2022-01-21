@@ -859,9 +859,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.38"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.38.tgz#482d0390ed4b80d3793279019f984f13e2056c68"
-  integrity sha512-OwaZzyjHyGFE0GG80Z7ZU8Ym0b9G3/y59XZJSb37LVjDTWx1wP8WwkULXTXIvaYCxbJ9NBKN9Hbx14NXqHoIcw==
+  version "10.0.39"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.39.tgz#9e0edac67c881eee78e52f718a7018f03aa8a4bb"
+  integrity sha512-Xg0tUqP6Z5nbKmNXhrlHxTdiqkC9mSiYnG/KStquXfDzTmz4jrXXMSCUjo/p94sSySOr+aQ92vSz1ur21JHevw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2211,9 +2211,9 @@ jsii-rosetta@^1.39.0, jsii-rosetta@^1.52.1:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.406:
-  version "0.1.450"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.450.tgz#55828ed1e2dd43c1914831b46fa965a0a73605d6"
-  integrity sha512-U19pmnYVUympcwhvtFDsyawU5Gth3f7EGuCABHBEW52LhxEmaBId/hqhGXmZcPO6oE6q+/IJohQrlwEDQN02PQ==
+  version "0.1.451"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.451.tgz#ea1646d4910469378dd76f46883f96030755cdba"
+  integrity sha512-fu1DUnGSWk42SVTDvaDkNK9p4Db4HxMvHI7RIgmY+JVS9Wu1XOHOQnX/WCq+1epM0ucgI+hWpJO50Xaq2Q5H5Q==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.52.1"
@@ -2750,9 +2750,9 @@ npm-bundled@^1.1.1:
     npm-normalize-package-bin "^1.0.1"
 
 npm-check-updates@^12:
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.1.0.tgz#bf316bc35f90817880df9de175f2d69755eb9ff5"
-  integrity sha512-9GtSetBvcth7MuL+0MpOmWgdfiEgZcWRfnvoYnNZxbZpleHZCT0Z3HnbsL6/EAT2M+ye7FTZ+YjmDmZptt7Rkg==
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.2.0.tgz#f332fff0df44fcc23d84ced192370a4480ad1e7f"
+  integrity sha512-upiHqivxtjtj/iHO7Amnd+Q5Nx5HzTwxMlu9lUzNFQvCAAFhJnPK8Weuoyz3OSwErpHVxJMry7W5d0H7Cokxdg==
   dependencies:
     chalk "^4.1.2"
     cint "^8.2.1"
@@ -3862,10 +3862,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.5.4:
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.4.tgz#a17d3a0263bf5c8723b9c52f43c5084edf13c2e8"
-  integrity sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==
+typescript@^4.5.5:
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
+  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
 typescript@~3.9.10:
   version "3.9.10"
