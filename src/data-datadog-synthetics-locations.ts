@@ -53,7 +53,7 @@ export class DataDatadogSyntheticsLocations extends cdktf.TerraformDataSource {
   }
 
   // locations - computed: true, optional: false, required: false
-  public locations(key: string): string {
+  public locations(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'locations').lookup(key);
   }
 

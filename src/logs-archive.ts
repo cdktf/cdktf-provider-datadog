@@ -84,7 +84,7 @@ export interface LogsArchiveAzureArchive {
 }
 
 export function logsArchiveAzureArchiveToTerraform(struct?: LogsArchiveAzureArchiveOutputReference | LogsArchiveAzureArchive): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,7 +105,7 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -250,7 +250,7 @@ export interface LogsArchiveGcsArchive {
 }
 
 export function logsArchiveGcsArchiveToTerraform(struct?: LogsArchiveGcsArchiveOutputReference | LogsArchiveGcsArchive): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -270,7 +270,7 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -393,7 +393,7 @@ export interface LogsArchiveS3Archive {
 }
 
 export function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -413,7 +413,7 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -562,7 +562,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   // include_tags - computed: false, optional: true, required: false
   private _includeTags?: boolean | cdktf.IResolvable; 
   public get includeTags() {
-    return this.getBooleanAttribute('include_tags') as any;
+    return this.getBooleanAttribute('include_tags');
   }
   public set includeTags(value: boolean | cdktf.IResolvable) {
     this._includeTags = value;
@@ -618,7 +618,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // azure_archive - computed: false, optional: true, required: false
-  private _azureArchive = new LogsArchiveAzureArchiveOutputReference(this as any, "azure_archive", true);
+  private _azureArchive = new LogsArchiveAzureArchiveOutputReference(this, "azure_archive", true);
   public get azureArchive() {
     return this._azureArchive;
   }
@@ -634,7 +634,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // gcs_archive - computed: false, optional: true, required: false
-  private _gcsArchive = new LogsArchiveGcsArchiveOutputReference(this as any, "gcs_archive", true);
+  private _gcsArchive = new LogsArchiveGcsArchiveOutputReference(this, "gcs_archive", true);
   public get gcsArchive() {
     return this._gcsArchive;
   }
@@ -650,7 +650,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // s3_archive - computed: false, optional: true, required: false
-  private _s3Archive = new LogsArchiveS3ArchiveOutputReference(this as any, "s3_archive", true);
+  private _s3Archive = new LogsArchiveS3ArchiveOutputReference(this, "s3_archive", true);
   public get s3Archive() {
     return this._s3Archive;
   }

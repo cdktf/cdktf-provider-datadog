@@ -108,7 +108,7 @@ export interface DowntimeRecurrence {
 }
 
 export function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputReference | DowntimeRecurrence): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -130,7 +130,7 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -329,7 +329,7 @@ export class Downtime extends cdktf.TerraformResource {
 
   // active - computed: true, optional: false, required: false
   public get active() {
-    return this.getBooleanAttribute('active') as any;
+    return this.getBooleanAttribute('active');
   }
 
   // active_child_id - computed: true, optional: false, required: false
@@ -339,7 +339,7 @@ export class Downtime extends cdktf.TerraformResource {
 
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
-    return this.getBooleanAttribute('disabled') as any;
+    return this.getBooleanAttribute('disabled');
   }
 
   // end - computed: false, optional: true, required: false
@@ -414,7 +414,7 @@ export class Downtime extends cdktf.TerraformResource {
   // monitor_tags - computed: false, optional: true, required: false
   private _monitorTags?: string[]; 
   public get monitorTags() {
-    return this.getListAttribute('monitor_tags');
+    return cdktf.Fn.tolist(this.getListAttribute('monitor_tags'));
   }
   public set monitorTags(value: string[]) {
     this._monitorTags = value;
@@ -489,7 +489,7 @@ export class Downtime extends cdktf.TerraformResource {
   }
 
   // recurrence - computed: false, optional: true, required: false
-  private _recurrence = new DowntimeRecurrenceOutputReference(this as any, "recurrence", true);
+  private _recurrence = new DowntimeRecurrenceOutputReference(this, "recurrence", true);
   public get recurrence() {
     return this._recurrence;
   }

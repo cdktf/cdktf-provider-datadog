@@ -30,7 +30,7 @@ export interface OrganizationSettingsSettingsSaml {
 }
 
 export function organizationSettingsSettingsSamlToTerraform(struct?: OrganizationSettingsSettingsSamlOutputReference | OrganizationSettingsSettingsSaml): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -47,7 +47,7 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -75,7 +75,7 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -104,7 +104,7 @@ export interface OrganizationSettingsSettingsSamlAutocreateUsersDomains {
 }
 
 export function organizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struct?: OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference | OrganizationSettingsSettingsSamlAutocreateUsersDomains): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -122,7 +122,7 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -172,7 +172,7 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -195,7 +195,7 @@ export interface OrganizationSettingsSettingsSamlIdpInitiatedLogin {
 }
 
 export function organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct?: OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference | OrganizationSettingsSettingsSamlIdpInitiatedLogin): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -212,7 +212,7 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -240,7 +240,7 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -263,7 +263,7 @@ export interface OrganizationSettingsSettingsSamlStrictMode {
 }
 
 export function organizationSettingsSettingsSamlStrictModeToTerraform(struct?: OrganizationSettingsSettingsSamlStrictModeOutputReference | OrganizationSettingsSettingsSamlStrictMode): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -280,7 +280,7 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -308,7 +308,7 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -361,7 +361,7 @@ export interface OrganizationSettingsSettings {
 }
 
 export function organizationSettingsSettingsToTerraform(struct?: OrganizationSettingsSettingsOutputReference | OrganizationSettingsSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -383,7 +383,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -441,7 +441,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   // private_widget_share - computed: false, optional: true, required: false
   private _privateWidgetShare?: boolean | cdktf.IResolvable; 
   public get privateWidgetShare() {
-    return this.getBooleanAttribute('private_widget_share') as any;
+    return this.getBooleanAttribute('private_widget_share');
   }
   public set privateWidgetShare(value: boolean | cdktf.IResolvable) {
     this._privateWidgetShare = value;
@@ -470,8 +470,28 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
     return this._samlAutocreateAccessRole;
   }
 
+  // saml_can_be_enabled - computed: true, optional: false, required: false
+  public get samlCanBeEnabled() {
+    return this.getBooleanAttribute('saml_can_be_enabled');
+  }
+
+  // saml_idp_endpoint - computed: true, optional: false, required: false
+  public get samlIdpEndpoint() {
+    return this.getStringAttribute('saml_idp_endpoint');
+  }
+
+  // saml_idp_metadata_uploaded - computed: true, optional: false, required: false
+  public get samlIdpMetadataUploaded() {
+    return this.getBooleanAttribute('saml_idp_metadata_uploaded');
+  }
+
+  // saml_login_url - computed: true, optional: false, required: false
+  public get samlLoginUrl() {
+    return this.getStringAttribute('saml_login_url');
+  }
+
   // saml - computed: false, optional: false, required: true
-  private _saml = new OrganizationSettingsSettingsSamlOutputReference(this as any, "saml", true);
+  private _saml = new OrganizationSettingsSettingsSamlOutputReference(this, "saml", true);
   public get saml() {
     return this._saml;
   }
@@ -484,7 +504,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml_autocreate_users_domains - computed: false, optional: false, required: true
-  private _samlAutocreateUsersDomains = new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(this as any, "saml_autocreate_users_domains", true);
+  private _samlAutocreateUsersDomains = new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(this, "saml_autocreate_users_domains", true);
   public get samlAutocreateUsersDomains() {
     return this._samlAutocreateUsersDomains;
   }
@@ -497,7 +517,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml_idp_initiated_login - computed: false, optional: false, required: true
-  private _samlIdpInitiatedLogin = new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(this as any, "saml_idp_initiated_login", true);
+  private _samlIdpInitiatedLogin = new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(this, "saml_idp_initiated_login", true);
   public get samlIdpInitiatedLogin() {
     return this._samlIdpInitiatedLogin;
   }
@@ -510,7 +530,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml_strict_mode - computed: false, optional: false, required: true
-  private _samlStrictMode = new OrganizationSettingsSettingsSamlStrictModeOutputReference(this as any, "saml_strict_mode", true);
+  private _samlStrictMode = new OrganizationSettingsSettingsSamlStrictModeOutputReference(this, "saml_strict_mode", true);
   public get samlStrictMode() {
     return this._samlStrictMode;
   }
@@ -595,7 +615,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   }
 
   // settings - computed: false, optional: true, required: false
-  private _settings = new OrganizationSettingsSettingsOutputReference(this as any, "settings", true);
+  private _settings = new OrganizationSettingsSettingsOutputReference(this, "settings", true);
   public get settings() {
     return this._settings;
   }

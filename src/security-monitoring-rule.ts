@@ -48,13 +48,13 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#case SecurityMonitoringRule#case}
   */
-  readonly case: SecurityMonitoringRuleCase[];
+  readonly case: SecurityMonitoringRuleCase[] | cdktf.IResolvable;
   /**
   * filter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#filter SecurityMonitoringRule#filter}
   */
-  readonly filter?: SecurityMonitoringRuleFilter[];
+  readonly filter?: SecurityMonitoringRuleFilter[] | cdktf.IResolvable;
   /**
   * options block
   * 
@@ -66,7 +66,7 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
-  readonly query: SecurityMonitoringRuleQuery[];
+  readonly query: SecurityMonitoringRuleQuery[] | cdktf.IResolvable;
 }
 export interface SecurityMonitoringRuleCase {
   /**
@@ -95,8 +95,8 @@ export interface SecurityMonitoringRuleCase {
   readonly status: string;
 }
 
-export function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitoringRuleCase): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitoringRuleCase | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -123,8 +123,8 @@ export interface SecurityMonitoringRuleFilter {
   readonly query: string;
 }
 
-export function securityMonitoringRuleFilterToTerraform(struct?: SecurityMonitoringRuleFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function securityMonitoringRuleFilterToTerraform(struct?: SecurityMonitoringRuleFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -150,7 +150,7 @@ export interface SecurityMonitoringRuleOptionsNewValueOptions {
 }
 
 export function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsNewValueOptionsOutputReference | SecurityMonitoringRuleOptionsNewValueOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -168,7 +168,7 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -259,7 +259,7 @@ export interface SecurityMonitoringRuleOptions {
 }
 
 export function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsOutputReference | SecurityMonitoringRuleOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -280,7 +280,7 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -385,7 +385,7 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
   }
 
   // new_value_options - computed: false, optional: true, required: false
-  private _newValueOptions = new SecurityMonitoringRuleOptionsNewValueOptionsOutputReference(this as any, "new_value_options", true);
+  private _newValueOptions = new SecurityMonitoringRuleOptionsNewValueOptionsOutputReference(this, "new_value_options", true);
   public get newValueOptions() {
     return this._newValueOptions;
   }
@@ -415,8 +415,8 @@ export interface SecurityMonitoringRuleQueryAgentRule {
   readonly expression: string;
 }
 
-export function securityMonitoringRuleQueryAgentRuleToTerraform(struct?: SecurityMonitoringRuleQueryAgentRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function securityMonitoringRuleQueryAgentRuleToTerraform(struct?: SecurityMonitoringRuleQueryAgentRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -468,11 +468,11 @@ export interface SecurityMonitoringRuleQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
   */
-  readonly agentRule?: SecurityMonitoringRuleQueryAgentRule[];
+  readonly agentRule?: SecurityMonitoringRuleQueryAgentRule[] | cdktf.IResolvable;
 }
 
-export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitoringRuleQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitoringRuleQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -539,7 +539,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -555,7 +555,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   // has_extended_title - computed: false, optional: true, required: false
   private _hasExtendedTitle?: boolean | cdktf.IResolvable; 
   public get hasExtendedTitle() {
-    return this.getBooleanAttribute('has_extended_title') as any;
+    return this.getBooleanAttribute('has_extended_title');
   }
   public set hasExtendedTitle(value: boolean | cdktf.IResolvable) {
     this._hasExtendedTitle = value;
@@ -632,12 +632,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // case - computed: false, optional: false, required: true
-  private _case?: SecurityMonitoringRuleCase[]; 
+  private _case?: SecurityMonitoringRuleCase[] | cdktf.IResolvable; 
   public get case() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('case') as any;
+    return this.interpolationForAttribute('case');
   }
-  public set case(value: SecurityMonitoringRuleCase[]) {
+  public set case(value: SecurityMonitoringRuleCase[] | cdktf.IResolvable) {
     this._case = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -646,12 +646,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: true, required: false
-  private _filter?: SecurityMonitoringRuleFilter[]; 
+  private _filter?: SecurityMonitoringRuleFilter[] | cdktf.IResolvable; 
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return this.interpolationForAttribute('filter');
   }
-  public set filter(value: SecurityMonitoringRuleFilter[]) {
+  public set filter(value: SecurityMonitoringRuleFilter[] | cdktf.IResolvable) {
     this._filter = value;
   }
   public resetFilter() {
@@ -663,7 +663,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // options - computed: false, optional: true, required: false
-  private _options = new SecurityMonitoringRuleOptionsOutputReference(this as any, "options", true);
+  private _options = new SecurityMonitoringRuleOptionsOutputReference(this, "options", true);
   public get options() {
     return this._options;
   }
@@ -679,12 +679,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   }
 
   // query - computed: false, optional: false, required: true
-  private _query?: SecurityMonitoringRuleQuery[]; 
+  private _query?: SecurityMonitoringRuleQuery[] | cdktf.IResolvable; 
   public get query() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query') as any;
+    return this.interpolationForAttribute('query');
   }
-  public set query(value: SecurityMonitoringRuleQuery[]) {
+  public set query(value: SecurityMonitoringRuleQuery[] | cdktf.IResolvable) {
     this._query = value;
   }
   // Temporarily expose input value. Use with caution.

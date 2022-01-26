@@ -54,7 +54,7 @@ export interface IntegrationSlackChannelDisplay {
 }
 
 export function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChannelDisplayOutputReference | IntegrationSlackChannelDisplay): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -74,7 +74,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -120,7 +120,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   // message - computed: false, optional: true, required: false
   private _message?: boolean | cdktf.IResolvable; 
   public get message() {
-    return this.getBooleanAttribute('message') as any;
+    return this.getBooleanAttribute('message');
   }
   public set message(value: boolean | cdktf.IResolvable) {
     this._message = value;
@@ -136,7 +136,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   // notified - computed: false, optional: true, required: false
   private _notified?: boolean | cdktf.IResolvable; 
   public get notified() {
-    return this.getBooleanAttribute('notified') as any;
+    return this.getBooleanAttribute('notified');
   }
   public set notified(value: boolean | cdktf.IResolvable) {
     this._notified = value;
@@ -152,7 +152,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   // snapshot - computed: false, optional: true, required: false
   private _snapshot?: boolean | cdktf.IResolvable; 
   public get snapshot() {
-    return this.getBooleanAttribute('snapshot') as any;
+    return this.getBooleanAttribute('snapshot');
   }
   public set snapshot(value: boolean | cdktf.IResolvable) {
     this._snapshot = value;
@@ -168,7 +168,7 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   // tags - computed: false, optional: true, required: false
   private _tags?: boolean | cdktf.IResolvable; 
   public get tags() {
-    return this.getBooleanAttribute('tags') as any;
+    return this.getBooleanAttribute('tags');
   }
   public set tags(value: boolean | cdktf.IResolvable) {
     this._tags = value;
@@ -255,7 +255,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   }
 
   // display - computed: false, optional: false, required: true
-  private _display = new IntegrationSlackChannelDisplayOutputReference(this as any, "display", true);
+  private _display = new IntegrationSlackChannelDisplayOutputReference(this, "display", true);
   public get display() {
     return this._display;
   }

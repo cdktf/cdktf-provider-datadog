@@ -47,7 +47,7 @@ export class ChildOrganizationSettingsSaml extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class ChildOrganizationSettingsSamlAutocreateUsersDomains extends cdktf.ComplexComputedList {
@@ -59,34 +59,34 @@ export class ChildOrganizationSettingsSamlAutocreateUsersDomains extends cdktf.C
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class ChildOrganizationSettingsSamlIdpInitiatedLogin extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class ChildOrganizationSettingsSamlStrictMode extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
 
   // private_widget_share - computed: true, optional: false, required: false
   public get privateWidgetShare() {
-    return this.getBooleanAttribute('private_widget_share') as any;
+    return this.getBooleanAttribute('private_widget_share');
   }
 
   // saml - computed: true, optional: false, required: false
   public get saml() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml') as any;
+    return this.interpolationForAttribute('saml');
   }
 
   // saml_autocreate_access_role - computed: true, optional: false, required: false
@@ -97,12 +97,12 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   // saml_autocreate_users_domains - computed: true, optional: false, required: false
   public get samlAutocreateUsersDomains() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml_autocreate_users_domains') as any;
+    return this.interpolationForAttribute('saml_autocreate_users_domains');
   }
 
   // saml_can_be_enabled - computed: true, optional: false, required: false
   public get samlCanBeEnabled() {
-    return this.getBooleanAttribute('saml_can_be_enabled') as any;
+    return this.getBooleanAttribute('saml_can_be_enabled');
   }
 
   // saml_idp_endpoint - computed: true, optional: false, required: false
@@ -113,12 +113,12 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   // saml_idp_initiated_login - computed: true, optional: false, required: false
   public get samlIdpInitiatedLogin() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml_idp_initiated_login') as any;
+    return this.interpolationForAttribute('saml_idp_initiated_login');
   }
 
   // saml_idp_metadata_uploaded - computed: true, optional: false, required: false
   public get samlIdpMetadataUploaded() {
-    return this.getBooleanAttribute('saml_idp_metadata_uploaded') as any;
+    return this.getBooleanAttribute('saml_idp_metadata_uploaded');
   }
 
   // saml_login_url - computed: true, optional: false, required: false
@@ -129,7 +129,7 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   // saml_strict_mode - computed: true, optional: false, required: false
   public get samlStrictMode() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml_strict_mode') as any;
+    return this.interpolationForAttribute('saml_strict_mode');
   }
 }
 export class ChildOrganizationUser extends cdktf.ComplexComputedList {
@@ -191,12 +191,12 @@ export class ChildOrganization extends cdktf.TerraformResource {
 
   // api_key - computed: true, optional: false, required: false
   public apiKey(index: string) {
-    return new ChildOrganizationApiKey(this, 'api_key', index);
+    return new ChildOrganizationApiKey(this, 'api_key', index, false);
   }
 
   // application_key - computed: true, optional: false, required: false
   public applicationKey(index: string) {
-    return new ChildOrganizationApplicationKey(this, 'application_key', index);
+    return new ChildOrganizationApplicationKey(this, 'application_key', index, false);
   }
 
   // description - computed: true, optional: false, required: false
@@ -229,12 +229,12 @@ export class ChildOrganization extends cdktf.TerraformResource {
 
   // settings - computed: true, optional: false, required: false
   public settings(index: string) {
-    return new ChildOrganizationSettings(this, 'settings', index);
+    return new ChildOrganizationSettings(this, 'settings', index, false);
   }
 
   // user - computed: true, optional: false, required: false
   public user(index: string) {
-    return new ChildOrganizationUser(this, 'user', index);
+    return new ChildOrganizationUser(this, 'user', index, false);
   }
 
   // =========

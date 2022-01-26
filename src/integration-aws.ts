@@ -24,7 +24,7 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#account_specific_namespace_rules IntegrationAws#account_specific_namespace_rules}
   */
-  readonly accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable;
+  readonly accountSpecificNamespaceRules?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * An array of AWS regions to exclude from metrics collection.
   * 
@@ -136,11 +136,11 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // account_specific_namespace_rules - computed: false, optional: true, required: false
-  private _accountSpecificNamespaceRules?: { [key: string]: boolean } | cdktf.IResolvable; 
+  private _accountSpecificNamespaceRules?: { [key: string]: (boolean | cdktf.IResolvable) }; 
   public get accountSpecificNamespaceRules() {
-    return this.getBooleanAttribute('account_specific_namespace_rules') as any;
+    return this.getBooleanMapAttribute('account_specific_namespace_rules');
   }
-  public set accountSpecificNamespaceRules(value: { [key: string]: boolean } | cdktf.IResolvable) {
+  public set accountSpecificNamespaceRules(value: { [key: string]: (boolean | cdktf.IResolvable) }) {
     this._accountSpecificNamespaceRules = value;
   }
   public resetAccountSpecificNamespaceRules() {
@@ -249,7 +249,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
     return {
       access_key_id: cdktf.stringToTerraform(this._accessKeyId),
       account_id: cdktf.stringToTerraform(this._accountId),
-      account_specific_namespace_rules: cdktf.hashMapper(cdktf.anyToTerraform)(this._accountSpecificNamespaceRules),
+      account_specific_namespace_rules: cdktf.hashMapper(cdktf.booleanToTerraform)(this._accountSpecificNamespaceRules),
       excluded_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedRegions),
       filter_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._filterTags),
       host_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._hostTags),

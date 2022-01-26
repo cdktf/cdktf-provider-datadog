@@ -94,7 +94,7 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
 
   // roles - computed: true, optional: false, required: false
   public roles(index: string) {
-    return new DataDatadogRolesRoles(this, 'roles', index);
+    return new DataDatadogRolesRoles(this, 'roles', index, false);
   }
 
   // =========

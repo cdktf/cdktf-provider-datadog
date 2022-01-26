@@ -72,7 +72,7 @@ export interface SyntheticsGlobalVariableParseTestOptionsParser {
 }
 
 export function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParserOutputReference | SyntheticsGlobalVariableParseTestOptionsParser): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -90,7 +90,7 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -172,7 +172,7 @@ export interface SyntheticsGlobalVariableParseTestOptions {
 }
 
 export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsOutputReference | SyntheticsGlobalVariableParseTestOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -191,7 +191,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -258,7 +258,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   }
 
   // parser - computed: false, optional: false, required: true
-  private _parser = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this as any, "parser", true);
+  private _parser = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this, "parser", true);
   public get parser() {
     return this._parser;
   }
@@ -370,7 +370,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // restricted_roles - computed: false, optional: true, required: false
   private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
-    return this.getListAttribute('restricted_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
   public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
@@ -386,7 +386,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // secure - computed: false, optional: true, required: false
   private _secure?: boolean | cdktf.IResolvable; 
   public get secure() {
-    return this.getBooleanAttribute('secure') as any;
+    return this.getBooleanAttribute('secure');
   }
   public set secure(value: boolean | cdktf.IResolvable) {
     this._secure = value;
@@ -429,7 +429,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // parse_test_options - computed: false, optional: true, required: false
-  private _parseTestOptions = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this as any, "parse_test_options", true);
+  private _parseTestOptions = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this, "parse_test_options", true);
   public get parseTestOptions() {
     return this._parseTestOptions;
   }

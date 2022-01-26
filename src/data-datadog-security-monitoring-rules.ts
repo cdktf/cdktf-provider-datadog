@@ -103,7 +103,7 @@ export class DataDatadogSecurityMonitoringRulesRulesOptions extends cdktf.Comple
   // new_value_options - computed: true, optional: false, required: false
   public get newValueOptions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('new_value_options') as any;
+    return this.interpolationForAttribute('new_value_options');
   }
 }
 export class DataDatadogSecurityMonitoringRulesRulesQueryAgentRule extends cdktf.ComplexComputedList {
@@ -123,7 +123,7 @@ export class DataDatadogSecurityMonitoringRulesRulesQuery extends cdktf.ComplexC
   // agent_rule - computed: true, optional: false, required: false
   public get agentRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('agent_rule') as any;
+    return this.interpolationForAttribute('agent_rule');
   }
 
   // aggregation - computed: true, optional: false, required: false
@@ -161,23 +161,23 @@ export class DataDatadogSecurityMonitoringRulesRules extends cdktf.ComplexComput
   // case - computed: true, optional: false, required: false
   public get case() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('case') as any;
+    return this.interpolationForAttribute('case');
   }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // filter - computed: true, optional: false, required: false
   public get filter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter') as any;
+    return this.interpolationForAttribute('filter');
   }
 
   // has_extended_title - computed: true, optional: false, required: false
   public get hasExtendedTitle() {
-    return this.getBooleanAttribute('has_extended_title') as any;
+    return this.getBooleanAttribute('has_extended_title');
   }
 
   // message - computed: true, optional: false, required: false
@@ -193,13 +193,13 @@ export class DataDatadogSecurityMonitoringRulesRules extends cdktf.ComplexComput
   // options - computed: true, optional: false, required: false
   public get options() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('options') as any;
+    return this.interpolationForAttribute('options');
   }
 
   // query - computed: true, optional: false, required: false
   public get query() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query') as any;
+    return this.interpolationForAttribute('query');
   }
 
   // tags - computed: true, optional: false, required: false
@@ -258,7 +258,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // default_only_filter - computed: false, optional: true, required: false
   private _defaultOnlyFilter?: boolean | cdktf.IResolvable; 
   public get defaultOnlyFilter() {
-    return this.getBooleanAttribute('default_only_filter') as any;
+    return this.getBooleanAttribute('default_only_filter');
   }
   public set defaultOnlyFilter(value: boolean | cdktf.IResolvable) {
     this._defaultOnlyFilter = value;
@@ -299,7 +299,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
 
   // rules - computed: true, optional: false, required: false
   public rules(index: string) {
-    return new DataDatadogSecurityMonitoringRulesRules(this, 'rules', index);
+    return new DataDatadogSecurityMonitoringRulesRules(this, 'rules', index, false);
   }
 
   // tags_filter - computed: false, optional: true, required: false
@@ -321,7 +321,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   // user_only_filter - computed: false, optional: true, required: false
   private _userOnlyFilter?: boolean | cdktf.IResolvable; 
   public get userOnlyFilter() {
-    return this.getBooleanAttribute('user_only_filter') as any;
+    return this.getBooleanAttribute('user_only_filter');
   }
   public set userOnlyFilter(value: boolean | cdktf.IResolvable) {
     this._userOnlyFilter = value;

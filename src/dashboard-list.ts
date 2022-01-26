@@ -18,7 +18,7 @@ export interface DashboardListConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_item DashboardList#dash_item}
   */
-  readonly dashItem?: DashboardListDashItem[];
+  readonly dashItem?: DashboardListDashItem[] | cdktf.IResolvable;
 }
 export interface DashboardListDashItem {
   /**
@@ -35,8 +35,8 @@ export interface DashboardListDashItem {
   readonly type: string;
 }
 
-export function dashboardListDashItemToTerraform(struct?: DashboardListDashItem): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardListDashItemToTerraform(struct?: DashboardListDashItem | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -106,12 +106,12 @@ export class DashboardList extends cdktf.TerraformResource {
   }
 
   // dash_item - computed: false, optional: true, required: false
-  private _dashItem?: DashboardListDashItem[]; 
+  private _dashItem?: DashboardListDashItem[] | cdktf.IResolvable; 
   public get dashItem() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dash_item') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dash_item')));
   }
-  public set dashItem(value: DashboardListDashItem[]) {
+  public set dashItem(value: DashboardListDashItem[] | cdktf.IResolvable) {
     this._dashItem = value;
   }
   public resetDashItem() {

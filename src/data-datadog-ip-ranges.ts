@@ -108,7 +108,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   }
 
   // synthetics_ipv4_by_location - computed: true, optional: false, required: false
-  public syntheticsIpv4ByLocation(key: string): string {
+  public syntheticsIpv4ByLocation(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'synthetics_ipv4_by_location').lookup(key);
   }
 
@@ -118,7 +118,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   }
 
   // synthetics_ipv6_by_location - computed: true, optional: false, required: false
-  public syntheticsIpv6ByLocation(key: string): string {
+  public syntheticsIpv6ByLocation(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'synthetics_ipv6_by_location').lookup(key);
   }
 

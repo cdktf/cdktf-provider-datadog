@@ -53,7 +53,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
   }
 
   // permissions - computed: true, optional: false, required: false
-  public permissions(key: string): string {
+  public permissions(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'permissions').lookup(key);
   }
 

@@ -36,7 +36,7 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
   */
-  readonly aggregations?: MetricTagConfigurationAggregations[];
+  readonly aggregations?: MetricTagConfigurationAggregations[] | cdktf.IResolvable;
 }
 export interface MetricTagConfigurationAggregations {
   /**
@@ -53,8 +53,8 @@ export interface MetricTagConfigurationAggregations {
   readonly time: string;
 }
 
-export function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -116,7 +116,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // include_percentiles - computed: false, optional: true, required: false
   private _includePercentiles?: boolean | cdktf.IResolvable; 
   public get includePercentiles() {
-    return this.getBooleanAttribute('include_percentiles') as any;
+    return this.getBooleanAttribute('include_percentiles');
   }
   public set includePercentiles(value: boolean | cdktf.IResolvable) {
     this._includePercentiles = value;
@@ -158,7 +158,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // tags - computed: false, optional: false, required: true
   private _tags?: string[]; 
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -169,12 +169,12 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // aggregations - computed: false, optional: true, required: false
-  private _aggregations?: MetricTagConfigurationAggregations[]; 
+  private _aggregations?: MetricTagConfigurationAggregations[] | cdktf.IResolvable; 
   public get aggregations() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('aggregations') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('aggregations')));
   }
-  public set aggregations(value: MetricTagConfigurationAggregations[]) {
+  public set aggregations(value: MetricTagConfigurationAggregations[] | cdktf.IResolvable) {
     this._aggregations = value;
   }
   public resetAggregations() {

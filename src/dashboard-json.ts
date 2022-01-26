@@ -84,8 +84,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   // dashboard_lists - computed: false, optional: true, required: false
   private _dashboardLists?: number[]; 
   public get dashboardLists() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dashboard_lists') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists')));
   }
   public set dashboardLists(value: number[]) {
     this._dashboardLists = value;
@@ -100,8 +99,7 @@ export class DashboardJson extends cdktf.TerraformResource {
 
   // dashboard_lists_removed - computed: true, optional: false, required: false
   public get dashboardListsRemoved() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dashboard_lists_removed') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists_removed')));
   }
 
   // id - computed: true, optional: true, required: false
