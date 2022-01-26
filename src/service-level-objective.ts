@@ -66,7 +66,7 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#thresholds ServiceLevelObjective#thresholds}
   */
-  readonly thresholds: ServiceLevelObjectiveThresholds[];
+  readonly thresholds: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable;
 }
 export interface ServiceLevelObjectiveQuery {
   /**
@@ -84,7 +84,7 @@ export interface ServiceLevelObjectiveQuery {
 }
 
 export function serviceLevelObjectiveQueryToTerraform(struct?: ServiceLevelObjectiveQueryOutputReference | ServiceLevelObjectiveQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -102,7 +102,7 @@ export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -180,8 +180,8 @@ export interface ServiceLevelObjectiveThresholds {
   readonly warning?: number;
 }
 
-export function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevelObjectiveThresholds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevelObjectiveThresholds | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -260,7 +260,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean | cdktf.IResolvable; 
   public get forceDelete() {
-    return this.getBooleanAttribute('force_delete') as any;
+    return this.getBooleanAttribute('force_delete');
   }
   public set forceDelete(value: boolean | cdktf.IResolvable) {
     this._forceDelete = value;
@@ -276,7 +276,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -297,8 +297,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // monitor_ids - computed: false, optional: true, required: false
   private _monitorIds?: number[]; 
   public get monitorIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('monitor_ids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('monitor_ids')));
   }
   public set monitorIds(value: number[]) {
     this._monitorIds = value;
@@ -327,7 +326,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -356,7 +355,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // validate - computed: false, optional: true, required: false
   private _validate?: boolean | cdktf.IResolvable; 
   public get validate() {
-    return this.getBooleanAttribute('validate') as any;
+    return this.getBooleanAttribute('validate');
   }
   public set validate(value: boolean | cdktf.IResolvable) {
     this._validate = value;
@@ -370,7 +369,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // query - computed: false, optional: true, required: false
-  private _query = new ServiceLevelObjectiveQueryOutputReference(this as any, "query", true);
+  private _query = new ServiceLevelObjectiveQueryOutputReference(this, "query", true);
   public get query() {
     return this._query;
   }
@@ -386,12 +385,12 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // thresholds - computed: false, optional: false, required: true
-  private _thresholds?: ServiceLevelObjectiveThresholds[]; 
+  private _thresholds?: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable; 
   public get thresholds() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('thresholds') as any;
+    return this.interpolationForAttribute('thresholds');
   }
-  public set thresholds(value: ServiceLevelObjectiveThresholds[]) {
+  public set thresholds(value: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable) {
     this._thresholds = value;
   }
   // Temporarily expose input value. Use with caution.

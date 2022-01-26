@@ -85,7 +85,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // automute - computed: false, optional: true, required: false
   private _automute?: boolean | cdktf.IResolvable; 
   public get automute() {
-    return this.getBooleanAttribute('automute') as any;
+    return this.getBooleanAttribute('automute');
   }
   public set automute(value: boolean | cdktf.IResolvable) {
     this._automute = value;

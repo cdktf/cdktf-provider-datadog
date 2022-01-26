@@ -36,7 +36,7 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#exclusion_filter LogsIndex#exclusion_filter}
   */
-  readonly exclusionFilter?: LogsIndexExclusionFilter[];
+  readonly exclusionFilter?: LogsIndexExclusionFilter[] | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -59,8 +59,8 @@ export interface LogsIndexExclusionFilterFilter {
   readonly sampleRate?: number;
 }
 
-export function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExclusionFilterFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExclusionFilterFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -88,11 +88,11 @@ export interface LogsIndexExclusionFilter {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#filter LogsIndex#filter}
   */
-  readonly filter?: LogsIndexExclusionFilterFilter[];
+  readonly filter?: LogsIndexExclusionFilterFilter[] | cdktf.IResolvable;
 }
 
-export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -113,7 +113,7 @@ export interface LogsIndexFilter {
 }
 
 export function logsIndexFilterToTerraform(struct?: LogsIndexFilterOutputReference | LogsIndexFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -130,7 +130,7 @@ export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -232,7 +232,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   // disable_daily_limit - computed: true, optional: true, required: false
   private _disableDailyLimit?: boolean | cdktf.IResolvable; 
   public get disableDailyLimit() {
-    return this.getBooleanAttribute('disable_daily_limit') as any;
+    return this.getBooleanAttribute('disable_daily_limit');
   }
   public set disableDailyLimit(value: boolean | cdktf.IResolvable) {
     this._disableDailyLimit = value;
@@ -280,12 +280,12 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
-  private _exclusionFilter?: LogsIndexExclusionFilter[]; 
+  private _exclusionFilter?: LogsIndexExclusionFilter[] | cdktf.IResolvable; 
   public get exclusionFilter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('exclusion_filter') as any;
+    return this.interpolationForAttribute('exclusion_filter');
   }
-  public set exclusionFilter(value: LogsIndexExclusionFilter[]) {
+  public set exclusionFilter(value: LogsIndexExclusionFilter[] | cdktf.IResolvable) {
     this._exclusionFilter = value;
   }
   public resetExclusionFilter() {
@@ -297,7 +297,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter = new LogsIndexFilterOutputReference(this as any, "filter", true);
+  private _filter = new LogsIndexFilterOutputReference(this, "filter", true);
   public get filter() {
     return this._filter;
   }

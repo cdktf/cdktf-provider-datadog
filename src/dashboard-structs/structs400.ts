@@ -69,8 +69,8 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,17 +105,17 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -136,7 +136,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -215,7 +215,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -231,12 +231,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -248,12 +248,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -292,7 +292,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -312,7 +312,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYPr
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -438,7 +438,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -457,7 +457,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -561,7 +561,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -580,7 +580,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -680,8 +680,8 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -713,8 +713,8 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -749,17 +749,17 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -780,7 +780,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -859,7 +859,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -875,12 +875,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -892,12 +892,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -930,7 +930,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -949,7 +949,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1053,7 +1053,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1072,7 +1072,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1172,8 +1172,8 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1205,8 +1205,8 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1241,17 +1241,17 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1272,7 +1272,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1351,7 +1351,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -1367,12 +1367,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -1384,12 +1384,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -1445,8 +1445,8 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   readonly securityQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1467,23 +1467,23 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionReques
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scatterplot_table Dashboard#scatterplot_table}
   */
-  readonly scatterplotTable?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[];
+  readonly scatterplotTable?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable;
   /**
   * x block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#x Dashboard#x}
   */
-  readonly x?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[];
+  readonly x?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable;
   /**
   * y block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#y Dashboard#y}
   */
-  readonly y?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[];
+  readonly y?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1502,7 +1502,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1540,12 +1540,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOut
   }
 
   // scatterplot_table - computed: false, optional: true, required: false
-  private _scatterplotTable?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[]; 
+  private _scatterplotTable?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable; 
   public get scatterplotTable() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scatterplot_table') as any;
+    return this.interpolationForAttribute('scatterplot_table');
   }
-  public set scatterplotTable(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[]) {
+  public set scatterplotTable(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable) {
     this._scatterplotTable = value;
   }
   public resetScatterplotTable() {
@@ -1557,12 +1557,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOut
   }
 
   // x - computed: false, optional: true, required: false
-  private _x?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[]; 
+  private _x?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable; 
   public get x() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('x') as any;
+    return this.interpolationForAttribute('x');
   }
-  public set x(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[]) {
+  public set x(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable) {
     this._x = value;
   }
   public resetX() {
@@ -1574,12 +1574,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOut
   }
 
   // y - computed: false, optional: true, required: false
-  private _y?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[]; 
+  private _y?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable; 
   public get y() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('y') as any;
+    return this.interpolationForAttribute('y');
   }
-  public set y(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[]) {
+  public set y(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable) {
     this._y = value;
   }
   public resetY() {
@@ -1624,7 +1624,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis 
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1645,7 +1645,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1697,7 +1697,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutpu
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -1808,7 +1808,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis 
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -1829,7 +1829,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -1881,7 +1881,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutpu
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -1994,7 +1994,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * request block
   * 
@@ -2016,7 +2016,7 @@ export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinition {
 }
 
 export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetScatterplotDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2041,7 +2041,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2195,12 +2195,12 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -2212,7 +2212,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // request - computed: false, optional: true, required: false
-  private _request = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference(this as any, "request", true);
+  private _request = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference(this, "request", true);
   public get request() {
     return this._request;
   }
@@ -2228,7 +2228,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // xaxis - computed: false, optional: true, required: false
-  private _xaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference(this as any, "xaxis", true);
+  private _xaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference(this, "xaxis", true);
   public get xaxis() {
     return this._xaxis;
   }
@@ -2244,7 +2244,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference(this as any, "yaxis", true);
+  private _yaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference(this, "yaxis", true);
   public get yaxis() {
     return this._yaxis;
   }
@@ -2317,7 +2317,7 @@ export interface DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefini
 }
 
 export function dashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2342,7 +2342,7 @@ export class DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2434,7 +2434,7 @@ export class DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition
   // show_error_budget - computed: false, optional: true, required: false
   private _showErrorBudget?: boolean | cdktf.IResolvable; 
   public get showErrorBudget() {
-    return this.getBooleanAttribute('show_error_budget') as any;
+    return this.getBooleanAttribute('show_error_budget');
   }
   public set showErrorBudget(value: boolean | cdktf.IResolvable) {
     this._showErrorBudget = value;
@@ -2574,8 +2574,8 @@ export interface DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomL
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2623,11 +2623,11 @@ export interface DashboardWidgetGroupDefinitionWidgetServicemapDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetServicemapDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetServicemapDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2649,7 +2649,7 @@ export class DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2779,12 +2779,12 @@ export class DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputRefer
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetGroupDefinitionWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -2822,8 +2822,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLin
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2857,7 +2857,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInl
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInline): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2876,7 +2876,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -2916,7 +2916,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineO
   // hide_percent - computed: false, optional: true, required: false
   private _hidePercent?: boolean | cdktf.IResolvable; 
   public get hidePercent() {
-    return this.getBooleanAttribute('hide_percent') as any;
+    return this.getBooleanAttribute('hide_percent');
   }
   public set hidePercent(value: boolean | cdktf.IResolvable) {
     this._hidePercent = value;
@@ -2932,7 +2932,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineO
   // hide_value - computed: false, optional: true, required: false
   private _hideValue?: boolean | cdktf.IResolvable; 
   public get hideValue() {
-    return this.getBooleanAttribute('hide_value') as any;
+    return this.getBooleanAttribute('hide_value');
   }
   public set hideValue(value: boolean | cdktf.IResolvable) {
     this._hideValue = value;
@@ -2968,7 +2968,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTab
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -2985,7 +2985,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3045,7 +3045,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAp
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3064,7 +3064,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3168,7 +3168,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAp
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3187,7 +3187,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3287,8 +3287,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAp
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3320,8 +3320,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAp
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3356,17 +3356,17 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAp
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3387,7 +3387,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3466,7 +3466,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -3482,12 +3482,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -3499,12 +3499,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -3537,7 +3537,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3556,7 +3556,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3660,7 +3660,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3679,7 +3679,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3779,8 +3779,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAu
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3812,8 +3812,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAu
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3848,17 +3848,17 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -3879,7 +3879,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -3958,7 +3958,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -3974,12 +3974,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -3991,12 +3991,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -4064,8 +4064,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFo
   readonly value: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4098,7 +4098,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFo
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimitOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4116,7 +4116,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormul
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4203,7 +4203,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFo
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
   /**
   * limit block
   * 
@@ -4212,8 +4212,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFo
   readonly limit?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimit;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4248,7 +4248,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLo
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4267,7 +4267,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4371,7 +4371,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLo
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4390,7 +4390,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4490,8 +4490,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLo
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4523,8 +4523,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLo
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4559,17 +4559,17 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLo
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4590,7 +4590,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4669,7 +4669,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -4685,12 +4685,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -4702,12 +4702,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -4740,7 +4740,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNe
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4759,7 +4759,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4863,7 +4863,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNe
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -4882,7 +4882,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -4982,8 +4982,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNe
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5015,8 +5015,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNe
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5051,17 +5051,17 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNe
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5082,7 +5082,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5161,7 +5161,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -5177,12 +5177,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -5194,12 +5194,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -5238,7 +5238,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestPr
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5258,7 +5258,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProces
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5426,7 +5426,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5452,7 +5452,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryA
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -5560,7 +5560,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryA
   // is_upstream - computed: false, optional: true, required: false
   private _isUpstream?: boolean | cdktf.IResolvable; 
   public get isUpstream() {
-    return this.getBooleanAttribute('is_upstream') as any;
+    return this.getBooleanAttribute('is_upstream');
   }
   public set isUpstream(value: boolean | cdktf.IResolvable) {
     this._isUpstream = value;
@@ -5734,7 +5734,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -5760,7 +5760,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryA
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6005,8 +6005,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
   readonly metric?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6039,7 +6039,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6058,7 +6058,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6161,8 +6161,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
   readonly sort?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6183,7 +6183,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6200,7 +6200,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6262,13 +6262,13 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[];
+  readonly compute: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   * 
@@ -6278,7 +6278,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6300,7 +6300,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6398,12 +6398,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[]; 
+  private _compute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable; 
   public get compute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute') as any;
+    return this.interpolationForAttribute('compute');
   }
-  public set compute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[]) {
+  public set compute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6412,12 +6412,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -6429,7 +6429,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(this as any, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
   public get search() {
     return this._search;
   }
@@ -6472,7 +6472,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6492,7 +6492,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryM
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6651,7 +6651,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6676,7 +6676,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryP
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -6781,7 +6781,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryP
   // is_normalized_cpu - computed: false, optional: true, required: false
   private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
   public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu') as any;
+    return this.getBooleanAttribute('is_normalized_cpu');
   }
   public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
     this._isNormalizedCpu = value;
@@ -6917,8 +6917,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQu
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6953,7 +6953,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -6972,7 +6972,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -7076,7 +7076,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRu
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7095,7 +7095,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -7195,8 +7195,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRu
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7228,8 +7228,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRu
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7264,17 +7264,17 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRu
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7295,7 +7295,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -7374,7 +7374,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -7390,12 +7390,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -7407,12 +7407,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -7445,7 +7445,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSe
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7464,7 +7464,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -7568,7 +7568,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSe
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7587,7 +7587,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -7687,8 +7687,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSe
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7720,8 +7720,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSe
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7756,17 +7756,17 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSe
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -7787,7 +7787,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -7866,7 +7866,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -7882,12 +7882,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -7899,12 +7899,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -7939,7 +7939,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula[];
+  readonly formula?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula[] | cdktf.IResolvable;
   /**
   * log_query block
   * 
@@ -7963,7 +7963,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery[];
+  readonly query?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery[] | cdktf.IResolvable;
   /**
   * rum_query block
   * 
@@ -7978,8 +7978,8 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest {
   readonly securityQuery?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8033,7 +8033,7 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * legend_inline block
   * 
@@ -8051,11 +8051,11 @@ export interface DashboardWidgetGroupDefinitionWidgetSunburstDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest[];
+  readonly request?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetSunburstDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8080,7 +8080,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -8156,7 +8156,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   // hide_total - computed: false, optional: true, required: false
   private _hideTotal?: boolean | cdktf.IResolvable; 
   public get hideTotal() {
-    return this.getBooleanAttribute('hide_total') as any;
+    return this.getBooleanAttribute('hide_total');
   }
   public set hideTotal(value: boolean | cdktf.IResolvable) {
     this._hideTotal = value;
@@ -8234,12 +8234,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -8251,7 +8251,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   }
 
   // legend_inline - computed: false, optional: true, required: false
-  private _legendInline = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference(this as any, "legend_inline", true);
+  private _legendInline = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference(this, "legend_inline", true);
   public get legendInline() {
     return this._legendInline;
   }
@@ -8267,7 +8267,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   }
 
   // legend_table - computed: false, optional: true, required: false
-  private _legendTable = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference(this as any, "legend_table", true);
+  private _legendTable = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference(this, "legend_table", true);
   public get legendTable() {
     return this._legendTable;
   }
@@ -8283,12 +8283,12 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   }
 
   // request - computed: false, optional: true, required: false
-  private _request?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest[]; 
+  private _request?: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest[] | cdktf.IResolvable; 
   public get request() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request') as any;
+    return this.interpolationForAttribute('request');
   }
-  public set request(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest[]) {
+  public set request(value: DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequest[] | cdktf.IResolvable) {
     this._request = value;
   }
   public resetRequest() {
@@ -8326,8 +8326,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomL
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8354,8 +8354,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent {
   readonly tagsExecution?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEventToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEventToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8386,8 +8386,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker 
   readonly value: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarkerToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarkerToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8420,7 +8420,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8439,7 +8439,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -8543,7 +8543,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8562,7 +8562,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -8662,8 +8662,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8695,8 +8695,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8731,17 +8731,17 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8762,7 +8762,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -8841,7 +8841,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -8857,12 +8857,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -8874,12 +8874,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -8912,7 +8912,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -8931,7 +8931,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -9035,7 +9035,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9054,7 +9054,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -9154,8 +9154,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9187,8 +9187,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9223,17 +9223,17 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9254,7 +9254,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -9333,7 +9333,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -9349,12 +9349,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -9366,12 +9366,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -9439,8 +9439,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly value: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9473,7 +9473,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9491,7 +9491,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestForm
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -9578,7 +9578,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
   /**
   * limit block
   * 
@@ -9587,8 +9587,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly limit?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9623,7 +9623,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9642,7 +9642,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -9746,7 +9746,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9765,7 +9765,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -9865,8 +9865,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9898,8 +9898,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9934,17 +9934,17 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -9965,7 +9965,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -10044,7 +10044,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -10060,12 +10060,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -10077,12 +10077,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -10108,8 +10108,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly expression: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadataToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadataToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10141,7 +10141,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10160,7 +10160,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -10264,7 +10264,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10283,7 +10283,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -10383,8 +10383,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10416,8 +10416,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10452,17 +10452,17 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10483,7 +10483,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -10562,7 +10562,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -10578,12 +10578,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -10595,12 +10595,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -10639,7 +10639,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10659,7 +10659,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -10827,7 +10827,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -10853,7 +10853,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -10961,7 +10961,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   // is_upstream - computed: false, optional: true, required: false
   private _isUpstream?: boolean | cdktf.IResolvable; 
   public get isUpstream() {
-    return this.getBooleanAttribute('is_upstream') as any;
+    return this.getBooleanAttribute('is_upstream');
   }
   public set isUpstream(value: boolean | cdktf.IResolvable) {
     this._isUpstream = value;
@@ -11135,7 +11135,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11161,7 +11161,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -11406,8 +11406,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly metric?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11440,7 +11440,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11459,7 +11459,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -11562,8 +11562,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sort?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11584,7 +11584,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11601,7 +11601,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -11663,13 +11663,13 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[];
+  readonly compute: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   * 
@@ -11679,7 +11679,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11701,7 +11701,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -11799,12 +11799,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[]; 
+  private _compute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable; 
   public get compute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute') as any;
+    return this.interpolationForAttribute('compute');
   }
-  public set compute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[]) {
+  public set compute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -11813,12 +11813,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -11830,7 +11830,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(this as any, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
   public get search() {
     return this._search;
   }
@@ -11873,7 +11873,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -11893,7 +11893,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -12052,7 +12052,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12077,7 +12077,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -12182,7 +12182,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   // is_normalized_cpu - computed: false, optional: true, required: false
   private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
   public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu') as any;
+    return this.getBooleanAttribute('is_normalized_cpu');
   }
   public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
     this._isNormalizedCpu = value;
@@ -12318,8 +12318,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12354,7 +12354,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12373,7 +12373,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -12477,7 +12477,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12496,7 +12496,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -12596,8 +12596,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12629,8 +12629,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12665,17 +12665,17 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12696,7 +12696,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -12775,7 +12775,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -12791,12 +12791,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -12808,12 +12808,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -12846,7 +12846,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12865,7 +12865,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -12969,7 +12969,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -12988,7 +12988,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -13088,8 +13088,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13121,8 +13121,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13157,17 +13157,17 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13188,7 +13188,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -13267,7 +13267,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -13283,12 +13283,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -13300,12 +13300,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -13338,7 +13338,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13357,7 +13357,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -13478,7 +13478,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula[];
+  readonly formula?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula[] | cdktf.IResolvable;
   /**
   * log_query block
   * 
@@ -13490,7 +13490,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metadata Dashboard#metadata}
   */
-  readonly metadata?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata[];
+  readonly metadata?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata[] | cdktf.IResolvable;
   /**
   * network_query block
   * 
@@ -13508,7 +13508,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery[];
+  readonly query?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery[] | cdktf.IResolvable;
   /**
   * rum_query block
   * 
@@ -13529,8 +13529,8 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest
   readonly style?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13586,7 +13586,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYa
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13607,7 +13607,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -13659,7 +13659,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisO
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -13770,7 +13770,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis {
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -13791,7 +13791,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutput
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -13843,7 +13843,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutput
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -13974,25 +13974,25 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * event block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event Dashboard#event}
   */
-  readonly event?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[];
+  readonly event?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[] | cdktf.IResolvable;
   /**
   * marker block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#marker Dashboard#marker}
   */
-  readonly marker?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[];
+  readonly marker?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[] | cdktf.IResolvable;
   /**
   * request block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[];
+  readonly request?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[] | cdktf.IResolvable;
   /**
   * right_yaxis block
   * 
@@ -14008,7 +14008,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition {
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14038,7 +14038,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -14144,7 +14144,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   // legend_columns - computed: false, optional: true, required: false
   private _legendColumns?: string[]; 
   public get legendColumns() {
-    return this.getListAttribute('legend_columns');
+    return cdktf.Fn.tolist(this.getListAttribute('legend_columns'));
   }
   public set legendColumns(value: string[]) {
     this._legendColumns = value;
@@ -14208,7 +14208,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   // show_legend - computed: false, optional: true, required: false
   private _showLegend?: boolean | cdktf.IResolvable; 
   public get showLegend() {
-    return this.getBooleanAttribute('show_legend') as any;
+    return this.getBooleanAttribute('show_legend');
   }
   public set showLegend(value: boolean | cdktf.IResolvable) {
     this._showLegend = value;
@@ -14270,12 +14270,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -14287,12 +14287,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // event - computed: false, optional: true, required: false
-  private _event?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[]; 
+  private _event?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[] | cdktf.IResolvable; 
   public get event() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event') as any;
+    return this.interpolationForAttribute('event');
   }
-  public set event(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[]) {
+  public set event(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEvent[] | cdktf.IResolvable) {
     this._event = value;
   }
   public resetEvent() {
@@ -14304,12 +14304,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // marker - computed: false, optional: true, required: false
-  private _marker?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[]; 
+  private _marker?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[] | cdktf.IResolvable; 
   public get marker() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('marker') as any;
+    return this.interpolationForAttribute('marker');
   }
-  public set marker(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[]) {
+  public set marker(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarker[] | cdktf.IResolvable) {
     this._marker = value;
   }
   public resetMarker() {
@@ -14321,12 +14321,12 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // request - computed: false, optional: true, required: false
-  private _request?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[]; 
+  private _request?: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[] | cdktf.IResolvable; 
   public get request() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request') as any;
+    return this.interpolationForAttribute('request');
   }
-  public set request(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[]) {
+  public set request(value: DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequest[] | cdktf.IResolvable) {
     this._request = value;
   }
   public resetRequest() {
@@ -14338,7 +14338,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // right_yaxis - computed: false, optional: true, required: false
-  private _rightYaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference(this as any, "right_yaxis", true);
+  private _rightYaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference(this, "right_yaxis", true);
   public get rightYaxis() {
     return this._rightYaxis;
   }
@@ -14354,7 +14354,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference(this as any, "yaxis", true);
+  private _yaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference(this, "yaxis", true);
   public get yaxis() {
     return this._yaxis;
   }
@@ -14396,8 +14396,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14431,7 +14431,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14450,7 +14450,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -14554,7 +14554,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14573,7 +14573,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -14673,8 +14673,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14706,8 +14706,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14742,17 +14742,17 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApm
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14773,7 +14773,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -14852,7 +14852,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -14868,12 +14868,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -14885,12 +14885,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -14923,7 +14923,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -14942,7 +14942,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -15046,7 +15046,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15065,7 +15065,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -15165,8 +15165,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15198,8 +15198,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15234,17 +15234,17 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAud
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15265,7 +15265,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -15344,7 +15344,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -15360,12 +15360,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -15377,12 +15377,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -15450,8 +15450,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestCon
   readonly value: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15525,8 +15525,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   readonly value: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15559,7 +15559,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15577,7 +15577,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -15664,7 +15664,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
   /**
   * limit block
   * 
@@ -15673,8 +15673,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFor
   readonly limit?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15709,7 +15709,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15728,7 +15728,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -15832,7 +15832,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15851,7 +15851,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -15951,8 +15951,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -15984,8 +15984,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -16020,17 +16020,17 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLog
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -16051,7 +16051,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -16130,7 +16130,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -16146,12 +16146,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -16163,12 +16163,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -16207,7 +16207,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestPro
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -16227,7 +16227,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcess
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -16395,7 +16395,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -16421,7 +16421,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -16529,7 +16529,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   // is_upstream - computed: false, optional: true, required: false
   private _isUpstream?: boolean | cdktf.IResolvable; 
   public get isUpstream() {
-    return this.getBooleanAttribute('is_upstream') as any;
+    return this.getBooleanAttribute('is_upstream');
   }
   public set isUpstream(value: boolean | cdktf.IResolvable) {
     this._isUpstream = value;
@@ -16703,7 +16703,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -16729,7 +16729,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -16974,8 +16974,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   readonly metric?: string;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17008,7 +17008,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17027,7 +17027,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -17130,8 +17130,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   readonly sort?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17152,7 +17152,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17169,7 +17169,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -17231,13 +17231,13 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[];
+  readonly compute: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   * 
@@ -17247,7 +17247,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17269,7 +17269,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -17367,12 +17367,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[]; 
+  private _compute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable; 
   public get compute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute') as any;
+    return this.interpolationForAttribute('compute');
   }
-  public set compute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[]) {
+  public set compute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -17381,12 +17381,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -17398,7 +17398,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(this as any, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
   public get search() {
     return this._search;
   }
@@ -17441,7 +17441,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17461,7 +17461,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -17620,7 +17620,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17645,7 +17645,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryPr
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -17750,7 +17750,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryPr
   // is_normalized_cpu - computed: false, optional: true, required: false
   private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
   public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu') as any;
+    return this.getBooleanAttribute('is_normalized_cpu');
   }
   public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
     this._isNormalizedCpu = value;
@@ -17886,8 +17886,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQue
   readonly processQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17922,7 +17922,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -17941,7 +17941,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18045,7 +18045,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18064,7 +18064,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18164,8 +18164,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18197,8 +18197,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18233,17 +18233,17 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18264,7 +18264,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18343,7 +18343,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -18359,12 +18359,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -18376,12 +18376,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -18414,7 +18414,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18433,7 +18433,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18537,7 +18537,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18556,7 +18556,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18656,8 +18656,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18689,8 +18689,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   readonly interval?: number;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18725,17 +18725,17 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSec
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18756,7 +18756,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18835,7 +18835,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -18851,12 +18851,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -18868,12 +18868,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -18894,7 +18894,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSty
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -18911,7 +18911,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -18976,13 +18976,13 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormats[] | cdktf.IResolvable;
   /**
   * formula block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula[];
+  readonly formula?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula[] | cdktf.IResolvable;
   /**
   * log_query block
   * 
@@ -19000,7 +19000,7 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuery[];
+  readonly query?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuery[] | cdktf.IResolvable;
   /**
   * rum_query block
   * 
@@ -19021,8 +19021,8 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest {
   readonly style?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -19071,17 +19071,17 @@ export interface DashboardWidgetGroupDefinitionWidgetToplistDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * request block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[];
+  readonly request?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetToplistDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -19103,7 +19103,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReferenc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -19223,12 +19223,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReferenc
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -19240,12 +19240,12 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReferenc
   }
 
   // request - computed: false, optional: true, required: false
-  private _request?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[]; 
+  private _request?: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[] | cdktf.IResolvable; 
   public get request() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request') as any;
+    return this.interpolationForAttribute('request');
   }
-  public set request(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[]) {
+  public set request(value: DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequest[] | cdktf.IResolvable) {
     this._request = value;
   }
   public resetRequest() {
@@ -19350,7 +19350,7 @@ export interface DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition {
 }
 
 export function dashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -19381,7 +19381,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -19551,7 +19551,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   // show_breakdown - computed: false, optional: true, required: false
   private _showBreakdown?: boolean | cdktf.IResolvable; 
   public get showBreakdown() {
-    return this.getBooleanAttribute('show_breakdown') as any;
+    return this.getBooleanAttribute('show_breakdown');
   }
   public set showBreakdown(value: boolean | cdktf.IResolvable) {
     this._showBreakdown = value;
@@ -19567,7 +19567,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   // show_distribution - computed: false, optional: true, required: false
   private _showDistribution?: boolean | cdktf.IResolvable; 
   public get showDistribution() {
-    return this.getBooleanAttribute('show_distribution') as any;
+    return this.getBooleanAttribute('show_distribution');
   }
   public set showDistribution(value: boolean | cdktf.IResolvable) {
     this._showDistribution = value;
@@ -19583,7 +19583,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   // show_errors - computed: false, optional: true, required: false
   private _showErrors?: boolean | cdktf.IResolvable; 
   public get showErrors() {
-    return this.getBooleanAttribute('show_errors') as any;
+    return this.getBooleanAttribute('show_errors');
   }
   public set showErrors(value: boolean | cdktf.IResolvable) {
     this._showErrors = value;
@@ -19599,7 +19599,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   // show_hits - computed: false, optional: true, required: false
   private _showHits?: boolean | cdktf.IResolvable; 
   public get showHits() {
-    return this.getBooleanAttribute('show_hits') as any;
+    return this.getBooleanAttribute('show_hits');
   }
   public set showHits(value: boolean | cdktf.IResolvable) {
     this._showHits = value;
@@ -19615,7 +19615,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   // show_latency - computed: false, optional: true, required: false
   private _showLatency?: boolean | cdktf.IResolvable; 
   public get showLatency() {
-    return this.getBooleanAttribute('show_latency') as any;
+    return this.getBooleanAttribute('show_latency');
   }
   public set showLatency(value: boolean | cdktf.IResolvable) {
     this._showLatency = value;
@@ -19631,7 +19631,7 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   // show_resource_list - computed: false, optional: true, required: false
   private _showResourceList?: boolean | cdktf.IResolvable; 
   public get showResourceList() {
-    return this.getBooleanAttribute('show_resource_list') as any;
+    return this.getBooleanAttribute('show_resource_list');
   }
   public set showResourceList(value: boolean | cdktf.IResolvable) {
     this._showResourceList = value;
@@ -19755,7 +19755,7 @@ export interface DashboardWidgetGroupDefinitionWidgetWidgetLayout {
 }
 
 export function dashboardWidgetGroupDefinitionWidgetWidgetLayoutToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference | DashboardWidgetGroupDefinitionWidgetWidgetLayout): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -19776,7 +19776,7 @@ export class DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference ext
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -19841,7 +19841,7 @@ export class DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference ext
   // is_column_break - computed: false, optional: true, required: false
   private _isColumnBreak?: boolean | cdktf.IResolvable; 
   public get isColumnBreak() {
-    return this.getBooleanAttribute('is_column_break') as any;
+    return this.getBooleanAttribute('is_column_break');
   }
   public set isColumnBreak(value: boolean | cdktf.IResolvable) {
     this._isColumnBreak = value;
@@ -20052,8 +20052,8 @@ export interface DashboardWidgetGroupDefinitionWidget {
   readonly widgetLayout?: DashboardWidgetGroupDefinitionWidgetWidgetLayout;
 }
 
-export function dashboardWidgetGroupDefinitionWidgetToTerraform(struct?: DashboardWidgetGroupDefinitionWidget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetGroupDefinitionWidgetToTerraform(struct?: DashboardWidgetGroupDefinitionWidget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20123,11 +20123,11 @@ export interface DashboardWidgetGroupDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#widget Dashboard#widget}
   */
-  readonly widget: DashboardWidgetGroupDefinitionWidget[];
+  readonly widget: DashboardWidgetGroupDefinitionWidget[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetGroupDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionOutputReference | DashboardWidgetGroupDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20149,7 +20149,7 @@ export class DashboardWidgetGroupDefinitionOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -20252,7 +20252,7 @@ export class DashboardWidgetGroupDefinitionOutputReference extends cdktf.Complex
   // show_title - computed: false, optional: true, required: false
   private _showTitle?: boolean | cdktf.IResolvable; 
   public get showTitle() {
-    return this.getBooleanAttribute('show_title') as any;
+    return this.getBooleanAttribute('show_title');
   }
   public set showTitle(value: boolean | cdktf.IResolvable) {
     this._showTitle = value;
@@ -20282,12 +20282,12 @@ export class DashboardWidgetGroupDefinitionOutputReference extends cdktf.Complex
   }
 
   // widget - computed: false, optional: false, required: true
-  private _widget?: DashboardWidgetGroupDefinitionWidget[]; 
+  private _widget?: DashboardWidgetGroupDefinitionWidget[] | cdktf.IResolvable; 
   public get widget() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('widget') as any;
+    return this.interpolationForAttribute('widget');
   }
-  public set widget(value: DashboardWidgetGroupDefinitionWidget[]) {
+  public set widget(value: DashboardWidgetGroupDefinitionWidget[] | cdktf.IResolvable) {
     this._widget = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -20322,8 +20322,8 @@ export interface DashboardWidgetHeatmapDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetHeatmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetHeatmapDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetHeatmapDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20350,8 +20350,8 @@ export interface DashboardWidgetHeatmapDefinitionEvent {
   readonly tagsExecution?: string;
 }
 
-export function dashboardWidgetHeatmapDefinitionEventToTerraform(struct?: DashboardWidgetHeatmapDefinitionEvent): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionEventToTerraform(struct?: DashboardWidgetHeatmapDefinitionEvent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20383,7 +20383,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery {
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20402,7 +20402,7 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -20506,7 +20506,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20525,7 +20525,7 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -20625,8 +20625,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20658,8 +20658,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute {
   readonly interval?: number;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20694,17 +20694,17 @@ export interface DashboardWidgetHeatmapDefinitionRequestApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20725,7 +20725,7 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -20804,7 +20804,7 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -20820,12 +20820,12 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -20837,12 +20837,12 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -20875,7 +20875,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery {
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -20894,7 +20894,7 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -20998,7 +20998,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21017,7 +21017,7 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -21117,8 +21117,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21150,8 +21150,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute {
   readonly interval?: number;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21186,17 +21186,17 @@ export interface DashboardWidgetHeatmapDefinitionRequestLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21217,7 +21217,7 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -21296,7 +21296,7 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -21312,12 +21312,12 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -21329,12 +21329,12 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -21373,7 +21373,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestProcessQuery {
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21393,7 +21393,7 @@ export class DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -21519,7 +21519,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery {
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21538,7 +21538,7 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -21642,7 +21642,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21661,7 +21661,7 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -21761,8 +21761,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21794,8 +21794,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute {
   readonly interval?: number;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21830,17 +21830,17 @@ export interface DashboardWidgetHeatmapDefinitionRequestRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -21861,7 +21861,7 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -21940,7 +21940,7 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -21956,12 +21956,12 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -21973,12 +21973,12 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -22011,7 +22011,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuer
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22030,7 +22030,7 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -22134,7 +22134,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySort
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22153,7 +22153,7 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -22253,8 +22253,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22286,8 +22286,8 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22322,17 +22322,17 @@ export interface DashboardWidgetHeatmapDefinitionRequestSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference | DashboardWidgetHeatmapDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22353,7 +22353,7 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -22432,7 +22432,7 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -22448,12 +22448,12 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -22465,12 +22465,12 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHeatmapDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -22491,7 +22491,7 @@ export interface DashboardWidgetHeatmapDefinitionRequestStyle {
 }
 
 export function dashboardWidgetHeatmapDefinitionRequestStyleToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequestStyleOutputReference | DashboardWidgetHeatmapDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22508,7 +22508,7 @@ export class DashboardWidgetHeatmapDefinitionRequestStyleOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -22594,8 +22594,8 @@ export interface DashboardWidgetHeatmapDefinitionRequest {
   readonly style?: DashboardWidgetHeatmapDefinitionRequestStyle;
 }
 
-export function dashboardWidgetHeatmapDefinitionRequestToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHeatmapDefinitionRequestToTerraform(struct?: DashboardWidgetHeatmapDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22644,7 +22644,7 @@ export interface DashboardWidgetHeatmapDefinitionYaxis {
 }
 
 export function dashboardWidgetHeatmapDefinitionYaxisToTerraform(struct?: DashboardWidgetHeatmapDefinitionYaxisOutputReference | DashboardWidgetHeatmapDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22665,7 +22665,7 @@ export class DashboardWidgetHeatmapDefinitionYaxisOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -22717,7 +22717,7 @@ export class DashboardWidgetHeatmapDefinitionYaxisOutputReference extends cdktf.
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -22836,19 +22836,19 @@ export interface DashboardWidgetHeatmapDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetHeatmapDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetHeatmapDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * event block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event Dashboard#event}
   */
-  readonly event?: DashboardWidgetHeatmapDefinitionEvent[];
+  readonly event?: DashboardWidgetHeatmapDefinitionEvent[] | cdktf.IResolvable;
   /**
   * request block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetHeatmapDefinitionRequest[];
+  readonly request?: DashboardWidgetHeatmapDefinitionRequest[] | cdktf.IResolvable;
   /**
   * yaxis block
   * 
@@ -22858,7 +22858,7 @@ export interface DashboardWidgetHeatmapDefinition {
 }
 
 export function dashboardWidgetHeatmapDefinitionToTerraform(struct?: DashboardWidgetHeatmapDefinitionOutputReference | DashboardWidgetHeatmapDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -22884,7 +22884,7 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -22998,7 +22998,7 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   // show_legend - computed: false, optional: true, required: false
   private _showLegend?: boolean | cdktf.IResolvable; 
   public get showLegend() {
-    return this.getBooleanAttribute('show_legend') as any;
+    return this.getBooleanAttribute('show_legend');
   }
   public set showLegend(value: boolean | cdktf.IResolvable) {
     this._showLegend = value;
@@ -23060,12 +23060,12 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetHeatmapDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetHeatmapDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetHeatmapDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetHeatmapDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -23077,12 +23077,12 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // event - computed: false, optional: true, required: false
-  private _event?: DashboardWidgetHeatmapDefinitionEvent[]; 
+  private _event?: DashboardWidgetHeatmapDefinitionEvent[] | cdktf.IResolvable; 
   public get event() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event') as any;
+    return this.interpolationForAttribute('event');
   }
-  public set event(value: DashboardWidgetHeatmapDefinitionEvent[]) {
+  public set event(value: DashboardWidgetHeatmapDefinitionEvent[] | cdktf.IResolvable) {
     this._event = value;
   }
   public resetEvent() {
@@ -23094,12 +23094,12 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // request - computed: false, optional: true, required: false
-  private _request?: DashboardWidgetHeatmapDefinitionRequest[]; 
+  private _request?: DashboardWidgetHeatmapDefinitionRequest[] | cdktf.IResolvable; 
   public get request() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request') as any;
+    return this.interpolationForAttribute('request');
   }
-  public set request(value: DashboardWidgetHeatmapDefinitionRequest[]) {
+  public set request(value: DashboardWidgetHeatmapDefinitionRequest[] | cdktf.IResolvable) {
     this._request = value;
   }
   public resetRequest() {
@@ -23111,7 +23111,7 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetHeatmapDefinitionYaxisOutputReference(this as any, "yaxis", true);
+  private _yaxis = new DashboardWidgetHeatmapDefinitionYaxisOutputReference(this, "yaxis", true);
   public get yaxis() {
     return this._yaxis;
   }
@@ -23153,8 +23153,8 @@ export interface DashboardWidgetHostmapDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetHostmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetHostmapDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetHostmapDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23188,7 +23188,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23207,7 +23207,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -23311,7 +23311,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQ
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23330,7 +23330,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -23430,8 +23430,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillApmQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillApmQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23463,8 +23463,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillApmQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillApmQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23499,17 +23499,17 @@ export interface DashboardWidgetHostmapDefinitionRequestFillApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillApmQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23530,7 +23530,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -23609,7 +23609,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -23625,12 +23625,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -23642,12 +23642,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -23680,7 +23680,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23699,7 +23699,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -23803,7 +23803,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQ
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23822,7 +23822,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -23922,8 +23922,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillLogQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillLogQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23955,8 +23955,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -23991,17 +23991,17 @@ export interface DashboardWidgetHostmapDefinitionRequestFillLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillLogQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24022,7 +24022,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -24101,7 +24101,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -24117,12 +24117,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -24134,12 +24134,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -24178,7 +24178,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillProcessQuery {
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillProcessQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24198,7 +24198,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -24324,7 +24324,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24343,7 +24343,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -24447,7 +24447,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQ
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24466,7 +24466,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -24566,8 +24566,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillRumQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillRumQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24599,8 +24599,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillRumQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillRumQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24635,17 +24635,17 @@ export interface DashboardWidgetHostmapDefinitionRequestFillRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillRumQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24666,7 +24666,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -24745,7 +24745,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -24761,12 +24761,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -24778,12 +24778,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -24816,7 +24816,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryCompute
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24835,7 +24835,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -24939,7 +24939,7 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -24958,7 +24958,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySort
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -25058,8 +25058,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25091,8 +25091,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCo
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25127,17 +25127,17 @@ export interface DashboardWidgetHostmapDefinitionRequestFillSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestFillSecurityQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference | DashboardWidgetHostmapDefinitionRequestFillSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25158,7 +25158,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -25237,7 +25237,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -25253,12 +25253,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -25270,12 +25270,12 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestFillSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -25325,8 +25325,8 @@ export interface DashboardWidgetHostmapDefinitionRequestFill {
   readonly securityQuery?: DashboardWidgetHostmapDefinitionRequestFillSecurityQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestFillToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFill): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestFillToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestFill | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25362,7 +25362,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25381,7 +25381,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -25485,7 +25485,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQ
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25504,7 +25504,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -25604,8 +25604,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25637,8 +25637,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25673,17 +25673,17 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeApmQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25704,7 +25704,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -25783,7 +25783,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -25799,12 +25799,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -25816,12 +25816,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -25854,7 +25854,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25873,7 +25873,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -25977,7 +25977,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQ
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -25996,7 +25996,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -26096,8 +26096,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26129,8 +26129,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26165,17 +26165,17 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeLogQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26196,7 +26196,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -26275,7 +26275,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -26291,12 +26291,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -26308,12 +26308,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -26352,7 +26352,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeProcessQuery {
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeProcessQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26372,7 +26372,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -26498,7 +26498,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26517,7 +26517,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -26621,7 +26621,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQ
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26640,7 +26640,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -26740,8 +26740,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26773,8 +26773,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26809,17 +26809,17 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeRumQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -26840,7 +26840,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -26919,7 +26919,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -26935,12 +26935,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -26952,12 +26952,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -26990,7 +26990,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryCompute
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27009,7 +27009,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -27113,7 +27113,7 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27132,7 +27132,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySort
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -27232,8 +27232,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy
   readonly sortQuery?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupByToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27265,8 +27265,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCo
   readonly interval?: number;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27301,17 +27301,17 @@ export interface DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestSizeSecurityQueryToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference | DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27332,7 +27332,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -27411,7 +27411,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -27427,12 +27427,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -27444,12 +27444,12 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -27499,8 +27499,8 @@ export interface DashboardWidgetHostmapDefinitionRequestSize {
   readonly securityQuery?: DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery;
 }
 
-export function dashboardWidgetHostmapDefinitionRequestSizeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSize): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetHostmapDefinitionRequestSizeToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestSize | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27520,17 +27520,17 @@ export interface DashboardWidgetHostmapDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#fill Dashboard#fill}
   */
-  readonly fill?: DashboardWidgetHostmapDefinitionRequestFill[];
+  readonly fill?: DashboardWidgetHostmapDefinitionRequestFill[] | cdktf.IResolvable;
   /**
   * size block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#size Dashboard#size}
   */
-  readonly size?: DashboardWidgetHostmapDefinitionRequestSize[];
+  readonly size?: DashboardWidgetHostmapDefinitionRequestSize[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetHostmapDefinitionRequestToTerraform(struct?: DashboardWidgetHostmapDefinitionRequestOutputReference | DashboardWidgetHostmapDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27548,7 +27548,7 @@ export class DashboardWidgetHostmapDefinitionRequestOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -27580,12 +27580,12 @@ export class DashboardWidgetHostmapDefinitionRequestOutputReference extends cdkt
   }
 
   // fill - computed: false, optional: true, required: false
-  private _fill?: DashboardWidgetHostmapDefinitionRequestFill[]; 
+  private _fill?: DashboardWidgetHostmapDefinitionRequestFill[] | cdktf.IResolvable; 
   public get fill() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('fill') as any;
+    return this.interpolationForAttribute('fill');
   }
-  public set fill(value: DashboardWidgetHostmapDefinitionRequestFill[]) {
+  public set fill(value: DashboardWidgetHostmapDefinitionRequestFill[] | cdktf.IResolvable) {
     this._fill = value;
   }
   public resetFill() {
@@ -27597,12 +27597,12 @@ export class DashboardWidgetHostmapDefinitionRequestOutputReference extends cdkt
   }
 
   // size - computed: false, optional: true, required: false
-  private _size?: DashboardWidgetHostmapDefinitionRequestSize[]; 
+  private _size?: DashboardWidgetHostmapDefinitionRequestSize[] | cdktf.IResolvable; 
   public get size() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('size') as any;
+    return this.interpolationForAttribute('size');
   }
-  public set size(value: DashboardWidgetHostmapDefinitionRequestSize[]) {
+  public set size(value: DashboardWidgetHostmapDefinitionRequestSize[] | cdktf.IResolvable) {
     this._size = value;
   }
   public resetSize() {
@@ -27641,7 +27641,7 @@ export interface DashboardWidgetHostmapDefinitionStyle {
 }
 
 export function dashboardWidgetHostmapDefinitionStyleToTerraform(struct?: DashboardWidgetHostmapDefinitionStyleOutputReference | DashboardWidgetHostmapDefinitionStyle): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27661,7 +27661,7 @@ export class DashboardWidgetHostmapDefinitionStyleOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -27755,7 +27755,7 @@ export class DashboardWidgetHostmapDefinitionStyleOutputReference extends cdktf.
   // palette_flip - computed: false, optional: true, required: false
   private _paletteFlip?: boolean | cdktf.IResolvable; 
   public get paletteFlip() {
-    return this.getBooleanAttribute('palette_flip') as any;
+    return this.getBooleanAttribute('palette_flip');
   }
   public set paletteFlip(value: boolean | cdktf.IResolvable) {
     this._paletteFlip = value;
@@ -27822,7 +27822,7 @@ export interface DashboardWidgetHostmapDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetHostmapDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetHostmapDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * request block
   * 
@@ -27838,7 +27838,7 @@ export interface DashboardWidgetHostmapDefinition {
 }
 
 export function dashboardWidgetHostmapDefinitionToTerraform(struct?: DashboardWidgetHostmapDefinitionOutputReference | DashboardWidgetHostmapDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -27865,7 +27865,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -27969,7 +27969,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   // no_group_hosts - computed: false, optional: true, required: false
   private _noGroupHosts?: boolean | cdktf.IResolvable; 
   public get noGroupHosts() {
-    return this.getBooleanAttribute('no_group_hosts') as any;
+    return this.getBooleanAttribute('no_group_hosts');
   }
   public set noGroupHosts(value: boolean | cdktf.IResolvable) {
     this._noGroupHosts = value;
@@ -27985,7 +27985,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   // no_metric_hosts - computed: false, optional: true, required: false
   private _noMetricHosts?: boolean | cdktf.IResolvable; 
   public get noMetricHosts() {
-    return this.getBooleanAttribute('no_metric_hosts') as any;
+    return this.getBooleanAttribute('no_metric_hosts');
   }
   public set noMetricHosts(value: boolean | cdktf.IResolvable) {
     this._noMetricHosts = value;
@@ -28079,12 +28079,12 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetHostmapDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetHostmapDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetHostmapDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetHostmapDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -28096,7 +28096,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // request - computed: false, optional: true, required: false
-  private _request = new DashboardWidgetHostmapDefinitionRequestOutputReference(this as any, "request", true);
+  private _request = new DashboardWidgetHostmapDefinitionRequestOutputReference(this, "request", true);
   public get request() {
     return this._request;
   }
@@ -28112,7 +28112,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // style - computed: false, optional: true, required: false
-  private _style = new DashboardWidgetHostmapDefinitionStyleOutputReference(this as any, "style", true);
+  private _style = new DashboardWidgetHostmapDefinitionStyleOutputReference(this, "style", true);
   public get style() {
     return this._style;
   }
@@ -28137,7 +28137,7 @@ export interface DashboardWidgetIframeDefinition {
 }
 
 export function dashboardWidgetIframeDefinitionToTerraform(struct?: DashboardWidgetIframeDefinitionOutputReference | DashboardWidgetIframeDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -28154,7 +28154,7 @@ export class DashboardWidgetIframeDefinitionOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -28244,7 +28244,7 @@ export interface DashboardWidgetImageDefinition {
 }
 
 export function dashboardWidgetImageDefinitionToTerraform(struct?: DashboardWidgetImageDefinitionOutputReference | DashboardWidgetImageDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -28268,7 +28268,7 @@ export class DashboardWidgetImageDefinitionOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -28338,7 +28338,7 @@ export class DashboardWidgetImageDefinitionOutputReference extends cdktf.Complex
   // has_background - computed: false, optional: true, required: false
   private _hasBackground?: boolean | cdktf.IResolvable; 
   public get hasBackground() {
-    return this.getBooleanAttribute('has_background') as any;
+    return this.getBooleanAttribute('has_background');
   }
   public set hasBackground(value: boolean | cdktf.IResolvable) {
     this._hasBackground = value;
@@ -28354,7 +28354,7 @@ export class DashboardWidgetImageDefinitionOutputReference extends cdktf.Complex
   // has_border - computed: false, optional: true, required: false
   private _hasBorder?: boolean | cdktf.IResolvable; 
   public get hasBorder() {
-    return this.getBooleanAttribute('has_border') as any;
+    return this.getBooleanAttribute('has_border');
   }
   public set hasBorder(value: boolean | cdktf.IResolvable) {
     this._hasBorder = value;
@@ -28476,7 +28476,7 @@ export interface DashboardWidgetLogStreamDefinitionSort {
 }
 
 export function dashboardWidgetLogStreamDefinitionSortToTerraform(struct?: DashboardWidgetLogStreamDefinitionSortOutputReference | DashboardWidgetLogStreamDefinitionSort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -28494,7 +28494,7 @@ export class DashboardWidgetLogStreamDefinitionSortOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -28621,7 +28621,7 @@ export interface DashboardWidgetLogStreamDefinition {
 }
 
 export function dashboardWidgetLogStreamDefinitionToTerraform(struct?: DashboardWidgetLogStreamDefinitionOutputReference | DashboardWidgetLogStreamDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -28648,7 +28648,7 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -28816,7 +28816,7 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   // show_date_column - computed: false, optional: true, required: false
   private _showDateColumn?: boolean | cdktf.IResolvable; 
   public get showDateColumn() {
-    return this.getBooleanAttribute('show_date_column') as any;
+    return this.getBooleanAttribute('show_date_column');
   }
   public set showDateColumn(value: boolean | cdktf.IResolvable) {
     this._showDateColumn = value;
@@ -28832,7 +28832,7 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   // show_message_column - computed: false, optional: true, required: false
   private _showMessageColumn?: boolean | cdktf.IResolvable; 
   public get showMessageColumn() {
-    return this.getBooleanAttribute('show_message_column') as any;
+    return this.getBooleanAttribute('show_message_column');
   }
   public set showMessageColumn(value: boolean | cdktf.IResolvable) {
     this._showMessageColumn = value;
@@ -28894,7 +28894,7 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort = new DashboardWidgetLogStreamDefinitionSortOutputReference(this as any, "sort", true);
+  private _sort = new DashboardWidgetLogStreamDefinitionSortOutputReference(this, "sort", true);
   public get sort() {
     return this._sort;
   }
@@ -28973,7 +28973,7 @@ export interface DashboardWidgetManageStatusDefinition {
 }
 
 export function dashboardWidgetManageStatusDefinitionToTerraform(struct?: DashboardWidgetManageStatusDefinitionOutputReference | DashboardWidgetManageStatusDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -28999,7 +28999,7 @@ export class DashboardWidgetManageStatusDefinitionOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -29113,7 +29113,7 @@ export class DashboardWidgetManageStatusDefinitionOutputReference extends cdktf.
   // hide_zero_counts - computed: false, optional: true, required: false
   private _hideZeroCounts?: boolean | cdktf.IResolvable; 
   public get hideZeroCounts() {
-    return this.getBooleanAttribute('hide_zero_counts') as any;
+    return this.getBooleanAttribute('hide_zero_counts');
   }
   public set hideZeroCounts(value: boolean | cdktf.IResolvable) {
     this._hideZeroCounts = value;
@@ -29142,7 +29142,7 @@ export class DashboardWidgetManageStatusDefinitionOutputReference extends cdktf.
   // show_last_triggered - computed: false, optional: true, required: false
   private _showLastTriggered?: boolean | cdktf.IResolvable; 
   public get showLastTriggered() {
-    return this.getBooleanAttribute('show_last_triggered') as any;
+    return this.getBooleanAttribute('show_last_triggered');
   }
   public set showLastTriggered(value: boolean | cdktf.IResolvable) {
     this._showLastTriggered = value;
@@ -29293,7 +29293,7 @@ export interface DashboardWidgetNoteDefinition {
 }
 
 export function dashboardWidgetNoteDefinitionToTerraform(struct?: DashboardWidgetNoteDefinitionOutputReference | DashboardWidgetNoteDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29318,7 +29318,7 @@ export class DashboardWidgetNoteDefinitionOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -29439,7 +29439,7 @@ export class DashboardWidgetNoteDefinitionOutputReference extends cdktf.ComplexO
   // has_padding - computed: false, optional: true, required: false
   private _hasPadding?: boolean | cdktf.IResolvable; 
   public get hasPadding() {
-    return this.getBooleanAttribute('has_padding') as any;
+    return this.getBooleanAttribute('has_padding');
   }
   public set hasPadding(value: boolean | cdktf.IResolvable) {
     this._hasPadding = value;
@@ -29455,7 +29455,7 @@ export class DashboardWidgetNoteDefinitionOutputReference extends cdktf.ComplexO
   // show_tick - computed: false, optional: true, required: false
   private _showTick?: boolean | cdktf.IResolvable; 
   public get showTick() {
-    return this.getBooleanAttribute('show_tick') as any;
+    return this.getBooleanAttribute('show_tick');
   }
   public set showTick(value: boolean | cdktf.IResolvable) {
     this._showTick = value;
@@ -29559,8 +29559,8 @@ export interface DashboardWidgetQueryTableDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetQueryTableDefinitionCustomLinkToTerraform(struct?: DashboardWidgetQueryTableDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionCustomLinkToTerraform(struct?: DashboardWidgetQueryTableDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29594,7 +29594,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery 
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29613,7 +29613,7 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -29717,7 +29717,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQu
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29736,7 +29736,7 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -29836,8 +29836,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29869,8 +29869,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute 
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29905,17 +29905,17 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -29936,7 +29936,7 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -30015,7 +30015,7 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -30031,12 +30031,12 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -30048,12 +30048,12 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -30091,8 +30091,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns 
   readonly order?: string;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumnsToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumnsToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30146,11 +30146,11 @@ export interface DashboardWidgetQueryTableDefinitionRequestApmStatsQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#columns Dashboard#columns}
   */
-  readonly columns?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[];
+  readonly columns?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestApmStatsQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestApmStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30173,7 +30173,7 @@ export class DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -30316,12 +30316,12 @@ export class DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputRefere
   }
 
   // columns - computed: false, optional: true, required: false
-  private _columns?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[]; 
+  private _columns?: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[] | cdktf.IResolvable; 
   public get columns() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('columns') as any;
+    return this.interpolationForAttribute('columns');
   }
-  public set columns(value: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[]) {
+  public set columns(value: DashboardWidgetQueryTableDefinitionRequestApmStatsQueryColumns[] | cdktf.IResolvable) {
     this._columns = value;
   }
   public resetColumns() {
@@ -30389,8 +30389,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestConditionalFormats {
   readonly value: number;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestConditionalFormatsToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestConditionalFormatsToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30464,8 +30464,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFor
   readonly value: number;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30498,7 +30498,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormulaLimit {
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReference | DashboardWidgetQueryTableDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30516,7 +30516,7 @@ export class DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -30603,7 +30603,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormula {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetQueryTableDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
   /**
   * limit block
   * 
@@ -30612,8 +30612,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestFormula {
   readonly limit?: DashboardWidgetQueryTableDefinitionRequestFormulaLimit;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestFormula): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30648,7 +30648,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery 
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30667,7 +30667,7 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -30771,7 +30771,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQu
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30790,7 +30790,7 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -30890,8 +30890,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30923,8 +30923,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute 
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30959,17 +30959,17 @@ export interface DashboardWidgetQueryTableDefinitionRequestLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -30990,7 +30990,7 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -31069,7 +31069,7 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -31085,12 +31085,12 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -31102,12 +31102,12 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -31146,7 +31146,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestProcessQuery {
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -31166,7 +31166,7 @@ export class DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -31334,7 +31334,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryApmDependencySta
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -31360,7 +31360,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -31468,7 +31468,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQu
   // is_upstream - computed: false, optional: true, required: false
   private _isUpstream?: boolean | cdktf.IResolvable; 
   public get isUpstream() {
-    return this.getBooleanAttribute('is_upstream') as any;
+    return this.getBooleanAttribute('is_upstream');
   }
   public set isUpstream(value: boolean | cdktf.IResolvable) {
     this._isUpstream = value;
@@ -31642,7 +31642,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStats
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -31668,7 +31668,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -31913,8 +31913,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryComput
   readonly metric?: string;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -31947,7 +31947,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupB
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -31966,7 +31966,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -32069,8 +32069,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupB
   readonly sort?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32091,7 +32091,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32108,7 +32108,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -32170,13 +32170,13 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[];
+  readonly compute: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   * 
@@ -32186,7 +32186,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryEventQuery {
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32208,7 +32208,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -32306,12 +32306,12 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[]; 
+  private _compute?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable; 
   public get compute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute') as any;
+    return this.interpolationForAttribute('compute');
   }
-  public set compute(value: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[]) {
+  public set compute(value: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -32320,12 +32320,12 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -32337,7 +32337,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(this as any, "search", true);
+  private _search = new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
   public get search() {
     return this._search;
   }
@@ -32380,7 +32380,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery {
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32400,7 +32400,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputRef
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -32559,7 +32559,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery {
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32584,7 +32584,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -32689,7 +32689,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputRe
   // is_normalized_cpu - computed: false, optional: true, required: false
   private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
   public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu') as any;
+    return this.getBooleanAttribute('is_normalized_cpu');
   }
   public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
     this._isNormalizedCpu = value;
@@ -32825,8 +32825,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestQuery {
   readonly processQuery?: DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32861,7 +32861,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery 
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -32880,7 +32880,7 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -32984,7 +32984,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQu
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33003,7 +33003,7 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -33103,8 +33103,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33136,8 +33136,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute 
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33172,17 +33172,17 @@ export interface DashboardWidgetQueryTableDefinitionRequestRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33203,7 +33203,7 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -33282,7 +33282,7 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -33298,12 +33298,12 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -33315,12 +33315,12 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -33353,7 +33353,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQ
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33372,7 +33372,7 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -33476,7 +33476,7 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupByS
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33495,7 +33495,7 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -33595,8 +33595,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy 
   readonly sortQuery?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33628,8 +33628,8 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCom
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33664,17 +33664,17 @@ export interface DashboardWidgetQueryTableDefinitionRequestSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryTableDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputReference | DashboardWidgetQueryTableDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33695,7 +33695,7 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -33774,7 +33774,7 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -33790,12 +33790,12 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -33807,12 +33807,12 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryTableDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -33877,13 +33877,13 @@ export interface DashboardWidgetQueryTableDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetQueryTableDefinitionRequestConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetQueryTableDefinitionRequestConditionalFormats[] | cdktf.IResolvable;
   /**
   * formula block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetQueryTableDefinitionRequestFormula[];
+  readonly formula?: DashboardWidgetQueryTableDefinitionRequestFormula[] | cdktf.IResolvable;
   /**
   * log_query block
   * 
@@ -33901,7 +33901,7 @@ export interface DashboardWidgetQueryTableDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetQueryTableDefinitionRequestQuery[];
+  readonly query?: DashboardWidgetQueryTableDefinitionRequestQuery[] | cdktf.IResolvable;
   /**
   * rum_query block
   * 
@@ -33916,8 +33916,8 @@ export interface DashboardWidgetQueryTableDefinitionRequest {
   readonly securityQuery?: DashboardWidgetQueryTableDefinitionRequestSecurityQuery;
 }
 
-export function dashboardWidgetQueryTableDefinitionRequestToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryTableDefinitionRequestToTerraform(struct?: DashboardWidgetQueryTableDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -33976,17 +33976,17 @@ export interface DashboardWidgetQueryTableDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetQueryTableDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetQueryTableDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * request block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetQueryTableDefinitionRequest[];
+  readonly request?: DashboardWidgetQueryTableDefinitionRequest[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryTableDefinitionToTerraform(struct?: DashboardWidgetQueryTableDefinitionOutputReference | DashboardWidgetQueryTableDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34009,7 +34009,7 @@ export class DashboardWidgetQueryTableDefinitionOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -34151,12 +34151,12 @@ export class DashboardWidgetQueryTableDefinitionOutputReference extends cdktf.Co
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetQueryTableDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetQueryTableDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetQueryTableDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetQueryTableDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -34168,12 +34168,12 @@ export class DashboardWidgetQueryTableDefinitionOutputReference extends cdktf.Co
   }
 
   // request - computed: false, optional: true, required: false
-  private _request?: DashboardWidgetQueryTableDefinitionRequest[]; 
+  private _request?: DashboardWidgetQueryTableDefinitionRequest[] | cdktf.IResolvable; 
   public get request() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request') as any;
+    return this.interpolationForAttribute('request');
   }
-  public set request(value: DashboardWidgetQueryTableDefinitionRequest[]) {
+  public set request(value: DashboardWidgetQueryTableDefinitionRequest[] | cdktf.IResolvable) {
     this._request = value;
   }
   public resetRequest() {
@@ -34211,8 +34211,8 @@ export interface DashboardWidgetQueryValueDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetQueryValueDefinitionCustomLinkToTerraform(struct?: DashboardWidgetQueryValueDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionCustomLinkToTerraform(struct?: DashboardWidgetQueryValueDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34246,7 +34246,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery 
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34265,7 +34265,7 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -34369,7 +34369,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQu
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34388,7 +34388,7 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -34488,8 +34488,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34521,8 +34521,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute 
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34557,17 +34557,17 @@ export interface DashboardWidgetQueryValueDefinitionRequestApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34588,7 +34588,7 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -34667,7 +34667,7 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -34683,12 +34683,12 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -34700,12 +34700,12 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -34738,7 +34738,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuer
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34757,7 +34757,7 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -34861,7 +34861,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySort
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -34880,7 +34880,7 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -34980,8 +34980,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35013,8 +35013,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35049,17 +35049,17 @@ export interface DashboardWidgetQueryValueDefinitionRequestAuditQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestAuditQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35080,7 +35080,7 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -35159,7 +35159,7 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -35175,12 +35175,12 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -35192,12 +35192,12 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -35265,8 +35265,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestConditionalFormats {
   readonly value: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestConditionalFormatsToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestConditionalFormatsToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35340,8 +35340,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFor
   readonly value: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35374,7 +35374,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormulaLimit {
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference | DashboardWidgetQueryValueDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35392,7 +35392,7 @@ export class DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -35479,7 +35479,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormula {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetQueryValueDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
   /**
   * limit block
   * 
@@ -35488,8 +35488,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestFormula {
   readonly limit?: DashboardWidgetQueryValueDefinitionRequestFormulaLimit;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestFormula): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35524,7 +35524,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery 
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35543,7 +35543,7 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -35647,7 +35647,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQu
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35666,7 +35666,7 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -35766,8 +35766,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35799,8 +35799,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute 
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35835,17 +35835,17 @@ export interface DashboardWidgetQueryValueDefinitionRequestLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -35866,7 +35866,7 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -35945,7 +35945,7 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -35961,12 +35961,12 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -35978,12 +35978,12 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -36022,7 +36022,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestProcessQuery {
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36042,7 +36042,7 @@ export class DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReferen
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -36210,7 +36210,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryApmDependencySta
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36236,7 +36236,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -36344,7 +36344,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQu
   // is_upstream - computed: false, optional: true, required: false
   private _isUpstream?: boolean | cdktf.IResolvable; 
   public get isUpstream() {
-    return this.getBooleanAttribute('is_upstream') as any;
+    return this.getBooleanAttribute('is_upstream');
   }
   public set isUpstream(value: boolean | cdktf.IResolvable) {
     this._isUpstream = value;
@@ -36518,7 +36518,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStats
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36544,7 +36544,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -36789,8 +36789,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryComput
   readonly metric?: string;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36823,7 +36823,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupB
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36842,7 +36842,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -36945,8 +36945,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupB
   readonly sort?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36967,7 +36967,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -36984,7 +36984,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -37046,13 +37046,13 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[];
+  readonly compute: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   * 
@@ -37062,7 +37062,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryEventQuery {
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -37084,7 +37084,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -37182,12 +37182,12 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[]; 
+  private _compute?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable; 
   public get compute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute') as any;
+    return this.interpolationForAttribute('compute');
   }
-  public set compute(value: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[]) {
+  public set compute(value: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -37196,12 +37196,12 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -37213,7 +37213,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(this as any, "search", true);
+  private _search = new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
   public get search() {
     return this._search;
   }
@@ -37256,7 +37256,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery {
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -37276,7 +37276,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputRef
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -37435,7 +37435,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery {
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -37460,7 +37460,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -37565,7 +37565,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputRe
   // is_normalized_cpu - computed: false, optional: true, required: false
   private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
   public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu') as any;
+    return this.getBooleanAttribute('is_normalized_cpu');
   }
   public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
     this._isNormalizedCpu = value;
@@ -37701,8 +37701,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestQuery {
   readonly processQuery?: DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -37737,7 +37737,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery 
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -37756,7 +37756,7 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutpu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -37860,7 +37860,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQu
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -37879,7 +37879,7 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -37979,8 +37979,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38012,8 +38012,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute 
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38048,17 +38048,17 @@ export interface DashboardWidgetQueryValueDefinitionRequestRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38079,7 +38079,7 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -38158,7 +38158,7 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -38174,12 +38174,12 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -38191,12 +38191,12 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -38229,7 +38229,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQ
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38248,7 +38248,7 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -38352,7 +38352,7 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupByS
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38371,7 +38371,7 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQ
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -38471,8 +38471,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy 
   readonly sortQuery?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38504,8 +38504,8 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCom
   readonly interval?: number;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38540,17 +38540,17 @@ export interface DashboardWidgetQueryValueDefinitionRequestSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryValueDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputReference | DashboardWidgetQueryValueDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38571,7 +38571,7 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -38650,7 +38650,7 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -38666,12 +38666,12 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -38683,12 +38683,12 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -38729,13 +38729,13 @@ export interface DashboardWidgetQueryValueDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetQueryValueDefinitionRequestConditionalFormats[];
+  readonly conditionalFormats?: DashboardWidgetQueryValueDefinitionRequestConditionalFormats[] | cdktf.IResolvable;
   /**
   * formula block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetQueryValueDefinitionRequestFormula[];
+  readonly formula?: DashboardWidgetQueryValueDefinitionRequestFormula[] | cdktf.IResolvable;
   /**
   * log_query block
   * 
@@ -38753,7 +38753,7 @@ export interface DashboardWidgetQueryValueDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetQueryValueDefinitionRequestQuery[];
+  readonly query?: DashboardWidgetQueryValueDefinitionRequestQuery[] | cdktf.IResolvable;
   /**
   * rum_query block
   * 
@@ -38768,8 +38768,8 @@ export interface DashboardWidgetQueryValueDefinitionRequest {
   readonly securityQuery?: DashboardWidgetQueryValueDefinitionRequestSecurityQuery;
 }
 
-export function dashboardWidgetQueryValueDefinitionRequestToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetQueryValueDefinitionRequestToTerraform(struct?: DashboardWidgetQueryValueDefinitionRequest | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38842,17 +38842,17 @@ export interface DashboardWidgetQueryValueDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetQueryValueDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetQueryValueDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * request block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetQueryValueDefinitionRequest[];
+  readonly request?: DashboardWidgetQueryValueDefinitionRequest[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetQueryValueDefinitionToTerraform(struct?: DashboardWidgetQueryValueDefinitionOutputReference | DashboardWidgetQueryValueDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -38878,7 +38878,7 @@ export class DashboardWidgetQueryValueDefinitionOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -38960,7 +38960,7 @@ export class DashboardWidgetQueryValueDefinitionOutputReference extends cdktf.Co
   // autoscale - computed: false, optional: true, required: false
   private _autoscale?: boolean | cdktf.IResolvable; 
   public get autoscale() {
-    return this.getBooleanAttribute('autoscale') as any;
+    return this.getBooleanAttribute('autoscale');
   }
   public set autoscale(value: boolean | cdktf.IResolvable) {
     this._autoscale = value;
@@ -39086,12 +39086,12 @@ export class DashboardWidgetQueryValueDefinitionOutputReference extends cdktf.Co
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetQueryValueDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetQueryValueDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetQueryValueDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetQueryValueDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -39103,12 +39103,12 @@ export class DashboardWidgetQueryValueDefinitionOutputReference extends cdktf.Co
   }
 
   // request - computed: false, optional: true, required: false
-  private _request?: DashboardWidgetQueryValueDefinitionRequest[]; 
+  private _request?: DashboardWidgetQueryValueDefinitionRequest[] | cdktf.IResolvable; 
   public get request() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request') as any;
+    return this.interpolationForAttribute('request');
   }
-  public set request(value: DashboardWidgetQueryValueDefinitionRequest[]) {
+  public set request(value: DashboardWidgetQueryValueDefinitionRequest[] | cdktf.IResolvable) {
     this._request = value;
   }
   public resetRequest() {
@@ -39146,8 +39146,8 @@ export interface DashboardWidgetScatterplotDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetScatterplotDefinitionCustomLinkToTerraform(struct?: DashboardWidgetScatterplotDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionCustomLinkToTerraform(struct?: DashboardWidgetScatterplotDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -39180,8 +39180,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableForm
   readonly formulaExpression: string;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableFormulaToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableFormulaToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -39256,7 +39256,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -39282,7 +39282,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApm
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -39390,7 +39390,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApm
   // is_upstream - computed: false, optional: true, required: false
   private _isUpstream?: boolean | cdktf.IResolvable; 
   public get isUpstream() {
-    return this.getBooleanAttribute('is_upstream') as any;
+    return this.getBooleanAttribute('is_upstream');
   }
   public set isUpstream(value: boolean | cdktf.IResolvable) {
     this._isUpstream = value;
@@ -39564,7 +39564,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -39590,7 +39590,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApm
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -39835,8 +39835,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   readonly metric?: string;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -39869,7 +39869,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -39888,7 +39888,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -39991,8 +39991,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   readonly sort?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40013,7 +40013,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40030,7 +40030,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -40092,13 +40092,13 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[];
+  readonly compute: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[] | cdktf.IResolvable;
   /**
   * group_by block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[] | cdktf.IResolvable;
   /**
   * search block
   * 
@@ -40108,7 +40108,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40130,7 +40130,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -40228,12 +40228,12 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[]; 
+  private _compute?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[] | cdktf.IResolvable; 
   public get compute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('compute') as any;
+    return this.interpolationForAttribute('compute');
   }
-  public set compute(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[]) {
+  public set compute(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryCompute[] | cdktf.IResolvable) {
     this._compute = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -40242,12 +40242,12 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -40259,7 +40259,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(this as any, "search", true);
+  private _search = new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(this, "search", true);
   public get search() {
     return this._search;
   }
@@ -40302,7 +40302,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40322,7 +40322,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMet
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -40481,7 +40481,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40506,7 +40506,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryPro
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -40611,7 +40611,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryPro
   // is_normalized_cpu - computed: false, optional: true, required: false
   private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
   public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu') as any;
+    return this.getBooleanAttribute('is_normalized_cpu');
   }
   public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
     this._isNormalizedCpu = value;
@@ -40747,8 +40747,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuer
   readonly processQuery?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40767,17 +40767,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestScatterplotTable {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula[];
+  readonly formula?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableFormula[] | cdktf.IResolvable;
   /**
   * query block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery[];
+  readonly query?: DashboardWidgetScatterplotDefinitionRequestScatterplotTableQuery[] | cdktf.IResolvable;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestScatterplotTableToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40809,7 +40809,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40828,7 +40828,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -40932,7 +40932,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySort
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -40951,7 +40951,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -41051,8 +41051,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXApmQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXApmQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41084,8 +41084,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXApmQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXApmQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41120,17 +41120,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestXApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXApmQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41151,7 +41151,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -41230,7 +41230,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -41246,12 +41246,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -41263,12 +41263,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -41301,7 +41301,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41320,7 +41320,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -41424,7 +41424,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySort
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41443,7 +41443,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -41543,8 +41543,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXLogQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXLogQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41576,8 +41576,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXLogQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41612,17 +41612,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestXLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXLogQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41643,7 +41643,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -41722,7 +41722,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -41738,12 +41738,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -41755,12 +41755,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -41799,7 +41799,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXProcessQuery {
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXProcessQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41819,7 +41819,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -41945,7 +41945,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -41964,7 +41964,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -42068,7 +42068,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySort
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42087,7 +42087,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -42187,8 +42187,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXRumQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42220,8 +42220,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42256,17 +42256,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestXRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXRumQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42287,7 +42287,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -42366,7 +42366,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -42382,12 +42382,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -42399,12 +42399,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -42437,7 +42437,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComput
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42456,7 +42456,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -42560,7 +42560,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42579,7 +42579,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -42679,8 +42679,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42712,8 +42712,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiC
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42748,17 +42748,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestXSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestXSecurityQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestXSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42779,7 +42779,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -42858,7 +42858,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -42874,12 +42874,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -42891,12 +42891,12 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -42952,8 +42952,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestX {
   readonly securityQuery?: DashboardWidgetScatterplotDefinitionRequestXSecurityQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestXToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestX): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestXToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestX | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -42990,7 +42990,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43009,7 +43009,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -43113,7 +43113,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySort
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43132,7 +43132,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -43232,8 +43232,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy {
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43265,8 +43265,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43301,17 +43301,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestYApmQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYApmQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYApmQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43332,7 +43332,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -43411,7 +43411,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -43427,12 +43427,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -43444,12 +43444,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -43482,7 +43482,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43501,7 +43501,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -43605,7 +43605,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySort
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43624,7 +43624,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -43724,8 +43724,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy {
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYLogQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYLogQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43757,8 +43757,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43793,17 +43793,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestYLogQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYLogQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYLogQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43824,7 +43824,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -43903,7 +43903,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -43919,12 +43919,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -43936,12 +43936,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -43980,7 +43980,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYProcessQuery {
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYProcessQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYProcessQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44000,7 +44000,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -44126,7 +44126,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuer
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44145,7 +44145,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -44249,7 +44249,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySort
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44268,7 +44268,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -44368,8 +44368,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy {
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44401,8 +44401,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiComput
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44437,17 +44437,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestYRumQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYRumQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYRumQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44468,7 +44468,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -44547,7 +44547,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -44563,12 +44563,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -44580,12 +44580,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -44618,7 +44618,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComput
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44637,7 +44637,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQue
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -44741,7 +44741,7 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44760,7 +44760,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySor
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -44860,8 +44860,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
   readonly sortQuery?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44893,8 +44893,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiC
   readonly interval?: number;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44929,17 +44929,17 @@ export interface DashboardWidgetScatterplotDefinitionRequestYSecurityQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[];
+  readonly groupBy?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable;
   /**
   * multi_compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[];
+  readonly multiCompute?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestYSecurityQueryToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference | DashboardWidgetScatterplotDefinitionRequestYSecurityQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -44960,7 +44960,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -45039,7 +45039,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(this as any, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -45055,12 +45055,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[]; 
+  private _groupBy?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[]) {
+  public set groupBy(value: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {
@@ -45072,12 +45072,12 @@ export class DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   }
 
   // multi_compute - computed: false, optional: true, required: false
-  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[]; 
+  private _multiCompute?: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable; 
   public get multiCompute() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('multi_compute') as any;
+    return this.interpolationForAttribute('multi_compute');
   }
-  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[]) {
+  public set multiCompute(value: DashboardWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable) {
     this._multiCompute = value;
   }
   public resetMultiCompute() {
@@ -45133,8 +45133,8 @@ export interface DashboardWidgetScatterplotDefinitionRequestY {
   readonly securityQuery?: DashboardWidgetScatterplotDefinitionRequestYSecurityQuery;
 }
 
-export function dashboardWidgetScatterplotDefinitionRequestYToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestY): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetScatterplotDefinitionRequestYToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestY | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -45155,23 +45155,23 @@ export interface DashboardWidgetScatterplotDefinitionRequest {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scatterplot_table Dashboard#scatterplot_table}
   */
-  readonly scatterplotTable?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[];
+  readonly scatterplotTable?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable;
   /**
   * x block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#x Dashboard#x}
   */
-  readonly x?: DashboardWidgetScatterplotDefinitionRequestX[];
+  readonly x?: DashboardWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable;
   /**
   * y block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#y Dashboard#y}
   */
-  readonly y?: DashboardWidgetScatterplotDefinitionRequestY[];
+  readonly y?: DashboardWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetScatterplotDefinitionRequestToTerraform(struct?: DashboardWidgetScatterplotDefinitionRequestOutputReference | DashboardWidgetScatterplotDefinitionRequest): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -45190,7 +45190,7 @@ export class DashboardWidgetScatterplotDefinitionRequestOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -45228,12 +45228,12 @@ export class DashboardWidgetScatterplotDefinitionRequestOutputReference extends 
   }
 
   // scatterplot_table - computed: false, optional: true, required: false
-  private _scatterplotTable?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[]; 
+  private _scatterplotTable?: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable; 
   public get scatterplotTable() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scatterplot_table') as any;
+    return this.interpolationForAttribute('scatterplot_table');
   }
-  public set scatterplotTable(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[]) {
+  public set scatterplotTable(value: DashboardWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable) {
     this._scatterplotTable = value;
   }
   public resetScatterplotTable() {
@@ -45245,12 +45245,12 @@ export class DashboardWidgetScatterplotDefinitionRequestOutputReference extends 
   }
 
   // x - computed: false, optional: true, required: false
-  private _x?: DashboardWidgetScatterplotDefinitionRequestX[]; 
+  private _x?: DashboardWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable; 
   public get x() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('x') as any;
+    return this.interpolationForAttribute('x');
   }
-  public set x(value: DashboardWidgetScatterplotDefinitionRequestX[]) {
+  public set x(value: DashboardWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable) {
     this._x = value;
   }
   public resetX() {
@@ -45262,12 +45262,12 @@ export class DashboardWidgetScatterplotDefinitionRequestOutputReference extends 
   }
 
   // y - computed: false, optional: true, required: false
-  private _y?: DashboardWidgetScatterplotDefinitionRequestY[]; 
+  private _y?: DashboardWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable; 
   public get y() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('y') as any;
+    return this.interpolationForAttribute('y');
   }
-  public set y(value: DashboardWidgetScatterplotDefinitionRequestY[]) {
+  public set y(value: DashboardWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable) {
     this._y = value;
   }
   public resetY() {
@@ -45312,7 +45312,7 @@ export interface DashboardWidgetScatterplotDefinitionXaxis {
 }
 
 export function dashboardWidgetScatterplotDefinitionXaxisToTerraform(struct?: DashboardWidgetScatterplotDefinitionXaxisOutputReference | DashboardWidgetScatterplotDefinitionXaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -45333,7 +45333,7 @@ export class DashboardWidgetScatterplotDefinitionXaxisOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -45385,7 +45385,7 @@ export class DashboardWidgetScatterplotDefinitionXaxisOutputReference extends cd
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -45496,7 +45496,7 @@ export interface DashboardWidgetScatterplotDefinitionYaxis {
 }
 
 export function dashboardWidgetScatterplotDefinitionYaxisToTerraform(struct?: DashboardWidgetScatterplotDefinitionYaxisOutputReference | DashboardWidgetScatterplotDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -45517,7 +45517,7 @@ export class DashboardWidgetScatterplotDefinitionYaxisOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -45569,7 +45569,7 @@ export class DashboardWidgetScatterplotDefinitionYaxisOutputReference extends cd
   // include_zero - computed: false, optional: true, required: false
   private _includeZero?: boolean | cdktf.IResolvable; 
   public get includeZero() {
-    return this.getBooleanAttribute('include_zero') as any;
+    return this.getBooleanAttribute('include_zero');
   }
   public set includeZero(value: boolean | cdktf.IResolvable) {
     this._includeZero = value;
@@ -45682,7 +45682,7 @@ export interface DashboardWidgetScatterplotDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetScatterplotDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable;
   /**
   * request block
   * 
@@ -45704,7 +45704,7 @@ export interface DashboardWidgetScatterplotDefinition {
 }
 
 export function dashboardWidgetScatterplotDefinitionToTerraform(struct?: DashboardWidgetScatterplotDefinitionOutputReference | DashboardWidgetScatterplotDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -45729,7 +45729,7 @@ export class DashboardWidgetScatterplotDefinitionOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -45883,12 +45883,12 @@ export class DashboardWidgetScatterplotDefinitionOutputReference extends cdktf.C
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetScatterplotDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetScatterplotDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -45900,7 +45900,7 @@ export class DashboardWidgetScatterplotDefinitionOutputReference extends cdktf.C
   }
 
   // request - computed: false, optional: true, required: false
-  private _request = new DashboardWidgetScatterplotDefinitionRequestOutputReference(this as any, "request", true);
+  private _request = new DashboardWidgetScatterplotDefinitionRequestOutputReference(this, "request", true);
   public get request() {
     return this._request;
   }
@@ -45916,7 +45916,7 @@ export class DashboardWidgetScatterplotDefinitionOutputReference extends cdktf.C
   }
 
   // xaxis - computed: false, optional: true, required: false
-  private _xaxis = new DashboardWidgetScatterplotDefinitionXaxisOutputReference(this as any, "xaxis", true);
+  private _xaxis = new DashboardWidgetScatterplotDefinitionXaxisOutputReference(this, "xaxis", true);
   public get xaxis() {
     return this._xaxis;
   }
@@ -45932,7 +45932,7 @@ export class DashboardWidgetScatterplotDefinitionOutputReference extends cdktf.C
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetScatterplotDefinitionYaxisOutputReference(this as any, "yaxis", true);
+  private _yaxis = new DashboardWidgetScatterplotDefinitionYaxisOutputReference(this, "yaxis", true);
   public get yaxis() {
     return this._yaxis;
   }
@@ -46005,7 +46005,7 @@ export interface DashboardWidgetServiceLevelObjectiveDefinition {
 }
 
 export function dashboardWidgetServiceLevelObjectiveDefinitionToTerraform(struct?: DashboardWidgetServiceLevelObjectiveDefinitionOutputReference | DashboardWidgetServiceLevelObjectiveDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -46030,7 +46030,7 @@ export class DashboardWidgetServiceLevelObjectiveDefinitionOutputReference exten
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -46122,7 +46122,7 @@ export class DashboardWidgetServiceLevelObjectiveDefinitionOutputReference exten
   // show_error_budget - computed: false, optional: true, required: false
   private _showErrorBudget?: boolean | cdktf.IResolvable; 
   public get showErrorBudget() {
-    return this.getBooleanAttribute('show_error_budget') as any;
+    return this.getBooleanAttribute('show_error_budget');
   }
   public set showErrorBudget(value: boolean | cdktf.IResolvable) {
     this._showErrorBudget = value;
@@ -46262,8 +46262,8 @@ export interface DashboardWidgetServicemapDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetServicemapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetServicemapDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetServicemapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetServicemapDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -46311,11 +46311,11 @@ export interface DashboardWidgetServicemapDefinition {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetServicemapDefinitionCustomLink[];
+  readonly customLink?: DashboardWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable;
 }
 
 export function dashboardWidgetServicemapDefinitionToTerraform(struct?: DashboardWidgetServicemapDefinitionOutputReference | DashboardWidgetServicemapDefinition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -46337,7 +46337,7 @@ export class DashboardWidgetServicemapDefinitionOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -46467,12 +46467,12 @@ export class DashboardWidgetServicemapDefinitionOutputReference extends cdktf.Co
   }
 
   // custom_link - computed: false, optional: true, required: false
-  private _customLink?: DashboardWidgetServicemapDefinitionCustomLink[]; 
+  private _customLink?: DashboardWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable; 
   public get customLink() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_link') as any;
+    return this.interpolationForAttribute('custom_link');
   }
-  public set customLink(value: DashboardWidgetServicemapDefinitionCustomLink[]) {
+  public set customLink(value: DashboardWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable) {
     this._customLink = value;
   }
   public resetCustomLink() {
@@ -46510,8 +46510,8 @@ export interface DashboardWidgetSunburstDefinitionCustomLink {
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetSunburstDefinitionCustomLinkToTerraform(struct?: DashboardWidgetSunburstDefinitionCustomLink): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dashboardWidgetSunburstDefinitionCustomLinkToTerraform(struct?: DashboardWidgetSunburstDefinitionCustomLink | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }

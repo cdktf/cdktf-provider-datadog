@@ -69,19 +69,19 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#template_variable Dashboard#template_variable}
   */
-  readonly templateVariable?: DashboardTemplateVariable[];
+  readonly templateVariable?: DashboardTemplateVariable[] | cdktf.IResolvable;
   /**
   * template_variable_preset block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#template_variable_preset Dashboard#template_variable_preset}
   */
-  readonly templateVariablePreset?: DashboardTemplateVariablePreset[];
+  readonly templateVariablePreset?: DashboardTemplateVariablePreset[] | cdktf.IResolvable;
   /**
   * widget block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#widget Dashboard#widget}
   */
-  readonly widget?: DashboardWidget[];
+  readonly widget?: DashboardWidget[] | cdktf.IResolvable;
 }
 
 /**
@@ -137,8 +137,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // dashboard_lists - computed: false, optional: true, required: false
   private _dashboardLists?: number[]; 
   public get dashboardLists() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dashboard_lists') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists')));
   }
   public set dashboardLists(value: number[]) {
     this._dashboardLists = value;
@@ -153,8 +152,7 @@ export class Dashboard extends cdktf.TerraformResource {
 
   // dashboard_lists_removed - computed: true, optional: false, required: false
   public get dashboardListsRemoved() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dashboard_lists_removed') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists_removed')));
   }
 
   // description - computed: false, optional: true, required: false
@@ -181,7 +179,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // is_read_only - computed: false, optional: true, required: false
   private _isReadOnly?: boolean | cdktf.IResolvable; 
   public get isReadOnly() {
-    return this.getBooleanAttribute('is_read_only') as any;
+    return this.getBooleanAttribute('is_read_only');
   }
   public set isReadOnly(value: boolean | cdktf.IResolvable) {
     this._isReadOnly = value;
@@ -210,7 +208,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // notify_list - computed: false, optional: true, required: false
   private _notifyList?: string[]; 
   public get notifyList() {
-    return this.getListAttribute('notify_list');
+    return cdktf.Fn.tolist(this.getListAttribute('notify_list'));
   }
   public set notifyList(value: string[]) {
     this._notifyList = value;
@@ -242,7 +240,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // restricted_roles - computed: false, optional: true, required: false
   private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
-    return this.getListAttribute('restricted_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
   public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
@@ -285,12 +283,12 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // template_variable - computed: false, optional: true, required: false
-  private _templateVariable?: DashboardTemplateVariable[]; 
+  private _templateVariable?: DashboardTemplateVariable[] | cdktf.IResolvable; 
   public get templateVariable() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('template_variable') as any;
+    return this.interpolationForAttribute('template_variable');
   }
-  public set templateVariable(value: DashboardTemplateVariable[]) {
+  public set templateVariable(value: DashboardTemplateVariable[] | cdktf.IResolvable) {
     this._templateVariable = value;
   }
   public resetTemplateVariable() {
@@ -302,12 +300,12 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // template_variable_preset - computed: false, optional: true, required: false
-  private _templateVariablePreset?: DashboardTemplateVariablePreset[]; 
+  private _templateVariablePreset?: DashboardTemplateVariablePreset[] | cdktf.IResolvable; 
   public get templateVariablePreset() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('template_variable_preset') as any;
+    return this.interpolationForAttribute('template_variable_preset');
   }
-  public set templateVariablePreset(value: DashboardTemplateVariablePreset[]) {
+  public set templateVariablePreset(value: DashboardTemplateVariablePreset[] | cdktf.IResolvable) {
     this._templateVariablePreset = value;
   }
   public resetTemplateVariablePreset() {
@@ -319,12 +317,12 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // widget - computed: false, optional: true, required: false
-  private _widget?: DashboardWidget[]; 
+  private _widget?: DashboardWidget[] | cdktf.IResolvable; 
   public get widget() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('widget') as any;
+    return this.interpolationForAttribute('widget');
   }
-  public set widget(value: DashboardWidget[]) {
+  public set widget(value: DashboardWidget[] | cdktf.IResolvable) {
     this._widget = value;
   }
   public resetWidget() {

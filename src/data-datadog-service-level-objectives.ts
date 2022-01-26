@@ -147,7 +147,7 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
 
   // slos - computed: true, optional: false, required: false
   public slos(index: string) {
-    return new DataDatadogServiceLevelObjectivesSlos(this, 'slos', index);
+    return new DataDatadogServiceLevelObjectivesSlos(this, 'slos', index, false);
   }
 
   // tags_query - computed: false, optional: true, required: false

@@ -76,7 +76,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   // is_secret - computed: false, optional: false, required: true
   private _isSecret?: boolean | cdktf.IResolvable; 
   public get isSecret() {
-    return this.getBooleanAttribute('is_secret') as any;
+    return this.getBooleanAttribute('is_secret');
   }
   public set isSecret(value: boolean | cdktf.IResolvable) {
     this._isSecret = value;

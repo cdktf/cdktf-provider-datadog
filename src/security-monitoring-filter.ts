@@ -36,7 +36,7 @@ export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArgum
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
   */
-  readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[];
+  readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable;
 }
 export interface SecurityMonitoringFilterExclusionFilter {
   /**
@@ -53,8 +53,8 @@ export interface SecurityMonitoringFilterExclusionFilter {
   readonly query: string;
 }
 
-export function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -132,7 +132,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   // is_enabled - computed: false, optional: false, required: true
   private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled') as any;
+    return this.getBooleanAttribute('is_enabled');
   }
   public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
@@ -174,12 +174,12 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
-  private _exclusionFilter?: SecurityMonitoringFilterExclusionFilter[]; 
+  private _exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable; 
   public get exclusionFilter() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('exclusion_filter') as any;
+    return this.interpolationForAttribute('exclusion_filter');
   }
-  public set exclusionFilter(value: SecurityMonitoringFilterExclusionFilter[]) {
+  public set exclusionFilter(value: SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable) {
     this._exclusionFilter = value;
   }
   public resetExclusionFilter() {

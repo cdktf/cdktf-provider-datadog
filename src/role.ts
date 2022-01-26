@@ -18,7 +18,7 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#permission Role#permission}
   */
-  readonly permission?: RolePermission[];
+  readonly permission?: RolePermission[] | cdktf.IResolvable;
 }
 export interface RolePermission {
   /**
@@ -29,8 +29,8 @@ export interface RolePermission {
   readonly id: string;
 }
 
-export function rolePermissionToTerraform(struct?: RolePermission): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rolePermissionToTerraform(struct?: RolePermission | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -104,12 +104,12 @@ export class Role extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: RolePermission[]; 
+  private _permission?: RolePermission[] | cdktf.IResolvable; 
   public get permission() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('permission') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('permission')));
   }
-  public set permission(value: RolePermission[]) {
+  public set permission(value: RolePermission[] | cdktf.IResolvable) {
     this._permission = value;
   }
   public resetPermission() {

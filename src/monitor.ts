@@ -196,7 +196,7 @@ export interface MonitorMonitorThresholdWindows {
 }
 
 export function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -214,7 +214,7 @@ export class MonitorMonitorThresholdWindowsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -317,7 +317,7 @@ export interface MonitorMonitorThresholds {
 }
 
 export function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholdsOutputReference | MonitorMonitorThresholds): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -339,7 +339,7 @@ export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -559,7 +559,7 @@ export class Monitor extends cdktf.TerraformResource {
   // enable_logs_sample - computed: false, optional: true, required: false
   private _enableLogsSample?: boolean | cdktf.IResolvable; 
   public get enableLogsSample() {
-    return this.getBooleanAttribute('enable_logs_sample') as any;
+    return this.getBooleanAttribute('enable_logs_sample');
   }
   public set enableLogsSample(value: boolean | cdktf.IResolvable) {
     this._enableLogsSample = value;
@@ -607,7 +607,7 @@ export class Monitor extends cdktf.TerraformResource {
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean | cdktf.IResolvable; 
   public get forceDelete() {
-    return this.getBooleanAttribute('force_delete') as any;
+    return this.getBooleanAttribute('force_delete');
   }
   public set forceDelete(value: boolean | cdktf.IResolvable) {
     this._forceDelete = value;
@@ -623,7 +623,7 @@ export class Monitor extends cdktf.TerraformResource {
   // groupby_simple_monitor - computed: false, optional: true, required: false
   private _groupbySimpleMonitor?: boolean | cdktf.IResolvable; 
   public get groupbySimpleMonitor() {
-    return this.getBooleanAttribute('groupby_simple_monitor') as any;
+    return this.getBooleanAttribute('groupby_simple_monitor');
   }
   public set groupbySimpleMonitor(value: boolean | cdktf.IResolvable) {
     this._groupbySimpleMonitor = value;
@@ -644,7 +644,7 @@ export class Monitor extends cdktf.TerraformResource {
   // include_tags - computed: false, optional: true, required: false
   private _includeTags?: boolean | cdktf.IResolvable; 
   public get includeTags() {
-    return this.getBooleanAttribute('include_tags') as any;
+    return this.getBooleanAttribute('include_tags');
   }
   public set includeTags(value: boolean | cdktf.IResolvable) {
     this._includeTags = value;
@@ -660,7 +660,7 @@ export class Monitor extends cdktf.TerraformResource {
   // locked - computed: false, optional: true, required: false
   private _locked?: boolean | cdktf.IResolvable; 
   public get locked() {
-    return this.getBooleanAttribute('locked') as any;
+    return this.getBooleanAttribute('locked');
   }
   public set locked(value: boolean | cdktf.IResolvable) {
     this._locked = value;
@@ -750,7 +750,7 @@ export class Monitor extends cdktf.TerraformResource {
   // notify_audit - computed: false, optional: true, required: false
   private _notifyAudit?: boolean | cdktf.IResolvable; 
   public get notifyAudit() {
-    return this.getBooleanAttribute('notify_audit') as any;
+    return this.getBooleanAttribute('notify_audit');
   }
   public set notifyAudit(value: boolean | cdktf.IResolvable) {
     this._notifyAudit = value;
@@ -766,7 +766,7 @@ export class Monitor extends cdktf.TerraformResource {
   // notify_no_data - computed: false, optional: true, required: false
   private _notifyNoData?: boolean | cdktf.IResolvable; 
   public get notifyNoData() {
-    return this.getBooleanAttribute('notify_no_data') as any;
+    return this.getBooleanAttribute('notify_no_data');
   }
   public set notifyNoData(value: boolean | cdktf.IResolvable) {
     this._notifyNoData = value;
@@ -843,7 +843,7 @@ export class Monitor extends cdktf.TerraformResource {
   // renotify_statuses - computed: false, optional: true, required: false
   private _renotifyStatuses?: string[]; 
   public get renotifyStatuses() {
-    return this.getListAttribute('renotify_statuses');
+    return cdktf.Fn.tolist(this.getListAttribute('renotify_statuses'));
   }
   public set renotifyStatuses(value: string[]) {
     this._renotifyStatuses = value;
@@ -859,7 +859,7 @@ export class Monitor extends cdktf.TerraformResource {
   // require_full_window - computed: false, optional: true, required: false
   private _requireFullWindow?: boolean | cdktf.IResolvable; 
   public get requireFullWindow() {
-    return this.getBooleanAttribute('require_full_window') as any;
+    return this.getBooleanAttribute('require_full_window');
   }
   public set requireFullWindow(value: boolean | cdktf.IResolvable) {
     this._requireFullWindow = value;
@@ -875,7 +875,7 @@ export class Monitor extends cdktf.TerraformResource {
   // restricted_roles - computed: false, optional: true, required: false
   private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
-    return this.getListAttribute('restricted_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
   public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
@@ -891,7 +891,7 @@ export class Monitor extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -936,7 +936,7 @@ export class Monitor extends cdktf.TerraformResource {
   // validate - computed: false, optional: true, required: false
   private _validate?: boolean | cdktf.IResolvable; 
   public get validate() {
-    return this.getBooleanAttribute('validate') as any;
+    return this.getBooleanAttribute('validate');
   }
   public set validate(value: boolean | cdktf.IResolvable) {
     this._validate = value;
@@ -950,7 +950,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // monitor_threshold_windows - computed: false, optional: true, required: false
-  private _monitorThresholdWindows = new MonitorMonitorThresholdWindowsOutputReference(this as any, "monitor_threshold_windows", true);
+  private _monitorThresholdWindows = new MonitorMonitorThresholdWindowsOutputReference(this, "monitor_threshold_windows", true);
   public get monitorThresholdWindows() {
     return this._monitorThresholdWindows;
   }
@@ -966,7 +966,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // monitor_thresholds - computed: false, optional: true, required: false
-  private _monitorThresholds = new MonitorMonitorThresholdsOutputReference(this as any, "monitor_thresholds", true);
+  private _monitorThresholds = new MonitorMonitorThresholdsOutputReference(this, "monitor_thresholds", true);
   public get monitorThresholds() {
     return this._monitorThresholds;
   }

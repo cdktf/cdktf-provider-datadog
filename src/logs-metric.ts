@@ -30,7 +30,7 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#group_by LogsMetric#group_by}
   */
-  readonly groupBy?: LogsMetricGroupBy[];
+  readonly groupBy?: LogsMetricGroupBy[] | cdktf.IResolvable;
 }
 export interface LogsMetricCompute {
   /**
@@ -48,7 +48,7 @@ export interface LogsMetricCompute {
 }
 
 export function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -66,7 +66,7 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -136,7 +136,7 @@ export interface LogsMetricFilter {
 }
 
 export function logsMetricFilterToTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -153,7 +153,7 @@ export class LogsMetricFilterOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -206,8 +206,8 @@ export interface LogsMetricGroupBy {
   readonly tagName: string;
 }
 
-export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -279,7 +279,7 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // compute - computed: false, optional: false, required: true
-  private _compute = new LogsMetricComputeOutputReference(this as any, "compute", true);
+  private _compute = new LogsMetricComputeOutputReference(this, "compute", true);
   public get compute() {
     return this._compute;
   }
@@ -292,7 +292,7 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter = new LogsMetricFilterOutputReference(this as any, "filter", true);
+  private _filter = new LogsMetricFilterOutputReference(this, "filter", true);
   public get filter() {
     return this._filter;
   }
@@ -305,12 +305,12 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: LogsMetricGroupBy[]; 
+  private _groupBy?: LogsMetricGroupBy[] | cdktf.IResolvable; 
   public get groupBy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by') as any;
+    return this.interpolationForAttribute('group_by');
   }
-  public set groupBy(value: LogsMetricGroupBy[]) {
+  public set groupBy(value: LogsMetricGroupBy[] | cdktf.IResolvable) {
     this._groupBy = value;
   }
   public resetGroupBy() {

@@ -85,7 +85,7 @@ export class User extends cdktf.TerraformResource {
   // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled') as any;
+    return this.getBooleanAttribute('disabled');
   }
   public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;
@@ -135,7 +135,7 @@ export class User extends cdktf.TerraformResource {
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return this.getListAttribute('roles');
+    return cdktf.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -151,7 +151,7 @@ export class User extends cdktf.TerraformResource {
   // send_user_invitation - computed: false, optional: true, required: false
   private _sendUserInvitation?: boolean | cdktf.IResolvable; 
   public get sendUserInvitation() {
-    return this.getBooleanAttribute('send_user_invitation') as any;
+    return this.getBooleanAttribute('send_user_invitation');
   }
   public set sendUserInvitation(value: boolean | cdktf.IResolvable) {
     this._sendUserInvitation = value;
@@ -171,7 +171,7 @@ export class User extends cdktf.TerraformResource {
 
   // verified - computed: true, optional: false, required: false
   public get verified() {
-    return this.getBooleanAttribute('verified') as any;
+    return this.getBooleanAttribute('verified');
   }
 
   // =========

@@ -108,7 +108,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
 
   // monitors - computed: true, optional: false, required: false
   public monitors(index: string) {
-    return new DataDatadogMonitorsMonitors(this, 'monitors', index);
+    return new DataDatadogMonitorsMonitors(this, 'monitors', index, false);
   }
 
   // name_filter - computed: false, optional: true, required: false
