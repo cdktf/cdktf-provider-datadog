@@ -6,6 +6,7 @@ Name|Description
 ----|-----------
 [ApiKey](#cdktf-provider-datadog-apikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/api_key datadog_api_key}.
 [ApplicationKey](#cdktf-provider-datadog-applicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key}.
+[AuthnMapping](#cdktf-provider-datadog-authnmapping)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping datadog_authn_mapping}.
 [ChildOrganization](#cdktf-provider-datadog-childorganization)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}.
 [ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)|*No description*
 [ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)|*No description*
@@ -15,6 +16,7 @@ Name|Description
 [ChildOrganizationSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin)|*No description*
 [ChildOrganizationSettingsSamlStrictMode](#cdktf-provider-datadog-childorganizationsettingssamlstrictmode)|*No description*
 [ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)|*No description*
+[CloudWorkloadSecurityAgentRule](#cdktf-provider-datadog-cloudworkloadsecurityagentrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
 [Dashboard](#cdktf-provider-datadog-dashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard}.
 [DashboardJson](#cdktf-provider-datadog-dashboardjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json}.
 [DashboardList](#cdktf-provider-datadog-dashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}.
@@ -47,6 +49,7 @@ Name|Description
 [DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmqueryoutputreference)|*No description*
+[DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsqueryoutputreference)|*No description*
 [DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogqueryoutputreference)|*No description*
@@ -108,6 +111,7 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogqueryoutputreference)|*No description*
@@ -365,6 +369,15 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequeststyleoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettraceservicedefinitionoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimitoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearchoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetwidgetlayoutoutputreference)|*No description*
 [DashboardWidgetHeatmapDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionoutputreference)|*No description*
 [DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitionrequestapmquerycomputequeryoutputreference)|*No description*
@@ -592,12 +605,28 @@ Name|Description
 [DashboardWidgetToplistDefinitionRequestSecurityQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityqueryoutputreference)|*No description*
 [DashboardWidgetToplistDefinitionRequestStyleOutputReference](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequeststyleoutputreference)|*No description*
 [DashboardWidgetTraceServiceDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgettraceservicedefinitionoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestFormulaLimitOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimitoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventqueryoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearchoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricqueryoutputreference)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference)|*No description*
 [DashboardWidgetWidgetLayoutOutputReference](#cdktf-provider-datadog-dashboardwidgetwidgetlayoutoutputreference)|*No description*
 [DataDatadogApiKey](#cdktf-provider-datadog-datadatadogapikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key}.
 [DataDatadogApplicationKey](#cdktf-provider-datadog-datadatadogapplicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key datadog_application_key}.
+[DataDatadogCloudWorkloadSecurityAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
+[DataDatadogCloudWorkloadSecurityAgentRulesAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules)|*No description*
 [DataDatadogDashboard](#cdktf-provider-datadog-datadatadogdashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}.
 [DataDatadogDashboardList](#cdktf-provider-datadog-datadatadogdashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list}.
 [DataDatadogIpRanges](#cdktf-provider-datadog-datadatadogipranges)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges}.
+[DataDatadogLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexes)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes}.
+[DataDatadogLogsIndexesLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexes)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter)|*No description*
+[DataDatadogLogsIndexesLogsIndexesFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter)|*No description*
 [DataDatadogLogsIndexesOrder](#cdktf-provider-datadog-datadatadoglogsindexesorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order}.
 [DataDatadogMonitor](#cdktf-provider-datadog-datadatadogmonitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor}.
 [DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)|*No description*
@@ -718,8 +747,11 @@ Name|Description
 [SyntheticsTestApiStepRequestClientCertificateKeyOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatekeyoutputreference)|*No description*
 [SyntheticsTestApiStepRequestClientCertificateOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificateoutputreference)|*No description*
 [SyntheticsTestApiStepRequestDefinitionOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestdefinitionoutputreference)|*No description*
+[SyntheticsTestApiStepRequestProxyOutputReference](#cdktf-provider-datadog-syntheticstestapisteprequestproxyoutputreference)|*No description*
 [SyntheticsTestApiStepRetryOutputReference](#cdktf-provider-datadog-syntheticstestapistepretryoutputreference)|*No description*
 [SyntheticsTestAssertionTargetjsonpathOutputReference](#cdktf-provider-datadog-syntheticstestassertiontargetjsonpathoutputreference)|*No description*
+[SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatoroutputreference)|*No description*
+[SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalueoutputreference)|*No description*
 [SyntheticsTestBrowserStepParamsOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference)|*No description*
 [SyntheticsTestBrowserStepParamsVariableOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariableoutputreference)|*No description*
 [SyntheticsTestOptionsListMonitorOptionsOutputReference](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptionsoutputreference)|*No description*
@@ -730,6 +762,7 @@ Name|Description
 [SyntheticsTestRequestClientCertificateKeyOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificatekeyoutputreference)|*No description*
 [SyntheticsTestRequestClientCertificateOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificateoutputreference)|*No description*
 [SyntheticsTestRequestDefinitionOutputReference](#cdktf-provider-datadog-syntheticstestrequestdefinitionoutputreference)|*No description*
+[SyntheticsTestRequestProxyOutputReference](#cdktf-provider-datadog-syntheticstestrequestproxyoutputreference)|*No description*
 [User](#cdktf-provider-datadog-user)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
 [Webhook](#cdktf-provider-datadog-webhook)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook datadog_webhook}.
 [WebhookCustomVariable](#cdktf-provider-datadog-webhookcustomvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook_custom_variable datadog_webhook_custom_variable}.
@@ -741,7 +774,9 @@ Name|Description
 ----|-----------
 [ApiKeyConfig](#cdktf-provider-datadog-apikeyconfig)|*No description*
 [ApplicationKeyConfig](#cdktf-provider-datadog-applicationkeyconfig)|*No description*
+[AuthnMappingConfig](#cdktf-provider-datadog-authnmappingconfig)|*No description*
 [ChildOrganizationConfig](#cdktf-provider-datadog-childorganizationconfig)|*No description*
+[CloudWorkloadSecurityAgentRuleConfig](#cdktf-provider-datadog-cloudworkloadsecurityagentruleconfig)|*No description*
 [DashboardConfig](#cdktf-provider-datadog-dashboardconfig)|*No description*
 [DashboardJsonConfig](#cdktf-provider-datadog-dashboardjsonconfig)|*No description*
 [DashboardListConfig](#cdktf-provider-datadog-dashboardlistconfig)|*No description*
@@ -797,6 +832,8 @@ Name|Description
 [DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetDistributionDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquery)|*No description*
+[DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquerycolumns)|*No description*
 [DashboardWidgetDistributionDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquery)|*No description*
 [DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerycomputequery)|*No description*
 [DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquerygroupby)|*No description*
@@ -894,6 +931,8 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquerymulticompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquerycolumns)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerycomputequery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquerygroupby)|*No description*
@@ -1317,6 +1356,21 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequestsecurityquerymulticompute)|*No description*
 [DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinitionrequeststyle)|*No description*
 [DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettraceservicedefinition)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinition)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequest)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformula)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulaconditionalformats)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimit)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerycompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupby)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysort)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearch)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricquery)|*No description*
+[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetwidgetlayout)|*No description*
 [DashboardWidgetHeatmapDefinition](#cdktf-provider-datadog-dashboardwidgetheatmapdefinition)|*No description*
 [DashboardWidgetHeatmapDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetheatmapdefinitioncustomlink)|*No description*
@@ -1693,12 +1747,29 @@ Name|Description
 [DashboardWidgetToplistDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequestsecurityquerymulticompute)|*No description*
 [DashboardWidgetToplistDefinitionRequestStyle](#cdktf-provider-datadog-dashboardwidgettoplistdefinitionrequeststyle)|*No description*
 [DashboardWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgettraceservicedefinition)|*No description*
+[DashboardWidgetTreemapDefinition](#cdktf-provider-datadog-dashboardwidgettreemapdefinition)|*No description*
+[DashboardWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequest)|*No description*
+[DashboardWidgetTreemapDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformula)|*No description*
+[DashboardWidgetTreemapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulaconditionalformats)|*No description*
+[DashboardWidgetTreemapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimit)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquery)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsquery)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsquery)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquery)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerycompute)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupby)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysort)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearch)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricquery)|*No description*
+[DashboardWidgetTreemapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessquery)|*No description*
 [DashboardWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetwidgetlayout)|*No description*
 [DataDatadogApiKeyConfig](#cdktf-provider-datadog-datadatadogapikeyconfig)|*No description*
 [DataDatadogApplicationKeyConfig](#cdktf-provider-datadog-datadatadogapplicationkeyconfig)|*No description*
+[DataDatadogCloudWorkloadSecurityAgentRulesConfig](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesconfig)|*No description*
 [DataDatadogDashboardConfig](#cdktf-provider-datadog-datadatadogdashboardconfig)|*No description*
 [DataDatadogDashboardListConfig](#cdktf-provider-datadog-datadatadogdashboardlistconfig)|*No description*
 [DataDatadogIpRangesConfig](#cdktf-provider-datadog-datadatadogiprangesconfig)|*No description*
+[DataDatadogLogsIndexesConfig](#cdktf-provider-datadog-datadatadoglogsindexesconfig)|*No description*
 [DataDatadogLogsIndexesOrderConfig](#cdktf-provider-datadog-datadatadoglogsindexesorderconfig)|*No description*
 [DataDatadogMonitorConfig](#cdktf-provider-datadog-datadatadogmonitorconfig)|*No description*
 [DataDatadogMonitorsConfig](#cdktf-provider-datadog-datadatadogmonitorsconfig)|*No description*
@@ -1826,11 +1897,14 @@ Name|Description
 [SyntheticsTestApiStepRequestClientCertificateCert](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatecert)|*No description*
 [SyntheticsTestApiStepRequestClientCertificateKey](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificatekey)|*No description*
 [SyntheticsTestApiStepRequestDefinition](#cdktf-provider-datadog-syntheticstestapisteprequestdefinition)|*No description*
+[SyntheticsTestApiStepRequestProxy](#cdktf-provider-datadog-syntheticstestapisteprequestproxy)|*No description*
 [SyntheticsTestApiStepRetry](#cdktf-provider-datadog-syntheticstestapistepretry)|*No description*
 [SyntheticsTestAssertion](#cdktf-provider-datadog-syntheticstestassertion)|*No description*
 [SyntheticsTestAssertionTargetjsonpath](#cdktf-provider-datadog-syntheticstestassertiontargetjsonpath)|*No description*
 [SyntheticsTestBrowserStep](#cdktf-provider-datadog-syntheticstestbrowserstep)|*No description*
 [SyntheticsTestBrowserStepParams](#cdktf-provider-datadog-syntheticstestbrowserstepparams)|*No description*
+[SyntheticsTestBrowserStepParamsElementUserLocator](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocator)|*No description*
+[SyntheticsTestBrowserStepParamsElementUserLocatorValue](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue)|*No description*
 [SyntheticsTestBrowserStepParamsVariable](#cdktf-provider-datadog-syntheticstestbrowserstepparamsvariable)|*No description*
 [SyntheticsTestBrowserVariable](#cdktf-provider-datadog-syntheticstestbrowservariable)|*No description*
 [SyntheticsTestConfig](#cdktf-provider-datadog-syntheticstestconfig)|*No description*
@@ -1843,6 +1917,7 @@ Name|Description
 [SyntheticsTestRequestClientCertificateCert](#cdktf-provider-datadog-syntheticstestrequestclientcertificatecert)|*No description*
 [SyntheticsTestRequestClientCertificateKey](#cdktf-provider-datadog-syntheticstestrequestclientcertificatekey)|*No description*
 [SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)|*No description*
+[SyntheticsTestRequestProxy](#cdktf-provider-datadog-syntheticstestrequestproxy)|*No description*
 [UserConfig](#cdktf-provider-datadog-userconfig)|*No description*
 [WebhookConfig](#cdktf-provider-datadog-webhookconfig)|*No description*
 [WebhookCustomVariableConfig](#cdktf-provider-datadog-webhookcustomvariableconfig)|*No description*
@@ -1946,6 +2021,66 @@ Name | Type | Description
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-applicationkey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class AuthnMapping  <a id="cdktf-provider-datadog-authnmapping"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping datadog_authn_mapping}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping datadog_authn_mapping} Resource.
+
+```ts
+new AuthnMapping(scope: Construct, id: string, config: AuthnMappingConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[AuthnMappingConfig](#cdktf-provider-datadog-authnmappingconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **key** (<code>string</code>)  Identity provider key. 
+  * **role** (<code>string</code>)  The ID of a role to attach to all users with the corresponding key and value. 
+  * **value** (<code>string</code>)  Identity provider value. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**key** | <code>string</code> | <span></span>
+**role** | <code>string</code> | <span></span>
+**value** | <code>string</code> | <span></span>
+**keyInput**? | <code>string</code> | __*Optional*__
+**roleInput**? | <code>string</code> | __*Optional*__
+**valueInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-authnmapping-synthesizeattributes"></a>
 
 
 
@@ -2335,6 +2470,93 @@ Name | Type | Description
 **accessRole** | <code>string</code> | <span></span>
 **email** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+
+
+
+## class CloudWorkloadSecurityAgentRule  <a id="cdktf-provider-datadog-cloudworkloadsecurityagentrule"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource.
+
+```ts
+new CloudWorkloadSecurityAgentRule(scope: Construct, id: string, config: CloudWorkloadSecurityAgentRuleConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[CloudWorkloadSecurityAgentRuleConfig](#cdktf-provider-datadog-cloudworkloadsecurityagentruleconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **expression** (<code>string</code>)  The SECL expression of the Agent rule. 
+  * **name** (<code>string</code>)  The name of the Agent rule. 
+  * **description** (<code>string</code>)  The description of the Agent rule. __*Optional*__
+  * **enabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether the Agent rule is enabled. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**description** | <code>string</code> | <span></span>
+**enabled** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**expression** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**descriptionInput**? | <code>string</code> | __*Optional*__
+**enabledInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**expressionInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetDescription() <a id="cdktf-provider-datadog-cloudworkloadsecurityagentrule-resetdescription"></a>
+
+
+
+```ts
+resetDescription(): void
+```
+
+
+
+
+
+#### resetEnabled() <a id="cdktf-provider-datadog-cloudworkloadsecurityagentrule-resetenabled"></a>
+
+
+
+```ts
+resetEnabled(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-cloudworkloadsecurityagentrule-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
 
 
 
@@ -5139,6 +5361,78 @@ resetMultiCompute(): void
 
 ```ts
 resetSearchQuery(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**columns** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquerycolumns)></code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**primaryTag** | <code>string</code> | <span></span>
+**resource** | <code>string</code> | <span></span>
+**rowType** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**columnsInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquerycolumns)></code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetDistributionDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**primaryTagInput**? | <code>string</code> | __*Optional*__
+**resourceInput**? | <code>string</code> | __*Optional*__
+**rowTypeInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetColumns() <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsqueryoutputreference-resetcolumns"></a>
+
+
+
+```ts
+resetColumns(): void
+```
+
+
+
+
+
+#### resetResource() <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsqueryoutputreference-resetresource"></a>
+
+
+
+```ts
+resetResource(): void
 ```
 
 
@@ -10110,6 +10404,78 @@ resetMultiCompute(): void
 
 ```ts
 resetSearchQuery(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**columns** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquerycolumns)></code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**primaryTag** | <code>string</code> | <span></span>
+**resource** | <code>string</code> | <span></span>
+**rowType** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**columnsInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquerycolumns)></code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**primaryTagInput**? | <code>string</code> | __*Optional*__
+**resourceInput**? | <code>string</code> | __*Optional*__
+**rowTypeInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetColumns() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsqueryoutputreference-resetcolumns"></a>
+
+
+
+```ts
+resetColumns(): void
+```
+
+
+
+
+
+#### resetResource() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsqueryoutputreference-resetresource"></a>
+
+
+
+```ts
+resetResource(): void
 ```
 
 
@@ -31186,6 +31552,717 @@ resetTitleSize(): void
 
 
 
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**request** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinition)</code> | __*Optional*__
+**requestInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequest)></code> | __*Optional*__
+**titleInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetRequest() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionoutputreference-resetrequest"></a>
+
+
+
+```ts
+resetRequest(): void
+```
+
+
+
+
+
+#### resetTitle() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionoutputreference-resettitle"></a>
+
+
+
+```ts
+resetTitle(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimitoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**countInput**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimit)</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetCount() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimitoutputreference-resetcount"></a>
+
+
+
+```ts
+resetCount(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimitoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
+**isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIsUpstream() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference-resetisupstream"></a>
+
+
+
+```ts
+resetIsUpstream(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetOperationName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetoperationname"></a>
+
+
+
+```ts
+resetOperationName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+#### resetResourceName() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetresourcename"></a>
+
+
+
+```ts
+resetResourceName(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**aggregationInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetMetric() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference-resetmetric"></a>
+
+
+
+```ts
+resetMetric(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerycompute)></code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**search** | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
+**computeInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
+**indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**searchInput**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+
+
+
+```ts
+putSearch(value: DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch): void
+```
+
+* **value** (<code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearch)</code>)  *No description*
+  * **query** (<code>string</code>)  The events search string. 
+
+
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetIndexes() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventqueryoutputreference-resetindexes"></a>
+
+
+
+```ts
+resetIndexes(): void
+```
+
+
+
+
+
+#### resetSearch() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventqueryoutputreference-resetsearch"></a>
+
+
+
+```ts
+resetSearch(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearchoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetDataSource() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricqueryoutputreference-resetdatasource"></a>
+
+
+
+```ts
+resetDataSource(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessquery)</code> | __*Optional*__
+**isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**limitInput**? | <code>number</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**sortInput**? | <code>string</code> | __*Optional*__
+**tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
+**textFilterInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetIsNormalizedCpu() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetisnormalizedcpu"></a>
+
+
+
+```ts
+resetIsNormalizedCpu(): void
+```
+
+
+
+
+
+#### resetLimit() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetlimit"></a>
+
+
+
+```ts
+resetLimit(): void
+```
+
+
+
+
+
+#### resetSort() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetsort"></a>
+
+
+
+```ts
+resetSort(): void
+```
+
+
+
+
+
+#### resetTagFilters() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resettagfilters"></a>
+
+
+
+```ts
+resetTagFilters(): void
+```
+
+
+
+
+
+#### resetTextFilter() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resettextfilter"></a>
+
+
+
+```ts
+resetTextFilter(): void
+```
+
+
+
+
+
+
+
 ## class DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetwidgetlayoutoutputreference"></a>
 
 
@@ -49880,6 +50957,717 @@ resetTitleSize(): void
 
 
 
+## class DashboardWidgetTreemapDefinitionOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**request** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequest)></code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetTreemapDefinition](#cdktf-provider-datadog-dashboardwidgettreemapdefinition)</code> | __*Optional*__
+**requestInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequest)></code> | __*Optional*__
+**titleInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetRequest() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionoutputreference-resetrequest"></a>
+
+
+
+```ts
+resetRequest(): void
+```
+
+
+
+
+
+#### resetTitle() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionoutputreference-resettitle"></a>
+
+
+
+```ts
+resetTitle(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestFormulaLimitOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimitoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**count** | <code>number</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**countInput**? | <code>number</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimit)</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetCount() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimitoutputreference-resetcount"></a>
+
+
+
+```ts
+resetCount(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimitoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**isUpstream** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsquery)</code> | __*Optional*__
+**isUpstreamInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIsUpstream() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference-resetisupstream"></a>
+
+
+
+```ts
+resetIsUpstream(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | <span></span>
+**env** | <code>string</code> | <span></span>
+**groupBy** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**operationName** | <code>string</code> | <span></span>
+**primaryTagName** | <code>string</code> | <span></span>
+**primaryTagValue** | <code>string</code> | <span></span>
+**resourceName** | <code>string</code> | <span></span>
+**service** | <code>string</code> | <span></span>
+**stat** | <code>string</code> | <span></span>
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**envInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**operationNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagNameInput**? | <code>string</code> | __*Optional*__
+**primaryTagValueInput**? | <code>string</code> | __*Optional*__
+**resourceNameInput**? | <code>string</code> | __*Optional*__
+**serviceInput**? | <code>string</code> | __*Optional*__
+**statInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetOperationName() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetoperationname"></a>
+
+
+
+```ts
+resetOperationName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagName() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagname"></a>
+
+
+
+```ts
+resetPrimaryTagName(): void
+```
+
+
+
+
+
+#### resetPrimaryTagValue() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetprimarytagvalue"></a>
+
+
+
+```ts
+resetPrimaryTagValue(): void
+```
+
+
+
+
+
+#### resetResourceName() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsqueryoutputreference-resetresourcename"></a>
+
+
+
+```ts
+resetResourceName(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**order** | <code>string</code> | <span></span>
+**aggregationInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysort)</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**orderInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetMetric() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference-resetmetric"></a>
+
+
+
+```ts
+resetMetric(): void
+```
+
+
+
+
+
+#### resetOrder() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysortoutputreference-resetorder"></a>
+
+
+
+```ts
+resetOrder(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerycompute)></code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**groupBy** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupby)></code> | <span></span>
+**indexes** | <code>Array<string></code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**search** | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearchoutputreference)</code> | <span></span>
+**computeInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerycompute)></code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**groupByInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupby)></code> | __*Optional*__
+**indexesInput**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**searchInput**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSearch(value) <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventqueryoutputreference-putsearch"></a>
+
+
+
+```ts
+putSearch(value: DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch): void
+```
+
+* **value** (<code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearch)</code>)  *No description*
+  * **query** (<code>string</code>)  The events search string. 
+
+
+
+
+#### resetGroupBy() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventqueryoutputreference-resetgroupby"></a>
+
+
+
+```ts
+resetGroupBy(): void
+```
+
+
+
+
+
+#### resetIndexes() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventqueryoutputreference-resetindexes"></a>
+
+
+
+```ts
+resetIndexes(): void
+```
+
+
+
+
+
+#### resetSearch() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventqueryoutputreference-resetsearch"></a>
+
+
+
+```ts
+resetSearch(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearchoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearch)</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricquery)</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**queryInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetDataSource() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricqueryoutputreference-resetdatasource"></a>
+
+
+
+```ts
+resetDataSource(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregator** | <code>string</code> | <span></span>
+**dataSource** | <code>string</code> | <span></span>
+**isNormalizedCpu** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**limit** | <code>number</code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
+**tagFilters** | <code>Array<string></code> | <span></span>
+**textFilter** | <code>string</code> | <span></span>
+**aggregatorInput**? | <code>string</code> | __*Optional*__
+**dataSourceInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessquery)</code> | __*Optional*__
+**isNormalizedCpuInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**limitInput**? | <code>number</code> | __*Optional*__
+**metricInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**sortInput**? | <code>string</code> | __*Optional*__
+**tagFiltersInput**? | <code>Array<string></code> | __*Optional*__
+**textFilterInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAggregator() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetaggregator"></a>
+
+
+
+```ts
+resetAggregator(): void
+```
+
+
+
+
+
+#### resetIsNormalizedCpu() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetisnormalizedcpu"></a>
+
+
+
+```ts
+resetIsNormalizedCpu(): void
+```
+
+
+
+
+
+#### resetLimit() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetlimit"></a>
+
+
+
+```ts
+resetLimit(): void
+```
+
+
+
+
+
+#### resetSort() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resetsort"></a>
+
+
+
+```ts
+resetSort(): void
+```
+
+
+
+
+
+#### resetTagFilters() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resettagfilters"></a>
+
+
+
+```ts
+resetTagFilters(): void
+```
+
+
+
+
+
+#### resetTextFilter() <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessqueryoutputreference-resettextfilter"></a>
+
+
+
+```ts
+resetTextFilter(): void
+```
+
+
+
+
+
+
+
 ## class DashboardWidgetWidgetLayoutOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetwidgetlayoutoutputreference"></a>
 
 
@@ -50098,6 +51886,106 @@ __Returns__:
 
 
 
+## class DataDatadogCloudWorkloadSecurityAgentRules  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules} Data Source.
+
+```ts
+new DataDatadogCloudWorkloadSecurityAgentRules(scope: Construct, id: string, config?: DataDatadogCloudWorkloadSecurityAgentRulesConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogCloudWorkloadSecurityAgentRulesConfig](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### agentRules(index) <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules-agentrules"></a>
+
+
+
+```ts
+agentRules(index: string): DataDatadogCloudWorkloadSecurityAgentRulesAgentRules
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[DataDatadogCloudWorkloadSecurityAgentRulesAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules)</code>
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataDatadogCloudWorkloadSecurityAgentRulesAgentRules  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogCloudWorkloadSecurityAgentRulesAgentRules(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+* **wrapsSet** (<code>boolean</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**description** | <code>string</code> | <span></span>
+**enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**expression** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+
+
+
 ## class DataDatadogDashboard  <a id="cdktf-provider-datadog-datadatadogdashboard"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}.
@@ -50296,6 +52184,205 @@ protected synthesizeAttributes(): Map<string, any>
 
 __Returns__:
 * <code>Map<string, any></code>
+
+
+
+## class DataDatadogLogsIndexes  <a id="cdktf-provider-datadog-datadatadoglogsindexes"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes} Data Source.
+
+```ts
+new DataDatadogLogsIndexes(scope: Construct, id: string, config?: DataDatadogLogsIndexesConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogLogsIndexesConfig](#cdktf-provider-datadog-datadatadoglogsindexesconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### logsIndexes(index) <a id="cdktf-provider-datadog-datadatadoglogsindexes-logsindexes"></a>
+
+
+
+```ts
+logsIndexes(index: string): DataDatadogLogsIndexesLogsIndexes
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[DataDatadogLogsIndexesLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexes)</code>
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadoglogsindexes-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexes  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexes"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+* **wrapsSet** (<code>boolean</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dailyLimit** | <code>number</code> | <span></span>
+**exclusionFilter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**filter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**retentionDays** | <code>number</code> | <span></span>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesExclusionFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesExclusionFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+* **wrapsSet** (<code>boolean</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**filter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**isEnabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+* **wrapsSet** (<code>boolean</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
+**sampleRate** | <code>number</code> | <span></span>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+* **wrapsSet** (<code>boolean</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | <span></span>
 
 
 
@@ -52389,9 +54476,12 @@ new IntegrationAws(scope: Construct, id: string, config?: IntegrationAwsConfig)
   * **accessKeyId** (<code>string</code>)  Your AWS access key ID. Only required if your AWS account is a GovCloud or China account. __*Optional*__
   * **accountId** (<code>string</code>)  Your AWS Account ID without dashes. __*Optional*__
   * **accountSpecificNamespaceRules** (<code>Map<string, boolean &#124; [IResolvable](#cdktf-iresolvable)></code>)  Enables or disables metric collection for specific AWS namespaces for this AWS account only. __*Optional*__
+  * **cspmResourceCollectionEnabled** (<code>string</code>)  Whether Datadog collects cloud security posture management resources from your AWS account. __*Optional*__
   * **excludedRegions** (<code>Array<string></code>)  An array of AWS regions to exclude from metrics collection. __*Optional*__
   * **filterTags** (<code>Array<string></code>)  Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses when collecting metrics from EC2. __*Optional*__
   * **hostTags** (<code>Array<string></code>)  Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration. __*Optional*__
+  * **metricsCollectionEnabled** (<code>string</code>)  Whether Datadog collects metrics for this AWS account. __*Optional*__
+  * **resourceCollectionEnabled** (<code>string</code>)  Whether Datadog collects a standard set of resources from your AWS account. __*Optional*__
   * **roleName** (<code>string</code>)  Your Datadog role delegation name. __*Optional*__
   * **secretAccessKey** (<code>string</code>)  Your AWS secret access key. Only required if your AWS account is a GovCloud or China account. __*Optional*__
 
@@ -52405,19 +54495,25 @@ Name | Type | Description
 **accessKeyId** | <code>string</code> | <span></span>
 **accountId** | <code>string</code> | <span></span>
 **accountSpecificNamespaceRules** | <code>Map<string, boolean &#124; [IResolvable](#cdktf-iresolvable)></code> | <span></span>
+**cspmResourceCollectionEnabled** | <code>string</code> | <span></span>
 **excludedRegions** | <code>Array<string></code> | <span></span>
 **externalId** | <code>string</code> | <span></span>
 **filterTags** | <code>Array<string></code> | <span></span>
 **hostTags** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**metricsCollectionEnabled** | <code>string</code> | <span></span>
+**resourceCollectionEnabled** | <code>string</code> | <span></span>
 **roleName** | <code>string</code> | <span></span>
 **secretAccessKey** | <code>string</code> | <span></span>
 **accessKeyIdInput**? | <code>string</code> | __*Optional*__
 **accountIdInput**? | <code>string</code> | __*Optional*__
 **accountSpecificNamespaceRulesInput**? | <code>Map<string, boolean &#124; [IResolvable](#cdktf-iresolvable)></code> | __*Optional*__
+**cspmResourceCollectionEnabledInput**? | <code>string</code> | __*Optional*__
 **excludedRegionsInput**? | <code>Array<string></code> | __*Optional*__
 **filterTagsInput**? | <code>Array<string></code> | __*Optional*__
 **hostTagsInput**? | <code>Array<string></code> | __*Optional*__
+**metricsCollectionEnabledInput**? | <code>string</code> | __*Optional*__
+**resourceCollectionEnabledInput**? | <code>string</code> | __*Optional*__
 **roleNameInput**? | <code>string</code> | __*Optional*__
 **secretAccessKeyInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -52461,6 +54557,18 @@ resetAccountSpecificNamespaceRules(): void
 
 
 
+#### resetCspmResourceCollectionEnabled() <a id="cdktf-provider-datadog-integrationaws-resetcspmresourcecollectionenabled"></a>
+
+
+
+```ts
+resetCspmResourceCollectionEnabled(): void
+```
+
+
+
+
+
 #### resetExcludedRegions() <a id="cdktf-provider-datadog-integrationaws-resetexcludedregions"></a>
 
 
@@ -52491,6 +54599,30 @@ resetFilterTags(): void
 
 ```ts
 resetHostTags(): void
+```
+
+
+
+
+
+#### resetMetricsCollectionEnabled() <a id="cdktf-provider-datadog-integrationaws-resetmetricscollectionenabled"></a>
+
+
+
+```ts
+resetMetricsCollectionEnabled(): void
+```
+
+
+
+
+
+#### resetResourceCollectionEnabled() <a id="cdktf-provider-datadog-integrationaws-resetresourcecollectionenabled"></a>
+
+
+
+```ts
+resetResourceCollectionEnabled(): void
 ```
 
 
@@ -58226,10 +60358,10 @@ putOptions(value: SecurityMonitoringRuleOptions): void
 ```
 
 * **value** (<code>[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)</code>)  *No description*
-  * **evaluationWindow** (<code>number</code>)  A time window is specified to match when at least one of the cases matches true. 
   * **keepAlive** (<code>number</code>)  Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. 
   * **maxSignalDuration** (<code>number</code>)  A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. 
-  * **detectionMethod** (<code>string</code>)  The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`. __*Optional*__
+  * **detectionMethod** (<code>string</code>)  The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`. __*Optional*__
+  * **evaluationWindow** (<code>number</code>)  A time window is specified to match when at least one of the cases matches true. __*Optional*__
   * **newValueOptions** (<code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code>)  new_value_options block. __*Optional*__
 
 
@@ -58419,6 +60551,18 @@ putNewValueOptions(value: SecurityMonitoringRuleOptionsNewValueOptions): void
 
 ```ts
 resetDetectionMethod(): void
+```
+
+
+
+
+
+#### resetEvaluationWindow() <a id="cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference-resetevaluationwindow"></a>
+
+
+
+```ts
+resetEvaluationWindow(): void
 ```
 
 
@@ -59193,6 +61337,7 @@ new SyntheticsTest(scope: Construct, id: string, config: SyntheticsTestConfig)
   * **requestClientCertificate** (<code>[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)</code>)  request_client_certificate block. __*Optional*__
   * **requestDefinition** (<code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code>)  request_definition block. __*Optional*__
   * **requestHeaders** (<code>Map<string, string></code>)  Header name and value map. __*Optional*__
+  * **requestProxy** (<code>[SyntheticsTestRequestProxy](#cdktf-provider-datadog-syntheticstestrequestproxy)</code>)  request_proxy block. __*Optional*__
   * **requestQuery** (<code>Map<string, string></code>)  Query arguments name and value map. __*Optional*__
   * **setCookie** (<code>string</code>)  Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax. __*Optional*__
   * **subtype** (<code>string</code>)  The subtype of the Synthetic API test. __*Optional*__
@@ -59221,6 +61366,7 @@ Name | Type | Description
 **requestClientCertificate** | <code>[SyntheticsTestRequestClientCertificateOutputReference](#cdktf-provider-datadog-syntheticstestrequestclientcertificateoutputreference)</code> | <span></span>
 **requestDefinition** | <code>[SyntheticsTestRequestDefinitionOutputReference](#cdktf-provider-datadog-syntheticstestrequestdefinitionoutputreference)</code> | <span></span>
 **requestHeaders** | <code>Map<string, string></code> | <span></span>
+**requestProxy** | <code>[SyntheticsTestRequestProxyOutputReference](#cdktf-provider-datadog-syntheticstestrequestproxyoutputreference)</code> | <span></span>
 **requestQuery** | <code>Map<string, string></code> | <span></span>
 **setCookie** | <code>string</code> | <span></span>
 **status** | <code>string</code> | <span></span>
@@ -59241,6 +61387,7 @@ Name | Type | Description
 **requestClientCertificateInput**? | <code>[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)</code> | __*Optional*__
 **requestDefinitionInput**? | <code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code> | __*Optional*__
 **requestHeadersInput**? | <code>Map<string, string></code> | __*Optional*__
+**requestProxyInput**? | <code>[SyntheticsTestRequestProxy](#cdktf-provider-datadog-syntheticstestrequestproxy)</code> | __*Optional*__
 **requestQueryInput**? | <code>Map<string, string></code> | __*Optional*__
 **setCookieInput**? | <code>string</code> | __*Optional*__
 **statusInput**? | <code>string</code> | __*Optional*__
@@ -59264,6 +61411,7 @@ putOptionsList(value: SyntheticsTestOptionsList): void
   * **tickEvery** (<code>number</code>)  How often the test should run (in seconds). 
   * **acceptSelfSigned** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  For SSL test, whether or not the test should allow self signed certificates. __*Optional*__
   * **allowInsecure** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Allows loading insecure content for an HTTP test. __*Optional*__
+  * **checkCertificateRevocation** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP. __*Optional*__
   * **followRedirects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Determines whether or not the API HTTP test should follow redirects. __*Optional*__
   * **minFailureDuration** (<code>number</code>)  Minimum amount of time in failure required to trigger an alert. Default is `0`. __*Optional*__
   * **minLocationFailed** (<code>number</code>)  Minimum number of locations in failure required to trigger an alert. Default is `1`. __*Optional*__
@@ -59285,8 +61433,16 @@ putRequestBasicauth(value: SyntheticsTestRequestBasicauth): void
 ```
 
 * **value** (<code>[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)</code>)  *No description*
-  * **password** (<code>string</code>)  Password for authentication. 
-  * **username** (<code>string</code>)  Username for authentication. 
+  * **accessKey** (<code>string</code>)  Access key for `SIGV4` authentication. __*Optional*__
+  * **domain** (<code>string</code>)  Domain for `ntlm` authentication. __*Optional*__
+  * **password** (<code>string</code>)  Password for authentication. __*Optional*__
+  * **region** (<code>string</code>)  Region for `SIGV4` authentication. __*Optional*__
+  * **secretKey** (<code>string</code>)  Secret key for `SIGV4` authentication. __*Optional*__
+  * **serviceName** (<code>string</code>)  Service name for `SIGV4` authentication. __*Optional*__
+  * **sessionToken** (<code>string</code>)  Session token for `SIGV4` authentication. __*Optional*__
+  * **type** (<code>string</code>)  Type of basic authentication to use when performing the test. __*Optional*__
+  * **username** (<code>string</code>)  Username for authentication. __*Optional*__
+  * **workstation** (<code>string</code>)  Workstation for `ntlm` authentication. __*Optional*__
 
 
 
@@ -59328,6 +61484,21 @@ putRequestDefinition(value: SyntheticsTestRequestDefinition): void
   * **shouldTrackHops** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  This will turn on a traceroute probe to discover all gateways along the path to the host destination. __*Optional*__
   * **timeout** (<code>number</code>)  Timeout in seconds for the test. Defaults to `60`. __*Optional*__
   * **url** (<code>string</code>)  The URL to send the request to. __*Optional*__
+
+
+
+
+#### putRequestProxy(value) <a id="cdktf-provider-datadog-syntheticstest-putrequestproxy"></a>
+
+
+
+```ts
+putRequestProxy(value: SyntheticsTestRequestProxy): void
+```
+
+* **value** (<code>[SyntheticsTestRequestProxy](#cdktf-provider-datadog-syntheticstestrequestproxy)</code>)  *No description*
+  * **url** (<code>string</code>)  URL of the proxy to perform the test. 
+  * **headers** (<code>Map<string, string></code>)  Header name and value map. __*Optional*__
 
 
 
@@ -59470,6 +61641,18 @@ resetRequestDefinition(): void
 
 ```ts
 resetRequestHeaders(): void
+```
+
+
+
+
+
+#### resetRequestProxy() <a id="cdktf-provider-datadog-syntheticstest-resetrequestproxy"></a>
+
+
+
+```ts
+resetRequestProxy(): void
 ```
 
 
@@ -59652,11 +61835,150 @@ new SyntheticsTestApiStepRequestBasicauthOutputReference(terraformResource: IInt
 
 Name | Type | Description 
 -----|------|-------------
+**accessKey** | <code>string</code> | <span></span>
+**domain** | <code>string</code> | <span></span>
 **password** | <code>string</code> | <span></span>
+**region** | <code>string</code> | <span></span>
+**secretKey** | <code>string</code> | <span></span>
+**serviceName** | <code>string</code> | <span></span>
+**sessionToken** | <code>string</code> | <span></span>
+**type** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
+**workstation** | <code>string</code> | <span></span>
+**accessKeyInput**? | <code>string</code> | __*Optional*__
+**domainInput**? | <code>string</code> | __*Optional*__
 **internalValue**? | <code>[SyntheticsTestApiStepRequestBasicauth](#cdktf-provider-datadog-syntheticstestapisteprequestbasicauth)</code> | __*Optional*__
 **passwordInput**? | <code>string</code> | __*Optional*__
+**regionInput**? | <code>string</code> | __*Optional*__
+**secretKeyInput**? | <code>string</code> | __*Optional*__
+**serviceNameInput**? | <code>string</code> | __*Optional*__
+**sessionTokenInput**? | <code>string</code> | __*Optional*__
+**typeInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
+**workstationInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAccessKey() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetaccesskey"></a>
+
+
+
+```ts
+resetAccessKey(): void
+```
+
+
+
+
+
+#### resetDomain() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetdomain"></a>
+
+
+
+```ts
+resetDomain(): void
+```
+
+
+
+
+
+#### resetPassword() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetpassword"></a>
+
+
+
+```ts
+resetPassword(): void
+```
+
+
+
+
+
+#### resetRegion() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetregion"></a>
+
+
+
+```ts
+resetRegion(): void
+```
+
+
+
+
+
+#### resetSecretKey() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetsecretkey"></a>
+
+
+
+```ts
+resetSecretKey(): void
+```
+
+
+
+
+
+#### resetServiceName() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetservicename"></a>
+
+
+
+```ts
+resetServiceName(): void
+```
+
+
+
+
+
+#### resetSessionToken() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetsessiontoken"></a>
+
+
+
+```ts
+resetSessionToken(): void
+```
+
+
+
+
+
+#### resetType() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resettype"></a>
+
+
+
+```ts
+resetType(): void
+```
+
+
+
+
+
+#### resetUsername() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetusername"></a>
+
+
+
+```ts
+resetUsername(): void
+```
+
+
+
+
+
+#### resetWorkstation() <a id="cdktf-provider-datadog-syntheticstestapisteprequestbasicauthoutputreference-resetworkstation"></a>
+
+
+
+```ts
+resetWorkstation(): void
+```
+
+
+
+
 
 
 
@@ -60072,6 +62394,56 @@ resetUrl(): void
 
 
 
+## class SyntheticsTestApiStepRequestProxyOutputReference  <a id="cdktf-provider-datadog-syntheticstestapisteprequestproxyoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new SyntheticsTestApiStepRequestProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**headers** | <code>Map<string, string></code> | <span></span>
+**url** | <code>string</code> | <span></span>
+**headersInput**? | <code>Map<string, string></code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestApiStepRequestProxy](#cdktf-provider-datadog-syntheticstestapisteprequestproxy)</code> | __*Optional*__
+**urlInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetHeaders() <a id="cdktf-provider-datadog-syntheticstestapisteprequestproxyoutputreference-resetheaders"></a>
+
+
+
+```ts
+resetHeaders(): void
+```
+
+
+
+
+
+
+
 ## class SyntheticsTestApiStepRetryOutputReference  <a id="cdktf-provider-datadog-syntheticstestapistepretryoutputreference"></a>
 
 
@@ -60171,6 +62543,121 @@ Name | Type | Description
 
 
 
+## class SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference  <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatoroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**failTestOnCannotLocate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**value** | <code>[SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalueoutputreference)</code> | <span></span>
+**failTestOnCannotLocateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestBrowserStepParamsElementUserLocator](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocator)</code> | __*Optional*__
+**valueInput**? | <code>[SyntheticsTestBrowserStepParamsElementUserLocatorValue](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue)</code> | __*Optional*__
+
+### Methods
+
+
+#### putValue(value) <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatoroutputreference-putvalue"></a>
+
+
+
+```ts
+putValue(value: SyntheticsTestBrowserStepParamsElementUserLocatorValue): void
+```
+
+* **value** (<code>[SyntheticsTestBrowserStepParamsElementUserLocatorValue](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue)</code>)  *No description*
+  * **value** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#value SyntheticsTest#value}. 
+  * **type** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}. __*Optional*__
+
+
+
+
+#### resetFailTestOnCannotLocate() <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatoroutputreference-resetfailtestoncannotlocate"></a>
+
+
+
+```ts
+resetFailTestOnCannotLocate(): void
+```
+
+
+
+
+
+
+
+## class SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference  <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalueoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**type** | <code>string</code> | <span></span>
+**value** | <code>string</code> | <span></span>
+**internalValue**? | <code>[SyntheticsTestBrowserStepParamsElementUserLocatorValue](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue)</code> | __*Optional*__
+**typeInput**? | <code>string</code> | __*Optional*__
+**valueInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetType() <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalueoutputreference-resettype"></a>
+
+
+
+```ts
+resetType(): void
+```
+
+
+
+
+
+
+
 ## class SyntheticsTestBrowserStepParamsOutputReference  <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference"></a>
 
 
@@ -60204,6 +62691,7 @@ Name | Type | Description
 **code** | <code>string</code> | <span></span>
 **delay** | <code>number</code> | <span></span>
 **element** | <code>string</code> | <span></span>
+**elementUserLocator** | <code>[SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatoroutputreference)</code> | <span></span>
 **email** | <code>string</code> | <span></span>
 **file** | <code>string</code> | <span></span>
 **files** | <code>string</code> | <span></span>
@@ -60222,6 +62710,7 @@ Name | Type | Description
 **codeInput**? | <code>string</code> | __*Optional*__
 **delayInput**? | <code>number</code> | __*Optional*__
 **elementInput**? | <code>string</code> | __*Optional*__
+**elementUserLocatorInput**? | <code>[SyntheticsTestBrowserStepParamsElementUserLocator](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocator)</code> | __*Optional*__
 **emailInput**? | <code>string</code> | __*Optional*__
 **fileInput**? | <code>string</code> | __*Optional*__
 **filesInput**? | <code>string</code> | __*Optional*__
@@ -60237,6 +62726,21 @@ Name | Type | Description
 **yInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
+
+
+#### putElementUserLocator(value) <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference-putelementuserlocator"></a>
+
+
+
+```ts
+putElementUserLocator(value: SyntheticsTestBrowserStepParamsElementUserLocator): void
+```
+
+* **value** (<code>[SyntheticsTestBrowserStepParamsElementUserLocator](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocator)</code>)  *No description*
+  * **value** (<code>[SyntheticsTestBrowserStepParamsElementUserLocatorValue](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue)</code>)  value block. 
+  * **failTestOnCannotLocate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. __*Optional*__
+
+
 
 
 #### putVariable(value) <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference-putvariable"></a>
@@ -60320,6 +62824,18 @@ resetDelay(): void
 
 ```ts
 resetElement(): void
+```
+
+
+
+
+
+#### resetElementUserLocator() <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamsoutputreference-resetelementuserlocator"></a>
+
+
+
+```ts
+resetElementUserLocator(): void
 ```
 
 
@@ -60611,6 +63127,7 @@ Name | Type | Description
 -----|------|-------------
 **acceptSelfSigned** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowInsecure** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**checkCertificateRevocation** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **followRedirects** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **minFailureDuration** | <code>number</code> | <span></span>
 **minLocationFailed** | <code>number</code> | <span></span>
@@ -60622,6 +63139,7 @@ Name | Type | Description
 **tickEvery** | <code>number</code> | <span></span>
 **acceptSelfSignedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowInsecureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**checkCertificateRevocationInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **followRedirectsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **internalValue**? | <code>[SyntheticsTestOptionsList](#cdktf-provider-datadog-syntheticstestoptionslist)</code> | __*Optional*__
 **minFailureDurationInput**? | <code>number</code> | __*Optional*__
@@ -60683,6 +63201,18 @@ resetAcceptSelfSigned(): void
 
 ```ts
 resetAllowInsecure(): void
+```
+
+
+
+
+
+#### resetCheckCertificateRevocation() <a id="cdktf-provider-datadog-syntheticstestoptionslistoutputreference-resetcheckcertificaterevocation"></a>
+
+
+
+```ts
+resetCheckCertificateRevocation(): void
 ```
 
 
@@ -60876,11 +63406,150 @@ new SyntheticsTestRequestBasicauthOutputReference(terraformResource: IInterpolat
 
 Name | Type | Description 
 -----|------|-------------
+**accessKey** | <code>string</code> | <span></span>
+**domain** | <code>string</code> | <span></span>
 **password** | <code>string</code> | <span></span>
+**region** | <code>string</code> | <span></span>
+**secretKey** | <code>string</code> | <span></span>
+**serviceName** | <code>string</code> | <span></span>
+**sessionToken** | <code>string</code> | <span></span>
+**type** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
+**workstation** | <code>string</code> | <span></span>
+**accessKeyInput**? | <code>string</code> | __*Optional*__
+**domainInput**? | <code>string</code> | __*Optional*__
 **internalValue**? | <code>[SyntheticsTestRequestBasicauth](#cdktf-provider-datadog-syntheticstestrequestbasicauth)</code> | __*Optional*__
 **passwordInput**? | <code>string</code> | __*Optional*__
+**regionInput**? | <code>string</code> | __*Optional*__
+**secretKeyInput**? | <code>string</code> | __*Optional*__
+**serviceNameInput**? | <code>string</code> | __*Optional*__
+**sessionTokenInput**? | <code>string</code> | __*Optional*__
+**typeInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
+**workstationInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetAccessKey() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetaccesskey"></a>
+
+
+
+```ts
+resetAccessKey(): void
+```
+
+
+
+
+
+#### resetDomain() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetdomain"></a>
+
+
+
+```ts
+resetDomain(): void
+```
+
+
+
+
+
+#### resetPassword() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetpassword"></a>
+
+
+
+```ts
+resetPassword(): void
+```
+
+
+
+
+
+#### resetRegion() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetregion"></a>
+
+
+
+```ts
+resetRegion(): void
+```
+
+
+
+
+
+#### resetSecretKey() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetsecretkey"></a>
+
+
+
+```ts
+resetSecretKey(): void
+```
+
+
+
+
+
+#### resetServiceName() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetservicename"></a>
+
+
+
+```ts
+resetServiceName(): void
+```
+
+
+
+
+
+#### resetSessionToken() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetsessiontoken"></a>
+
+
+
+```ts
+resetSessionToken(): void
+```
+
+
+
+
+
+#### resetType() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resettype"></a>
+
+
+
+```ts
+resetType(): void
+```
+
+
+
+
+
+#### resetUsername() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetusername"></a>
+
+
+
+```ts
+resetUsername(): void
+```
+
+
+
+
+
+#### resetWorkstation() <a id="cdktf-provider-datadog-syntheticstestrequestbasicauthoutputreference-resetworkstation"></a>
+
+
+
+```ts
+resetWorkstation(): void
+```
+
+
+
+
 
 
 
@@ -61268,6 +63937,56 @@ resetUrl(): void
 
 
 
+## class SyntheticsTestRequestProxyOutputReference  <a id="cdktf-provider-datadog-syntheticstestrequestproxyoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new SyntheticsTestRequestProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**headers** | <code>Map<string, string></code> | <span></span>
+**url** | <code>string</code> | <span></span>
+**headersInput**? | <code>Map<string, string></code> | __*Optional*__
+**internalValue**? | <code>[SyntheticsTestRequestProxy](#cdktf-provider-datadog-syntheticstestrequestproxy)</code> | __*Optional*__
+**urlInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetHeaders() <a id="cdktf-provider-datadog-syntheticstestrequestproxyoutputreference-resetheaders"></a>
+
+
+
+```ts
+resetHeaders(): void
+```
+
+
+
+
+
+
+
 ## class User  <a id="cdktf-provider-datadog-user"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
@@ -61580,6 +64299,25 @@ Name | Type | Description
 
 
 
+## struct AuthnMappingConfig  <a id="cdktf-provider-datadog-authnmappingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**key** | <code>string</code> | Identity provider key.
+**role** | <code>string</code> | The ID of a role to attach to all users with the corresponding key and value.
+**value** | <code>string</code> | Identity provider value.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct ChildOrganizationConfig  <a id="cdktf-provider-datadog-childorganizationconfig"></a>
 
 
@@ -61592,6 +64330,26 @@ Name | Type | Description
 **name** | <code>string</code> | Name for Child Organization after creation.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct CloudWorkloadSecurityAgentRuleConfig  <a id="cdktf-provider-datadog-cloudworkloadsecurityagentruleconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**expression** | <code>string</code> | The SECL expression of the Agent rule.
+**name** | <code>string</code> | The name of the Agent rule.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**description**? | <code>string</code> | The description of the Agent rule.<br/>__*Optional*__
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the Agent rule is enabled.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -61755,6 +64513,7 @@ Name | Type | Description
 **timeseriesDefinition**? | <code>[DashboardWidgetTimeseriesDefinition](#cdktf-provider-datadog-dashboardwidgettimeseriesdefinition)</code> | timeseries_definition block.<br/>__*Optional*__
 **toplistDefinition**? | <code>[DashboardWidgetToplistDefinition](#cdktf-provider-datadog-dashboardwidgettoplistdefinition)</code> | toplist_definition block.<br/>__*Optional*__
 **traceServiceDefinition**? | <code>[DashboardWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgettraceservicedefinition)</code> | trace_service_definition block.<br/>__*Optional*__
+**treemapDefinition**? | <code>[DashboardWidgetTreemapDefinition](#cdktf-provider-datadog-dashboardwidgettreemapdefinition)</code> | treemap_definition block.<br/>__*Optional*__
 **widgetLayout**? | <code>[DashboardWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetwidgetlayout)</code> | widget_layout block.<br/>__*Optional*__
 
 
@@ -62456,6 +65215,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **apmQuery**? | <code>[DashboardWidgetDistributionDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmquery)</code> | apm_query block.<br/>__*Optional*__
+**apmStatsQuery**? | <code>[DashboardWidgetDistributionDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquery)</code> | apm_stats_query block.<br/>__*Optional*__
 **logQuery**? | <code>[DashboardWidgetDistributionDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestlogquery)</code> | log_query block.<br/>__*Optional*__
 **processQuery**? | <code>[DashboardWidgetDistributionDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestprocessquery)</code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
@@ -62539,6 +65299,41 @@ Name | Type | Description
 **aggregation** | <code>string</code> | The aggregation method.
 **facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 **interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetDistributionDefinitionRequestApmStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**env** | <code>string</code> | The environment name.
+**name** | <code>string</code> | The operation name associated with the service.
+**primaryTag** | <code>string</code> | The organization's host group name and value.
+**rowType** | <code>string</code> | The level of detail for the request. Valid values are `service`, `resource`, `span`.
+**service** | <code>string</code> | The service name.
+**columns**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquerycolumns)></code> | columns block.<br/>__*Optional*__
+**resource**? | <code>string</code> | The resource name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns  <a id="cdktf-provider-datadog-dashboardwidgetdistributiondefinitionrequestapmstatsquerycolumns"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The column name.
+**alias**? | <code>string</code> | A user-assigned alias for the column.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**order**? | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -63367,6 +66162,7 @@ Name | Type | Description
 **timeseriesDefinition**? | <code>[DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettimeseriesdefinition)</code> | timeseries_definition block.<br/>__*Optional*__
 **toplistDefinition**? | <code>[DashboardWidgetGroupDefinitionWidgetToplistDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettoplistdefinition)</code> | toplist_definition block.<br/>__*Optional*__
 **traceServiceDefinition**? | <code>[DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettraceservicedefinition)</code> | trace_service_definition block.<br/>__*Optional*__
+**treemapDefinition**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinition)</code> | treemap_definition block.<br/>__*Optional*__
 **widgetLayout**? | <code>[DashboardWidgetGroupDefinitionWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetwidgetlayout)</code> | widget_layout block.<br/>__*Optional*__
 
 
@@ -64068,6 +66864,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **apmQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmquery)</code> | apm_query block.<br/>__*Optional*__
+**apmStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquery)</code> | apm_stats_query block.<br/>__*Optional*__
 **logQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestlogquery)</code> | log_query block.<br/>__*Optional*__
 **processQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestprocessquery)</code> | process_query block.<br/>__*Optional*__
 **q**? | <code>string</code> | The metric query to use for this widget.<br/>__*Optional*__
@@ -64151,6 +66948,41 @@ Name | Type | Description
 **aggregation** | <code>string</code> | The aggregation method.
 **facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 **interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**env** | <code>string</code> | The environment name.
+**name** | <code>string</code> | The operation name associated with the service.
+**primaryTag** | <code>string</code> | The organization's host group name and value.
+**rowType** | <code>string</code> | The level of detail for the request. Valid values are `service`, `resource`, `span`.
+**service** | <code>string</code> | The service name.
+**columns**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryColumns](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquerycolumns)></code> | columns block.<br/>__*Optional*__
+**resource**? | <code>string</code> | The resource name.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryColumns  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetdistributiondefinitionrequestapmstatsquerycolumns"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The column name.
+**alias**? | <code>string</code> | A user-assigned alias for the column.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**order**? | <code>string</code> | Widget sorting methods. Valid values are `asc`, `desc`.<br/>__*Optional*__
 
 
 
@@ -71025,6 +73857,260 @@ Name | Type | Description
 
 
 
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinition  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinition"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**request**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequest)></code> | request block.<br/>__*Optional*__
+**title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequest  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequest"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formula**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
+**query**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquery)></code> | query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormula  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**limit**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimit)</code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestformulalimit"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**apmDependencyStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsquery)</code> | apm_dependency_stats_query block.<br/>__*Optional*__
+**apmResourceStatsQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsquery)</code> | apm_resource_stats_query block.<br/>__*Optional*__
+**eventQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquery)</code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricquery)</code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessquery)</code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmdependencystatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**operationName** | <code>string</code> | Name of operation on service.
+**resourceName** | <code>string</code> | APM resource.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether stats for upstream or downstream dependencies should be queried.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryapmresourcestatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+**groupBy**? | <code>Array<string></code> | Array of fields to group results by.<br/>__*Optional*__
+**operationName**? | <code>string</code> | Name of operation on service.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+**resourceName**? | <code>string</code> | APM resource.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearch)</code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>[DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysort)</code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestquerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgettreemapdefinitionrequestqueryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
+
+
+
 ## struct DashboardWidgetGroupDefinitionWidgetWidgetLayout  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetwidgetlayout"></a>
 
 
@@ -77140,6 +80226,260 @@ Name | Type | Description
 
 
 
+## struct DashboardWidgetTreemapDefinition  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinition"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**request**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequest](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequest)></code> | request block.<br/>__*Optional*__
+**title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequest  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequest"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formula**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestFormula](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformula)></code> | formula block.<br/>__*Optional*__
+**query**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquery)></code> | query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestFormula  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformula"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**formulaExpression** | <code>string</code> | A string expression built from queries, formulas, and functions.
+**alias**? | <code>string</code> | An expression alias.<br/>__*Optional*__
+**cellDisplayMode**? | <code>string</code> | A list of display modes for each table cell. Valid values are `number`, `bar`.<br/>__*Optional*__
+**conditionalFormats**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestFormulaConditionalFormats](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulaconditionalformats)></code> | conditional_formats block.<br/>__*Optional*__
+**limit**? | <code>[DashboardWidgetTreemapDefinitionRequestFormulaLimit](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimit)</code> | limit block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestFormulaConditionalFormats  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulaconditionalformats"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**comparator** | <code>string</code> | The comparator to use. Valid values are `>`, `>=`, `<`, `<=`.
+**palette** | <code>string</code> | The color palette to apply.
+**value** | <code>number</code> | A value for the comparator.
+**customBgColor**? | <code>string</code> | The color palette to apply to the background, same values available as palette.<br/>__*Optional*__
+**customFgColor**? | <code>string</code> | The color palette to apply to the foreground, same values available as palette.<br/>__*Optional*__
+**hideValue**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to True hides values.<br/>__*Optional*__
+**imageUrl**? | <code>string</code> | Displays an image as the background.<br/>__*Optional*__
+**metric**? | <code>string</code> | The metric from the request to correlate with this conditional format.<br/>__*Optional*__
+**timeframe**? | <code>string</code> | Defines the displayed timeframe.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestFormulaLimit  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestformulalimit"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**? | <code>number</code> | The number of results to return.<br/>__*Optional*__
+**order**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQuery  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**apmDependencyStatsQuery**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsquery)</code> | apm_dependency_stats_query block.<br/>__*Optional*__
+**apmResourceStatsQuery**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsquery)</code> | apm_resource_stats_query block.<br/>__*Optional*__
+**eventQuery**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquery)</code> | event_query block.<br/>__*Optional*__
+**metricQuery**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryMetricQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricquery)</code> | metric_query block.<br/>__*Optional*__
+**processQuery**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryProcessQuery](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessquery)</code> | process_query block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmdependencystatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**operationName** | <code>string</code> | Name of operation on service.
+**resourceName** | <code>string</code> | APM resource.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
+**isUpstream**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether stats for upstream or downstream dependencies should be queried.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryapmresourcestatsquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
+**env** | <code>string</code> | APM Environment.
+**name** | <code>string</code> | The name of query for use in formulas.
+**service** | <code>string</code> | APM service.
+**stat** | <code>string</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
+**groupBy**? | <code>Array<string></code> | Array of fields to group results by.<br/>__*Optional*__
+**operationName**? | <code>string</code> | Name of operation on service.<br/>__*Optional*__
+**primaryTagName**? | <code>string</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.<br/>__*Optional*__
+**primaryTagValue**? | <code>string</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified.<br/>__*Optional*__
+**resourceName**? | <code>string</code> | APM resource.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryEventQuery  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**compute** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerycompute)></code> | compute block.
+**dataSource** | <code>string</code> | The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+**name** | <code>string</code> | The name of query for use in formulas.
+**groupBy**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBy](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupby)></code> | group_by block.<br/>__*Optional*__
+**indexes**? | <code>Array<string></code> | An array of index names to query in the stream.<br/>__*Optional*__
+**search**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearch)</code> | search block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryEventQueryCompute  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerycompute"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for event platform queries.
+**interval**? | <code>number</code> | A time interval in milliseconds.<br/>__*Optional*__
+**metric**? | <code>string</code> | The measurable attribute to compute.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBy  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupby"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**facet** | <code>string</code> | The event facet.
+**limit**? | <code>number</code> | The number of groups to return.<br/>__*Optional*__
+**sort**? | <code>[DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort](#cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysort)</code> | sort block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerygroupbysort"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**aggregation** | <code>string</code> | The aggregation methods for the event platform queries.
+**metric**? | <code>string</code> | The metric used for sorting group by results.<br/>__*Optional*__
+**order**? | <code>string</code> | Direction of sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearch  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryeventquerysearch"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**query** | <code>string</code> | The events search string.
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryMetricQuery  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestquerymetricquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | The name of the query for use in formulas.
+**query** | <code>string</code> | The metrics query definition.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**dataSource**? | <code>string</code> | The data source for metrics queries.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetTreemapDefinitionRequestQueryProcessQuery  <a id="cdktf-provider-datadog-dashboardwidgettreemapdefinitionrequestqueryprocessquery"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**dataSource** | <code>string</code> | The data source for process queries. Valid values are `process`, `container`.
+**metric** | <code>string</code> | The process metric name.
+**name** | <code>string</code> | The name of query for use in formulas.
+**aggregator**? | <code>string</code> | The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.<br/>__*Optional*__
+**isNormalizedCpu**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to normalize the CPU percentages.<br/>__*Optional*__
+**limit**? | <code>number</code> | The number of hits to return.<br/>__*Optional*__
+**sort**? | <code>string</code> | The direction of the sort. Valid values are `asc`, `desc`.<br/>__*Optional*__
+**tagFilters**? | <code>Array<string></code> | An array of tags to filter by.<br/>__*Optional*__
+**textFilter**? | <code>string</code> | The text to use as a filter.<br/>__*Optional*__
+
+
+
 ## struct DashboardWidgetWidgetLayout  <a id="cdktf-provider-datadog-dashboardwidgetwidgetlayout"></a>
 
 
@@ -77193,6 +80533,22 @@ Name | Type | Description
 
 
 
+## struct DataDatadogCloudWorkloadSecurityAgentRulesConfig  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataDatadogDashboardConfig  <a id="cdktf-provider-datadog-datadatadogdashboardconfig"></a>
 
 
@@ -77228,6 +80584,22 @@ Name | Type | Description
 
 
 ## struct DataDatadogIpRangesConfig  <a id="cdktf-provider-datadog-datadatadogiprangesconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DataDatadogLogsIndexesConfig  <a id="cdktf-provider-datadog-datadatadoglogsindexesconfig"></a>
 
 
 
@@ -77549,12 +80921,15 @@ Name | Type | Description
 **accountId**? | <code>string</code> | Your AWS Account ID without dashes.<br/>__*Optional*__
 **accountSpecificNamespaceRules**? | <code>Map<string, boolean &#124; [IResolvable](#cdktf-iresolvable)></code> | Enables or disables metric collection for specific AWS namespaces for this AWS account only.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
+**cspmResourceCollectionEnabled**? | <code>string</code> | Whether Datadog collects cloud security posture management resources from your AWS account.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **excludedRegions**? | <code>Array<string></code> | An array of AWS regions to exclude from metrics collection.<br/>__*Optional*__
 **filterTags**? | <code>Array<string></code> | Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses when collecting metrics from EC2.<br/>__*Optional*__
 **hostTags**? | <code>Array<string></code> | Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**metricsCollectionEnabled**? | <code>string</code> | Whether Datadog collects metrics for this AWS account.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**resourceCollectionEnabled**? | <code>string</code> | Whether Datadog collects a standard set of resources from your AWS account.<br/>__*Optional*__
 **roleName**? | <code>string</code> | Your Datadog role delegation name.<br/>__*Optional*__
 **secretAccessKey**? | <code>string</code> | Your AWS secret access key. Only required if your AWS account is a GovCloud or China account.<br/>__*Optional*__
 
@@ -79075,10 +82450,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**evaluationWindow** | <code>number</code> | A time window is specified to match when at least one of the cases matches true.
 **keepAlive** | <code>number</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window.
 **maxSignalDuration** | <code>number</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration.
-**detectionMethod**? | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`.<br/>__*Optional*__
+**detectionMethod**? | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`.<br/>__*Optional*__
+**evaluationWindow**? | <code>number</code> | A time window is specified to match when at least one of the cases matches true.<br/>__*Optional*__
 **newValueOptions**? | <code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code> | new_value_options block.<br/>__*Optional*__
 
 
@@ -79108,7 +82483,7 @@ Name | Type | Description
 -----|------|-------------
 **query** | <code>string</code> | Query to run on logs.
 **agentRule**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[SecurityMonitoringRuleQueryAgentRule](#cdktf-provider-datadog-securitymonitoringrulequeryagentrule)></code> | agent_rule block.<br/>__*Optional*__
-**aggregation**? | <code>string</code> | The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`.<br/>__*Optional*__
+**aggregation**? | <code>string</code> | The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`.<br/>__*Optional*__
 **distinctFields**? | <code>Array<string></code> | Field for which the cardinality is measured. Sent as an array.<br/>__*Optional*__
 **groupByFields**? | <code>Array<string></code> | Fields to group by.<br/>__*Optional*__
 **metric**? | <code>string</code> | The target field to aggregate over when using the sum or max aggregations.<br/>__*Optional*__
@@ -79299,6 +82674,7 @@ Name | Type | Description
 **requestClientCertificate**? | <code>[SyntheticsTestApiStepRequestClientCertificate](#cdktf-provider-datadog-syntheticstestapisteprequestclientcertificate)</code> | request_client_certificate block.<br/>__*Optional*__
 **requestDefinition**? | <code>[SyntheticsTestApiStepRequestDefinition](#cdktf-provider-datadog-syntheticstestapisteprequestdefinition)</code> | request_definition block.<br/>__*Optional*__
 **requestHeaders**? | <code>Map<string, string></code> | Header name and value map.<br/>__*Optional*__
+**requestProxy**? | <code>[SyntheticsTestApiStepRequestProxy](#cdktf-provider-datadog-syntheticstestapisteprequestproxy)</code> | request_proxy block.<br/>__*Optional*__
 **requestQuery**? | <code>Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
 **retry**? | <code>[SyntheticsTestApiStepRetry](#cdktf-provider-datadog-syntheticstestapistepretry)</code> | retry block.<br/>__*Optional*__
 **subtype**? | <code>string</code> | The subtype of the Synthetic multistep API test step. Valid values are `http`.<br/>__*Optional*__
@@ -79376,8 +82752,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**password** | <code>string</code> | Password for authentication.
-**username** | <code>string</code> | Username for authentication.
+**accessKey**? | <code>string</code> | Access key for `SIGV4` authentication.<br/>__*Optional*__
+**domain**? | <code>string</code> | Domain for `ntlm` authentication.<br/>__*Optional*__
+**password**? | <code>string</code> | Password for authentication.<br/>__*Optional*__
+**region**? | <code>string</code> | Region for `SIGV4` authentication.<br/>__*Optional*__
+**secretKey**? | <code>string</code> | Secret key for `SIGV4` authentication.<br/>__*Optional*__
+**serviceName**? | <code>string</code> | Service name for `SIGV4` authentication.<br/>__*Optional*__
+**sessionToken**? | <code>string</code> | Session token for `SIGV4` authentication.<br/>__*Optional*__
+**type**? | <code>string</code> | Type of basic authentication to use when performing the test.<br/>__*Optional*__
+**username**? | <code>string</code> | Username for authentication.<br/>__*Optional*__
+**workstation**? | <code>string</code> | Workstation for `ntlm` authentication.<br/>__*Optional*__
 
 
 
@@ -79450,6 +82834,20 @@ Name | Type | Description
 
 
 
+## struct SyntheticsTestApiStepRequestProxy  <a id="cdktf-provider-datadog-syntheticstestapisteprequestproxy"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**url** | <code>string</code> | URL of the proxy to perform the test.
+**headers**? | <code>Map<string, string></code> | Header name and value map.<br/>__*Optional*__
+
+
+
 ## struct SyntheticsTestApiStepRetry  <a id="cdktf-provider-datadog-syntheticstestapistepretry"></a>
 
 
@@ -79510,6 +82908,7 @@ Name | Type | Description
 **type** | <code>string</code> | Type of the step.
 **allowFailure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines if the step should be allowed to fail.<br/>__*Optional*__
 **forceElementUpdate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Force update of the "element" parameter for the step.<br/>__*Optional*__
+**isCritical**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not to consider the entire test as failed if this step fails.<br/>__*Optional*__
 **timeout**? | <code>number</code> | Used to override the default timeout of a step.<br/>__*Optional*__
 
 
@@ -79529,6 +82928,7 @@ Name | Type | Description
 **code**? | <code>string</code> | Javascript code to use for the step.<br/>__*Optional*__
 **delay**? | <code>number</code> | Delay between each key stroke for a "type test" step.<br/>__*Optional*__
 **element**? | <code>string</code> | Element to use for the step, json encoded string.<br/>__*Optional*__
+**elementUserLocator**? | <code>[SyntheticsTestBrowserStepParamsElementUserLocator](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocator)</code> | element_user_locator block.<br/>__*Optional*__
 **email**? | <code>string</code> | Details of the email for an "assert email" step.<br/>__*Optional*__
 **file**? | <code>string</code> | For an "assert download" step.<br/>__*Optional*__
 **files**? | <code>string</code> | Details of the files for an "upload files" step, json encoded string.<br/>__*Optional*__
@@ -79541,6 +82941,34 @@ Name | Type | Description
 **withClick**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | For "file upload" steps.<br/>__*Optional*__
 **x**? | <code>number</code> | X coordinates for a "scroll step".<br/>__*Optional*__
 **y**? | <code>number</code> | Y coordinates for a "scroll step".<br/>__*Optional*__
+
+
+
+## struct SyntheticsTestBrowserStepParamsElementUserLocator  <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocator"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**value** | <code>[SyntheticsTestBrowserStepParamsElementUserLocatorValue](#cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue)</code> | value block.
+**failTestOnCannotLocate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.<br/>__*Optional*__
+
+
+
+## struct SyntheticsTestBrowserStepParamsElementUserLocatorValue  <a id="cdktf-provider-datadog-syntheticstestbrowserstepparamselementuserlocatorvalue"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**value** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#value SyntheticsTest#value}.
+**type**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}.<br/>__*Optional*__
 
 
 
@@ -79604,6 +83032,7 @@ Name | Type | Description
 **requestClientCertificate**? | <code>[SyntheticsTestRequestClientCertificate](#cdktf-provider-datadog-syntheticstestrequestclientcertificate)</code> | request_client_certificate block.<br/>__*Optional*__
 **requestDefinition**? | <code>[SyntheticsTestRequestDefinition](#cdktf-provider-datadog-syntheticstestrequestdefinition)</code> | request_definition block.<br/>__*Optional*__
 **requestHeaders**? | <code>Map<string, string></code> | Header name and value map.<br/>__*Optional*__
+**requestProxy**? | <code>[SyntheticsTestRequestProxy](#cdktf-provider-datadog-syntheticstestrequestproxy)</code> | request_proxy block.<br/>__*Optional*__
 **requestQuery**? | <code>Map<string, string></code> | Query arguments name and value map.<br/>__*Optional*__
 **setCookie**? | <code>string</code> | Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.<br/>__*Optional*__
 **subtype**? | <code>string</code> | The subtype of the Synthetic API test.<br/>__*Optional*__
@@ -79640,6 +83069,7 @@ Name | Type | Description
 **tickEvery** | <code>number</code> | How often the test should run (in seconds).
 **acceptSelfSigned**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | For SSL test, whether or not the test should allow self signed certificates.<br/>__*Optional*__
 **allowInsecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Allows loading insecure content for an HTTP test.<br/>__*Optional*__
+**checkCertificateRevocation**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.<br/>__*Optional*__
 **followRedirects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Determines whether or not the API HTTP test should follow redirects.<br/>__*Optional*__
 **minFailureDuration**? | <code>number</code> | Minimum amount of time in failure required to trigger an alert. Default is `0`.<br/>__*Optional*__
 **minLocationFailed**? | <code>number</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`.<br/>__*Optional*__
@@ -79687,8 +83117,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**password** | <code>string</code> | Password for authentication.
-**username** | <code>string</code> | Username for authentication.
+**accessKey**? | <code>string</code> | Access key for `SIGV4` authentication.<br/>__*Optional*__
+**domain**? | <code>string</code> | Domain for `ntlm` authentication.<br/>__*Optional*__
+**password**? | <code>string</code> | Password for authentication.<br/>__*Optional*__
+**region**? | <code>string</code> | Region for `SIGV4` authentication.<br/>__*Optional*__
+**secretKey**? | <code>string</code> | Secret key for `SIGV4` authentication.<br/>__*Optional*__
+**serviceName**? | <code>string</code> | Service name for `SIGV4` authentication.<br/>__*Optional*__
+**sessionToken**? | <code>string</code> | Session token for `SIGV4` authentication.<br/>__*Optional*__
+**type**? | <code>string</code> | Type of basic authentication to use when performing the test.<br/>__*Optional*__
+**username**? | <code>string</code> | Username for authentication.<br/>__*Optional*__
+**workstation**? | <code>string</code> | Workstation for `ntlm` authentication.<br/>__*Optional*__
 
 
 
@@ -79756,6 +83194,20 @@ Name | Type | Description
 **shouldTrackHops**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | This will turn on a traceroute probe to discover all gateways along the path to the host destination.<br/>__*Optional*__
 **timeout**? | <code>number</code> | Timeout in seconds for the test. Defaults to `60`.<br/>__*Optional*__
 **url**? | <code>string</code> | The URL to send the request to.<br/>__*Optional*__
+
+
+
+## struct SyntheticsTestRequestProxy  <a id="cdktf-provider-datadog-syntheticstestrequestproxy"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**url** | <code>string</code> | URL of the proxy to perform the test.
+**headers**? | <code>Map<string, string></code> | Header name and value map.<br/>__*Optional*__
 
 
 

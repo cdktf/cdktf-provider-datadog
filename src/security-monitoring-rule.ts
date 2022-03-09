@@ -227,7 +227,7 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
 }
 export interface SecurityMonitoringRuleOptions {
   /**
-  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`.
+  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
   */
@@ -237,7 +237,7 @@ export interface SecurityMonitoringRuleOptions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
   */
-  readonly evaluationWindow: number;
+  readonly evaluationWindow?: number;
   /**
   * Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
   * 
@@ -345,13 +345,16 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
     return this._detectionMethod;
   }
 
-  // evaluation_window - computed: false, optional: false, required: true
+  // evaluation_window - computed: false, optional: true, required: false
   private _evaluationWindow?: number; 
   public get evaluationWindow() {
     return this.getNumberAttribute('evaluation_window');
   }
   public set evaluationWindow(value: number) {
     this._evaluationWindow = value;
+  }
+  public resetEvaluationWindow() {
+    this._evaluationWindow = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get evaluationWindowInput() {
@@ -428,7 +431,7 @@ export function securityMonitoringRuleQueryAgentRuleToTerraform(struct?: Securit
 
 export interface SecurityMonitoringRuleQuery {
   /**
-  * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`.
+  * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
