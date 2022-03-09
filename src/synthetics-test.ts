@@ -127,6 +127,12 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#request_definition SyntheticsTest#request_definition}
   */
   readonly requestDefinition?: SyntheticsTestRequestDefinition;
+  /**
+  * request_proxy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+  */
+  readonly requestProxy?: SyntheticsTestRequestProxy;
 }
 export interface SyntheticsTestApiStepAssertionTargetjsonpath {
   /**
@@ -426,17 +432,65 @@ export function syntheticsTestApiStepExtractedValueToTerraform(struct?: Syntheti
 
 export interface SyntheticsTestApiStepRequestBasicauth {
   /**
+  * Access key for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#access_key SyntheticsTest#access_key}
+  */
+  readonly accessKey?: string;
+  /**
+  * Domain for `ntlm` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#domain SyntheticsTest#domain}
+  */
+  readonly domain?: string;
+  /**
   * Password for authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#password SyntheticsTest#password}
   */
-  readonly password: string;
+  readonly password?: string;
+  /**
+  * Region for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#region SyntheticsTest#region}
+  */
+  readonly region?: string;
+  /**
+  * Secret key for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secret_key SyntheticsTest#secret_key}
+  */
+  readonly secretKey?: string;
+  /**
+  * Service name for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service_name SyntheticsTest#service_name}
+  */
+  readonly serviceName?: string;
+  /**
+  * Session token for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#session_token SyntheticsTest#session_token}
+  */
+  readonly sessionToken?: string;
+  /**
+  * Type of basic authentication to use when performing the test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
+  */
+  readonly type?: string;
   /**
   * Username for authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#username SyntheticsTest#username}
   */
-  readonly username: string;
+  readonly username?: string;
+  /**
+  * Workstation for `ntlm` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#workstation SyntheticsTest#workstation}
+  */
+  readonly workstation?: string;
 }
 
 export function syntheticsTestApiStepRequestBasicauthToTerraform(struct?: SyntheticsTestApiStepRequestBasicauthOutputReference | SyntheticsTestApiStepRequestBasicauth): any {
@@ -445,8 +499,16 @@ export function syntheticsTestApiStepRequestBasicauthToTerraform(struct?: Synthe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    access_key: cdktf.stringToTerraform(struct!.accessKey),
+    domain: cdktf.stringToTerraform(struct!.domain),
     password: cdktf.stringToTerraform(struct!.password),
+    region: cdktf.stringToTerraform(struct!.region),
+    secret_key: cdktf.stringToTerraform(struct!.secretKey),
+    service_name: cdktf.stringToTerraform(struct!.serviceName),
+    session_token: cdktf.stringToTerraform(struct!.sessionToken),
+    type: cdktf.stringToTerraform(struct!.type),
     username: cdktf.stringToTerraform(struct!.username),
+    workstation: cdktf.stringToTerraform(struct!.workstation),
   }
 }
 
@@ -465,13 +527,45 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   public get internalValue(): SyntheticsTestApiStepRequestBasicauth | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._accessKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessKey = this._accessKey;
+    }
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
     if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._secretKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretKey = this._secretKey;
+    }
+    if (this._serviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceName = this._serviceName;
+    }
+    if (this._sessionToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionToken = this._sessionToken;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
     if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
+    }
+    if (this._workstation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workstation = this._workstation;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -479,17 +573,65 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   public set internalValue(value: SyntheticsTestApiStepRequestBasicauth | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._accessKey = undefined;
+      this._domain = undefined;
       this._password = undefined;
+      this._region = undefined;
+      this._secretKey = undefined;
+      this._serviceName = undefined;
+      this._sessionToken = undefined;
+      this._type = undefined;
       this._username = undefined;
+      this._workstation = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessKey = value.accessKey;
+      this._domain = value.domain;
       this._password = value.password;
+      this._region = value.region;
+      this._secretKey = value.secretKey;
+      this._serviceName = value.serviceName;
+      this._sessionToken = value.sessionToken;
+      this._type = value.type;
       this._username = value.username;
+      this._workstation = value.workstation;
     }
   }
 
-  // password - computed: false, optional: false, required: true
+  // access_key - computed: false, optional: true, required: false
+  private _accessKey?: string; 
+  public get accessKey() {
+    return this.getStringAttribute('access_key');
+  }
+  public set accessKey(value: string) {
+    this._accessKey = value;
+  }
+  public resetAccessKey() {
+    this._accessKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessKeyInput() {
+    return this._accessKey;
+  }
+
+  // domain - computed: false, optional: true, required: false
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // password - computed: false, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
@@ -497,12 +639,95 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   public set password(value: string) {
     this._password = value;
   }
+  public resetPassword() {
+    this._password = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
     return this._password;
   }
 
-  // username - computed: false, optional: false, required: true
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // secret_key - computed: false, optional: true, required: false
+  private _secretKey?: string; 
+  public get secretKey() {
+    return this.getStringAttribute('secret_key');
+  }
+  public set secretKey(value: string) {
+    this._secretKey = value;
+  }
+  public resetSecretKey() {
+    this._secretKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyInput() {
+    return this._secretKey;
+  }
+
+  // service_name - computed: false, optional: true, required: false
+  private _serviceName?: string; 
+  public get serviceName() {
+    return this.getStringAttribute('service_name');
+  }
+  public set serviceName(value: string) {
+    this._serviceName = value;
+  }
+  public resetServiceName() {
+    this._serviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNameInput() {
+    return this._serviceName;
+  }
+
+  // session_token - computed: false, optional: true, required: false
+  private _sessionToken?: string; 
+  public get sessionToken() {
+    return this.getStringAttribute('session_token');
+  }
+  public set sessionToken(value: string) {
+    this._sessionToken = value;
+  }
+  public resetSessionToken() {
+    this._sessionToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionTokenInput() {
+    return this._sessionToken;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
@@ -510,9 +735,28 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   public set username(value: string) {
     this._username = value;
   }
+  public resetUsername() {
+    this._username = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
     return this._username;
+  }
+
+  // workstation - computed: false, optional: true, required: false
+  private _workstation?: string; 
+  public get workstation() {
+    return this.getStringAttribute('workstation');
+  }
+  public set workstation(value: string) {
+    this._workstation = value;
+  }
+  public resetWorkstation() {
+    this._workstation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workstationInput() {
+    return this._workstation;
   }
 }
 export interface SyntheticsTestApiStepRequestClientCertificateCert {
@@ -1268,6 +1512,100 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
     return this._url;
   }
 }
+export interface SyntheticsTestApiStepRequestProxy {
+  /**
+  * Header name and value map.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#headers SyntheticsTest#headers}
+  */
+  readonly headers?: { [key: string]: string };
+  /**
+  * URL of the proxy to perform the test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#url SyntheticsTest#url}
+  */
+  readonly url: string;
+}
+
+export function syntheticsTestApiStepRequestProxyToTerraform(struct?: SyntheticsTestApiStepRequestProxyOutputReference | SyntheticsTestApiStepRequestProxy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headers),
+    url: cdktf.stringToTerraform(struct!.url),
+  }
+}
+
+export class SyntheticsTestApiStepRequestProxyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsTestApiStepRequestProxy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headers = this._headers;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestApiStepRequestProxy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._headers = undefined;
+      this._url = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._headers = value.headers;
+      this._url = value.url;
+    }
+  }
+
+  // headers - computed: false, optional: true, required: false
+  private _headers?: { [key: string]: string }; 
+  public get headers() {
+    return this.getStringMapAttribute('headers');
+  }
+  public set headers(value: { [key: string]: string }) {
+    this._headers = value;
+  }
+  public resetHeaders() {
+    this._headers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headersInput() {
+    return this._headers;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+}
 export interface SyntheticsTestApiStepRetry {
   /**
   * Number of retries needed to consider a location as failed before sending a notification alert.
@@ -1433,6 +1771,12 @@ export interface SyntheticsTestApiStep {
   */
   readonly requestDefinition?: SyntheticsTestApiStepRequestDefinition;
   /**
+  * request_proxy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+  */
+  readonly requestProxy?: SyntheticsTestApiStepRequestProxy;
+  /**
   * retry block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#retry SyntheticsTest#retry}
@@ -1457,6 +1801,7 @@ export function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep 
     request_basicauth: syntheticsTestApiStepRequestBasicauthToTerraform(struct!.requestBasicauth),
     request_client_certificate: syntheticsTestApiStepRequestClientCertificateToTerraform(struct!.requestClientCertificate),
     request_definition: syntheticsTestApiStepRequestDefinitionToTerraform(struct!.requestDefinition),
+    request_proxy: syntheticsTestApiStepRequestProxyToTerraform(struct!.requestProxy),
     retry: syntheticsTestApiStepRetryToTerraform(struct!.retry),
   }
 }
@@ -1625,6 +1970,188 @@ export function syntheticsTestAssertionToTerraform(struct?: SyntheticsTestAssert
   }
 }
 
+export interface SyntheticsTestBrowserStepParamsElementUserLocatorValue {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
+  */
+  readonly type?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#value SyntheticsTest#value}
+  */
+  readonly value: string;
+}
+
+export function syntheticsTestBrowserStepParamsElementUserLocatorValueToTerraform(struct?: SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference | SyntheticsTestBrowserStepParamsElementUserLocatorValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsTestBrowserStepParamsElementUserLocatorValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestBrowserStepParamsElementUserLocatorValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface SyntheticsTestBrowserStepParamsElementUserLocator {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+  */
+  readonly failTestOnCannotLocate?: boolean | cdktf.IResolvable;
+  /**
+  * value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#value SyntheticsTest#value}
+  */
+  readonly value: SyntheticsTestBrowserStepParamsElementUserLocatorValue;
+}
+
+export function syntheticsTestBrowserStepParamsElementUserLocatorToTerraform(struct?: SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference | SyntheticsTestBrowserStepParamsElementUserLocator): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    fail_test_on_cannot_locate: cdktf.booleanToTerraform(struct!.failTestOnCannotLocate),
+    value: syntheticsTestBrowserStepParamsElementUserLocatorValueToTerraform(struct!.value),
+  }
+}
+
+export class SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsTestBrowserStepParamsElementUserLocator | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._failTestOnCannotLocate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failTestOnCannotLocate = this._failTestOnCannotLocate;
+    }
+    if (this._value?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestBrowserStepParamsElementUserLocator | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._failTestOnCannotLocate = undefined;
+      this._value.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._failTestOnCannotLocate = value.failTestOnCannotLocate;
+      this._value.internalValue = value.value;
+    }
+  }
+
+  // fail_test_on_cannot_locate - computed: false, optional: true, required: false
+  private _failTestOnCannotLocate?: boolean | cdktf.IResolvable; 
+  public get failTestOnCannotLocate() {
+    return this.getBooleanAttribute('fail_test_on_cannot_locate');
+  }
+  public set failTestOnCannotLocate(value: boolean | cdktf.IResolvable) {
+    this._failTestOnCannotLocate = value;
+  }
+  public resetFailTestOnCannotLocate() {
+    this._failTestOnCannotLocate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failTestOnCannotLocateInput() {
+    return this._failTestOnCannotLocate;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value = new SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(this, "value", true);
+  public get value() {
+    return this._value;
+  }
+  public putValue(value: SyntheticsTestBrowserStepParamsElementUserLocatorValue) {
+    this._value.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value.internalValue;
+  }
+}
 export interface SyntheticsTestBrowserStepParamsVariable {
   /**
   * Example of the extracted variable.
@@ -1826,6 +2353,12 @@ export interface SyntheticsTestBrowserStepParams {
   */
   readonly y?: number;
   /**
+  * element_user_locator block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
+  */
+  readonly elementUserLocator?: SyntheticsTestBrowserStepParamsElementUserLocator;
+  /**
   * variable block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#variable SyntheticsTest#variable}
@@ -1856,6 +2389,7 @@ export function syntheticsTestBrowserStepParamsToTerraform(struct?: SyntheticsTe
     with_click: cdktf.booleanToTerraform(struct!.withClick),
     x: cdktf.numberToTerraform(struct!.x),
     y: cdktf.numberToTerraform(struct!.y),
+    element_user_locator: syntheticsTestBrowserStepParamsElementUserLocatorToTerraform(struct!.elementUserLocator),
     variable: syntheticsTestBrowserStepParamsVariableToTerraform(struct!.variable),
   }
 }
@@ -1943,6 +2477,10 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.y = this._y;
     }
+    if (this._elementUserLocator?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.elementUserLocator = this._elementUserLocator?.internalValue;
+    }
     if (this._variable?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.variable = this._variable?.internalValue;
@@ -1970,6 +2508,7 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
       this._withClick = undefined;
       this._x = undefined;
       this._y = undefined;
+      this._elementUserLocator.internalValue = undefined;
       this._variable.internalValue = undefined;
     }
     else {
@@ -1991,6 +2530,7 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
       this._withClick = value.withClick;
       this._x = value.x;
       this._y = value.y;
+      this._elementUserLocator.internalValue = value.elementUserLocator;
       this._variable.internalValue = value.variable;
     }
   }
@@ -2267,6 +2807,22 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
     return this._y;
   }
 
+  // element_user_locator - computed: false, optional: true, required: false
+  private _elementUserLocator = new SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(this, "element_user_locator", true);
+  public get elementUserLocator() {
+    return this._elementUserLocator;
+  }
+  public putElementUserLocator(value: SyntheticsTestBrowserStepParamsElementUserLocator) {
+    this._elementUserLocator.internalValue = value;
+  }
+  public resetElementUserLocator() {
+    this._elementUserLocator.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elementUserLocatorInput() {
+    return this._elementUserLocator.internalValue;
+  }
+
   // variable - computed: false, optional: true, required: false
   private _variable = new SyntheticsTestBrowserStepParamsVariableOutputReference(this, "variable", true);
   public get variable() {
@@ -2296,6 +2852,12 @@ export interface SyntheticsTestBrowserStep {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#force_element_update SyntheticsTest#force_element_update}
   */
   readonly forceElementUpdate?: boolean | cdktf.IResolvable;
+  /**
+  * Determines whether or not to consider the entire test as failed if this step fails. Can be used only if `allow_failure` is `true`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#is_critical SyntheticsTest#is_critical}
+  */
+  readonly isCritical?: boolean | cdktf.IResolvable;
   /**
   * Name of the step.
   * 
@@ -2330,6 +2892,7 @@ export function syntheticsTestBrowserStepToTerraform(struct?: SyntheticsTestBrow
   return {
     allow_failure: cdktf.booleanToTerraform(struct!.allowFailure),
     force_element_update: cdktf.booleanToTerraform(struct!.forceElementUpdate),
+    is_critical: cdktf.booleanToTerraform(struct!.isCritical),
     name: cdktf.stringToTerraform(struct!.name),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     type: cdktf.stringToTerraform(struct!.type),
@@ -2610,6 +3173,12 @@ export interface SyntheticsTestOptionsList {
   */
   readonly allowInsecure?: boolean | cdktf.IResolvable;
   /**
+  * For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+  */
+  readonly checkCertificateRevocation?: boolean | cdktf.IResolvable;
+  /**
   * Determines whether or not the API HTTP test should follow redirects.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
@@ -2671,6 +3240,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
   return {
     accept_self_signed: cdktf.booleanToTerraform(struct!.acceptSelfSigned),
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
+    check_certificate_revocation: cdktf.booleanToTerraform(struct!.checkCertificateRevocation),
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
     min_failure_duration: cdktf.numberToTerraform(struct!.minFailureDuration),
     min_location_failed: cdktf.numberToTerraform(struct!.minLocationFailed),
@@ -2705,6 +3275,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     if (this._allowInsecure !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowInsecure = this._allowInsecure;
+    }
+    if (this._checkCertificateRevocation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.checkCertificateRevocation = this._checkCertificateRevocation;
     }
     if (this._followRedirects !== undefined) {
       hasAnyValues = true;
@@ -2750,6 +3324,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this.isEmptyObject = false;
       this._acceptSelfSigned = undefined;
       this._allowInsecure = undefined;
+      this._checkCertificateRevocation = undefined;
       this._followRedirects = undefined;
       this._minFailureDuration = undefined;
       this._minLocationFailed = undefined;
@@ -2764,6 +3339,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this.isEmptyObject = Object.keys(value).length === 0;
       this._acceptSelfSigned = value.acceptSelfSigned;
       this._allowInsecure = value.allowInsecure;
+      this._checkCertificateRevocation = value.checkCertificateRevocation;
       this._followRedirects = value.followRedirects;
       this._minFailureDuration = value.minFailureDuration;
       this._minLocationFailed = value.minLocationFailed;
@@ -2806,6 +3382,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get allowInsecureInput() {
     return this._allowInsecure;
+  }
+
+  // check_certificate_revocation - computed: false, optional: true, required: false
+  private _checkCertificateRevocation?: boolean | cdktf.IResolvable; 
+  public get checkCertificateRevocation() {
+    return this.getBooleanAttribute('check_certificate_revocation');
+  }
+  public set checkCertificateRevocation(value: boolean | cdktf.IResolvable) {
+    this._checkCertificateRevocation = value;
+  }
+  public resetCheckCertificateRevocation() {
+    this._checkCertificateRevocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkCertificateRevocationInput() {
+    return this._checkCertificateRevocation;
   }
 
   // follow_redirects - computed: false, optional: true, required: false
@@ -2951,17 +3543,65 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
 }
 export interface SyntheticsTestRequestBasicauth {
   /**
+  * Access key for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#access_key SyntheticsTest#access_key}
+  */
+  readonly accessKey?: string;
+  /**
+  * Domain for `ntlm` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#domain SyntheticsTest#domain}
+  */
+  readonly domain?: string;
+  /**
   * Password for authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#password SyntheticsTest#password}
   */
-  readonly password: string;
+  readonly password?: string;
+  /**
+  * Region for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#region SyntheticsTest#region}
+  */
+  readonly region?: string;
+  /**
+  * Secret key for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secret_key SyntheticsTest#secret_key}
+  */
+  readonly secretKey?: string;
+  /**
+  * Service name for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service_name SyntheticsTest#service_name}
+  */
+  readonly serviceName?: string;
+  /**
+  * Session token for `SIGV4` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#session_token SyntheticsTest#session_token}
+  */
+  readonly sessionToken?: string;
+  /**
+  * Type of basic authentication to use when performing the test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
+  */
+  readonly type?: string;
   /**
   * Username for authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#username SyntheticsTest#username}
   */
-  readonly username: string;
+  readonly username?: string;
+  /**
+  * Workstation for `ntlm` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#workstation SyntheticsTest#workstation}
+  */
+  readonly workstation?: string;
 }
 
 export function syntheticsTestRequestBasicauthToTerraform(struct?: SyntheticsTestRequestBasicauthOutputReference | SyntheticsTestRequestBasicauth): any {
@@ -2970,8 +3610,16 @@ export function syntheticsTestRequestBasicauthToTerraform(struct?: SyntheticsTes
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    access_key: cdktf.stringToTerraform(struct!.accessKey),
+    domain: cdktf.stringToTerraform(struct!.domain),
     password: cdktf.stringToTerraform(struct!.password),
+    region: cdktf.stringToTerraform(struct!.region),
+    secret_key: cdktf.stringToTerraform(struct!.secretKey),
+    service_name: cdktf.stringToTerraform(struct!.serviceName),
+    session_token: cdktf.stringToTerraform(struct!.sessionToken),
+    type: cdktf.stringToTerraform(struct!.type),
     username: cdktf.stringToTerraform(struct!.username),
+    workstation: cdktf.stringToTerraform(struct!.workstation),
   }
 }
 
@@ -2990,13 +3638,45 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   public get internalValue(): SyntheticsTestRequestBasicauth | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._accessKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessKey = this._accessKey;
+    }
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
     if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    if (this._secretKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretKey = this._secretKey;
+    }
+    if (this._serviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceName = this._serviceName;
+    }
+    if (this._sessionToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionToken = this._sessionToken;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
     if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
+    }
+    if (this._workstation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workstation = this._workstation;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3004,17 +3684,65 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   public set internalValue(value: SyntheticsTestRequestBasicauth | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._accessKey = undefined;
+      this._domain = undefined;
       this._password = undefined;
+      this._region = undefined;
+      this._secretKey = undefined;
+      this._serviceName = undefined;
+      this._sessionToken = undefined;
+      this._type = undefined;
       this._username = undefined;
+      this._workstation = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessKey = value.accessKey;
+      this._domain = value.domain;
       this._password = value.password;
+      this._region = value.region;
+      this._secretKey = value.secretKey;
+      this._serviceName = value.serviceName;
+      this._sessionToken = value.sessionToken;
+      this._type = value.type;
       this._username = value.username;
+      this._workstation = value.workstation;
     }
   }
 
-  // password - computed: false, optional: false, required: true
+  // access_key - computed: false, optional: true, required: false
+  private _accessKey?: string; 
+  public get accessKey() {
+    return this.getStringAttribute('access_key');
+  }
+  public set accessKey(value: string) {
+    this._accessKey = value;
+  }
+  public resetAccessKey() {
+    this._accessKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessKeyInput() {
+    return this._accessKey;
+  }
+
+  // domain - computed: false, optional: true, required: false
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // password - computed: false, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
@@ -3022,12 +3750,95 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   public set password(value: string) {
     this._password = value;
   }
+  public resetPassword() {
+    this._password = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
     return this._password;
   }
 
-  // username - computed: false, optional: false, required: true
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // secret_key - computed: false, optional: true, required: false
+  private _secretKey?: string; 
+  public get secretKey() {
+    return this.getStringAttribute('secret_key');
+  }
+  public set secretKey(value: string) {
+    this._secretKey = value;
+  }
+  public resetSecretKey() {
+    this._secretKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyInput() {
+    return this._secretKey;
+  }
+
+  // service_name - computed: false, optional: true, required: false
+  private _serviceName?: string; 
+  public get serviceName() {
+    return this.getStringAttribute('service_name');
+  }
+  public set serviceName(value: string) {
+    this._serviceName = value;
+  }
+  public resetServiceName() {
+    this._serviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNameInput() {
+    return this._serviceName;
+  }
+
+  // session_token - computed: false, optional: true, required: false
+  private _sessionToken?: string; 
+  public get sessionToken() {
+    return this.getStringAttribute('session_token');
+  }
+  public set sessionToken(value: string) {
+    this._sessionToken = value;
+  }
+  public resetSessionToken() {
+    this._sessionToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionTokenInput() {
+    return this._sessionToken;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
@@ -3035,9 +3846,28 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   public set username(value: string) {
     this._username = value;
   }
+  public resetUsername() {
+    this._username = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
     return this._username;
+  }
+
+  // workstation - computed: false, optional: true, required: false
+  private _workstation?: string; 
+  public get workstation() {
+    return this.getStringAttribute('workstation');
+  }
+  public set workstation(value: string) {
+    this._workstation = value;
+  }
+  public resetWorkstation() {
+    this._workstation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workstationInput() {
+    return this._workstation;
   }
 }
 export interface SyntheticsTestRequestClientCertificateCert {
@@ -3735,6 +4565,100 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     return this._url;
   }
 }
+export interface SyntheticsTestRequestProxy {
+  /**
+  * Header name and value map.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#headers SyntheticsTest#headers}
+  */
+  readonly headers?: { [key: string]: string };
+  /**
+  * URL of the proxy to perform the test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#url SyntheticsTest#url}
+  */
+  readonly url: string;
+}
+
+export function syntheticsTestRequestProxyToTerraform(struct?: SyntheticsTestRequestProxyOutputReference | SyntheticsTestRequestProxy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.headers),
+    url: cdktf.stringToTerraform(struct!.url),
+  }
+}
+
+export class SyntheticsTestRequestProxyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): SyntheticsTestRequestProxy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headers = this._headers;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestRequestProxy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._headers = undefined;
+      this._url = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._headers = value.headers;
+      this._url = value.url;
+    }
+  }
+
+  // headers - computed: false, optional: true, required: false
+  private _headers?: { [key: string]: string }; 
+  public get headers() {
+    return this.getStringMapAttribute('headers');
+  }
+  public set headers(value: { [key: string]: string }) {
+    this._headers = value;
+  }
+  public resetHeaders() {
+    this._headers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headersInput() {
+    return this._headers;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test datadog_synthetics_test}
@@ -3788,6 +4712,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
     this._requestBasicauth.internalValue = config.requestBasicauth;
     this._requestClientCertificate.internalValue = config.requestClientCertificate;
     this._requestDefinition.internalValue = config.requestDefinition;
+    this._requestProxy.internalValue = config.requestProxy;
   }
 
   // ==========
@@ -4117,6 +5042,22 @@ export class SyntheticsTest extends cdktf.TerraformResource {
     return this._requestDefinition.internalValue;
   }
 
+  // request_proxy - computed: false, optional: true, required: false
+  private _requestProxy = new SyntheticsTestRequestProxyOutputReference(this, "request_proxy", true);
+  public get requestProxy() {
+    return this._requestProxy;
+  }
+  public putRequestProxy(value: SyntheticsTestRequestProxy) {
+    this._requestProxy.internalValue = value;
+  }
+  public resetRequestProxy() {
+    this._requestProxy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestProxyInput() {
+    return this._requestProxy.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -4143,6 +5084,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       request_basicauth: syntheticsTestRequestBasicauthToTerraform(this._requestBasicauth.internalValue),
       request_client_certificate: syntheticsTestRequestClientCertificateToTerraform(this._requestClientCertificate.internalValue),
       request_definition: syntheticsTestRequestDefinitionToTerraform(this._requestDefinition.internalValue),
+      request_proxy: syntheticsTestRequestProxyToTerraform(this._requestProxy.internalValue),
     };
   }
 }

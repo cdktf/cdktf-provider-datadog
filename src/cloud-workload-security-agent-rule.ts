@@ -1,0 +1,153 @@
+// https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface CloudWorkloadSecurityAgentRuleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The description of the Agent rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule#description CloudWorkloadSecurityAgentRule#description}
+  */
+  readonly description?: string;
+  /**
+  * Whether the Agent rule is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule#enabled CloudWorkloadSecurityAgentRule#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * The SECL expression of the Agent rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule#expression CloudWorkloadSecurityAgentRule#expression}
+  */
+  readonly expression: string;
+  /**
+  * The name of the Agent rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule#name CloudWorkloadSecurityAgentRule#name}
+  */
+  readonly name: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}
+*/
+export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "datadog_cloud_workload_security_agent_rule";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CloudWorkloadSecurityAgentRuleConfig
+  */
+  public constructor(scope: Construct, id: string, config: CloudWorkloadSecurityAgentRuleConfig) {
+    super(scope, id, {
+      terraformResourceType: 'datadog_cloud_workload_security_agent_rule',
+      terraformGeneratorMetadata: {
+        providerName: 'datadog'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._description = config.description;
+    this._enabled = config.enabled;
+    this._expression = config.expression;
+    this._name = config.name;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // expression - computed: false, optional: false, required: true
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      description: cdktf.stringToTerraform(this._description),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      expression: cdktf.stringToTerraform(this._expression),
+      name: cdktf.stringToTerraform(this._name),
+    };
+  }
+}

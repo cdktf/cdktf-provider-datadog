@@ -26,6 +26,12 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accountSpecificNamespaceRules?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
+  * Whether Datadog collects cloud security posture management resources from your AWS account. This includes additional resources not covered under the general resource_collection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#cspm_resource_collection_enabled IntegrationAws#cspm_resource_collection_enabled}
+  */
+  readonly cspmResourceCollectionEnabled?: string;
+  /**
   * An array of AWS regions to exclude from metrics collection.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#excluded_regions IntegrationAws#excluded_regions}
@@ -43,6 +49,18 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#host_tags IntegrationAws#host_tags}
   */
   readonly hostTags?: string[];
+  /**
+  * Whether Datadog collects metrics for this AWS account.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#metrics_collection_enabled IntegrationAws#metrics_collection_enabled}
+  */
+  readonly metricsCollectionEnabled?: string;
+  /**
+  * Whether Datadog collects a standard set of resources from your AWS account.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#resource_collection_enabled IntegrationAws#resource_collection_enabled}
+  */
+  readonly resourceCollectionEnabled?: string;
   /**
   * Your Datadog role delegation name.
   * 
@@ -92,9 +110,12 @@ export class IntegrationAws extends cdktf.TerraformResource {
     this._accessKeyId = config.accessKeyId;
     this._accountId = config.accountId;
     this._accountSpecificNamespaceRules = config.accountSpecificNamespaceRules;
+    this._cspmResourceCollectionEnabled = config.cspmResourceCollectionEnabled;
     this._excludedRegions = config.excludedRegions;
     this._filterTags = config.filterTags;
     this._hostTags = config.hostTags;
+    this._metricsCollectionEnabled = config.metricsCollectionEnabled;
+    this._resourceCollectionEnabled = config.resourceCollectionEnabled;
     this._roleName = config.roleName;
     this._secretAccessKey = config.secretAccessKey;
   }
@@ -149,6 +170,22 @@ export class IntegrationAws extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountSpecificNamespaceRulesInput() {
     return this._accountSpecificNamespaceRules;
+  }
+
+  // cspm_resource_collection_enabled - computed: true, optional: true, required: false
+  private _cspmResourceCollectionEnabled?: string; 
+  public get cspmResourceCollectionEnabled() {
+    return this.getStringAttribute('cspm_resource_collection_enabled');
+  }
+  public set cspmResourceCollectionEnabled(value: string) {
+    this._cspmResourceCollectionEnabled = value;
+  }
+  public resetCspmResourceCollectionEnabled() {
+    this._cspmResourceCollectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cspmResourceCollectionEnabledInput() {
+    return this._cspmResourceCollectionEnabled;
   }
 
   // excluded_regions - computed: false, optional: true, required: false
@@ -209,6 +246,38 @@ export class IntegrationAws extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // metrics_collection_enabled - computed: true, optional: true, required: false
+  private _metricsCollectionEnabled?: string; 
+  public get metricsCollectionEnabled() {
+    return this.getStringAttribute('metrics_collection_enabled');
+  }
+  public set metricsCollectionEnabled(value: string) {
+    this._metricsCollectionEnabled = value;
+  }
+  public resetMetricsCollectionEnabled() {
+    this._metricsCollectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsCollectionEnabledInput() {
+    return this._metricsCollectionEnabled;
+  }
+
+  // resource_collection_enabled - computed: true, optional: true, required: false
+  private _resourceCollectionEnabled?: string; 
+  public get resourceCollectionEnabled() {
+    return this.getStringAttribute('resource_collection_enabled');
+  }
+  public set resourceCollectionEnabled(value: string) {
+    this._resourceCollectionEnabled = value;
+  }
+  public resetResourceCollectionEnabled() {
+    this._resourceCollectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceCollectionEnabledInput() {
+    return this._resourceCollectionEnabled;
+  }
+
   // role_name - computed: false, optional: true, required: false
   private _roleName?: string; 
   public get roleName() {
@@ -250,9 +319,12 @@ export class IntegrationAws extends cdktf.TerraformResource {
       access_key_id: cdktf.stringToTerraform(this._accessKeyId),
       account_id: cdktf.stringToTerraform(this._accountId),
       account_specific_namespace_rules: cdktf.hashMapper(cdktf.booleanToTerraform)(this._accountSpecificNamespaceRules),
+      cspm_resource_collection_enabled: cdktf.stringToTerraform(this._cspmResourceCollectionEnabled),
       excluded_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedRegions),
       filter_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._filterTags),
       host_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._hostTags),
+      metrics_collection_enabled: cdktf.stringToTerraform(this._metricsCollectionEnabled),
+      resource_collection_enabled: cdktf.stringToTerraform(this._resourceCollectionEnabled),
       role_name: cdktf.stringToTerraform(this._roleName),
       secret_access_key: cdktf.stringToTerraform(this._secretAccessKey),
     };
