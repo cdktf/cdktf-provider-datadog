@@ -61,6 +61,7 @@ export * from './data-datadog-service-level-objective';
 export * from './data-datadog-service-level-objectives';
 export * from './data-datadog-synthetics-global-variable';
 export * from './data-datadog-synthetics-locations';
+export * from './data-datadog-synthetics-test';
 export * from './data-datadog-user';
 export * from './datadog-provider';
 
