@@ -653,6 +653,7 @@ Name|Description
 [DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)|*No description*
 [DataDatadogSyntheticsGlobalVariable](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}.
 [DataDatadogSyntheticsLocations](#cdktf-provider-datadog-datadatadogsyntheticslocations)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations}.
+[DataDatadogSyntheticsTest](#cdktf-provider-datadog-datadatadogsyntheticstest)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test datadog_synthetics_test}.
 [DataDatadogUser](#cdktf-provider-datadog-datadatadoguser)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}.
 [DatadogProvider](#cdktf-provider-datadog-datadogprovider)|Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}.
 [Downtime](#cdktf-provider-datadog-downtime)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime datadog_downtime}.
@@ -1782,6 +1783,7 @@ Name|Description
 [DataDatadogServiceLevelObjectivesConfig](#cdktf-provider-datadog-datadatadogservicelevelobjectivesconfig)|*No description*
 [DataDatadogSyntheticsGlobalVariableConfig](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariableconfig)|*No description*
 [DataDatadogSyntheticsLocationsConfig](#cdktf-provider-datadog-datadatadogsyntheticslocationsconfig)|*No description*
+[DataDatadogSyntheticsTestConfig](#cdktf-provider-datadog-datadatadogsyntheticstestconfig)|*No description*
 [DataDatadogUserConfig](#cdktf-provider-datadog-datadatadoguserconfig)|*No description*
 [DatadogProviderConfig](#cdktf-provider-datadog-datadogproviderconfig)|*No description*
 [DowntimeConfig](#cdktf-provider-datadog-downtimeconfig)|*No description*
@@ -53926,6 +53928,63 @@ __Returns__:
 
 
 
+## class DataDatadogSyntheticsTest  <a id="cdktf-provider-datadog-datadatadogsyntheticstest"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test datadog_synthetics_test}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test datadog_synthetics_test} Data Source.
+
+```ts
+new DataDatadogSyntheticsTest(scope: Construct, id: string, config: DataDatadogSyntheticsTestConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataDatadogSyntheticsTestConfig](#cdktf-provider-datadog-datadatadogsyntheticstestconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **testId** (<code>string</code>)  The synthetic test id to search for. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+**testId** | <code>string</code> | <span></span>
+**url** | <code>string</code> | <span></span>
+**testIdInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogsyntheticstest-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataDatadogUser  <a id="cdktf-provider-datadog-datadatadoguser"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}.
@@ -80821,6 +80880,23 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DataDatadogSyntheticsTestConfig  <a id="cdktf-provider-datadog-datadatadogsyntheticstestconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**testId** | <code>string</code> | The synthetic test id to search for.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
