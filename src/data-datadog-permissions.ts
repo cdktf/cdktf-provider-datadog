@@ -17,7 +17,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_permissions";
+  public static readonly tfResourceType = "datadog_permissions";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_permissions',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

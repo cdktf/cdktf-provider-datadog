@@ -212,10 +212,9 @@ export class MonitorMonitorThresholdWindowsOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MonitorMonitorThresholdWindows | undefined {
@@ -337,10 +336,9 @@ export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): MonitorMonitorThresholds | undefined {
@@ -499,7 +497,7 @@ export class Monitor extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_monitor";
+  public static readonly tfResourceType = "datadog_monitor";
 
   // ===========
   // INITIALIZER
@@ -516,7 +514,9 @@ export class Monitor extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -950,7 +950,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // monitor_threshold_windows - computed: false, optional: true, required: false
-  private _monitorThresholdWindows = new MonitorMonitorThresholdWindowsOutputReference(this, "monitor_threshold_windows", true);
+  private _monitorThresholdWindows = new MonitorMonitorThresholdWindowsOutputReference(this, "monitor_threshold_windows");
   public get monitorThresholdWindows() {
     return this._monitorThresholdWindows;
   }
@@ -966,7 +966,7 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // monitor_thresholds - computed: false, optional: true, required: false
-  private _monitorThresholds = new MonitorMonitorThresholdsOutputReference(this, "monitor_thresholds", true);
+  private _monitorThresholds = new MonitorMonitorThresholdsOutputReference(this, "monitor_thresholds");
   public get monitorThresholds() {
     return this._monitorThresholds;
   }

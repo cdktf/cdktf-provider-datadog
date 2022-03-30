@@ -45,10 +45,9 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): OrganizationSettingsSettingsSaml | undefined {
@@ -120,10 +119,9 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): OrganizationSettingsSettingsSamlAutocreateUsersDomains | undefined {
@@ -210,10 +208,9 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): OrganizationSettingsSettingsSamlIdpInitiatedLogin | undefined {
@@ -278,10 +275,9 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): OrganizationSettingsSettingsSamlStrictMode | undefined {
@@ -381,10 +377,9 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): OrganizationSettingsSettings | undefined {
@@ -491,7 +486,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml - computed: false, optional: false, required: true
-  private _saml = new OrganizationSettingsSettingsSamlOutputReference(this, "saml", true);
+  private _saml = new OrganizationSettingsSettingsSamlOutputReference(this, "saml");
   public get saml() {
     return this._saml;
   }
@@ -504,7 +499,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml_autocreate_users_domains - computed: false, optional: false, required: true
-  private _samlAutocreateUsersDomains = new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(this, "saml_autocreate_users_domains", true);
+  private _samlAutocreateUsersDomains = new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(this, "saml_autocreate_users_domains");
   public get samlAutocreateUsersDomains() {
     return this._samlAutocreateUsersDomains;
   }
@@ -517,7 +512,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml_idp_initiated_login - computed: false, optional: false, required: true
-  private _samlIdpInitiatedLogin = new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(this, "saml_idp_initiated_login", true);
+  private _samlIdpInitiatedLogin = new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(this, "saml_idp_initiated_login");
   public get samlIdpInitiatedLogin() {
     return this._samlIdpInitiatedLogin;
   }
@@ -530,7 +525,7 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // saml_strict_mode - computed: false, optional: false, required: true
-  private _samlStrictMode = new OrganizationSettingsSettingsSamlStrictModeOutputReference(this, "saml_strict_mode", true);
+  private _samlStrictMode = new OrganizationSettingsSettingsSamlStrictModeOutputReference(this, "saml_strict_mode");
   public get samlStrictMode() {
     return this._samlStrictMode;
   }
@@ -551,7 +546,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_organization_settings";
+  public static readonly tfResourceType = "datadog_organization_settings";
 
   // ===========
   // INITIALIZER
@@ -568,7 +563,9 @@ export class OrganizationSettings extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_organization_settings',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -615,7 +612,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   }
 
   // settings - computed: false, optional: true, required: false
-  private _settings = new OrganizationSettingsSettingsOutputReference(this, "settings", true);
+  private _settings = new OrganizationSettingsSettingsOutputReference(this, "settings");
   public get settings() {
     return this._settings;
   }

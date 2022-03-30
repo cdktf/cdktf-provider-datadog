@@ -83,7 +83,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_integration_aws";
+  public static readonly tfResourceType = "datadog_integration_aws";
 
   // ===========
   // INITIALIZER
@@ -100,7 +100,9 @@ export class IntegrationAws extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_integration_aws',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

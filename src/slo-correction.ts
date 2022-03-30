@@ -65,7 +65,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_slo_correction";
+  public static readonly tfResourceType = "datadog_slo_correction";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class SloCorrection extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_slo_correction',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

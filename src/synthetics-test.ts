@@ -173,10 +173,9 @@ export class SyntheticsTestApiStepAssertionTargetjsonpathOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepAssertionTargetjsonpath | undefined {
@@ -330,10 +329,9 @@ export class SyntheticsTestApiStepExtractedValueParserOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepExtractedValueParser | undefined {
@@ -518,10 +516,9 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRequestBasicauth | undefined {
@@ -791,10 +788,9 @@ export class SyntheticsTestApiStepRequestClientCertificateCertOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRequestClientCertificateCert | undefined {
@@ -885,10 +881,9 @@ export class SyntheticsTestApiStepRequestClientCertificateKeyOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRequestClientCertificateKey | undefined {
@@ -979,10 +974,9 @@ export class SyntheticsTestApiStepRequestClientCertificateOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRequestClientCertificate | undefined {
@@ -1013,7 +1007,7 @@ export class SyntheticsTestApiStepRequestClientCertificateOutputReference extend
   }
 
   // cert - computed: false, optional: false, required: true
-  private _cert = new SyntheticsTestApiStepRequestClientCertificateCertOutputReference(this, "cert", true);
+  private _cert = new SyntheticsTestApiStepRequestClientCertificateCertOutputReference(this, "cert");
   public get cert() {
     return this._cert;
   }
@@ -1026,7 +1020,7 @@ export class SyntheticsTestApiStepRequestClientCertificateOutputReference extend
   }
 
   // key - computed: false, optional: false, required: true
-  private _key = new SyntheticsTestApiStepRequestClientCertificateKeyOutputReference(this, "key", true);
+  private _key = new SyntheticsTestApiStepRequestClientCertificateKeyOutputReference(this, "key");
   public get key() {
     return this._key;
   }
@@ -1161,10 +1155,9 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRequestDefinition | undefined {
@@ -1544,10 +1537,9 @@ export class SyntheticsTestApiStepRequestProxyOutputReference extends cdktf.Comp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRequestProxy | undefined {
@@ -1638,10 +1630,9 @@ export class SyntheticsTestApiStepRetryOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestApiStepRetry | undefined {
@@ -1845,10 +1836,9 @@ export class SyntheticsTestAssertionTargetjsonpathOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestAssertionTargetjsonpath | undefined {
@@ -1998,10 +1988,9 @@ export class SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestBrowserStepParamsElementUserLocatorValue | undefined {
@@ -2090,10 +2079,9 @@ export class SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference ex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestBrowserStepParamsElementUserLocator | undefined {
@@ -2140,7 +2128,7 @@ export class SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference ex
   }
 
   // value - computed: false, optional: false, required: true
-  private _value = new SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(this, "value", true);
+  private _value = new SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(this, "value");
   public get value() {
     return this._value;
   }
@@ -2184,10 +2172,9 @@ export class SyntheticsTestBrowserStepParamsVariableOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestBrowserStepParamsVariable | undefined {
@@ -2400,10 +2387,9 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestBrowserStepParams | undefined {
@@ -2808,7 +2794,7 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
   }
 
   // element_user_locator - computed: false, optional: true, required: false
-  private _elementUserLocator = new SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(this, "element_user_locator", true);
+  private _elementUserLocator = new SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(this, "element_user_locator");
   public get elementUserLocator() {
     return this._elementUserLocator;
   }
@@ -2824,7 +2810,7 @@ export class SyntheticsTestBrowserStepParamsOutputReference extends cdktf.Comple
   }
 
   // variable - computed: false, optional: true, required: false
-  private _variable = new SyntheticsTestBrowserStepParamsVariableOutputReference(this, "variable", true);
+  private _variable = new SyntheticsTestBrowserStepParamsVariableOutputReference(this, "variable");
   public get variable() {
     return this._variable;
   }
@@ -3019,10 +3005,9 @@ export class SyntheticsTestOptionsListMonitorOptionsOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestOptionsListMonitorOptions | undefined {
@@ -3094,10 +3079,9 @@ export class SyntheticsTestOptionsListRetryOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestOptionsListRetry | undefined {
@@ -3259,10 +3243,9 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestOptionsList | undefined {
@@ -3510,7 +3493,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   }
 
   // monitor_options - computed: false, optional: true, required: false
-  private _monitorOptions = new SyntheticsTestOptionsListMonitorOptionsOutputReference(this, "monitor_options", true);
+  private _monitorOptions = new SyntheticsTestOptionsListMonitorOptionsOutputReference(this, "monitor_options");
   public get monitorOptions() {
     return this._monitorOptions;
   }
@@ -3526,7 +3509,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   }
 
   // retry - computed: false, optional: true, required: false
-  private _retry = new SyntheticsTestOptionsListRetryOutputReference(this, "retry", true);
+  private _retry = new SyntheticsTestOptionsListRetryOutputReference(this, "retry");
   public get retry() {
     return this._retry;
   }
@@ -3629,10 +3612,9 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestRequestBasicauth | undefined {
@@ -3902,10 +3884,9 @@ export class SyntheticsTestRequestClientCertificateCertOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestRequestClientCertificateCert | undefined {
@@ -3996,10 +3977,9 @@ export class SyntheticsTestRequestClientCertificateKeyOutputReference extends cd
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestRequestClientCertificateKey | undefined {
@@ -4090,10 +4070,9 @@ export class SyntheticsTestRequestClientCertificateOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestRequestClientCertificate | undefined {
@@ -4124,7 +4103,7 @@ export class SyntheticsTestRequestClientCertificateOutputReference extends cdktf
   }
 
   // cert - computed: false, optional: false, required: true
-  private _cert = new SyntheticsTestRequestClientCertificateCertOutputReference(this, "cert", true);
+  private _cert = new SyntheticsTestRequestClientCertificateCertOutputReference(this, "cert");
   public get cert() {
     return this._cert;
   }
@@ -4137,7 +4116,7 @@ export class SyntheticsTestRequestClientCertificateOutputReference extends cdktf
   }
 
   // key - computed: false, optional: false, required: true
-  private _key = new SyntheticsTestRequestClientCertificateKeyOutputReference(this, "key", true);
+  private _key = new SyntheticsTestRequestClientCertificateKeyOutputReference(this, "key");
   public get key() {
     return this._key;
   }
@@ -4258,10 +4237,9 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestRequestDefinition | undefined {
@@ -4597,10 +4575,9 @@ export class SyntheticsTestRequestProxyOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsTestRequestProxy | undefined {
@@ -4668,7 +4645,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_synthetics_test";
+  public static readonly tfResourceType = "datadog_synthetics_test";
 
   // ===========
   // INITIALIZER
@@ -4685,7 +4662,9 @@ export class SyntheticsTest extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4979,7 +4958,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // options_list - computed: false, optional: true, required: false
-  private _optionsList = new SyntheticsTestOptionsListOutputReference(this, "options_list", true);
+  private _optionsList = new SyntheticsTestOptionsListOutputReference(this, "options_list");
   public get optionsList() {
     return this._optionsList;
   }
@@ -4995,7 +4974,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_basicauth - computed: false, optional: true, required: false
-  private _requestBasicauth = new SyntheticsTestRequestBasicauthOutputReference(this, "request_basicauth", true);
+  private _requestBasicauth = new SyntheticsTestRequestBasicauthOutputReference(this, "request_basicauth");
   public get requestBasicauth() {
     return this._requestBasicauth;
   }
@@ -5011,7 +4990,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_client_certificate - computed: false, optional: true, required: false
-  private _requestClientCertificate = new SyntheticsTestRequestClientCertificateOutputReference(this, "request_client_certificate", true);
+  private _requestClientCertificate = new SyntheticsTestRequestClientCertificateOutputReference(this, "request_client_certificate");
   public get requestClientCertificate() {
     return this._requestClientCertificate;
   }
@@ -5027,7 +5006,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_definition - computed: false, optional: true, required: false
-  private _requestDefinition = new SyntheticsTestRequestDefinitionOutputReference(this, "request_definition", true);
+  private _requestDefinition = new SyntheticsTestRequestDefinitionOutputReference(this, "request_definition");
   public get requestDefinition() {
     return this._requestDefinition;
   }
@@ -5043,7 +5022,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // request_proxy - computed: false, optional: true, required: false
-  private _requestProxy = new SyntheticsTestRequestProxyOutputReference(this, "request_proxy", true);
+  private _requestProxy = new SyntheticsTestRequestProxyOutputReference(this, "request_proxy");
   public get requestProxy() {
     return this._requestProxy;
   }

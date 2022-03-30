@@ -41,7 +41,7 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_service_level_objective";
+  public static readonly tfResourceType = "datadog_service_level_objective";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class DataDatadogServiceLevelObjective extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'datadog_service_level_objective',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

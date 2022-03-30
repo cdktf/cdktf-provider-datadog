@@ -8,7 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogCloudWorkloadSecurityAgentRulesConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataDatadogCloudWorkloadSecurityAgentRulesAgentRules extends cdktf.ComplexComputedList {
+export interface DataDatadogCloudWorkloadSecurityAgentRulesAgentRules {
+}
+
+export function dataDatadogCloudWorkloadSecurityAgentRulesAgentRulesToTerraform(struct?: DataDatadogCloudWorkloadSecurityAgentRulesAgentRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogCloudWorkloadSecurityAgentRulesAgentRules | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogCloudWorkloadSecurityAgentRulesAgentRules | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -36,6 +74,25 @@ export class DataDatadogCloudWorkloadSecurityAgentRulesAgentRules extends cdktf.
   }
 }
 
+export class DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference {
+    return new DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/d/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}
 */
@@ -44,7 +101,7 @@ export class DataDatadogCloudWorkloadSecurityAgentRules extends cdktf.TerraformD
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_cloud_workload_security_agent_rules";
+  public static readonly tfResourceType = "datadog_cloud_workload_security_agent_rules";
 
   // ===========
   // INITIALIZER
@@ -61,7 +118,9 @@ export class DataDatadogCloudWorkloadSecurityAgentRules extends cdktf.TerraformD
     super(scope, id, {
       terraformResourceType: 'datadog_cloud_workload_security_agent_rules',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -75,8 +134,9 @@ export class DataDatadogCloudWorkloadSecurityAgentRules extends cdktf.TerraformD
   // ==========
 
   // agent_rules - computed: true, optional: false, required: false
-  public agentRules(index: string) {
-    return new DataDatadogCloudWorkloadSecurityAgentRulesAgentRules(this, 'agent_rules', index, false);
+  private _agentRules = new DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList(this, "agent_rules", false);
+  public get agentRules() {
+    return this._agentRules;
   }
 
   // id - computed: true, optional: true, required: false

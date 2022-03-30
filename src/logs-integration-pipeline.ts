@@ -23,7 +23,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_logs_integration_pipeline";
+  public static readonly tfResourceType = "datadog_logs_integration_pipeline";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_logs_integration_pipeline',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

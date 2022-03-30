@@ -29,7 +29,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_integration_aws_log_collection";
+  public static readonly tfResourceType = "datadog_integration_aws_log_collection";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_integration_aws_log_collection',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

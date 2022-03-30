@@ -35,7 +35,7 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_webhook_custom_variable";
+  public static readonly tfResourceType = "datadog_webhook_custom_variable";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class WebhookCustomVariable extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_webhook_custom_variable',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

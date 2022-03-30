@@ -103,10 +103,9 @@ export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LogsArchiveAzureArchive | undefined {
@@ -268,10 +267,9 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LogsArchiveGcsArchive | undefined {
@@ -411,10 +409,9 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LogsArchiveS3Archive | undefined {
@@ -517,7 +514,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_logs_archive";
+  public static readonly tfResourceType = "datadog_logs_archive";
 
   // ===========
   // INITIALIZER
@@ -534,7 +531,9 @@ export class LogsArchive extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_logs_archive',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -618,7 +617,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // azure_archive - computed: false, optional: true, required: false
-  private _azureArchive = new LogsArchiveAzureArchiveOutputReference(this, "azure_archive", true);
+  private _azureArchive = new LogsArchiveAzureArchiveOutputReference(this, "azure_archive");
   public get azureArchive() {
     return this._azureArchive;
   }
@@ -634,7 +633,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // gcs_archive - computed: false, optional: true, required: false
-  private _gcsArchive = new LogsArchiveGcsArchiveOutputReference(this, "gcs_archive", true);
+  private _gcsArchive = new LogsArchiveGcsArchiveOutputReference(this, "gcs_archive");
   public get gcsArchive() {
     return this._gcsArchive;
   }
@@ -650,7 +649,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // s3_archive - computed: false, optional: true, required: false
-  private _s3Archive = new LogsArchiveS3ArchiveOutputReference(this, "s3_archive", true);
+  private _s3Archive = new LogsArchiveS3ArchiveOutputReference(this, "s3_archive");
   public get s3Archive() {
     return this._s3Archive;
   }

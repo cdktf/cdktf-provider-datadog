@@ -8,14 +8,22 @@ Name|Description
 [ApplicationKey](#cdktf-provider-datadog-applicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/application_key datadog_application_key}.
 [AuthnMapping](#cdktf-provider-datadog-authnmapping)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping datadog_authn_mapping}.
 [ChildOrganization](#cdktf-provider-datadog-childorganization)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}.
-[ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)|*No description*
-[ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)|*No description*
-[ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)|*No description*
-[ChildOrganizationSettingsSaml](#cdktf-provider-datadog-childorganizationsettingssaml)|*No description*
-[ChildOrganizationSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains)|*No description*
-[ChildOrganizationSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin)|*No description*
-[ChildOrganizationSettingsSamlStrictMode](#cdktf-provider-datadog-childorganizationsettingssamlstrictmode)|*No description*
-[ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)|*No description*
+[ChildOrganizationApiKeyList](#cdktf-provider-datadog-childorganizationapikeylist)|*No description*
+[ChildOrganizationApiKeyOutputReference](#cdktf-provider-datadog-childorganizationapikeyoutputreference)|*No description*
+[ChildOrganizationApplicationKeyList](#cdktf-provider-datadog-childorganizationapplicationkeylist)|*No description*
+[ChildOrganizationApplicationKeyOutputReference](#cdktf-provider-datadog-childorganizationapplicationkeyoutputreference)|*No description*
+[ChildOrganizationSettingsList](#cdktf-provider-datadog-childorganizationsettingslist)|*No description*
+[ChildOrganizationSettingsOutputReference](#cdktf-provider-datadog-childorganizationsettingsoutputreference)|*No description*
+[ChildOrganizationSettingsSamlAutocreateUsersDomainsList](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainslist)|*No description*
+[ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainsoutputreference)|*No description*
+[ChildOrganizationSettingsSamlIdpInitiatedLoginList](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginlist)|*No description*
+[ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginoutputreference)|*No description*
+[ChildOrganizationSettingsSamlList](#cdktf-provider-datadog-childorganizationsettingssamllist)|*No description*
+[ChildOrganizationSettingsSamlOutputReference](#cdktf-provider-datadog-childorganizationsettingssamloutputreference)|*No description*
+[ChildOrganizationSettingsSamlStrictModeList](#cdktf-provider-datadog-childorganizationsettingssamlstrictmodelist)|*No description*
+[ChildOrganizationSettingsSamlStrictModeOutputReference](#cdktf-provider-datadog-childorganizationsettingssamlstrictmodeoutputreference)|*No description*
+[ChildOrganizationUserList](#cdktf-provider-datadog-childorganizationuserlist)|*No description*
+[ChildOrganizationUserOutputReference](#cdktf-provider-datadog-childorganizationuseroutputreference)|*No description*
 [CloudWorkloadSecurityAgentRule](#cdktf-provider-datadog-cloudworkloadsecurityagentrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/cloud_workload_security_agent_rule datadog_cloud_workload_security_agent_rule}.
 [Dashboard](#cdktf-provider-datadog-dashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard datadog_dashboard}.
 [DashboardJson](#cdktf-provider-datadog-dashboardjson)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json}.
@@ -618,39 +626,58 @@ Name|Description
 [DataDatadogApiKey](#cdktf-provider-datadog-datadatadogapikey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key}.
 [DataDatadogApplicationKey](#cdktf-provider-datadog-datadatadogapplicationkey)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/application_key datadog_application_key}.
 [DataDatadogCloudWorkloadSecurityAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
-[DataDatadogCloudWorkloadSecurityAgentRulesAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules)|*No description*
+[DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentruleslist)|*No description*
+[DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrulesoutputreference)|*No description*
 [DataDatadogDashboard](#cdktf-provider-datadog-datadatadogdashboard)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}.
 [DataDatadogDashboardList](#cdktf-provider-datadog-datadatadogdashboardlist)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard_list datadog_dashboard_list}.
 [DataDatadogIpRanges](#cdktf-provider-datadog-datadatadogipranges)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges datadog_ip_ranges}.
 [DataDatadogLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexes)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes datadog_logs_indexes}.
-[DataDatadogLogsIndexesLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexes)|*No description*
-[DataDatadogLogsIndexesLogsIndexesExclusionFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter)|*No description*
-[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter)|*No description*
-[DataDatadogLogsIndexesLogsIndexesFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilterlist)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilteroutputreference)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilterList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterlist)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilteroutputreference)|*No description*
+[DataDatadogLogsIndexesLogsIndexesFilterList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilterlist)|*No description*
+[DataDatadogLogsIndexesLogsIndexesFilterOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilteroutputreference)|*No description*
+[DataDatadogLogsIndexesLogsIndexesList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexeslist)|*No description*
+[DataDatadogLogsIndexesLogsIndexesOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesoutputreference)|*No description*
 [DataDatadogLogsIndexesOrder](#cdktf-provider-datadog-datadatadoglogsindexesorder)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_indexes_order datadog_logs_indexes_order}.
 [DataDatadogMonitor](#cdktf-provider-datadog-datadatadogmonitor)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor}.
-[DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)|*No description*
-[DataDatadogMonitorMonitorThresholds](#cdktf-provider-datadog-datadatadogmonitormonitorthresholds)|*No description*
+[DataDatadogMonitorMonitorThresholdWindowsList](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowslist)|*No description*
+[DataDatadogMonitorMonitorThresholdWindowsOutputReference](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowsoutputreference)|*No description*
+[DataDatadogMonitorMonitorThresholdsList](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdslist)|*No description*
+[DataDatadogMonitorMonitorThresholdsOutputReference](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdsoutputreference)|*No description*
 [DataDatadogMonitors](#cdktf-provider-datadog-datadatadogmonitors)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors}.
-[DataDatadogMonitorsMonitors](#cdktf-provider-datadog-datadatadogmonitorsmonitors)|*No description*
+[DataDatadogMonitorsMonitorsList](#cdktf-provider-datadog-datadatadogmonitorsmonitorslist)|*No description*
+[DataDatadogMonitorsMonitorsOutputReference](#cdktf-provider-datadog-datadatadogmonitorsmonitorsoutputreference)|*No description*
 [DataDatadogPermissions](#cdktf-provider-datadog-datadatadogpermissions)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/permissions datadog_permissions}.
 [DataDatadogRole](#cdktf-provider-datadog-datadatadogrole)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role datadog_role}.
 [DataDatadogRoles](#cdktf-provider-datadog-datadatadogroles)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles}.
-[DataDatadogRolesRoles](#cdktf-provider-datadog-datadatadogrolesroles)|*No description*
+[DataDatadogRolesRolesList](#cdktf-provider-datadog-datadatadogrolesroleslist)|*No description*
+[DataDatadogRolesRolesOutputReference](#cdktf-provider-datadog-datadatadogrolesrolesoutputreference)|*No description*
 [DataDatadogSecurityMonitoringFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfilters)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_filters datadog_security_monitoring_filters}.
-[DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)|*No description*
-[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter)|*No description*
+[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilterlist)|*No description*
+[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilteroutputreference)|*No description*
+[DataDatadogSecurityMonitoringFiltersFiltersList](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilterslist)|*No description*
+[DataDatadogSecurityMonitoringFiltersFiltersOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersoutputreference)|*No description*
 [DataDatadogSecurityMonitoringRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrules)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules datadog_security_monitoring_rules}.
-[DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)|*No description*
-[DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)|*No description*
-[DataDatadogSecurityMonitoringRulesRulesFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter)|*No description*
-[DataDatadogSecurityMonitoringRulesRulesOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions)|*No description*
-[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions)|*No description*
-[DataDatadogSecurityMonitoringRulesRulesQuery](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery)|*No description*
-[DataDatadogSecurityMonitoringRulesRulesQueryAgentRule](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesCaseList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaselist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesCaseOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaseoutputreference)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesFilterList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilterlist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesFilterOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilteroutputreference)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesruleslist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionslist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionslist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionsoutputreference)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsoutputreference)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoutputreference)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrulelist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentruleoutputreference)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesQueryList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquerylist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesQueryOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryoutputreference)|*No description*
 [DataDatadogServiceLevelObjective](#cdktf-provider-datadog-datadatadogservicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objective datadog_service_level_objective}.
 [DataDatadogServiceLevelObjectives](#cdktf-provider-datadog-datadatadogservicelevelobjectives)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives}.
-[DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)|*No description*
+[DataDatadogServiceLevelObjectivesSlosList](#cdktf-provider-datadog-datadatadogservicelevelobjectivessloslist)|*No description*
+[DataDatadogServiceLevelObjectivesSlosOutputReference](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslosoutputreference)|*No description*
 [DataDatadogSyntheticsGlobalVariable](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariable)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}.
 [DataDatadogSyntheticsLocations](#cdktf-provider-datadog-datadatadogsyntheticslocations)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_locations datadog_synthetics_locations}.
 [DataDatadogSyntheticsTest](#cdktf-provider-datadog-datadatadogsyntheticstest)|Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test datadog_synthetics_test}.
@@ -776,7 +803,15 @@ Name|Description
 [ApiKeyConfig](#cdktf-provider-datadog-apikeyconfig)|*No description*
 [ApplicationKeyConfig](#cdktf-provider-datadog-applicationkeyconfig)|*No description*
 [AuthnMappingConfig](#cdktf-provider-datadog-authnmappingconfig)|*No description*
+[ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)|*No description*
+[ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)|*No description*
 [ChildOrganizationConfig](#cdktf-provider-datadog-childorganizationconfig)|*No description*
+[ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)|*No description*
+[ChildOrganizationSettingsSaml](#cdktf-provider-datadog-childorganizationsettingssaml)|*No description*
+[ChildOrganizationSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains)|*No description*
+[ChildOrganizationSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin)|*No description*
+[ChildOrganizationSettingsSamlStrictMode](#cdktf-provider-datadog-childorganizationsettingssamlstrictmode)|*No description*
+[ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)|*No description*
 [CloudWorkloadSecurityAgentRuleConfig](#cdktf-provider-datadog-cloudworkloadsecurityagentruleconfig)|*No description*
 [DashboardConfig](#cdktf-provider-datadog-dashboardconfig)|*No description*
 [DashboardJsonConfig](#cdktf-provider-datadog-dashboardjsonconfig)|*No description*
@@ -1766,21 +1801,40 @@ Name|Description
 [DashboardWidgetWidgetLayout](#cdktf-provider-datadog-dashboardwidgetwidgetlayout)|*No description*
 [DataDatadogApiKeyConfig](#cdktf-provider-datadog-datadatadogapikeyconfig)|*No description*
 [DataDatadogApplicationKeyConfig](#cdktf-provider-datadog-datadatadogapplicationkeyconfig)|*No description*
+[DataDatadogCloudWorkloadSecurityAgentRulesAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules)|*No description*
 [DataDatadogCloudWorkloadSecurityAgentRulesConfig](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesconfig)|*No description*
 [DataDatadogDashboardConfig](#cdktf-provider-datadog-datadatadogdashboardconfig)|*No description*
 [DataDatadogDashboardListConfig](#cdktf-provider-datadog-datadatadogdashboardlistconfig)|*No description*
 [DataDatadogIpRangesConfig](#cdktf-provider-datadog-datadatadogiprangesconfig)|*No description*
 [DataDatadogLogsIndexesConfig](#cdktf-provider-datadog-datadatadoglogsindexesconfig)|*No description*
+[DataDatadogLogsIndexesLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexes)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter)|*No description*
+[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter)|*No description*
+[DataDatadogLogsIndexesLogsIndexesFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter)|*No description*
 [DataDatadogLogsIndexesOrderConfig](#cdktf-provider-datadog-datadatadoglogsindexesorderconfig)|*No description*
 [DataDatadogMonitorConfig](#cdktf-provider-datadog-datadatadogmonitorconfig)|*No description*
+[DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)|*No description*
+[DataDatadogMonitorMonitorThresholds](#cdktf-provider-datadog-datadatadogmonitormonitorthresholds)|*No description*
 [DataDatadogMonitorsConfig](#cdktf-provider-datadog-datadatadogmonitorsconfig)|*No description*
+[DataDatadogMonitorsMonitors](#cdktf-provider-datadog-datadatadogmonitorsmonitors)|*No description*
 [DataDatadogPermissionsConfig](#cdktf-provider-datadog-datadatadogpermissionsconfig)|*No description*
 [DataDatadogRoleConfig](#cdktf-provider-datadog-datadatadogroleconfig)|*No description*
 [DataDatadogRolesConfig](#cdktf-provider-datadog-datadatadogrolesconfig)|*No description*
+[DataDatadogRolesRoles](#cdktf-provider-datadog-datadatadogrolesroles)|*No description*
 [DataDatadogSecurityMonitoringFiltersConfig](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersconfig)|*No description*
+[DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)|*No description*
+[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter)|*No description*
 [DataDatadogSecurityMonitoringRulesConfig](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesconfig)|*No description*
+[DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesQuery](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesQueryAgentRule](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule)|*No description*
 [DataDatadogServiceLevelObjectiveConfig](#cdktf-provider-datadog-datadatadogservicelevelobjectiveconfig)|*No description*
 [DataDatadogServiceLevelObjectivesConfig](#cdktf-provider-datadog-datadatadogservicelevelobjectivesconfig)|*No description*
+[DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)|*No description*
 [DataDatadogSyntheticsGlobalVariableConfig](#cdktf-provider-datadog-datadatadogsyntheticsglobalvariableconfig)|*No description*
 [DataDatadogSyntheticsLocationsConfig](#cdktf-provider-datadog-datadatadogsyntheticslocationsconfig)|*No description*
 [DataDatadogSyntheticsTestConfig](#cdktf-provider-datadog-datadatadogsyntheticstestconfig)|*No description*
@@ -2128,67 +2182,19 @@ new ChildOrganization(scope: Construct, id: string, config: ChildOrganizationCon
 
 Name | Type | Description 
 -----|------|-------------
+**apiKey** | <code>[ChildOrganizationApiKeyList](#cdktf-provider-datadog-childorganizationapikeylist)</code> | <span></span>
+**applicationKey** | <code>[ChildOrganizationApplicationKeyList](#cdktf-provider-datadog-childorganizationapplicationkeylist)</code> | <span></span>
 **description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **publicId** | <code>string</code> | <span></span>
+**settings** | <code>[ChildOrganizationSettingsList](#cdktf-provider-datadog-childorganizationsettingslist)</code> | <span></span>
+**user** | <code>[ChildOrganizationUserList](#cdktf-provider-datadog-childorganizationuserlist)</code> | <span></span>
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
-
-#### apiKey(index) <a id="cdktf-provider-datadog-childorganization-apikey"></a>
-
-
-
-```ts
-apiKey(index: string): ChildOrganizationApiKey
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)</code>
-
-#### applicationKey(index) <a id="cdktf-provider-datadog-childorganization-applicationkey"></a>
-
-
-
-```ts
-applicationKey(index: string): ChildOrganizationApplicationKey
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)</code>
-
-#### settings(index) <a id="cdktf-provider-datadog-childorganization-settings"></a>
-
-
-
-```ts
-settings(index: string): ChildOrganizationSettings
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)</code>
-
-#### user(index) <a id="cdktf-provider-datadog-childorganization-user"></a>
-
-
-
-```ts
-user(index: string): ChildOrganizationUser
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)</code>
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-childorganization-synthesizeattributes"></a>
 
@@ -2204,12 +2210,12 @@ __Returns__:
 
 
 
-## class ChildOrganizationApiKey  <a id="cdktf-provider-datadog-childorganizationapikey"></a>
+## class ChildOrganizationApiKeyList  <a id="cdktf-provider-datadog-childorganizationapikeylist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2217,13 +2223,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationApiKey(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationApiKeyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationapikeylist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationApiKeyOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationApiKeyOutputReference](#cdktf-provider-datadog-childorganizationapikeyoutputreference)</code>
+
+
+
+## class ChildOrganizationApiKeyOutputReference  <a id="cdktf-provider-datadog-childorganizationapikeyoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationApiKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2234,15 +2289,16 @@ Name | Type | Description
 -----|------|-------------
 **key** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationApiKey](#cdktf-provider-datadog-childorganizationapikey)</code> | __*Optional*__
 
 
 
-## class ChildOrganizationApplicationKey  <a id="cdktf-provider-datadog-childorganizationapplicationkey"></a>
+## class ChildOrganizationApplicationKeyList  <a id="cdktf-provider-datadog-childorganizationapplicationkeylist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2250,13 +2306,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationApplicationKey(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationApplicationKeyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationapplicationkeylist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationApplicationKeyOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationApplicationKeyOutputReference](#cdktf-provider-datadog-childorganizationapplicationkeyoutputreference)</code>
+
+
+
+## class ChildOrganizationApplicationKeyOutputReference  <a id="cdktf-provider-datadog-childorganizationapplicationkeyoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationApplicationKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2268,15 +2373,16 @@ Name | Type | Description
 **hash** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationApplicationKey](#cdktf-provider-datadog-childorganizationapplicationkey)</code> | __*Optional*__
 
 
 
-## class ChildOrganizationSettings  <a id="cdktf-provider-datadog-childorganizationsettings"></a>
+## class ChildOrganizationSettingsList  <a id="cdktf-provider-datadog-childorganizationsettingslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2284,13 +2390,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationSettings(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationSettingsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationsettingslist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationSettingsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationSettingsOutputReference](#cdktf-provider-datadog-childorganizationsettingsoutputreference)</code>
+
+
+
+## class ChildOrganizationSettingsOutputReference  <a id="cdktf-provider-datadog-childorganizationsettingsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2300,24 +2455,25 @@ new ChildOrganizationSettings(terraformResource: IInterpolatingParent, terraform
 Name | Type | Description 
 -----|------|-------------
 **privateWidgetShare** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**saml** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**saml** | <code>[ChildOrganizationSettingsSamlList](#cdktf-provider-datadog-childorganizationsettingssamllist)</code> | <span></span>
 **samlAutocreateAccessRole** | <code>string</code> | <span></span>
-**samlAutocreateUsersDomains** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**samlAutocreateUsersDomains** | <code>[ChildOrganizationSettingsSamlAutocreateUsersDomainsList](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainslist)</code> | <span></span>
 **samlCanBeEnabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **samlIdpEndpoint** | <code>string</code> | <span></span>
-**samlIdpInitiatedLogin** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**samlIdpInitiatedLogin** | <code>[ChildOrganizationSettingsSamlIdpInitiatedLoginList](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginlist)</code> | <span></span>
 **samlIdpMetadataUploaded** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **samlLoginUrl** | <code>string</code> | <span></span>
-**samlStrictMode** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**samlStrictMode** | <code>[ChildOrganizationSettingsSamlStrictModeList](#cdktf-provider-datadog-childorganizationsettingssamlstrictmodelist)</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationSettings](#cdktf-provider-datadog-childorganizationsettings)</code> | __*Optional*__
 
 
 
-## class ChildOrganizationSettingsSaml  <a id="cdktf-provider-datadog-childorganizationsettingssaml"></a>
+## class ChildOrganizationSettingsSamlAutocreateUsersDomainsList  <a id="cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2325,13 +2481,12 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationSettingsSaml(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationSettingsSamlAutocreateUsersDomainsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2340,16 +2495,34 @@ new ChildOrganizationSettingsSaml(terraformResource: IInterpolatingParent, terra
 
 Name | Type | Description 
 -----|------|-------------
-**enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainslist-get"></a>
 
 
 
-## class ChildOrganizationSettingsSamlAutocreateUsersDomains  <a id="cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains"></a>
+```ts
+get(index: number): ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainsoutputreference)</code>
+
+
+
+## class ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference  <a id="cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomainsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
 
@@ -2357,13 +2530,13 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationSettingsSamlAutocreateUsersDomains(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2374,15 +2547,16 @@ Name | Type | Description
 -----|------|-------------
 **domains** | <code>Array<string></code> | <span></span>
 **enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationSettingsSamlAutocreateUsersDomains](#cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains)</code> | __*Optional*__
 
 
 
-## class ChildOrganizationSettingsSamlIdpInitiatedLogin  <a id="cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin"></a>
+## class ChildOrganizationSettingsSamlIdpInitiatedLoginList  <a id="cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginlist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2390,13 +2564,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationSettingsSamlIdpInitiatedLogin(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationSettingsSamlIdpInitiatedLoginList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginlist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginoutputreference)</code>
+
+
+
+## class ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference  <a id="cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedloginoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2406,15 +2629,16 @@ new ChildOrganizationSettingsSamlIdpInitiatedLogin(terraformResource: IInterpola
 Name | Type | Description 
 -----|------|-------------
 **enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationSettingsSamlIdpInitiatedLogin](#cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin)</code> | __*Optional*__
 
 
 
-## class ChildOrganizationSettingsSamlStrictMode  <a id="cdktf-provider-datadog-childorganizationsettingssamlstrictmode"></a>
+## class ChildOrganizationSettingsSamlList  <a id="cdktf-provider-datadog-childorganizationsettingssamllist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2422,13 +2646,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationSettingsSamlStrictMode(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationSettingsSamlList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationsettingssamllist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationSettingsSamlOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationSettingsSamlOutputReference](#cdktf-provider-datadog-childorganizationsettingssamloutputreference)</code>
+
+
+
+## class ChildOrganizationSettingsSamlOutputReference  <a id="cdktf-provider-datadog-childorganizationsettingssamloutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSamlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2438,15 +2711,16 @@ new ChildOrganizationSettingsSamlStrictMode(terraformResource: IInterpolatingPar
 Name | Type | Description 
 -----|------|-------------
 **enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationSettingsSaml](#cdktf-provider-datadog-childorganizationsettingssaml)</code> | __*Optional*__
 
 
 
-## class ChildOrganizationUser  <a id="cdktf-provider-datadog-childorganizationuser"></a>
+## class ChildOrganizationSettingsSamlStrictModeList  <a id="cdktf-provider-datadog-childorganizationsettingssamlstrictmodelist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2454,13 +2728,144 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new ChildOrganizationUser(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ChildOrganizationSettingsSamlStrictModeList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationsettingssamlstrictmodelist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationSettingsSamlStrictModeOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationSettingsSamlStrictModeOutputReference](#cdktf-provider-datadog-childorganizationsettingssamlstrictmodeoutputreference)</code>
+
+
+
+## class ChildOrganizationSettingsSamlStrictModeOutputReference  <a id="cdktf-provider-datadog-childorganizationsettingssamlstrictmodeoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationSettingsSamlStrictModeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationSettingsSamlStrictMode](#cdktf-provider-datadog-childorganizationsettingssamlstrictmode)</code> | __*Optional*__
+
+
+
+## class ChildOrganizationUserList  <a id="cdktf-provider-datadog-childorganizationuserlist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationUserList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-childorganizationuserlist-get"></a>
+
+
+
+```ts
+get(index: number): ChildOrganizationUserOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[ChildOrganizationUserOutputReference](#cdktf-provider-datadog-childorganizationuseroutputreference)</code>
+
+
+
+## class ChildOrganizationUserOutputReference  <a id="cdktf-provider-datadog-childorganizationuseroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ChildOrganizationUserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2472,6 +2877,7 @@ Name | Type | Description
 **accessRole** | <code>string</code> | <span></span>
 **email** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**internalValue**? | <code>[ChildOrganizationUser](#cdktf-provider-datadog-childorganizationuser)</code> | __*Optional*__
 
 
 
@@ -2937,12 +3343,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetAlertGraphDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetAlertGraphDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3031,12 +3436,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetAlertValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetAlertValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3151,12 +3555,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3269,12 +3672,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3333,12 +3735,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3385,12 +3786,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3493,12 +3893,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3555,12 +3954,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3619,12 +4017,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3671,12 +4068,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3779,12 +4175,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3857,12 +4252,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -3947,12 +4341,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4061,12 +4454,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4125,12 +4517,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4221,12 +4612,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4254,12 +4644,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4320,12 +4709,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4444,12 +4832,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4508,12 +4895,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4560,12 +4946,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4668,12 +5053,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4732,12 +5116,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4784,12 +5167,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4892,12 +5274,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetCheckStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetCheckStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5028,12 +5409,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5160,12 +5540,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5224,12 +5603,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5276,12 +5654,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5384,12 +5761,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5456,12 +5832,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5520,12 +5895,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5572,12 +5946,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5680,12 +6053,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5758,12 +6130,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5822,12 +6193,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5874,12 +6244,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5982,12 +6351,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6046,12 +6414,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6098,12 +6465,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6206,12 +6572,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetDistributionDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetDistributionDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6254,12 +6619,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetEventStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetEventStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6374,12 +6738,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetEventTimelineDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetEventTimelineDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6480,12 +6843,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetFreeTextDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetFreeTextDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6558,12 +6920,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6721,12 +7082,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6783,12 +7143,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6847,12 +7206,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6899,12 +7257,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7007,12 +7364,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7097,12 +7453,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7211,12 +7566,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7275,12 +7629,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7371,12 +7724,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7404,12 +7756,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7470,12 +7821,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7594,12 +7944,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7658,12 +8007,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7710,12 +8058,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7818,12 +8165,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7853,12 +8199,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGeomapDefinitionViewOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGeomapDefinitionViewOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7886,12 +8231,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7980,12 +8324,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8074,12 +8417,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8194,12 +8536,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8312,12 +8653,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8376,12 +8716,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8428,12 +8767,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8536,12 +8874,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8598,12 +8935,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8662,12 +8998,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8714,12 +9049,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8822,12 +9156,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8900,12 +9233,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -8990,12 +9322,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9104,12 +9435,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9168,12 +9498,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9264,12 +9593,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9297,12 +9625,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9363,12 +9690,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9487,12 +9813,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9551,12 +9876,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9603,12 +9927,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9711,12 +10034,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9775,12 +10097,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9827,12 +10148,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -9935,12 +10255,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetCheckStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetCheckStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10071,12 +10390,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10203,12 +10521,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10267,12 +10584,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10319,12 +10635,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10427,12 +10742,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10499,12 +10813,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10563,12 +10876,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10615,12 +10927,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10723,12 +11034,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10801,12 +11111,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10865,12 +11174,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -10917,12 +11225,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11025,12 +11332,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11089,12 +11395,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11141,12 +11446,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11249,12 +11553,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetDistributionDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11297,12 +11600,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetEventStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetEventStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11417,12 +11719,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetEventTimelineDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetEventTimelineDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11523,12 +11824,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetFreeTextDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11601,12 +11901,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11764,12 +12063,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11826,12 +12124,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11890,12 +12187,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -11942,12 +12238,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12050,12 +12345,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12140,12 +12434,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12254,12 +12547,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12318,12 +12610,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12414,12 +12705,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12447,12 +12737,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12513,12 +12802,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12637,12 +12925,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12701,12 +12988,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12753,12 +13039,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12861,12 +13146,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12896,12 +13180,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionViewOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetGeomapDefinitionViewOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -12929,12 +13212,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13121,12 +13403,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13185,12 +13466,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13237,12 +13517,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13345,12 +13624,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13409,12 +13687,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13461,12 +13738,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13569,12 +13845,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13647,12 +13922,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13711,12 +13985,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13763,12 +14036,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13871,12 +14143,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13935,12 +14206,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -13987,12 +14257,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14095,12 +14364,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14143,12 +14411,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14247,12 +14514,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14467,12 +14733,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14531,12 +14796,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14583,12 +14847,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14691,12 +14954,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14755,12 +15017,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14807,12 +15068,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14915,12 +15175,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -14993,12 +15252,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15057,12 +15315,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15109,12 +15366,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15217,12 +15473,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15281,12 +15536,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15333,12 +15587,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15441,12 +15694,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15503,12 +15755,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15567,12 +15818,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15619,12 +15869,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15727,12 +15976,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15791,12 +16039,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15843,12 +16090,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -15951,12 +16197,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16029,12 +16274,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16093,12 +16337,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16145,12 +16388,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16253,12 +16495,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16317,12 +16558,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16369,12 +16609,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16477,12 +16716,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16567,12 +16805,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetIframeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetIframeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16600,12 +16837,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetImageDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetImageDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16734,12 +16970,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16937,12 +17172,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetLogStreamDefinitionSortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -16972,12 +17206,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17134,12 +17367,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetNoteDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetNoteDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17282,12 +17514,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17414,12 +17645,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17478,12 +17708,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17530,12 +17759,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17638,12 +17866,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17710,12 +17937,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17772,12 +17998,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17836,12 +18061,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17888,12 +18112,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -17996,12 +18219,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18074,12 +18296,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18164,12 +18385,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18278,12 +18498,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18342,12 +18561,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18438,12 +18656,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18471,12 +18688,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18537,12 +18753,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18661,12 +18876,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18725,12 +18939,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18777,12 +18990,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18885,12 +19097,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -18949,12 +19160,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19001,12 +19211,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19109,12 +19318,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19283,12 +19491,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19347,12 +19554,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19399,12 +19605,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19507,12 +19712,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19571,12 +19775,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19623,12 +19826,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19731,12 +19933,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19793,12 +19994,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19857,12 +20057,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -19909,12 +20108,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20017,12 +20215,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20095,12 +20292,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20185,12 +20381,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20299,12 +20494,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20363,12 +20557,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20459,12 +20652,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20492,12 +20684,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20558,12 +20749,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20682,12 +20872,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20746,12 +20935,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20798,12 +20986,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20906,12 +21093,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -20970,12 +21156,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21022,12 +21207,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21130,12 +21314,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21342,12 +21525,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21418,12 +21600,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21508,12 +21689,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21622,12 +21802,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21686,12 +21865,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21782,12 +21960,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21815,12 +21992,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -21881,12 +22057,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22005,12 +22180,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22069,12 +22243,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22121,12 +22294,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22229,12 +22401,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22293,12 +22464,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22345,12 +22515,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22453,12 +22622,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22531,12 +22699,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22595,12 +22762,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22647,12 +22813,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22755,12 +22920,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22819,12 +22983,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22871,12 +23034,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -22979,12 +23141,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23043,12 +23204,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23095,12 +23255,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23203,12 +23362,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23267,12 +23425,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23319,12 +23476,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23427,12 +23583,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23505,12 +23660,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23569,12 +23723,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23621,12 +23774,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23729,12 +23881,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23793,12 +23944,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23845,12 +23995,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -23953,12 +24102,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24057,12 +24205,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24161,12 +24308,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24273,12 +24419,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24367,12 +24512,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24431,12 +24575,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24464,12 +24607,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24654,12 +24796,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24718,12 +24859,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24770,12 +24910,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24878,12 +25017,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24942,12 +25080,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -24994,12 +25131,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25102,12 +25238,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25164,12 +25299,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25228,12 +25362,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25280,12 +25413,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25388,12 +25520,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25452,12 +25583,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25504,12 +25634,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25612,12 +25741,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25690,12 +25818,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25780,12 +25907,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25894,12 +26020,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -25958,12 +26083,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26054,12 +26178,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26087,12 +26210,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26153,12 +26275,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26277,12 +26398,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26341,12 +26461,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26393,12 +26512,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26501,12 +26619,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26565,12 +26682,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26617,12 +26733,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26725,12 +26840,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -26991,12 +27105,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27055,12 +27168,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27107,12 +27219,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27215,12 +27326,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27279,12 +27389,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27331,12 +27440,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27439,12 +27547,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27501,12 +27608,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27565,12 +27671,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27617,12 +27722,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27725,12 +27829,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27789,12 +27892,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27841,12 +27943,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -27949,12 +28050,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28027,12 +28127,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28117,12 +28216,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28231,12 +28329,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28295,12 +28392,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28391,12 +28487,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28424,12 +28519,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28490,12 +28584,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28614,12 +28707,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28678,12 +28770,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28730,12 +28821,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28838,12 +28928,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28902,12 +28991,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -28954,12 +29042,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29062,12 +29149,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29138,12 +29224,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29242,12 +29327,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29346,12 +29430,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29464,12 +29547,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29528,12 +29610,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29580,12 +29661,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29688,12 +29768,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29752,12 +29831,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29804,12 +29882,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29912,12 +29989,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -29974,12 +30050,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30038,12 +30113,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30090,12 +30164,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30198,12 +30271,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30276,12 +30348,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30366,12 +30437,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30480,12 +30550,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30544,12 +30613,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30640,12 +30708,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30673,12 +30740,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30739,12 +30805,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30863,12 +30928,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30927,12 +30991,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -30979,12 +31042,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31087,12 +31149,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31151,12 +31212,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31203,12 +31263,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31311,12 +31370,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31359,12 +31417,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31567,12 +31624,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31629,12 +31685,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31691,12 +31746,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31781,12 +31835,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31895,12 +31948,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -31959,12 +32011,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32055,12 +32106,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32088,12 +32138,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32154,12 +32203,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32278,12 +32326,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32334,12 +32381,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32526,12 +32572,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32590,12 +32635,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32642,12 +32686,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32750,12 +32793,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32814,12 +32856,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32866,12 +32907,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -32974,12 +33014,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33052,12 +33091,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33116,12 +33154,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33168,12 +33205,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33276,12 +33312,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33340,12 +33375,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33392,12 +33426,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33500,12 +33533,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33548,12 +33580,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHeatmapDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHeatmapDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33652,12 +33683,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33872,12 +33902,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33936,12 +33965,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -33988,12 +34016,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34096,12 +34123,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34160,12 +34186,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34212,12 +34237,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34320,12 +34344,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34398,12 +34421,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34462,12 +34484,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34514,12 +34535,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34622,12 +34642,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34686,12 +34705,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34738,12 +34756,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34846,12 +34863,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34908,12 +34924,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -34972,12 +34987,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35024,12 +35038,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35132,12 +35145,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35196,12 +35208,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35248,12 +35259,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35356,12 +35366,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35434,12 +35443,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35498,12 +35506,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35550,12 +35557,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35658,12 +35664,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35722,12 +35727,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35774,12 +35778,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35882,12 +35885,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetHostmapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetHostmapDefinitionStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -35972,12 +35974,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetIframeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetIframeDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36005,12 +36006,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetImageDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetImageDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36139,12 +36139,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetLogStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetLogStreamDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36342,12 +36341,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetLogStreamDefinitionSortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetLogStreamDefinitionSortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36377,12 +36375,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetManageStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetManageStatusDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36539,12 +36536,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetNoteDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetNoteDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36687,12 +36683,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36819,12 +36814,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36883,12 +36877,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -36935,12 +36928,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37043,12 +37035,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37115,12 +37106,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37177,12 +37167,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37241,12 +37230,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37293,12 +37281,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37401,12 +37388,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37479,12 +37465,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37569,12 +37554,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37683,12 +37667,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37747,12 +37730,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37843,12 +37825,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37876,12 +37857,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -37942,12 +37922,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38066,12 +38045,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38130,12 +38108,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38182,12 +38159,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38290,12 +38266,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38354,12 +38329,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38406,12 +38380,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38514,12 +38487,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38688,12 +38660,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38752,12 +38723,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38804,12 +38774,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38912,12 +38881,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -38976,12 +38944,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39028,12 +38995,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39136,12 +39102,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39198,12 +39163,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39262,12 +39226,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39314,12 +39277,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39422,12 +39384,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39500,12 +39461,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39590,12 +39550,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39704,12 +39663,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39768,12 +39726,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39864,12 +39821,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39897,12 +39853,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -39963,12 +39918,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40087,12 +40041,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40151,12 +40104,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40203,12 +40155,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40311,12 +40262,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40375,12 +40325,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40427,12 +40376,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40535,12 +40483,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40747,12 +40694,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40823,12 +40769,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -40913,12 +40858,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41027,12 +40971,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41091,12 +41034,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41187,12 +41129,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41220,12 +41161,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41286,12 +41226,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41410,12 +41349,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41474,12 +41412,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41526,12 +41463,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41634,12 +41570,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41698,12 +41633,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41750,12 +41684,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41858,12 +41791,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -41936,12 +41868,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42000,12 +41931,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42052,12 +41982,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42160,12 +42089,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42224,12 +42152,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42276,12 +42203,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42384,12 +42310,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42448,12 +42373,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42500,12 +42424,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42608,12 +42531,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42672,12 +42594,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42724,12 +42645,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42832,12 +42752,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42910,12 +42829,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -42974,12 +42892,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43026,12 +42943,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43134,12 +43050,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43198,12 +43113,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43250,12 +43164,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43358,12 +43271,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionXaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionXaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43462,12 +43374,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetScatterplotDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetScatterplotDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43566,12 +43477,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetServiceLevelObjectiveDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43678,12 +43588,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetServicemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetServicemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43772,12 +43681,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionLegendInlineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionLegendInlineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43836,12 +43744,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionLegendTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionLegendTableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -43869,12 +43776,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44059,12 +43965,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44123,12 +44028,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44175,12 +44079,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44283,12 +44186,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44347,12 +44249,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44399,12 +44300,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44507,12 +44407,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44569,12 +44468,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44633,12 +44531,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44685,12 +44582,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44793,12 +44689,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44857,12 +44752,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -44909,12 +44803,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45017,12 +44910,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45095,12 +44987,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45185,12 +45076,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45299,12 +45189,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45363,12 +45252,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45459,12 +45347,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45492,12 +45379,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45558,12 +45444,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45682,12 +45567,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45746,12 +45630,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45798,12 +45681,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45906,12 +45788,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -45970,12 +45851,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46022,12 +45902,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetSunburstDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetSunburstDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46130,12 +46009,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46396,12 +46274,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46460,12 +46337,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46512,12 +46388,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46620,12 +46495,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46684,12 +46558,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46736,12 +46609,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46844,12 +46716,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46906,12 +46777,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -46970,12 +46840,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47022,12 +46891,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47130,12 +46998,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47194,12 +47061,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47246,12 +47112,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47354,12 +47219,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47432,12 +47296,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47522,12 +47385,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47636,12 +47498,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47700,12 +47561,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47796,12 +47656,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47829,12 +47688,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -47895,12 +47753,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48019,12 +47876,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48083,12 +47939,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48135,12 +47990,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48243,12 +48097,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48307,12 +48160,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48359,12 +48211,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48467,12 +48318,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48543,12 +48393,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionRightYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionRightYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48647,12 +48496,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTimeseriesDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTimeseriesDefinitionYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48751,12 +48599,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48869,12 +48716,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48933,12 +48779,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -48985,12 +48830,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestApmQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49093,12 +48937,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49157,12 +49000,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49209,12 +49051,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestAuditQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49317,12 +49158,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49379,12 +49219,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49443,12 +49282,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49495,12 +49333,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestLogQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49603,12 +49440,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49681,12 +49517,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49771,12 +49606,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49885,12 +49719,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -49949,12 +49782,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50045,12 +49877,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50078,12 +49909,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50144,12 +49974,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50268,12 +50097,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50332,12 +50160,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50384,12 +50211,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestRumQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50492,12 +50318,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50556,12 +50381,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50608,12 +50432,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestSecurityQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50716,12 +50539,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetToplistDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetToplistDefinitionRequestStyleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50764,12 +50586,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTraceServiceDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTraceServiceDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -50972,12 +50793,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51034,12 +50854,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestFormulaLimitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51096,12 +50915,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryApmDependencyStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51186,12 +51004,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryApmResourceStatsQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51300,12 +51117,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryEventQueryGroupBySortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51364,12 +51180,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryEventQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51460,12 +51275,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51493,12 +51307,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryMetricQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51559,12 +51372,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetTreemapDefinitionRequestQueryProcessQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51683,12 +51495,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DashboardWidgetWidgetLayoutOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DashboardWidgetWidgetLayoutOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -51919,24 +51730,12 @@ new DataDatadogCloudWorkloadSecurityAgentRules(scope: Construct, id: string, con
 
 Name | Type | Description 
 -----|------|-------------
+**agentRules** | <code>[DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentruleslist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
-
-#### agentRules(index) <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules-agentrules"></a>
-
-
-
-```ts
-agentRules(index: string): DataDatadogCloudWorkloadSecurityAgentRulesAgentRules
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogCloudWorkloadSecurityAgentRulesAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules)</code>
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrules-synthesizeattributes"></a>
 
@@ -51952,12 +51751,12 @@ __Returns__:
 
 
 
-## class DataDatadogCloudWorkloadSecurityAgentRulesAgentRules  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules"></a>
+## class DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentruleslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -51965,13 +51764,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogCloudWorkloadSecurityAgentRulesAgentRules(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentruleslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrulesoutputreference)</code>
+
+
+
+## class DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrulesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -51985,6 +51833,7 @@ Name | Type | Description
 **expression** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogCloudWorkloadSecurityAgentRulesAgentRules](#cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules)</code> | __*Optional*__
 
 
 
@@ -52221,23 +52070,11 @@ new DataDatadogLogsIndexes(scope: Construct, id: string, config?: DataDatadogLog
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
+**logsIndexes** | <code>[DataDatadogLogsIndexesLogsIndexesList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexeslist)</code> | <span></span>
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
-
-#### logsIndexes(index) <a id="cdktf-provider-datadog-datadatadoglogsindexes-logsindexes"></a>
-
-
-
-```ts
-logsIndexes(index: string): DataDatadogLogsIndexesLogsIndexes
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogLogsIndexesLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexes)</code>
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadoglogsindexes-synthesizeattributes"></a>
 
@@ -52253,12 +52090,12 @@ __Returns__:
 
 
 
-## class DataDatadogLogsIndexesLogsIndexes  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexes"></a>
+## class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilterlist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -52266,13 +52103,12 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogLogsIndexesLogsIndexes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -52281,20 +52117,34 @@ new DataDatadogLogsIndexesLogsIndexes(terraformResource: IInterpolatingParent, t
 
 Name | Type | Description 
 -----|------|-------------
-**dailyLimit** | <code>number</code> | <span></span>
-**exclusionFilter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**filter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**name** | <code>string</code> | <span></span>
-**retentionDays** | <code>number</code> | <span></span>
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilterlist-get"></a>
 
 
 
-## class DataDatadogLogsIndexesLogsIndexesExclusionFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter"></a>
+```ts
+get(index: number): DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilteroutputreference)</code>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilteroutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
 
@@ -52302,47 +52152,13 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogLogsIndexesLogsIndexesExclusionFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**filter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**isEnabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**name** | <code>string</code> | <span></span>
-
-
-
-## class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
-
-### Initializer
-
-
-
-
-```ts
-new DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -52353,15 +52169,16 @@ Name | Type | Description
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
 **sampleRate** | <code>number</code> | <span></span>
+**internalValue**? | <code>[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter)</code> | __*Optional*__
 
 
 
-## class DataDatadogLogsIndexesLogsIndexesFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter"></a>
+## class DataDatadogLogsIndexesLogsIndexesExclusionFilterList  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterlist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -52369,13 +52186,146 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogLogsIndexesLogsIndexesFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogLogsIndexesLogsIndexesExclusionFilterList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterlist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilteroutputreference)</code>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilteroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**filter** | <code>[DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilterlist)</code> | <span></span>
+**isEnabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogLogsIndexesLogsIndexesExclusionFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter)</code> | __*Optional*__
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesFilterList  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilterlist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesFilterList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilterlist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogLogsIndexesLogsIndexesFilterOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogLogsIndexesLogsIndexesFilterOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilteroutputreference)</code>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesFilterOutputReference  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilteroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -52385,6 +52335,93 @@ new DataDatadogLogsIndexesLogsIndexesFilter(terraformResource: IInterpolatingPar
 Name | Type | Description 
 -----|------|-------------
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogLogsIndexesLogsIndexesFilter](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter)</code> | __*Optional*__
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesList  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexeslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexeslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogLogsIndexesLogsIndexesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogLogsIndexesLogsIndexesOutputReference](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesoutputreference)</code>
+
+
+
+## class DataDatadogLogsIndexesLogsIndexesOutputReference  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogLogsIndexesLogsIndexesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**dailyLimit** | <code>number</code> | <span></span>
+**exclusionFilter** | <code>[DataDatadogLogsIndexesLogsIndexesExclusionFilterList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterlist)</code> | <span></span>
+**filter** | <code>[DataDatadogLogsIndexesLogsIndexesFilterList](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilterlist)</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**retentionDays** | <code>number</code> | <span></span>
+**internalValue**? | <code>[DataDatadogLogsIndexesLogsIndexes](#cdktf-provider-datadog-datadatadoglogsindexeslogsindexes)</code> | __*Optional*__
 
 
 
@@ -52483,6 +52520,8 @@ Name | Type | Description
 **locked** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **message** | <code>string</code> | <span></span>
 **monitorTagsFilter** | <code>Array<string></code> | <span></span>
+**monitorThresholdWindows** | <code>[DataDatadogMonitorMonitorThresholdWindowsList](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowslist)</code> | <span></span>
+**monitorThresholds** | <code>[DataDatadogMonitorMonitorThresholdsList](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdslist)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nameFilter** | <code>string</code> | <span></span>
 **newGroupDelay** | <code>number</code> | <span></span>
@@ -52507,32 +52546,6 @@ Name | Type | Description
 
 ### Methods
 
-
-#### monitorThresholdWindows(index) <a id="cdktf-provider-datadog-datadatadogmonitor-monitorthresholdwindows"></a>
-
-
-
-```ts
-monitorThresholdWindows(index: string): DataDatadogMonitorMonitorThresholdWindows
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)</code>
-
-#### monitorThresholds(index) <a id="cdktf-provider-datadog-datadatadogmonitor-monitorthresholds"></a>
-
-
-
-```ts
-monitorThresholds(index: string): DataDatadogMonitorMonitorThresholds
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogMonitorMonitorThresholds](#cdktf-provider-datadog-datadatadogmonitormonitorthresholds)</code>
 
 #### resetMonitorTagsFilter() <a id="cdktf-provider-datadog-datadatadogmonitor-resetmonitortagsfilter"></a>
 
@@ -52584,12 +52597,12 @@ __Returns__:
 
 
 
-## class DataDatadogMonitorMonitorThresholdWindows  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows"></a>
+## class DataDatadogMonitorMonitorThresholdWindowsList  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -52597,13 +52610,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogMonitorMonitorThresholdWindows(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogMonitorMonitorThresholdWindowsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogMonitorMonitorThresholdWindowsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogMonitorMonitorThresholdWindowsOutputReference](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowsoutputreference)</code>
+
+
+
+## class DataDatadogMonitorMonitorThresholdWindowsOutputReference  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindowsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogMonitorMonitorThresholdWindowsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -52614,15 +52676,16 @@ Name | Type | Description
 -----|------|-------------
 **recoveryWindow** | <code>string</code> | <span></span>
 **triggerWindow** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogMonitorMonitorThresholdWindows](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows)</code> | __*Optional*__
 
 
 
-## class DataDatadogMonitorMonitorThresholds  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholds"></a>
+## class DataDatadogMonitorMonitorThresholdsList  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -52630,13 +52693,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogMonitorMonitorThresholds(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogMonitorMonitorThresholdsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogMonitorMonitorThresholdsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogMonitorMonitorThresholdsOutputReference](#cdktf-provider-datadog-datadatadogmonitormonitorthresholdsoutputreference)</code>
+
+
+
+## class DataDatadogMonitorMonitorThresholdsOutputReference  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogMonitorMonitorThresholdsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -52651,6 +52763,7 @@ Name | Type | Description
 **unknown** | <code>string</code> | <span></span>
 **warning** | <code>string</code> | <span></span>
 **warningRecovery** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogMonitorMonitorThresholds](#cdktf-provider-datadog-datadatadogmonitormonitorthresholds)</code> | __*Optional*__
 
 
 
@@ -52690,6 +52803,7 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **monitorTagsFilter** | <code>Array<string></code> | <span></span>
+**monitors** | <code>[DataDatadogMonitorsMonitorsList](#cdktf-provider-datadog-datadatadogmonitorsmonitorslist)</code> | <span></span>
 **nameFilter** | <code>string</code> | <span></span>
 **tagsFilter** | <code>Array<string></code> | <span></span>
 **monitorTagsFilterInput**? | <code>Array<string></code> | __*Optional*__
@@ -52699,19 +52813,6 @@ Name | Type | Description
 
 ### Methods
 
-
-#### monitors(index) <a id="cdktf-provider-datadog-datadatadogmonitors-monitors"></a>
-
-
-
-```ts
-monitors(index: string): DataDatadogMonitorsMonitors
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogMonitorsMonitors](#cdktf-provider-datadog-datadatadogmonitorsmonitors)</code>
 
 #### resetMonitorTagsFilter() <a id="cdktf-provider-datadog-datadatadogmonitors-resetmonitortagsfilter"></a>
 
@@ -52763,12 +52864,12 @@ __Returns__:
 
 
 
-## class DataDatadogMonitorsMonitors  <a id="cdktf-provider-datadog-datadatadogmonitorsmonitors"></a>
+## class DataDatadogMonitorsMonitorsList  <a id="cdktf-provider-datadog-datadatadogmonitorsmonitorslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -52776,13 +52877,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogMonitorsMonitors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogMonitorsMonitorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogmonitorsmonitorslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogMonitorsMonitorsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogMonitorsMonitorsOutputReference](#cdktf-provider-datadog-datadatadogmonitorsmonitorsoutputreference)</code>
+
+
+
+## class DataDatadogMonitorsMonitorsOutputReference  <a id="cdktf-provider-datadog-datadatadogmonitorsmonitorsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogMonitorsMonitorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -52794,6 +52944,7 @@ Name | Type | Description
 **id** | <code>number</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **type** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogMonitorsMonitors](#cdktf-provider-datadog-datadatadogmonitorsmonitors)</code> | __*Optional*__
 
 
 
@@ -52951,6 +53102,7 @@ Name | Type | Description
 -----|------|-------------
 **filter** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**roles** | <code>[DataDatadogRolesRolesList](#cdktf-provider-datadog-datadatadogrolesroleslist)</code> | <span></span>
 **filterInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -52969,19 +53121,6 @@ resetFilter(): void
 
 
 
-#### roles(index) <a id="cdktf-provider-datadog-datadatadogroles-roles"></a>
-
-
-
-```ts
-roles(index: string): DataDatadogRolesRoles
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogRolesRoles](#cdktf-provider-datadog-datadatadogrolesroles)</code>
-
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogroles-synthesizeattributes"></a>
 
 
@@ -52996,12 +53135,12 @@ __Returns__:
 
 
 
-## class DataDatadogRolesRoles  <a id="cdktf-provider-datadog-datadatadogrolesroles"></a>
+## class DataDatadogRolesRolesList  <a id="cdktf-provider-datadog-datadatadogrolesroleslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53009,13 +53148,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogRolesRoles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogRolesRolesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogrolesroleslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogRolesRolesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogRolesRolesOutputReference](#cdktf-provider-datadog-datadatadogrolesrolesoutputreference)</code>
+
+
+
+## class DataDatadogRolesRolesOutputReference  <a id="cdktf-provider-datadog-datadatadogrolesrolesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogRolesRolesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53027,6 +53215,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **userCount** | <code>number</code> | <span></span>
+**internalValue**? | <code>[DataDatadogRolesRoles](#cdktf-provider-datadog-datadatadogrolesroles)</code> | __*Optional*__
 
 
 
@@ -53061,25 +53250,13 @@ new DataDatadogSecurityMonitoringFilters(scope: Construct, id: string, config?: 
 
 Name | Type | Description 
 -----|------|-------------
+**filters** | <code>[DataDatadogSecurityMonitoringFiltersFiltersList](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilterslist)</code> | <span></span>
 **filtersIds** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
-
-#### filters(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfilters-filters"></a>
-
-
-
-```ts
-filters(index: string): DataDatadogSecurityMonitoringFiltersFilters
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)</code>
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfilters-synthesizeattributes"></a>
 
@@ -53095,12 +53272,12 @@ __Returns__:
 
 
 
-## class DataDatadogSecurityMonitoringFiltersFilters  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters"></a>
+## class DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilterlist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53108,13 +53285,12 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringFiltersFilters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53123,45 +53299,146 @@ new DataDatadogSecurityMonitoringFiltersFilters(terraformResource: IInterpolatin
 
 Name | Type | Description 
 -----|------|-------------
-**exclusionFilter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilterlist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilteroutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilteroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter)</code> | __*Optional*__
+
+
+
+## class DataDatadogSecurityMonitoringFiltersFiltersList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilterslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringFiltersFiltersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilterslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringFiltersFiltersOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringFiltersFiltersOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringFiltersFiltersOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringFiltersFiltersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**exclusionFilter** | <code>[DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilterlist)</code> | <span></span>
 **filteredDataType** | <code>string</code> | <span></span>
 **isEnabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
 **version** | <code>number</code> | <span></span>
-
-
-
-## class DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
-
-### Initializer
-
-
-
-
-```ts
-new DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**name** | <code>string</code> | <span></span>
-**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringFiltersFilters](#cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters)</code> | __*Optional*__
 
 
 
@@ -53204,6 +53481,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **nameFilter** | <code>string</code> | <span></span>
 **ruleIds** | <code>Array<string></code> | <span></span>
+**rules** | <code>[DataDatadogSecurityMonitoringRulesRulesList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesruleslist)</code> | <span></span>
 **tagsFilter** | <code>Array<string></code> | <span></span>
 **userOnlyFilter** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **defaultOnlyFilterInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
@@ -53263,19 +53541,6 @@ resetUserOnlyFilter(): void
 
 
 
-#### rules(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrules-rules"></a>
-
-
-
-```ts
-rules(index: string): DataDatadogSecurityMonitoringRulesRules
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)</code>
-
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrules-synthesizeattributes"></a>
 
 
@@ -53290,12 +53555,12 @@ __Returns__:
 
 
 
-## class DataDatadogSecurityMonitoringRulesRules  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules"></a>
+## class DataDatadogSecurityMonitoringRulesRulesCaseList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaselist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53303,13 +53568,12 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringRulesRules(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringRulesRulesCaseList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53318,25 +53582,34 @@ new DataDatadogSecurityMonitoringRulesRules(terraformResource: IInterpolatingPar
 
 Name | Type | Description 
 -----|------|-------------
-**case** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**filter** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**hasExtendedTitle** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**message** | <code>string</code> | <span></span>
-**name** | <code>string</code> | <span></span>
-**options** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**query** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**tags** | <code>Array<string></code> | <span></span>
-**type** | <code>string</code> | <span></span>
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaselist-get"></a>
 
 
 
-## class DataDatadogSecurityMonitoringRulesRulesCase  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase"></a>
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesCaseOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesCaseOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaseoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesCaseOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaseoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
 
@@ -53344,13 +53617,13 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringRulesRulesCase(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringRulesRulesCaseOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53363,15 +53636,16 @@ Name | Type | Description
 **name** | <code>string</code> | <span></span>
 **notifications** | <code>Array<string></code> | <span></span>
 **status** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)</code> | __*Optional*__
 
 
 
-## class DataDatadogSecurityMonitoringRulesRulesFilter  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter"></a>
+## class DataDatadogSecurityMonitoringRulesRulesFilterList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilterlist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53379,13 +53653,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringRulesRulesFilter(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringRulesRulesFilterList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilterlist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesFilterOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesFilterOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilteroutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesFilterOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilteroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53396,15 +53719,16 @@ Name | Type | Description
 -----|------|-------------
 **action** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter)</code> | __*Optional*__
 
 
 
-## class DataDatadogSecurityMonitoringRulesRulesOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions"></a>
+## class DataDatadogSecurityMonitoringRulesRulesList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesruleslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53412,13 +53736,194 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringRulesRulesOptions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringRulesRulesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesruleslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesOptionsList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionsoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**forgetAfter** | <code>number</code> | <span></span>
+**learningDuration** | <code>number</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions)</code> | __*Optional*__
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53431,16 +53936,17 @@ Name | Type | Description
 **evaluationWindow** | <code>number</code> | <span></span>
 **keepAlive** | <code>number</code> | <span></span>
 **maxSignalDuration** | <code>number</code> | <span></span>
-**newValueOptions** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**newValueOptions** | <code>[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionslist)</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions)</code> | __*Optional*__
 
 
 
-## class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions"></a>
+## class DataDatadogSecurityMonitoringRulesRulesOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
 
@@ -53448,13 +53954,13 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringRulesRulesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53463,55 +53969,26 @@ new DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions(terraformResou
 
 Name | Type | Description 
 -----|------|-------------
-**forgetAfter** | <code>number</code> | <span></span>
-**learningDuration** | <code>number</code> | <span></span>
-
-
-
-## class DataDatadogSecurityMonitoringRulesRulesQuery  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
-
-### Initializer
-
-
-
-
-```ts
-new DataDatadogSecurityMonitoringRulesRulesQuery(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**agentRule** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**aggregation** | <code>string</code> | <span></span>
-**distinctFields** | <code>Array<string></code> | <span></span>
-**groupByFields** | <code>Array<string></code> | <span></span>
-**metric** | <code>string</code> | <span></span>
+**case** | <code>[DataDatadogSecurityMonitoringRulesRulesCaseList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescaselist)</code> | <span></span>
+**enabled** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**filter** | <code>[DataDatadogSecurityMonitoringRulesRulesFilterList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilterlist)</code> | <span></span>
+**hasExtendedTitle** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**message** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
-**query** | <code>string</code> | <span></span>
+**options** | <code>[DataDatadogSecurityMonitoringRulesRulesOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionslist)</code> | <span></span>
+**query** | <code>[DataDatadogSecurityMonitoringRulesRulesQueryList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquerylist)</code> | <span></span>
+**tags** | <code>Array<string></code> | <span></span>
+**type** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRules](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules)</code> | __*Optional*__
 
 
 
-## class DataDatadogSecurityMonitoringRulesRulesQueryAgentRule  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule"></a>
+## class DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrulelist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53519,13 +53996,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogSecurityMonitoringRulesRulesQueryAgentRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrulelist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentruleoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentruleoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53536,6 +54062,95 @@ Name | Type | Description
 -----|------|-------------
 **agentRuleId** | <code>string</code> | <span></span>
 **expression** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesQueryAgentRule](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule)</code> | __*Optional*__
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesQueryList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquerylist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesQueryList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquerylist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesQueryOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesQueryOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesQueryOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**agentRule** | <code>[DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrulelist)</code> | <span></span>
+**aggregation** | <code>string</code> | <span></span>
+**distinctFields** | <code>Array<string></code> | <span></span>
+**groupByFields** | <code>Array<string></code> | <span></span>
+**metric** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**query** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesQuery](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery)</code> | __*Optional*__
 
 
 
@@ -53690,6 +54305,7 @@ Name | Type | Description
 **ids** | <code>Array<string></code> | <span></span>
 **metricsQuery** | <code>string</code> | <span></span>
 **nameQuery** | <code>string</code> | <span></span>
+**slos** | <code>[DataDatadogServiceLevelObjectivesSlosList](#cdktf-provider-datadog-datadatadogservicelevelobjectivessloslist)</code> | <span></span>
 **tagsQuery** | <code>string</code> | <span></span>
 **idsInput**? | <code>Array<string></code> | __*Optional*__
 **metricsQueryInput**? | <code>string</code> | __*Optional*__
@@ -53748,19 +54364,6 @@ resetTagsQuery(): void
 
 
 
-#### slos(index) <a id="cdktf-provider-datadog-datadatadogservicelevelobjectives-slos"></a>
-
-
-
-```ts
-slos(index: string): DataDatadogServiceLevelObjectivesSlos
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)</code>
-
 #### protected synthesizeAttributes() <a id="cdktf-provider-datadog-datadatadogservicelevelobjectives-synthesizeattributes"></a>
 
 
@@ -53775,12 +54378,12 @@ __Returns__:
 
 
 
-## class DataDatadogServiceLevelObjectivesSlos  <a id="cdktf-provider-datadog-datadatadogservicelevelobjectivesslos"></a>
+## class DataDatadogServiceLevelObjectivesSlosList  <a id="cdktf-provider-datadog-datadatadogservicelevelobjectivessloslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -53788,13 +54391,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataDatadogServiceLevelObjectivesSlos(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataDatadogServiceLevelObjectivesSlosList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogservicelevelobjectivessloslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogServiceLevelObjectivesSlosOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogServiceLevelObjectivesSlosOutputReference](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslosoutputreference)</code>
+
+
+
+## class DataDatadogServiceLevelObjectivesSlosOutputReference  <a id="cdktf-provider-datadog-datadatadogservicelevelobjectivesslosoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogServiceLevelObjectivesSlosOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -53806,6 +54458,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **type** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataDatadogServiceLevelObjectivesSlos](#cdktf-provider-datadog-datadatadogservicelevelobjectivesslos)</code> | __*Optional*__
 
 
 
@@ -54416,12 +55069,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DowntimeRecurrenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DowntimeRecurrenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -55317,12 +55969,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new IntegrationSlackChannelDisplayOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new IntegrationSlackChannelDisplayOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -55591,12 +56242,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsArchiveAzureArchiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsArchiveAzureArchiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -55647,12 +56297,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsArchiveGcsArchiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsArchiveGcsArchiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -55752,12 +56401,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsArchiveS3ArchiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsArchiveS3ArchiveOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -55878,12 +56526,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorArithmeticProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorArithmeticProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -55958,12 +56605,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorAttributeRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorAttributeRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56070,12 +56716,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56103,12 +56748,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorCategoryProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorCategoryProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56169,12 +56813,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorDateRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorDateRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56233,12 +56876,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorGeoIpParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorGeoIpParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56299,12 +56941,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorGrokParserGrokOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorGrokParserGrokOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56334,12 +56975,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorGrokParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorGrokParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56429,12 +57069,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorLookupProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorLookupProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56511,12 +57150,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorMessageRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorMessageRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56575,12 +57213,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56641,12 +57278,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56721,12 +57357,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56833,12 +57468,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56866,12 +57500,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56932,12 +57565,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -56996,12 +57628,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57062,12 +57693,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57097,12 +57727,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57192,12 +57821,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57274,12 +57902,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57338,12 +57965,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57402,12 +58028,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57466,12 +58091,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57546,12 +58170,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57610,12 +58233,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57690,12 +58312,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57770,12 +58391,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorServiceRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorServiceRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57834,12 +58454,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorStatusRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorStatusRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57898,12 +58517,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorStringBuilderProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorStringBuilderProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -57978,12 +58596,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorTraceIdRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorTraceIdRemapperOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -58042,12 +58659,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorUrlParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorUrlParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -58122,12 +58738,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsCustomPipelineProcessorUserAgentParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsCustomPipelineProcessorUserAgentParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -58333,12 +58948,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsIndexFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsIndexFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -58593,12 +59207,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsMetricComputeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsMetricComputeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -58643,12 +59256,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new LogsMetricFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LogsMetricFilterOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -59478,12 +60090,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new MonitorMonitorThresholdWindowsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new MonitorMonitorThresholdWindowsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -59540,12 +60151,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new MonitorMonitorThresholdsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new MonitorMonitorThresholdsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -59760,12 +60370,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationSettingsSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OrganizationSettingsSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -59891,12 +60500,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -59953,12 +60561,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -60001,12 +60608,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationSettingsSettingsSamlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OrganizationSettingsSettingsSamlOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -60049,12 +60655,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -60525,12 +61130,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SecurityMonitoringRuleOptionsNewValueOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SecurityMonitoringRuleOptionsNewValueOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -60560,12 +61164,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SecurityMonitoringRuleOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SecurityMonitoringRuleOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -60835,12 +61438,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new ServiceLevelObjectiveQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceLevelObjectiveQueryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -61168,12 +61770,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -61235,12 +61836,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -61793,12 +62393,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepAssertionTargetjsonpathOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepAssertionTargetjsonpathOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -61830,12 +62429,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepExtractedValueParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepExtractedValueParserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -61880,12 +62478,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRequestBasicauthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRequestBasicauthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62054,12 +62651,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRequestClientCertificateCertOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRequestClientCertificateCertOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62104,12 +62700,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRequestClientCertificateKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRequestClientCertificateKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62154,12 +62749,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRequestClientCertificateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRequestClientCertificateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62222,12 +62816,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62466,12 +63059,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRequestProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRequestProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62516,12 +63108,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestApiStepRetryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestApiStepRetryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62578,12 +63169,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestAssertionTargetjsonpathOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestAssertionTargetjsonpathOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62615,12 +63205,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62680,12 +63269,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -62730,12 +63318,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestBrowserStepParamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestBrowserStepParamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63060,12 +63647,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestBrowserStepParamsVariableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestBrowserStepParamsVariableOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63122,12 +63708,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestOptionsListMonitorOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestOptionsListMonitorOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63170,12 +63755,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestOptionsListOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestOptionsListOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63389,12 +63973,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestOptionsListRetryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestOptionsListRetryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63451,12 +64034,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestRequestBasicauthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestRequestBasicauthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63625,12 +64207,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestRequestClientCertificateCertOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestRequestClientCertificateCertOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63675,12 +64256,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestRequestClientCertificateKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestRequestClientCertificateKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63725,12 +64305,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestRequestClientCertificateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestRequestClientCertificateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -63793,12 +64372,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestRequestDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestRequestDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -64009,12 +64587,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new SyntheticsTestRequestProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SyntheticsTestRequestProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -64377,6 +64954,18 @@ Name | Type | Description
 
 
 
+## struct ChildOrganizationApiKey  <a id="cdktf-provider-datadog-childorganizationapikey"></a>
+
+
+
+
+
+## struct ChildOrganizationApplicationKey  <a id="cdktf-provider-datadog-childorganizationapplicationkey"></a>
+
+
+
+
+
 ## struct ChildOrganizationConfig  <a id="cdktf-provider-datadog-childorganizationconfig"></a>
 
 
@@ -64391,6 +64980,42 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct ChildOrganizationSettings  <a id="cdktf-provider-datadog-childorganizationsettings"></a>
+
+
+
+
+
+## struct ChildOrganizationSettingsSaml  <a id="cdktf-provider-datadog-childorganizationsettingssaml"></a>
+
+
+
+
+
+## struct ChildOrganizationSettingsSamlAutocreateUsersDomains  <a id="cdktf-provider-datadog-childorganizationsettingssamlautocreateusersdomains"></a>
+
+
+
+
+
+## struct ChildOrganizationSettingsSamlIdpInitiatedLogin  <a id="cdktf-provider-datadog-childorganizationsettingssamlidpinitiatedlogin"></a>
+
+
+
+
+
+## struct ChildOrganizationSettingsSamlStrictMode  <a id="cdktf-provider-datadog-childorganizationsettingssamlstrictmode"></a>
+
+
+
+
+
+## struct ChildOrganizationUser  <a id="cdktf-provider-datadog-childorganizationuser"></a>
+
+
 
 
 
@@ -80592,6 +81217,12 @@ Name | Type | Description
 
 
 
+## struct DataDatadogCloudWorkloadSecurityAgentRulesAgentRules  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesagentrules"></a>
+
+
+
+
+
 ## struct DataDatadogCloudWorkloadSecurityAgentRulesConfig  <a id="cdktf-provider-datadog-datadatadogcloudworkloadsecurityagentrulesconfig"></a>
 
 
@@ -80674,6 +81305,30 @@ Name | Type | Description
 
 
 
+## struct DataDatadogLogsIndexesLogsIndexes  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexes"></a>
+
+
+
+
+
+## struct DataDatadogLogsIndexesLogsIndexesExclusionFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilter"></a>
+
+
+
+
+
+## struct DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesexclusionfilterfilter"></a>
+
+
+
+
+
+## struct DataDatadogLogsIndexesLogsIndexesFilter  <a id="cdktf-provider-datadog-datadatadoglogsindexeslogsindexesfilter"></a>
+
+
+
+
+
 ## struct DataDatadogLogsIndexesOrderConfig  <a id="cdktf-provider-datadog-datadatadoglogsindexesorderconfig"></a>
 
 
@@ -80709,6 +81364,18 @@ Name | Type | Description
 
 
 
+## struct DataDatadogMonitorMonitorThresholdWindows  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholdwindows"></a>
+
+
+
+
+
+## struct DataDatadogMonitorMonitorThresholds  <a id="cdktf-provider-datadog-datadatadogmonitormonitorthresholds"></a>
+
+
+
+
+
 ## struct DataDatadogMonitorsConfig  <a id="cdktf-provider-datadog-datadatadogmonitorsconfig"></a>
 
 
@@ -80725,6 +81392,12 @@ Name | Type | Description
 **nameFilter**? | <code>string</code> | A monitor name to limit the search.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **tagsFilter**? | <code>Array<string></code> | A list of tags to limit the search. This filters on the monitor scope.<br/>__*Optional*__
+
+
+
+## struct DataDatadogMonitorsMonitors  <a id="cdktf-provider-datadog-datadatadogmonitorsmonitors"></a>
+
+
 
 
 
@@ -80778,6 +81451,12 @@ Name | Type | Description
 
 
 
+## struct DataDatadogRolesRoles  <a id="cdktf-provider-datadog-datadatadogrolesroles"></a>
+
+
+
+
+
 ## struct DataDatadogSecurityMonitoringFiltersConfig  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersconfig"></a>
 
 
@@ -80791,6 +81470,18 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DataDatadogSecurityMonitoringFiltersFilters  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfilters"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringfiltersfiltersexclusionfilter"></a>
+
+
 
 
 
@@ -80811,6 +81502,48 @@ Name | Type | Description
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **tagsFilter**? | <code>Array<string></code> | A list of tags to limit the search.<br/>__*Optional*__
 **userOnlyFilter**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Limit the search to user rules.<br/>__*Optional*__
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRules  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrules"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRulesCase  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRulesFilter  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRulesOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRulesQuery  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery"></a>
+
+
+
+
+
+## struct DataDatadogSecurityMonitoringRulesRulesQueryAgentRule  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule"></a>
+
+
 
 
 
@@ -80851,6 +81584,12 @@ Name | Type | Description
 **nameQuery**? | <code>string</code> | Filter results based on SLO names.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **tagsQuery**? | <code>string</code> | Filter results based on a single SLO tag.<br/>__*Optional*__
+
+
+
+## struct DataDatadogServiceLevelObjectivesSlos  <a id="cdktf-provider-datadog-datadatadogservicelevelobjectivesslos"></a>
+
+
 
 
 

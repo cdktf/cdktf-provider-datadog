@@ -32,7 +32,45 @@ export interface DataDatadogServiceLevelObjectivesConfig extends cdktf.Terraform
   */
   readonly tagsQuery?: string;
 }
-export class DataDatadogServiceLevelObjectivesSlos extends cdktf.ComplexComputedList {
+export interface DataDatadogServiceLevelObjectivesSlos {
+}
+
+export function dataDatadogServiceLevelObjectivesSlosToTerraform(struct?: DataDatadogServiceLevelObjectivesSlos): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogServiceLevelObjectivesSlosOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogServiceLevelObjectivesSlos | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogServiceLevelObjectivesSlos | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -50,6 +88,25 @@ export class DataDatadogServiceLevelObjectivesSlos extends cdktf.ComplexComputed
   }
 }
 
+export class DataDatadogServiceLevelObjectivesSlosList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogServiceLevelObjectivesSlosOutputReference {
+    return new DataDatadogServiceLevelObjectivesSlosOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/d/service_level_objectives datadog_service_level_objectives}
 */
@@ -58,7 +115,7 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_service_level_objectives";
+  public static readonly tfResourceType = "datadog_service_level_objectives";
 
   // ===========
   // INITIALIZER
@@ -75,7 +132,9 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
     super(scope, id, {
       terraformResourceType: 'datadog_service_level_objectives',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -146,8 +205,9 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
   }
 
   // slos - computed: true, optional: false, required: false
-  public slos(index: string) {
-    return new DataDatadogServiceLevelObjectivesSlos(this, 'slos', index, false);
+  private _slos = new DataDatadogServiceLevelObjectivesSlosList(this, "slos", false);
+  public get slos() {
+    return this._slos;
   }
 
   // tags_query - computed: false, optional: true, required: false
