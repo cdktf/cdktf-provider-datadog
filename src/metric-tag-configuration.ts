@@ -73,7 +73,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_metric_tag_configuration";
+  public static readonly tfResourceType = "datadog_metric_tag_configuration";
 
   // ===========
   // INITIALIZER
@@ -90,7 +90,9 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_metric_tag_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

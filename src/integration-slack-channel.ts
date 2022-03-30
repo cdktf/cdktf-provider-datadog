@@ -72,10 +72,9 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): IntegrationSlackChannelDisplay | undefined {
@@ -190,7 +189,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_integration_slack_channel";
+  public static readonly tfResourceType = "datadog_integration_slack_channel";
 
   // ===========
   // INITIALIZER
@@ -207,7 +206,9 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_integration_slack_channel',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -255,7 +256,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   }
 
   // display - computed: false, optional: false, required: true
-  private _display = new IntegrationSlackChannelDisplayOutputReference(this, "display", true);
+  private _display = new IntegrationSlackChannelDisplayOutputReference(this, "display");
   public get display() {
     return this._display;
   }

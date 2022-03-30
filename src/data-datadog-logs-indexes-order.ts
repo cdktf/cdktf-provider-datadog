@@ -17,7 +17,7 @@ export class DataDatadogLogsIndexesOrder extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_logs_indexes_order";
+  public static readonly tfResourceType = "datadog_logs_indexes_order";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataDatadogLogsIndexesOrder extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_logs_indexes_order',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

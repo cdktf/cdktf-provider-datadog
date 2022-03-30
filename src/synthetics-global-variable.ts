@@ -88,10 +88,9 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsGlobalVariableParseTestOptionsParser | undefined {
@@ -189,10 +188,9 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): SyntheticsGlobalVariableParseTestOptions | undefined {
@@ -258,7 +256,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   }
 
   // parser - computed: false, optional: false, required: true
-  private _parser = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this, "parser", true);
+  private _parser = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this, "parser");
   public get parser() {
     return this._parser;
   }
@@ -279,7 +277,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_synthetics_global_variable";
+  public static readonly tfResourceType = "datadog_synthetics_global_variable";
 
   // ===========
   // INITIALIZER
@@ -296,7 +294,9 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -429,7 +429,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // parse_test_options - computed: false, optional: true, required: false
-  private _parseTestOptions = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this, "parse_test_options", true);
+  private _parseTestOptions = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this, "parse_test_options");
   public get parseTestOptions() {
     return this._parseTestOptions;
   }

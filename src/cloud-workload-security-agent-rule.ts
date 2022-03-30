@@ -41,7 +41,7 @@ export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_cloud_workload_security_agent_rule";
+  public static readonly tfResourceType = "datadog_cloud_workload_security_agent_rule";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class CloudWorkloadSecurityAgentRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_cloud_workload_security_agent_rule',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

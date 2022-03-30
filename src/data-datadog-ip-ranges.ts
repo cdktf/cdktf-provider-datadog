@@ -17,7 +17,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_ip_ranges";
+  public static readonly tfResourceType = "datadog_ip_ranges";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_ip_ranges',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

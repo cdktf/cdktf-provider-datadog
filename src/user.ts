@@ -47,7 +47,7 @@ export class User extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_user";
+  public static readonly tfResourceType = "datadog_user";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class User extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_user',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

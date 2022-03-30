@@ -26,7 +26,45 @@ export interface DataDatadogMonitorsConfig extends cdktf.TerraformMetaArguments 
   */
   readonly tagsFilter?: string[];
 }
-export class DataDatadogMonitorsMonitors extends cdktf.ComplexComputedList {
+export interface DataDatadogMonitorsMonitors {
+}
+
+export function dataDatadogMonitorsMonitorsToTerraform(struct?: DataDatadogMonitorsMonitors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogMonitorsMonitorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogMonitorsMonitors | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogMonitorsMonitors | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -44,6 +82,25 @@ export class DataDatadogMonitorsMonitors extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataDatadogMonitorsMonitorsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogMonitorsMonitorsOutputReference {
+    return new DataDatadogMonitorsMonitorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitors datadog_monitors}
 */
@@ -52,7 +109,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_monitors";
+  public static readonly tfResourceType = "datadog_monitors";
 
   // ===========
   // INITIALIZER
@@ -69,7 +126,9 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_monitors',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -107,8 +166,9 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   }
 
   // monitors - computed: true, optional: false, required: false
-  public monitors(index: string) {
-    return new DataDatadogMonitorsMonitors(this, 'monitors', index, false);
+  private _monitors = new DataDatadogMonitorsMonitorsList(this, "monitors", false);
+  public get monitors() {
+    return this._monitors;
   }
 
   // name_filter - computed: false, optional: true, required: false

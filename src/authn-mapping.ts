@@ -35,7 +35,7 @@ export class AuthnMapping extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_authn_mapping";
+  public static readonly tfResourceType = "datadog_authn_mapping";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class AuthnMapping extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_authn_mapping',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -128,10 +128,9 @@ export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LogsIndexFilter | undefined {
@@ -177,7 +176,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_logs_index";
+  public static readonly tfResourceType = "datadog_logs_index";
 
   // ===========
   // INITIALIZER
@@ -194,7 +193,9 @@ export class LogsIndex extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_logs_index',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -297,7 +298,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter = new LogsIndexFilterOutputReference(this, "filter", true);
+  private _filter = new LogsIndexFilterOutputReference(this, "filter");
   public get filter() {
     return this._filter;
   }

@@ -29,7 +29,7 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_api_key";
+  public static readonly tfResourceType = "datadog_api_key";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

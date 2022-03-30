@@ -59,7 +59,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog";
+  public static readonly tfResourceType = "datadog";
 
   // ===========
   // INITIALIZER
@@ -77,6 +77,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'datadog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'DataDog/datadog'

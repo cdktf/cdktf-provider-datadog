@@ -14,7 +14,45 @@ export interface ChildOrganizationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
 }
-export class ChildOrganizationApiKey extends cdktf.ComplexComputedList {
+export interface ChildOrganizationApiKey {
+}
+
+export function childOrganizationApiKeyToTerraform(struct?: ChildOrganizationApiKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationApiKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationApiKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationApiKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // key - computed: true, optional: false, required: false
   public get key() {
@@ -26,7 +64,64 @@ export class ChildOrganizationApiKey extends cdktf.ComplexComputedList {
     return this.getStringAttribute('name');
   }
 }
-export class ChildOrganizationApplicationKey extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationApiKeyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationApiKeyOutputReference {
+    return new ChildOrganizationApiKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationApplicationKey {
+}
+
+export function childOrganizationApplicationKeyToTerraform(struct?: ChildOrganizationApplicationKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationApplicationKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationApplicationKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationApplicationKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // hash - computed: true, optional: false, required: false
   public get hash() {
@@ -43,14 +138,128 @@ export class ChildOrganizationApplicationKey extends cdktf.ComplexComputedList {
     return this.getStringAttribute('owner');
   }
 }
-export class ChildOrganizationSettingsSaml extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationApplicationKeyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationApplicationKeyOutputReference {
+    return new ChildOrganizationApplicationKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationSettingsSaml {
+}
+
+export function childOrganizationSettingsSamlToTerraform(struct?: ChildOrganizationSettingsSaml): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationSettingsSamlOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationSettingsSaml | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationSettingsSaml | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class ChildOrganizationSettingsSamlAutocreateUsersDomains extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationSettingsSamlList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationSettingsSamlOutputReference {
+    return new ChildOrganizationSettingsSamlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationSettingsSamlAutocreateUsersDomains {
+}
+
+export function childOrganizationSettingsSamlAutocreateUsersDomainsToTerraform(struct?: ChildOrganizationSettingsSamlAutocreateUsersDomains): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationSettingsSamlAutocreateUsersDomains | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationSettingsSamlAutocreateUsersDomains | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // domains - computed: true, optional: false, required: false
   public get domains() {
@@ -62,21 +271,192 @@ export class ChildOrganizationSettingsSamlAutocreateUsersDomains extends cdktf.C
     return this.getBooleanAttribute('enabled');
   }
 }
-export class ChildOrganizationSettingsSamlIdpInitiatedLogin extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationSettingsSamlAutocreateUsersDomainsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference {
+    return new ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationSettingsSamlIdpInitiatedLogin {
+}
+
+export function childOrganizationSettingsSamlIdpInitiatedLoginToTerraform(struct?: ChildOrganizationSettingsSamlIdpInitiatedLogin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationSettingsSamlIdpInitiatedLogin | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationSettingsSamlIdpInitiatedLogin | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class ChildOrganizationSettingsSamlStrictMode extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationSettingsSamlIdpInitiatedLoginList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference {
+    return new ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationSettingsSamlStrictMode {
+}
+
+export function childOrganizationSettingsSamlStrictModeToTerraform(struct?: ChildOrganizationSettingsSamlStrictMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationSettingsSamlStrictModeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationSettingsSamlStrictMode | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationSettingsSamlStrictMode | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationSettingsSamlStrictModeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationSettingsSamlStrictModeOutputReference {
+    return new ChildOrganizationSettingsSamlStrictModeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationSettings {
+}
+
+export function childOrganizationSettingsToTerraform(struct?: ChildOrganizationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // private_widget_share - computed: true, optional: false, required: false
   public get privateWidgetShare() {
@@ -84,9 +464,9 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   }
 
   // saml - computed: true, optional: false, required: false
+  private _saml = new ChildOrganizationSettingsSamlList(this, "saml", false);
   public get saml() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml');
+    return this._saml;
   }
 
   // saml_autocreate_access_role - computed: true, optional: false, required: false
@@ -95,9 +475,9 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   }
 
   // saml_autocreate_users_domains - computed: true, optional: false, required: false
+  private _samlAutocreateUsersDomains = new ChildOrganizationSettingsSamlAutocreateUsersDomainsList(this, "saml_autocreate_users_domains", false);
   public get samlAutocreateUsersDomains() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml_autocreate_users_domains');
+    return this._samlAutocreateUsersDomains;
   }
 
   // saml_can_be_enabled - computed: true, optional: false, required: false
@@ -111,9 +491,9 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   }
 
   // saml_idp_initiated_login - computed: true, optional: false, required: false
+  private _samlIdpInitiatedLogin = new ChildOrganizationSettingsSamlIdpInitiatedLoginList(this, "saml_idp_initiated_login", false);
   public get samlIdpInitiatedLogin() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml_idp_initiated_login');
+    return this._samlIdpInitiatedLogin;
   }
 
   // saml_idp_metadata_uploaded - computed: true, optional: false, required: false
@@ -127,12 +507,69 @@ export class ChildOrganizationSettings extends cdktf.ComplexComputedList {
   }
 
   // saml_strict_mode - computed: true, optional: false, required: false
+  private _samlStrictMode = new ChildOrganizationSettingsSamlStrictModeList(this, "saml_strict_mode", false);
   public get samlStrictMode() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('saml_strict_mode');
+    return this._samlStrictMode;
   }
 }
-export class ChildOrganizationUser extends cdktf.ComplexComputedList {
+
+export class ChildOrganizationSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationSettingsOutputReference {
+    return new ChildOrganizationSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ChildOrganizationUser {
+}
+
+export function childOrganizationUserToTerraform(struct?: ChildOrganizationUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ChildOrganizationUserOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ChildOrganizationUser | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ChildOrganizationUser | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // access_role - computed: true, optional: false, required: false
   public get accessRole() {
@@ -150,6 +587,25 @@ export class ChildOrganizationUser extends cdktf.ComplexComputedList {
   }
 }
 
+export class ChildOrganizationUserList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ChildOrganizationUserOutputReference {
+    return new ChildOrganizationUserOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/child_organization datadog_child_organization}
 */
@@ -158,7 +614,7 @@ export class ChildOrganization extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_child_organization";
+  public static readonly tfResourceType = "datadog_child_organization";
 
   // ===========
   // INITIALIZER
@@ -175,7 +631,9 @@ export class ChildOrganization extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_child_organization',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -190,13 +648,15 @@ export class ChildOrganization extends cdktf.TerraformResource {
   // ==========
 
   // api_key - computed: true, optional: false, required: false
-  public apiKey(index: string) {
-    return new ChildOrganizationApiKey(this, 'api_key', index, false);
+  private _apiKey = new ChildOrganizationApiKeyList(this, "api_key", false);
+  public get apiKey() {
+    return this._apiKey;
   }
 
   // application_key - computed: true, optional: false, required: false
-  public applicationKey(index: string) {
-    return new ChildOrganizationApplicationKey(this, 'application_key', index, false);
+  private _applicationKey = new ChildOrganizationApplicationKeyList(this, "application_key", false);
+  public get applicationKey() {
+    return this._applicationKey;
   }
 
   // description - computed: true, optional: false, required: false
@@ -228,13 +688,15 @@ export class ChildOrganization extends cdktf.TerraformResource {
   }
 
   // settings - computed: true, optional: false, required: false
-  public settings(index: string) {
-    return new ChildOrganizationSettings(this, 'settings', index, false);
+  private _settings = new ChildOrganizationSettingsList(this, "settings", false);
+  public get settings() {
+    return this._settings;
   }
 
   // user - computed: true, optional: false, required: false
-  public user(index: string) {
-    return new ChildOrganizationUser(this, 'user', index, false);
+  private _user = new ChildOrganizationUserList(this, "user", false);
+  public get user() {
+    return this._user;
   }
 
   // =========

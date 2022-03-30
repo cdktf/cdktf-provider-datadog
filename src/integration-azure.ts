@@ -47,7 +47,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_integration_azure";
+  public static readonly tfResourceType = "datadog_integration_azure";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class IntegrationAzure extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_integration_azure',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

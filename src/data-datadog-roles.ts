@@ -14,7 +14,45 @@ export interface DataDatadogRolesConfig extends cdktf.TerraformMetaArguments {
   */
   readonly filter?: string;
 }
-export class DataDatadogRolesRoles extends cdktf.ComplexComputedList {
+export interface DataDatadogRolesRoles {
+}
+
+export function dataDatadogRolesRolesToTerraform(struct?: DataDatadogRolesRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogRolesRolesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogRolesRoles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogRolesRoles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -32,6 +70,25 @@ export class DataDatadogRolesRoles extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataDatadogRolesRolesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogRolesRolesOutputReference {
+    return new DataDatadogRolesRolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/d/roles datadog_roles}
 */
@@ -40,7 +97,7 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_roles";
+  public static readonly tfResourceType = "datadog_roles";
 
   // ===========
   // INITIALIZER
@@ -57,7 +114,9 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_roles',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -93,8 +152,9 @@ export class DataDatadogRoles extends cdktf.TerraformDataSource {
   }
 
   // roles - computed: true, optional: false, required: false
-  public roles(index: string) {
-    return new DataDatadogRolesRoles(this, 'roles', index, false);
+  private _roles = new DataDatadogRolesRolesList(this, "roles", false);
+  public get roles() {
+    return this._roles;
   }
 
   // =========

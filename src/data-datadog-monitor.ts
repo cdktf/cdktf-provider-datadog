@@ -26,7 +26,45 @@ export interface DataDatadogMonitorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagsFilter?: string[];
 }
-export class DataDatadogMonitorMonitorThresholdWindows extends cdktf.ComplexComputedList {
+export interface DataDatadogMonitorMonitorThresholdWindows {
+}
+
+export function dataDatadogMonitorMonitorThresholdWindowsToTerraform(struct?: DataDatadogMonitorMonitorThresholdWindows): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogMonitorMonitorThresholdWindowsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogMonitorMonitorThresholdWindows | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogMonitorMonitorThresholdWindows | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // recovery_window - computed: true, optional: false, required: false
   public get recoveryWindow() {
@@ -38,7 +76,64 @@ export class DataDatadogMonitorMonitorThresholdWindows extends cdktf.ComplexComp
     return this.getStringAttribute('trigger_window');
   }
 }
-export class DataDatadogMonitorMonitorThresholds extends cdktf.ComplexComputedList {
+
+export class DataDatadogMonitorMonitorThresholdWindowsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogMonitorMonitorThresholdWindowsOutputReference {
+    return new DataDatadogMonitorMonitorThresholdWindowsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatadogMonitorMonitorThresholds {
+}
+
+export function dataDatadogMonitorMonitorThresholdsToTerraform(struct?: DataDatadogMonitorMonitorThresholds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogMonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogMonitorMonitorThresholds | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogMonitorMonitorThresholds | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // critical - computed: true, optional: false, required: false
   public get critical() {
@@ -71,6 +166,25 @@ export class DataDatadogMonitorMonitorThresholds extends cdktf.ComplexComputedLi
   }
 }
 
+export class DataDatadogMonitorMonitorThresholdsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogMonitorMonitorThresholdsOutputReference {
+    return new DataDatadogMonitorMonitorThresholdsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/d/monitor datadog_monitor}
 */
@@ -79,7 +193,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_monitor";
+  public static readonly tfResourceType = "datadog_monitor";
 
   // ===========
   // INITIALIZER
@@ -96,7 +210,9 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -169,13 +285,15 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   }
 
   // monitor_threshold_windows - computed: true, optional: false, required: false
-  public monitorThresholdWindows(index: string) {
-    return new DataDatadogMonitorMonitorThresholdWindows(this, 'monitor_threshold_windows', index, false);
+  private _monitorThresholdWindows = new DataDatadogMonitorMonitorThresholdWindowsList(this, "monitor_threshold_windows", false);
+  public get monitorThresholdWindows() {
+    return this._monitorThresholdWindows;
   }
 
   // monitor_thresholds - computed: true, optional: false, required: false
-  public monitorThresholds(index: string) {
-    return new DataDatadogMonitorMonitorThresholds(this, 'monitor_thresholds', index, false);
+  private _monitorThresholds = new DataDatadogMonitorMonitorThresholdsList(this, "monitor_thresholds", false);
+  public get monitorThresholds() {
+    return this._monitorThresholds;
   }
 
   // name - computed: true, optional: false, required: false

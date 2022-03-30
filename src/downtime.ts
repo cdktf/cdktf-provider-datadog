@@ -128,10 +128,9 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DowntimeRecurrence | undefined {
@@ -287,7 +286,7 @@ export class Downtime extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_downtime";
+  public static readonly tfResourceType = "datadog_downtime";
 
   // ===========
   // INITIALIZER
@@ -304,7 +303,9 @@ export class Downtime extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_downtime',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -489,7 +490,7 @@ export class Downtime extends cdktf.TerraformResource {
   }
 
   // recurrence - computed: false, optional: true, required: false
-  private _recurrence = new DowntimeRecurrenceOutputReference(this, "recurrence", true);
+  private _recurrence = new DowntimeRecurrenceOutputReference(this, "recurrence");
   public get recurrence() {
     return this._recurrence;
   }

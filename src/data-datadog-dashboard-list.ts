@@ -23,7 +23,7 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_dashboard_list";
+  public static readonly tfResourceType = "datadog_dashboard_list";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'datadog_dashboard_list',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -101,10 +101,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYAp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQuery | undefined {
@@ -182,7 +181,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYAp
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -270,10 +269,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQuery | undefined {
@@ -393,10 +391,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery | undefined {
@@ -593,10 +590,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQuery | undefined {
@@ -674,7 +670,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLo
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -769,10 +765,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYPr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYProcessQuery | undefined {
@@ -914,10 +909,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQuery | undefined {
@@ -1037,10 +1031,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery | undefined {
@@ -1237,10 +1230,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQuery | undefined {
@@ -1318,7 +1310,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRu
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -1406,10 +1398,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery | undefined {
@@ -1529,10 +1520,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery | undefined {
@@ -1729,10 +1719,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQuery | undefined {
@@ -1810,7 +1799,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSe
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -1959,10 +1948,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest | undefined {
@@ -2102,10 +2090,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxis | undefined {
@@ -2286,10 +2273,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxis | undefined {
@@ -2498,10 +2484,9 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetScatterplotDefinition | undefined {
@@ -2671,7 +2656,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // request - computed: false, optional: true, required: false
-  private _request = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference(this, "request", true);
+  private _request = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference(this, "request");
   public get request() {
     return this._request;
   }
@@ -2687,7 +2672,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // xaxis - computed: false, optional: true, required: false
-  private _xaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference(this, "xaxis", true);
+  private _xaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionXaxisOutputReference(this, "xaxis");
   public get xaxis() {
     return this._xaxis;
   }
@@ -2703,7 +2688,7 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputRefe
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference(this, "yaxis", true);
+  private _yaxis = new DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionYaxisOutputReference(this, "yaxis");
   public get yaxis() {
     return this._yaxis;
   }
@@ -2799,10 +2784,9 @@ export class DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetServiceLevelObjectiveDefinition | undefined {
@@ -3106,10 +3090,9 @@ export class DashboardWidgetGroupDefinitionWidgetServicemapDefinitionOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetServicemapDefinition | undefined {
@@ -3333,10 +3316,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInline | undefined {
@@ -3442,10 +3424,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTable | undefined {
@@ -3521,10 +3502,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQuery | undefined {
@@ -3644,10 +3624,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery | undefined {
@@ -3844,10 +3823,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQuery | undefined {
@@ -3925,7 +3903,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQue
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -4013,10 +3991,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQuery | undefined {
@@ -4136,10 +4113,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery | undefined {
@@ -4336,10 +4312,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQuery | undefined {
@@ -4417,7 +4392,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -4573,10 +4548,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormul
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimit | undefined {
@@ -4724,10 +4698,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQuery | undefined {
@@ -4847,10 +4820,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery | undefined {
@@ -5047,10 +5019,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQuery | undefined {
@@ -5128,7 +5099,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQue
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -5216,10 +5187,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQuery | undefined {
@@ -5339,10 +5309,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery | undefined {
@@ -5539,10 +5508,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQuery | undefined {
@@ -5620,7 +5588,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetwor
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -5715,10 +5683,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProces
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQuery | undefined {
@@ -5909,10 +5876,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryA
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery | undefined {
@@ -6217,10 +6183,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryA
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery | undefined {
@@ -6515,10 +6480,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort | undefined {
@@ -6657,10 +6621,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearch | undefined {
@@ -6757,10 +6720,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuery | undefined {
@@ -6888,7 +6850,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryE
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -6949,10 +6911,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryM
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQuery | undefined {
@@ -7133,10 +7094,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryP
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQuery | undefined {
@@ -7429,10 +7389,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQuery | undefined {
@@ -7552,10 +7511,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery | undefined {
@@ -7752,10 +7710,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery | undefined {
@@ -7833,7 +7790,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQue
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -7921,10 +7878,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQuery | undefined {
@@ -8044,10 +8000,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
@@ -8244,10 +8199,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery | undefined {
@@ -8325,7 +8279,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecuri
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -8537,10 +8491,9 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetSunburstDefinition | undefined {
@@ -8710,7 +8663,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   }
 
   // legend_inline - computed: false, optional: true, required: false
-  private _legendInline = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference(this, "legend_inline", true);
+  private _legendInline = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineOutputReference(this, "legend_inline");
   public get legendInline() {
     return this._legendInline;
   }
@@ -8726,7 +8679,7 @@ export class DashboardWidgetGroupDefinitionWidgetSunburstDefinitionOutputReferen
   }
 
   // legend_table - computed: false, optional: true, required: false
-  private _legendTable = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference(this, "legend_table", true);
+  private _legendTable = new DashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableOutputReference(this, "legend_table");
   public get legendTable() {
     return this._legendTable;
   }
@@ -8896,10 +8849,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery | undefined {
@@ -9019,10 +8971,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery | undefined {
@@ -9219,10 +9170,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery | undefined {
@@ -9300,7 +9250,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -9388,10 +9338,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery | undefined {
@@ -9511,10 +9460,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery | undefined {
@@ -9711,10 +9659,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery | undefined {
@@ -9792,7 +9739,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAudi
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -9948,10 +9895,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestForm
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit | undefined {
@@ -10099,10 +10045,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery | undefined {
@@ -10222,10 +10167,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery | undefined {
@@ -10422,10 +10366,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery | undefined {
@@ -10503,7 +10446,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -10617,10 +10560,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery | undefined {
@@ -10740,10 +10682,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery | undefined {
@@ -10940,10 +10881,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery | undefined {
@@ -11021,7 +10961,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetw
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -11116,10 +11056,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery | undefined {
@@ -11310,10 +11249,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery | undefined {
@@ -11618,10 +11556,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery | undefined {
@@ -11916,10 +11853,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort | undefined {
@@ -12058,10 +11994,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch | undefined {
@@ -12158,10 +12093,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery | undefined {
@@ -12289,7 +12223,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -12350,10 +12284,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery | undefined {
@@ -12534,10 +12467,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery | undefined {
@@ -12830,10 +12762,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery | undefined {
@@ -12953,10 +12884,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery | undefined {
@@ -13153,10 +13083,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery | undefined {
@@ -13234,7 +13163,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQ
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -13322,10 +13251,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery | undefined {
@@ -13445,10 +13373,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
@@ -13645,10 +13572,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery | undefined {
@@ -13726,7 +13652,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecu
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -13814,10 +13740,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle | undefined {
@@ -14064,10 +13989,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxis | undefined {
@@ -14248,10 +14172,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutput
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxis | undefined {
@@ -14495,10 +14418,9 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTimeseriesDefinition | undefined {
@@ -14797,7 +14719,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // right_yaxis - computed: false, optional: true, required: false
-  private _rightYaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference(this, "right_yaxis", true);
+  private _rightYaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisOutputReference(this, "right_yaxis");
   public get rightYaxis() {
     return this._rightYaxis;
   }
@@ -14813,7 +14735,7 @@ export class DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionOutputRefer
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference(this, "yaxis", true);
+  private _yaxis = new DashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisOutputReference(this, "yaxis");
   public get yaxis() {
     return this._yaxis;
   }
@@ -14907,10 +14829,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQuery | undefined {
@@ -15030,10 +14951,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupBySortQuery | undefined {
@@ -15230,10 +15150,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuery | undefined {
@@ -15311,7 +15230,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQuer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -15399,10 +15318,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQuery | undefined {
@@ -15522,10 +15440,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery | undefined {
@@ -15722,10 +15639,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQuery | undefined {
@@ -15803,7 +15719,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQu
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -16034,10 +15950,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormula
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimit | undefined {
@@ -16185,10 +16100,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQuery | undefined {
@@ -16308,10 +16222,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupBySortQuery | undefined {
@@ -16508,10 +16421,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuery | undefined {
@@ -16589,7 +16501,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQuer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -16684,10 +16596,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcess
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQuery | undefined {
@@ -16878,10 +16789,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery | undefined {
@@ -17186,10 +17096,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryAp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryApmResourceStatsQuery | undefined {
@@ -17484,10 +17393,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupBySort | undefined {
@@ -17626,10 +17534,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearch | undefined {
@@ -17726,10 +17633,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuery | undefined {
@@ -17857,7 +17763,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEv
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -17918,10 +17824,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryMetricQuery | undefined {
@@ -18102,10 +18007,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryPr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryProcessQuery | undefined {
@@ -18398,10 +18302,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQuery | undefined {
@@ -18521,10 +18424,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupBySortQuery | undefined {
@@ -18721,10 +18623,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuery | undefined {
@@ -18802,7 +18703,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQuer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -18890,10 +18791,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQuery | undefined {
@@ -19013,10 +18913,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
@@ -19213,10 +19112,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQuery | undefined {
@@ -19294,7 +19192,7 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurit
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -19368,10 +19266,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleOu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyle | undefined {
@@ -19560,10 +19457,9 @@ export class DashboardWidgetGroupDefinitionWidgetToplistDefinitionOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetToplistDefinition | undefined {
@@ -19838,10 +19734,9 @@ export class DashboardWidgetGroupDefinitionWidgetTraceServiceDefinitionOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTraceServiceDefinition | undefined {
@@ -20287,10 +20182,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormula
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimit | undefined {
@@ -20487,10 +20381,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryAp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmDependencyStatsQuery | undefined {
@@ -20795,10 +20688,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryAp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryApmResourceStatsQuery | undefined {
@@ -21093,10 +20985,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEv
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupBySort | undefined {
@@ -21235,10 +21126,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEv
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearch | undefined {
@@ -21335,10 +21225,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEv
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuery | undefined {
@@ -21466,7 +21355,7 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEv
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -21527,10 +21416,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryMetricQuery | undefined {
@@ -21711,10 +21599,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryPr
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryProcessQuery | undefined {
@@ -22026,10 +21913,9 @@ export class DashboardWidgetGroupDefinitionWidgetTreemapDefinitionOutputReferenc
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetTreemapDefinition | undefined {
@@ -22145,10 +22031,9 @@ export class DashboardWidgetGroupDefinitionWidgetWidgetLayoutOutputReference ext
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinitionWidgetWidgetLayout | undefined {
@@ -22525,10 +22410,9 @@ export class DashboardWidgetGroupDefinitionOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGroupDefinition | undefined {
@@ -22778,10 +22662,9 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQuery | undefined {
@@ -22901,10 +22784,9 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestApmQueryGroupBySortQuery | undefined {
@@ -23101,10 +22983,9 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestApmQuery | undefined {
@@ -23182,7 +23063,7 @@ export class DashboardWidgetHeatmapDefinitionRequestApmQueryOutputReference exte
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -23270,10 +23151,9 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQuery | undefined {
@@ -23393,10 +23273,9 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestLogQueryGroupBySortQuery | undefined {
@@ -23593,10 +23472,9 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestLogQuery | undefined {
@@ -23674,7 +23552,7 @@ export class DashboardWidgetHeatmapDefinitionRequestLogQueryOutputReference exte
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -23769,10 +23647,9 @@ export class DashboardWidgetHeatmapDefinitionRequestProcessQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestProcessQuery | undefined {
@@ -23914,10 +23791,9 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQuery | undefined {
@@ -24037,10 +23913,9 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestRumQueryGroupBySortQuery | undefined {
@@ -24237,10 +24112,9 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestRumQuery | undefined {
@@ -24318,7 +24192,7 @@ export class DashboardWidgetHeatmapDefinitionRequestRumQueryOutputReference exte
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -24406,10 +24280,9 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQuery | undefined {
@@ -24529,10 +24402,9 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
@@ -24729,10 +24601,9 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestSecurityQuery | undefined {
@@ -24810,7 +24681,7 @@ export class DashboardWidgetHeatmapDefinitionRequestSecurityQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHeatmapDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -24884,10 +24755,9 @@ export class DashboardWidgetHeatmapDefinitionRequestStyleOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionRequestStyle | undefined {
@@ -25041,10 +24911,9 @@ export class DashboardWidgetHeatmapDefinitionYaxisOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinitionYaxis | undefined {
@@ -25260,10 +25129,9 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHeatmapDefinition | undefined {
@@ -25489,7 +25357,7 @@ export class DashboardWidgetHeatmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // yaxis - computed: false, optional: true, required: false
-  private _yaxis = new DashboardWidgetHeatmapDefinitionYaxisOutputReference(this, "yaxis", true);
+  private _yaxis = new DashboardWidgetHeatmapDefinitionYaxisOutputReference(this, "yaxis");
   public get yaxis() {
     return this._yaxis;
   }
@@ -25583,10 +25451,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQuery | undefined {
@@ -25706,10 +25573,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillApmQueryGroupBySortQuery | undefined {
@@ -25906,10 +25772,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillApmQuery | undefined {
@@ -25987,7 +25852,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillApmQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -26075,10 +25940,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQuery | undefined {
@@ -26198,10 +26062,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery | undefined {
@@ -26398,10 +26261,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillLogQuery | undefined {
@@ -26479,7 +26341,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillLogQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -26574,10 +26436,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillProcessQueryOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillProcessQuery | undefined {
@@ -26719,10 +26580,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQuery | undefined {
@@ -26842,10 +26702,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillRumQueryGroupBySortQuery | undefined {
@@ -27042,10 +26901,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillRumQuery | undefined {
@@ -27123,7 +26981,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillRumQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -27211,10 +27069,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQuery | undefined {
@@ -27334,10 +27191,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySort
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillSecurityQueryGroupBySortQuery | undefined {
@@ -27534,10 +27390,9 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestFillSecurityQuery | undefined {
@@ -27615,7 +27470,7 @@ export class DashboardWidgetHostmapDefinitionRequestFillSecurityQueryOutputRefer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestFillSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -27757,10 +27612,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQuery | undefined {
@@ -27880,10 +27734,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeApmQueryGroupBySortQuery | undefined {
@@ -28080,10 +27933,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeApmQuery | undefined {
@@ -28161,7 +28013,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeApmQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -28249,10 +28101,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQuery | undefined {
@@ -28372,10 +28223,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeLogQueryGroupBySortQuery | undefined {
@@ -28572,10 +28422,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeLogQuery | undefined {
@@ -28653,7 +28502,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeLogQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -28748,10 +28597,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeProcessQueryOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeProcessQuery | undefined {
@@ -28893,10 +28741,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQuery | undefined {
@@ -29016,10 +28863,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeRumQueryGroupBySortQuery | undefined {
@@ -29216,10 +29062,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeRumQuery | undefined {
@@ -29297,7 +29142,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeRumQueryOutputReference 
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -29385,10 +29230,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQuery | undefined {
@@ -29508,10 +29352,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySort
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryGroupBySortQuery | undefined {
@@ -29708,10 +29551,9 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequestSizeSecurityQuery | undefined {
@@ -29789,7 +29631,7 @@ export class DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryOutputRefer
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetHostmapDefinitionRequestSizeSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -29924,10 +29766,9 @@ export class DashboardWidgetHostmapDefinitionRequestOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionRequest | undefined {
@@ -30037,10 +29878,9 @@ export class DashboardWidgetHostmapDefinitionStyleOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinitionStyle | undefined {
@@ -30241,10 +30081,9 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetHostmapDefinition | undefined {
@@ -30474,7 +30313,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // request - computed: false, optional: true, required: false
-  private _request = new DashboardWidgetHostmapDefinitionRequestOutputReference(this, "request", true);
+  private _request = new DashboardWidgetHostmapDefinitionRequestOutputReference(this, "request");
   public get request() {
     return this._request;
   }
@@ -30490,7 +30329,7 @@ export class DashboardWidgetHostmapDefinitionOutputReference extends cdktf.Compl
   }
 
   // style - computed: false, optional: true, required: false
-  private _style = new DashboardWidgetHostmapDefinitionStyleOutputReference(this, "style", true);
+  private _style = new DashboardWidgetHostmapDefinitionStyleOutputReference(this, "style");
   public get style() {
     return this._style;
   }
@@ -30530,10 +30369,9 @@ export class DashboardWidgetIframeDefinitionOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetIframeDefinition | undefined {
@@ -30644,10 +30482,9 @@ export class DashboardWidgetImageDefinitionOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetImageDefinition | undefined {
@@ -30870,10 +30707,9 @@ export class DashboardWidgetLogStreamDefinitionSortOutputReference extends cdktf
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetLogStreamDefinitionSort | undefined {
@@ -31024,10 +30860,9 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetLogStreamDefinition | undefined {
@@ -31272,7 +31107,7 @@ export class DashboardWidgetLogStreamDefinitionOutputReference extends cdktf.Com
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort = new DashboardWidgetLogStreamDefinitionSortOutputReference(this, "sort", true);
+  private _sort = new DashboardWidgetLogStreamDefinitionSortOutputReference(this, "sort");
   public get sort() {
     return this._sort;
   }
@@ -31375,10 +31210,9 @@ export class DashboardWidgetManageStatusDefinitionOutputReference extends cdktf.
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetManageStatusDefinition | undefined {
@@ -31694,10 +31528,9 @@ export class DashboardWidgetNoteDefinitionOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetNoteDefinition | undefined {
@@ -31989,10 +31822,9 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQuery | undefined {
@@ -32112,10 +31944,9 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQueryO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmQueryGroupBySortQuery | undefined {
@@ -32312,10 +32143,9 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmQuery | undefined {
@@ -32393,7 +32223,7 @@ export class DashboardWidgetQueryTableDefinitionRequestApmQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -32549,10 +32379,9 @@ export class DashboardWidgetQueryTableDefinitionRequestApmStatsQueryOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestApmStatsQuery | undefined {
@@ -32892,10 +32721,9 @@ export class DashboardWidgetQueryTableDefinitionRequestFormulaLimitOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestFormulaLimit | undefined {
@@ -33043,10 +32871,9 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQuery | undefined {
@@ -33166,10 +32993,9 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQueryO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestLogQueryGroupBySortQuery | undefined {
@@ -33366,10 +33192,9 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestLogQuery | undefined {
@@ -33447,7 +33272,7 @@ export class DashboardWidgetQueryTableDefinitionRequestLogQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -33542,10 +33367,9 @@ export class DashboardWidgetQueryTableDefinitionRequestProcessQueryOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestProcessQuery | undefined {
@@ -33736,10 +33560,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryApmDependencyStatsQuery | undefined {
@@ -34044,10 +33867,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryApmResourceStatsQuery | undefined {
@@ -34342,10 +34164,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySor
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryEventQueryGroupBySort | undefined {
@@ -34484,10 +34305,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearch | undefined {
@@ -34584,10 +34404,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryEventQuery | undefined {
@@ -34715,7 +34534,7 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetQueryTableDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -34776,10 +34595,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryMetricQueryOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryMetricQuery | undefined {
@@ -34960,10 +34778,9 @@ export class DashboardWidgetQueryTableDefinitionRequestQueryProcessQueryOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestQueryProcessQuery | undefined {
@@ -35256,10 +35073,9 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQuery | undefined {
@@ -35379,10 +35195,9 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQueryO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestRumQueryGroupBySortQuery | undefined {
@@ -35579,10 +35394,9 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestRumQuery | undefined {
@@ -35660,7 +35474,7 @@ export class DashboardWidgetQueryTableDefinitionRequestRumQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -35748,10 +35562,9 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQuery | undefined {
@@ -35871,10 +35684,9 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
@@ -36071,10 +35883,9 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinitionRequestSecurityQuery | undefined {
@@ -36152,7 +35963,7 @@ export class DashboardWidgetQueryTableDefinitionRequestSecurityQueryOutputRefere
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryTableDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -36385,10 +36196,9 @@ export class DashboardWidgetQueryTableDefinitionOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryTableDefinition | undefined {
@@ -36641,10 +36451,9 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQuery | undefined {
@@ -36764,10 +36573,9 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQueryO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestApmQueryGroupBySortQuery | undefined {
@@ -36964,10 +36772,9 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestApmQuery | undefined {
@@ -37045,7 +36852,7 @@ export class DashboardWidgetQueryValueDefinitionRequestApmQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -37133,10 +36940,9 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQuery | undefined {
@@ -37256,10 +37062,9 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestAuditQueryGroupBySortQuery | undefined {
@@ -37456,10 +37261,9 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestAuditQuery | undefined {
@@ -37537,7 +37341,7 @@ export class DashboardWidgetQueryValueDefinitionRequestAuditQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestAuditQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -37768,10 +37572,9 @@ export class DashboardWidgetQueryValueDefinitionRequestFormulaLimitOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestFormulaLimit | undefined {
@@ -37919,10 +37722,9 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQuery | undefined {
@@ -38042,10 +37844,9 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQueryO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestLogQueryGroupBySortQuery | undefined {
@@ -38242,10 +38043,9 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestLogQuery | undefined {
@@ -38323,7 +38123,7 @@ export class DashboardWidgetQueryValueDefinitionRequestLogQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -38418,10 +38218,9 @@ export class DashboardWidgetQueryValueDefinitionRequestProcessQueryOutputReferen
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestProcessQuery | undefined {
@@ -38612,10 +38411,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery | undefined {
@@ -38920,10 +38718,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery | undefined {
@@ -39218,10 +39015,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySor
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort | undefined {
@@ -39360,10 +39156,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutp
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearch | undefined {
@@ -39460,10 +39255,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryEventQuery | undefined {
@@ -39591,7 +39385,7 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryEventQueryOutputRefe
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -39652,10 +39446,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryMetricQueryOutputRef
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryMetricQuery | undefined {
@@ -39836,10 +39629,9 @@ export class DashboardWidgetQueryValueDefinitionRequestQueryProcessQueryOutputRe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestQueryProcessQuery | undefined {
@@ -40132,10 +39924,9 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutpu
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQuery | undefined {
@@ -40255,10 +40046,9 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQueryO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestRumQueryGroupBySortQuery | undefined {
@@ -40455,10 +40245,9 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestRumQuery | undefined {
@@ -40536,7 +40325,7 @@ export class DashboardWidgetQueryValueDefinitionRequestRumQueryOutputReference e
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -40624,10 +40413,9 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQuery | undefined {
@@ -40747,10 +40535,9 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQ
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery | undefined {
@@ -40947,10 +40734,9 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinitionRequestSecurityQuery | undefined {
@@ -41028,7 +40814,7 @@ export class DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputRefere
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -41254,10 +41040,9 @@ export class DashboardWidgetQueryValueDefinitionOutputReference extends cdktf.Co
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetQueryValueDefinition | undefined {
@@ -41658,10 +41443,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApm
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQuery | undefined {
@@ -41966,10 +41750,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApm
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery | undefined {
@@ -42264,10 +42047,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQueryGroupBySort | undefined {
@@ -42406,10 +42188,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch | undefined {
@@ -42506,10 +42287,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuery | undefined {
@@ -42637,7 +42417,7 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEve
   }
 
   // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(this, "search", true);
+  private _search = new DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
@@ -42698,10 +42478,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMet
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryMetricQuery | undefined {
@@ -42882,10 +42661,9 @@ export class DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryPro
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryProcessQuery | undefined {
@@ -43204,10 +42982,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQuery | undefined {
@@ -43327,10 +43104,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXApmQueryGroupBySortQuery | undefined {
@@ -43527,10 +43303,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXApmQuery | undefined {
@@ -43608,7 +43383,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXApmQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -43696,10 +43471,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQuery | undefined {
@@ -43819,10 +43593,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXLogQueryGroupBySortQuery | undefined {
@@ -44019,10 +43792,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXLogQuery | undefined {
@@ -44100,7 +43872,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -44195,10 +43967,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXProcessQueryOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXProcessQuery | undefined {
@@ -44340,10 +44111,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQuery | undefined {
@@ -44463,10 +44233,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery | undefined {
@@ -44663,10 +44432,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXRumQuery | undefined {
@@ -44744,7 +44512,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -44832,10 +44600,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQue
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery | undefined {
@@ -44955,10 +44722,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySor
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery | undefined {
@@ -45155,10 +44921,9 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestXSecurityQuery | undefined {
@@ -45236,7 +45001,7 @@ export class DashboardWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -45385,10 +45150,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQuery | undefined {
@@ -45508,10 +45272,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery | undefined {
@@ -45708,10 +45471,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYApmQuery | undefined {
@@ -45789,7 +45551,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -45877,10 +45639,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOut
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQuery | undefined {
@@ -46000,10 +45761,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery | undefined {
@@ -46200,10 +45960,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYLogQuery | undefined {
@@ -46281,7 +46040,7 @@ export class DashboardWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   }
 
   // compute_query - computed: false, optional: true, required: false
-  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this, "compute_query", true);
+  private _computeQuery = new DashboardWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference(this, "compute_query");
   public get computeQuery() {
     return this._computeQuery;
   }
@@ -46376,10 +46135,9 @@ export class DashboardWidgetScatterplotDefinitionRequestYProcessQueryOutputRefer
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetScatterplotDefinitionRequestYProcessQuery | undefined {

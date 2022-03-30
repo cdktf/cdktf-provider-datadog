@@ -29,7 +29,7 @@ export class LogsPipelineOrder extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "datadog_logs_pipeline_order";
+  public static readonly tfResourceType = "datadog_logs_pipeline_order";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class LogsPipelineOrder extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'datadog_logs_pipeline_order',
       terraformGeneratorMetadata: {
-        providerName: 'datadog'
+        providerName: 'datadog',
+        providerVersion: '3.10.0',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
