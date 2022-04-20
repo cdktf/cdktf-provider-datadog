@@ -41696,6 +41696,282 @@ export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestT
   }
 }
 
+export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis {
+  /**
+  * Always include zero or fit the axis to the data range.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#include_zero Dashboard#include_zero}
+  */
+  readonly includeZero?: boolean | cdktf.IResolvable;
+  /**
+  * The label of the axis to display on the graph.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#label Dashboard#label}
+  */
+  readonly label?: string;
+  /**
+  * Specify the maximum value to show on the Y-axis.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#max Dashboard#max}
+  */
+  readonly max?: string;
+  /**
+  * Specify the minimum value to show on the Y-axis.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#min Dashboard#min}
+  */
+  readonly min?: string;
+  /**
+  * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#scale Dashboard#scale}
+  */
+  readonly scale?: string;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    include_zero: cdktf.booleanToTerraform(struct!.includeZero),
+    label: cdktf.stringToTerraform(struct!.label),
+    max: cdktf.stringToTerraform(struct!.max),
+    min: cdktf.stringToTerraform(struct!.min),
+    scale: cdktf.stringToTerraform(struct!.scale),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._includeZero !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeZero = this._includeZero;
+    }
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._max !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max;
+    }
+    if (this._min !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min;
+    }
+    if (this._scale !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scale = this._scale;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._includeZero = undefined;
+      this._label = undefined;
+      this._max = undefined;
+      this._min = undefined;
+      this._scale = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._includeZero = value.includeZero;
+      this._label = value.label;
+      this._max = value.max;
+      this._min = value.min;
+      this._scale = value.scale;
+    }
+  }
+
+  // include_zero - computed: false, optional: true, required: false
+  private _includeZero?: boolean | cdktf.IResolvable; 
+  public get includeZero() {
+    return this.getBooleanAttribute('include_zero');
+  }
+  public set includeZero(value: boolean | cdktf.IResolvable) {
+    this._includeZero = value;
+  }
+  public resetIncludeZero() {
+    this._includeZero = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeZeroInput() {
+    return this._includeZero;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  public resetLabel() {
+    this._label = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max?: string; 
+  public get max() {
+    return this.getStringAttribute('max');
+  }
+  public set max(value: string) {
+    this._max = value;
+  }
+  public resetMax() {
+    this._max = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min?: string; 
+  public get min() {
+    return this.getStringAttribute('min');
+  }
+  public set min(value: string) {
+    this._min = value;
+  }
+  public resetMin() {
+    this._min = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min;
+  }
+
+  // scale - computed: false, optional: true, required: false
+  private _scale?: string; 
+  public get scale() {
+    return this.getStringAttribute('scale');
+  }
+  public set scale(value: string) {
+    this._scale = value;
+  }
+  public resetScale() {
+    this._scale = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scaleInput() {
+    return this._scale;
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground {
+  /**
+  * Whether the Timeseries is made using an area or bars. Valid values are `bars`, `area`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#type Dashboard#type}
+  */
+  readonly type: string;
+  /**
+  * yaxis block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#yaxis Dashboard#yaxis}
+  */
+  readonly yaxis?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    yaxis: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisToTerraform(struct!.yaxis),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._yaxis?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.yaxis = this._yaxis?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._yaxis.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._yaxis.internalValue = value.yaxis;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // yaxis - computed: false, optional: true, required: false
+  private _yaxis = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference(this, "yaxis");
+  public get yaxis() {
+    return this._yaxis;
+  }
+  public putYaxis(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis) {
+    this._yaxis.internalValue = value;
+  }
+  public resetYaxis() {
+    this._yaxis.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yaxisInput() {
+    return this._yaxis.internalValue;
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinition {
   /**
   * A Boolean indicating whether to automatically scale the tile.
@@ -41757,6 +42033,12 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinition {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#request Dashboard#request}
   */
   readonly request?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest[] | cdktf.IResolvable;
+  /**
+  * timeseries_background block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#timeseries_background Dashboard#timeseries_background}
+  */
+  readonly timeseriesBackground?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinition): any {
@@ -41775,6 +42057,7 @@ export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionToTerraf
     title_size: cdktf.stringToTerraform(struct!.titleSize),
     custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionCustomLinkToTerraform)(struct!.customLink),
     request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestToTerraform)(struct!.request),
+    timeseries_background: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundToTerraform(struct!.timeseriesBackground),
   }
 }
 
@@ -41832,6 +42115,10 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputRefer
       hasAnyValues = true;
       internalValueResult.request = this._request;
     }
+    if (this._timeseriesBackground?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeseriesBackground = this._timeseriesBackground?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -41848,6 +42135,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputRefer
       this._titleSize = undefined;
       this._customLink = undefined;
       this._request = undefined;
+      this._timeseriesBackground.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -41861,6 +42149,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputRefer
       this._titleSize = value.titleSize;
       this._customLink = value.customLink;
       this._request = value.request;
+      this._timeseriesBackground.internalValue = value.timeseriesBackground;
     }
   }
 
@@ -42024,6 +42313,22 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionOutputRefer
   // Temporarily expose input value. Use with caution.
   public get requestInput() {
     return this._request;
+  }
+
+  // timeseries_background - computed: false, optional: true, required: false
+  private _timeseriesBackground = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference(this, "timeseries_background");
+  public get timeseriesBackground() {
+    return this._timeseriesBackground;
+  }
+  public putTimeseriesBackground(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground) {
+    this._timeseriesBackground.internalValue = value;
+  }
+  public resetTimeseriesBackground() {
+    this._timeseriesBackground.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeseriesBackgroundInput() {
+    return this._timeseriesBackground.internalValue;
   }
 }
 export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink {
@@ -46096,69 +46401,3 @@ export class DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYAp
     return this._order;
   }
 }
-export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBy {
-  /**
-  * The facet name.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
-  */
-  readonly facet?: string;
-  /**
-  * The maximum number of items in the group.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
-  */
-  readonly limit?: number;
-  /**
-  * sort_query block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
-  */
-  readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    sort_query: dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
-  }
-}
-
-export interface DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiCompute {
-  /**
-  * The aggregation method.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Define the time interval in seconds.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
-  */
-  readonly interval?: number;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
-  }
-}
-

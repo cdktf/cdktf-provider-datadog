@@ -38,7 +38,7 @@ export interface MetricMetadataConfig extends cdktf.TerraformMetaArguments {
   */
   readonly statsdInterval?: number;
   /**
-  * Type of the metric.
+  * Metric type such as `gauge` or `rate`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#type MetricMetadata#type}
   */
@@ -77,7 +77,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_metric_metadata',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

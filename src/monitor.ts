@@ -46,7 +46,7 @@ For example, if the value is set to `300` (5min), the `timeframe` is set to `las
   */
   readonly includeTags?: boolean | cdktf.IResolvable;
   /**
-  * A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`.
+  * A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`. **Deprecated.** Use `restricted_roles`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#locked Monitor#locked}
   */
@@ -140,6 +140,8 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   */
   readonly requireFullWindow?: boolean | cdktf.IResolvable;
   /**
+  * A list of unique role identifiers to define which roles are allowed to edit the monitor. Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#restricted_roles Monitor#restricted_roles}
   */
   readonly restrictedRoles?: string[];
@@ -515,7 +517,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
