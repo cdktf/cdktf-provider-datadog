@@ -41,7 +41,7 @@ export class ApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

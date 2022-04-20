@@ -250,6 +250,8 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestoutputreference)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference)|*No description*
@@ -486,6 +488,8 @@ Name|Description
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryComputeQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerycomputequeryoutputreference)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortqueryoutputreference)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityqueryoutputreference)|*No description*
+[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference)|*No description*
+[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestoutputreference)|*No description*
 [DashboardWidgetScatterplotDefinitionRequestScatterplotTableQueryApmDependencyStatsQueryOutputReference](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequestscatterplottablequeryapmdependencystatsqueryoutputreference)|*No description*
@@ -665,6 +669,8 @@ Name|Description
 [DataDatadogSecurityMonitoringRulesRulesFilterList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilterlist)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesFilterOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilteroutputreference)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesruleslist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionslist)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionsoutputreference)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionslist)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionslist)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionsoutputreference)|*No description*
@@ -758,6 +764,7 @@ Name|Description
 [SecurityMonitoringDefaultRule](#cdktf-provider-datadog-securitymonitoringdefaultrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 [SecurityMonitoringFilter](#cdktf-provider-datadog-securitymonitoringfilter)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter}.
 [SecurityMonitoringRule](#cdktf-provider-datadog-securitymonitoringrule)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule}.
+[SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptionsoutputreference)|*No description*
 [SecurityMonitoringRuleOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptionsoutputreference)|*No description*
 [SecurityMonitoringRuleOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference)|*No description*
 [ServiceLevelObjective](#cdktf-provider-datadog-servicelevelobjective)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective datadog_service_level_objective}.
@@ -1181,6 +1188,8 @@ Name|Description
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupby)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortquery)|*No description*
 [DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackground)|*No description*
+[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinition](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinition)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitioncustomlink)|*No description*
 [DashboardWidgetGroupDefinitionWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetscatterplotdefinitionrequest)|*No description*
@@ -1572,6 +1581,8 @@ Name|Description
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBy](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupby)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryGroupBySortQuery](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerygroupbysortquery)|*No description*
 [DashboardWidgetQueryValueDefinitionRequestSecurityQueryMultiCompute](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequestsecurityquerymulticompute)|*No description*
+[DashboardWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackground)|*No description*
+[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)|*No description*
 [DashboardWidgetScatterplotDefinition](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinition)|*No description*
 [DashboardWidgetScatterplotDefinitionCustomLink](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitioncustomlink)|*No description*
 [DashboardWidgetScatterplotDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetscatterplotdefinitionrequest)|*No description*
@@ -1829,6 +1840,7 @@ Name|Description
 [DataDatadogSecurityMonitoringRulesRulesCase](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulescase)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesFilter](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesfilter)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptions)|*No description*
+[DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptions)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesQuery](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesquery)|*No description*
 [DataDatadogSecurityMonitoringRulesRulesQueryAgentRule](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesqueryagentrule)|*No description*
@@ -1932,6 +1944,7 @@ Name|Description
 [SecurityMonitoringRuleConfig](#cdktf-provider-datadog-securitymonitoringruleconfig)|*No description*
 [SecurityMonitoringRuleFilter](#cdktf-provider-datadog-securitymonitoringrulefilter)|*No description*
 [SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)|*No description*
+[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)|*No description*
 [SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)|*No description*
 [SecurityMonitoringRuleQuery](#cdktf-provider-datadog-securitymonitoringrulequery)|*No description*
 [SecurityMonitoringRuleQueryAgentRule](#cdktf-provider-datadog-securitymonitoringrulequeryagentrule)|*No description*
@@ -19338,6 +19351,7 @@ Name | Type | Description
 **precision** | <code>number</code> | <span></span>
 **request** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequest)></code> | <span></span>
 **textAlign** | <code>string</code> | <span></span>
+**timeseriesBackground** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference)</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **titleAlign** | <code>string</code> | <span></span>
 **titleSize** | <code>string</code> | <span></span>
@@ -19349,11 +19363,27 @@ Name | Type | Description
 **precisionInput**? | <code>number</code> | __*Optional*__
 **requestInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequest)></code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
+**timeseriesBackgroundInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackground)</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
+
+
+#### putTimeseriesBackground(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionoutputreference-puttimeseriesbackground"></a>
+
+
+
+```ts
+putTimeseriesBackground(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground): void
+```
+
+* **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackground)</code>)  *No description*
+  * **type** (<code>string</code>)  Whether the Timeseries is made using an area or bars. Valid values are `bars`, `area`. 
+  * **yaxis** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code>)  yaxis block. __*Optional*__
+
+
 
 
 #### resetAutoscale() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionoutputreference-resetautoscale"></a>
@@ -19434,6 +19464,18 @@ resetRequest(): void
 
 ```ts
 resetTextAlign(): void
+```
+
+
+
+
+
+#### resetTimeseriesBackground() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionoutputreference-resettimeseriesbackground"></a>
+
+
+
+```ts
+resetTimeseriesBackground(): void
 ```
 
 
@@ -21293,6 +21335,176 @@ resetMultiCompute(): void
 
 ```ts
 resetSearchQuery(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**type** | <code>string</code> | <span></span>
+**yaxis** | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference)</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackground)</code> | __*Optional*__
+**typeInput**? | <code>string</code> | __*Optional*__
+**yaxisInput**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code> | __*Optional*__
+
+### Methods
+
+
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference-putyaxis"></a>
+
+
+
+```ts
+putYaxis(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis): void
+```
+
+* **value** (<code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code>)  *No description*
+  * **includeZero** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Always include zero or fit the axis to the data range. __*Optional*__
+  * **label** (<code>string</code>)  The label of the axis to display on the graph. __*Optional*__
+  * **max** (<code>string</code>)  Specify the maximum value to show on the Y-axis. __*Optional*__
+  * **min** (<code>string</code>)  Specify the minimum value to show on the Y-axis. __*Optional*__
+  * **scale** (<code>string</code>)  Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`. __*Optional*__
+
+
+
+
+#### resetYaxis() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference-resetyaxis"></a>
+
+
+
+```ts
+resetYaxis(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
+**includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code> | __*Optional*__
+**labelInput**? | <code>string</code> | __*Optional*__
+**maxInput**? | <code>string</code> | __*Optional*__
+**minInput**? | <code>string</code> | __*Optional*__
+**scaleInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIncludeZero() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetincludezero"></a>
+
+
+
+```ts
+resetIncludeZero(): void
+```
+
+
+
+
+
+#### resetLabel() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetlabel"></a>
+
+
+
+```ts
+resetLabel(): void
+```
+
+
+
+
+
+#### resetMax() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetmax"></a>
+
+
+
+```ts
+resetMax(): void
+```
+
+
+
+
+
+#### resetMin() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetmin"></a>
+
+
+
+```ts
+resetMin(): void
+```
+
+
+
+
+
+#### resetScale() <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetscale"></a>
+
+
+
+```ts
+resetScale(): void
 ```
 
 
@@ -38507,6 +38719,7 @@ Name | Type | Description
 **precision** | <code>number</code> | <span></span>
 **request** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequest)></code> | <span></span>
 **textAlign** | <code>string</code> | <span></span>
+**timeseriesBackground** | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference)</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **titleAlign** | <code>string</code> | <span></span>
 **titleSize** | <code>string</code> | <span></span>
@@ -38518,11 +38731,27 @@ Name | Type | Description
 **precisionInput**? | <code>number</code> | __*Optional*__
 **requestInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequest)></code> | __*Optional*__
 **textAlignInput**? | <code>string</code> | __*Optional*__
+**timeseriesBackgroundInput**? | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackground)</code> | __*Optional*__
 **titleAlignInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
 **titleSizeInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
+
+
+#### putTimeseriesBackground(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionoutputreference-puttimeseriesbackground"></a>
+
+
+
+```ts
+putTimeseriesBackground(value: DashboardWidgetQueryValueDefinitionTimeseriesBackground): void
+```
+
+* **value** (<code>[DashboardWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackground)</code>)  *No description*
+  * **type** (<code>string</code>)  Whether the Timeseries is made using an area or bars. Valid values are `bars`, `area`. 
+  * **yaxis** (<code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code>)  yaxis block. __*Optional*__
+
+
 
 
 #### resetAutoscale() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionoutputreference-resetautoscale"></a>
@@ -38603,6 +38832,18 @@ resetRequest(): void
 
 ```ts
 resetTextAlign(): void
+```
+
+
+
+
+
+#### resetTimeseriesBackground() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionoutputreference-resettimeseriesbackground"></a>
+
+
+
+```ts
+resetTimeseriesBackground(): void
 ```
 
 
@@ -40462,6 +40703,176 @@ resetMultiCompute(): void
 
 ```ts
 resetSearchQuery(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetQueryValueDefinitionTimeseriesBackgroundOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**type** | <code>string</code> | <span></span>
+**yaxis** | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference)</code> | <span></span>
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackground)</code> | __*Optional*__
+**typeInput**? | <code>string</code> | __*Optional*__
+**yaxisInput**? | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code> | __*Optional*__
+
+### Methods
+
+
+#### putYaxis(value) <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference-putyaxis"></a>
+
+
+
+```ts
+putYaxis(value: DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis): void
+```
+
+* **value** (<code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code>)  *No description*
+  * **includeZero** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Always include zero or fit the axis to the data range. __*Optional*__
+  * **label** (<code>string</code>)  The label of the axis to display on the graph. __*Optional*__
+  * **max** (<code>string</code>)  Specify the maximum value to show on the Y-axis. __*Optional*__
+  * **min** (<code>string</code>)  Specify the minimum value to show on the Y-axis. __*Optional*__
+  * **scale** (<code>string</code>)  Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`. __*Optional*__
+
+
+
+
+#### resetYaxis() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundoutputreference-resetyaxis"></a>
+
+
+
+```ts
+resetYaxis(): void
+```
+
+
+
+
+
+
+
+## class DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxisOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**includeZero** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**label** | <code>string</code> | <span></span>
+**max** | <code>string</code> | <span></span>
+**min** | <code>string</code> | <span></span>
+**scale** | <code>string</code> | <span></span>
+**includeZeroInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code> | __*Optional*__
+**labelInput**? | <code>string</code> | __*Optional*__
+**maxInput**? | <code>string</code> | __*Optional*__
+**minInput**? | <code>string</code> | __*Optional*__
+**scaleInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetIncludeZero() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetincludezero"></a>
+
+
+
+```ts
+resetIncludeZero(): void
+```
+
+
+
+
+
+#### resetLabel() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetlabel"></a>
+
+
+
+```ts
+resetLabel(): void
+```
+
+
+
+
+
+#### resetMax() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetmax"></a>
+
+
+
+```ts
+resetMax(): void
+```
+
+
+
+
+
+#### resetMin() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetmin"></a>
+
+
+
+```ts
+resetMin(): void
+```
+
+
+
+
+
+#### resetScale() <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxisoutputreference-resetscale"></a>
+
+
+
+```ts
+resetScale(): void
 ```
 
 
@@ -53772,6 +54183,88 @@ __Returns__:
 
 
 
+## class DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionslist-get"></a>
+
+
+
+```ts
+get(index: number): DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionsoutputreference)</code>
+
+
+
+## class DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**baselineUserLocations** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptions)</code> | __*Optional*__
+
+
+
 ## class DataDatadogSecurityMonitoringRulesRulesOptionsList  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionslist"></a>
 
 
@@ -53934,6 +54427,7 @@ Name | Type | Description
 -----|------|-------------
 **detectionMethod** | <code>string</code> | <span></span>
 **evaluationWindow** | <code>number</code> | <span></span>
+**impossibleTravelOptions** | <code>[DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptionslist)</code> | <span></span>
 **keepAlive** | <code>number</code> | <span></span>
 **maxSignalDuration** | <code>number</code> | <span></span>
 **newValueOptions** | <code>[DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList](#cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptionslist)</code> | <span></span>
@@ -59360,7 +59854,7 @@ new MetricMetadata(scope: Construct, id: string, config: MetricMetadataConfig)
   * **perUnit** (<code>string</code>)  Per unit of the metric such as `second` in `bytes per second`. __*Optional*__
   * **shortName** (<code>string</code>)  A short name of the metric. __*Optional*__
   * **statsdInterval** (<code>number</code>)  If applicable, statsd flush interval in seconds for the metric. __*Optional*__
-  * **type** (<code>string</code>)  Type of the metric. __*Optional*__
+  * **type** (<code>string</code>)  Metric type such as `gauge` or `rate`. __*Optional*__
   * **unit** (<code>string</code>)  Primary unit of the metric such as `byte` or `operation`. __*Optional*__
 
 
@@ -59599,7 +60093,7 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **forceDelete** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). __*Optional*__
   * **groupbySimpleMonitor** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not to trigger one alert if any source breaches a threshold. __*Optional*__
   * **includeTags** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. __*Optional*__
-  * **locked** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`. __*Optional*__
+  * **locked** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether changes to this monitor should be restricted to the creator or admins. __*Optional*__
   * **monitorThresholds** (<code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code>)  monitor_thresholds block. __*Optional*__
   * **monitorThresholdWindows** (<code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code>)  monitor_threshold_windows block. __*Optional*__
   * **newGroupDelay** (<code>number</code>)  The time (in seconds) to skip evaluations for new groups. __*Optional*__
@@ -59612,7 +60106,7 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **renotifyOccurrences** (<code>number</code>)  The number of re-notification messages that should be sent on the current status. __*Optional*__
   * **renotifyStatuses** (<code>Array<string></code>)  The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. __*Optional*__
   * **requireFullWindow** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor needs a full window of data before it's evaluated. __*Optional*__
-  * **restrictedRoles** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#restricted_roles Monitor#restricted_roles}. __*Optional*__
+  * **restrictedRoles** (<code>Array<string></code>)  A list of unique role identifiers to define which roles are allowed to edit the monitor. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your monitor. __*Optional*__
   * **timeoutH** (<code>number</code>)  The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state. __*Optional*__
   * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If set to `false`, skip the validation call done during plan. __*Optional*__
@@ -61026,6 +61520,7 @@ putOptions(value: SecurityMonitoringRuleOptions): void
   * **maxSignalDuration** (<code>number</code>)  A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. 
   * **detectionMethod** (<code>string</code>)  The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`. __*Optional*__
   * **evaluationWindow** (<code>number</code>)  A time window is specified to match when at least one of the cases matches true. __*Optional*__
+  * **impossibleTravelOptions** (<code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code>)  impossible_travel_options block. __*Optional*__
   * **newValueOptions** (<code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code>)  new_value_options block. __*Optional*__
 
 
@@ -61117,6 +61612,53 @@ __Returns__:
 
 
 
+## class SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference  <a id="cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptionsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**baselineUserLocations** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**baselineUserLocationsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code> | __*Optional*__
+
+### Methods
+
+
+#### resetBaselineUserLocations() <a id="cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptionsoutputreference-resetbaselineuserlocations"></a>
+
+
+
+```ts
+resetBaselineUserLocations(): void
+```
+
+
+
+
+
+
+
 ## class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference  <a id="cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptionsoutputreference"></a>
 
 
@@ -61179,17 +61721,33 @@ Name | Type | Description
 -----|------|-------------
 **detectionMethod** | <code>string</code> | <span></span>
 **evaluationWindow** | <code>number</code> | <span></span>
+**impossibleTravelOptions** | <code>[SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptionsoutputreference)</code> | <span></span>
 **keepAlive** | <code>number</code> | <span></span>
 **maxSignalDuration** | <code>number</code> | <span></span>
 **newValueOptions** | <code>[SecurityMonitoringRuleOptionsNewValueOptionsOutputReference](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptionsoutputreference)</code> | <span></span>
 **detectionMethodInput**? | <code>string</code> | __*Optional*__
 **evaluationWindowInput**? | <code>number</code> | __*Optional*__
+**impossibleTravelOptionsInput**? | <code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code> | __*Optional*__
 **internalValue**? | <code>[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)</code> | __*Optional*__
 **keepAliveInput**? | <code>number</code> | __*Optional*__
 **maxSignalDurationInput**? | <code>number</code> | __*Optional*__
 **newValueOptionsInput**? | <code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code> | __*Optional*__
 
 ### Methods
+
+
+#### putImpossibleTravelOptions(value) <a id="cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference-putimpossibletraveloptions"></a>
+
+
+
+```ts
+putImpossibleTravelOptions(value: SecurityMonitoringRuleOptionsImpossibleTravelOptions): void
+```
+
+* **value** (<code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code>)  *No description*
+  * **baselineUserLocations** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If true, signals are suppressed for the first 24 hours. __*Optional*__
+
+
 
 
 #### putNewValueOptions(value) <a id="cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference-putnewvalueoptions"></a>
@@ -61225,6 +61783,18 @@ resetDetectionMethod(): void
 
 ```ts
 resetEvaluationWindow(): void
+```
+
+
+
+
+
+#### resetImpossibleTravelOptions() <a id="cdktf-provider-datadog-securitymonitoringruleoptionsoutputreference-resetimpossibletraveloptions"></a>
+
+
+
+```ts
+resetImpossibleTravelOptions(): void
 ```
 
 
@@ -70418,6 +70988,7 @@ Name | Type | Description
 **precision**? | <code>number</code> | The precision to use when displaying the tile.<br/>__*Optional*__
 **request**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitionrequest)></code> | request block.<br/>__*Optional*__
 **textAlign**? | <code>string</code> | The alignment of the widget's text. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
+**timeseriesBackground**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackground)</code> | timeseries_background block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
@@ -71108,6 +71679,37 @@ Name | Type | Description
 **aggregation** | <code>string</code> | The aggregation method.
 **facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 **interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackground  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackground"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**type** | <code>string</code> | Whether the Timeseries is made using an area or bars. Valid values are `bars`, `area`.
+**yaxis**? | <code>[DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code> | yaxis block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionTimeseriesBackgroundYaxis  <a id="cdktf-provider-datadog-dashboardwidgetgroupdefinitionwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
+**max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
+**min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -76787,6 +77389,7 @@ Name | Type | Description
 **precision**? | <code>number</code> | The precision to use when displaying the tile.<br/>__*Optional*__
 **request**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[DashboardWidgetQueryValueDefinitionRequest](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitionrequest)></code> | request block.<br/>__*Optional*__
 **textAlign**? | <code>string</code> | The alignment of the widget's text. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
+**timeseriesBackground**? | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackground](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackground)</code> | timeseries_background block.<br/>__*Optional*__
 **title**? | <code>string</code> | The title of the widget.<br/>__*Optional*__
 **titleAlign**? | <code>string</code> | The alignment of the widget's title. Valid values are `center`, `left`, `right`.<br/>__*Optional*__
 **titleSize**? | <code>string</code> | The size of the widget's title (defaults to 16).<br/>__*Optional*__
@@ -77477,6 +78080,37 @@ Name | Type | Description
 **aggregation** | <code>string</code> | The aggregation method.
 **facet**? | <code>string</code> | The facet name.<br/>__*Optional*__
 **interval**? | <code>number</code> | Define the time interval in seconds.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionTimeseriesBackground  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackground"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**type** | <code>string</code> | Whether the Timeseries is made using an area or bars. Valid values are `bars`, `area`.
+**yaxis**? | <code>[DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis](#cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis)</code> | yaxis block.<br/>__*Optional*__
+
+
+
+## struct DashboardWidgetQueryValueDefinitionTimeseriesBackgroundYaxis  <a id="cdktf-provider-datadog-dashboardwidgetqueryvaluedefinitiontimeseriesbackgroundyaxis"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**includeZero**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Always include zero or fit the axis to the data range.<br/>__*Optional*__
+**label**? | <code>string</code> | The label of the axis to display on the graph.<br/>__*Optional*__
+**max**? | <code>string</code> | Specify the maximum value to show on the Y-axis.<br/>__*Optional*__
+**min**? | <code>string</code> | Specify the minimum value to show on the Y-axis.<br/>__*Optional*__
+**scale**? | <code>string</code> | Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.<br/>__*Optional*__
 
 
 
@@ -81529,6 +82163,12 @@ Name | Type | Description
 
 
 
+## struct DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsimpossibletraveloptions"></a>
+
+
+
+
+
 ## struct DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions  <a id="cdktf-provider-datadog-datadatadogsecuritymonitoringrulesrulesoptionsnewvalueoptions"></a>
 
 
@@ -82865,7 +83505,7 @@ Name | Type | Description
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **shortName**? | <code>string</code> | A short name of the metric.<br/>__*Optional*__
 **statsdInterval**? | <code>number</code> | If applicable, statsd flush interval in seconds for the metric.<br/>__*Optional*__
-**type**? | <code>string</code> | Type of the metric.<br/>__*Optional*__
+**type**? | <code>string</code> | Metric type such as `gauge` or `rate`.<br/>__*Optional*__
 **unit**? | <code>string</code> | Primary unit of the metric such as `byte` or `operation`.<br/>__*Optional*__
 
 
@@ -82927,7 +83567,7 @@ Name | Type | Description
 **groupbySimpleMonitor**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not to trigger one alert if any source breaches a threshold.<br/>__*Optional*__
 **includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`.<br/>__*Optional*__
+**locked**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins.<br/>__*Optional*__
 **monitorThresholdWindows**? | <code>[MonitorMonitorThresholdWindows](#cdktf-provider-datadog-monitormonitorthresholdwindows)</code> | monitor_threshold_windows block.<br/>__*Optional*__
 **monitorThresholds**? | <code>[MonitorMonitorThresholds](#cdktf-provider-datadog-monitormonitorthresholds)</code> | monitor_thresholds block.<br/>__*Optional*__
 **newGroupDelay**? | <code>number</code> | The time (in seconds) to skip evaluations for new groups.<br/>__*Optional*__
@@ -82941,7 +83581,7 @@ Name | Type | Description
 **renotifyOccurrences**? | <code>number</code> | The number of re-notification messages that should be sent on the current status.<br/>__*Optional*__
 **renotifyStatuses**? | <code>Array<string></code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.<br/>__*Optional*__
 **requireFullWindow**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated.<br/>__*Optional*__
-**restrictedRoles**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#restricted_roles Monitor#restricted_roles}.<br/>__*Optional*__
+**restrictedRoles**? | <code>Array<string></code> | A list of unique role identifiers to define which roles are allowed to edit the monitor.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your monitor.<br/>__*Optional*__
 **timeoutH**? | <code>number</code> | The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state.<br/>__*Optional*__
 **validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `false`, skip the validation call done during plan.<br/>__*Optional*__
@@ -83269,7 +83909,21 @@ Name | Type | Description
 **maxSignalDuration** | <code>number</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration.
 **detectionMethod**? | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`.<br/>__*Optional*__
 **evaluationWindow**? | <code>number</code> | A time window is specified to match when at least one of the cases matches true.<br/>__*Optional*__
+**impossibleTravelOptions**? | <code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code> | impossible_travel_options block.<br/>__*Optional*__
 **newValueOptions**? | <code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code> | new_value_options block.<br/>__*Optional*__
+
+
+
+## struct SecurityMonitoringRuleOptionsImpossibleTravelOptions  <a id="cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**baselineUserLocations**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If true, signals are suppressed for the first 24 hours.<br/>__*Optional*__
 
 
 

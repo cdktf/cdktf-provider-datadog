@@ -180,6 +180,70 @@ export class DataDatadogSecurityMonitoringRulesRulesFilterList extends cdktf.Com
     return new DataDatadogSecurityMonitoringRulesRulesFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions {
+}
+
+export function dataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsToTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // baseline_user_locations - computed: true, optional: false, required: false
+  public get baselineUserLocations() {
+    return this.getBooleanAttribute('baseline_user_locations');
+  }
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference {
+    return new DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions {
 }
 
@@ -297,6 +361,12 @@ export class DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference exten
   // evaluation_window - computed: true, optional: false, required: false
   public get evaluationWindow() {
     return this.getNumberAttribute('evaluation_window');
+  }
+
+  // impossible_travel_options - computed: true, optional: false, required: false
+  private _impossibleTravelOptions = new DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList(this, "impossible_travel_options", false);
+  public get impossibleTravelOptions() {
+    return this._impossibleTravelOptions;
   }
 
   // keep_alive - computed: true, optional: false, required: false
@@ -638,7 +708,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       terraformResourceType: 'datadog_security_monitoring_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

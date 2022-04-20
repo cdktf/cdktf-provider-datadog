@@ -134,6 +134,73 @@ export function securityMonitoringRuleFilterToTerraform(struct?: SecurityMonitor
   }
 }
 
+export interface SecurityMonitoringRuleOptionsImpossibleTravelOptions {
+  /**
+  * If true, signals are suppressed for the first 24 hours. In that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
+  */
+  readonly baselineUserLocations?: boolean | cdktf.IResolvable;
+}
+
+export function securityMonitoringRuleOptionsImpossibleTravelOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference | SecurityMonitoringRuleOptionsImpossibleTravelOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    baseline_user_locations: cdktf.booleanToTerraform(struct!.baselineUserLocations),
+  }
+}
+
+export class SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SecurityMonitoringRuleOptionsImpossibleTravelOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._baselineUserLocations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.baselineUserLocations = this._baselineUserLocations;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityMonitoringRuleOptionsImpossibleTravelOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._baselineUserLocations = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._baselineUserLocations = value.baselineUserLocations;
+    }
+  }
+
+  // baseline_user_locations - computed: false, optional: true, required: false
+  private _baselineUserLocations?: boolean | cdktf.IResolvable; 
+  public get baselineUserLocations() {
+    return this.getBooleanAttribute('baseline_user_locations');
+  }
+  public set baselineUserLocations(value: boolean | cdktf.IResolvable) {
+    this._baselineUserLocations = value;
+  }
+  public resetBaselineUserLocations() {
+    this._baselineUserLocations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baselineUserLocationsInput() {
+    return this._baselineUserLocations;
+  }
+}
 export interface SecurityMonitoringRuleOptionsNewValueOptions {
   /**
   * The duration in days after which a learned value is forgotten. Valid values are `1`, `2`, `7`, `14`, `21`, `28`.
@@ -250,6 +317,12 @@ export interface SecurityMonitoringRuleOptions {
   */
   readonly maxSignalDuration: number;
   /**
+  * impossible_travel_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
+  */
+  readonly impossibleTravelOptions?: SecurityMonitoringRuleOptionsImpossibleTravelOptions;
+  /**
   * new_value_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
@@ -267,6 +340,7 @@ export function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonito
     evaluation_window: cdktf.numberToTerraform(struct!.evaluationWindow),
     keep_alive: cdktf.numberToTerraform(struct!.keepAlive),
     max_signal_duration: cdktf.numberToTerraform(struct!.maxSignalDuration),
+    impossible_travel_options: securityMonitoringRuleOptionsImpossibleTravelOptionsToTerraform(struct!.impossibleTravelOptions),
     new_value_options: securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct!.newValueOptions),
   }
 }
@@ -301,6 +375,10 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.maxSignalDuration = this._maxSignalDuration;
     }
+    if (this._impossibleTravelOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.impossibleTravelOptions = this._impossibleTravelOptions?.internalValue;
+    }
     if (this._newValueOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.newValueOptions = this._newValueOptions?.internalValue;
@@ -315,6 +393,7 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
       this._evaluationWindow = undefined;
       this._keepAlive = undefined;
       this._maxSignalDuration = undefined;
+      this._impossibleTravelOptions.internalValue = undefined;
       this._newValueOptions.internalValue = undefined;
     }
     else {
@@ -323,6 +402,7 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
       this._evaluationWindow = value.evaluationWindow;
       this._keepAlive = value.keepAlive;
       this._maxSignalDuration = value.maxSignalDuration;
+      this._impossibleTravelOptions.internalValue = value.impossibleTravelOptions;
       this._newValueOptions.internalValue = value.newValueOptions;
     }
   }
@@ -383,6 +463,22 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get maxSignalDurationInput() {
     return this._maxSignalDuration;
+  }
+
+  // impossible_travel_options - computed: false, optional: true, required: false
+  private _impossibleTravelOptions = new SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference(this, "impossible_travel_options");
+  public get impossibleTravelOptions() {
+    return this._impossibleTravelOptions;
+  }
+  public putImpossibleTravelOptions(value: SecurityMonitoringRuleOptionsImpossibleTravelOptions) {
+    this._impossibleTravelOptions.internalValue = value;
+  }
+  public resetImpossibleTravelOptions() {
+    this._impossibleTravelOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get impossibleTravelOptionsInput() {
+    return this._impossibleTravelOptions.internalValue;
   }
 
   // new_value_options - computed: false, optional: true, required: false
@@ -515,7 +611,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.10.0',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
