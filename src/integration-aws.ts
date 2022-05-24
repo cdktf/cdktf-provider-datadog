@@ -50,6 +50,13 @@ export interface IntegrationAwsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hostTags?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#id IntegrationAws#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Whether Datadog collects metrics for this AWS account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws#metrics_collection_enabled IntegrationAws#metrics_collection_enabled}
@@ -116,6 +123,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
     this._excludedRegions = config.excludedRegions;
     this._filterTags = config.filterTags;
     this._hostTags = config.hostTags;
+    this._id = config.id;
     this._metricsCollectionEnabled = config.metricsCollectionEnabled;
     this._resourceCollectionEnabled = config.resourceCollectionEnabled;
     this._roleName = config.roleName;
@@ -244,8 +252,19 @@ export class IntegrationAws extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metrics_collection_enabled - computed: true, optional: true, required: false
@@ -325,6 +344,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
       excluded_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedRegions),
       filter_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._filterTags),
       host_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._hostTags),
+      id: cdktf.stringToTerraform(this._id),
       metrics_collection_enabled: cdktf.stringToTerraform(this._metricsCollectionEnabled),
       resource_collection_enabled: cdktf.stringToTerraform(this._resourceCollectionEnabled),
       role_name: cdktf.stringToTerraform(this._roleName),

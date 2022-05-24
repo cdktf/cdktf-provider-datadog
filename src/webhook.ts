@@ -20,6 +20,13 @@ export interface WebhookConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encodeAs?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#id Webhook#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#name Webhook#name}
@@ -75,6 +82,7 @@ export class Webhook extends cdktf.TerraformResource {
     });
     this._customHeaders = config.customHeaders;
     this._encodeAs = config.encodeAs;
+    this._id = config.id;
     this._name = config.name;
     this._payload = config.payload;
     this._url = config.url;
@@ -117,8 +125,19 @@ export class Webhook extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -171,6 +190,7 @@ export class Webhook extends cdktf.TerraformResource {
     return {
       custom_headers: cdktf.stringToTerraform(this._customHeaders),
       encode_as: cdktf.stringToTerraform(this._encodeAs),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       payload: cdktf.stringToTerraform(this._payload),
       url: cdktf.stringToTerraform(this._url),

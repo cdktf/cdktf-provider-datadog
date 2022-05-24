@@ -14,6 +14,13 @@ export interface IntegrationAwsTagFilterConfig extends cdktf.TerraformMetaArgume
   */
   readonly accountId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter#id IntegrationAwsTagFilter#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The namespace associated with the tag filter entry. Valid values are `elb`, `application_elb`, `sqs`, `rds`, `custom`, `network_elb`, `lambda`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter#namespace IntegrationAwsTagFilter#namespace}
@@ -62,6 +69,7 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._accountId = config.accountId;
+    this._id = config.id;
     this._namespace = config.namespace;
     this._tagFilterStr = config.tagFilterStr;
   }
@@ -84,8 +92,19 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // namespace - computed: false, optional: false, required: true
@@ -121,6 +140,7 @@ export class IntegrationAwsTagFilter extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
+      id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       tag_filter_str: cdktf.stringToTerraform(this._tagFilterStr),
     };

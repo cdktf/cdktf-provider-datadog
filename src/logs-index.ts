@@ -20,6 +20,13 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   */
   readonly disableDailyLimit?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#id LogsIndex#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the index.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#name LogsIndex#name}
@@ -70,6 +77,108 @@ export function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExcl
   }
 }
 
+export class LogsIndexExclusionFilterFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsIndexExclusionFilterFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    if (this._sampleRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sampleRate = this._sampleRate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsIndexExclusionFilterFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._query = undefined;
+      this._sampleRate = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._query = value.query;
+      this._sampleRate = value.sampleRate;
+    }
+  }
+
+  // query - computed: false, optional: true, required: false
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  public resetQuery() {
+    this._query = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+
+  // sample_rate - computed: false, optional: true, required: false
+  private _sampleRate?: number; 
+  public get sampleRate() {
+    return this.getNumberAttribute('sample_rate');
+  }
+  public set sampleRate(value: number) {
+    this._sampleRate = value;
+  }
+  public resetSampleRate() {
+    this._sampleRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sampleRateInput() {
+    return this._sampleRate;
+  }
+}
+
+export class LogsIndexExclusionFilterFilterList extends cdktf.ComplexList {
+  public internalValue? : LogsIndexExclusionFilterFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsIndexExclusionFilterFilterOutputReference {
+    return new LogsIndexExclusionFilterFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsIndexExclusionFilter {
   /**
   * A boolean stating if the exclusion is active or not.
@@ -103,6 +212,130 @@ export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionF
   }
 }
 
+export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsIndexExclusionFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsIndexExclusionFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._isEnabled = undefined;
+      this._name = undefined;
+      this._filter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._isEnabled = value.isEnabled;
+      this._name = value.name;
+      this._filter.internalValue = value.filter;
+    }
+  }
+
+  // is_enabled - computed: false, optional: true, required: false
+  private _isEnabled?: boolean | cdktf.IResolvable; 
+  public get isEnabled() {
+    return this.getBooleanAttribute('is_enabled');
+  }
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
+    this._isEnabled = value;
+  }
+  public resetIsEnabled() {
+    this._isEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isEnabledInput() {
+    return this._isEnabled;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new LogsIndexExclusionFilterFilterList(this, "filter", false);
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: LogsIndexExclusionFilterFilter[] | cdktf.IResolvable) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+}
+
+export class LogsIndexExclusionFilterList extends cdktf.ComplexList {
+  public internalValue? : LogsIndexExclusionFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsIndexExclusionFilterOutputReference {
+    return new LogsIndexExclusionFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsIndexFilter {
   /**
   * Logs filter criteria. Only logs matching this filter criteria are considered for this index.
@@ -204,9 +437,10 @@ export class LogsIndex extends cdktf.TerraformResource {
     });
     this._dailyLimit = config.dailyLimit;
     this._disableDailyLimit = config.disableDailyLimit;
+    this._id = config.id;
     this._name = config.name;
     this._retentionDays = config.retentionDays;
-    this._exclusionFilter = config.exclusionFilter;
+    this._exclusionFilter.internalValue = config.exclusionFilter;
     this._filter.internalValue = config.filter;
   }
 
@@ -247,8 +481,19 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -281,20 +526,19 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // exclusion_filter - computed: false, optional: true, required: false
-  private _exclusionFilter?: LogsIndexExclusionFilter[] | cdktf.IResolvable; 
+  private _exclusionFilter = new LogsIndexExclusionFilterList(this, "exclusion_filter", false);
   public get exclusionFilter() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('exclusion_filter');
+    return this._exclusionFilter;
   }
-  public set exclusionFilter(value: LogsIndexExclusionFilter[] | cdktf.IResolvable) {
-    this._exclusionFilter = value;
+  public putExclusionFilter(value: LogsIndexExclusionFilter[] | cdktf.IResolvable) {
+    this._exclusionFilter.internalValue = value;
   }
   public resetExclusionFilter() {
-    this._exclusionFilter = undefined;
+    this._exclusionFilter.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get exclusionFilterInput() {
-    return this._exclusionFilter;
+    return this._exclusionFilter.internalValue;
   }
 
   // filter - computed: false, optional: false, required: true
@@ -318,9 +562,10 @@ export class LogsIndex extends cdktf.TerraformResource {
     return {
       daily_limit: cdktf.numberToTerraform(this._dailyLimit),
       disable_daily_limit: cdktf.booleanToTerraform(this._disableDailyLimit),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       retention_days: cdktf.numberToTerraform(this._retentionDays),
-      exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter),
+      exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter.internalValue),
       filter: logsIndexFilterToTerraform(this._filter.internalValue),
     };
   }

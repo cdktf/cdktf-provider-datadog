@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#id LogsMetric#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the log-based metric. This field can't be updated after creation.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#name LogsMetric#name}
@@ -215,6 +222,102 @@ export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktf.
   }
 }
 
+export class LogsMetricGroupByOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsMetricGroupBy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._tagName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tagName = this._tagName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsMetricGroupBy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._tagName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._tagName = value.tagName;
+    }
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // tag_name - computed: false, optional: false, required: true
+  private _tagName?: string; 
+  public get tagName() {
+    return this.getStringAttribute('tag_name');
+  }
+  public set tagName(value: string) {
+    this._tagName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagNameInput() {
+    return this._tagName;
+  }
+}
+
+export class LogsMetricGroupByList extends cdktf.ComplexList {
+  public internalValue? : LogsMetricGroupBy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsMetricGroupByOutputReference {
+    return new LogsMetricGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric}
@@ -250,10 +353,11 @@ export class LogsMetric extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._name = config.name;
     this._compute.internalValue = config.compute;
     this._filter.internalValue = config.filter;
-    this._groupBy = config.groupBy;
+    this._groupBy.internalValue = config.groupBy;
   }
 
   // ==========
@@ -261,8 +365,19 @@ export class LogsMetric extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -305,20 +420,19 @@ export class LogsMetric extends cdktf.TerraformResource {
   }
 
   // group_by - computed: false, optional: true, required: false
-  private _groupBy?: LogsMetricGroupBy[] | cdktf.IResolvable; 
+  private _groupBy = new LogsMetricGroupByList(this, "group_by", false);
   public get groupBy() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_by');
+    return this._groupBy;
   }
-  public set groupBy(value: LogsMetricGroupBy[] | cdktf.IResolvable) {
-    this._groupBy = value;
+  public putGroupBy(value: LogsMetricGroupBy[] | cdktf.IResolvable) {
+    this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
-    this._groupBy = undefined;
+    this._groupBy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get groupByInput() {
-    return this._groupBy;
+    return this._groupBy.internalValue;
   }
 
   // =========
@@ -327,10 +441,11 @@ export class LogsMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       compute: logsMetricComputeToTerraform(this._compute.internalValue),
       filter: logsMetricFilterToTerraform(this._filter.internalValue),
-      group_by: cdktf.listMapper(logsMetricGroupByToTerraform)(this._groupBy),
+      group_by: cdktf.listMapper(logsMetricGroupByToTerraform)(this._groupBy.internalValue),
     };
   }
 }

@@ -14,6 +14,13 @@ export interface DataDatadogSecurityMonitoringRulesConfig extends cdktf.Terrafor
   */
   readonly defaultOnlyFilter?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules#id DataDatadogSecurityMonitoringRules#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A rule name to limit the search
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/security_monitoring_rules#name_filter DataDatadogSecurityMonitoringRules#name_filter}
@@ -717,6 +724,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       lifecycle: config.lifecycle
     });
     this._defaultOnlyFilter = config.defaultOnlyFilter;
+    this._id = config.id;
     this._nameFilter = config.nameFilter;
     this._tagsFilter = config.tagsFilter;
     this._userOnlyFilter = config.userOnlyFilter;
@@ -743,8 +751,19 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name_filter - computed: false, optional: true, required: false
@@ -813,6 +832,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_only_filter: cdktf.booleanToTerraform(this._defaultOnlyFilter),
+      id: cdktf.stringToTerraform(this._id),
       name_filter: cdktf.stringToTerraform(this._nameFilter),
       tags_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._tagsFilter),
       user_only_filter: cdktf.booleanToTerraform(this._userOnlyFilter),
