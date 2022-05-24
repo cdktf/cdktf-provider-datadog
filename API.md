@@ -774,6 +774,7 @@ Name|Description
 [SyntheticsGlobalVariableParseTestOptionsOutputReference](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsoutputreference)|*No description*
 [SyntheticsGlobalVariableParseTestOptionsParserOutputReference](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsparseroutputreference)|*No description*
 [SyntheticsPrivateLocation](#cdktf-provider-datadog-syntheticsprivatelocation)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_private_location datadog_synthetics_private_location}.
+[SyntheticsPrivateLocationMetadataOutputReference](#cdktf-provider-datadog-syntheticsprivatelocationmetadataoutputreference)|*No description*
 [SyntheticsTest](#cdktf-provider-datadog-syntheticstest)|Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test datadog_synthetics_test}.
 [SyntheticsTestApiStepAssertionTargetjsonpathOutputReference](#cdktf-provider-datadog-syntheticstestapistepassertiontargetjsonpathoutputreference)|*No description*
 [SyntheticsTestApiStepExtractedValueParserOutputReference](#cdktf-provider-datadog-syntheticstestapistepextractedvalueparseroutputreference)|*No description*
@@ -1956,6 +1957,7 @@ Name|Description
 [SyntheticsGlobalVariableParseTestOptions](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptions)|*No description*
 [SyntheticsGlobalVariableParseTestOptionsParser](#cdktf-provider-datadog-syntheticsglobalvariableparsetestoptionsparser)|*No description*
 [SyntheticsPrivateLocationConfig](#cdktf-provider-datadog-syntheticsprivatelocationconfig)|*No description*
+[SyntheticsPrivateLocationMetadata](#cdktf-provider-datadog-syntheticsprivatelocationmetadata)|*No description*
 [SyntheticsTestApiStep](#cdktf-provider-datadog-syntheticstestapistep)|*No description*
 [SyntheticsTestApiStepAssertion](#cdktf-provider-datadog-syntheticstestapistepassertion)|*No description*
 [SyntheticsTestApiStepAssertionTargetjsonpath](#cdktf-provider-datadog-syntheticstestapistepassertiontargetjsonpath)|*No description*
@@ -55211,7 +55213,7 @@ new DatadogProvider(scope: Construct, id: string, config?: DatadogProviderConfig
   * **apiKey** (<code>string</code>)  (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable. __*Optional*__
   * **apiUrl** (<code>string</code>)  The API URL. __*Optional*__
   * **appKey** (<code>string</code>)  (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. __*Optional*__
-  * **httpClientRetryEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enables request retries on HTTP status codes 429 and 5xx. __*Optional*__
+  * **httpClientRetryEnabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`. __*Optional*__
   * **httpClientRetryTimeout** (<code>number</code>)  The HTTP request retry timeout period. __*Optional*__
   * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enables validation of the provided API and APP keys during provider initialization. __*Optional*__
 
@@ -55368,6 +55370,7 @@ new Downtime(scope: Construct, id: string, config: DowntimeConfig)
   * **message** (<code>string</code>)  An optional message to provide when creating the downtime, can include notification handles. __*Optional*__
   * **monitorId** (<code>number</code>)  When specified, this downtime will only apply to this monitor. __*Optional*__
   * **monitorTags** (<code>Array<string></code>)  A list of monitor tags (up to 32) to base the scheduled downtime on. __*Optional*__
+  * **muteFirstRecoveryNotification** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  When true the first recovery notification during the downtime will be muted. __*Optional*__
   * **recurrence** (<code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code>)  recurrence block. __*Optional*__
   * **start** (<code>number</code>)  Specify when this downtime should start. __*Optional*__
   * **startDate** (<code>string</code>)  String representing date and time to start the downtime in RFC3339 format. __*Optional*__
@@ -55389,6 +55392,7 @@ Name | Type | Description
 **message** | <code>string</code> | <span></span>
 **monitorId** | <code>number</code> | <span></span>
 **monitorTags** | <code>Array<string></code> | <span></span>
+**muteFirstRecoveryNotification** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **recurrence** | <code>[DowntimeRecurrenceOutputReference](#cdktf-provider-datadog-downtimerecurrenceoutputreference)</code> | <span></span>
 **scope** | <code>Array<string></code> | <span></span>
 **start** | <code>number</code> | <span></span>
@@ -55399,6 +55403,7 @@ Name | Type | Description
 **messageInput**? | <code>string</code> | __*Optional*__
 **monitorIdInput**? | <code>number</code> | __*Optional*__
 **monitorTagsInput**? | <code>Array<string></code> | __*Optional*__
+**muteFirstRecoveryNotificationInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **recurrenceInput**? | <code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code> | __*Optional*__
 **scopeInput**? | <code>Array<string></code> | __*Optional*__
 **startDateInput**? | <code>string</code> | __*Optional*__
@@ -55418,7 +55423,7 @@ putRecurrence(value: DowntimeRecurrence): void
 ```
 
 * **value** (<code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code>)  *No description*
-  * **type** (<code>string</code>)  One of `days`, `weeks`, `months`, or `years`. 
+  * **type** (<code>string</code>)  One of `days`, `weeks`, `months`, `years`, or `rrule`. 
   * **period** (<code>number</code>)  How often to repeat as an integer. __*Optional*__
   * **rrule** (<code>string</code>)  The RRULE standard for defining recurring events. __*Optional*__
   * **untilDate** (<code>number</code>)  The date at which the recurrence should end as a POSIX timestamp. `until_occurrences` and `until_date` are mutually exclusive. __*Optional*__
@@ -55482,6 +55487,18 @@ resetMonitorId(): void
 
 ```ts
 resetMonitorTags(): void
+```
+
+
+
+
+
+#### resetMuteFirstRecoveryNotification() <a id="cdktf-provider-datadog-downtime-resetmutefirstrecoverynotification"></a>
+
+
+
+```ts
+resetMuteFirstRecoveryNotification(): void
 ```
 
 
@@ -56567,6 +56584,7 @@ new LogsArchive(scope: Construct, id: string, config: LogsArchiveConfig)
   * **azureArchive** (<code>[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)</code>)  azure_archive block. __*Optional*__
   * **gcsArchive** (<code>[LogsArchiveGcsArchive](#cdktf-provider-datadog-logsarchivegcsarchive)</code>)  gcs_archive block. __*Optional*__
   * **includeTags** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  To store the tags in the archive, set the value `true`. __*Optional*__
+  * **rehydrationMaxScanSizeInGb** (<code>number</code>)  To limit the rehydration scan size for the archive, set a value in GB. __*Optional*__
   * **rehydrationTags** (<code>Array<string></code>)  An array of tags to add to rehydrated logs from an archive. __*Optional*__
   * **s3Archive** (<code>[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)</code>)  s3_archive block. __*Optional*__
 
@@ -56583,6 +56601,7 @@ Name | Type | Description
 **includeTags** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **query** | <code>string</code> | <span></span>
+**rehydrationMaxScanSizeInGb** | <code>number</code> | <span></span>
 **rehydrationTags** | <code>Array<string></code> | <span></span>
 **s3Archive** | <code>[LogsArchiveS3ArchiveOutputReference](#cdktf-provider-datadog-logsarchives3archiveoutputreference)</code> | <span></span>
 **azureArchiveInput**? | <code>[LogsArchiveAzureArchive](#cdktf-provider-datadog-logsarchiveazurearchive)</code> | __*Optional*__
@@ -56590,6 +56609,7 @@ Name | Type | Description
 **includeTagsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **queryInput**? | <code>string</code> | __*Optional*__
+**rehydrationMaxScanSizeInGbInput**? | <code>number</code> | __*Optional*__
 **rehydrationTagsInput**? | <code>Array<string></code> | __*Optional*__
 **s3ArchiveInput**? | <code>[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -56679,6 +56699,18 @@ resetGcsArchive(): void
 
 ```ts
 resetIncludeTags(): void
+```
+
+
+
+
+
+#### resetRehydrationMaxScanSizeInGb() <a id="cdktf-provider-datadog-logsarchive-resetrehydrationmaxscansizeingb"></a>
+
+
+
+```ts
+resetRehydrationMaxScanSizeInGb(): void
 ```
 
 
@@ -60108,7 +60140,7 @@ new Monitor(scope: Construct, id: string, config: MonitorConfig)
   * **requireFullWindow** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean indicating whether this monitor needs a full window of data before it's evaluated. __*Optional*__
   * **restrictedRoles** (<code>Array<string></code>)  A list of unique role identifiers to define which roles are allowed to edit the monitor. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your monitor. __*Optional*__
-  * **timeoutH** (<code>number</code>)  The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state. __*Optional*__
+  * **timeoutH** (<code>number</code>)  The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. __*Optional*__
   * **validate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  If set to `false`, skip the validation call done during plan. __*Optional*__
 
 
@@ -61518,7 +61550,7 @@ putOptions(value: SecurityMonitoringRuleOptions): void
 * **value** (<code>[SecurityMonitoringRuleOptions](#cdktf-provider-datadog-securitymonitoringruleoptions)</code>)  *No description*
   * **keepAlive** (<code>number</code>)  Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. 
   * **maxSignalDuration** (<code>number</code>)  A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. 
-  * **detectionMethod** (<code>string</code>)  The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`. __*Optional*__
+  * **detectionMethod** (<code>string</code>)  The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`. __*Optional*__
   * **evaluationWindow** (<code>number</code>)  A time window is specified to match when at least one of the cases matches true. __*Optional*__
   * **impossibleTravelOptions** (<code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code>)  impossible_travel_options block. __*Optional*__
   * **newValueOptions** (<code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code>)  new_value_options block. __*Optional*__
@@ -62467,6 +62499,7 @@ new SyntheticsPrivateLocation(scope: Construct, id: string, config: SyntheticsPr
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **name** (<code>string</code>)  Synthetics private location name. 
   * **description** (<code>string</code>)  Description of the private location. __*Optional*__
+  * **metadata** (<code>[SyntheticsPrivateLocationMetadata](#cdktf-provider-datadog-syntheticsprivatelocationmetadata)</code>)  metadata block. __*Optional*__
   * **tags** (<code>Array<string></code>)  A list of tags to associate with your synthetics private location. __*Optional*__
 
 
@@ -62479,14 +62512,30 @@ Name | Type | Description
 **config** | <code>string</code> | <span></span>
 **description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**metadata** | <code>[SyntheticsPrivateLocationMetadataOutputReference](#cdktf-provider-datadog-syntheticsprivatelocationmetadataoutputreference)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **tags** | <code>Array<string></code> | <span></span>
 **descriptionInput**? | <code>string</code> | __*Optional*__
+**metadataInput**? | <code>[SyntheticsPrivateLocationMetadata](#cdktf-provider-datadog-syntheticsprivatelocationmetadata)</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **tagsInput**? | <code>Array<string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
+
+
+#### putMetadata(value) <a id="cdktf-provider-datadog-syntheticsprivatelocation-putmetadata"></a>
+
+
+
+```ts
+putMetadata(value: SyntheticsPrivateLocationMetadata): void
+```
+
+* **value** (<code>[SyntheticsPrivateLocationMetadata](#cdktf-provider-datadog-syntheticsprivatelocationmetadata)</code>)  *No description*
+  * **restrictedRoles** (<code>Array<string></code>)  A list of role identifiers pulled from the Roles API to restrict read and write access. __*Optional*__
+
+
 
 
 #### resetDescription() <a id="cdktf-provider-datadog-syntheticsprivatelocation-resetdescription"></a>
@@ -62495,6 +62544,18 @@ Name | Type | Description
 
 ```ts
 resetDescription(): void
+```
+
+
+
+
+
+#### resetMetadata() <a id="cdktf-provider-datadog-syntheticsprivatelocation-resetmetadata"></a>
+
+
+
+```ts
+resetMetadata(): void
 ```
 
 
@@ -62524,6 +62585,53 @@ protected synthesizeAttributes(): Map<string, any>
 
 __Returns__:
 * <code>Map<string, any></code>
+
+
+
+## class SyntheticsPrivateLocationMetadataOutputReference  <a id="cdktf-provider-datadog-syntheticsprivatelocationmetadataoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new SyntheticsPrivateLocationMetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**restrictedRoles** | <code>Array<string></code> | <span></span>
+**internalValue**? | <code>[SyntheticsPrivateLocationMetadata](#cdktf-provider-datadog-syntheticsprivatelocationmetadata)</code> | __*Optional*__
+**restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
+
+### Methods
+
+
+#### resetRestrictedRoles() <a id="cdktf-provider-datadog-syntheticsprivatelocationmetadataoutputreference-resetrestrictedroles"></a>
+
+
+
+```ts
+resetRestrictedRoles(): void
+```
+
+
+
+
 
 
 
@@ -62648,6 +62756,7 @@ putOptionsList(value: SyntheticsTestOptionsList): void
   * **monitorOptions** (<code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code>)  monitor_options block. __*Optional*__
   * **monitorPriority** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. __*Optional*__
   * **noScreenshot** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Prevents saving screenshots of the steps. __*Optional*__
+  * **restrictedRoles** (<code>Array<string></code>)  A list of role identifiers pulled from the Roles API to restrict read and write access. __*Optional*__
   * **retry** (<code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code>)  retry block. __*Optional*__
 
 
@@ -64348,6 +64457,7 @@ Name | Type | Description
 **monitorOptions** | <code>[SyntheticsTestOptionsListMonitorOptionsOutputReference](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptionsoutputreference)</code> | <span></span>
 **monitorPriority** | <code>number</code> | <span></span>
 **noScreenshot** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**restrictedRoles** | <code>Array<string></code> | <span></span>
 **retry** | <code>[SyntheticsTestOptionsListRetryOutputReference](#cdktf-provider-datadog-syntheticstestoptionslistretryoutputreference)</code> | <span></span>
 **tickEvery** | <code>number</code> | <span></span>
 **acceptSelfSignedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
@@ -64361,6 +64471,7 @@ Name | Type | Description
 **monitorOptionsInput**? | <code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code> | __*Optional*__
 **monitorPriorityInput**? | <code>number</code> | __*Optional*__
 **noScreenshotInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**restrictedRolesInput**? | <code>Array<string></code> | __*Optional*__
 **retryInput**? | <code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code> | __*Optional*__
 **tickEveryInput**? | <code>number</code> | __*Optional*__
 
@@ -64510,6 +64621,18 @@ resetMonitorPriority(): void
 
 ```ts
 resetNoScreenshot(): void
+```
+
+
+
+
+
+#### resetRestrictedRoles() <a id="cdktf-provider-datadog-syntheticstestoptionslistoutputreference-resetrestrictedroles"></a>
+
+
+
+```ts
+resetRestrictedRoles(): void
 ```
 
 
@@ -82313,7 +82436,7 @@ Name | Type | Description
 **apiKey**? | <code>string</code> | (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.<br/>__*Optional*__
 **apiUrl**? | <code>string</code> | The API URL.<br/>__*Optional*__
 **appKey**? | <code>string</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.<br/>__*Optional*__
-**httpClientRetryEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enables request retries on HTTP status codes 429 and 5xx.<br/>__*Optional*__
+**httpClientRetryEnabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.<br/>__*Optional*__
 **httpClientRetryTimeout**? | <code>number</code> | The HTTP request retry timeout period.<br/>__*Optional*__
 **validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enables validation of the provided API and APP keys during provider initialization.<br/>__*Optional*__
 
@@ -82337,6 +82460,7 @@ Name | Type | Description
 **message**? | <code>string</code> | An optional message to provide when creating the downtime, can include notification handles.<br/>__*Optional*__
 **monitorId**? | <code>number</code> | When specified, this downtime will only apply to this monitor.<br/>__*Optional*__
 **monitorTags**? | <code>Array<string></code> | A list of monitor tags (up to 32) to base the scheduled downtime on.<br/>__*Optional*__
+**muteFirstRecoveryNotification**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | When true the first recovery notification during the downtime will be muted.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **recurrence**? | <code>[DowntimeRecurrence](#cdktf-provider-datadog-downtimerecurrence)</code> | recurrence block.<br/>__*Optional*__
 **start**? | <code>number</code> | Specify when this downtime should start.<br/>__*Optional*__
@@ -82354,7 +82478,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**type** | <code>string</code> | One of `days`, `weeks`, `months`, or `years`.
+**type** | <code>string</code> | One of `days`, `weeks`, `months`, `years`, or `rrule`.
 **period**? | <code>number</code> | How often to repeat as an integer.<br/>__*Optional*__
 **rrule**? | <code>string</code> | The RRULE standard for defining recurring events.<br/>__*Optional*__
 **untilDate**? | <code>number</code> | The date at which the recurrence should end as a POSIX timestamp. `until_occurrences` and `until_date` are mutually exclusive.<br/>__*Optional*__
@@ -82596,6 +82720,7 @@ Name | Type | Description
 **includeTags**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | To store the tags in the archive, set the value `true`.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**rehydrationMaxScanSizeInGb**? | <code>number</code> | To limit the rehydration scan size for the archive, set a value in GB.<br/>__*Optional*__
 **rehydrationTags**? | <code>Array<string></code> | An array of tags to add to rehydrated logs from an archive.<br/>__*Optional*__
 **s3Archive**? | <code>[LogsArchiveS3Archive](#cdktf-provider-datadog-logsarchives3archive)</code> | s3_archive block.<br/>__*Optional*__
 
@@ -83583,7 +83708,7 @@ Name | Type | Description
 **requireFullWindow**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated.<br/>__*Optional*__
 **restrictedRoles**? | <code>Array<string></code> | A list of unique role identifiers to define which roles are allowed to edit the monitor.<br/>__*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your monitor.<br/>__*Optional*__
-**timeoutH**? | <code>number</code> | The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state.<br/>__*Optional*__
+**timeoutH**? | <code>number</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state.<br/>__*Optional*__
 **validate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | If set to `false`, skip the validation call done during plan.<br/>__*Optional*__
 
 
@@ -83907,7 +84032,7 @@ Name | Type | Description
 -----|------|-------------
 **keepAlive** | <code>number</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window.
 **maxSignalDuration** | <code>number</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration.
-**detectionMethod**? | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`.<br/>__*Optional*__
+**detectionMethod**? | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`.<br/>__*Optional*__
 **evaluationWindow**? | <code>number</code> | A time window is specified to match when at least one of the cases matches true.<br/>__*Optional*__
 **impossibleTravelOptions**? | <code>[SecurityMonitoringRuleOptionsImpossibleTravelOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsimpossibletraveloptions)</code> | impossible_travel_options block.<br/>__*Optional*__
 **newValueOptions**? | <code>[SecurityMonitoringRuleOptionsNewValueOptions](#cdktf-provider-datadog-securitymonitoringruleoptionsnewvalueoptions)</code> | new_value_options block.<br/>__*Optional*__
@@ -84120,8 +84245,22 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **description**? | <code>string</code> | Description of the private location.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**metadata**? | <code>[SyntheticsPrivateLocationMetadata](#cdktf-provider-datadog-syntheticsprivatelocationmetadata)</code> | metadata block.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **tags**? | <code>Array<string></code> | A list of tags to associate with your synthetics private location.<br/>__*Optional*__
+
+
+
+## struct SyntheticsPrivateLocationMetadata  <a id="cdktf-provider-datadog-syntheticsprivatelocationmetadata"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**restrictedRoles**? | <code>Array<string></code> | A list of role identifiers pulled from the Roles API to restrict read and write access.<br/>__*Optional*__
 
 
 
@@ -84546,6 +84685,7 @@ Name | Type | Description
 **monitorOptions**? | <code>[SyntheticsTestOptionsListMonitorOptions](#cdktf-provider-datadog-syntheticstestoptionslistmonitoroptions)</code> | monitor_options block.<br/>__*Optional*__
 **monitorPriority**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.<br/>__*Optional*__
 **noScreenshot**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Prevents saving screenshots of the steps.<br/>__*Optional*__
+**restrictedRoles**? | <code>Array<string></code> | A list of role identifiers pulled from the Roles API to restrict read and write access.<br/>__*Optional*__
 **retry**? | <code>[SyntheticsTestOptionsListRetry](#cdktf-provider-datadog-syntheticstestoptionslistretry)</code> | retry block.<br/>__*Optional*__
 
 

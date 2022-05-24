@@ -26,7 +26,7 @@ export interface DatadogProviderConfig {
   */
   readonly appKey?: string;
   /**
-  * Enables request retries on HTTP status codes 429 and 5xx.
+  * Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
   */
@@ -77,7 +77,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'datadog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'DataDog/datadog'

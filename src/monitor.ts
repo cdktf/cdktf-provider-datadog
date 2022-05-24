@@ -152,7 +152,7 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   */
   readonly tags?: string[];
   /**
-  * The number of hours of the monitor not reporting data before it will automatically resolve from a triggered state.
+  * The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#timeout_h Monitor#timeout_h}
   */
@@ -517,7 +517,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

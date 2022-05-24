@@ -293,7 +293,7 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
 }
 export interface SecurityMonitoringRuleOptions {
   /**
-  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`.
+  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
   */
@@ -611,7 +611,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
