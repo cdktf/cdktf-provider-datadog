@@ -38,6 +38,12 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly monitorTags?: string[];
   /**
+  * When true the first recovery notification during the downtime will be muted
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
+  */
+  readonly muteFirstRecoveryNotification?: boolean | cdktf.IResolvable;
+  /**
   * specify the group scope to which this downtime applies. For everything use '*'
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#scope Downtime#scope}
@@ -76,13 +82,13 @@ export interface DowntimeRecurrence {
   */
   readonly period?: number;
   /**
-  * The RRULE standard for defining recurring events. For example, to have a recurring event on the first day of each month, use `FREQ=MONTHLY;INTERVAL=1`. Most common rrule options from the iCalendar Spec are supported. Attributes specifying the duration in RRULE are not supported (for example, `DTSTART`, `DTEND`, `DURATION`).
+  * The RRULE standard for defining recurring events. For example, to have a recurring event on the first day of each month, use `FREQ=MONTHLY;INTERVAL=1`. Most common rrule options from the iCalendar Spec are supported. Attributes specifying the duration in RRULE are not supported (for example, `DTSTART`, `DTEND`, `DURATION`). Only applicable when `type` is `rrule`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#rrule Downtime#rrule}
   */
   readonly rrule?: string;
   /**
-  * One of `days`, `weeks`, `months`, or `years`
+  * One of `days`, `weeks`, `months`, `years`, or `rrule`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#type Downtime#type}
   */
@@ -304,7 +310,7 @@ export class Downtime extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_downtime',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -317,6 +323,7 @@ export class Downtime extends cdktf.TerraformResource {
     this._message = config.message;
     this._monitorId = config.monitorId;
     this._monitorTags = config.monitorTags;
+    this._muteFirstRecoveryNotification = config.muteFirstRecoveryNotification;
     this._scope = config.scope;
     this._start = config.start;
     this._startDate = config.startDate;
@@ -428,6 +435,22 @@ export class Downtime extends cdktf.TerraformResource {
     return this._monitorTags;
   }
 
+  // mute_first_recovery_notification - computed: false, optional: true, required: false
+  private _muteFirstRecoveryNotification?: boolean | cdktf.IResolvable; 
+  public get muteFirstRecoveryNotification() {
+    return this.getBooleanAttribute('mute_first_recovery_notification');
+  }
+  public set muteFirstRecoveryNotification(value: boolean | cdktf.IResolvable) {
+    this._muteFirstRecoveryNotification = value;
+  }
+  public resetMuteFirstRecoveryNotification() {
+    this._muteFirstRecoveryNotification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get muteFirstRecoveryNotificationInput() {
+    return this._muteFirstRecoveryNotification;
+  }
+
   // scope - computed: false, optional: false, required: true
   private _scope?: string[]; 
   public get scope() {
@@ -516,6 +539,7 @@ export class Downtime extends cdktf.TerraformResource {
       message: cdktf.stringToTerraform(this._message),
       monitor_id: cdktf.numberToTerraform(this._monitorId),
       monitor_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._monitorTags),
+      mute_first_recovery_notification: cdktf.booleanToTerraform(this._muteFirstRecoveryNotification),
       scope: cdktf.listMapper(cdktf.stringToTerraform)(this._scope),
       start: cdktf.numberToTerraform(this._start),
       start_date: cdktf.stringToTerraform(this._startDate),

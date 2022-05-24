@@ -26,6 +26,12 @@ export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   */
   readonly query: string;
   /**
+  * To limit the rehydration scan size for the archive, set a value in GB.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+  */
+  readonly rehydrationMaxScanSizeInGb?: number;
+  /**
   * An array of tags to add to rehydrated logs from an archive.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
@@ -532,7 +538,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_archive',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -543,6 +549,7 @@ export class LogsArchive extends cdktf.TerraformResource {
     this._includeTags = config.includeTags;
     this._name = config.name;
     this._query = config.query;
+    this._rehydrationMaxScanSizeInGb = config.rehydrationMaxScanSizeInGb;
     this._rehydrationTags = config.rehydrationTags;
     this._azureArchive.internalValue = config.azureArchive;
     this._gcsArchive.internalValue = config.gcsArchive;
@@ -598,6 +605,22 @@ export class LogsArchive extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
     return this._query;
+  }
+
+  // rehydration_max_scan_size_in_gb - computed: false, optional: true, required: false
+  private _rehydrationMaxScanSizeInGb?: number; 
+  public get rehydrationMaxScanSizeInGb() {
+    return this.getNumberAttribute('rehydration_max_scan_size_in_gb');
+  }
+  public set rehydrationMaxScanSizeInGb(value: number) {
+    this._rehydrationMaxScanSizeInGb = value;
+  }
+  public resetRehydrationMaxScanSizeInGb() {
+    this._rehydrationMaxScanSizeInGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rehydrationMaxScanSizeInGbInput() {
+    return this._rehydrationMaxScanSizeInGb;
   }
 
   // rehydration_tags - computed: false, optional: true, required: false
@@ -673,6 +696,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       include_tags: cdktf.booleanToTerraform(this._includeTags),
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),
+      rehydration_max_scan_size_in_gb: cdktf.numberToTerraform(this._rehydrationMaxScanSizeInGb),
       rehydration_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._rehydrationTags),
       azure_archive: logsArchiveAzureArchiveToTerraform(this._azureArchive.internalValue),
       gcs_archive: logsArchiveGcsArchiveToTerraform(this._gcsArchive.internalValue),

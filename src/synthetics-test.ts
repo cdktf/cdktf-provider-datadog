@@ -3197,6 +3197,12 @@ export interface SyntheticsTestOptionsList {
   */
   readonly noScreenshot?: boolean | cdktf.IResolvable;
   /**
+  * A list of role identifiers pulled from the Roles API to restrict read and write access.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+  */
+  readonly restrictedRoles?: string[];
+  /**
   * How often the test should run (in seconds).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#tick_every SyntheticsTest#tick_every}
@@ -3231,6 +3237,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     monitor_name: cdktf.stringToTerraform(struct!.monitorName),
     monitor_priority: cdktf.numberToTerraform(struct!.monitorPriority),
     no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
+    restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.restrictedRoles),
     tick_every: cdktf.numberToTerraform(struct!.tickEvery),
     monitor_options: syntheticsTestOptionsListMonitorOptionsToTerraform(struct!.monitorOptions),
     retry: syntheticsTestOptionsListRetryToTerraform(struct!.retry),
@@ -3287,6 +3294,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.noScreenshot = this._noScreenshot;
     }
+    if (this._restrictedRoles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restrictedRoles = this._restrictedRoles;
+    }
     if (this._tickEvery !== undefined) {
       hasAnyValues = true;
       internalValueResult.tickEvery = this._tickEvery;
@@ -3314,6 +3325,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._monitorName = undefined;
       this._monitorPriority = undefined;
       this._noScreenshot = undefined;
+      this._restrictedRoles = undefined;
       this._tickEvery = undefined;
       this._monitorOptions.internalValue = undefined;
       this._retry.internalValue = undefined;
@@ -3329,6 +3341,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._monitorName = value.monitorName;
       this._monitorPriority = value.monitorPriority;
       this._noScreenshot = value.noScreenshot;
+      this._restrictedRoles = value.restrictedRoles;
       this._tickEvery = value.tickEvery;
       this._monitorOptions.internalValue = value.monitorOptions;
       this._retry.internalValue = value.retry;
@@ -3477,6 +3490,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get noScreenshotInput() {
     return this._noScreenshot;
+  }
+
+  // restricted_roles - computed: false, optional: true, required: false
+  private _restrictedRoles?: string[]; 
+  public get restrictedRoles() {
+    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
+  }
+  public set restrictedRoles(value: string[]) {
+    this._restrictedRoles = value;
+  }
+  public resetRestrictedRoles() {
+    this._restrictedRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedRolesInput() {
+    return this._restrictedRoles;
   }
 
   // tick_every - computed: false, optional: false, required: true
@@ -4663,7 +4692,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.11.0',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
