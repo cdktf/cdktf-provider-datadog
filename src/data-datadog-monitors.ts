@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogMonitorsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitors#id DataDatadogMonitors#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
@@ -135,6 +142,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._monitorTagsFilter = config.monitorTagsFilter;
     this._nameFilter = config.nameFilter;
     this._tagsFilter = config.tagsFilter;
@@ -145,8 +153,19 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // monitor_tags_filter - computed: false, optional: true, required: false
@@ -209,6 +228,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       monitor_tags_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._monitorTagsFilter),
       name_filter: cdktf.stringToTerraform(this._nameFilter),
       tags_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._tagsFilter),

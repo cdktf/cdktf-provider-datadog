@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#id LogsArchive#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * To store the tags in the archive, set the value `true`. If it is set to `false`, the tags will be dropped when the logs are sent to the archive.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#include_tags LogsArchive#include_tags}
@@ -546,6 +553,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._includeTags = config.includeTags;
     this._name = config.name;
     this._query = config.query;
@@ -561,8 +569,19 @@ export class LogsArchive extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_tags - computed: false, optional: true, required: false
@@ -693,6 +712,7 @@ export class LogsArchive extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       include_tags: cdktf.booleanToTerraform(this._includeTags),
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),

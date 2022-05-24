@@ -7,6 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataDatadogIpRangesConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges#id DataDatadogIpRanges#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -43,6 +50,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
   }
 
   // ==========
@@ -80,8 +88,19 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // logs_ipv4 - computed: true, optional: false, required: false
@@ -110,8 +129,9 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   }
 
   // synthetics_ipv4_by_location - computed: true, optional: false, required: false
-  public syntheticsIpv4ByLocation(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'synthetics_ipv4_by_location').lookup(key);
+  private _syntheticsIpv4ByLocation = new cdktf.StringMap(this, "synthetics_ipv4_by_location");
+  public get syntheticsIpv4ByLocation() {
+    return this._syntheticsIpv4ByLocation;
   }
 
   // synthetics_ipv6 - computed: true, optional: false, required: false
@@ -120,8 +140,9 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   }
 
   // synthetics_ipv6_by_location - computed: true, optional: false, required: false
-  public syntheticsIpv6ByLocation(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'synthetics_ipv6_by_location').lookup(key);
+  private _syntheticsIpv6ByLocation = new cdktf.StringMap(this, "synthetics_ipv6_by_location");
+  public get syntheticsIpv6ByLocation() {
+    return this._syntheticsIpv6ByLocation;
   }
 
   // webhooks_ipv4 - computed: true, optional: false, required: false
@@ -140,6 +161,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

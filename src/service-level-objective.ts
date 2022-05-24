@@ -26,6 +26,13 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   */
   readonly groups?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A static set of monitor IDs to use as part of the SLO
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
@@ -191,6 +198,134 @@ export function serviceLevelObjectiveThresholdsToTerraform(struct?: ServiceLevel
   }
 }
 
+export class ServiceLevelObjectiveThresholdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceLevelObjectiveThresholds | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._timeframe !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeframe = this._timeframe;
+    }
+    if (this._warning !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.warning = this._warning;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceLevelObjectiveThresholds | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._target = undefined;
+      this._timeframe = undefined;
+      this._warning = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._target = value.target;
+      this._timeframe = value.timeframe;
+      this._warning = value.warning;
+    }
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target?: number; 
+  public get target() {
+    return this.getNumberAttribute('target');
+  }
+  public set target(value: number) {
+    this._target = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+
+  // target_display - computed: true, optional: false, required: false
+  public get targetDisplay() {
+    return this.getStringAttribute('target_display');
+  }
+
+  // timeframe - computed: false, optional: false, required: true
+  private _timeframe?: string; 
+  public get timeframe() {
+    return this.getStringAttribute('timeframe');
+  }
+  public set timeframe(value: string) {
+    this._timeframe = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeframeInput() {
+    return this._timeframe;
+  }
+
+  // warning - computed: false, optional: true, required: false
+  private _warning?: number; 
+  public get warning() {
+    return this.getNumberAttribute('warning');
+  }
+  public set warning(value: number) {
+    this._warning = value;
+  }
+  public resetWarning() {
+    this._warning = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warningInput() {
+    return this._warning;
+  }
+
+  // warning_display - computed: true, optional: false, required: false
+  public get warningDisplay() {
+    return this.getStringAttribute('warning_display');
+  }
+}
+
+export class ServiceLevelObjectiveThresholdsList extends cdktf.ComplexList {
+  public internalValue? : ServiceLevelObjectiveThresholds[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceLevelObjectiveThresholdsOutputReference {
+    return new ServiceLevelObjectiveThresholdsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective datadog_service_level_objective}
@@ -229,13 +364,14 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
     this._description = config.description;
     this._forceDelete = config.forceDelete;
     this._groups = config.groups;
+    this._id = config.id;
     this._monitorIds = config.monitorIds;
     this._name = config.name;
     this._tags = config.tags;
     this._type = config.type;
     this._validate = config.validate;
     this._query.internalValue = config.query;
-    this._thresholds = config.thresholds;
+    this._thresholds.internalValue = config.thresholds;
   }
 
   // ==========
@@ -291,8 +427,19 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // monitor_ids - computed: false, optional: true, required: false
@@ -386,17 +533,16 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   }
 
   // thresholds - computed: false, optional: false, required: true
-  private _thresholds?: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable; 
+  private _thresholds = new ServiceLevelObjectiveThresholdsList(this, "thresholds", false);
   public get thresholds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('thresholds');
+    return this._thresholds;
   }
-  public set thresholds(value: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable) {
-    this._thresholds = value;
+  public putThresholds(value: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable) {
+    this._thresholds.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdsInput() {
-    return this._thresholds;
+    return this._thresholds.internalValue;
   }
 
   // =========
@@ -408,13 +554,14 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
       groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      id: cdktf.stringToTerraform(this._id),
       monitor_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._monitorIds),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),
       query: serviceLevelObjectiveQueryToTerraform(this._query.internalValue),
-      thresholds: cdktf.listMapper(serviceLevelObjectiveThresholdsToTerraform)(this._thresholds),
+      thresholds: cdktf.listMapper(serviceLevelObjectiveThresholdsToTerraform)(this._thresholds.internalValue),
     };
   }
 }

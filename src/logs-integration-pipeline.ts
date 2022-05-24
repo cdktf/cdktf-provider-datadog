@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface LogsIntegrationPipelineConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline#id LogsIntegrationPipeline#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Boolean value to enable your pipeline.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
@@ -49,6 +56,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._isEnabled = config.isEnabled;
   }
 
@@ -57,8 +65,19 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_enabled - computed: false, optional: true, required: false
@@ -83,6 +102,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
     };
   }

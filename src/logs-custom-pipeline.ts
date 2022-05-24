@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface LogsCustomPipelineConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#id LogsCustomPipeline#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
@@ -47,6 +54,83 @@ export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineF
   }
 }
 
+export class LogsCustomPipelineFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomPipelineFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._query = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._query = value.query;
+    }
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+
+export class LogsCustomPipelineFilterList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomPipelineFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomPipelineFilterOutputReference {
+    return new LogsCustomPipelineFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsCustomPipelineProcessorArithmeticProcessor {
   /**
   * Arithmetic operation between one or more log attributes.
@@ -599,6 +683,102 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(
   }
 }
 
+export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._filter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._filter.internalValue = value.filter;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // filter - computed: false, optional: false, required: true
+  private _filter = new LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: LogsCustomPipelineProcessorCategoryProcessorCategoryFilter) {
+    this._filter.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+}
+
+export class LogsCustomPipelineProcessorCategoryProcessorCategoryList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference {
+    return new LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsCustomPipelineProcessorCategoryProcessor {
   /**
   * If the processor is enabled or not.
@@ -665,9 +845,9 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._category !== undefined) {
+    if (this._category?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.category = this._category;
+      internalValueResult.category = this._category?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -678,14 +858,14 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
       this._isEnabled = undefined;
       this._name = undefined;
       this._target = undefined;
-      this._category = undefined;
+      this._category.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._isEnabled = value.isEnabled;
       this._name = value.name;
       this._target = value.target;
-      this._category = value.category;
+      this._category.internalValue = value.category;
     }
   }
 
@@ -735,17 +915,16 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   }
 
   // category - computed: false, optional: false, required: true
-  private _category?: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable; 
+  private _category = new LogsCustomPipelineProcessorCategoryProcessorCategoryList(this, "category", false);
   public get category() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('category');
+    return this._category;
   }
-  public set category(value: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable) {
-    this._category = value;
+  public putCategory(value: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable) {
+    this._category.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
-    return this._category;
+    return this._category.internalValue;
   }
 }
 export interface LogsCustomPipelineProcessorDateRemapper {
@@ -1629,6 +1808,83 @@ export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: Lo
   }
 }
 
+export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._query = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._query = value.query;
+    }
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+
+export class LogsCustomPipelineProcessorPipelineFilterList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomPipelineProcessorPipelineFilterOutputReference {
+    return new LogsCustomPipelineProcessorPipelineFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor {
   /**
   * Arithmetic operation between one or more log attributes.
@@ -2181,6 +2437,102 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
   }
 }
 
+export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._filter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._filter.internalValue = value.filter;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // filter - computed: false, optional: false, required: true
+  private _filter = new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter) {
+    this._filter.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+}
+
+export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference {
+    return new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
   /**
   * If the processor is enabled or not.
@@ -2247,9 +2599,9 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
       hasAnyValues = true;
       internalValueResult.target = this._target;
     }
-    if (this._category !== undefined) {
+    if (this._category?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.category = this._category;
+      internalValueResult.category = this._category?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2260,14 +2612,14 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
       this._isEnabled = undefined;
       this._name = undefined;
       this._target = undefined;
-      this._category = undefined;
+      this._category.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._isEnabled = value.isEnabled;
       this._name = value.name;
       this._target = value.target;
-      this._category = value.category;
+      this._category.internalValue = value.category;
     }
   }
 
@@ -2317,17 +2669,16 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   }
 
   // category - computed: false, optional: false, required: true
-  private _category?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable; 
+  private _category = new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList(this, "category", false);
   public get category() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('category');
+    return this._category;
   }
-  public set category(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable) {
-    this._category = value;
+  public putCategory(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable) {
+    this._category.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
-    return this._category;
+    return this._category.internalValue;
   }
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
@@ -4199,6 +4550,372 @@ export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?:
   }
 }
 
+export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arithmeticProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arithmeticProcessor = this._arithmeticProcessor?.internalValue;
+    }
+    if (this._attributeRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeRemapper = this._attributeRemapper?.internalValue;
+    }
+    if (this._categoryProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.categoryProcessor = this._categoryProcessor?.internalValue;
+    }
+    if (this._dateRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateRemapper = this._dateRemapper?.internalValue;
+    }
+    if (this._geoIpParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.geoIpParser = this._geoIpParser?.internalValue;
+    }
+    if (this._grokParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grokParser = this._grokParser?.internalValue;
+    }
+    if (this._lookupProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookupProcessor = this._lookupProcessor?.internalValue;
+    }
+    if (this._messageRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.messageRemapper = this._messageRemapper?.internalValue;
+    }
+    if (this._serviceRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceRemapper = this._serviceRemapper?.internalValue;
+    }
+    if (this._statusRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusRemapper = this._statusRemapper?.internalValue;
+    }
+    if (this._stringBuilderProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringBuilderProcessor = this._stringBuilderProcessor?.internalValue;
+    }
+    if (this._traceIdRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.traceIdRemapper = this._traceIdRemapper?.internalValue;
+    }
+    if (this._urlParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urlParser = this._urlParser?.internalValue;
+    }
+    if (this._userAgentParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userAgentParser = this._userAgentParser?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._arithmeticProcessor.internalValue = undefined;
+      this._attributeRemapper.internalValue = undefined;
+      this._categoryProcessor.internalValue = undefined;
+      this._dateRemapper.internalValue = undefined;
+      this._geoIpParser.internalValue = undefined;
+      this._grokParser.internalValue = undefined;
+      this._lookupProcessor.internalValue = undefined;
+      this._messageRemapper.internalValue = undefined;
+      this._serviceRemapper.internalValue = undefined;
+      this._statusRemapper.internalValue = undefined;
+      this._stringBuilderProcessor.internalValue = undefined;
+      this._traceIdRemapper.internalValue = undefined;
+      this._urlParser.internalValue = undefined;
+      this._userAgentParser.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._arithmeticProcessor.internalValue = value.arithmeticProcessor;
+      this._attributeRemapper.internalValue = value.attributeRemapper;
+      this._categoryProcessor.internalValue = value.categoryProcessor;
+      this._dateRemapper.internalValue = value.dateRemapper;
+      this._geoIpParser.internalValue = value.geoIpParser;
+      this._grokParser.internalValue = value.grokParser;
+      this._lookupProcessor.internalValue = value.lookupProcessor;
+      this._messageRemapper.internalValue = value.messageRemapper;
+      this._serviceRemapper.internalValue = value.serviceRemapper;
+      this._statusRemapper.internalValue = value.statusRemapper;
+      this._stringBuilderProcessor.internalValue = value.stringBuilderProcessor;
+      this._traceIdRemapper.internalValue = value.traceIdRemapper;
+      this._urlParser.internalValue = value.urlParser;
+      this._userAgentParser.internalValue = value.userAgentParser;
+    }
+  }
+
+  // arithmetic_processor - computed: false, optional: true, required: false
+  private _arithmeticProcessor = new LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference(this, "arithmetic_processor");
+  public get arithmeticProcessor() {
+    return this._arithmeticProcessor;
+  }
+  public putArithmeticProcessor(value: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor) {
+    this._arithmeticProcessor.internalValue = value;
+  }
+  public resetArithmeticProcessor() {
+    this._arithmeticProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arithmeticProcessorInput() {
+    return this._arithmeticProcessor.internalValue;
+  }
+
+  // attribute_remapper - computed: false, optional: true, required: false
+  private _attributeRemapper = new LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference(this, "attribute_remapper");
+  public get attributeRemapper() {
+    return this._attributeRemapper;
+  }
+  public putAttributeRemapper(value: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper) {
+    this._attributeRemapper.internalValue = value;
+  }
+  public resetAttributeRemapper() {
+    this._attributeRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeRemapperInput() {
+    return this._attributeRemapper.internalValue;
+  }
+
+  // category_processor - computed: false, optional: true, required: false
+  private _categoryProcessor = new LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference(this, "category_processor");
+  public get categoryProcessor() {
+    return this._categoryProcessor;
+  }
+  public putCategoryProcessor(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor) {
+    this._categoryProcessor.internalValue = value;
+  }
+  public resetCategoryProcessor() {
+    this._categoryProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryProcessorInput() {
+    return this._categoryProcessor.internalValue;
+  }
+
+  // date_remapper - computed: false, optional: true, required: false
+  private _dateRemapper = new LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference(this, "date_remapper");
+  public get dateRemapper() {
+    return this._dateRemapper;
+  }
+  public putDateRemapper(value: LogsCustomPipelineProcessorPipelineProcessorDateRemapper) {
+    this._dateRemapper.internalValue = value;
+  }
+  public resetDateRemapper() {
+    this._dateRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateRemapperInput() {
+    return this._dateRemapper.internalValue;
+  }
+
+  // geo_ip_parser - computed: false, optional: true, required: false
+  private _geoIpParser = new LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference(this, "geo_ip_parser");
+  public get geoIpParser() {
+    return this._geoIpParser;
+  }
+  public putGeoIpParser(value: LogsCustomPipelineProcessorPipelineProcessorGeoIpParser) {
+    this._geoIpParser.internalValue = value;
+  }
+  public resetGeoIpParser() {
+    this._geoIpParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get geoIpParserInput() {
+    return this._geoIpParser.internalValue;
+  }
+
+  // grok_parser - computed: false, optional: true, required: false
+  private _grokParser = new LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference(this, "grok_parser");
+  public get grokParser() {
+    return this._grokParser;
+  }
+  public putGrokParser(value: LogsCustomPipelineProcessorPipelineProcessorGrokParser) {
+    this._grokParser.internalValue = value;
+  }
+  public resetGrokParser() {
+    this._grokParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grokParserInput() {
+    return this._grokParser.internalValue;
+  }
+
+  // lookup_processor - computed: false, optional: true, required: false
+  private _lookupProcessor = new LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference(this, "lookup_processor");
+  public get lookupProcessor() {
+    return this._lookupProcessor;
+  }
+  public putLookupProcessor(value: LogsCustomPipelineProcessorPipelineProcessorLookupProcessor) {
+    this._lookupProcessor.internalValue = value;
+  }
+  public resetLookupProcessor() {
+    this._lookupProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookupProcessorInput() {
+    return this._lookupProcessor.internalValue;
+  }
+
+  // message_remapper - computed: false, optional: true, required: false
+  private _messageRemapper = new LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference(this, "message_remapper");
+  public get messageRemapper() {
+    return this._messageRemapper;
+  }
+  public putMessageRemapper(value: LogsCustomPipelineProcessorPipelineProcessorMessageRemapper) {
+    this._messageRemapper.internalValue = value;
+  }
+  public resetMessageRemapper() {
+    this._messageRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageRemapperInput() {
+    return this._messageRemapper.internalValue;
+  }
+
+  // service_remapper - computed: false, optional: true, required: false
+  private _serviceRemapper = new LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference(this, "service_remapper");
+  public get serviceRemapper() {
+    return this._serviceRemapper;
+  }
+  public putServiceRemapper(value: LogsCustomPipelineProcessorPipelineProcessorServiceRemapper) {
+    this._serviceRemapper.internalValue = value;
+  }
+  public resetServiceRemapper() {
+    this._serviceRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRemapperInput() {
+    return this._serviceRemapper.internalValue;
+  }
+
+  // status_remapper - computed: false, optional: true, required: false
+  private _statusRemapper = new LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference(this, "status_remapper");
+  public get statusRemapper() {
+    return this._statusRemapper;
+  }
+  public putStatusRemapper(value: LogsCustomPipelineProcessorPipelineProcessorStatusRemapper) {
+    this._statusRemapper.internalValue = value;
+  }
+  public resetStatusRemapper() {
+    this._statusRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusRemapperInput() {
+    return this._statusRemapper.internalValue;
+  }
+
+  // string_builder_processor - computed: false, optional: true, required: false
+  private _stringBuilderProcessor = new LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference(this, "string_builder_processor");
+  public get stringBuilderProcessor() {
+    return this._stringBuilderProcessor;
+  }
+  public putStringBuilderProcessor(value: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor) {
+    this._stringBuilderProcessor.internalValue = value;
+  }
+  public resetStringBuilderProcessor() {
+    this._stringBuilderProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringBuilderProcessorInput() {
+    return this._stringBuilderProcessor.internalValue;
+  }
+
+  // trace_id_remapper - computed: false, optional: true, required: false
+  private _traceIdRemapper = new LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference(this, "trace_id_remapper");
+  public get traceIdRemapper() {
+    return this._traceIdRemapper;
+  }
+  public putTraceIdRemapper(value: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper) {
+    this._traceIdRemapper.internalValue = value;
+  }
+  public resetTraceIdRemapper() {
+    this._traceIdRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get traceIdRemapperInput() {
+    return this._traceIdRemapper.internalValue;
+  }
+
+  // url_parser - computed: false, optional: true, required: false
+  private _urlParser = new LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference(this, "url_parser");
+  public get urlParser() {
+    return this._urlParser;
+  }
+  public putUrlParser(value: LogsCustomPipelineProcessorPipelineProcessorUrlParser) {
+    this._urlParser.internalValue = value;
+  }
+  public resetUrlParser() {
+    this._urlParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlParserInput() {
+    return this._urlParser.internalValue;
+  }
+
+  // user_agent_parser - computed: false, optional: true, required: false
+  private _userAgentParser = new LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference(this, "user_agent_parser");
+  public get userAgentParser() {
+    return this._userAgentParser;
+  }
+  public putUserAgentParser(value: LogsCustomPipelineProcessorPipelineProcessorUserAgentParser) {
+    this._userAgentParser.internalValue = value;
+  }
+  public resetUserAgentParser() {
+    this._userAgentParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAgentParserInput() {
+    return this._userAgentParser.internalValue;
+  }
+}
+
+export class LogsCustomPipelineProcessorPipelineProcessorList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomPipelineProcessorPipelineProcessorOutputReference {
+    return new LogsCustomPipelineProcessorPipelineProcessorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LogsCustomPipelineProcessorPipeline {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
@@ -4257,13 +4974,13 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._filter !== undefined) {
+    if (this._filter?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.filter = this._filter;
+      internalValueResult.filter = this._filter?.internalValue;
     }
-    if (this._processor !== undefined) {
+    if (this._processor?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.processor = this._processor;
+      internalValueResult.processor = this._processor?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -4273,15 +4990,15 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
       this.isEmptyObject = false;
       this._isEnabled = undefined;
       this._name = undefined;
-      this._filter = undefined;
-      this._processor = undefined;
+      this._filter.internalValue = undefined;
+      this._processor.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._isEnabled = value.isEnabled;
       this._name = value.name;
-      this._filter = value.filter;
-      this._processor = value.processor;
+      this._filter.internalValue = value.filter;
+      this._processor.internalValue = value.processor;
     }
   }
 
@@ -4315,34 +5032,32 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter?: LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable; 
+  private _filter = new LogsCustomPipelineProcessorPipelineFilterList(this, "filter", false);
   public get filter() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter');
+    return this._filter;
   }
-  public set filter(value: LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable) {
-    this._filter = value;
+  public putFilter(value: LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable) {
+    this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter;
+    return this._filter.internalValue;
   }
 
   // processor - computed: false, optional: true, required: false
-  private _processor?: LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable; 
+  private _processor = new LogsCustomPipelineProcessorPipelineProcessorList(this, "processor", false);
   public get processor() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processor');
+    return this._processor;
   }
-  public set processor(value: LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable) {
-    this._processor = value;
+  public putProcessor(value: LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable) {
+    this._processor.internalValue = value;
   }
   public resetProcessor() {
-    this._processor = undefined;
+    this._processor.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorInput() {
-    return this._processor;
+    return this._processor.internalValue;
   }
 }
 export interface LogsCustomPipelineProcessorServiceRemapper {
@@ -5359,6 +6074,394 @@ export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipeli
   }
 }
 
+export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessor | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arithmeticProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arithmeticProcessor = this._arithmeticProcessor?.internalValue;
+    }
+    if (this._attributeRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeRemapper = this._attributeRemapper?.internalValue;
+    }
+    if (this._categoryProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.categoryProcessor = this._categoryProcessor?.internalValue;
+    }
+    if (this._dateRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateRemapper = this._dateRemapper?.internalValue;
+    }
+    if (this._geoIpParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.geoIpParser = this._geoIpParser?.internalValue;
+    }
+    if (this._grokParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grokParser = this._grokParser?.internalValue;
+    }
+    if (this._lookupProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookupProcessor = this._lookupProcessor?.internalValue;
+    }
+    if (this._messageRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.messageRemapper = this._messageRemapper?.internalValue;
+    }
+    if (this._pipeline?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pipeline = this._pipeline?.internalValue;
+    }
+    if (this._serviceRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceRemapper = this._serviceRemapper?.internalValue;
+    }
+    if (this._statusRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusRemapper = this._statusRemapper?.internalValue;
+    }
+    if (this._stringBuilderProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringBuilderProcessor = this._stringBuilderProcessor?.internalValue;
+    }
+    if (this._traceIdRemapper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.traceIdRemapper = this._traceIdRemapper?.internalValue;
+    }
+    if (this._urlParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urlParser = this._urlParser?.internalValue;
+    }
+    if (this._userAgentParser?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userAgentParser = this._userAgentParser?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessor | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._arithmeticProcessor.internalValue = undefined;
+      this._attributeRemapper.internalValue = undefined;
+      this._categoryProcessor.internalValue = undefined;
+      this._dateRemapper.internalValue = undefined;
+      this._geoIpParser.internalValue = undefined;
+      this._grokParser.internalValue = undefined;
+      this._lookupProcessor.internalValue = undefined;
+      this._messageRemapper.internalValue = undefined;
+      this._pipeline.internalValue = undefined;
+      this._serviceRemapper.internalValue = undefined;
+      this._statusRemapper.internalValue = undefined;
+      this._stringBuilderProcessor.internalValue = undefined;
+      this._traceIdRemapper.internalValue = undefined;
+      this._urlParser.internalValue = undefined;
+      this._userAgentParser.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._arithmeticProcessor.internalValue = value.arithmeticProcessor;
+      this._attributeRemapper.internalValue = value.attributeRemapper;
+      this._categoryProcessor.internalValue = value.categoryProcessor;
+      this._dateRemapper.internalValue = value.dateRemapper;
+      this._geoIpParser.internalValue = value.geoIpParser;
+      this._grokParser.internalValue = value.grokParser;
+      this._lookupProcessor.internalValue = value.lookupProcessor;
+      this._messageRemapper.internalValue = value.messageRemapper;
+      this._pipeline.internalValue = value.pipeline;
+      this._serviceRemapper.internalValue = value.serviceRemapper;
+      this._statusRemapper.internalValue = value.statusRemapper;
+      this._stringBuilderProcessor.internalValue = value.stringBuilderProcessor;
+      this._traceIdRemapper.internalValue = value.traceIdRemapper;
+      this._urlParser.internalValue = value.urlParser;
+      this._userAgentParser.internalValue = value.userAgentParser;
+    }
+  }
+
+  // arithmetic_processor - computed: false, optional: true, required: false
+  private _arithmeticProcessor = new LogsCustomPipelineProcessorArithmeticProcessorOutputReference(this, "arithmetic_processor");
+  public get arithmeticProcessor() {
+    return this._arithmeticProcessor;
+  }
+  public putArithmeticProcessor(value: LogsCustomPipelineProcessorArithmeticProcessor) {
+    this._arithmeticProcessor.internalValue = value;
+  }
+  public resetArithmeticProcessor() {
+    this._arithmeticProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arithmeticProcessorInput() {
+    return this._arithmeticProcessor.internalValue;
+  }
+
+  // attribute_remapper - computed: false, optional: true, required: false
+  private _attributeRemapper = new LogsCustomPipelineProcessorAttributeRemapperOutputReference(this, "attribute_remapper");
+  public get attributeRemapper() {
+    return this._attributeRemapper;
+  }
+  public putAttributeRemapper(value: LogsCustomPipelineProcessorAttributeRemapper) {
+    this._attributeRemapper.internalValue = value;
+  }
+  public resetAttributeRemapper() {
+    this._attributeRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeRemapperInput() {
+    return this._attributeRemapper.internalValue;
+  }
+
+  // category_processor - computed: false, optional: true, required: false
+  private _categoryProcessor = new LogsCustomPipelineProcessorCategoryProcessorOutputReference(this, "category_processor");
+  public get categoryProcessor() {
+    return this._categoryProcessor;
+  }
+  public putCategoryProcessor(value: LogsCustomPipelineProcessorCategoryProcessor) {
+    this._categoryProcessor.internalValue = value;
+  }
+  public resetCategoryProcessor() {
+    this._categoryProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryProcessorInput() {
+    return this._categoryProcessor.internalValue;
+  }
+
+  // date_remapper - computed: false, optional: true, required: false
+  private _dateRemapper = new LogsCustomPipelineProcessorDateRemapperOutputReference(this, "date_remapper");
+  public get dateRemapper() {
+    return this._dateRemapper;
+  }
+  public putDateRemapper(value: LogsCustomPipelineProcessorDateRemapper) {
+    this._dateRemapper.internalValue = value;
+  }
+  public resetDateRemapper() {
+    this._dateRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateRemapperInput() {
+    return this._dateRemapper.internalValue;
+  }
+
+  // geo_ip_parser - computed: false, optional: true, required: false
+  private _geoIpParser = new LogsCustomPipelineProcessorGeoIpParserOutputReference(this, "geo_ip_parser");
+  public get geoIpParser() {
+    return this._geoIpParser;
+  }
+  public putGeoIpParser(value: LogsCustomPipelineProcessorGeoIpParser) {
+    this._geoIpParser.internalValue = value;
+  }
+  public resetGeoIpParser() {
+    this._geoIpParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get geoIpParserInput() {
+    return this._geoIpParser.internalValue;
+  }
+
+  // grok_parser - computed: false, optional: true, required: false
+  private _grokParser = new LogsCustomPipelineProcessorGrokParserOutputReference(this, "grok_parser");
+  public get grokParser() {
+    return this._grokParser;
+  }
+  public putGrokParser(value: LogsCustomPipelineProcessorGrokParser) {
+    this._grokParser.internalValue = value;
+  }
+  public resetGrokParser() {
+    this._grokParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grokParserInput() {
+    return this._grokParser.internalValue;
+  }
+
+  // lookup_processor - computed: false, optional: true, required: false
+  private _lookupProcessor = new LogsCustomPipelineProcessorLookupProcessorOutputReference(this, "lookup_processor");
+  public get lookupProcessor() {
+    return this._lookupProcessor;
+  }
+  public putLookupProcessor(value: LogsCustomPipelineProcessorLookupProcessor) {
+    this._lookupProcessor.internalValue = value;
+  }
+  public resetLookupProcessor() {
+    this._lookupProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookupProcessorInput() {
+    return this._lookupProcessor.internalValue;
+  }
+
+  // message_remapper - computed: false, optional: true, required: false
+  private _messageRemapper = new LogsCustomPipelineProcessorMessageRemapperOutputReference(this, "message_remapper");
+  public get messageRemapper() {
+    return this._messageRemapper;
+  }
+  public putMessageRemapper(value: LogsCustomPipelineProcessorMessageRemapper) {
+    this._messageRemapper.internalValue = value;
+  }
+  public resetMessageRemapper() {
+    this._messageRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageRemapperInput() {
+    return this._messageRemapper.internalValue;
+  }
+
+  // pipeline - computed: false, optional: true, required: false
+  private _pipeline = new LogsCustomPipelineProcessorPipelineOutputReference(this, "pipeline");
+  public get pipeline() {
+    return this._pipeline;
+  }
+  public putPipeline(value: LogsCustomPipelineProcessorPipeline) {
+    this._pipeline.internalValue = value;
+  }
+  public resetPipeline() {
+    this._pipeline.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pipelineInput() {
+    return this._pipeline.internalValue;
+  }
+
+  // service_remapper - computed: false, optional: true, required: false
+  private _serviceRemapper = new LogsCustomPipelineProcessorServiceRemapperOutputReference(this, "service_remapper");
+  public get serviceRemapper() {
+    return this._serviceRemapper;
+  }
+  public putServiceRemapper(value: LogsCustomPipelineProcessorServiceRemapper) {
+    this._serviceRemapper.internalValue = value;
+  }
+  public resetServiceRemapper() {
+    this._serviceRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRemapperInput() {
+    return this._serviceRemapper.internalValue;
+  }
+
+  // status_remapper - computed: false, optional: true, required: false
+  private _statusRemapper = new LogsCustomPipelineProcessorStatusRemapperOutputReference(this, "status_remapper");
+  public get statusRemapper() {
+    return this._statusRemapper;
+  }
+  public putStatusRemapper(value: LogsCustomPipelineProcessorStatusRemapper) {
+    this._statusRemapper.internalValue = value;
+  }
+  public resetStatusRemapper() {
+    this._statusRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusRemapperInput() {
+    return this._statusRemapper.internalValue;
+  }
+
+  // string_builder_processor - computed: false, optional: true, required: false
+  private _stringBuilderProcessor = new LogsCustomPipelineProcessorStringBuilderProcessorOutputReference(this, "string_builder_processor");
+  public get stringBuilderProcessor() {
+    return this._stringBuilderProcessor;
+  }
+  public putStringBuilderProcessor(value: LogsCustomPipelineProcessorStringBuilderProcessor) {
+    this._stringBuilderProcessor.internalValue = value;
+  }
+  public resetStringBuilderProcessor() {
+    this._stringBuilderProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringBuilderProcessorInput() {
+    return this._stringBuilderProcessor.internalValue;
+  }
+
+  // trace_id_remapper - computed: false, optional: true, required: false
+  private _traceIdRemapper = new LogsCustomPipelineProcessorTraceIdRemapperOutputReference(this, "trace_id_remapper");
+  public get traceIdRemapper() {
+    return this._traceIdRemapper;
+  }
+  public putTraceIdRemapper(value: LogsCustomPipelineProcessorTraceIdRemapper) {
+    this._traceIdRemapper.internalValue = value;
+  }
+  public resetTraceIdRemapper() {
+    this._traceIdRemapper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get traceIdRemapperInput() {
+    return this._traceIdRemapper.internalValue;
+  }
+
+  // url_parser - computed: false, optional: true, required: false
+  private _urlParser = new LogsCustomPipelineProcessorUrlParserOutputReference(this, "url_parser");
+  public get urlParser() {
+    return this._urlParser;
+  }
+  public putUrlParser(value: LogsCustomPipelineProcessorUrlParser) {
+    this._urlParser.internalValue = value;
+  }
+  public resetUrlParser() {
+    this._urlParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlParserInput() {
+    return this._urlParser.internalValue;
+  }
+
+  // user_agent_parser - computed: false, optional: true, required: false
+  private _userAgentParser = new LogsCustomPipelineProcessorUserAgentParserOutputReference(this, "user_agent_parser");
+  public get userAgentParser() {
+    return this._userAgentParser;
+  }
+  public putUserAgentParser(value: LogsCustomPipelineProcessorUserAgentParser) {
+    this._userAgentParser.internalValue = value;
+  }
+  public resetUserAgentParser() {
+    this._userAgentParser.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userAgentParserInput() {
+    return this._userAgentParser.internalValue;
+  }
+}
+
+export class LogsCustomPipelineProcessorList extends cdktf.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessor[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LogsCustomPipelineProcessorOutputReference {
+    return new LogsCustomPipelineProcessorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline datadog_logs_custom_pipeline}
@@ -5394,10 +6497,11 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._isEnabled = config.isEnabled;
     this._name = config.name;
-    this._filter = config.filter;
-    this._processor = config.processor;
+    this._filter.internalValue = config.filter;
+    this._processor.internalValue = config.processor;
   }
 
   // ==========
@@ -5405,8 +6509,19 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_enabled - computed: false, optional: true, required: false
@@ -5439,34 +6554,32 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter?: LogsCustomPipelineFilter[] | cdktf.IResolvable; 
+  private _filter = new LogsCustomPipelineFilterList(this, "filter", false);
   public get filter() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter');
+    return this._filter;
   }
-  public set filter(value: LogsCustomPipelineFilter[] | cdktf.IResolvable) {
-    this._filter = value;
+  public putFilter(value: LogsCustomPipelineFilter[] | cdktf.IResolvable) {
+    this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter;
+    return this._filter.internalValue;
   }
 
   // processor - computed: false, optional: true, required: false
-  private _processor?: LogsCustomPipelineProcessor[] | cdktf.IResolvable; 
+  private _processor = new LogsCustomPipelineProcessorList(this, "processor", false);
   public get processor() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('processor');
+    return this._processor;
   }
-  public set processor(value: LogsCustomPipelineProcessor[] | cdktf.IResolvable) {
-    this._processor = value;
+  public putProcessor(value: LogsCustomPipelineProcessor[] | cdktf.IResolvable) {
+    this._processor.internalValue = value;
   }
   public resetProcessor() {
-    this._processor = undefined;
+    this._processor.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get processorInput() {
-    return this._processor;
+    return this._processor.internalValue;
   }
 
   // =========
@@ -5475,10 +6588,11 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
       name: cdktf.stringToTerraform(this._name),
-      filter: cdktf.listMapper(logsCustomPipelineFilterToTerraform)(this._filter),
-      processor: cdktf.listMapper(logsCustomPipelineProcessorToTerraform)(this._processor),
+      filter: cdktf.listMapper(logsCustomPipelineFilterToTerraform)(this._filter.internalValue),
+      processor: cdktf.listMapper(logsCustomPipelineProcessorToTerraform)(this._processor.internalValue),
     };
   }
 }

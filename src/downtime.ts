@@ -20,6 +20,13 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly endDate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#id Downtime#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * An optional message to provide when creating the downtime, can include notification handles
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#message Downtime#message}
@@ -320,6 +327,7 @@ export class Downtime extends cdktf.TerraformResource {
     });
     this._end = config.end;
     this._endDate = config.endDate;
+    this._id = config.id;
     this._message = config.message;
     this._monitorId = config.monitorId;
     this._monitorTags = config.monitorTags;
@@ -383,8 +391,19 @@ export class Downtime extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // message - computed: false, optional: true, required: false
@@ -536,6 +555,7 @@ export class Downtime extends cdktf.TerraformResource {
     return {
       end: cdktf.numberToTerraform(this._end),
       end_date: cdktf.stringToTerraform(this._endDate),
+      id: cdktf.stringToTerraform(this._id),
       message: cdktf.stringToTerraform(this._message),
       monitor_id: cdktf.numberToTerraform(this._monitorId),
       monitor_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._monitorTags),

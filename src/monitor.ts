@@ -40,6 +40,13 @@ For example, if the value is set to `300` (5min), the `timeframe` is set to `las
   */
   readonly groupbySimpleMonitor?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#id Monitor#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#include_tags Monitor#include_tags}
@@ -530,6 +537,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._evaluationDelay = config.evaluationDelay;
     this._forceDelete = config.forceDelete;
     this._groupbySimpleMonitor = config.groupbySimpleMonitor;
+    this._id = config.id;
     this._includeTags = config.includeTags;
     this._locked = config.locked;
     this._message = config.message;
@@ -639,8 +647,19 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // include_tags - computed: false, optional: true, required: false
@@ -994,6 +1013,7 @@ export class Monitor extends cdktf.TerraformResource {
       evaluation_delay: cdktf.numberToTerraform(this._evaluationDelay),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
       groupby_simple_monitor: cdktf.booleanToTerraform(this._groupbySimpleMonitor),
+      id: cdktf.stringToTerraform(this._id),
       include_tags: cdktf.booleanToTerraform(this._includeTags),
       locked: cdktf.booleanToTerraform(this._locked),
       message: cdktf.stringToTerraform(this._message),
