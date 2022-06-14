@@ -33,9 +33,9 @@
     js-tokens "^4.0.0"
 
 "@babel/parser@^7.16.7":
-  version "7.18.4"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.4.tgz#6774231779dd700e0af29f6ad8d479582d7ce5ef"
-  integrity sha512-FDge0dFazETFcxGw/EXzOkN8uJp0PC7Qbm+Pe9T+av2zlBpOgunFHkQPPn+eRuClU73JF+98D531UgayY89tow==
+  version "7.18.5"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.5.tgz#337062363436a893a2d22faa60be5bb37091c83c"
+  integrity sha512-YZWVaglMiplo7v8f1oMQ5ZPQr0vn7HPeZXxXWsxXJRjGVrzUFn9OxFQl1sb5wzfootjA/yChhW84BV+383FSOw==
 
 "@babel/template@^7.16.7":
   version "7.16.7"
@@ -3443,10 +3443,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.58.7:
-  version "0.58.7"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.58.7.tgz#ed861b480406281f0af4aeb6d9ebf9e7aecc3d33"
-  integrity sha512-27gkmgK0HWNURa3NnBzG8Qow1qmjNw3YDgUAc+QasG09EJ4EuwBEy0tnSlMoKLj8LafjW7Mi4GR8V+OSGsfV0w==
+projen@^0.58.11:
+  version "0.58.11"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.58.11.tgz#1d089a9c825aa12e8f321f1909feb99b43a6f467"
+  integrity sha512-Ag12gsgUZQMFYMm7SgxK42+EFlLUX3cDRxFhKRsejDxVNDFdF3G25vxQNaYe1lA7HbSwZ53IWOwLQr3pT9VNVw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
