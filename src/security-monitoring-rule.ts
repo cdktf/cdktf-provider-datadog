@@ -885,13 +885,13 @@ export interface SecurityMonitoringRuleQuery {
   */
   readonly groupByFields?: string[];
   /**
-  * The target field to aggregate over when using the sum or max aggregations.
+  * The target field to aggregate over when using the `sum`, `max`, or `new_value` aggregations.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metric SecurityMonitoringRule#metric}
   */
   readonly metric?: string;
   /**
-  * Name of the query.
+  * Name of the query. Not compatible with `new_value` aggregations.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
   */
@@ -1162,7 +1162,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

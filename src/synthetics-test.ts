@@ -63,7 +63,7 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly status: string;
   /**
-  * The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`.
+  * The subtype of the Synthetic API test. Defaults to `http`. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`, `grpc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#subtype SyntheticsTest#subtype}
   */
@@ -277,7 +277,7 @@ export interface SyntheticsTestApiStepAssertion {
   */
   readonly target?: string;
   /**
-  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`.
+  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `connection`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
   */
@@ -2580,7 +2580,7 @@ export interface SyntheticsTestAssertion {
   */
   readonly target?: string;
   /**
-  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`.
+  * Type of assertion. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `connection`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
   */
@@ -4322,6 +4322,73 @@ export class SyntheticsTestConfigVariableList extends cdktf.ComplexList {
     return new SyntheticsTestConfigVariableOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SyntheticsTestOptionsListCi {
+  /**
+  * Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+  */
+  readonly executionRule?: string;
+}
+
+export function syntheticsTestOptionsListCiToTerraform(struct?: SyntheticsTestOptionsListCiOutputReference | SyntheticsTestOptionsListCi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    execution_rule: cdktf.stringToTerraform(struct!.executionRule),
+  }
+}
+
+export class SyntheticsTestOptionsListCiOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestOptionsListCi | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._executionRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionRule = this._executionRule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestOptionsListCi | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._executionRule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._executionRule = value.executionRule;
+    }
+  }
+
+  // execution_rule - computed: false, optional: true, required: false
+  private _executionRule?: string; 
+  public get executionRule() {
+    return this.getStringAttribute('execution_rule');
+  }
+  public set executionRule(value: string) {
+    this._executionRule = value;
+  }
+  public resetExecutionRule() {
+    this._executionRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionRuleInput() {
+    return this._executionRule;
+  }
+}
 export interface SyntheticsTestOptionsListMonitorOptions {
   /**
   * Specify a renotification frequency.
@@ -4485,6 +4552,128 @@ export class SyntheticsTestOptionsListRetryOutputReference extends cdktf.Complex
     return this._interval;
   }
 }
+export interface SyntheticsTestOptionsListRumSettings {
+  /**
+  * RUM application ID used to collect RUM data for the browser test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#application_id SyntheticsTest#application_id}
+  */
+  readonly applicationId?: string;
+  /**
+  * RUM application API key ID used to collect RUM data for the browser test.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+  */
+  readonly clientTokenId?: number;
+  /**
+  * Determines whether RUM data is collected during test runs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#is_enabled SyntheticsTest#is_enabled}
+  */
+  readonly isEnabled: boolean | cdktf.IResolvable;
+}
+
+export function syntheticsTestOptionsListRumSettingsToTerraform(struct?: SyntheticsTestOptionsListRumSettingsOutputReference | SyntheticsTestOptionsListRumSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    application_id: cdktf.stringToTerraform(struct!.applicationId),
+    client_token_id: cdktf.numberToTerraform(struct!.clientTokenId),
+    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
+  }
+}
+
+export class SyntheticsTestOptionsListRumSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestOptionsListRumSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._applicationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applicationId = this._applicationId;
+    }
+    if (this._clientTokenId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientTokenId = this._clientTokenId;
+    }
+    if (this._isEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestOptionsListRumSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._applicationId = undefined;
+      this._clientTokenId = undefined;
+      this._isEnabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._applicationId = value.applicationId;
+      this._clientTokenId = value.clientTokenId;
+      this._isEnabled = value.isEnabled;
+    }
+  }
+
+  // application_id - computed: false, optional: true, required: false
+  private _applicationId?: string; 
+  public get applicationId() {
+    return this.getStringAttribute('application_id');
+  }
+  public set applicationId(value: string) {
+    this._applicationId = value;
+  }
+  public resetApplicationId() {
+    this._applicationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationIdInput() {
+    return this._applicationId;
+  }
+
+  // client_token_id - computed: false, optional: true, required: false
+  private _clientTokenId?: number; 
+  public get clientTokenId() {
+    return this.getNumberAttribute('client_token_id');
+  }
+  public set clientTokenId(value: number) {
+    this._clientTokenId = value;
+  }
+  public resetClientTokenId() {
+    this._clientTokenId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientTokenIdInput() {
+    return this._clientTokenId;
+  }
+
+  // is_enabled - computed: false, optional: false, required: true
+  private _isEnabled?: boolean | cdktf.IResolvable; 
+  public get isEnabled() {
+    return this.getBooleanAttribute('is_enabled');
+  }
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
+    this._isEnabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isEnabledInput() {
+    return this._isEnabled;
+  }
+}
 export interface SyntheticsTestOptionsList {
   /**
   * For SSL test, whether or not the test should allow self signed certificates.
@@ -4551,6 +4740,12 @@ export interface SyntheticsTestOptionsList {
   */
   readonly tickEvery: number;
   /**
+  * ci block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ci SyntheticsTest#ci}
+  */
+  readonly ci?: SyntheticsTestOptionsListCi;
+  /**
   * monitor_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#monitor_options SyntheticsTest#monitor_options}
@@ -4562,6 +4757,12 @@ export interface SyntheticsTestOptionsList {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#retry SyntheticsTest#retry}
   */
   readonly retry?: SyntheticsTestOptionsListRetry;
+  /**
+  * rum_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+  */
+  readonly rumSettings?: SyntheticsTestOptionsListRumSettings;
 }
 
 export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsListOutputReference | SyntheticsTestOptionsList): any {
@@ -4581,8 +4782,10 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
     restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.restrictedRoles),
     tick_every: cdktf.numberToTerraform(struct!.tickEvery),
+    ci: syntheticsTestOptionsListCiToTerraform(struct!.ci),
     monitor_options: syntheticsTestOptionsListMonitorOptionsToTerraform(struct!.monitorOptions),
     retry: syntheticsTestOptionsListRetryToTerraform(struct!.retry),
+    rum_settings: syntheticsTestOptionsListRumSettingsToTerraform(struct!.rumSettings),
   }
 }
 
@@ -4644,6 +4847,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.tickEvery = this._tickEvery;
     }
+    if (this._ci?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ci = this._ci?.internalValue;
+    }
     if (this._monitorOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.monitorOptions = this._monitorOptions?.internalValue;
@@ -4651,6 +4858,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     if (this._retry?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.retry = this._retry?.internalValue;
+    }
+    if (this._rumSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rumSettings = this._rumSettings?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -4669,8 +4880,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._noScreenshot = undefined;
       this._restrictedRoles = undefined;
       this._tickEvery = undefined;
+      this._ci.internalValue = undefined;
       this._monitorOptions.internalValue = undefined;
       this._retry.internalValue = undefined;
+      this._rumSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -4685,8 +4898,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._noScreenshot = value.noScreenshot;
       this._restrictedRoles = value.restrictedRoles;
       this._tickEvery = value.tickEvery;
+      this._ci.internalValue = value.ci;
       this._monitorOptions.internalValue = value.monitorOptions;
       this._retry.internalValue = value.retry;
+      this._rumSettings.internalValue = value.rumSettings;
     }
   }
 
@@ -4863,6 +5078,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     return this._tickEvery;
   }
 
+  // ci - computed: false, optional: true, required: false
+  private _ci = new SyntheticsTestOptionsListCiOutputReference(this, "ci");
+  public get ci() {
+    return this._ci;
+  }
+  public putCi(value: SyntheticsTestOptionsListCi) {
+    this._ci.internalValue = value;
+  }
+  public resetCi() {
+    this._ci.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ciInput() {
+    return this._ci.internalValue;
+  }
+
   // monitor_options - computed: false, optional: true, required: false
   private _monitorOptions = new SyntheticsTestOptionsListMonitorOptionsOutputReference(this, "monitor_options");
   public get monitorOptions() {
@@ -4893,6 +5124,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get retryInput() {
     return this._retry.internalValue;
+  }
+
+  // rum_settings - computed: false, optional: true, required: false
+  private _rumSettings = new SyntheticsTestOptionsListRumSettingsOutputReference(this, "rum_settings");
+  public get rumSettings() {
+    return this._rumSettings;
+  }
+  public putRumSettings(value: SyntheticsTestOptionsListRumSettings) {
+    this._rumSettings.internalValue = value;
+  }
+  public resetRumSettings() {
+    this._rumSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rumSettingsInput() {
+    return this._rumSettings.internalValue;
   }
 }
 export interface SyntheticsTestRequestBasicauth {
@@ -6034,7 +6281,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

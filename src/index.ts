@@ -14,6 +14,7 @@ export * from './integration-aws-log-collection';
 export * from './integration-aws-tag-filter';
 export * from './integration-azure';
 export * from './integration-gcp';
+export * from './integration-opsgenie-service-object';
 export * from './integration-pagerduty';
 export * from './integration-pagerduty-service-object';
 export * from './integration-slack-channel';
