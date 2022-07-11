@@ -60,7 +60,7 @@ export class DashboardJson extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dashboard_json',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -176,7 +176,7 @@ export class DashboardList extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dashboard_list',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.12.0',
+        providerVersion: '3.13.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
