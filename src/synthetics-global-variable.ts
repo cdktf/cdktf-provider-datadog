@@ -302,7 +302,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

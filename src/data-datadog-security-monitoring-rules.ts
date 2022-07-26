@@ -300,6 +300,16 @@ export class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutput
   public get learningDuration() {
     return this.getNumberAttribute('learning_duration');
   }
+
+  // learning_method - computed: true, optional: false, required: false
+  public get learningMethod() {
+    return this.getStringAttribute('learning_method');
+  }
+
+  // learning_threshold - computed: true, optional: false, required: false
+  public get learningThreshold() {
+    return this.getNumberAttribute('learning_threshold');
+  }
 }
 
 export class DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList extends cdktf.ComplexList {
@@ -358,6 +368,11 @@ export class DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference exten
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // decrease_criticality_based_on_env - computed: true, optional: false, required: false
+  public get decreaseCriticalityBasedOnEnv() {
+    return this.getBooleanAttribute('decrease_criticality_based_on_env');
   }
 
   // detection_method - computed: true, optional: false, required: false
@@ -546,6 +561,11 @@ export class DataDatadogSecurityMonitoringRulesRulesQueryOutputReference extends
     return this.getStringAttribute('metric');
   }
 
+  // metrics - computed: true, optional: false, required: false
+  public get metrics() {
+    return this.getListAttribute('metrics');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -715,7 +735,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       terraformResourceType: 'datadog_security_monitoring_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -1412,6 +1412,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly servername?: string;
   /**
+  * For gRPC tests, service to target for healthcheck.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service SyntheticsTest#service}
+  */
+  readonly service?: string;
+  /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
@@ -1449,6 +1455,7 @@ export function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: Synth
     number_of_packets: cdktf.numberToTerraform(struct!.numberOfPackets),
     port: cdktf.numberToTerraform(struct!.port),
     servername: cdktf.stringToTerraform(struct!.servername),
+    service: cdktf.stringToTerraform(struct!.service),
     should_track_hops: cdktf.booleanToTerraform(struct!.shouldTrackHops),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     url: cdktf.stringToTerraform(struct!.url),
@@ -1517,6 +1524,10 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.servername = this._servername;
     }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
     if (this._shouldTrackHops !== undefined) {
       hasAnyValues = true;
       internalValueResult.shouldTrackHops = this._shouldTrackHops;
@@ -1547,6 +1558,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this._numberOfPackets = undefined;
       this._port = undefined;
       this._servername = undefined;
+      this._service = undefined;
       this._shouldTrackHops = undefined;
       this._timeout = undefined;
       this._url = undefined;
@@ -1565,6 +1577,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this._numberOfPackets = value.numberOfPackets;
       this._port = value.port;
       this._servername = value.servername;
+      this._service = value.service;
       this._shouldTrackHops = value.shouldTrackHops;
       this._timeout = value.timeout;
       this._url = value.url;
@@ -1761,6 +1774,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get servernameInput() {
     return this._servername;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
   }
 
   // should_track_hops - computed: false, optional: true, required: false
@@ -5808,6 +5837,12 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly servername?: string;
   /**
+  * For gRPC tests, service to target for healthcheck.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service SyntheticsTest#service}
+  */
+  readonly service?: string;
+  /**
   * This will turn on a traceroute probe to discover all gateways along the path to the host destination. For ICMP tests (`subtype = "icmp"`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
@@ -5843,6 +5878,7 @@ export function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTe
     number_of_packets: cdktf.numberToTerraform(struct!.numberOfPackets),
     port: cdktf.numberToTerraform(struct!.port),
     servername: cdktf.stringToTerraform(struct!.servername),
+    service: cdktf.stringToTerraform(struct!.service),
     should_track_hops: cdktf.booleanToTerraform(struct!.shouldTrackHops),
     timeout: cdktf.numberToTerraform(struct!.timeout),
     url: cdktf.stringToTerraform(struct!.url),
@@ -5903,6 +5939,10 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.servername = this._servername;
     }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
     if (this._shouldTrackHops !== undefined) {
       hasAnyValues = true;
       internalValueResult.shouldTrackHops = this._shouldTrackHops;
@@ -5931,6 +5971,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       this._numberOfPackets = undefined;
       this._port = undefined;
       this._servername = undefined;
+      this._service = undefined;
       this._shouldTrackHops = undefined;
       this._timeout = undefined;
       this._url = undefined;
@@ -5947,6 +5988,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       this._numberOfPackets = value.numberOfPackets;
       this._port = value.port;
       this._servername = value.servername;
+      this._service = value.service;
       this._shouldTrackHops = value.shouldTrackHops;
       this._timeout = value.timeout;
       this._url = value.url;
@@ -6111,6 +6153,22 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get servernameInput() {
     return this._servername;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
   }
 
   // should_track_hops - computed: false, optional: true, required: false
@@ -6281,7 +6339,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

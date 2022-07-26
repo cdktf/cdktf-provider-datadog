@@ -42,7 +42,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

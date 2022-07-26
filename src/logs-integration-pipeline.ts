@@ -48,7 +48,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_integration_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
