@@ -126,7 +126,7 @@ export class DataDatadogCloudWorkloadSecurityAgentRules extends cdktf.TerraformD
       terraformResourceType: 'datadog_cloud_workload_security_agent_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

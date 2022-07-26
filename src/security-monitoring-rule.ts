@@ -459,7 +459,19 @@ export interface SecurityMonitoringRuleOptionsNewValueOptions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
   */
-  readonly learningDuration: number;
+  readonly learningDuration?: number;
+  /**
+  * The learning method used to determine when signals should be generated for values that weren't learned. Valid values are `duration`, `threshold`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
+  */
+  readonly learningMethod?: string;
+  /**
+  * A number of occurrences after which signals are generated for values that weren't learned. Valid values are `0`, `1`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
+  */
+  readonly learningThreshold?: number;
 }
 
 export function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?: SecurityMonitoringRuleOptionsNewValueOptionsOutputReference | SecurityMonitoringRuleOptionsNewValueOptions): any {
@@ -470,6 +482,8 @@ export function securityMonitoringRuleOptionsNewValueOptionsToTerraform(struct?:
   return {
     forget_after: cdktf.numberToTerraform(struct!.forgetAfter),
     learning_duration: cdktf.numberToTerraform(struct!.learningDuration),
+    learning_method: cdktf.stringToTerraform(struct!.learningMethod),
+    learning_threshold: cdktf.numberToTerraform(struct!.learningThreshold),
   }
 }
 
@@ -495,6 +509,14 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
       hasAnyValues = true;
       internalValueResult.learningDuration = this._learningDuration;
     }
+    if (this._learningMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.learningMethod = this._learningMethod;
+    }
+    if (this._learningThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.learningThreshold = this._learningThreshold;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -503,11 +525,15 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
       this.isEmptyObject = false;
       this._forgetAfter = undefined;
       this._learningDuration = undefined;
+      this._learningMethod = undefined;
+      this._learningThreshold = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._forgetAfter = value.forgetAfter;
       this._learningDuration = value.learningDuration;
+      this._learningMethod = value.learningMethod;
+      this._learningThreshold = value.learningThreshold;
     }
   }
 
@@ -524,7 +550,7 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
     return this._forgetAfter;
   }
 
-  // learning_duration - computed: false, optional: false, required: true
+  // learning_duration - computed: false, optional: true, required: false
   private _learningDuration?: number; 
   public get learningDuration() {
     return this.getNumberAttribute('learning_duration');
@@ -532,12 +558,53 @@ export class SecurityMonitoringRuleOptionsNewValueOptionsOutputReference extends
   public set learningDuration(value: number) {
     this._learningDuration = value;
   }
+  public resetLearningDuration() {
+    this._learningDuration = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get learningDurationInput() {
     return this._learningDuration;
   }
+
+  // learning_method - computed: false, optional: true, required: false
+  private _learningMethod?: string; 
+  public get learningMethod() {
+    return this.getStringAttribute('learning_method');
+  }
+  public set learningMethod(value: string) {
+    this._learningMethod = value;
+  }
+  public resetLearningMethod() {
+    this._learningMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get learningMethodInput() {
+    return this._learningMethod;
+  }
+
+  // learning_threshold - computed: false, optional: true, required: false
+  private _learningThreshold?: number; 
+  public get learningThreshold() {
+    return this.getNumberAttribute('learning_threshold');
+  }
+  public set learningThreshold(value: number) {
+    this._learningThreshold = value;
+  }
+  public resetLearningThreshold() {
+    this._learningThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get learningThresholdInput() {
+    return this._learningThreshold;
+  }
 }
 export interface SecurityMonitoringRuleOptions {
+  /**
+  * If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
+  */
+  readonly decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable;
   /**
   * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`.
   * 
@@ -582,6 +649,7 @@ export function securityMonitoringRuleOptionsToTerraform(struct?: SecurityMonito
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    decrease_criticality_based_on_env: cdktf.booleanToTerraform(struct!.decreaseCriticalityBasedOnEnv),
     detection_method: cdktf.stringToTerraform(struct!.detectionMethod),
     evaluation_window: cdktf.numberToTerraform(struct!.evaluationWindow),
     keep_alive: cdktf.numberToTerraform(struct!.keepAlive),
@@ -605,6 +673,10 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
   public get internalValue(): SecurityMonitoringRuleOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._decreaseCriticalityBasedOnEnv !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.decreaseCriticalityBasedOnEnv = this._decreaseCriticalityBasedOnEnv;
+    }
     if (this._detectionMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.detectionMethod = this._detectionMethod;
@@ -635,6 +707,7 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
   public set internalValue(value: SecurityMonitoringRuleOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._decreaseCriticalityBasedOnEnv = undefined;
       this._detectionMethod = undefined;
       this._evaluationWindow = undefined;
       this._keepAlive = undefined;
@@ -644,6 +717,7 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._decreaseCriticalityBasedOnEnv = value.decreaseCriticalityBasedOnEnv;
       this._detectionMethod = value.detectionMethod;
       this._evaluationWindow = value.evaluationWindow;
       this._keepAlive = value.keepAlive;
@@ -651,6 +725,22 @@ export class SecurityMonitoringRuleOptionsOutputReference extends cdktf.ComplexO
       this._impossibleTravelOptions.internalValue = value.impossibleTravelOptions;
       this._newValueOptions.internalValue = value.newValueOptions;
     }
+  }
+
+  // decrease_criticality_based_on_env - computed: false, optional: true, required: false
+  private _decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable; 
+  public get decreaseCriticalityBasedOnEnv() {
+    return this.getBooleanAttribute('decrease_criticality_based_on_env');
+  }
+  public set decreaseCriticalityBasedOnEnv(value: boolean | cdktf.IResolvable) {
+    this._decreaseCriticalityBasedOnEnv = value;
+  }
+  public resetDecreaseCriticalityBasedOnEnv() {
+    this._decreaseCriticalityBasedOnEnv = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get decreaseCriticalityBasedOnEnvInput() {
+    return this._decreaseCriticalityBasedOnEnv;
   }
 
   // detection_method - computed: false, optional: true, required: false
@@ -891,6 +981,12 @@ export interface SecurityMonitoringRuleQuery {
   */
   readonly metric?: string;
   /**
+  * Group of target fields to aggregate over when using the new value aggregations.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
+  */
+  readonly metrics?: string[];
+  /**
   * Name of the query. Not compatible with `new_value` aggregations.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
@@ -920,6 +1016,7 @@ export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitori
     distinct_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.distinctFields),
     group_by_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupByFields),
     metric: cdktf.stringToTerraform(struct!.metric),
+    metrics: cdktf.listMapper(cdktf.stringToTerraform)(struct!.metrics),
     name: cdktf.stringToTerraform(struct!.name),
     query: cdktf.stringToTerraform(struct!.query),
     agent_rule: cdktf.listMapper(securityMonitoringRuleQueryAgentRuleToTerraform)(struct!.agentRule),
@@ -962,6 +1059,10 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.metric = this._metric;
     }
+    if (this._metrics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metrics = this._metrics;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -985,6 +1086,7 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
       this._distinctFields = undefined;
       this._groupByFields = undefined;
       this._metric = undefined;
+      this._metrics = undefined;
       this._name = undefined;
       this._query = undefined;
       this._agentRule.internalValue = undefined;
@@ -1000,6 +1102,7 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
       this._distinctFields = value.distinctFields;
       this._groupByFields = value.groupByFields;
       this._metric = value.metric;
+      this._metrics = value.metrics;
       this._name = value.name;
       this._query = value.query;
       this._agentRule.internalValue = value.agentRule;
@@ -1068,6 +1171,22 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get metricInput() {
     return this._metric;
+  }
+
+  // metrics - computed: false, optional: true, required: false
+  private _metrics?: string[]; 
+  public get metrics() {
+    return this.getListAttribute('metrics');
+  }
+  public set metrics(value: string[]) {
+    this._metrics = value;
+  }
+  public resetMetrics() {
+    this._metrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsInput() {
+    return this._metrics;
   }
 
   // name - computed: false, optional: true, required: false
@@ -1162,7 +1281,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

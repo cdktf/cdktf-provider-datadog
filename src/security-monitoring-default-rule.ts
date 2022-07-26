@@ -32,6 +32,12 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
   */
   readonly filter?: SecurityMonitoringDefaultRuleFilter[] | cdktf.IResolvable;
+  /**
+  * options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+  */
+  readonly options?: SecurityMonitoringDefaultRuleOptions;
 }
 export interface SecurityMonitoringDefaultRuleCase {
   /**
@@ -277,6 +283,73 @@ export class SecurityMonitoringDefaultRuleFilterList extends cdktf.ComplexList {
     return new SecurityMonitoringDefaultRuleFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SecurityMonitoringDefaultRuleOptions {
+  /**
+  * If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
+  */
+  readonly decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable;
+}
+
+export function securityMonitoringDefaultRuleOptionsToTerraform(struct?: SecurityMonitoringDefaultRuleOptionsOutputReference | SecurityMonitoringDefaultRuleOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    decrease_criticality_based_on_env: cdktf.booleanToTerraform(struct!.decreaseCriticalityBasedOnEnv),
+  }
+}
+
+export class SecurityMonitoringDefaultRuleOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SecurityMonitoringDefaultRuleOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._decreaseCriticalityBasedOnEnv !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.decreaseCriticalityBasedOnEnv = this._decreaseCriticalityBasedOnEnv;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityMonitoringDefaultRuleOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._decreaseCriticalityBasedOnEnv = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._decreaseCriticalityBasedOnEnv = value.decreaseCriticalityBasedOnEnv;
+    }
+  }
+
+  // decrease_criticality_based_on_env - computed: false, optional: true, required: false
+  private _decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable; 
+  public get decreaseCriticalityBasedOnEnv() {
+    return this.getBooleanAttribute('decrease_criticality_based_on_env');
+  }
+  public set decreaseCriticalityBasedOnEnv(value: boolean | cdktf.IResolvable) {
+    this._decreaseCriticalityBasedOnEnv = value;
+  }
+  public resetDecreaseCriticalityBasedOnEnv() {
+    this._decreaseCriticalityBasedOnEnv = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get decreaseCriticalityBasedOnEnvInput() {
+    return this._decreaseCriticalityBasedOnEnv;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}
@@ -304,7 +377,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_default_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -316,6 +389,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
     this._id = config.id;
     this._case.internalValue = config.case;
     this._filter.internalValue = config.filter;
+    this._options.internalValue = config.options;
   }
 
   // ==========
@@ -386,6 +460,22 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
     return this._filter.internalValue;
   }
 
+  // options - computed: false, optional: true, required: false
+  private _options = new SecurityMonitoringDefaultRuleOptionsOutputReference(this, "options");
+  public get options() {
+    return this._options;
+  }
+  public putOptions(value: SecurityMonitoringDefaultRuleOptions) {
+    this._options.internalValue = value;
+  }
+  public resetOptions() {
+    this._options.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -396,6 +486,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       case: cdktf.listMapper(securityMonitoringDefaultRuleCaseToTerraform)(this._case.internalValue),
       filter: cdktf.listMapper(securityMonitoringDefaultRuleFilterToTerraform)(this._filter.internalValue),
+      options: securityMonitoringDefaultRuleOptionsToTerraform(this._options.internalValue),
     };
   }
 }
