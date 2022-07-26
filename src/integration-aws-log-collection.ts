@@ -60,7 +60,10 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountId = config.accountId;
     this._id = config.id;
@@ -121,7 +124,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
     return {
       account_id: cdktf.stringToTerraform(this._accountId),
       id: cdktf.stringToTerraform(this._id),
-      services: cdktf.listMapper(cdktf.stringToTerraform)(this._services),
+      services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._services),
     };
   }
 }

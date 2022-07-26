@@ -308,7 +308,10 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -473,9 +476,9 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parse_test_id: cdktf.stringToTerraform(this._parseTestId),
-      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._restrictedRoles),
+      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restrictedRoles),
       secure: cdktf.booleanToTerraform(this._secure),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       value: cdktf.stringToTerraform(this._value),
       parse_test_options: syntheticsGlobalVariableParseTestOptionsToTerraform(this._parseTestOptions.internalValue),
     };

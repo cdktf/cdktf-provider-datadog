@@ -200,7 +200,10 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._filteredDataType = config.filteredDataType;
     this._id = config.id;
@@ -317,7 +320,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),
-      exclusion_filter: cdktf.listMapper(securityMonitoringFilterExclusionFilterToTerraform)(this._exclusionFilter.internalValue),
+      exclusion_filter: cdktf.listMapper(securityMonitoringFilterExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
     };
   }
 }

@@ -200,7 +200,10 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._includePercentiles = config.includePercentiles;
@@ -311,8 +314,8 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
       include_percentiles: cdktf.booleanToTerraform(this._includePercentiles),
       metric_name: cdktf.stringToTerraform(this._metricName),
       metric_type: cdktf.stringToTerraform(this._metricType),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
-      aggregations: cdktf.listMapper(metricTagConfigurationAggregationsToTerraform)(this._aggregations.internalValue),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      aggregations: cdktf.listMapper(metricTagConfigurationAggregationsToTerraform, true)(this._aggregations.internalValue),
     };
   }
 }

@@ -376,7 +376,7 @@ export function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?:
     override_on_conflict: cdktf.booleanToTerraform(struct!.overrideOnConflict),
     preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
     source_type: cdktf.stringToTerraform(struct!.sourceType),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
     target_format: cdktf.stringToTerraform(struct!.targetFormat),
     target_type: cdktf.stringToTerraform(struct!.targetType),
@@ -815,7 +815,7 @@ export function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?:
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
     target: cdktf.stringToTerraform(struct!.target),
-    category: cdktf.listMapper(logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform)(struct!.category),
+    category: cdktf.listMapper(logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
   }
 }
 
@@ -956,7 +956,7 @@ export function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: Logs
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -1084,7 +1084,7 @@ export function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsC
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
 }
@@ -1328,7 +1328,7 @@ export function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCu
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    samples: cdktf.listMapper(cdktf.stringToTerraform)(struct!.samples),
+    samples: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.samples),
     source: cdktf.stringToTerraform(struct!.source),
     grok: logsCustomPipelineProcessorGrokParserGrokToTerraform(struct!.grok),
   }
@@ -1511,7 +1511,7 @@ export function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: L
   return {
     default_lookup: cdktf.stringToTerraform(struct!.defaultLookup),
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    lookup_table: cdktf.listMapper(cdktf.stringToTerraform)(struct!.lookupTable),
+    lookup_table: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lookupTable),
     name: cdktf.stringToTerraform(struct!.name),
     source: cdktf.stringToTerraform(struct!.source),
     target: cdktf.stringToTerraform(struct!.target),
@@ -1696,7 +1696,7 @@ export function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: L
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -2130,7 +2130,7 @@ export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToT
     override_on_conflict: cdktf.booleanToTerraform(struct!.overrideOnConflict),
     preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
     source_type: cdktf.stringToTerraform(struct!.sourceType),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
     target_format: cdktf.stringToTerraform(struct!.targetFormat),
     target_type: cdktf.stringToTerraform(struct!.targetType),
@@ -2569,7 +2569,7 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToT
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
     target: cdktf.stringToTerraform(struct!.target),
-    category: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform)(struct!.category),
+    category: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
   }
 }
 
@@ -2710,7 +2710,7 @@ export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraf
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -2838,7 +2838,7 @@ export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerrafo
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
 }
@@ -3082,7 +3082,7 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerrafor
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    samples: cdktf.listMapper(cdktf.stringToTerraform)(struct!.samples),
+    samples: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.samples),
     source: cdktf.stringToTerraform(struct!.source),
     grok: logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct!.grok),
   }
@@ -3265,7 +3265,7 @@ export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTer
   return {
     default_lookup: cdktf.stringToTerraform(struct!.defaultLookup),
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    lookup_table: cdktf.listMapper(cdktf.stringToTerraform)(struct!.lookupTable),
+    lookup_table: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lookupTable),
     name: cdktf.stringToTerraform(struct!.name),
     source: cdktf.stringToTerraform(struct!.source),
     target: cdktf.stringToTerraform(struct!.target),
@@ -3450,7 +3450,7 @@ export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTer
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -3572,7 +3572,7 @@ export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTer
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -3694,7 +3694,7 @@ export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerr
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -3993,7 +3993,7 @@ export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTer
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -4128,7 +4128,7 @@ export function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
     normalize_ending_slashes: cdktf.booleanToTerraform(struct!.normalizeEndingSlashes),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
 }
@@ -4305,7 +4305,7 @@ export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTer
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     is_encoded: cdktf.booleanToTerraform(struct!.isEncoded),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
 }
@@ -4947,8 +4947,8 @@ export function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCust
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    filter: cdktf.listMapper(logsCustomPipelineProcessorPipelineFilterToTerraform)(struct!.filter),
-    processor: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorToTerraform)(struct!.processor),
+    filter: cdktf.listMapper(logsCustomPipelineProcessorPipelineFilterToTerraform, true)(struct!.filter),
+    processor: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorToTerraform, true)(struct!.processor),
   }
 }
 
@@ -5089,7 +5089,7 @@ export function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: L
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -5211,7 +5211,7 @@ export function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: Lo
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -5510,7 +5510,7 @@ export function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: L
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
   }
 }
 
@@ -5645,7 +5645,7 @@ export function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCus
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
     normalize_ending_slashes: cdktf.booleanToTerraform(struct!.normalizeEndingSlashes),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
 }
@@ -5822,7 +5822,7 @@ export function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: L
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     is_encoded: cdktf.booleanToTerraform(struct!.isEncoded),
     name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sources),
+    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
     target: cdktf.stringToTerraform(struct!.target),
   }
 }
@@ -6495,7 +6495,10 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._isEnabled = config.isEnabled;
@@ -6591,8 +6594,8 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
       name: cdktf.stringToTerraform(this._name),
-      filter: cdktf.listMapper(logsCustomPipelineFilterToTerraform)(this._filter.internalValue),
-      processor: cdktf.listMapper(logsCustomPipelineProcessorToTerraform)(this._processor.internalValue),
+      filter: cdktf.listMapper(logsCustomPipelineFilterToTerraform, true)(this._filter.internalValue),
+      processor: cdktf.listMapper(logsCustomPipelineProcessorToTerraform, true)(this._processor.internalValue),
     };
   }
 }

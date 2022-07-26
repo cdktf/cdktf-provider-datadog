@@ -66,7 +66,10 @@ export class DashboardJson extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dashboard = config.dashboard;
     this._dashboardLists = config.dashboardLists;
@@ -151,7 +154,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dashboard: cdktf.stringToTerraform(this._dashboard),
-      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform)(this._dashboardLists),
+      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform, false)(this._dashboardLists),
       id: cdktf.stringToTerraform(this._id),
       url: cdktf.stringToTerraform(this._url),
     };

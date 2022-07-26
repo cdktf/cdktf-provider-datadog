@@ -164,7 +164,10 @@ export class Role extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -233,7 +236,7 @@ export class Role extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      permission: cdktf.listMapper(rolePermissionToTerraform)(this._permission.internalValue),
+      permission: cdktf.listMapper(rolePermissionToTerraform, true)(this._permission.internalValue),
     };
   }
 }

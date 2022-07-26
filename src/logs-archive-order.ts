@@ -54,7 +54,10 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._archiveIds = config.archiveIds;
     this._id = config.id;
@@ -102,7 +105,7 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      archive_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._archiveIds),
+      archive_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._archiveIds),
       id: cdktf.stringToTerraform(this._id),
     };
   }

@@ -126,7 +126,10 @@ export class Dashboard extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dashboardLists = config.dashboardLists;
     this._description = config.description;
@@ -360,19 +363,19 @@ export class Dashboard extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform)(this._dashboardLists),
+      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform, false)(this._dashboardLists),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       is_read_only: cdktf.booleanToTerraform(this._isReadOnly),
       layout_type: cdktf.stringToTerraform(this._layoutType),
-      notify_list: cdktf.listMapper(cdktf.stringToTerraform)(this._notifyList),
+      notify_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyList),
       reflow_type: cdktf.stringToTerraform(this._reflowType),
-      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._restrictedRoles),
+      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restrictedRoles),
       title: cdktf.stringToTerraform(this._title),
       url: cdktf.stringToTerraform(this._url),
-      template_variable: cdktf.listMapper(dashboardTemplateVariableToTerraform)(this._templateVariable.internalValue),
-      template_variable_preset: cdktf.listMapper(dashboardTemplateVariablePresetToTerraform)(this._templateVariablePreset.internalValue),
-      widget: cdktf.listMapper(dashboardWidgetToTerraform)(this._widget.internalValue),
+      template_variable: cdktf.listMapper(dashboardTemplateVariableToTerraform, true)(this._templateVariable.internalValue),
+      template_variable_preset: cdktf.listMapper(dashboardTemplateVariablePresetToTerraform, true)(this._templateVariablePreset.internalValue),
+      widget: cdktf.listMapper(dashboardWidgetToTerraform, true)(this._widget.internalValue),
     };
   }
 }

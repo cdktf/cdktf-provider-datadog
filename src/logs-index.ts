@@ -208,7 +208,7 @@ export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionF
   return {
     is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
     name: cdktf.stringToTerraform(struct!.name),
-    filter: cdktf.listMapper(logsIndexExclusionFilterFilterToTerraform)(struct!.filter),
+    filter: cdktf.listMapper(logsIndexExclusionFilterFilterToTerraform, true)(struct!.filter),
   }
 }
 
@@ -433,7 +433,10 @@ export class LogsIndex extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dailyLimit = config.dailyLimit;
     this._disableDailyLimit = config.disableDailyLimit;
@@ -565,7 +568,7 @@ export class LogsIndex extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       retention_days: cdktf.numberToTerraform(this._retentionDays),
-      exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform)(this._exclusionFilter.internalValue),
+      exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
       filter: logsIndexFilterToTerraform(this._filter.internalValue),
     };
   }

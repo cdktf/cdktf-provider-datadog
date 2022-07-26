@@ -140,7 +140,10 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._monitorTagsFilter = config.monitorTagsFilter;
@@ -229,9 +232,9 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      monitor_tags_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._monitorTagsFilter),
+      monitor_tags_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorTagsFilter),
       name_filter: cdktf.stringToTerraform(this._nameFilter),
-      tags_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._tagsFilter),
+      tags_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagsFilter),
     };
   }
 }

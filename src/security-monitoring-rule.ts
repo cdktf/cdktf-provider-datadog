@@ -110,7 +110,7 @@ export function securityMonitoringRuleCaseToTerraform(struct?: SecurityMonitorin
   return {
     condition: cdktf.stringToTerraform(struct!.condition),
     name: cdktf.stringToTerraform(struct!.name),
-    notifications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notifications),
+    notifications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notifications),
     status: cdktf.stringToTerraform(struct!.status),
   }
 }
@@ -1013,13 +1013,13 @@ export function securityMonitoringRuleQueryToTerraform(struct?: SecurityMonitori
   }
   return {
     aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    distinct_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.distinctFields),
-    group_by_fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupByFields),
+    distinct_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.distinctFields),
+    group_by_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupByFields),
     metric: cdktf.stringToTerraform(struct!.metric),
-    metrics: cdktf.listMapper(cdktf.stringToTerraform)(struct!.metrics),
+    metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.metrics),
     name: cdktf.stringToTerraform(struct!.name),
     query: cdktf.stringToTerraform(struct!.query),
-    agent_rule: cdktf.listMapper(securityMonitoringRuleQueryAgentRuleToTerraform)(struct!.agentRule),
+    agent_rule: cdktf.listMapper(securityMonitoringRuleQueryAgentRuleToTerraform, true)(struct!.agentRule),
   }
 }
 
@@ -1287,7 +1287,10 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._hasExtendedTitle = config.hasExtendedTitle;
@@ -1481,12 +1484,12 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       message: cdktf.stringToTerraform(this._message),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       type: cdktf.stringToTerraform(this._type),
-      case: cdktf.listMapper(securityMonitoringRuleCaseToTerraform)(this._case.internalValue),
-      filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform)(this._filter.internalValue),
+      case: cdktf.listMapper(securityMonitoringRuleCaseToTerraform, true)(this._case.internalValue),
+      filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform, true)(this._filter.internalValue),
       options: securityMonitoringRuleOptionsToTerraform(this._options.internalValue),
-      query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform)(this._query.internalValue),
+      query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform, true)(this._query.internalValue),
     };
   }
 }

@@ -114,7 +114,10 @@ export class IntegrationAws extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessKeyId = config.accessKeyId;
     this._accountId = config.accountId;
@@ -341,9 +344,9 @@ export class IntegrationAws extends cdktf.TerraformResource {
       account_id: cdktf.stringToTerraform(this._accountId),
       account_specific_namespace_rules: cdktf.hashMapper(cdktf.booleanToTerraform)(this._accountSpecificNamespaceRules),
       cspm_resource_collection_enabled: cdktf.stringToTerraform(this._cspmResourceCollectionEnabled),
-      excluded_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedRegions),
-      filter_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._filterTags),
-      host_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._hostTags),
+      excluded_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedRegions),
+      filter_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._filterTags),
+      host_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostTags),
       id: cdktf.stringToTerraform(this._id),
       metrics_collection_enabled: cdktf.stringToTerraform(this._metricsCollectionEnabled),
       resource_collection_enabled: cdktf.stringToTerraform(this._resourceCollectionEnabled),

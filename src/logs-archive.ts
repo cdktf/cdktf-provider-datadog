@@ -551,7 +551,10 @@ export class LogsArchive extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._includeTags = config.includeTags;
@@ -717,7 +720,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       query: cdktf.stringToTerraform(this._query),
       rehydration_max_scan_size_in_gb: cdktf.numberToTerraform(this._rehydrationMaxScanSizeInGb),
-      rehydration_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._rehydrationTags),
+      rehydration_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rehydrationTags),
       azure_archive: logsArchiveAzureArchiveToTerraform(this._azureArchive.internalValue),
       gcs_archive: logsArchiveGcsArchiveToTerraform(this._gcsArchive.internalValue),
       s3_archive: logsArchiveS3ArchiveToTerraform(this._s3Archive.internalValue),
