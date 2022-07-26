@@ -182,7 +182,10 @@ export class DashboardList extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -246,7 +249,7 @@ export class DashboardList extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      dash_item: cdktf.listMapper(dashboardListDashItemToTerraform)(this._dashItem.internalValue),
+      dash_item: cdktf.listMapper(dashboardListDashItemToTerraform, true)(this._dashItem.internalValue),
     };
   }
 }

@@ -351,7 +351,10 @@ export class LogsMetric extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -445,7 +448,7 @@ export class LogsMetric extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       compute: logsMetricComputeToTerraform(this._compute.internalValue),
       filter: logsMetricFilterToTerraform(this._filter.internalValue),
-      group_by: cdktf.listMapper(logsMetricGroupByToTerraform)(this._groupBy.internalValue),
+      group_by: cdktf.listMapper(logsMetricGroupByToTerraform, true)(this._groupBy.internalValue),
     };
   }
 }

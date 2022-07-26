@@ -54,7 +54,7 @@ export function syntheticsPrivateLocationMetadataToTerraform(struct?: Synthetics
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.restrictedRoles),
+    restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restrictedRoles),
   }
 }
 
@@ -139,7 +139,10 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -243,7 +246,7 @@ export class SyntheticsPrivateLocation extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       metadata: syntheticsPrivateLocationMetadataToTerraform(this._metadata.internalValue),
     };
   }

@@ -60,7 +60,10 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._indexes = config.indexes;
@@ -120,7 +123,7 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      indexes: cdktf.listMapper(cdktf.stringToTerraform)(this._indexes),
+      indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._indexes),
       name: cdktf.stringToTerraform(this._name),
     };
   }

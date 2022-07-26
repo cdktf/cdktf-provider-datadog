@@ -359,7 +359,10 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._forceDelete = config.forceDelete;
@@ -553,15 +556,15 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       id: cdktf.stringToTerraform(this._id),
-      monitor_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._monitorIds),
+      monitor_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._monitorIds),
       name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),
       query: serviceLevelObjectiveQueryToTerraform(this._query.internalValue),
-      thresholds: cdktf.listMapper(serviceLevelObjectiveThresholdsToTerraform)(this._thresholds.internalValue),
+      thresholds: cdktf.listMapper(serviceLevelObjectiveThresholdsToTerraform, true)(this._thresholds.internalValue),
     };
   }
 }

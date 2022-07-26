@@ -78,7 +78,10 @@ export class User extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._disabled = config.disabled;
     this._email = config.email;
@@ -205,7 +208,7 @@ export class User extends cdktf.TerraformResource {
       email: cdktf.stringToTerraform(this._email),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
+      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       send_user_invitation: cdktf.booleanToTerraform(this._sendUserInvitation),
     };
   }

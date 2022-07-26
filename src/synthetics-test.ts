@@ -2122,8 +2122,8 @@ export function syntheticsTestApiStepToTerraform(struct?: SyntheticsTestApiStep 
     request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
     request_query: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestQuery),
     subtype: cdktf.stringToTerraform(struct!.subtype),
-    assertion: cdktf.listMapper(syntheticsTestApiStepAssertionToTerraform)(struct!.assertion),
-    extracted_value: cdktf.listMapper(syntheticsTestApiStepExtractedValueToTerraform)(struct!.extractedValue),
+    assertion: cdktf.listMapper(syntheticsTestApiStepAssertionToTerraform, true)(struct!.assertion),
+    extracted_value: cdktf.listMapper(syntheticsTestApiStepExtractedValueToTerraform, true)(struct!.extractedValue),
     request_basicauth: syntheticsTestApiStepRequestBasicauthToTerraform(struct!.requestBasicauth),
     request_client_certificate: syntheticsTestApiStepRequestClientCertificateToTerraform(struct!.requestClientCertificate),
     request_definition: syntheticsTestApiStepRequestDefinitionToTerraform(struct!.requestDefinition),
@@ -3206,7 +3206,7 @@ export function syntheticsTestBrowserStepParamsToTerraform(struct?: SyntheticsTe
     email: cdktf.stringToTerraform(struct!.email),
     file: cdktf.stringToTerraform(struct!.file),
     files: cdktf.stringToTerraform(struct!.files),
-    modifiers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.modifiers),
+    modifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.modifiers),
     playing_tab_id: cdktf.stringToTerraform(struct!.playingTabId),
     request: cdktf.stringToTerraform(struct!.request),
     subtest_public_id: cdktf.stringToTerraform(struct!.subtestPublicId),
@@ -4809,7 +4809,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     monitor_name: cdktf.stringToTerraform(struct!.monitorName),
     monitor_priority: cdktf.numberToTerraform(struct!.monitorPriority),
     no_screenshot: cdktf.booleanToTerraform(struct!.noScreenshot),
-    restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.restrictedRoles),
+    restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restrictedRoles),
     tick_every: cdktf.numberToTerraform(struct!.tickEvery),
     ci: syntheticsTestOptionsListCiToTerraform(struct!.ci),
     monitor_options: syntheticsTestOptionsListMonitorOptionsToTerraform(struct!.monitorOptions),
@@ -6345,7 +6345,10 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deviceIds = config.deviceIds;
     this._id = config.id;
@@ -6726,9 +6729,9 @@ export class SyntheticsTest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._deviceIds),
+      device_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._deviceIds),
       id: cdktf.stringToTerraform(this._id),
-      locations: cdktf.listMapper(cdktf.stringToTerraform)(this._locations),
+      locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locations),
       message: cdktf.stringToTerraform(this._message),
       name: cdktf.stringToTerraform(this._name),
       request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(this._requestHeaders),
@@ -6736,13 +6739,13 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       set_cookie: cdktf.stringToTerraform(this._setCookie),
       status: cdktf.stringToTerraform(this._status),
       subtype: cdktf.stringToTerraform(this._subtype),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       type: cdktf.stringToTerraform(this._type),
-      api_step: cdktf.listMapper(syntheticsTestApiStepToTerraform)(this._apiStep.internalValue),
-      assertion: cdktf.listMapper(syntheticsTestAssertionToTerraform)(this._assertion.internalValue),
-      browser_step: cdktf.listMapper(syntheticsTestBrowserStepToTerraform)(this._browserStep.internalValue),
-      browser_variable: cdktf.listMapper(syntheticsTestBrowserVariableToTerraform)(this._browserVariable.internalValue),
-      config_variable: cdktf.listMapper(syntheticsTestConfigVariableToTerraform)(this._configVariable.internalValue),
+      api_step: cdktf.listMapper(syntheticsTestApiStepToTerraform, true)(this._apiStep.internalValue),
+      assertion: cdktf.listMapper(syntheticsTestAssertionToTerraform, true)(this._assertion.internalValue),
+      browser_step: cdktf.listMapper(syntheticsTestBrowserStepToTerraform, true)(this._browserStep.internalValue),
+      browser_variable: cdktf.listMapper(syntheticsTestBrowserVariableToTerraform, true)(this._browserVariable.internalValue),
+      config_variable: cdktf.listMapper(syntheticsTestConfigVariableToTerraform, true)(this._configVariable.internalValue),
       options_list: syntheticsTestOptionsListToTerraform(this._optionsList.internalValue),
       request_basicauth: syntheticsTestRequestBasicauthToTerraform(this._requestBasicauth.internalValue),
       request_client_certificate: syntheticsTestRequestClientCertificateToTerraform(this._requestClientCertificate.internalValue),

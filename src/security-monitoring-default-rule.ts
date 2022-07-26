@@ -60,7 +60,7 @@ export function securityMonitoringDefaultRuleCaseToTerraform(struct?: SecurityMo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notifications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notifications),
+    notifications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notifications),
     status: cdktf.stringToTerraform(struct!.status),
   }
 }
@@ -383,7 +383,10 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._id = config.id;
@@ -484,8 +487,8 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
-      case: cdktf.listMapper(securityMonitoringDefaultRuleCaseToTerraform)(this._case.internalValue),
-      filter: cdktf.listMapper(securityMonitoringDefaultRuleFilterToTerraform)(this._filter.internalValue),
+      case: cdktf.listMapper(securityMonitoringDefaultRuleCaseToTerraform, true)(this._case.internalValue),
+      filter: cdktf.listMapper(securityMonitoringDefaultRuleFilterToTerraform, true)(this._filter.internalValue),
       options: securityMonitoringDefaultRuleOptionsToTerraform(this._options.internalValue),
     };
   }

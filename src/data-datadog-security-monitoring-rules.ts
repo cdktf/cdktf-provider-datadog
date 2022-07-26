@@ -741,7 +741,10 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultOnlyFilter = config.defaultOnlyFilter;
     this._id = config.id;
@@ -854,7 +857,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       default_only_filter: cdktf.booleanToTerraform(this._defaultOnlyFilter),
       id: cdktf.stringToTerraform(this._id),
       name_filter: cdktf.stringToTerraform(this._nameFilter),
-      tags_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._tagsFilter),
+      tags_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagsFilter),
       user_only_filter: cdktf.booleanToTerraform(this._userOnlyFilter),
     };
   }

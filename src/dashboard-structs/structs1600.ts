@@ -80,8 +80,8 @@ export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRum
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -812,8 +812,8 @@ export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSec
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -1022,11 +1022,11 @@ export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestToT
     q: cdktf.stringToTerraform(struct!.q),
     apm_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQueryToTerraform(struct!.apmQuery),
     audit_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQueryToTerraform(struct!.auditQuery),
-    formula: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaToTerraform)(struct!.formula),
+    formula: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaToTerraform, true)(struct!.formula),
     log_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryToTerraform(struct!.logQuery),
     network_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryToTerraform(struct!.networkQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryToTerraform(struct!.processQuery),
-    query: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryToTerraform)(struct!.query),
+    query: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
     security_query: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
   }
@@ -1378,10 +1378,10 @@ export function dashboardWidgetGroupDefinitionWidgetSunburstDefinitionToTerrafor
     title: cdktf.stringToTerraform(struct!.title),
     title_align: cdktf.stringToTerraform(struct!.titleAlign),
     title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLinkToTerraform)(struct!.customLink),
+    custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionCustomLinkToTerraform, true)(struct!.customLink),
     legend_inline: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendInlineToTerraform(struct!.legendInline),
     legend_table: dashboardWidgetGroupDefinitionWidgetSunburstDefinitionLegendTableToTerraform(struct!.legendTable),
-    request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestToTerraform)(struct!.request),
+    request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetSunburstDefinitionRequestToTerraform, true)(struct!.request),
   }
 }
 
@@ -2668,8 +2668,8 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestA
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -3400,8 +3400,8 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestA
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -3998,7 +3998,7 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestF
     alias: cdktf.stringToTerraform(struct!.alias),
     cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
     formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
-    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform)(struct!.conditionalFormats),
+    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitToTerraform(struct!.limit),
   }
 }
@@ -4762,8 +4762,8 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestL
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -5619,8 +5619,8 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestN
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -5790,7 +5790,7 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestP
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.filterBy),
+    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
     limit: cdktf.numberToTerraform(struct!.limit),
     metric: cdktf.stringToTerraform(struct!.metric),
     search_by: cdktf.stringToTerraform(struct!.searchBy),
@@ -6286,7 +6286,7 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQ
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     env: cdktf.stringToTerraform(struct!.env),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
     name: cdktf.stringToTerraform(struct!.name),
     operation_name: cdktf.stringToTerraform(struct!.operationName),
     primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
@@ -7068,10 +7068,10 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQ
   }
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.indexes),
+    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
-    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerraform)(struct!.compute),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToTerraform)(struct!.groupBy),
+    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
 }
@@ -7443,7 +7443,7 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQ
     metric: cdktf.stringToTerraform(struct!.metric),
     name: cdktf.stringToTerraform(struct!.name),
     sort: cdktf.stringToTerraform(struct!.sort),
-    tag_filters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tagFilters),
+    tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
 }
@@ -8472,8 +8472,8 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestR
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -9204,8 +9204,8 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestS
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -9565,12 +9565,12 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestT
     q: cdktf.stringToTerraform(struct!.q),
     apm_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryToTerraform(struct!.apmQuery),
     audit_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryToTerraform(struct!.auditQuery),
-    formula: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaToTerraform)(struct!.formula),
+    formula: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaToTerraform, true)(struct!.formula),
     log_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryToTerraform(struct!.logQuery),
-    metadata: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadataToTerraform)(struct!.metadata),
+    metadata: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadataToTerraform, true)(struct!.metadata),
     network_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryToTerraform(struct!.networkQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryToTerraform(struct!.processQuery),
-    query: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToTerraform)(struct!.query),
+    query: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
     security_query: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
     style: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleToTerraform(struct!.style),
@@ -10402,7 +10402,7 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    legend_columns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.legendColumns),
+    legend_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.legendColumns),
     legend_layout: cdktf.stringToTerraform(struct!.legendLayout),
     legend_size: cdktf.stringToTerraform(struct!.legendSize),
     live_span: cdktf.stringToTerraform(struct!.liveSpan),
@@ -10410,10 +10410,10 @@ export function dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionToTerraf
     title: cdktf.stringToTerraform(struct!.title),
     title_align: cdktf.stringToTerraform(struct!.titleAlign),
     title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToTerraform)(struct!.customLink),
-    event: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEventToTerraform)(struct!.event),
-    marker: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarkerToTerraform)(struct!.marker),
-    request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestToTerraform)(struct!.request),
+    custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    event: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionEventToTerraform, true)(struct!.event),
+    marker: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionMarkerToTerraform, true)(struct!.marker),
+    request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRequestToTerraform, true)(struct!.request),
     right_yaxis: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionRightYaxisToTerraform(struct!.rightYaxis),
     yaxis: dashboardWidgetGroupDefinitionWidgetTimeseriesDefinitionYaxisToTerraform(struct!.yaxis),
   }
@@ -11533,8 +11533,8 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQ
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -12265,8 +12265,8 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAudi
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -13185,7 +13185,7 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestForm
     alias: cdktf.stringToTerraform(struct!.alias),
     cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
     formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
-    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormatsToTerraform)(struct!.conditionalFormats),
+    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaLimitToTerraform(struct!.limit),
   }
 }
@@ -13949,8 +13949,8 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQ
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -14120,7 +14120,7 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.filterBy),
+    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
     limit: cdktf.numberToTerraform(struct!.limit),
     metric: cdktf.stringToTerraform(struct!.metric),
     search_by: cdktf.stringToTerraform(struct!.searchBy),
@@ -14616,7 +14616,7 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuer
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     env: cdktf.stringToTerraform(struct!.env),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
     name: cdktf.stringToTerraform(struct!.name),
     operation_name: cdktf.stringToTerraform(struct!.operationName),
     primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
@@ -15398,10 +15398,10 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuer
   }
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.indexes),
+    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
-    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryComputeToTerraform)(struct!.compute),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupByToTerraform)(struct!.groupBy),
+    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
 }
@@ -15773,7 +15773,7 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQuer
     metric: cdktf.stringToTerraform(struct!.metric),
     name: cdktf.stringToTerraform(struct!.name),
     sort: cdktf.stringToTerraform(struct!.sort),
-    tag_filters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tagFilters),
+    tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
     text_filter: cdktf.stringToTerraform(struct!.textFilter),
   }
 }
@@ -16802,8 +16802,8 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQ
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -17534,8 +17534,8 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecu
     index: cdktf.stringToTerraform(struct!.index),
     search_query: cdktf.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupByToTerraform)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiComputeToTerraform)(struct!.multiCompute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
@@ -17817,11 +17817,11 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestToTe
     q: cdktf.stringToTerraform(struct!.q),
     apm_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestApmQueryToTerraform(struct!.apmQuery),
     audit_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestAuditQueryToTerraform(struct!.auditQuery),
-    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormatsToTerraform)(struct!.conditionalFormats),
-    formula: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaToTerraform)(struct!.formula),
+    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
+    formula: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestFormulaToTerraform, true)(struct!.formula),
     log_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestLogQueryToTerraform(struct!.logQuery),
     process_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestProcessQueryToTerraform(struct!.processQuery),
-    query: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryToTerraform)(struct!.query),
+    query: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
     security_query: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
     style: dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestStyleToTerraform(struct!.style),
@@ -18177,8 +18177,8 @@ export function dashboardWidgetGroupDefinitionWidgetToplistDefinitionToTerraform
     title: cdktf.stringToTerraform(struct!.title),
     title_align: cdktf.stringToTerraform(struct!.titleAlign),
     title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLinkToTerraform)(struct!.customLink),
-    request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestToTerraform)(struct!.request),
+    custom_link: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    request: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetToplistDefinitionRequestToTerraform, true)(struct!.request),
   }
 }
 
@@ -19264,7 +19264,7 @@ export function dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestForm
     alias: cdktf.stringToTerraform(struct!.alias),
     cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
     formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
-    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaConditionalFormatsToTerraform)(struct!.conditionalFormats),
+    conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestFormulaLimitToTerraform(struct!.limit),
   }
 }
@@ -19812,7 +19812,7 @@ export function dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuer
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     env: cdktf.stringToTerraform(struct!.env),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groupBy),
+    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
     name: cdktf.stringToTerraform(struct!.name),
     operation_name: cdktf.stringToTerraform(struct!.operationName),
     primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
@@ -20594,10 +20594,10 @@ export function dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQuer
   }
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.indexes),
+    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
-    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryComputeToTerraform)(struct!.compute),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupByToTerraform)(struct!.groupBy),
+    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGroupDefinitionWidgetTreemapDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
 }

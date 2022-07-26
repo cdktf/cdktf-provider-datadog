@@ -66,7 +66,10 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiToken = config.apiToken;
     this._id = config.id;
@@ -147,7 +150,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
     return {
       api_token: cdktf.stringToTerraform(this._apiToken),
       id: cdktf.stringToTerraform(this._id),
-      schedules: cdktf.listMapper(cdktf.stringToTerraform)(this._schedules),
+      schedules: cdktf.listMapper(cdktf.stringToTerraform, false)(this._schedules),
       subdomain: cdktf.stringToTerraform(this._subdomain),
     };
   }

@@ -530,7 +530,10 @@ export class Monitor extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enableLogsSample = config.enableLogsSample;
     this._escalationMessage = config.escalationMessage;
@@ -1027,10 +1030,10 @@ export class Monitor extends cdktf.TerraformResource {
       query: cdktf.stringToTerraform(this._query),
       renotify_interval: cdktf.numberToTerraform(this._renotifyInterval),
       renotify_occurrences: cdktf.numberToTerraform(this._renotifyOccurrences),
-      renotify_statuses: cdktf.listMapper(cdktf.stringToTerraform)(this._renotifyStatuses),
+      renotify_statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._renotifyStatuses),
       require_full_window: cdktf.booleanToTerraform(this._requireFullWindow),
-      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._restrictedRoles),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restrictedRoles),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       timeout_h: cdktf.numberToTerraform(this._timeoutH),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),

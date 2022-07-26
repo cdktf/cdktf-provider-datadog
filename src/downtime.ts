@@ -131,7 +131,7 @@ export function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputR
     type: cdktf.stringToTerraform(struct!.type),
     until_date: cdktf.numberToTerraform(struct!.untilDate),
     until_occurrences: cdktf.numberToTerraform(struct!.untilOccurrences),
-    week_days: cdktf.listMapper(cdktf.stringToTerraform)(struct!.weekDays),
+    week_days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weekDays),
   }
 }
 
@@ -323,7 +323,10 @@ export class Downtime extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._end = config.end;
     this._endDate = config.endDate;
@@ -558,9 +561,9 @@ export class Downtime extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       message: cdktf.stringToTerraform(this._message),
       monitor_id: cdktf.numberToTerraform(this._monitorId),
-      monitor_tags: cdktf.listMapper(cdktf.stringToTerraform)(this._monitorTags),
+      monitor_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorTags),
       mute_first_recovery_notification: cdktf.booleanToTerraform(this._muteFirstRecoveryNotification),
-      scope: cdktf.listMapper(cdktf.stringToTerraform)(this._scope),
+      scope: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scope),
       start: cdktf.numberToTerraform(this._start),
       start_date: cdktf.stringToTerraform(this._startDate),
       timezone: cdktf.stringToTerraform(this._timezone),
