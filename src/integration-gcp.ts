@@ -84,7 +84,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_gcp',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -1173,7 +1173,7 @@ export class SecurityMonitoringRuleQueryOutputReference extends cdktf.ComplexObj
     return this._metric;
   }
 
-  // metrics - computed: false, optional: true, required: false
+  // metrics - computed: true, optional: true, required: false
   private _metrics?: string[]; 
   public get metrics() {
     return this.getListAttribute('metrics');
@@ -1281,7 +1281,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

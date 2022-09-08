@@ -32,7 +32,7 @@ export interface DatadogProviderConfig {
   */
   readonly httpClientRetryEnabled?: boolean | cdktf.IResolvable;
   /**
-  * The HTTP request retry timeout period.
+  * The HTTP request retry timeout period. Defaults to 60 seconds.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
   */
@@ -77,7 +77,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'datadog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'DataDog/datadog'

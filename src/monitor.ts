@@ -34,6 +34,12 @@ For example, if the value is set to `300` (5min), the `timeframe` is set to `las
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
+  * The time span after which groups with missing data are dropped from the monitor state. The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#group_retention_duration Monitor#group_retention_duration}
+  */
+  readonly groupRetentionDuration?: string;
+  /**
   * Whether or not to trigger one alert if any source breaches a threshold. This is only used by log monitors. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
@@ -106,6 +112,12 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_no_data Monitor#notify_no_data}
   */
   readonly notifyNoData?: boolean | cdktf.IResolvable;
+  /**
+  * Controls how groups or monitors are treated if an evaluation does not return any data points. The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#on_missing_data Monitor#on_missing_data}
+  */
+  readonly onMissingData?: string;
   /**
   * Integer from 1 (high) to 5 (low) indicating alert severity.
   * 
@@ -188,6 +200,12 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#monitor_thresholds Monitor#monitor_thresholds}
   */
   readonly monitorThresholds?: MonitorMonitorThresholds;
+  /**
+  * variables block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#variables Monitor#variables}
+  */
+  readonly variables?: MonitorVariables;
 }
 export interface MonitorMonitorThresholdWindows {
   /**
@@ -299,13 +317,13 @@ export interface MonitorMonitorThresholds {
   */
   readonly criticalRecovery?: string;
   /**
-  * The monitor `OK` threshold. Must be a number.
+  * The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#ok Monitor#ok}
   */
   readonly ok?: string;
   /**
-  * The monitor `UNKNOWN` threshold. Must be a number.
+  * The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#unknown Monitor#unknown}
   */
@@ -497,6 +515,802 @@ export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject
     return this._warningRecovery;
   }
 }
+export interface MonitorVariablesEventQueryCompute {
+  /**
+  * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#aggregation Monitor#aggregation}
+  */
+  readonly aggregation: string;
+  /**
+  * A time interval in milliseconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#interval Monitor#interval}
+  */
+  readonly interval?: number;
+  /**
+  * The measurable attribute to compute.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#metric Monitor#metric}
+  */
+  readonly metric?: string;
+}
+
+export function monitorVariablesEventQueryComputeToTerraform(struct?: MonitorVariablesEventQueryCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aggregation: cdktf.stringToTerraform(struct!.aggregation),
+    interval: cdktf.numberToTerraform(struct!.interval),
+    metric: cdktf.stringToTerraform(struct!.metric),
+  }
+}
+
+export class MonitorVariablesEventQueryComputeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorVariablesEventQueryCompute | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregation = this._aggregation;
+    }
+    if (this._interval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interval = this._interval;
+    }
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesEventQueryCompute | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._aggregation = undefined;
+      this._interval = undefined;
+      this._metric = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._aggregation = value.aggregation;
+      this._interval = value.interval;
+      this._metric = value.metric;
+    }
+  }
+
+  // aggregation - computed: false, optional: false, required: true
+  private _aggregation?: string; 
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+  public set aggregation(value: string) {
+    this._aggregation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationInput() {
+    return this._aggregation;
+  }
+
+  // interval - computed: false, optional: true, required: false
+  private _interval?: number; 
+  public get interval() {
+    return this.getNumberAttribute('interval');
+  }
+  public set interval(value: number) {
+    this._interval = value;
+  }
+  public resetInterval() {
+    this._interval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval;
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  public resetMetric() {
+    this._metric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+}
+
+export class MonitorVariablesEventQueryComputeList extends cdktf.ComplexList {
+  public internalValue? : MonitorVariablesEventQueryCompute[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorVariablesEventQueryComputeOutputReference {
+    return new MonitorVariablesEventQueryComputeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MonitorVariablesEventQueryGroupBySort {
+  /**
+  * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#aggregation Monitor#aggregation}
+  */
+  readonly aggregation: string;
+  /**
+  * The metric used for sorting group by results.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#metric Monitor#metric}
+  */
+  readonly metric?: string;
+  /**
+  * Direction of sort. Valid values are `asc`, `desc`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#order Monitor#order}
+  */
+  readonly order?: string;
+}
+
+export function monitorVariablesEventQueryGroupBySortToTerraform(struct?: MonitorVariablesEventQueryGroupBySortOutputReference | MonitorVariablesEventQueryGroupBySort): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aggregation: cdktf.stringToTerraform(struct!.aggregation),
+    metric: cdktf.stringToTerraform(struct!.metric),
+    order: cdktf.stringToTerraform(struct!.order),
+  }
+}
+
+export class MonitorVariablesEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MonitorVariablesEventQueryGroupBySort | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregation = this._aggregation;
+    }
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    if (this._order !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.order = this._order;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesEventQueryGroupBySort | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._aggregation = undefined;
+      this._metric = undefined;
+      this._order = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._aggregation = value.aggregation;
+      this._metric = value.metric;
+      this._order = value.order;
+    }
+  }
+
+  // aggregation - computed: false, optional: false, required: true
+  private _aggregation?: string; 
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+  public set aggregation(value: string) {
+    this._aggregation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationInput() {
+    return this._aggregation;
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  public resetMetric() {
+    this._metric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+
+  // order - computed: false, optional: true, required: false
+  private _order?: string; 
+  public get order() {
+    return this.getStringAttribute('order');
+  }
+  public set order(value: string) {
+    this._order = value;
+  }
+  public resetOrder() {
+    this._order = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderInput() {
+    return this._order;
+  }
+}
+export interface MonitorVariablesEventQueryGroupBy {
+  /**
+  * The event facet.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#facet Monitor#facet}
+  */
+  readonly facet: string;
+  /**
+  * The number of groups to return.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#limit Monitor#limit}
+  */
+  readonly limit?: number;
+  /**
+  * sort block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#sort Monitor#sort}
+  */
+  readonly sort?: MonitorVariablesEventQueryGroupBySort;
+}
+
+export function monitorVariablesEventQueryGroupByToTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    facet: cdktf.stringToTerraform(struct!.facet),
+    limit: cdktf.numberToTerraform(struct!.limit),
+    sort: monitorVariablesEventQueryGroupBySortToTerraform(struct!.sort),
+  }
+}
+
+export class MonitorVariablesEventQueryGroupByOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorVariablesEventQueryGroupBy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._facet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.facet = this._facet;
+    }
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    if (this._sort?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sort = this._sort?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesEventQueryGroupBy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._facet = undefined;
+      this._limit = undefined;
+      this._sort.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._facet = value.facet;
+      this._limit = value.limit;
+      this._sort.internalValue = value.sort;
+    }
+  }
+
+  // facet - computed: false, optional: false, required: true
+  private _facet?: string; 
+  public get facet() {
+    return this.getStringAttribute('facet');
+  }
+  public set facet(value: string) {
+    this._facet = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get facetInput() {
+    return this._facet;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+
+  // sort - computed: false, optional: true, required: false
+  private _sort = new MonitorVariablesEventQueryGroupBySortOutputReference(this, "sort");
+  public get sort() {
+    return this._sort;
+  }
+  public putSort(value: MonitorVariablesEventQueryGroupBySort) {
+    this._sort.internalValue = value;
+  }
+  public resetSort() {
+    this._sort.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortInput() {
+    return this._sort.internalValue;
+  }
+}
+
+export class MonitorVariablesEventQueryGroupByList extends cdktf.ComplexList {
+  public internalValue? : MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorVariablesEventQueryGroupByOutputReference {
+    return new MonitorVariablesEventQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MonitorVariablesEventQuerySearch {
+  /**
+  * The events search string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#query Monitor#query}
+  */
+  readonly query: string;
+}
+
+export function monitorVariablesEventQuerySearchToTerraform(struct?: MonitorVariablesEventQuerySearchOutputReference | MonitorVariablesEventQuerySearch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    query: cdktf.stringToTerraform(struct!.query),
+  }
+}
+
+export class MonitorVariablesEventQuerySearchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MonitorVariablesEventQuerySearch | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesEventQuerySearch | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._query = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._query = value.query;
+    }
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+}
+export interface MonitorVariablesEventQuery {
+  /**
+  * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#data_source Monitor#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * An array of index names to query in the stream.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#indexes Monitor#indexes}
+  */
+  readonly indexes?: string[];
+  /**
+  * The name of query for use in formulas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#name Monitor#name}
+  */
+  readonly name: string;
+  /**
+  * compute block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#compute Monitor#compute}
+  */
+  readonly compute: MonitorVariablesEventQueryCompute[] | cdktf.IResolvable;
+  /**
+  * group_by block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#group_by Monitor#group_by}
+  */
+  readonly groupBy?: MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable;
+  /**
+  * search block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
+  */
+  readonly search?: MonitorVariablesEventQuerySearch;
+}
+
+export function monitorVariablesEventQueryToTerraform(struct?: MonitorVariablesEventQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktf.stringToTerraform(struct!.dataSource),
+    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
+    name: cdktf.stringToTerraform(struct!.name),
+    compute: cdktf.listMapper(monitorVariablesEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktf.listMapper(monitorVariablesEventQueryGroupByToTerraform, true)(struct!.groupBy),
+    search: monitorVariablesEventQuerySearchToTerraform(struct!.search),
+  }
+}
+
+export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorVariablesEventQuery | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSource = this._dataSource;
+    }
+    if (this._indexes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indexes = this._indexes;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._compute?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compute = this._compute?.internalValue;
+    }
+    if (this._groupBy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupBy = this._groupBy?.internalValue;
+    }
+    if (this._search?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.search = this._search?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesEventQuery | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dataSource = undefined;
+      this._indexes = undefined;
+      this._name = undefined;
+      this._compute.internalValue = undefined;
+      this._groupBy.internalValue = undefined;
+      this._search.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dataSource = value.dataSource;
+      this._indexes = value.indexes;
+      this._name = value.name;
+      this._compute.internalValue = value.compute;
+      this._groupBy.internalValue = value.groupBy;
+      this._search.internalValue = value.search;
+    }
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource;
+  }
+
+  // indexes - computed: false, optional: true, required: false
+  private _indexes?: string[]; 
+  public get indexes() {
+    return this.getListAttribute('indexes');
+  }
+  public set indexes(value: string[]) {
+    this._indexes = value;
+  }
+  public resetIndexes() {
+    this._indexes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexesInput() {
+    return this._indexes;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // compute - computed: false, optional: false, required: true
+  private _compute = new MonitorVariablesEventQueryComputeList(this, "compute", false);
+  public get compute() {
+    return this._compute;
+  }
+  public putCompute(value: MonitorVariablesEventQueryCompute[] | cdktf.IResolvable) {
+    this._compute.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInput() {
+    return this._compute.internalValue;
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy = new MonitorVariablesEventQueryGroupByList(this, "group_by", false);
+  public get groupBy() {
+    return this._groupBy;
+  }
+  public putGroupBy(value: MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable) {
+    this._groupBy.internalValue = value;
+  }
+  public resetGroupBy() {
+    this._groupBy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy.internalValue;
+  }
+
+  // search - computed: false, optional: true, required: false
+  private _search = new MonitorVariablesEventQuerySearchOutputReference(this, "search");
+  public get search() {
+    return this._search;
+  }
+  public putSearch(value: MonitorVariablesEventQuerySearch) {
+    this._search.internalValue = value;
+  }
+  public resetSearch() {
+    this._search.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchInput() {
+    return this._search.internalValue;
+  }
+}
+
+export class MonitorVariablesEventQueryList extends cdktf.ComplexList {
+  public internalValue? : MonitorVariablesEventQuery[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorVariablesEventQueryOutputReference {
+    return new MonitorVariablesEventQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MonitorVariables {
+  /**
+  * event_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#event_query Monitor#event_query}
+  */
+  readonly eventQuery?: MonitorVariablesEventQuery[] | cdktf.IResolvable;
+}
+
+export function monitorVariablesToTerraform(struct?: MonitorVariablesOutputReference | MonitorVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    event_query: cdktf.listMapper(monitorVariablesEventQueryToTerraform, true)(struct!.eventQuery),
+  }
+}
+
+export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MonitorVariables | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eventQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventQuery = this._eventQuery?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariables | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._eventQuery.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._eventQuery.internalValue = value.eventQuery;
+    }
+  }
+
+  // event_query - computed: false, optional: true, required: false
+  private _eventQuery = new MonitorVariablesEventQueryList(this, "event_query", false);
+  public get eventQuery() {
+    return this._eventQuery;
+  }
+  public putEventQuery(value: MonitorVariablesEventQuery[] | cdktf.IResolvable) {
+    this._eventQuery.internalValue = value;
+  }
+  public resetEventQuery() {
+    this._eventQuery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventQueryInput() {
+    return this._eventQuery.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor datadog_monitor}
@@ -524,7 +1338,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -539,6 +1353,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._escalationMessage = config.escalationMessage;
     this._evaluationDelay = config.evaluationDelay;
     this._forceDelete = config.forceDelete;
+    this._groupRetentionDuration = config.groupRetentionDuration;
     this._groupbySimpleMonitor = config.groupbySimpleMonitor;
     this._id = config.id;
     this._includeTags = config.includeTags;
@@ -550,6 +1365,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._noDataTimeframe = config.noDataTimeframe;
     this._notifyAudit = config.notifyAudit;
     this._notifyNoData = config.notifyNoData;
+    this._onMissingData = config.onMissingData;
     this._priority = config.priority;
     this._query = config.query;
     this._renotifyInterval = config.renotifyInterval;
@@ -563,6 +1379,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._validate = config.validate;
     this._monitorThresholdWindows.internalValue = config.monitorThresholdWindows;
     this._monitorThresholds.internalValue = config.monitorThresholds;
+    this._variables.internalValue = config.variables;
   }
 
   // ==========
@@ -631,6 +1448,22 @@ export class Monitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forceDeleteInput() {
     return this._forceDelete;
+  }
+
+  // group_retention_duration - computed: false, optional: true, required: false
+  private _groupRetentionDuration?: string; 
+  public get groupRetentionDuration() {
+    return this.getStringAttribute('group_retention_duration');
+  }
+  public set groupRetentionDuration(value: string) {
+    this._groupRetentionDuration = value;
+  }
+  public resetGroupRetentionDuration() {
+    this._groupRetentionDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupRetentionDurationInput() {
+    return this._groupRetentionDuration;
   }
 
   // groupby_simple_monitor - computed: false, optional: true, required: false
@@ -801,6 +1634,22 @@ export class Monitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get notifyNoDataInput() {
     return this._notifyNoData;
+  }
+
+  // on_missing_data - computed: false, optional: true, required: false
+  private _onMissingData?: string; 
+  public get onMissingData() {
+    return this.getStringAttribute('on_missing_data');
+  }
+  public set onMissingData(value: string) {
+    this._onMissingData = value;
+  }
+  public resetOnMissingData() {
+    this._onMissingData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onMissingDataInput() {
+    return this._onMissingData;
   }
 
   // priority - computed: false, optional: true, required: false
@@ -1005,6 +1854,22 @@ export class Monitor extends cdktf.TerraformResource {
     return this._monitorThresholds.internalValue;
   }
 
+  // variables - computed: false, optional: true, required: false
+  private _variables = new MonitorVariablesOutputReference(this, "variables");
+  public get variables() {
+    return this._variables;
+  }
+  public putVariables(value: MonitorVariables) {
+    this._variables.internalValue = value;
+  }
+  public resetVariables() {
+    this._variables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variablesInput() {
+    return this._variables.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1015,6 +1880,7 @@ export class Monitor extends cdktf.TerraformResource {
       escalation_message: cdktf.stringToTerraform(this._escalationMessage),
       evaluation_delay: cdktf.numberToTerraform(this._evaluationDelay),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
+      group_retention_duration: cdktf.stringToTerraform(this._groupRetentionDuration),
       groupby_simple_monitor: cdktf.booleanToTerraform(this._groupbySimpleMonitor),
       id: cdktf.stringToTerraform(this._id),
       include_tags: cdktf.booleanToTerraform(this._includeTags),
@@ -1026,6 +1892,7 @@ export class Monitor extends cdktf.TerraformResource {
       no_data_timeframe: cdktf.numberToTerraform(this._noDataTimeframe),
       notify_audit: cdktf.booleanToTerraform(this._notifyAudit),
       notify_no_data: cdktf.booleanToTerraform(this._notifyNoData),
+      on_missing_data: cdktf.stringToTerraform(this._onMissingData),
       priority: cdktf.numberToTerraform(this._priority),
       query: cdktf.stringToTerraform(this._query),
       renotify_interval: cdktf.numberToTerraform(this._renotifyInterval),
@@ -1039,6 +1906,7 @@ export class Monitor extends cdktf.TerraformResource {
       validate: cdktf.booleanToTerraform(this._validate),
       monitor_threshold_windows: monitorMonitorThresholdWindowsToTerraform(this._monitorThresholdWindows.internalValue),
       monitor_thresholds: monitorMonitorThresholdsToTerraform(this._monitorThresholds.internalValue),
+      variables: monitorVariablesToTerraform(this._variables.internalValue),
     };
   }
 }

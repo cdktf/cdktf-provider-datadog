@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable
+// https://www.terraform.io/docs/providers/datadog/r/rum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,46 +6,52 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataDatadogSyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArguments {
+export interface RumApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#id RumApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The synthetics global variable name to search for. Must only match one global variable.
+  * The name of the RUM application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#name RumApplication#name}
   */
   readonly name: string;
+  /**
+  * The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#type RumApplication#type}
+  */
+  readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}
+* Represents a {@link https://www.terraform.io/docs/providers/datadog/r/rum_application datadog_rum_application}
 */
-export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSource {
+export class RumApplication extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "datadog_synthetics_global_variable";
+  public static readonly tfResourceType = "datadog_rum_application";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/datadog/r/rum_application datadog_rum_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataDatadogSyntheticsGlobalVariableConfig
+  * @param options RumApplicationConfig
   */
-  public constructor(scope: Construct, id: string, config: DataDatadogSyntheticsGlobalVariableConfig) {
+  public constructor(scope: Construct, id: string, config: RumApplicationConfig) {
     super(scope, id, {
-      terraformResourceType: 'datadog_synthetics_global_variable',
+      terraformResourceType: 'datadog_rum_application',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
         providerVersion: '3.15.0',
@@ -61,11 +67,17 @@ export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSour
     });
     this._id = config.id;
     this._name = config.name;
+    this._type = config.type;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // client_token - computed: true, optional: false, required: false
+  public get clientToken() {
+    return this.getStringAttribute('client_token');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -96,9 +108,20 @@ export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSour
     return this._name;
   }
 
-  // tags - computed: true, optional: false, required: false
-  public get tags() {
-    return this.getListAttribute('tags');
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
   }
 
   // =========
@@ -109,6 +132,7 @@ export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSour
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }
