@@ -21,7 +21,7 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Array of locations used to run the test. Refer to [Datadog documentation](https://docs.datadoghq.com/synthetics/api_test/#request) for available locations (e.g. `aws:eu-central-1`).
+  * Array of locations used to run the test. Refer to [the Datadog Synthetics location data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/synthetics_locations) to retrieve the list of locations.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#locations SyntheticsTest#locations}
   */
@@ -571,7 +571,7 @@ export interface SyntheticsTestApiStepExtractedValue {
   */
   readonly name: string;
   /**
-  * Property of the Synthetics Test Response to use for the variable. Valid values are `http_body`, `http_header`.
+  * Property of the Synthetics Test Response to use for the variable. Valid values are `http_body`, `http_header`, `local_variable`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#type SyntheticsTest#type}
   */
@@ -6339,7 +6339,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

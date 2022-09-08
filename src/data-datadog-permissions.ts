@@ -42,7 +42,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_permissions',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

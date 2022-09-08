@@ -218,7 +218,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -252,6 +252,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // evaluation_delay - computed: true, optional: false, required: false
   public get evaluationDelay() {
     return this.getNumberAttribute('evaluation_delay');
+  }
+
+  // group_retention_duration - computed: true, optional: false, required: false
+  public get groupRetentionDuration() {
+    return this.getStringAttribute('group_retention_duration');
   }
 
   // groupby_simple_monitor - computed: true, optional: false, required: false
@@ -362,6 +367,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // notify_no_data - computed: true, optional: false, required: false
   public get notifyNoData() {
     return this.getBooleanAttribute('notify_no_data');
+  }
+
+  // on_missing_data - computed: true, optional: false, required: false
+  public get onMissingData() {
+    return this.getStringAttribute('on_missing_data');
   }
 
   // query - computed: true, optional: false, required: false

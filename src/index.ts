@@ -32,6 +32,7 @@ export * from './monitor';
 export * from './monitor-json';
 export * from './organization-settings';
 export * from './role';
+export * from './rum-application';
 export * from './security-monitoring-default-rule';
 export * from './security-monitoring-filter';
 export * from './security-monitoring-rule';

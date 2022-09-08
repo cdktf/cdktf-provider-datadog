@@ -6104,7 +6104,7 @@ export class DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestColu
 }
 export interface DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuery {
   /**
-  * Source from which to query items to display in the stream. Valid values are `logs_stream`, `audit_stream`, `rum_issue_stream`, `apm_issue_stream`.
+  * Source from which to query items to display in the stream. Valid values are `logs_stream`, `audit_stream`, `rum_issue_stream`, `apm_issue_stream`, `logs_pattern_stream`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
@@ -7002,7 +7002,13 @@ export interface DashboardWidgetGroupDefinitionWidgetManageStatusDefinition {
   */
   readonly showLastTriggered?: boolean | cdktf.IResolvable;
   /**
-  * The method to sort the monitors. Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`.
+  * Whether to show the priorities column.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#show_priority Dashboard#show_priority}
+  */
+  readonly showPriority?: boolean | cdktf.IResolvable;
+  /**
+  * The method to sort the monitors. Valid values are `name`, `group`, `status`, `tags`, `triggered`, `group,asc`, `group,desc`, `name,asc`, `name,desc`, `status,asc`, `status,desc`, `tags,asc`, `tags,desc`, `triggered,asc`, `triggered,desc`, `priority,asc`, `priority,desc`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
   */
@@ -7044,6 +7050,7 @@ export function dashboardWidgetGroupDefinitionWidgetManageStatusDefinitionToTerr
     hide_zero_counts: cdktf.booleanToTerraform(struct!.hideZeroCounts),
     query: cdktf.stringToTerraform(struct!.query),
     show_last_triggered: cdktf.booleanToTerraform(struct!.showLastTriggered),
+    show_priority: cdktf.booleanToTerraform(struct!.showPriority),
     sort: cdktf.stringToTerraform(struct!.sort),
     summary_type: cdktf.stringToTerraform(struct!.summaryType),
     title: cdktf.stringToTerraform(struct!.title),
@@ -7086,6 +7093,10 @@ export class DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputRef
       hasAnyValues = true;
       internalValueResult.showLastTriggered = this._showLastTriggered;
     }
+    if (this._showPriority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.showPriority = this._showPriority;
+    }
     if (this._sort !== undefined) {
       hasAnyValues = true;
       internalValueResult.sort = this._sort;
@@ -7117,6 +7128,7 @@ export class DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputRef
       this._hideZeroCounts = undefined;
       this._query = undefined;
       this._showLastTriggered = undefined;
+      this._showPriority = undefined;
       this._sort = undefined;
       this._summaryType = undefined;
       this._title = undefined;
@@ -7130,6 +7142,7 @@ export class DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputRef
       this._hideZeroCounts = value.hideZeroCounts;
       this._query = value.query;
       this._showLastTriggered = value.showLastTriggered;
+      this._showPriority = value.showPriority;
       this._sort = value.sort;
       this._summaryType = value.summaryType;
       this._title = value.title;
@@ -7213,6 +7226,22 @@ export class DashboardWidgetGroupDefinitionWidgetManageStatusDefinitionOutputRef
   // Temporarily expose input value. Use with caution.
   public get showLastTriggeredInput() {
     return this._showLastTriggered;
+  }
+
+  // show_priority - computed: false, optional: true, required: false
+  private _showPriority?: boolean | cdktf.IResolvable; 
+  public get showPriority() {
+    return this.getBooleanAttribute('show_priority');
+  }
+  public set showPriority(value: boolean | cdktf.IResolvable) {
+    this._showPriority = value;
+  }
+  public resetShowPriority() {
+    this._showPriority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get showPriorityInput() {
+    return this._showPriority;
   }
 
   // sort - computed: false, optional: true, required: false
@@ -11869,7 +11898,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuer
 }
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuery {
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
@@ -19534,7 +19563,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
 }
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery {
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */

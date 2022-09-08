@@ -164,7 +164,7 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   */
   readonly field?: string;
   /**
-  * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`.
+  * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `local_variable`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
@@ -302,7 +302,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.14.0',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
