@@ -140,7 +140,7 @@ export class DataDatadogServiceLevelObjectives extends cdktf.TerraformDataSource
       terraformResourceType: 'datadog_service_level_objectives',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.0',
+        providerVersion: '3.15.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
