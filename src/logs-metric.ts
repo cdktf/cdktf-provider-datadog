@@ -345,7 +345,7 @@ export class LogsMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.0',
+        providerVersion: '3.15.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
