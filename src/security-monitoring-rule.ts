@@ -957,7 +957,7 @@ export class SecurityMonitoringRuleQueryAgentRuleList extends cdktf.ComplexList 
 }
 export interface SecurityMonitoringRuleQuery {
   /**
-  * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`.
+  * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
@@ -1281,7 +1281,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

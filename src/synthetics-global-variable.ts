@@ -164,6 +164,12 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   */
   readonly field?: string;
   /**
+  * When type is `local_variable`, name of the local variable to use to extract the value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
+  */
+  readonly localVariableName?: string;
+  /**
   * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `local_variable`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#type SyntheticsGlobalVariable#type}
@@ -174,7 +180,7 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
   */
-  readonly parser: SyntheticsGlobalVariableParseTestOptionsParser;
+  readonly parser?: SyntheticsGlobalVariableParseTestOptionsParser;
 }
 
 export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsOutputReference | SyntheticsGlobalVariableParseTestOptions): any {
@@ -184,6 +190,7 @@ export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: Syn
   }
   return {
     field: cdktf.stringToTerraform(struct!.field),
+    local_variable_name: cdktf.stringToTerraform(struct!.localVariableName),
     type: cdktf.stringToTerraform(struct!.type),
     parser: syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct!.parser),
   }
@@ -207,6 +214,10 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.field = this._field;
     }
+    if (this._localVariableName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localVariableName = this._localVariableName;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -222,12 +233,14 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
     if (value === undefined) {
       this.isEmptyObject = false;
       this._field = undefined;
+      this._localVariableName = undefined;
       this._type = undefined;
       this._parser.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._field = value.field;
+      this._localVariableName = value.localVariableName;
       this._type = value.type;
       this._parser.internalValue = value.parser;
     }
@@ -249,6 +262,22 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
     return this._field;
   }
 
+  // local_variable_name - computed: false, optional: true, required: false
+  private _localVariableName?: string; 
+  public get localVariableName() {
+    return this.getStringAttribute('local_variable_name');
+  }
+  public set localVariableName(value: string) {
+    this._localVariableName = value;
+  }
+  public resetLocalVariableName() {
+    this._localVariableName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localVariableNameInput() {
+    return this._localVariableName;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -262,13 +291,16 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
     return this._type;
   }
 
-  // parser - computed: false, optional: false, required: true
+  // parser - computed: false, optional: true, required: false
   private _parser = new SyntheticsGlobalVariableParseTestOptionsParserOutputReference(this, "parser");
   public get parser() {
     return this._parser;
   }
   public putParser(value: SyntheticsGlobalVariableParseTestOptionsParser) {
     this._parser.internalValue = value;
+  }
+  public resetParser() {
+    this._parser.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parserInput() {
@@ -302,7 +334,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

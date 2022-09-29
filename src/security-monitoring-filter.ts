@@ -194,7 +194,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

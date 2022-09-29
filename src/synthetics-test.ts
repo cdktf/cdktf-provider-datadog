@@ -1352,6 +1352,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly body?: string;
   /**
+  * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+  */
+  readonly certificateDomains?: string[];
+  /**
   * DNS server to use for DNS tests (`subtype = "dns"`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#dns_server SyntheticsTest#dns_server}
@@ -1445,6 +1451,7 @@ export function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: Synth
   return {
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     body: cdktf.stringToTerraform(struct!.body),
+    certificate_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateDomains),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
@@ -1483,6 +1490,10 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
     if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
+    }
+    if (this._certificateDomains !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateDomains = this._certificateDomains;
     }
     if (this._dnsServer !== undefined) {
       hasAnyValues = true;
@@ -1548,6 +1559,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this.isEmptyObject = false;
       this._allowInsecure = undefined;
       this._body = undefined;
+      this._certificateDomains = undefined;
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
       this._followRedirects = undefined;
@@ -1567,6 +1579,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowInsecure = value.allowInsecure;
       this._body = value.body;
+      this._certificateDomains = value.certificateDomains;
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
       this._followRedirects = value.followRedirects;
@@ -1614,6 +1627,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
     return this._body;
+  }
+
+  // certificate_domains - computed: false, optional: true, required: false
+  private _certificateDomains?: string[]; 
+  public get certificateDomains() {
+    return this.getListAttribute('certificate_domains');
+  }
+  public set certificateDomains(value: string[]) {
+    this._certificateDomains = value;
+  }
+  public resetCertificateDomains() {
+    this._certificateDomains = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateDomainsInput() {
+    return this._certificateDomains;
   }
 
   // dns_server - computed: false, optional: true, required: false
@@ -4723,11 +4752,29 @@ export interface SyntheticsTestOptionsList {
   */
   readonly checkCertificateRevocation?: boolean | cdktf.IResolvable;
   /**
+  * Disable Content Security Policy for browser tests.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+  */
+  readonly disableCsp?: boolean | cdktf.IResolvable;
+  /**
   * Determines whether or not the API HTTP test should follow redirects.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
+  /**
+  * Ignore server certificate error.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+  */
+  readonly ignoreServerCertificateError?: boolean | cdktf.IResolvable;
+  /**
+  * Timeout before declaring the initial step as failed (in seconds) for browser tests.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+  */
+  readonly initialNavigationTimeout?: number;
   /**
   * Minimum amount of time in failure required to trigger an alert. Default is `0`.
   * 
@@ -4803,7 +4850,10 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     accept_self_signed: cdktf.booleanToTerraform(struct!.acceptSelfSigned),
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     check_certificate_revocation: cdktf.booleanToTerraform(struct!.checkCertificateRevocation),
+    disable_csp: cdktf.booleanToTerraform(struct!.disableCsp),
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
+    ignore_server_certificate_error: cdktf.booleanToTerraform(struct!.ignoreServerCertificateError),
+    initial_navigation_timeout: cdktf.numberToTerraform(struct!.initialNavigationTimeout),
     min_failure_duration: cdktf.numberToTerraform(struct!.minFailureDuration),
     min_location_failed: cdktf.numberToTerraform(struct!.minLocationFailed),
     monitor_name: cdktf.stringToTerraform(struct!.monitorName),
@@ -4844,9 +4894,21 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.checkCertificateRevocation = this._checkCertificateRevocation;
     }
+    if (this._disableCsp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableCsp = this._disableCsp;
+    }
     if (this._followRedirects !== undefined) {
       hasAnyValues = true;
       internalValueResult.followRedirects = this._followRedirects;
+    }
+    if (this._ignoreServerCertificateError !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreServerCertificateError = this._ignoreServerCertificateError;
+    }
+    if (this._initialNavigationTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialNavigationTimeout = this._initialNavigationTimeout;
     }
     if (this._minFailureDuration !== undefined) {
       hasAnyValues = true;
@@ -4901,7 +4963,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._acceptSelfSigned = undefined;
       this._allowInsecure = undefined;
       this._checkCertificateRevocation = undefined;
+      this._disableCsp = undefined;
       this._followRedirects = undefined;
+      this._ignoreServerCertificateError = undefined;
+      this._initialNavigationTimeout = undefined;
       this._minFailureDuration = undefined;
       this._minLocationFailed = undefined;
       this._monitorName = undefined;
@@ -4919,7 +4984,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._acceptSelfSigned = value.acceptSelfSigned;
       this._allowInsecure = value.allowInsecure;
       this._checkCertificateRevocation = value.checkCertificateRevocation;
+      this._disableCsp = value.disableCsp;
       this._followRedirects = value.followRedirects;
+      this._ignoreServerCertificateError = value.ignoreServerCertificateError;
+      this._initialNavigationTimeout = value.initialNavigationTimeout;
       this._minFailureDuration = value.minFailureDuration;
       this._minLocationFailed = value.minLocationFailed;
       this._monitorName = value.monitorName;
@@ -4982,6 +5050,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     return this._checkCertificateRevocation;
   }
 
+  // disable_csp - computed: false, optional: true, required: false
+  private _disableCsp?: boolean | cdktf.IResolvable; 
+  public get disableCsp() {
+    return this.getBooleanAttribute('disable_csp');
+  }
+  public set disableCsp(value: boolean | cdktf.IResolvable) {
+    this._disableCsp = value;
+  }
+  public resetDisableCsp() {
+    this._disableCsp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableCspInput() {
+    return this._disableCsp;
+  }
+
   // follow_redirects - computed: false, optional: true, required: false
   private _followRedirects?: boolean | cdktf.IResolvable; 
   public get followRedirects() {
@@ -4996,6 +5080,38 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get followRedirectsInput() {
     return this._followRedirects;
+  }
+
+  // ignore_server_certificate_error - computed: false, optional: true, required: false
+  private _ignoreServerCertificateError?: boolean | cdktf.IResolvable; 
+  public get ignoreServerCertificateError() {
+    return this.getBooleanAttribute('ignore_server_certificate_error');
+  }
+  public set ignoreServerCertificateError(value: boolean | cdktf.IResolvable) {
+    this._ignoreServerCertificateError = value;
+  }
+  public resetIgnoreServerCertificateError() {
+    this._ignoreServerCertificateError = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreServerCertificateErrorInput() {
+    return this._ignoreServerCertificateError;
+  }
+
+  // initial_navigation_timeout - computed: false, optional: true, required: false
+  private _initialNavigationTimeout?: number; 
+  public get initialNavigationTimeout() {
+    return this.getNumberAttribute('initial_navigation_timeout');
+  }
+  public set initialNavigationTimeout(value: number) {
+    this._initialNavigationTimeout = value;
+  }
+  public resetInitialNavigationTimeout() {
+    this._initialNavigationTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialNavigationTimeoutInput() {
+    return this._initialNavigationTimeout;
   }
 
   // min_failure_duration - computed: false, optional: true, required: false
@@ -5783,6 +5899,12 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly body?: string;
   /**
+  * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+  */
+  readonly certificateDomains?: string[];
+  /**
   * DNS server to use for DNS tests (`subtype = "dns"`).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#dns_server SyntheticsTest#dns_server}
@@ -5869,6 +5991,7 @@ export function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTe
   }
   return {
     body: cdktf.stringToTerraform(struct!.body),
+    certificate_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateDomains),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
     host: cdktf.stringToTerraform(struct!.host),
@@ -5902,6 +6025,10 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
+    }
+    if (this._certificateDomains !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateDomains = this._certificateDomains;
     }
     if (this._dnsServer !== undefined) {
       hasAnyValues = true;
@@ -5962,6 +6089,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     if (value === undefined) {
       this.isEmptyObject = false;
       this._body = undefined;
+      this._certificateDomains = undefined;
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
       this._host = undefined;
@@ -5979,6 +6107,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._body = value.body;
+      this._certificateDomains = value.certificateDomains;
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
       this._host = value.host;
@@ -6009,6 +6138,22 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
     return this._body;
+  }
+
+  // certificate_domains - computed: false, optional: true, required: false
+  private _certificateDomains?: string[]; 
+  public get certificateDomains() {
+    return this.getListAttribute('certificate_domains');
+  }
+  public set certificateDomains(value: string[]) {
+    this._certificateDomains = value;
+  }
+  public resetCertificateDomains() {
+    this._certificateDomains = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateDomainsInput() {
+    return this._certificateDomains;
   }
 
   // dns_server - computed: false, optional: true, required: false
@@ -6339,7 +6484,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

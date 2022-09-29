@@ -214,7 +214,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_slack_channel',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

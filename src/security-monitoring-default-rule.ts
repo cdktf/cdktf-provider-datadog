@@ -377,7 +377,7 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_default_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -429,6 +429,11 @@ export class SecurityMonitoringDefaultRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
   }
 
   // case - computed: false, optional: true, required: false
