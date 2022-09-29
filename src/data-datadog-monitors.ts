@@ -134,7 +134,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitors',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

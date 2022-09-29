@@ -48,7 +48,7 @@ export class DataDatadogSyntheticsGlobalVariable extends cdktf.TerraformDataSour
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.15.1',
+        providerVersion: '3.16.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
