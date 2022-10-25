@@ -218,7 +218,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -362,6 +362,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // notify_audit - computed: true, optional: false, required: false
   public get notifyAudit() {
     return this.getBooleanAttribute('notify_audit');
+  }
+
+  // notify_by - computed: true, optional: false, required: false
+  public get notifyBy() {
+    return cdktf.Fn.tolist(this.getListAttribute('notify_by'));
   }
 
   // notify_no_data - computed: true, optional: false, required: false

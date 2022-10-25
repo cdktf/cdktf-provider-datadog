@@ -45,7 +45,7 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   */
   readonly tags?: string[];
   /**
-  * The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`.
+  * The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`, `signal_correlation`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#type SecurityMonitoringRule#type}
   */
@@ -73,7 +73,13 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#query SecurityMonitoringRule#query}
   */
-  readonly query: SecurityMonitoringRuleQuery[] | cdktf.IResolvable;
+  readonly query?: SecurityMonitoringRuleQuery[] | cdktf.IResolvable;
+  /**
+  * signal_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
+  */
+  readonly signalQuery?: SecurityMonitoringRuleSignalQuery[] | cdktf.IResolvable;
 }
 export interface SecurityMonitoringRuleCase {
   /**
@@ -382,7 +388,7 @@ export class SecurityMonitoringRuleFilterList extends cdktf.ComplexList {
 }
 export interface SecurityMonitoringRuleOptionsImpossibleTravelOptions {
   /**
-  * If true, signals are suppressed for the first 24 hours. In that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access.
+  * If true, signals are suppressed for the first 24 hours. During that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
   */
@@ -957,7 +963,7 @@ export class SecurityMonitoringRuleQueryAgentRuleList extends cdktf.ComplexList 
 }
 export interface SecurityMonitoringRuleQuery {
   /**
-  * The aggregation type. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
+  * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
@@ -975,13 +981,13 @@ export interface SecurityMonitoringRuleQuery {
   */
   readonly groupByFields?: string[];
   /**
-  * The target field to aggregate over when using the `sum`, `max`, or `new_value` aggregations.
+  * The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations. **Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metric SecurityMonitoringRule#metric}
   */
   readonly metric?: string;
   /**
-  * Group of target fields to aggregate over when using the new value aggregations.
+  * Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations. The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
   */
@@ -1254,6 +1260,247 @@ export class SecurityMonitoringRuleQueryList extends cdktf.ComplexList {
     return new SecurityMonitoringRuleQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface SecurityMonitoringRuleSignalQuery {
+  /**
+  * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
+  */
+  readonly aggregation?: string;
+  /**
+  * Fields to correlate by.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#correlated_by_fields SecurityMonitoringRule#correlated_by_fields}
+  */
+  readonly correlatedByFields?: string[];
+  /**
+  * Index of the rule query used to retrieve the correlated field. An empty string applies correlation on the non-projected per query attributes of the rule.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#correlated_query_index SecurityMonitoringRule#correlated_query_index}
+  */
+  readonly correlatedQueryIndex?: string;
+  /**
+  * Default Rule ID of the signal to correlate. This value is READ-ONLY.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#default_rule_id SecurityMonitoringRule#default_rule_id}
+  */
+  readonly defaultRuleId?: string;
+  /**
+  * Name of the query. Not compatible with `new_value` aggregations.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#name SecurityMonitoringRule#name}
+  */
+  readonly name?: string;
+  /**
+  * Rule ID of the signal to correlate.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#rule_id SecurityMonitoringRule#rule_id}
+  */
+  readonly ruleId: string;
+}
+
+export function securityMonitoringRuleSignalQueryToTerraform(struct?: SecurityMonitoringRuleSignalQuery | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aggregation: cdktf.stringToTerraform(struct!.aggregation),
+    correlated_by_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.correlatedByFields),
+    correlated_query_index: cdktf.stringToTerraform(struct!.correlatedQueryIndex),
+    default_rule_id: cdktf.stringToTerraform(struct!.defaultRuleId),
+    name: cdktf.stringToTerraform(struct!.name),
+    rule_id: cdktf.stringToTerraform(struct!.ruleId),
+  }
+}
+
+export class SecurityMonitoringRuleSignalQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SecurityMonitoringRuleSignalQuery | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregation = this._aggregation;
+    }
+    if (this._correlatedByFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.correlatedByFields = this._correlatedByFields;
+    }
+    if (this._correlatedQueryIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.correlatedQueryIndex = this._correlatedQueryIndex;
+    }
+    if (this._defaultRuleId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultRuleId = this._defaultRuleId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._ruleId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ruleId = this._ruleId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SecurityMonitoringRuleSignalQuery | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._aggregation = undefined;
+      this._correlatedByFields = undefined;
+      this._correlatedQueryIndex = undefined;
+      this._defaultRuleId = undefined;
+      this._name = undefined;
+      this._ruleId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._aggregation = value.aggregation;
+      this._correlatedByFields = value.correlatedByFields;
+      this._correlatedQueryIndex = value.correlatedQueryIndex;
+      this._defaultRuleId = value.defaultRuleId;
+      this._name = value.name;
+      this._ruleId = value.ruleId;
+    }
+  }
+
+  // aggregation - computed: false, optional: true, required: false
+  private _aggregation?: string; 
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+  public set aggregation(value: string) {
+    this._aggregation = value;
+  }
+  public resetAggregation() {
+    this._aggregation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationInput() {
+    return this._aggregation;
+  }
+
+  // correlated_by_fields - computed: false, optional: true, required: false
+  private _correlatedByFields?: string[]; 
+  public get correlatedByFields() {
+    return this.getListAttribute('correlated_by_fields');
+  }
+  public set correlatedByFields(value: string[]) {
+    this._correlatedByFields = value;
+  }
+  public resetCorrelatedByFields() {
+    this._correlatedByFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get correlatedByFieldsInput() {
+    return this._correlatedByFields;
+  }
+
+  // correlated_query_index - computed: false, optional: true, required: false
+  private _correlatedQueryIndex?: string; 
+  public get correlatedQueryIndex() {
+    return this.getStringAttribute('correlated_query_index');
+  }
+  public set correlatedQueryIndex(value: string) {
+    this._correlatedQueryIndex = value;
+  }
+  public resetCorrelatedQueryIndex() {
+    this._correlatedQueryIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get correlatedQueryIndexInput() {
+    return this._correlatedQueryIndex;
+  }
+
+  // default_rule_id - computed: false, optional: true, required: false
+  private _defaultRuleId?: string; 
+  public get defaultRuleId() {
+    return this.getStringAttribute('default_rule_id');
+  }
+  public set defaultRuleId(value: string) {
+    this._defaultRuleId = value;
+  }
+  public resetDefaultRuleId() {
+    this._defaultRuleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRuleIdInput() {
+    return this._defaultRuleId;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // rule_id - computed: false, optional: false, required: true
+  private _ruleId?: string; 
+  public get ruleId() {
+    return this.getStringAttribute('rule_id');
+  }
+  public set ruleId(value: string) {
+    this._ruleId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleIdInput() {
+    return this._ruleId;
+  }
+}
+
+export class SecurityMonitoringRuleSignalQueryList extends cdktf.ComplexList {
+  public internalValue? : SecurityMonitoringRuleSignalQuery[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SecurityMonitoringRuleSignalQueryOutputReference {
+    return new SecurityMonitoringRuleSignalQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule datadog_security_monitoring_rule}
@@ -1281,7 +1528,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1303,6 +1550,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     this._filter.internalValue = config.filter;
     this._options.internalValue = config.options;
     this._query.internalValue = config.query;
+    this._signalQuery.internalValue = config.signalQuery;
   }
 
   // ==========
@@ -1460,7 +1708,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
     return this._options.internalValue;
   }
 
-  // query - computed: false, optional: false, required: true
+  // query - computed: false, optional: true, required: false
   private _query = new SecurityMonitoringRuleQueryList(this, "query", false);
   public get query() {
     return this._query;
@@ -1468,9 +1716,28 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
   public putQuery(value: SecurityMonitoringRuleQuery[] | cdktf.IResolvable) {
     this._query.internalValue = value;
   }
+  public resetQuery() {
+    this._query.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
     return this._query.internalValue;
+  }
+
+  // signal_query - computed: false, optional: true, required: false
+  private _signalQuery = new SecurityMonitoringRuleSignalQueryList(this, "signal_query", false);
+  public get signalQuery() {
+    return this._signalQuery;
+  }
+  public putSignalQuery(value: SecurityMonitoringRuleSignalQuery[] | cdktf.IResolvable) {
+    this._signalQuery.internalValue = value;
+  }
+  public resetSignalQuery() {
+    this._signalQuery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signalQueryInput() {
+    return this._signalQuery.internalValue;
   }
 
   // =========
@@ -1490,6 +1757,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       filter: cdktf.listMapper(securityMonitoringRuleFilterToTerraform, true)(this._filter.internalValue),
       options: securityMonitoringRuleOptionsToTerraform(this._options.internalValue),
       query: cdktf.listMapper(securityMonitoringRuleQueryToTerraform, true)(this._query.internalValue),
+      signal_query: cdktf.listMapper(securityMonitoringRuleSignalQueryToTerraform, true)(this._signalQuery.internalValue),
     };
   }
 }

@@ -4752,6 +4752,12 @@ export interface SyntheticsTestOptionsList {
   */
   readonly checkCertificateRevocation?: boolean | cdktf.IResolvable;
   /**
+  * Disable Cross-Origin Resource Sharing for browser tests.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+  */
+  readonly disableCors?: boolean | cdktf.IResolvable;
+  /**
   * Disable Content Security Policy for browser tests.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#disable_csp SyntheticsTest#disable_csp}
@@ -4850,6 +4856,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     accept_self_signed: cdktf.booleanToTerraform(struct!.acceptSelfSigned),
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     check_certificate_revocation: cdktf.booleanToTerraform(struct!.checkCertificateRevocation),
+    disable_cors: cdktf.booleanToTerraform(struct!.disableCors),
     disable_csp: cdktf.booleanToTerraform(struct!.disableCsp),
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
     ignore_server_certificate_error: cdktf.booleanToTerraform(struct!.ignoreServerCertificateError),
@@ -4893,6 +4900,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     if (this._checkCertificateRevocation !== undefined) {
       hasAnyValues = true;
       internalValueResult.checkCertificateRevocation = this._checkCertificateRevocation;
+    }
+    if (this._disableCors !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableCors = this._disableCors;
     }
     if (this._disableCsp !== undefined) {
       hasAnyValues = true;
@@ -4963,6 +4974,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._acceptSelfSigned = undefined;
       this._allowInsecure = undefined;
       this._checkCertificateRevocation = undefined;
+      this._disableCors = undefined;
       this._disableCsp = undefined;
       this._followRedirects = undefined;
       this._ignoreServerCertificateError = undefined;
@@ -4984,6 +4996,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._acceptSelfSigned = value.acceptSelfSigned;
       this._allowInsecure = value.allowInsecure;
       this._checkCertificateRevocation = value.checkCertificateRevocation;
+      this._disableCors = value.disableCors;
       this._disableCsp = value.disableCsp;
       this._followRedirects = value.followRedirects;
       this._ignoreServerCertificateError = value.ignoreServerCertificateError;
@@ -5048,6 +5061,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get checkCertificateRevocationInput() {
     return this._checkCertificateRevocation;
+  }
+
+  // disable_cors - computed: false, optional: true, required: false
+  private _disableCors?: boolean | cdktf.IResolvable; 
+  public get disableCors() {
+    return this.getBooleanAttribute('disable_cors');
+  }
+  public set disableCors(value: boolean | cdktf.IResolvable) {
+    this._disableCors = value;
+  }
+  public resetDisableCors() {
+    this._disableCors = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableCorsInput() {
+    return this._disableCors;
   }
 
   // disable_csp - computed: false, optional: true, required: false
@@ -6484,7 +6513,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

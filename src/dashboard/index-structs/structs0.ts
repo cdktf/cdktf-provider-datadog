@@ -4447,6 +4447,12 @@ export interface DashboardWidgetChangeDefinitionRequestQueryEventQuery {
   */
   readonly name: string;
   /**
+  * Storage location (private beta).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+  */
+  readonly storage?: string;
+  /**
   * compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
@@ -4475,6 +4481,7 @@ export function dashboardWidgetChangeDefinitionRequestQueryEventQueryToTerraform
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
+    storage: cdktf.stringToTerraform(struct!.storage),
     compute: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
     group_by: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetChangeDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
@@ -4507,6 +4514,10 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReferenc
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
     if (this._compute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute?.internalValue;
@@ -4528,6 +4539,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReferenc
       this._dataSource = undefined;
       this._indexes = undefined;
       this._name = undefined;
+      this._storage = undefined;
       this._compute.internalValue = undefined;
       this._groupBy.internalValue = undefined;
       this._search.internalValue = undefined;
@@ -4537,6 +4549,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReferenc
       this._dataSource = value.dataSource;
       this._indexes = value.indexes;
       this._name = value.name;
+      this._storage = value.storage;
       this._compute.internalValue = value.compute;
       this._groupBy.internalValue = value.groupBy;
       this._search.internalValue = value.search;
@@ -4583,6 +4596,22 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReferenc
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // storage - computed: false, optional: true, required: false
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
   }
 
   // compute - computed: false, optional: false, required: true
@@ -15106,6 +15135,12 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQuery {
   */
   readonly name: string;
   /**
+  * Storage location (private beta).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+  */
+  readonly storage?: string;
+  /**
   * compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
@@ -15134,6 +15169,7 @@ export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryToTerraform
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
+    storage: cdktf.stringToTerraform(struct!.storage),
     compute: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
     group_by: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
@@ -15166,6 +15202,10 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReferenc
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
     if (this._compute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute?.internalValue;
@@ -15187,6 +15227,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReferenc
       this._dataSource = undefined;
       this._indexes = undefined;
       this._name = undefined;
+      this._storage = undefined;
       this._compute.internalValue = undefined;
       this._groupBy.internalValue = undefined;
       this._search.internalValue = undefined;
@@ -15196,6 +15237,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReferenc
       this._dataSource = value.dataSource;
       this._indexes = value.indexes;
       this._name = value.name;
+      this._storage = value.storage;
       this._compute.internalValue = value.compute;
       this._groupBy.internalValue = value.groupBy;
       this._search.internalValue = value.search;
@@ -15242,6 +15284,22 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReferenc
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // storage - computed: false, optional: true, required: false
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
   }
 
   // compute - computed: false, optional: false, required: true
