@@ -595,6 +595,95 @@ export class DataDatadogSecurityMonitoringRulesRulesQueryList extends cdktf.Comp
     return new DataDatadogSecurityMonitoringRulesRulesQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatadogSecurityMonitoringRulesRulesSignalQuery {
+}
+
+export function dataDatadogSecurityMonitoringRulesRulesSignalQueryToTerraform(struct?: DataDatadogSecurityMonitoringRulesRulesSignalQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatadogSecurityMonitoringRulesRulesSignalQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatadogSecurityMonitoringRulesRulesSignalQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // aggregation - computed: true, optional: false, required: false
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+
+  // correlated_by_fields - computed: true, optional: false, required: false
+  public get correlatedByFields() {
+    return this.getListAttribute('correlated_by_fields');
+  }
+
+  // correlated_query_index - computed: true, optional: false, required: false
+  public get correlatedQueryIndex() {
+    return this.getStringAttribute('correlated_query_index');
+  }
+
+  // default_rule_id - computed: true, optional: false, required: false
+  public get defaultRuleId() {
+    return this.getStringAttribute('default_rule_id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // rule_id - computed: true, optional: false, required: false
+  public get ruleId() {
+    return this.getStringAttribute('rule_id');
+  }
+}
+
+export class DataDatadogSecurityMonitoringRulesRulesSignalQueryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference {
+    return new DataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataDatadogSecurityMonitoringRulesRules {
 }
 
@@ -679,6 +768,12 @@ export class DataDatadogSecurityMonitoringRulesRulesOutputReference extends cdkt
     return this._query;
   }
 
+  // signal_query - computed: true, optional: false, required: false
+  private _signalQuery = new DataDatadogSecurityMonitoringRulesRulesSignalQueryList(this, "signal_query", false);
+  public get signalQuery() {
+    return this._signalQuery;
+  }
+
   // tags - computed: true, optional: false, required: false
   public get tags() {
     return this.getListAttribute('tags');
@@ -735,7 +830,7 @@ export class DataDatadogSecurityMonitoringRules extends cdktf.TerraformDataSourc
       terraformResourceType: 'datadog_security_monitoring_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

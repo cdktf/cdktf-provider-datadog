@@ -107,6 +107,12 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   */
   readonly notifyAudit?: boolean | cdktf.IResolvable;
   /**
+  * Controls what granularity a monitor alerts on. Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_by Monitor#notify_by}
+  */
+  readonly notifyBy?: string[];
+  /**
   * A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_no_data Monitor#notify_no_data}
@@ -1338,7 +1344,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1364,6 +1370,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._newHostDelay = config.newHostDelay;
     this._noDataTimeframe = config.noDataTimeframe;
     this._notifyAudit = config.notifyAudit;
+    this._notifyBy = config.notifyBy;
     this._notifyNoData = config.notifyNoData;
     this._onMissingData = config.onMissingData;
     this._priority = config.priority;
@@ -1618,6 +1625,22 @@ export class Monitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get notifyAuditInput() {
     return this._notifyAudit;
+  }
+
+  // notify_by - computed: false, optional: true, required: false
+  private _notifyBy?: string[]; 
+  public get notifyBy() {
+    return cdktf.Fn.tolist(this.getListAttribute('notify_by'));
+  }
+  public set notifyBy(value: string[]) {
+    this._notifyBy = value;
+  }
+  public resetNotifyBy() {
+    this._notifyBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notifyByInput() {
+    return this._notifyBy;
   }
 
   // notify_no_data - computed: false, optional: true, required: false
@@ -1891,6 +1914,7 @@ export class Monitor extends cdktf.TerraformResource {
       new_host_delay: cdktf.numberToTerraform(this._newHostDelay),
       no_data_timeframe: cdktf.numberToTerraform(this._noDataTimeframe),
       notify_audit: cdktf.booleanToTerraform(this._notifyAudit),
+      notify_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyBy),
       notify_no_data: cdktf.booleanToTerraform(this._notifyNoData),
       on_missing_data: cdktf.stringToTerraform(this._onMissingData),
       priority: cdktf.numberToTerraform(this._priority),

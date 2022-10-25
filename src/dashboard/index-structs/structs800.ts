@@ -6121,6 +6121,12 @@ export interface DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequest
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query_string Dashboard#query_string}
   */
   readonly queryString?: string;
+  /**
+  * Storage location (private beta).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+  */
+  readonly storage?: string;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQueryOutputReference | DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuery): any {
@@ -6132,6 +6138,7 @@ export function dashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQ
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     query_string: cdktf.stringToTerraform(struct!.queryString),
+    storage: cdktf.stringToTerraform(struct!.storage),
   }
 }
 
@@ -6161,6 +6168,10 @@ export class DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuer
       hasAnyValues = true;
       internalValueResult.queryString = this._queryString;
     }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6170,12 +6181,14 @@ export class DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuer
       this._dataSource = undefined;
       this._indexes = undefined;
       this._queryString = undefined;
+      this._storage = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dataSource = value.dataSource;
       this._indexes = value.indexes;
       this._queryString = value.queryString;
+      this._storage = value.storage;
     }
   }
 
@@ -6222,6 +6235,22 @@ export class DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequestQuer
   // Temporarily expose input value. Use with caution.
   public get queryStringInput() {
     return this._queryString;
+  }
+
+  // storage - computed: false, optional: true, required: false
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
   }
 }
 export interface DashboardWidgetGroupDefinitionWidgetListStreamDefinitionRequest {
@@ -11916,6 +11945,12 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   */
   readonly name: string;
   /**
+  * Storage location (private beta).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+  */
+  readonly storage?: string;
+  /**
   * compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
@@ -11944,6 +11979,7 @@ export function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQ
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
+    storage: cdktf.stringToTerraform(struct!.storage),
     compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
     group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
@@ -11976,6 +12012,10 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuer
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
     if (this._compute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute?.internalValue;
@@ -11997,6 +12037,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuer
       this._dataSource = undefined;
       this._indexes = undefined;
       this._name = undefined;
+      this._storage = undefined;
       this._compute.internalValue = undefined;
       this._groupBy.internalValue = undefined;
       this._search.internalValue = undefined;
@@ -12006,6 +12047,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuer
       this._dataSource = value.dataSource;
       this._indexes = value.indexes;
       this._name = value.name;
+      this._storage = value.storage;
       this._compute.internalValue = value.compute;
       this._groupBy.internalValue = value.groupBy;
       this._search.internalValue = value.search;
@@ -12052,6 +12094,22 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestQuer
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // storage - computed: false, optional: true, required: false
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
   }
 
   // compute - computed: false, optional: false, required: true
@@ -19581,6 +19639,12 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   */
   readonly name: string;
   /**
+  * Storage location (private beta).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
+  */
+  readonly storage?: string;
+  /**
   * compute block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
@@ -19609,6 +19673,7 @@ export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQ
     data_source: cdktf.stringToTerraform(struct!.dataSource),
     indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     name: cdktf.stringToTerraform(struct!.name),
+    storage: cdktf.stringToTerraform(struct!.storage),
     compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
     group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
@@ -19641,6 +19706,10 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
     if (this._compute?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.compute = this._compute?.internalValue;
@@ -19662,6 +19731,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
       this._dataSource = undefined;
       this._indexes = undefined;
       this._name = undefined;
+      this._storage = undefined;
       this._compute.internalValue = undefined;
       this._groupBy.internalValue = undefined;
       this._search.internalValue = undefined;
@@ -19671,6 +19741,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
       this._dataSource = value.dataSource;
       this._indexes = value.indexes;
       this._name = value.name;
+      this._storage = value.storage;
       this._compute.internalValue = value.compute;
       this._groupBy.internalValue = value.groupBy;
       this._search.internalValue = value.search;
@@ -19717,6 +19788,22 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // storage - computed: false, optional: true, required: false
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
   }
 
   // compute - computed: false, optional: false, required: true
