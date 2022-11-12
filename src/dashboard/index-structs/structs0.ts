@@ -7,11 +7,17 @@ export interface DashboardTemplateVariable {
   */
   readonly availableValues?: string[];
   /**
-  * The default value for the template variable on dashboard load.
+  * The default value for the template variable on dashboard load. Cannot be used in conjunction with `defaults`. **Deprecated.** Use `defaults` instead.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#default Dashboard#default}
   */
   readonly default?: string;
+  /**
+  * One or many default values for template variables on load. If more than one default is specified, they will be unioned together with `OR`. Cannot be used in conjunction with `default`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#defaults Dashboard#defaults}
+  */
+  readonly defaults?: string[];
   /**
   * The name of the variable.
   * 
@@ -34,6 +40,7 @@ export function dashboardTemplateVariableToTerraform(struct?: DashboardTemplateV
   return {
     available_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.availableValues),
     default: cdktf.stringToTerraform(struct!.default),
+    defaults: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaults),
     name: cdktf.stringToTerraform(struct!.name),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
@@ -67,6 +74,10 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.default = this._default;
     }
+    if (this._defaults !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaults = this._defaults;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -84,6 +95,7 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
       this.resolvableValue = undefined;
       this._availableValues = undefined;
       this._default = undefined;
+      this._defaults = undefined;
       this._name = undefined;
       this._prefix = undefined;
     }
@@ -96,6 +108,7 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
       this.resolvableValue = undefined;
       this._availableValues = value.availableValues;
       this._default = value.default;
+      this._defaults = value.defaults;
       this._name = value.name;
       this._prefix = value.prefix;
     }
@@ -131,6 +144,22 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get defaultInput() {
     return this._default;
+  }
+
+  // defaults - computed: false, optional: true, required: false
+  private _defaults?: string[]; 
+  public get defaults() {
+    return this.getListAttribute('defaults');
+  }
+  public set defaults(value: string[]) {
+    this._defaults = value;
+  }
+  public resetDefaults() {
+    this._defaults = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultsInput() {
+    return this._defaults;
   }
 
   // name - computed: false, optional: false, required: true
@@ -190,11 +219,17 @@ export interface DashboardTemplateVariablePresetTemplateVariable {
   */
   readonly name?: string;
   /**
-  * The value that should be assumed by the template variable in this preset
+  * The value that should be assumed by the template variable in this preset. Cannot be used in conjunction with `values`. **Deprecated.** Use `values` instead.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#value Dashboard#value}
   */
   readonly value?: string;
+  /**
+  * One or many template variable values within the saved view, which will be unioned together using `OR` if more than one is specified. Cannot be used in conjunction with `value`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#values Dashboard#values}
+  */
+  readonly values?: string[];
 }
 
 export function dashboardTemplateVariablePresetTemplateVariableToTerraform(struct?: DashboardTemplateVariablePresetTemplateVariable | cdktf.IResolvable): any {
@@ -205,6 +240,7 @@ export function dashboardTemplateVariablePresetTemplateVariableToTerraform(struc
   return {
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -236,6 +272,10 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -245,6 +285,7 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
+      this._values = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -255,6 +296,7 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
       this.resolvableValue = undefined;
       this._name = value.name;
       this._value = value.value;
+      this._values = value.values;
     }
   }
 
@@ -288,6 +330,22 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
   }
 }
 

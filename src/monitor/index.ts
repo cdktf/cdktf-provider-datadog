@@ -207,6 +207,12 @@ We highly recommend you set this to `false` for sparse metrics, otherwise some e
   */
   readonly monitorThresholds?: MonitorMonitorThresholds;
   /**
+  * scheduling_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#scheduling_options Monitor#scheduling_options}
+  */
+  readonly schedulingOptions?: MonitorSchedulingOptions[] | cdktf.IResolvable;
+  /**
   * variables block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#variables Monitor#variables}
@@ -519,6 +525,259 @@ export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get warningRecoveryInput() {
     return this._warningRecovery;
+  }
+}
+export interface MonitorSchedulingOptionsEvaluationWindow {
+  /**
+  * The time of the day at which a one day cumulative evaluation window starts. Must be defined in UTC time in `HH:mm` format.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#day_starts Monitor#day_starts}
+  */
+  readonly dayStarts?: string;
+  /**
+  * The minute of the hour at which a one hour cumulative evaluation window starts. Must be between 0 and 59.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#hour_starts Monitor#hour_starts}
+  */
+  readonly hourStarts?: number;
+  /**
+  * The day of the month at which a one month cumulative evaluation window starts. Must be a value of 1.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#month_starts Monitor#month_starts}
+  */
+  readonly monthStarts?: number;
+}
+
+export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day_starts: cdktf.stringToTerraform(struct!.dayStarts),
+    hour_starts: cdktf.numberToTerraform(struct!.hourStarts),
+    month_starts: cdktf.numberToTerraform(struct!.monthStarts),
+  }
+}
+
+export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dayStarts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayStarts = this._dayStarts;
+    }
+    if (this._hourStarts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hourStarts = this._hourStarts;
+    }
+    if (this._monthStarts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monthStarts = this._monthStarts;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorSchedulingOptionsEvaluationWindow | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dayStarts = undefined;
+      this._hourStarts = undefined;
+      this._monthStarts = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dayStarts = value.dayStarts;
+      this._hourStarts = value.hourStarts;
+      this._monthStarts = value.monthStarts;
+    }
+  }
+
+  // day_starts - computed: false, optional: true, required: false
+  private _dayStarts?: string; 
+  public get dayStarts() {
+    return this.getStringAttribute('day_starts');
+  }
+  public set dayStarts(value: string) {
+    this._dayStarts = value;
+  }
+  public resetDayStarts() {
+    this._dayStarts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayStartsInput() {
+    return this._dayStarts;
+  }
+
+  // hour_starts - computed: false, optional: true, required: false
+  private _hourStarts?: number; 
+  public get hourStarts() {
+    return this.getNumberAttribute('hour_starts');
+  }
+  public set hourStarts(value: number) {
+    this._hourStarts = value;
+  }
+  public resetHourStarts() {
+    this._hourStarts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hourStartsInput() {
+    return this._hourStarts;
+  }
+
+  // month_starts - computed: false, optional: true, required: false
+  private _monthStarts?: number; 
+  public get monthStarts() {
+    return this.getNumberAttribute('month_starts');
+  }
+  public set monthStarts(value: number) {
+    this._monthStarts = value;
+  }
+  public resetMonthStarts() {
+    this._monthStarts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthStartsInput() {
+    return this._monthStarts;
+  }
+}
+
+export class MonitorSchedulingOptionsEvaluationWindowList extends cdktf.ComplexList {
+  public internalValue? : MonitorSchedulingOptionsEvaluationWindow[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorSchedulingOptionsEvaluationWindowOutputReference {
+    return new MonitorSchedulingOptionsEvaluationWindowOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MonitorSchedulingOptions {
+  /**
+  * evaluation_window block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#evaluation_window Monitor#evaluation_window}
+  */
+  readonly evaluationWindow: MonitorSchedulingOptionsEvaluationWindow[] | cdktf.IResolvable;
+}
+
+export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    evaluation_window: cdktf.listMapper(monitorSchedulingOptionsEvaluationWindowToTerraform, true)(struct!.evaluationWindow),
+  }
+}
+
+export class MonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorSchedulingOptions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._evaluationWindow?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluationWindow = this._evaluationWindow?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorSchedulingOptions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._evaluationWindow.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._evaluationWindow.internalValue = value.evaluationWindow;
+    }
+  }
+
+  // evaluation_window - computed: false, optional: false, required: true
+  private _evaluationWindow = new MonitorSchedulingOptionsEvaluationWindowList(this, "evaluation_window", false);
+  public get evaluationWindow() {
+    return this._evaluationWindow;
+  }
+  public putEvaluationWindow(value: MonitorSchedulingOptionsEvaluationWindow[] | cdktf.IResolvable) {
+    this._evaluationWindow.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluationWindowInput() {
+    return this._evaluationWindow.internalValue;
+  }
+}
+
+export class MonitorSchedulingOptionsList extends cdktf.ComplexList {
+  public internalValue? : MonitorSchedulingOptions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorSchedulingOptionsOutputReference {
+    return new MonitorSchedulingOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface MonitorVariablesEventQueryCompute {
@@ -1017,7 +1276,7 @@ export class MonitorVariablesEventQuerySearchOutputReference extends cdktf.Compl
 }
 export interface MonitorVariablesEventQuery {
   /**
-  * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`.
+  * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#data_source Monitor#data_source}
   */
@@ -1344,7 +1603,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1386,6 +1645,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._validate = config.validate;
     this._monitorThresholdWindows.internalValue = config.monitorThresholdWindows;
     this._monitorThresholds.internalValue = config.monitorThresholds;
+    this._schedulingOptions.internalValue = config.schedulingOptions;
     this._variables.internalValue = config.variables;
   }
 
@@ -1877,6 +2137,22 @@ export class Monitor extends cdktf.TerraformResource {
     return this._monitorThresholds.internalValue;
   }
 
+  // scheduling_options - computed: false, optional: true, required: false
+  private _schedulingOptions = new MonitorSchedulingOptionsList(this, "scheduling_options", false);
+  public get schedulingOptions() {
+    return this._schedulingOptions;
+  }
+  public putSchedulingOptions(value: MonitorSchedulingOptions[] | cdktf.IResolvable) {
+    this._schedulingOptions.internalValue = value;
+  }
+  public resetSchedulingOptions() {
+    this._schedulingOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingOptionsInput() {
+    return this._schedulingOptions.internalValue;
+  }
+
   // variables - computed: false, optional: true, required: false
   private _variables = new MonitorVariablesOutputReference(this, "variables");
   public get variables() {
@@ -1930,6 +2206,7 @@ export class Monitor extends cdktf.TerraformResource {
       validate: cdktf.booleanToTerraform(this._validate),
       monitor_threshold_windows: monitorMonitorThresholdWindowsToTerraform(this._monitorThresholdWindows.internalValue),
       monitor_thresholds: monitorMonitorThresholdsToTerraform(this._monitorThresholds.internalValue),
+      scheduling_options: cdktf.listMapper(monitorSchedulingOptionsToTerraform, true)(this._schedulingOptions.internalValue),
       variables: monitorVariablesToTerraform(this._variables.internalValue),
     };
   }
