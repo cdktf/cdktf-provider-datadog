@@ -257,6 +257,122 @@ export class SyntheticsTestApiStepAssertionTargetjsonpathOutputReference extends
     return this._targetvalue;
   }
 }
+export interface SyntheticsTestApiStepAssertionTargetxpath {
+  /**
+  * The specific operator to use on the path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#operator SyntheticsTest#operator}
+  */
+  readonly operator: string;
+  /**
+  * Expected matching value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  */
+  readonly targetvalue: string;
+  /**
+  * The xpath to assert.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#xpath SyntheticsTest#xpath}
+  */
+  readonly xpath: string;
+}
+
+export function syntheticsTestApiStepAssertionTargetxpathToTerraform(struct?: SyntheticsTestApiStepAssertionTargetxpathOutputReference | SyntheticsTestApiStepAssertionTargetxpath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    operator: cdktf.stringToTerraform(struct!.operator),
+    targetvalue: cdktf.stringToTerraform(struct!.targetvalue),
+    xpath: cdktf.stringToTerraform(struct!.xpath),
+  }
+}
+
+export class SyntheticsTestApiStepAssertionTargetxpathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestApiStepAssertionTargetxpath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._targetvalue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetvalue = this._targetvalue;
+    }
+    if (this._xpath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.xpath = this._xpath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestApiStepAssertionTargetxpath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._operator = undefined;
+      this._targetvalue = undefined;
+      this._xpath = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._operator = value.operator;
+      this._targetvalue = value.targetvalue;
+      this._xpath = value.xpath;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // targetvalue - computed: false, optional: false, required: true
+  private _targetvalue?: string; 
+  public get targetvalue() {
+    return this.getStringAttribute('targetvalue');
+  }
+  public set targetvalue(value: string) {
+    this._targetvalue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetvalueInput() {
+    return this._targetvalue;
+  }
+
+  // xpath - computed: false, optional: false, required: true
+  private _xpath?: string; 
+  public get xpath() {
+    return this.getStringAttribute('xpath');
+  }
+  public set xpath(value: string) {
+    this._xpath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xpathInput() {
+    return this._xpath;
+  }
+}
 export interface SyntheticsTestApiStepAssertion {
   /**
   * Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
@@ -288,6 +404,12 @@ export interface SyntheticsTestApiStepAssertion {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
   */
   readonly targetjsonpath?: SyntheticsTestApiStepAssertionTargetjsonpath;
+  /**
+  * targetxpath block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+  */
+  readonly targetxpath?: SyntheticsTestApiStepAssertionTargetxpath;
 }
 
 export function syntheticsTestApiStepAssertionToTerraform(struct?: SyntheticsTestApiStepAssertion | cdktf.IResolvable): any {
@@ -301,6 +423,7 @@ export function syntheticsTestApiStepAssertionToTerraform(struct?: SyntheticsTes
     target: cdktf.stringToTerraform(struct!.target),
     type: cdktf.stringToTerraform(struct!.type),
     targetjsonpath: syntheticsTestApiStepAssertionTargetjsonpathToTerraform(struct!.targetjsonpath),
+    targetxpath: syntheticsTestApiStepAssertionTargetxpathToTerraform(struct!.targetxpath),
   }
 }
 
@@ -344,6 +467,10 @@ export class SyntheticsTestApiStepAssertionOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.targetjsonpath = this._targetjsonpath?.internalValue;
     }
+    if (this._targetxpath?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetxpath = this._targetxpath?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -356,6 +483,7 @@ export class SyntheticsTestApiStepAssertionOutputReference extends cdktf.Complex
       this._target = undefined;
       this._type = undefined;
       this._targetjsonpath.internalValue = undefined;
+      this._targetxpath.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -369,6 +497,7 @@ export class SyntheticsTestApiStepAssertionOutputReference extends cdktf.Complex
       this._target = value.target;
       this._type = value.type;
       this._targetjsonpath.internalValue = value.targetjsonpath;
+      this._targetxpath.internalValue = value.targetxpath;
     }
   }
 
@@ -444,6 +573,22 @@ export class SyntheticsTestApiStepAssertionOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get targetjsonpathInput() {
     return this._targetjsonpath.internalValue;
+  }
+
+  // targetxpath - computed: false, optional: true, required: false
+  private _targetxpath = new SyntheticsTestApiStepAssertionTargetxpathOutputReference(this, "targetxpath");
+  public get targetxpath() {
+    return this._targetxpath;
+  }
+  public putTargetxpath(value: SyntheticsTestApiStepAssertionTargetxpath) {
+    this._targetxpath.internalValue = value;
+  }
+  public resetTargetxpath() {
+    this._targetxpath.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetxpathInput() {
+    return this._targetxpath.internalValue;
   }
 }
 
@@ -1352,6 +1497,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly body?: string;
   /**
+  * Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#body_type SyntheticsTest#body_type}
+  */
+  readonly bodyType?: string;
+  /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
@@ -1451,6 +1602,7 @@ export function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: Synth
   return {
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     body: cdktf.stringToTerraform(struct!.body),
+    body_type: cdktf.stringToTerraform(struct!.bodyType),
     certificate_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateDomains),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
@@ -1490,6 +1642,10 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
     if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
+    }
+    if (this._bodyType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bodyType = this._bodyType;
     }
     if (this._certificateDomains !== undefined) {
       hasAnyValues = true;
@@ -1559,6 +1715,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this.isEmptyObject = false;
       this._allowInsecure = undefined;
       this._body = undefined;
+      this._bodyType = undefined;
       this._certificateDomains = undefined;
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
@@ -1579,6 +1736,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowInsecure = value.allowInsecure;
       this._body = value.body;
+      this._bodyType = value.bodyType;
       this._certificateDomains = value.certificateDomains;
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
@@ -1627,6 +1785,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
     return this._body;
+  }
+
+  // body_type - computed: false, optional: true, required: false
+  private _bodyType?: string; 
+  public get bodyType() {
+    return this.getStringAttribute('body_type');
+  }
+  public set bodyType(value: string) {
+    this._bodyType = value;
+  }
+  public resetBodyType() {
+    this._bodyType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyTypeInput() {
+    return this._bodyType;
   }
 
   // certificate_domains - computed: false, optional: true, required: false
@@ -2618,6 +2792,122 @@ export class SyntheticsTestAssertionTargetjsonpathOutputReference extends cdktf.
     return this._targetvalue;
   }
 }
+export interface SyntheticsTestAssertionTargetxpath {
+  /**
+  * The specific operator to use on the path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#operator SyntheticsTest#operator}
+  */
+  readonly operator: string;
+  /**
+  * Expected matching value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+  */
+  readonly targetvalue: string;
+  /**
+  * The xpath to assert.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#xpath SyntheticsTest#xpath}
+  */
+  readonly xpath: string;
+}
+
+export function syntheticsTestAssertionTargetxpathToTerraform(struct?: SyntheticsTestAssertionTargetxpathOutputReference | SyntheticsTestAssertionTargetxpath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    operator: cdktf.stringToTerraform(struct!.operator),
+    targetvalue: cdktf.stringToTerraform(struct!.targetvalue),
+    xpath: cdktf.stringToTerraform(struct!.xpath),
+  }
+}
+
+export class SyntheticsTestAssertionTargetxpathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestAssertionTargetxpath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._targetvalue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetvalue = this._targetvalue;
+    }
+    if (this._xpath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.xpath = this._xpath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestAssertionTargetxpath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._operator = undefined;
+      this._targetvalue = undefined;
+      this._xpath = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._operator = value.operator;
+      this._targetvalue = value.targetvalue;
+      this._xpath = value.xpath;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // targetvalue - computed: false, optional: false, required: true
+  private _targetvalue?: string; 
+  public get targetvalue() {
+    return this.getStringAttribute('targetvalue');
+  }
+  public set targetvalue(value: string) {
+    this._targetvalue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetvalueInput() {
+    return this._targetvalue;
+  }
+
+  // xpath - computed: false, optional: false, required: true
+  private _xpath?: string; 
+  public get xpath() {
+    return this.getStringAttribute('xpath');
+  }
+  public set xpath(value: string) {
+    this._xpath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xpathInput() {
+    return this._xpath;
+  }
+}
 export interface SyntheticsTestAssertion {
   /**
   * Assertion operator. **Note** Only some combinations of `type` and `operator` are valid (please refer to [Datadog documentation](https://docs.datadoghq.com/api/latest/synthetics/#create-a-test)).
@@ -2649,6 +2939,12 @@ export interface SyntheticsTestAssertion {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
   */
   readonly targetjsonpath?: SyntheticsTestAssertionTargetjsonpath;
+  /**
+  * targetxpath block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+  */
+  readonly targetxpath?: SyntheticsTestAssertionTargetxpath;
 }
 
 export function syntheticsTestAssertionToTerraform(struct?: SyntheticsTestAssertion | cdktf.IResolvable): any {
@@ -2662,6 +2958,7 @@ export function syntheticsTestAssertionToTerraform(struct?: SyntheticsTestAssert
     target: cdktf.stringToTerraform(struct!.target),
     type: cdktf.stringToTerraform(struct!.type),
     targetjsonpath: syntheticsTestAssertionTargetjsonpathToTerraform(struct!.targetjsonpath),
+    targetxpath: syntheticsTestAssertionTargetxpathToTerraform(struct!.targetxpath),
   }
 }
 
@@ -2705,6 +3002,10 @@ export class SyntheticsTestAssertionOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.targetjsonpath = this._targetjsonpath?.internalValue;
     }
+    if (this._targetxpath?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetxpath = this._targetxpath?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2717,6 +3018,7 @@ export class SyntheticsTestAssertionOutputReference extends cdktf.ComplexObject 
       this._target = undefined;
       this._type = undefined;
       this._targetjsonpath.internalValue = undefined;
+      this._targetxpath.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2730,6 +3032,7 @@ export class SyntheticsTestAssertionOutputReference extends cdktf.ComplexObject 
       this._target = value.target;
       this._type = value.type;
       this._targetjsonpath.internalValue = value.targetjsonpath;
+      this._targetxpath.internalValue = value.targetxpath;
     }
   }
 
@@ -2805,6 +3108,22 @@ export class SyntheticsTestAssertionOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get targetjsonpathInput() {
     return this._targetjsonpath.internalValue;
+  }
+
+  // targetxpath - computed: false, optional: true, required: false
+  private _targetxpath = new SyntheticsTestAssertionTargetxpathOutputReference(this, "targetxpath");
+  public get targetxpath() {
+    return this._targetxpath;
+  }
+  public putTargetxpath(value: SyntheticsTestAssertionTargetxpath) {
+    this._targetxpath.internalValue = value;
+  }
+  public resetTargetxpath() {
+    this._targetxpath.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetxpathInput() {
+    return this._targetxpath.internalValue;
   }
 }
 
@@ -5928,6 +6247,12 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly body?: string;
   /**
+  * Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#body_type SyntheticsTest#body_type}
+  */
+  readonly bodyType?: string;
+  /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
@@ -6020,6 +6345,7 @@ export function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTe
   }
   return {
     body: cdktf.stringToTerraform(struct!.body),
+    body_type: cdktf.stringToTerraform(struct!.bodyType),
     certificate_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateDomains),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
@@ -6054,6 +6380,10 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     if (this._body !== undefined) {
       hasAnyValues = true;
       internalValueResult.body = this._body;
+    }
+    if (this._bodyType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bodyType = this._bodyType;
     }
     if (this._certificateDomains !== undefined) {
       hasAnyValues = true;
@@ -6118,6 +6448,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     if (value === undefined) {
       this.isEmptyObject = false;
       this._body = undefined;
+      this._bodyType = undefined;
       this._certificateDomains = undefined;
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
@@ -6136,6 +6467,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._body = value.body;
+      this._bodyType = value.bodyType;
       this._certificateDomains = value.certificateDomains;
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
@@ -6167,6 +6499,22 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
     return this._body;
+  }
+
+  // body_type - computed: false, optional: true, required: false
+  private _bodyType?: string; 
+  public get bodyType() {
+    return this.getStringAttribute('body_type');
+  }
+  public set bodyType(value: string) {
+    this._bodyType = value;
+  }
+  public resetBodyType() {
+    this._bodyType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyTypeInput() {
+    return this._bodyType;
   }
 
   // certificate_domains - computed: false, optional: true, required: false
@@ -6513,7 +6861,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

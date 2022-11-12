@@ -1528,7 +1528,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.17.0',
+        providerVersion: '3.18.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
