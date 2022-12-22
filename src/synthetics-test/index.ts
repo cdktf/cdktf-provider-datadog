@@ -887,6 +887,30 @@ export interface SyntheticsTestApiStepRequestBasicauth {
   */
   readonly accessKey?: string;
   /**
+  * Access token url for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+  */
+  readonly accessTokenUrl?: string;
+  /**
+  * Audience for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#audience SyntheticsTest#audience}
+  */
+  readonly audience?: string;
+  /**
+  * Client ID for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_id SyntheticsTest#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * Client secret for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_secret SyntheticsTest#client_secret}
+  */
+  readonly clientSecret?: string;
+  /**
   * Domain for `ntlm` authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#domain SyntheticsTest#domain}
@@ -905,6 +929,18 @@ export interface SyntheticsTestApiStepRequestBasicauth {
   */
   readonly region?: string;
   /**
+  * Resource for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#resource SyntheticsTest#resource}
+  */
+  readonly resource?: string;
+  /**
+  * Scope for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#scope SyntheticsTest#scope}
+  */
+  readonly scope?: string;
+  /**
   * Secret key for `SIGV4` authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secret_key SyntheticsTest#secret_key}
@@ -922,6 +958,12 @@ export interface SyntheticsTestApiStepRequestBasicauth {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#session_token SyntheticsTest#session_token}
   */
   readonly sessionToken?: string;
+  /**
+  * Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+  */
+  readonly tokenApiAuthentication?: string;
   /**
   * Type of basic authentication to use when performing the test.
   * 
@@ -949,12 +991,19 @@ export function syntheticsTestApiStepRequestBasicauthToTerraform(struct?: Synthe
   }
   return {
     access_key: cdktf.stringToTerraform(struct!.accessKey),
+    access_token_url: cdktf.stringToTerraform(struct!.accessTokenUrl),
+    audience: cdktf.stringToTerraform(struct!.audience),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
     domain: cdktf.stringToTerraform(struct!.domain),
     password: cdktf.stringToTerraform(struct!.password),
     region: cdktf.stringToTerraform(struct!.region),
+    resource: cdktf.stringToTerraform(struct!.resource),
+    scope: cdktf.stringToTerraform(struct!.scope),
     secret_key: cdktf.stringToTerraform(struct!.secretKey),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     session_token: cdktf.stringToTerraform(struct!.sessionToken),
+    token_api_authentication: cdktf.stringToTerraform(struct!.tokenApiAuthentication),
     type: cdktf.stringToTerraform(struct!.type),
     username: cdktf.stringToTerraform(struct!.username),
     workstation: cdktf.stringToTerraform(struct!.workstation),
@@ -979,6 +1028,22 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.accessKey = this._accessKey;
     }
+    if (this._accessTokenUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessTokenUrl = this._accessTokenUrl;
+    }
+    if (this._audience !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.audience = this._audience;
+    }
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
     if (this._domain !== undefined) {
       hasAnyValues = true;
       internalValueResult.domain = this._domain;
@@ -991,6 +1056,14 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.region = this._region;
     }
+    if (this._resource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resource = this._resource;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
     if (this._secretKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretKey = this._secretKey;
@@ -1002,6 +1075,10 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
     if (this._sessionToken !== undefined) {
       hasAnyValues = true;
       internalValueResult.sessionToken = this._sessionToken;
+    }
+    if (this._tokenApiAuthentication !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenApiAuthentication = this._tokenApiAuthentication;
     }
     if (this._type !== undefined) {
       hasAnyValues = true;
@@ -1022,12 +1099,19 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
     if (value === undefined) {
       this.isEmptyObject = false;
       this._accessKey = undefined;
+      this._accessTokenUrl = undefined;
+      this._audience = undefined;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
       this._domain = undefined;
       this._password = undefined;
       this._region = undefined;
+      this._resource = undefined;
+      this._scope = undefined;
       this._secretKey = undefined;
       this._serviceName = undefined;
       this._sessionToken = undefined;
+      this._tokenApiAuthentication = undefined;
       this._type = undefined;
       this._username = undefined;
       this._workstation = undefined;
@@ -1035,12 +1119,19 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._accessKey = value.accessKey;
+      this._accessTokenUrl = value.accessTokenUrl;
+      this._audience = value.audience;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
       this._domain = value.domain;
       this._password = value.password;
       this._region = value.region;
+      this._resource = value.resource;
+      this._scope = value.scope;
       this._secretKey = value.secretKey;
       this._serviceName = value.serviceName;
       this._sessionToken = value.sessionToken;
+      this._tokenApiAuthentication = value.tokenApiAuthentication;
       this._type = value.type;
       this._username = value.username;
       this._workstation = value.workstation;
@@ -1061,6 +1152,70 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   // Temporarily expose input value. Use with caution.
   public get accessKeyInput() {
     return this._accessKey;
+  }
+
+  // access_token_url - computed: false, optional: true, required: false
+  private _accessTokenUrl?: string; 
+  public get accessTokenUrl() {
+    return this.getStringAttribute('access_token_url');
+  }
+  public set accessTokenUrl(value: string) {
+    this._accessTokenUrl = value;
+  }
+  public resetAccessTokenUrl() {
+    this._accessTokenUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTokenUrlInput() {
+    return this._accessTokenUrl;
+  }
+
+  // audience - computed: false, optional: true, required: false
+  private _audience?: string; 
+  public get audience() {
+    return this.getStringAttribute('audience');
+  }
+  public set audience(value: string) {
+    this._audience = value;
+  }
+  public resetAudience() {
+    this._audience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get audienceInput() {
+    return this._audience;
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
   }
 
   // domain - computed: false, optional: true, required: false
@@ -1111,6 +1266,38 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
     return this._region;
   }
 
+  // resource - computed: false, optional: true, required: false
+  private _resource?: string; 
+  public get resource() {
+    return this.getStringAttribute('resource');
+  }
+  public set resource(value: string) {
+    this._resource = value;
+  }
+  public resetResource() {
+    this._resource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceInput() {
+    return this._resource;
+  }
+
+  // scope - computed: false, optional: true, required: false
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  public resetScope() {
+    this._scope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
   // secret_key - computed: false, optional: true, required: false
   private _secretKey?: string; 
   public get secretKey() {
@@ -1157,6 +1344,22 @@ export class SyntheticsTestApiStepRequestBasicauthOutputReference extends cdktf.
   // Temporarily expose input value. Use with caution.
   public get sessionTokenInput() {
     return this._sessionToken;
+  }
+
+  // token_api_authentication - computed: false, optional: true, required: false
+  private _tokenApiAuthentication?: string; 
+  public get tokenApiAuthentication() {
+    return this.getStringAttribute('token_api_authentication');
+  }
+  public set tokenApiAuthentication(value: string) {
+    this._tokenApiAuthentication = value;
+  }
+  public resetTokenApiAuthentication() {
+    this._tokenApiAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenApiAuthenticationInput() {
+    return this._tokenApiAuthentication;
   }
 
   // type - computed: false, optional: true, required: false
@@ -1503,6 +1706,12 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly bodyType?: string;
   /**
+  * The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#call_type SyntheticsTest#call_type}
+  */
+  readonly callType?: string;
+  /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
@@ -1539,7 +1748,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly message?: string;
   /**
-  * The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
+  * Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#method SyntheticsTest#method}
   */
@@ -1569,7 +1778,7 @@ export interface SyntheticsTestApiStepRequestDefinition {
   */
   readonly servername?: string;
   /**
-  * For gRPC tests, service to target for healthcheck.
+  * The gRPC service on which you want to perform the gRPC call.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service SyntheticsTest#service}
   */
@@ -1603,6 +1812,7 @@ export function syntheticsTestApiStepRequestDefinitionToTerraform(struct?: Synth
     allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
     body: cdktf.stringToTerraform(struct!.body),
     body_type: cdktf.stringToTerraform(struct!.bodyType),
+    call_type: cdktf.stringToTerraform(struct!.callType),
     certificate_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateDomains),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
@@ -1646,6 +1856,10 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
     if (this._bodyType !== undefined) {
       hasAnyValues = true;
       internalValueResult.bodyType = this._bodyType;
+    }
+    if (this._callType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.callType = this._callType;
     }
     if (this._certificateDomains !== undefined) {
       hasAnyValues = true;
@@ -1716,6 +1930,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this._allowInsecure = undefined;
       this._body = undefined;
       this._bodyType = undefined;
+      this._callType = undefined;
       this._certificateDomains = undefined;
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
@@ -1737,6 +1952,7 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
       this._allowInsecure = value.allowInsecure;
       this._body = value.body;
       this._bodyType = value.bodyType;
+      this._callType = value.callType;
       this._certificateDomains = value.certificateDomains;
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
@@ -1801,6 +2017,22 @@ export class SyntheticsTestApiStepRequestDefinitionOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get bodyTypeInput() {
     return this._bodyType;
+  }
+
+  // call_type - computed: false, optional: true, required: false
+  private _callType?: string; 
+  public get callType() {
+    return this.getStringAttribute('call_type');
+  }
+  public set callType(value: string) {
+    this._callType = value;
+  }
+  public resetCallType() {
+    this._callType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get callTypeInput() {
+    return this._callType;
   }
 
   // certificate_domains - computed: false, optional: true, required: false
@@ -5643,6 +5875,30 @@ export interface SyntheticsTestRequestBasicauth {
   */
   readonly accessKey?: string;
   /**
+  * Access token url for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+  */
+  readonly accessTokenUrl?: string;
+  /**
+  * Audience for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#audience SyntheticsTest#audience}
+  */
+  readonly audience?: string;
+  /**
+  * Client ID for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_id SyntheticsTest#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * Client secret for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_secret SyntheticsTest#client_secret}
+  */
+  readonly clientSecret?: string;
+  /**
   * Domain for `ntlm` authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#domain SyntheticsTest#domain}
@@ -5661,6 +5917,18 @@ export interface SyntheticsTestRequestBasicauth {
   */
   readonly region?: string;
   /**
+  * Resource for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#resource SyntheticsTest#resource}
+  */
+  readonly resource?: string;
+  /**
+  * Scope for `oauth-client` or `oauth-rop` authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#scope SyntheticsTest#scope}
+  */
+  readonly scope?: string;
+  /**
   * Secret key for `SIGV4` authentication.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secret_key SyntheticsTest#secret_key}
@@ -5678,6 +5946,12 @@ export interface SyntheticsTestRequestBasicauth {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#session_token SyntheticsTest#session_token}
   */
   readonly sessionToken?: string;
+  /**
+  * Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+  */
+  readonly tokenApiAuthentication?: string;
   /**
   * Type of basic authentication to use when performing the test.
   * 
@@ -5705,12 +5979,19 @@ export function syntheticsTestRequestBasicauthToTerraform(struct?: SyntheticsTes
   }
   return {
     access_key: cdktf.stringToTerraform(struct!.accessKey),
+    access_token_url: cdktf.stringToTerraform(struct!.accessTokenUrl),
+    audience: cdktf.stringToTerraform(struct!.audience),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
     domain: cdktf.stringToTerraform(struct!.domain),
     password: cdktf.stringToTerraform(struct!.password),
     region: cdktf.stringToTerraform(struct!.region),
+    resource: cdktf.stringToTerraform(struct!.resource),
+    scope: cdktf.stringToTerraform(struct!.scope),
     secret_key: cdktf.stringToTerraform(struct!.secretKey),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
     session_token: cdktf.stringToTerraform(struct!.sessionToken),
+    token_api_authentication: cdktf.stringToTerraform(struct!.tokenApiAuthentication),
     type: cdktf.stringToTerraform(struct!.type),
     username: cdktf.stringToTerraform(struct!.username),
     workstation: cdktf.stringToTerraform(struct!.workstation),
@@ -5735,6 +6016,22 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.accessKey = this._accessKey;
     }
+    if (this._accessTokenUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessTokenUrl = this._accessTokenUrl;
+    }
+    if (this._audience !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.audience = this._audience;
+    }
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._clientSecret !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientSecret = this._clientSecret;
+    }
     if (this._domain !== undefined) {
       hasAnyValues = true;
       internalValueResult.domain = this._domain;
@@ -5747,6 +6044,14 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.region = this._region;
     }
+    if (this._resource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resource = this._resource;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
     if (this._secretKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.secretKey = this._secretKey;
@@ -5758,6 +6063,10 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
     if (this._sessionToken !== undefined) {
       hasAnyValues = true;
       internalValueResult.sessionToken = this._sessionToken;
+    }
+    if (this._tokenApiAuthentication !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tokenApiAuthentication = this._tokenApiAuthentication;
     }
     if (this._type !== undefined) {
       hasAnyValues = true;
@@ -5778,12 +6087,19 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._accessKey = undefined;
+      this._accessTokenUrl = undefined;
+      this._audience = undefined;
+      this._clientId = undefined;
+      this._clientSecret = undefined;
       this._domain = undefined;
       this._password = undefined;
       this._region = undefined;
+      this._resource = undefined;
+      this._scope = undefined;
       this._secretKey = undefined;
       this._serviceName = undefined;
       this._sessionToken = undefined;
+      this._tokenApiAuthentication = undefined;
       this._type = undefined;
       this._username = undefined;
       this._workstation = undefined;
@@ -5791,12 +6107,19 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._accessKey = value.accessKey;
+      this._accessTokenUrl = value.accessTokenUrl;
+      this._audience = value.audience;
+      this._clientId = value.clientId;
+      this._clientSecret = value.clientSecret;
       this._domain = value.domain;
       this._password = value.password;
       this._region = value.region;
+      this._resource = value.resource;
+      this._scope = value.scope;
       this._secretKey = value.secretKey;
       this._serviceName = value.serviceName;
       this._sessionToken = value.sessionToken;
+      this._tokenApiAuthentication = value.tokenApiAuthentication;
       this._type = value.type;
       this._username = value.username;
       this._workstation = value.workstation;
@@ -5817,6 +6140,70 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get accessKeyInput() {
     return this._accessKey;
+  }
+
+  // access_token_url - computed: false, optional: true, required: false
+  private _accessTokenUrl?: string; 
+  public get accessTokenUrl() {
+    return this.getStringAttribute('access_token_url');
+  }
+  public set accessTokenUrl(value: string) {
+    this._accessTokenUrl = value;
+  }
+  public resetAccessTokenUrl() {
+    this._accessTokenUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTokenUrlInput() {
+    return this._accessTokenUrl;
+  }
+
+  // audience - computed: false, optional: true, required: false
+  private _audience?: string; 
+  public get audience() {
+    return this.getStringAttribute('audience');
+  }
+  public set audience(value: string) {
+    this._audience = value;
+  }
+  public resetAudience() {
+    this._audience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get audienceInput() {
+    return this._audience;
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // client_secret - computed: false, optional: true, required: false
+  private _clientSecret?: string; 
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
+  }
+  public set clientSecret(value: string) {
+    this._clientSecret = value;
+  }
+  public resetClientSecret() {
+    this._clientSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretInput() {
+    return this._clientSecret;
   }
 
   // domain - computed: false, optional: true, required: false
@@ -5867,6 +6254,38 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
     return this._region;
   }
 
+  // resource - computed: false, optional: true, required: false
+  private _resource?: string; 
+  public get resource() {
+    return this.getStringAttribute('resource');
+  }
+  public set resource(value: string) {
+    this._resource = value;
+  }
+  public resetResource() {
+    this._resource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceInput() {
+    return this._resource;
+  }
+
+  // scope - computed: false, optional: true, required: false
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  public resetScope() {
+    this._scope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
   // secret_key - computed: false, optional: true, required: false
   private _secretKey?: string; 
   public get secretKey() {
@@ -5913,6 +6332,22 @@ export class SyntheticsTestRequestBasicauthOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get sessionTokenInput() {
     return this._sessionToken;
+  }
+
+  // token_api_authentication - computed: false, optional: true, required: false
+  private _tokenApiAuthentication?: string; 
+  public get tokenApiAuthentication() {
+    return this.getStringAttribute('token_api_authentication');
+  }
+  public set tokenApiAuthentication(value: string) {
+    this._tokenApiAuthentication = value;
+  }
+  public resetTokenApiAuthentication() {
+    this._tokenApiAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenApiAuthenticationInput() {
+    return this._tokenApiAuthentication;
   }
 
   // type - computed: false, optional: true, required: false
@@ -6253,6 +6688,12 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly bodyType?: string;
   /**
+  * The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#call_type SyntheticsTest#call_type}
+  */
+  readonly callType?: string;
+  /**
   * By default, the client certificate is applied on the domain of the starting URL for browser tests. If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
@@ -6283,7 +6724,7 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly message?: string;
   /**
-  * The HTTP method. Valid values are `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`.
+  * Either the HTTP method/verb to use or a gRPC method available on the service set in the `service` field. Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#method SyntheticsTest#method}
   */
@@ -6313,7 +6754,7 @@ export interface SyntheticsTestRequestDefinition {
   */
   readonly servername?: string;
   /**
-  * For gRPC tests, service to target for healthcheck.
+  * The gRPC service on which you want to perform the gRPC call.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#service SyntheticsTest#service}
   */
@@ -6346,6 +6787,7 @@ export function syntheticsTestRequestDefinitionToTerraform(struct?: SyntheticsTe
   return {
     body: cdktf.stringToTerraform(struct!.body),
     body_type: cdktf.stringToTerraform(struct!.bodyType),
+    call_type: cdktf.stringToTerraform(struct!.callType),
     certificate_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateDomains),
     dns_server: cdktf.stringToTerraform(struct!.dnsServer),
     dns_server_port: cdktf.numberToTerraform(struct!.dnsServerPort),
@@ -6384,6 +6826,10 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
     if (this._bodyType !== undefined) {
       hasAnyValues = true;
       internalValueResult.bodyType = this._bodyType;
+    }
+    if (this._callType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.callType = this._callType;
     }
     if (this._certificateDomains !== undefined) {
       hasAnyValues = true;
@@ -6449,6 +6895,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       this.isEmptyObject = false;
       this._body = undefined;
       this._bodyType = undefined;
+      this._callType = undefined;
       this._certificateDomains = undefined;
       this._dnsServer = undefined;
       this._dnsServerPort = undefined;
@@ -6468,6 +6915,7 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
       this.isEmptyObject = Object.keys(value).length === 0;
       this._body = value.body;
       this._bodyType = value.bodyType;
+      this._callType = value.callType;
       this._certificateDomains = value.certificateDomains;
       this._dnsServer = value.dnsServer;
       this._dnsServerPort = value.dnsServerPort;
@@ -6515,6 +6963,22 @@ export class SyntheticsTestRequestDefinitionOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get bodyTypeInput() {
     return this._bodyType;
+  }
+
+  // call_type - computed: false, optional: true, required: false
+  private _callType?: string; 
+  public get callType() {
+    return this.getStringAttribute('call_type');
+  }
+  public set callType(value: string) {
+    this._callType = value;
+  }
+  public resetCallType() {
+    this._callType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get callTypeInput() {
+    return this._callType;
   }
 
   // certificate_domains - computed: false, optional: true, required: false
@@ -6861,7 +7325,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

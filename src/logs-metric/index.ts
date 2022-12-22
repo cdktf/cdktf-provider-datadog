@@ -47,6 +47,12 @@ export interface LogsMetricCompute {
   */
   readonly aggregationType: string;
   /**
+  * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#include_percentiles LogsMetric#include_percentiles}
+  */
+  readonly includePercentiles?: boolean | cdktf.IResolvable;
+  /**
   * The path to the value the log-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#path LogsMetric#path}
@@ -61,6 +67,7 @@ export function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputRef
   }
   return {
     aggregation_type: cdktf.stringToTerraform(struct!.aggregationType),
+    include_percentiles: cdktf.booleanToTerraform(struct!.includePercentiles),
     path: cdktf.stringToTerraform(struct!.path),
   }
 }
@@ -83,6 +90,10 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.aggregationType = this._aggregationType;
     }
+    if (this._includePercentiles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includePercentiles = this._includePercentiles;
+    }
     if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
@@ -94,11 +105,13 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._aggregationType = undefined;
+      this._includePercentiles = undefined;
       this._path = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._aggregationType = value.aggregationType;
+      this._includePercentiles = value.includePercentiles;
       this._path = value.path;
     }
   }
@@ -114,6 +127,22 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get aggregationTypeInput() {
     return this._aggregationType;
+  }
+
+  // include_percentiles - computed: false, optional: true, required: false
+  private _includePercentiles?: boolean | cdktf.IResolvable; 
+  public get includePercentiles() {
+    return this.getBooleanAttribute('include_percentiles');
+  }
+  public set includePercentiles(value: boolean | cdktf.IResolvable) {
+    this._includePercentiles = value;
+  }
+  public resetIncludePercentiles() {
+    this._includePercentiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includePercentilesInput() {
+    return this._includePercentiles;
   }
 
   // path - computed: false, optional: true, required: false
@@ -345,7 +374,7 @@ export class LogsMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

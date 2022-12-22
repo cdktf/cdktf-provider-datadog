@@ -45,7 +45,7 @@ export interface SecurityMonitoringRuleConfig extends cdktf.TerraformMetaArgumen
   */
   readonly tags?: string[];
   /**
-  * The rule type. Valid values are `log_detection`, `infrastructure_configuration`, `workload_security`, `cloud_configuration`, `signal_correlation`.
+  * The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#type SecurityMonitoringRule#type}
   */
@@ -1528,7 +1528,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

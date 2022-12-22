@@ -6489,7 +6489,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

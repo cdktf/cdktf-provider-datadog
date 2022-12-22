@@ -71,13 +71,13 @@ export interface LogsArchiveAzureArchive {
   */
   readonly clientId: string;
   /**
-  * The container where the archive will be stored.
+  * The container where the archive is stored.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#container LogsArchive#container}
   */
   readonly container: string;
   /**
-  * The path where the archive will be stored.
+  * The path where the archive is stored.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
   */
@@ -248,11 +248,11 @@ export interface LogsArchiveGcsArchive {
   */
   readonly clientEmail: string;
   /**
-  * Path where the archive will be stored.
+  * Path where the archive is stored.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
   */
-  readonly path: string;
+  readonly path?: string;
   /**
   * Your project id.
   * 
@@ -350,13 +350,16 @@ export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
     return this._clientEmail;
   }
 
-  // path - computed: false, optional: false, required: true
+  // path - computed: false, optional: true, required: false
   private _path?: string; 
   public get path() {
     return this.getStringAttribute('path');
   }
   public set path(value: string) {
     this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
@@ -390,11 +393,11 @@ export interface LogsArchiveS3Archive {
   */
   readonly bucket: string;
   /**
-  * Path where the archive will be stored.
+  * Path where the archive is stored.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
   */
-  readonly path: string;
+  readonly path?: string;
   /**
   * Your AWS role name
   * 
@@ -492,13 +495,16 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
     return this._bucket;
   }
 
-  // path - computed: false, optional: false, required: true
+  // path - computed: false, optional: true, required: false
   private _path?: string; 
   public get path() {
     return this.getStringAttribute('path');
   }
   public set path(value: string) {
     this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
@@ -545,7 +551,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_archive',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

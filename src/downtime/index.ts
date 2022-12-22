@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Optionally specify an end date when this downtime should expire
+  * Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#end Downtime#end}
   */
@@ -57,7 +57,7 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly scope: string[];
   /**
-  * Specify when this downtime should start
+  * Specify when this downtime should start. Accepts a Unix timestamp in UTC.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#start Downtime#start}
   */
@@ -69,7 +69,7 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly startDate?: string;
   /**
-  * The timezone for the downtime, default UTC
+  * The timezone for the downtime, default UTC. Follows IANA timezone database identifiers.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/downtime#timezone Downtime#timezone}
   */
@@ -317,7 +317,7 @@ export class Downtime extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_downtime',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

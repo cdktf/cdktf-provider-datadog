@@ -1603,7 +1603,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1667,6 +1667,11 @@ export class Monitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableLogsSampleInput() {
     return this._enableLogsSample;
+  }
+
+  // enable_samples - computed: true, optional: false, required: false
+  public get enableSamples() {
+    return this.getBooleanAttribute('enable_samples');
   }
 
   // escalation_message - computed: false, optional: true, required: false

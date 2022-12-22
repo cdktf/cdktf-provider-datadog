@@ -357,7 +357,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -381,6 +381,11 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // enable_logs_sample - computed: true, optional: false, required: false
   public get enableLogsSample() {
     return this.getBooleanAttribute('enable_logs_sample');
+  }
+
+  // enable_samples - computed: true, optional: false, required: false
+  public get enableSamples() {
+    return this.getBooleanAttribute('enable_samples');
   }
 
   // escalation_message - computed: true, optional: false, required: false
