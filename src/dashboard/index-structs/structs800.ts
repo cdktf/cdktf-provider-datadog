@@ -1,16 +1,658 @@
 import * as cdktf from 'cdktf';
-import { DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery,
+import { DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery,
+dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToTerraform,
+DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference,
+DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery,
+dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToTerraform,
+DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference,
+DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQuery,
 dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryToTerraform,
 DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillApmQueryOutputReference,
-DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery,
-dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryToTerraform,
-DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference,
-DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery,
-dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryToTerraform,
-DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference,
 DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink,
 dashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLinkToTerraform,
 DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLinkList } from './structs400'
+export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy {
+  /**
+  * The facet name.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
+  */
+  readonly facet?: string;
+  /**
+  * The maximum number of items in the group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
+  */
+  readonly limit?: number;
+  /**
+  * sort_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort_query Dashboard#sort_query}
+  */
+  readonly sortQuery?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    facet: cdktf.stringToTerraform(struct!.facet),
+    limit: cdktf.numberToTerraform(struct!.limit),
+    sort_query: dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._facet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.facet = this._facet;
+    }
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    if (this._sortQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sortQuery = this._sortQuery?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._facet = undefined;
+      this._limit = undefined;
+      this._sortQuery.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._facet = value.facet;
+      this._limit = value.limit;
+      this._sortQuery.internalValue = value.sortQuery;
+    }
+  }
+
+  // facet - computed: false, optional: true, required: false
+  private _facet?: string; 
+  public get facet() {
+    return this.getStringAttribute('facet');
+  }
+  public set facet(value: string) {
+    this._facet = value;
+  }
+  public resetFacet() {
+    this._facet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get facetInput() {
+    return this._facet;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+
+  // sort_query - computed: false, optional: true, required: false
+  private _sortQuery = new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQueryOutputReference(this, "sort_query");
+  public get sortQuery() {
+    return this._sortQuery;
+  }
+  public putSortQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBySortQuery) {
+    this._sortQuery.internalValue = value;
+  }
+  public resetSortQuery() {
+    this._sortQuery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortQueryInput() {
+    return this._sortQuery.internalValue;
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByList extends cdktf.ComplexList {
+  public internalValue? : DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference {
+    return new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute {
+  /**
+  * The aggregation method.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
+  */
+  readonly aggregation: string;
+  /**
+  * The facet name.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
+  */
+  readonly facet?: string;
+  /**
+  * Define the time interval in seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
+  */
+  readonly interval?: number;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aggregation: cdktf.stringToTerraform(struct!.aggregation),
+    facet: cdktf.stringToTerraform(struct!.facet),
+    interval: cdktf.numberToTerraform(struct!.interval),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregation = this._aggregation;
+    }
+    if (this._facet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.facet = this._facet;
+    }
+    if (this._interval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interval = this._interval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._aggregation = undefined;
+      this._facet = undefined;
+      this._interval = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._aggregation = value.aggregation;
+      this._facet = value.facet;
+      this._interval = value.interval;
+    }
+  }
+
+  // aggregation - computed: false, optional: false, required: true
+  private _aggregation?: string; 
+  public get aggregation() {
+    return this.getStringAttribute('aggregation');
+  }
+  public set aggregation(value: string) {
+    this._aggregation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationInput() {
+    return this._aggregation;
+  }
+
+  // facet - computed: false, optional: true, required: false
+  private _facet?: string; 
+  public get facet() {
+    return this.getStringAttribute('facet');
+  }
+  public set facet(value: string) {
+    this._facet = value;
+  }
+  public resetFacet() {
+    this._facet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get facetInput() {
+    return this._facet;
+  }
+
+  // interval - computed: false, optional: true, required: false
+  private _interval?: number; 
+  public get interval() {
+    return this.getNumberAttribute('interval');
+  }
+  public set interval(value: number) {
+    this._interval = value;
+  }
+  public resetInterval() {
+    this._interval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intervalInput() {
+    return this._interval;
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList extends cdktf.ComplexList {
+  public internalValue? : DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference {
+    return new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery {
+  /**
+  * The name of the index to query.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#index Dashboard#index}
+  */
+  readonly index: string;
+  /**
+  * The search query to use.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_query Dashboard#search_query}
+  */
+  readonly searchQuery?: string;
+  /**
+  * compute_query block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute_query Dashboard#compute_query}
+  */
+  readonly computeQuery?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery;
+  /**
+  * group_by block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
+  */
+  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktf.IResolvable;
+  /**
+  * multi_compute block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#multi_compute Dashboard#multi_compute}
+  */
+  readonly multiCompute?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktf.IResolvable;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference | DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    index: cdktf.stringToTerraform(struct!.index),
+    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    compute_query: dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryToTerraform(struct!.computeQuery),
+    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._index !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.index = this._index;
+    }
+    if (this._searchQuery !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.searchQuery = this._searchQuery;
+    }
+    if (this._computeQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.computeQuery = this._computeQuery?.internalValue;
+    }
+    if (this._groupBy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupBy = this._groupBy?.internalValue;
+    }
+    if (this._multiCompute?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.multiCompute = this._multiCompute?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._index = undefined;
+      this._searchQuery = undefined;
+      this._computeQuery.internalValue = undefined;
+      this._groupBy.internalValue = undefined;
+      this._multiCompute.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._index = value.index;
+      this._searchQuery = value.searchQuery;
+      this._computeQuery.internalValue = value.computeQuery;
+      this._groupBy.internalValue = value.groupBy;
+      this._multiCompute.internalValue = value.multiCompute;
+    }
+  }
+
+  // index - computed: false, optional: false, required: true
+  private _index?: string; 
+  public get index() {
+    return this.getStringAttribute('index');
+  }
+  public set index(value: string) {
+    this._index = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexInput() {
+    return this._index;
+  }
+
+  // search_query - computed: false, optional: true, required: false
+  private _searchQuery?: string; 
+  public get searchQuery() {
+    return this.getStringAttribute('search_query');
+  }
+  public set searchQuery(value: string) {
+    this._searchQuery = value;
+  }
+  public resetSearchQuery() {
+    this._searchQuery = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchQueryInput() {
+    return this._searchQuery;
+  }
+
+  // compute_query - computed: false, optional: true, required: false
+  private _computeQuery = new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQueryOutputReference(this, "compute_query");
+  public get computeQuery() {
+    return this._computeQuery;
+  }
+  public putComputeQuery(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryComputeQuery) {
+    this._computeQuery.internalValue = value;
+  }
+  public resetComputeQuery() {
+    this._computeQuery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeQueryInput() {
+    return this._computeQuery.internalValue;
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy = new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupByList(this, "group_by", false);
+  public get groupBy() {
+    return this._groupBy;
+  }
+  public putGroupBy(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryGroupBy[] | cdktf.IResolvable) {
+    this._groupBy.internalValue = value;
+  }
+  public resetGroupBy() {
+    this._groupBy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy.internalValue;
+  }
+
+  // multi_compute - computed: false, optional: true, required: false
+  private _multiCompute = new DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiComputeList(this, "multi_compute", false);
+  public get multiCompute() {
+    return this._multiCompute;
+  }
+  public putMultiCompute(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillLogQueryMultiCompute[] | cdktf.IResolvable) {
+    this._multiCompute.internalValue = value;
+  }
+  public resetMultiCompute() {
+    this._multiCompute.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiComputeInput() {
+    return this._multiCompute.internalValue;
+  }
+}
+export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery {
+  /**
+  * A list of processes.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#filter_by Dashboard#filter_by}
+  */
+  readonly filterBy?: string[];
+  /**
+  * The max number of items in the filter list.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
+  */
+  readonly limit?: number;
+  /**
+  * Your chosen metric.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
+  */
+  readonly metric: string;
+  /**
+  * Your chosen search term.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search_by Dashboard#search_by}
+  */
+  readonly searchBy?: string;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
+    limit: cdktf.numberToTerraform(struct!.limit),
+    metric: cdktf.stringToTerraform(struct!.metric),
+    search_by: cdktf.stringToTerraform(struct!.searchBy),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQueryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filterBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterBy = this._filterBy;
+    }
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    if (this._metric !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric;
+    }
+    if (this._searchBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.searchBy = this._searchBy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillProcessQuery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._filterBy = undefined;
+      this._limit = undefined;
+      this._metric = undefined;
+      this._searchBy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._filterBy = value.filterBy;
+      this._limit = value.limit;
+      this._metric = value.metric;
+      this._searchBy = value.searchBy;
+    }
+  }
+
+  // filter_by - computed: false, optional: true, required: false
+  private _filterBy?: string[]; 
+  public get filterBy() {
+    return this.getListAttribute('filter_by');
+  }
+  public set filterBy(value: string[]) {
+    this._filterBy = value;
+  }
+  public resetFilterBy() {
+    this._filterBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterByInput() {
+    return this._filterBy;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+
+  // metric - computed: false, optional: false, required: true
+  private _metric?: string; 
+  public get metric() {
+    return this.getStringAttribute('metric');
+  }
+  public set metric(value: string) {
+    this._metric = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric;
+  }
+
+  // search_by - computed: false, optional: true, required: false
+  private _searchBy?: string; 
+  public get searchBy() {
+    return this.getStringAttribute('search_by');
+  }
+  public set searchBy(value: string) {
+    this._searchBy = value;
+  }
+  public resetSearchBy() {
+    this._searchBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get searchByInput() {
+    return this._searchBy;
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionRequestFillRumQueryComputeQuery {
   /**
   * The aggregation method.
@@ -9716,6 +10358,102 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestForm
     return this._order;
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle {
+  /**
+  * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
+  */
+  readonly palette?: string;
+  /**
+  * Index specifying which color to use within the palette.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette_index Dashboard#palette_index}
+  */
+  readonly paletteIndex?: number;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleOutputReference | DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    palette: cdktf.stringToTerraform(struct!.palette),
+    palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._palette !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.palette = this._palette;
+    }
+    if (this._paletteIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.paletteIndex = this._paletteIndex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._palette = undefined;
+      this._paletteIndex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._palette = value.palette;
+      this._paletteIndex = value.paletteIndex;
+    }
+  }
+
+  // palette - computed: false, optional: true, required: false
+  private _palette?: string; 
+  public get palette() {
+    return this.getStringAttribute('palette');
+  }
+  public set palette(value: string) {
+    this._palette = value;
+  }
+  public resetPalette() {
+    this._palette = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paletteInput() {
+    return this._palette;
+  }
+
+  // palette_index - computed: false, optional: true, required: false
+  private _paletteIndex?: number; 
+  public get paletteIndex() {
+    return this.getNumberAttribute('palette_index');
+  }
+  public set paletteIndex(value: number) {
+    this._paletteIndex = value;
+  }
+  public resetPaletteIndex() {
+    this._paletteIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paletteIndexInput() {
+    return this._paletteIndex;
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormula {
   /**
   * An expression alias.
@@ -9747,6 +10485,12 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequest
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimit;
+  /**
+  * style block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
+  */
+  readonly style?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormula | cdktf.IResolvable): any {
@@ -9760,6 +10504,7 @@ export function dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestF
     formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
     conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaLimitToTerraform(struct!.limit),
+    style: dashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
 }
 
@@ -9803,6 +10548,10 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestForm
       hasAnyValues = true;
       internalValueResult.limit = this._limit?.internalValue;
     }
+    if (this._style?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.style = this._style?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -9815,6 +10564,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestForm
       this._formulaExpression = undefined;
       this._conditionalFormats.internalValue = undefined;
       this._limit.internalValue = undefined;
+      this._style.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -9828,6 +10578,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestForm
       this._formulaExpression = value.formulaExpression;
       this._conditionalFormats.internalValue = value.conditionalFormats;
       this._limit.internalValue = value.limit;
+      this._style.internalValue = value.style;
     }
   }
 
@@ -9906,6 +10657,22 @@ export class DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestForm
   // Temporarily expose input value. Use with caution.
   public get limitInput() {
     return this._limit.internalValue;
+  }
+
+  // style - computed: false, optional: true, required: false
+  private _style = new DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyleOutputReference(this, "style");
+  public get style() {
+    return this._style;
+  }
+  public putStyle(value: DashboardWidgetGroupDefinitionWidgetQueryTableDefinitionRequestFormulaStyle) {
+    this._style.internalValue = value;
+  }
+  public resetStyle() {
+    this._style.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get styleInput() {
+    return this._style.internalValue;
   }
 }
 
@@ -17410,6 +18177,102 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestForm
     return this._order;
   }
 }
+export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle {
+  /**
+  * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette Dashboard#palette}
+  */
+  readonly palette?: string;
+  /**
+  * Index specifying which color to use within the palette.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#palette_index Dashboard#palette_index}
+  */
+  readonly paletteIndex?: number;
+}
+
+export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    palette: cdktf.stringToTerraform(struct!.palette),
+    palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
+  }
+}
+
+export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._palette !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.palette = this._palette;
+    }
+    if (this._paletteIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.paletteIndex = this._paletteIndex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._palette = undefined;
+      this._paletteIndex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._palette = value.palette;
+      this._paletteIndex = value.paletteIndex;
+    }
+  }
+
+  // palette - computed: false, optional: true, required: false
+  private _palette?: string; 
+  public get palette() {
+    return this.getStringAttribute('palette');
+  }
+  public set palette(value: string) {
+    this._palette = value;
+  }
+  public resetPalette() {
+    this._palette = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paletteInput() {
+    return this._palette;
+  }
+
+  // palette_index - computed: false, optional: true, required: false
+  private _paletteIndex?: number; 
+  public get paletteIndex() {
+    return this.getNumberAttribute('palette_index');
+  }
+  public set paletteIndex(value: number) {
+    this._paletteIndex = value;
+  }
+  public resetPaletteIndex() {
+    this._paletteIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paletteIndexInput() {
+    return this._paletteIndex;
+  }
+}
 export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormula {
   /**
   * An expression alias.
@@ -17441,6 +18304,12 @@ export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequest
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimit;
+  /**
+  * style block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#style Dashboard#style}
+  */
+  readonly style?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormula | cdktf.IResolvable): any {
@@ -17454,6 +18323,7 @@ export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestF
     formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
     conditional_formats: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaLimitToTerraform(struct!.limit),
+    style: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleToTerraform(struct!.style),
   }
 }
 
@@ -17497,6 +18367,10 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestForm
       hasAnyValues = true;
       internalValueResult.limit = this._limit?.internalValue;
     }
+    if (this._style?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.style = this._style?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -17509,6 +18383,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestForm
       this._formulaExpression = undefined;
       this._conditionalFormats.internalValue = undefined;
       this._limit.internalValue = undefined;
+      this._style.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -17522,6 +18397,7 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestForm
       this._formulaExpression = value.formulaExpression;
       this._conditionalFormats.internalValue = value.conditionalFormats;
       this._limit.internalValue = value.limit;
+      this._style.internalValue = value.style;
     }
   }
 
@@ -17600,6 +18476,22 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestForm
   // Temporarily expose input value. Use with caution.
   public get limitInput() {
     return this._limit.internalValue;
+  }
+
+  // style - computed: false, optional: true, required: false
+  private _style = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyleOutputReference(this, "style");
+  public get style() {
+    return this._style;
+  }
+  public putStyle(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestFormulaStyle) {
+    this._style.internalValue = value;
+  }
+  public resetStyle() {
+    this._style.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get styleInput() {
+    return this._style.internalValue;
   }
 }
 
@@ -19399,1230 +20291,5 @@ export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuer
   // Temporarily expose input value. Use with caution.
   public get orderInput() {
     return this._order;
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy {
-  /**
-  * The event facet.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
-  */
-  readonly facet: string;
-  /**
-  * The number of groups to return.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
-  */
-  readonly limit?: number;
-  /**
-  * sort block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
-  */
-  readonly sort?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    sort: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._limit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.limit = this._limit;
-    }
-    if (this._sort?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sort = this._sort?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._facet = undefined;
-      this._limit = undefined;
-      this._sort.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._facet = value.facet;
-      this._limit = value.limit;
-      this._sort.internalValue = value.sort;
-    }
-  }
-
-  // facet - computed: false, optional: false, required: true
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // limit - computed: false, optional: true, required: false
-  private _limit?: number; 
-  public get limit() {
-    return this.getNumberAttribute('limit');
-  }
-  public set limit(value: number) {
-    this._limit = value;
-  }
-  public resetLimit() {
-    this._limit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitInput() {
-    return this._limit;
-  }
-
-  // sort - computed: false, optional: true, required: false
-  private _sort = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySortOutputReference(this, "sort");
-  public get sort() {
-    return this._sort;
-  }
-  public putSort(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBySort) {
-    this._sort.internalValue = value;
-  }
-  public resetSort() {
-    this._sort.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sortInput() {
-    return this._sort.internalValue;
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference {
-    return new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch {
-  /**
-  * The events search string.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
-  */
-  readonly query: string;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    query: cdktf.stringToTerraform(struct!.query),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._query !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.query = this._query;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._query = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._query = value.query;
-    }
-  }
-
-  // query - computed: false, optional: false, required: true
-  private _query?: string; 
-  public get query() {
-    return this.getStringAttribute('query');
-  }
-  public set query(value: string) {
-    this._query = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get queryInput() {
-    return this._query;
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery {
-  /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
-  */
-  readonly dataSource: string;
-  /**
-  * An array of index names to query in the stream.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#indexes Dashboard#indexes}
-  */
-  readonly indexes?: string[];
-  /**
-  * The name of query for use in formulas.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
-  */
-  readonly name: string;
-  /**
-  * Storage location (private beta).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#storage Dashboard#storage}
-  */
-  readonly storage?: string;
-  /**
-  * compute block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#compute Dashboard#compute}
-  */
-  readonly compute: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
-  /**
-  * group_by block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#group_by Dashboard#group_by}
-  */
-  readonly groupBy?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
-  /**
-  * search block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#search Dashboard#search}
-  */
-  readonly search?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage: cdktf.stringToTerraform(struct!.storage),
-    compute: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
-    group_by: cdktf.listMapper(dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
-    search: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._dataSource !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dataSource = this._dataSource;
-    }
-    if (this._indexes !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.indexes = this._indexes;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._storage !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.storage = this._storage;
-    }
-    if (this._compute?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.compute = this._compute?.internalValue;
-    }
-    if (this._groupBy?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.groupBy = this._groupBy?.internalValue;
-    }
-    if (this._search?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.search = this._search?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._dataSource = undefined;
-      this._indexes = undefined;
-      this._name = undefined;
-      this._storage = undefined;
-      this._compute.internalValue = undefined;
-      this._groupBy.internalValue = undefined;
-      this._search.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._dataSource = value.dataSource;
-      this._indexes = value.indexes;
-      this._name = value.name;
-      this._storage = value.storage;
-      this._compute.internalValue = value.compute;
-      this._groupBy.internalValue = value.groupBy;
-      this._search.internalValue = value.search;
-    }
-  }
-
-  // data_source - computed: false, optional: false, required: true
-  private _dataSource?: string; 
-  public get dataSource() {
-    return this.getStringAttribute('data_source');
-  }
-  public set dataSource(value: string) {
-    this._dataSource = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataSourceInput() {
-    return this._dataSource;
-  }
-
-  // indexes - computed: false, optional: true, required: false
-  private _indexes?: string[]; 
-  public get indexes() {
-    return this.getListAttribute('indexes');
-  }
-  public set indexes(value: string[]) {
-    this._indexes = value;
-  }
-  public resetIndexes() {
-    this._indexes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get indexesInput() {
-    return this._indexes;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // storage - computed: false, optional: true, required: false
-  private _storage?: string; 
-  public get storage() {
-    return this.getStringAttribute('storage');
-  }
-  public set storage(value: string) {
-    this._storage = value;
-  }
-  public resetStorage() {
-    this._storage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageInput() {
-    return this._storage;
-  }
-
-  // compute - computed: false, optional: false, required: true
-  private _compute = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryComputeList(this, "compute", false);
-  public get compute() {
-    return this._compute;
-  }
-  public putCompute(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
-    this._compute.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get computeInput() {
-    return this._compute.internalValue;
-  }
-
-  // group_by - computed: false, optional: true, required: false
-  private _groupBy = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupByList(this, "group_by", false);
-  public get groupBy() {
-    return this._groupBy;
-  }
-  public putGroupBy(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
-    this._groupBy.internalValue = value;
-  }
-  public resetGroupBy() {
-    this._groupBy.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupByInput() {
-    return this._groupBy.internalValue;
-  }
-
-  // search - computed: false, optional: true, required: false
-  private _search = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearchOutputReference(this, "search");
-  public get search() {
-    return this._search;
-  }
-  public putSearch(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuerySearch) {
-    this._search.internalValue = value;
-  }
-  public resetSearch() {
-    this._search.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get searchInput() {
-    return this._search.internalValue;
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery {
-  /**
-  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
-  */
-  readonly aggregator?: string;
-  /**
-  * The data source for metrics queries.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
-  */
-  readonly dataSource?: string;
-  /**
-  * The name of the query for use in formulas.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
-  */
-  readonly name: string;
-  /**
-  * The metrics query definition.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#query Dashboard#query}
-  */
-  readonly query: string;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregator = this._aggregator;
-    }
-    if (this._dataSource !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dataSource = this._dataSource;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._query !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.query = this._query;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregator = undefined;
-      this._dataSource = undefined;
-      this._name = undefined;
-      this._query = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregator = value.aggregator;
-      this._dataSource = value.dataSource;
-      this._name = value.name;
-      this._query = value.query;
-    }
-  }
-
-  // aggregator - computed: false, optional: true, required: false
-  private _aggregator?: string; 
-  public get aggregator() {
-    return this.getStringAttribute('aggregator');
-  }
-  public set aggregator(value: string) {
-    this._aggregator = value;
-  }
-  public resetAggregator() {
-    this._aggregator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregatorInput() {
-    return this._aggregator;
-  }
-
-  // data_source - computed: false, optional: true, required: false
-  private _dataSource?: string; 
-  public get dataSource() {
-    return this.getStringAttribute('data_source');
-  }
-  public set dataSource(value: string) {
-    this._dataSource = value;
-  }
-  public resetDataSource() {
-    this._dataSource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataSourceInput() {
-    return this._dataSource;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // query - computed: false, optional: false, required: true
-  private _query?: string; 
-  public get query() {
-    return this.getStringAttribute('query');
-  }
-  public set query(value: string) {
-    this._query = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get queryInput() {
-    return this._query;
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery {
-  /**
-  * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregator Dashboard#aggregator}
-  */
-  readonly aggregator?: string;
-  /**
-  * The data source for process queries. Valid values are `process`, `container`.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
-  */
-  readonly dataSource: string;
-  /**
-  * Whether to normalize the CPU percentages.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
-  */
-  readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
-  /**
-  * The number of hits to return.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#limit Dashboard#limit}
-  */
-  readonly limit?: number;
-  /**
-  * The process metric name.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric Dashboard#metric}
-  */
-  readonly metric: string;
-  /**
-  * The name of query for use in formulas.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#name Dashboard#name}
-  */
-  readonly name: string;
-  /**
-  * The direction of the sort. Valid values are `asc`, `desc`.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#sort Dashboard#sort}
-  */
-  readonly sort?: string;
-  /**
-  * An array of tags to filter by.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#tag_filters Dashboard#tag_filters}
-  */
-  readonly tagFilters?: string[];
-  /**
-  * The text to use as a filter.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#text_filter Dashboard#text_filter}
-  */
-  readonly textFilter?: string;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    is_normalized_cpu: cdktf.booleanToTerraform(struct!.isNormalizedCpu),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    name: cdktf.stringToTerraform(struct!.name),
-    sort: cdktf.stringToTerraform(struct!.sort),
-    tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
-    text_filter: cdktf.stringToTerraform(struct!.textFilter),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregator = this._aggregator;
-    }
-    if (this._dataSource !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dataSource = this._dataSource;
-    }
-    if (this._isNormalizedCpu !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.isNormalizedCpu = this._isNormalizedCpu;
-    }
-    if (this._limit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.limit = this._limit;
-    }
-    if (this._metric !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.metric = this._metric;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._sort !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sort = this._sort;
-    }
-    if (this._tagFilters !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tagFilters = this._tagFilters;
-    }
-    if (this._textFilter !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.textFilter = this._textFilter;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregator = undefined;
-      this._dataSource = undefined;
-      this._isNormalizedCpu = undefined;
-      this._limit = undefined;
-      this._metric = undefined;
-      this._name = undefined;
-      this._sort = undefined;
-      this._tagFilters = undefined;
-      this._textFilter = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregator = value.aggregator;
-      this._dataSource = value.dataSource;
-      this._isNormalizedCpu = value.isNormalizedCpu;
-      this._limit = value.limit;
-      this._metric = value.metric;
-      this._name = value.name;
-      this._sort = value.sort;
-      this._tagFilters = value.tagFilters;
-      this._textFilter = value.textFilter;
-    }
-  }
-
-  // aggregator - computed: false, optional: true, required: false
-  private _aggregator?: string; 
-  public get aggregator() {
-    return this.getStringAttribute('aggregator');
-  }
-  public set aggregator(value: string) {
-    this._aggregator = value;
-  }
-  public resetAggregator() {
-    this._aggregator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregatorInput() {
-    return this._aggregator;
-  }
-
-  // data_source - computed: false, optional: false, required: true
-  private _dataSource?: string; 
-  public get dataSource() {
-    return this.getStringAttribute('data_source');
-  }
-  public set dataSource(value: string) {
-    this._dataSource = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataSourceInput() {
-    return this._dataSource;
-  }
-
-  // is_normalized_cpu - computed: false, optional: true, required: false
-  private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
-  public get isNormalizedCpu() {
-    return this.getBooleanAttribute('is_normalized_cpu');
-  }
-  public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
-    this._isNormalizedCpu = value;
-  }
-  public resetIsNormalizedCpu() {
-    this._isNormalizedCpu = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isNormalizedCpuInput() {
-    return this._isNormalizedCpu;
-  }
-
-  // limit - computed: false, optional: true, required: false
-  private _limit?: number; 
-  public get limit() {
-    return this.getNumberAttribute('limit');
-  }
-  public set limit(value: number) {
-    this._limit = value;
-  }
-  public resetLimit() {
-    this._limit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitInput() {
-    return this._limit;
-  }
-
-  // metric - computed: false, optional: false, required: true
-  private _metric?: string; 
-  public get metric() {
-    return this.getStringAttribute('metric');
-  }
-  public set metric(value: string) {
-    this._metric = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricInput() {
-    return this._metric;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // sort - computed: false, optional: true, required: false
-  private _sort?: string; 
-  public get sort() {
-    return this.getStringAttribute('sort');
-  }
-  public set sort(value: string) {
-    this._sort = value;
-  }
-  public resetSort() {
-    this._sort = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sortInput() {
-    return this._sort;
-  }
-
-  // tag_filters - computed: false, optional: true, required: false
-  private _tagFilters?: string[]; 
-  public get tagFilters() {
-    return this.getListAttribute('tag_filters');
-  }
-  public set tagFilters(value: string[]) {
-    this._tagFilters = value;
-  }
-  public resetTagFilters() {
-    this._tagFilters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagFiltersInput() {
-    return this._tagFilters;
-  }
-
-  // text_filter - computed: false, optional: true, required: false
-  private _textFilter?: string; 
-  public get textFilter() {
-    return this.getStringAttribute('text_filter');
-  }
-  public set textFilter(value: string) {
-    this._textFilter = value;
-  }
-  public resetTextFilter() {
-    this._textFilter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get textFilterInput() {
-    return this._textFilter;
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuery {
-  /**
-  * apm_dependency_stats_query block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
-  */
-  readonly apmDependencyStatsQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery;
-  /**
-  * apm_resource_stats_query block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
-  */
-  readonly apmResourceStatsQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery;
-  /**
-  * event_query block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_query Dashboard#event_query}
-  */
-  readonly eventQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery;
-  /**
-  * metric_query block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#metric_query Dashboard#metric_query}
-  */
-  readonly metricQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery;
-  /**
-  * process_query block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#process_query Dashboard#process_query}
-  */
-  readonly processQuery?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    apm_dependency_stats_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
-    apm_resource_stats_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct!.apmResourceStatsQuery),
-    event_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryToTerraform(struct!.eventQuery),
-    metric_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryToTerraform(struct!.metricQuery),
-    process_query: dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryToTerraform(struct!.processQuery),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuery | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._apmDependencyStatsQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.apmDependencyStatsQuery = this._apmDependencyStatsQuery?.internalValue;
-    }
-    if (this._apmResourceStatsQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.apmResourceStatsQuery = this._apmResourceStatsQuery?.internalValue;
-    }
-    if (this._eventQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.eventQuery = this._eventQuery?.internalValue;
-    }
-    if (this._metricQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.metricQuery = this._metricQuery?.internalValue;
-    }
-    if (this._processQuery?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.processQuery = this._processQuery?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuery | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._apmDependencyStatsQuery.internalValue = undefined;
-      this._apmResourceStatsQuery.internalValue = undefined;
-      this._eventQuery.internalValue = undefined;
-      this._metricQuery.internalValue = undefined;
-      this._processQuery.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._apmDependencyStatsQuery.internalValue = value.apmDependencyStatsQuery;
-      this._apmResourceStatsQuery.internalValue = value.apmResourceStatsQuery;
-      this._eventQuery.internalValue = value.eventQuery;
-      this._metricQuery.internalValue = value.metricQuery;
-      this._processQuery.internalValue = value.processQuery;
-    }
-  }
-
-  // apm_dependency_stats_query - computed: false, optional: true, required: false
-  private _apmDependencyStatsQuery = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQueryOutputReference(this, "apm_dependency_stats_query");
-  public get apmDependencyStatsQuery() {
-    return this._apmDependencyStatsQuery;
-  }
-  public putApmDependencyStatsQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmDependencyStatsQuery) {
-    this._apmDependencyStatsQuery.internalValue = value;
-  }
-  public resetApmDependencyStatsQuery() {
-    this._apmDependencyStatsQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apmDependencyStatsQueryInput() {
-    return this._apmDependencyStatsQuery.internalValue;
-  }
-
-  // apm_resource_stats_query - computed: false, optional: true, required: false
-  private _apmResourceStatsQuery = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQueryOutputReference(this, "apm_resource_stats_query");
-  public get apmResourceStatsQuery() {
-    return this._apmResourceStatsQuery;
-  }
-  public putApmResourceStatsQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryApmResourceStatsQuery) {
-    this._apmResourceStatsQuery.internalValue = value;
-  }
-  public resetApmResourceStatsQuery() {
-    this._apmResourceStatsQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apmResourceStatsQueryInput() {
-    return this._apmResourceStatsQuery.internalValue;
-  }
-
-  // event_query - computed: false, optional: true, required: false
-  private _eventQuery = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQueryOutputReference(this, "event_query");
-  public get eventQuery() {
-    return this._eventQuery;
-  }
-  public putEventQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryEventQuery) {
-    this._eventQuery.internalValue = value;
-  }
-  public resetEventQuery() {
-    this._eventQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get eventQueryInput() {
-    return this._eventQuery.internalValue;
-  }
-
-  // metric_query - computed: false, optional: true, required: false
-  private _metricQuery = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQueryOutputReference(this, "metric_query");
-  public get metricQuery() {
-    return this._metricQuery;
-  }
-  public putMetricQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryMetricQuery) {
-    this._metricQuery.internalValue = value;
-  }
-  public resetMetricQuery() {
-    this._metricQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricQueryInput() {
-    return this._metricQuery.internalValue;
-  }
-
-  // process_query - computed: false, optional: true, required: false
-  private _processQuery = new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQueryOutputReference(this, "process_query");
-  public get processQuery() {
-    return this._processQuery;
-  }
-  public putProcessQuery(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryProcessQuery) {
-    this._processQuery.internalValue = value;
-  }
-  public resetProcessQuery() {
-    this._processQuery.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get processQueryInput() {
-    return this._processQuery.internalValue;
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQuery[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryOutputReference {
-    return new DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery {
-  /**
-  * The aggregation method.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#aggregation Dashboard#aggregation}
-  */
-  readonly aggregation: string;
-  /**
-  * The facet name.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#facet Dashboard#facet}
-  */
-  readonly facet?: string;
-  /**
-  * Define the time interval in seconds.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#interval Dashboard#interval}
-  */
-  readonly interval?: number;
-}
-
-export function dashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
-  }
-}
-
-export class DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aggregation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aggregation = this._aggregation;
-    }
-    if (this._facet !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.facet = this._facet;
-    }
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DashboardWidgetGroupDefinitionWidgetQueryValueDefinitionRequestRumQueryComputeQuery | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aggregation = undefined;
-      this._facet = undefined;
-      this._interval = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aggregation = value.aggregation;
-      this._facet = value.facet;
-      this._interval = value.interval;
-    }
-  }
-
-  // aggregation - computed: false, optional: false, required: true
-  private _aggregation?: string; 
-  public get aggregation() {
-    return this.getStringAttribute('aggregation');
-  }
-  public set aggregation(value: string) {
-    this._aggregation = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aggregationInput() {
-    return this._aggregation;
-  }
-
-  // facet - computed: false, optional: true, required: false
-  private _facet?: string; 
-  public get facet() {
-    return this.getStringAttribute('facet');
-  }
-  public set facet(value: string) {
-    this._facet = value;
-  }
-  public resetFacet() {
-    this._facet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get facetInput() {
-    return this._facet;
-  }
-
-  // interval - computed: false, optional: true, required: false
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  public resetInterval() {
-    this._interval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
   }
 }

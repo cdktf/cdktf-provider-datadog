@@ -108,7 +108,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -204,7 +204,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
   // excluded_regions - computed: false, optional: true, required: false
   private _excludedRegions?: string[]; 
   public get excludedRegions() {
-    return this.getListAttribute('excluded_regions');
+    return cdktf.Fn.tolist(this.getListAttribute('excluded_regions'));
   }
   public set excludedRegions(value: string[]) {
     this._excludedRegions = value;

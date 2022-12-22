@@ -51,6 +51,7 @@ export * as dataDatadogCloudWorkloadSecurityAgentRules from './data-datadog-clou
 export * as dataDatadogDashboard from './data-datadog-dashboard';
 export * as dataDatadogDashboardList from './data-datadog-dashboard-list';
 export * as dataDatadogIpRanges from './data-datadog-ip-ranges';
+export * as dataDatadogLogsArchivesOrder from './data-datadog-logs-archives-order';
 export * as dataDatadogLogsIndexes from './data-datadog-logs-indexes';
 export * as dataDatadogLogsIndexesOrder from './data-datadog-logs-indexes-order';
 export * as dataDatadogLogsPipelines from './data-datadog-logs-pipelines';
@@ -59,6 +60,7 @@ export * as dataDatadogMonitors from './data-datadog-monitors';
 export * as dataDatadogPermissions from './data-datadog-permissions';
 export * as dataDatadogRole from './data-datadog-role';
 export * as dataDatadogRoles from './data-datadog-roles';
+export * as dataDatadogRumApplication from './data-datadog-rum-application';
 export * as dataDatadogSecurityMonitoringFilters from './data-datadog-security-monitoring-filters';
 export * as dataDatadogSecurityMonitoringRules from './data-datadog-security-monitoring-rules';
 export * as dataDatadogServiceLevelObjective from './data-datadog-service-level-objective';

@@ -72,7 +72,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_azure',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.18.0',
+        providerVersion: '3.19.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
