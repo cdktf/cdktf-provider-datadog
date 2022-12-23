@@ -48,7 +48,7 @@ export class ServiceDefinitionYaml extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_definition_yaml',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.19.0',
+        providerVersion: '3.19.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

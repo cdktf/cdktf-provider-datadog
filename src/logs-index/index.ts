@@ -427,7 +427,7 @@ export class LogsIndex extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_index',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.19.0',
+        providerVersion: '3.19.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
