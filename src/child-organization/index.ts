@@ -639,7 +639,7 @@ export class ChildOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_child_organization',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.19.0',
+        providerVersion: '3.19.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
