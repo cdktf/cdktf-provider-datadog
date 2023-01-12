@@ -4721,7 +4721,7 @@ export class SyntheticsTestBrowserVariableList extends cdktf.ComplexList {
 }
 export interface SyntheticsTestConfigVariable {
   /**
-  * Example for the variable.
+  * Example for the variable. This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#example SyntheticsTest#example}
   */
@@ -4742,11 +4742,17 @@ export interface SyntheticsTestConfigVariable {
   */
   readonly name: string;
   /**
-  * Pattern of the variable.
+  * Pattern of the variable. This value is not returned by the api when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#pattern SyntheticsTest#pattern}
   */
   readonly pattern?: string;
+  /**
+  * Whether the value of this variable will be obfuscated in test results.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#secure SyntheticsTest#secure}
+  */
+  readonly secure?: boolean | cdktf.IResolvable;
   /**
   * Type of test configuration variable. Valid values are `global`, `text`.
   * 
@@ -4765,6 +4771,7 @@ export function syntheticsTestConfigVariableToTerraform(struct?: SyntheticsTestC
     id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
     pattern: cdktf.stringToTerraform(struct!.pattern),
+    secure: cdktf.booleanToTerraform(struct!.secure),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -4805,6 +4812,10 @@ export class SyntheticsTestConfigVariableOutputReference extends cdktf.ComplexOb
       hasAnyValues = true;
       internalValueResult.pattern = this._pattern;
     }
+    if (this._secure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secure = this._secure;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -4820,6 +4831,7 @@ export class SyntheticsTestConfigVariableOutputReference extends cdktf.ComplexOb
       this._id = undefined;
       this._name = undefined;
       this._pattern = undefined;
+      this._secure = undefined;
       this._type = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -4833,6 +4845,7 @@ export class SyntheticsTestConfigVariableOutputReference extends cdktf.ComplexOb
       this._id = value.id;
       this._name = value.name;
       this._pattern = value.pattern;
+      this._secure = value.secure;
       this._type = value.type;
     }
   }
@@ -4896,6 +4909,22 @@ export class SyntheticsTestConfigVariableOutputReference extends cdktf.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get patternInput() {
     return this._pattern;
+  }
+
+  // secure - computed: false, optional: true, required: false
+  private _secure?: boolean | cdktf.IResolvable; 
+  public get secure() {
+    return this.getBooleanAttribute('secure');
+  }
+  public set secure(value: boolean | cdktf.IResolvable) {
+    this._secure = value;
+  }
+  public resetSecure() {
+    this._secure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secureInput() {
+    return this._secure;
   }
 
   // type - computed: false, optional: false, required: true
@@ -7325,7 +7354,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.19.1',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

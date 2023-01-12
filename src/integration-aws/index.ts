@@ -108,7 +108,7 @@ export class IntegrationAws extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.19.1',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
