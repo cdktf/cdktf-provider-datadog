@@ -21,6 +21,12 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * If set to `false`, skip the validation call done during plan.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#validate Role#validate}
+  */
+  readonly validate?: boolean | cdktf.IResolvable;
+  /**
   * permission block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#permission Role#permission}
@@ -158,7 +164,7 @@ export class Role extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_role',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.19.1',
+        providerVersion: '3.20.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -171,6 +177,7 @@ export class Role extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._validate = config.validate;
     this._permission.internalValue = config.permission;
   }
 
@@ -212,6 +219,22 @@ export class Role extends cdktf.TerraformResource {
     return this.getNumberAttribute('user_count');
   }
 
+  // validate - computed: false, optional: true, required: false
+  private _validate?: boolean | cdktf.IResolvable; 
+  public get validate() {
+    return this.getBooleanAttribute('validate');
+  }
+  public set validate(value: boolean | cdktf.IResolvable) {
+    this._validate = value;
+  }
+  public resetValidate() {
+    this._validate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validateInput() {
+    return this._validate;
+  }
+
   // permission - computed: false, optional: true, required: false
   private _permission = new RolePermissionList(this, "permission", true);
   public get permission() {
@@ -236,6 +259,7 @@ export class Role extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      validate: cdktf.booleanToTerraform(this._validate),
       permission: cdktf.listMapper(rolePermissionToTerraform, true)(this._permission.internalValue),
     };
   }
