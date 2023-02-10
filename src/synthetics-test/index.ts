@@ -5350,6 +5350,12 @@ export interface SyntheticsTestOptionsList {
   */
   readonly followRedirects?: boolean | cdktf.IResolvable;
   /**
+  * HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#http_version SyntheticsTest#http_version}
+  */
+  readonly httpVersion?: string;
+  /**
   * Ignore server certificate error.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
@@ -5439,6 +5445,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     disable_cors: cdktf.booleanToTerraform(struct!.disableCors),
     disable_csp: cdktf.booleanToTerraform(struct!.disableCsp),
     follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
+    http_version: cdktf.stringToTerraform(struct!.httpVersion),
     ignore_server_certificate_error: cdktf.booleanToTerraform(struct!.ignoreServerCertificateError),
     initial_navigation_timeout: cdktf.numberToTerraform(struct!.initialNavigationTimeout),
     min_failure_duration: cdktf.numberToTerraform(struct!.minFailureDuration),
@@ -5492,6 +5499,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     if (this._followRedirects !== undefined) {
       hasAnyValues = true;
       internalValueResult.followRedirects = this._followRedirects;
+    }
+    if (this._httpVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpVersion = this._httpVersion;
     }
     if (this._ignoreServerCertificateError !== undefined) {
       hasAnyValues = true;
@@ -5557,6 +5568,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._disableCors = undefined;
       this._disableCsp = undefined;
       this._followRedirects = undefined;
+      this._httpVersion = undefined;
       this._ignoreServerCertificateError = undefined;
       this._initialNavigationTimeout = undefined;
       this._minFailureDuration = undefined;
@@ -5579,6 +5591,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._disableCors = value.disableCors;
       this._disableCsp = value.disableCsp;
       this._followRedirects = value.followRedirects;
+      this._httpVersion = value.httpVersion;
       this._ignoreServerCertificateError = value.ignoreServerCertificateError;
       this._initialNavigationTimeout = value.initialNavigationTimeout;
       this._minFailureDuration = value.minFailureDuration;
@@ -5689,6 +5702,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get followRedirectsInput() {
     return this._followRedirects;
+  }
+
+  // http_version - computed: false, optional: true, required: false
+  private _httpVersion?: string; 
+  public get httpVersion() {
+    return this.getStringAttribute('http_version');
+  }
+  public set httpVersion(value: string) {
+    this._httpVersion = value;
+  }
+  public resetHttpVersion() {
+    this._httpVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpVersionInput() {
+    return this._httpVersion;
   }
 
   // ignore_server_certificate_error - computed: false, optional: true, required: false
@@ -7354,7 +7383,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

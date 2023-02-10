@@ -48,7 +48,7 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_archive_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

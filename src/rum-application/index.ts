@@ -54,7 +54,7 @@ export class RumApplication extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_application',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

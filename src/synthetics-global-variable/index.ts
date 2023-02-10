@@ -57,11 +57,174 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
   */
   readonly value: string;
   /**
+  * options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#options SyntheticsGlobalVariable#options}
+  */
+  readonly options?: SyntheticsGlobalVariableOptions;
+  /**
   * parse_test_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
   */
   readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions;
+}
+export interface SyntheticsGlobalVariableOptionsTotpParameters {
+  /**
+  * Number of digits for the OTP.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
+  */
+  readonly digits: number;
+  /**
+  * Interval for which to refresh the token (in seconds).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
+  */
+  readonly refreshInterval: number;
+}
+
+export function syntheticsGlobalVariableOptionsTotpParametersToTerraform(struct?: SyntheticsGlobalVariableOptionsTotpParametersOutputReference | SyntheticsGlobalVariableOptionsTotpParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    digits: cdktf.numberToTerraform(struct!.digits),
+    refresh_interval: cdktf.numberToTerraform(struct!.refreshInterval),
+  }
+}
+
+export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsGlobalVariableOptionsTotpParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._digits !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.digits = this._digits;
+    }
+    if (this._refreshInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.refreshInterval = this._refreshInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsGlobalVariableOptionsTotpParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._digits = undefined;
+      this._refreshInterval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._digits = value.digits;
+      this._refreshInterval = value.refreshInterval;
+    }
+  }
+
+  // digits - computed: false, optional: false, required: true
+  private _digits?: number; 
+  public get digits() {
+    return this.getNumberAttribute('digits');
+  }
+  public set digits(value: number) {
+    this._digits = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get digitsInput() {
+    return this._digits;
+  }
+
+  // refresh_interval - computed: false, optional: false, required: true
+  private _refreshInterval?: number; 
+  public get refreshInterval() {
+    return this.getNumberAttribute('refresh_interval');
+  }
+  public set refreshInterval(value: number) {
+    this._refreshInterval = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refreshIntervalInput() {
+    return this._refreshInterval;
+  }
+}
+export interface SyntheticsGlobalVariableOptions {
+  /**
+  * totp_parameters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
+  */
+  readonly totpParameters?: SyntheticsGlobalVariableOptionsTotpParameters;
+}
+
+export function syntheticsGlobalVariableOptionsToTerraform(struct?: SyntheticsGlobalVariableOptionsOutputReference | SyntheticsGlobalVariableOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    totp_parameters: syntheticsGlobalVariableOptionsTotpParametersToTerraform(struct!.totpParameters),
+  }
+}
+
+export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsGlobalVariableOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._totpParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.totpParameters = this._totpParameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsGlobalVariableOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._totpParameters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._totpParameters.internalValue = value.totpParameters;
+    }
+  }
+
+  // totp_parameters - computed: false, optional: true, required: false
+  private _totpParameters = new SyntheticsGlobalVariableOptionsTotpParametersOutputReference(this, "totp_parameters");
+  public get totpParameters() {
+    return this._totpParameters;
+  }
+  public putTotpParameters(value: SyntheticsGlobalVariableOptionsTotpParameters) {
+    this._totpParameters.internalValue = value;
+  }
+  public resetTotpParameters() {
+    this._totpParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totpParametersInput() {
+    return this._totpParameters.internalValue;
+  }
 }
 export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
@@ -334,7 +497,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -353,6 +516,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     this._secure = config.secure;
     this._tags = config.tags;
     this._value = config.value;
+    this._options.internalValue = config.options;
     this._parseTestOptions.internalValue = config.parseTestOptions;
   }
 
@@ -482,6 +646,22 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     return this._value;
   }
 
+  // options - computed: false, optional: true, required: false
+  private _options = new SyntheticsGlobalVariableOptionsOutputReference(this, "options");
+  public get options() {
+    return this._options;
+  }
+  public putOptions(value: SyntheticsGlobalVariableOptions) {
+    this._options.internalValue = value;
+  }
+  public resetOptions() {
+    this._options.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options.internalValue;
+  }
+
   // parse_test_options - computed: false, optional: true, required: false
   private _parseTestOptions = new SyntheticsGlobalVariableParseTestOptionsOutputReference(this, "parse_test_options");
   public get parseTestOptions() {
@@ -512,6 +692,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       secure: cdktf.booleanToTerraform(this._secure),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       value: cdktf.stringToTerraform(this._value),
+      options: syntheticsGlobalVariableOptionsToTerraform(this._options.internalValue),
       parse_test_options: syntheticsGlobalVariableParseTestOptionsToTerraform(this._parseTestOptions.internalValue),
     };
   }

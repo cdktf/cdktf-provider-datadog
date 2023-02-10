@@ -26,6 +26,12 @@ export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clientId: string;
   /**
+  * Whether Datadog collects cloud security posture management resources from your GCP project.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+  */
+  readonly cspmResourceCollectionEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Limit the GCE instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_gcp#host_filters IntegrationGcp#host_filters}
@@ -84,7 +90,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_gcp',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -98,6 +104,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
     this._automute = config.automute;
     this._clientEmail = config.clientEmail;
     this._clientId = config.clientId;
+    this._cspmResourceCollectionEnabled = config.cspmResourceCollectionEnabled;
     this._hostFilters = config.hostFilters;
     this._id = config.id;
     this._privateKey = config.privateKey;
@@ -149,6 +156,22 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clientIdInput() {
     return this._clientId;
+  }
+
+  // cspm_resource_collection_enabled - computed: false, optional: true, required: false
+  private _cspmResourceCollectionEnabled?: boolean | cdktf.IResolvable; 
+  public get cspmResourceCollectionEnabled() {
+    return this.getBooleanAttribute('cspm_resource_collection_enabled');
+  }
+  public set cspmResourceCollectionEnabled(value: boolean | cdktf.IResolvable) {
+    this._cspmResourceCollectionEnabled = value;
+  }
+  public resetCspmResourceCollectionEnabled() {
+    this._cspmResourceCollectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cspmResourceCollectionEnabledInput() {
+    return this._cspmResourceCollectionEnabled;
   }
 
   // host_filters - computed: false, optional: true, required: false
@@ -231,6 +254,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
       automute: cdktf.booleanToTerraform(this._automute),
       client_email: cdktf.stringToTerraform(this._clientEmail),
       client_id: cdktf.stringToTerraform(this._clientId),
+      cspm_resource_collection_enabled: cdktf.booleanToTerraform(this._cspmResourceCollectionEnabled),
       host_filters: cdktf.stringToTerraform(this._hostFilters),
       id: cdktf.stringToTerraform(this._id),
       private_key: cdktf.stringToTerraform(this._privateKey),

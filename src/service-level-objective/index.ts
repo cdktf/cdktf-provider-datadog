@@ -51,6 +51,18 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   */
   readonly tags?: string[];
   /**
+  * The objective's target in `(0,100)`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+  */
+  readonly targetThreshold?: number;
+  /**
+  * The time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+  */
+  readonly timeframe?: string;
+  /**
   * The type of the service level objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/service-level-objectives/#create-a-slo-object). Valid values are `metric`, `monitor`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#type ServiceLevelObjective#type}
@@ -62,6 +74,12 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#validate ServiceLevelObjective#validate}
   */
   readonly validate?: boolean | cdktf.IResolvable;
+  /**
+  * The objective's warning value in `(0,100)`. This must be greater than the target value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+  */
+  readonly warningThreshold?: number;
   /**
   * query block
   * 
@@ -167,7 +185,7 @@ export class ServiceLevelObjectiveQueryOutputReference extends cdktf.ComplexObje
 }
 export interface ServiceLevelObjectiveThresholds {
   /**
-  * The objective's target in`[0,100]`.
+  * The objective's target in `(0,100)`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target ServiceLevelObjective#target}
   */
@@ -179,7 +197,7 @@ export interface ServiceLevelObjectiveThresholds {
   */
   readonly timeframe: string;
   /**
-  * The objective's warning value in `[0,100]`. This must be greater than the target value.
+  * The objective's warning value in `(0,100)`. This must be greater than the target value.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning ServiceLevelObjective#warning}
   */
@@ -353,7 +371,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_level_objective',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -371,8 +389,11 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
     this._monitorIds = config.monitorIds;
     this._name = config.name;
     this._tags = config.tags;
+    this._targetThreshold = config.targetThreshold;
+    this._timeframe = config.timeframe;
     this._type = config.type;
     this._validate = config.validate;
+    this._warningThreshold = config.warningThreshold;
     this._query.internalValue = config.query;
     this._thresholds.internalValue = config.thresholds;
   }
@@ -490,6 +511,38 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
     return this._tags;
   }
 
+  // target_threshold - computed: true, optional: true, required: false
+  private _targetThreshold?: number; 
+  public get targetThreshold() {
+    return this.getNumberAttribute('target_threshold');
+  }
+  public set targetThreshold(value: number) {
+    this._targetThreshold = value;
+  }
+  public resetTargetThreshold() {
+    this._targetThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetThresholdInput() {
+    return this._targetThreshold;
+  }
+
+  // timeframe - computed: true, optional: true, required: false
+  private _timeframe?: string; 
+  public get timeframe() {
+    return this.getStringAttribute('timeframe');
+  }
+  public set timeframe(value: string) {
+    this._timeframe = value;
+  }
+  public resetTimeframe() {
+    this._timeframe = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeframeInput() {
+    return this._timeframe;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -517,6 +570,22 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get validateInput() {
     return this._validate;
+  }
+
+  // warning_threshold - computed: true, optional: true, required: false
+  private _warningThreshold?: number; 
+  public get warningThreshold() {
+    return this.getNumberAttribute('warning_threshold');
+  }
+  public set warningThreshold(value: number) {
+    this._warningThreshold = value;
+  }
+  public resetWarningThreshold() {
+    this._warningThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warningThresholdInput() {
+    return this._warningThreshold;
   }
 
   // query - computed: false, optional: true, required: false
@@ -561,8 +630,11 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       monitor_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._monitorIds),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      target_threshold: cdktf.numberToTerraform(this._targetThreshold),
+      timeframe: cdktf.stringToTerraform(this._timeframe),
       type: cdktf.stringToTerraform(this._type),
       validate: cdktf.booleanToTerraform(this._validate),
+      warning_threshold: cdktf.numberToTerraform(this._warningThreshold),
       query: serviceLevelObjectiveQueryToTerraform(this._query.internalValue),
       thresholds: cdktf.listMapper(serviceLevelObjectiveThresholdsToTerraform, true)(this._thresholds.internalValue),
     };
