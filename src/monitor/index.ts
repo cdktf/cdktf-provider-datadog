@@ -101,6 +101,12 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   */
   readonly noDataTimeframe?: number;
   /**
+  * Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notification_preset_name Monitor#notification_preset_name}
+  */
+  readonly notificationPresetName?: string;
+  /**
   * A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#notify_audit Monitor#notify_audit}
@@ -1603,7 +1609,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1628,6 +1634,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._newGroupDelay = config.newGroupDelay;
     this._newHostDelay = config.newHostDelay;
     this._noDataTimeframe = config.noDataTimeframe;
+    this._notificationPresetName = config.notificationPresetName;
     this._notifyAudit = config.notifyAudit;
     this._notifyBy = config.notifyBy;
     this._notifyNoData = config.notifyNoData;
@@ -1874,6 +1881,22 @@ export class Monitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get noDataTimeframeInput() {
     return this._noDataTimeframe;
+  }
+
+  // notification_preset_name - computed: false, optional: true, required: false
+  private _notificationPresetName?: string; 
+  public get notificationPresetName() {
+    return this.getStringAttribute('notification_preset_name');
+  }
+  public set notificationPresetName(value: string) {
+    this._notificationPresetName = value;
+  }
+  public resetNotificationPresetName() {
+    this._notificationPresetName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationPresetNameInput() {
+    return this._notificationPresetName;
   }
 
   // notify_audit - computed: false, optional: true, required: false
@@ -2194,6 +2217,7 @@ export class Monitor extends cdktf.TerraformResource {
       new_group_delay: cdktf.numberToTerraform(this._newGroupDelay),
       new_host_delay: cdktf.numberToTerraform(this._newHostDelay),
       no_data_timeframe: cdktf.numberToTerraform(this._noDataTimeframe),
+      notification_preset_name: cdktf.stringToTerraform(this._notificationPresetName),
       notify_audit: cdktf.booleanToTerraform(this._notifyAudit),
       notify_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyBy),
       notify_no_data: cdktf.booleanToTerraform(this._notifyNoData),

@@ -17833,11 +17833,17 @@ export class DashboardWidgetListStreamDefinitionRequestColumnsList extends cdktf
 }
 export interface DashboardWidgetListStreamDefinitionRequestQuery {
   /**
-  * Source from which to query items to display in the stream. Valid values are `logs_stream`, `audit_stream`, `rum_issue_stream`, `apm_issue_stream`, `logs_pattern_stream`.
+  * Source from which to query items to display in the stream. Valid values are `logs_stream`, `audit_stream`, `rum_issue_stream`, `apm_issue_stream`, `logs_pattern_stream`, `logs_transaction_stream`, `event_stream`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
+  /**
+  * Size of events displayed in widget. Valid values are `s`, `l`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#event_size Dashboard#event_size}
+  */
+  readonly eventSize?: string;
   /**
   * List of indexes.
   * 
@@ -17865,6 +17871,7 @@ export function dashboardWidgetListStreamDefinitionRequestQueryToTerraform(struc
   }
   return {
     data_source: cdktf.stringToTerraform(struct!.dataSource),
+    event_size: cdktf.stringToTerraform(struct!.eventSize),
     indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
     query_string: cdktf.stringToTerraform(struct!.queryString),
     storage: cdktf.stringToTerraform(struct!.storage),
@@ -17889,6 +17896,10 @@ export class DashboardWidgetListStreamDefinitionRequestQueryOutputReference exte
       hasAnyValues = true;
       internalValueResult.dataSource = this._dataSource;
     }
+    if (this._eventSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventSize = this._eventSize;
+    }
     if (this._indexes !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexes = this._indexes;
@@ -17908,6 +17919,7 @@ export class DashboardWidgetListStreamDefinitionRequestQueryOutputReference exte
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dataSource = undefined;
+      this._eventSize = undefined;
       this._indexes = undefined;
       this._queryString = undefined;
       this._storage = undefined;
@@ -17915,6 +17927,7 @@ export class DashboardWidgetListStreamDefinitionRequestQueryOutputReference exte
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dataSource = value.dataSource;
+      this._eventSize = value.eventSize;
       this._indexes = value.indexes;
       this._queryString = value.queryString;
       this._storage = value.storage;
@@ -17932,6 +17945,22 @@ export class DashboardWidgetListStreamDefinitionRequestQueryOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get dataSourceInput() {
     return this._dataSource;
+  }
+
+  // event_size - computed: false, optional: true, required: false
+  private _eventSize?: string; 
+  public get eventSize() {
+    return this.getStringAttribute('event_size');
+  }
+  public set eventSize(value: string) {
+    this._eventSize = value;
+  }
+  public resetEventSize() {
+    this._eventSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventSizeInput() {
+    return this._eventSize;
   }
 
   // indexes - computed: false, optional: true, required: false

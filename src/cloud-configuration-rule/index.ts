@@ -102,7 +102,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_cloud_configuration_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

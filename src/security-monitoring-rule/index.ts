@@ -612,7 +612,7 @@ export interface SecurityMonitoringRuleOptions {
   */
   readonly decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable;
   /**
-  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`.
+  * The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
   */
@@ -963,7 +963,7 @@ export class SecurityMonitoringRuleQueryAgentRuleList extends cdktf.ComplexList 
 }
 export interface SecurityMonitoringRuleQuery {
   /**
-  * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
+  * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
@@ -1262,7 +1262,7 @@ export class SecurityMonitoringRuleQueryList extends cdktf.ComplexList {
 }
 export interface SecurityMonitoringRuleSignalQuery {
   /**
-  * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`.
+  * The aggregation type. For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
   */
@@ -1528,7 +1528,7 @@ export class SecurityMonitoringRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.20.0',
+        providerVersion: '3.21.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
