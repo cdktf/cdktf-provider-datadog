@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/downtime d
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtime.Downtime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 downtime.NewDowntime(scope Construct, id *string, config DowntimeConfig) Downtime
 ```
@@ -356,7 +356,7 @@ func ResetTimezone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.downtime.Downtime.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 downtime.Downtime_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.downtime.Downtime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 downtime.Downtime_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ downtime.Downtime_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.downtime.Downtime.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 downtime.Downtime_IsTerraformResource(x interface{}) *bool
 ```
@@ -898,7 +898,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtime.DowntimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 &downtime.DowntimeConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
 	MonitorId: *f64,
 	MonitorTags: *[]*string,
 	MuteFirstRecoveryNotification: interface{},
-	Recurrence: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtime.DowntimeRecurrence,
+	Recurrence: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.downtime.DowntimeRecurrence,
 	Start: *f64,
 	StartDate: *string,
 	Timezone: *string,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtime.DowntimeRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 &downtime.DowntimeRecurrence {
 	Type: *string,
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtime.DowntimeRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtime"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/downtime"
 
 downtime.NewDowntimeRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeRecurrenceOutputReference
 ```

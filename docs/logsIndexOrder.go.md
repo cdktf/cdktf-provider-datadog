@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindexorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 
 logsindexorder.NewLogsIndexOrder(scope Construct, id *string, config LogsIndexOrderConfig) LogsIndexOrder
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindexorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 
 logsindexorder.LogsIndexOrder_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindexorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 
 logsindexorder.LogsIndexOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ logsindexorder.LogsIndexOrder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindexorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 
 logsindexorder.LogsIndexOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsindexorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 
 &logsindexorder.LogsIndexOrderConfig {
 	Connection: interface{},
