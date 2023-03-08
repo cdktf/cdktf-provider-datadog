@@ -25,7 +25,7 @@ export interface LogsIndexOrderConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
   */
-  readonly name: string;
+  readonly name?: string;
 }
 
 /**
@@ -54,7 +54,7 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_index_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -103,13 +103,16 @@ export class LogsIndexOrder extends cdktf.TerraformResource {
     return this._indexes;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {

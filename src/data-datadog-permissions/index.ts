@@ -14,6 +14,12 @@ export interface DataDatadogPermissionsConfig extends cdktf.TerraformMetaArgumen
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Whether to include restricted permissions. Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#include_restricted DataDatadogPermissions#include_restricted}
+  */
+  readonly includeRestricted?: boolean | cdktf.IResolvable;
 }
 
 /**
@@ -42,7 +48,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_permissions',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -54,6 +60,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._includeRestricted = config.includeRestricted;
   }
 
   // ==========
@@ -76,6 +83,22 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // include_restricted - computed: false, optional: true, required: false
+  private _includeRestricted?: boolean | cdktf.IResolvable; 
+  public get includeRestricted() {
+    return this.getBooleanAttribute('include_restricted');
+  }
+  public set includeRestricted(value: boolean | cdktf.IResolvable) {
+    this._includeRestricted = value;
+  }
+  public resetIncludeRestricted() {
+    this._includeRestricted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeRestrictedInput() {
+    return this._includeRestricted;
+  }
+
   // permissions - computed: true, optional: false, required: false
   private _permissions = new cdktf.StringMap(this, "permissions");
   public get permissions() {
@@ -89,6 +112,7 @@ export class DataDatadogPermissions extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      include_restricted: cdktf.booleanToTerraform(this._includeRestricted),
     };
   }
 }

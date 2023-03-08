@@ -354,6 +354,8 @@ dataDatadogIpRanges.DataDatadogIpRanges.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv6">apmIpv6</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv4">logsIpv4</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv6">logsIpv6</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4">orchestratorIpv4</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6">orchestratorIpv6</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv4">processIpv4</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv6">processIpv6</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.syntheticsIpv4">syntheticsIpv4</a></code> | <code>string[]</code> | *No description.* |
@@ -563,6 +565,26 @@ public readonly logsIpv4: string[];
 
 ```typescript
 public readonly logsIpv6: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `orchestratorIpv4`<sup>Required</sup> <a name="orchestratorIpv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4"></a>
+
+```typescript
+public readonly orchestratorIpv4: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `orchestratorIpv6`<sup>Required</sup> <a name="orchestratorIpv6" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6"></a>
+
+```typescript
+public readonly orchestratorIpv6: string[];
 ```
 
 - *Type:* string[]

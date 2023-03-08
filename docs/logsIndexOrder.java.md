@@ -23,8 +23,8 @@ LogsIndexOrder.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .indexes(java.util.List<java.lang.String>)
-    .name(java.lang.String)
 //  .id(java.lang.String)
+//  .name(java.lang.String)
     .build();
 ```
 
@@ -40,8 +40,8 @@ LogsIndexOrder.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.indexes">indexes</a></code> | <code>java.util.List<java.lang.String></code> | The index resource list. |
-| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The unique name of the index order resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#id LogsIndexOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The unique name of the index order resource. |
 
 ---
 
@@ -117,16 +117,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name"></a>
-
-- *Type:* java.lang.String
-
-The unique name of the index order resource.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
@@ -135,6 +125,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name"></a>
+
+- *Type:* java.lang.String
+
+The unique name of the index order resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
 
 ---
 
@@ -159,6 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetName">resetName</a></code> | *No description.* |
 
 ---
 
@@ -350,6 +351,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ```java
 public void resetId()
+```
+
+##### `resetName` <a name="resetName" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetName"></a>
+
+```java
+public void resetName()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -690,8 +697,8 @@ LogsIndexOrderConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .indexes(java.util.List<java.lang.String>)
-    .name(java.lang.String)
 //  .id(java.lang.String)
+//  .name(java.lang.String)
     .build();
 ```
 
@@ -707,8 +714,8 @@ LogsIndexOrderConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.indexes">indexes</a></code> | <code>java.util.List<java.lang.String></code> | The index resource list. |
-| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name">name</a></code> | <code>java.lang.String</code> | The unique name of the index order resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#id LogsIndexOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name">name</a></code> | <code>java.lang.String</code> | The unique name of the index order resource. |
 
 ---
 
@@ -798,20 +805,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name"></a>
-
-```java
-public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
-The unique name of the index order resource.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.id"></a>
 
 ```java
@@ -824,6 +817,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The unique name of the index order resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
 
 ---
 

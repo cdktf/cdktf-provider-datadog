@@ -420,6 +420,8 @@ DataDatadogIpRanges.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv6">apmIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv4">logsIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv6">logsIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4">orchestratorIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6">orchestratorIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv4">processIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv6">processIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.syntheticsIpv4">syntheticsIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -629,6 +631,26 @@ public java.util.List<java.lang.String> getLogsIpv4();
 
 ```java
 public java.util.List<java.lang.String> getLogsIpv6();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `orchestratorIpv4`<sup>Required</sup> <a name="orchestratorIpv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4"></a>
+
+```java
+public java.util.List<java.lang.String> getOrchestratorIpv4();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `orchestratorIpv6`<sup>Required</sup> <a name="orchestratorIpv6" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6"></a>
+
+```java
+public java.util.List<java.lang.String> getOrchestratorIpv6();
 ```
 
 - *Type:* java.util.List<java.lang.String>

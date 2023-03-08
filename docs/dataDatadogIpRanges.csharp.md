@@ -354,6 +354,8 @@ DataDatadogIpRanges.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv6">ApmIpv6</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv4">LogsIpv4</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv6">LogsIpv6</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4">OrchestratorIpv4</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6">OrchestratorIpv6</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv4">ProcessIpv4</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv6">ProcessIpv6</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.syntheticsIpv4">SyntheticsIpv4</a></code> | <code>string[]</code> | *No description.* |
@@ -563,6 +565,26 @@ public string[] LogsIpv4 { get; }
 
 ```csharp
 public string[] LogsIpv6 { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `OrchestratorIpv4`<sup>Required</sup> <a name="OrchestratorIpv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4"></a>
+
+```csharp
+public string[] OrchestratorIpv4 { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `OrchestratorIpv6`<sup>Required</sup> <a name="OrchestratorIpv6" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6"></a>
+
+```csharp
+public string[] OrchestratorIpv6 { get; }
 ```
 
 - *Type:* string[]

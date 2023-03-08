@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetName">ResetName</a></code> | *No description.* |
 
 ---
 
@@ -258,6 +259,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ```go
 func ResetId()
+```
+
+##### `ResetName` <a name="ResetName" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetName"></a>
+
+```go
+func ResetName()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -595,8 +602,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Indexes: *[]*string,
-	Name: *string,
 	Id: *string,
+	Name: *string,
 }
 ```
 
@@ -612,8 +619,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/logsindexorder"
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.indexes">Indexes</a></code> | <code>*[]*string</code> | The index resource list. |
-| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name">Name</a></code> | <code>*string</code> | The unique name of the index order resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#id LogsIndexOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name">Name</a></code> | <code>*string</code> | The unique name of the index order resource. |
 
 ---
 
@@ -703,20 +710,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name"></a>
-
-```go
-Name *string
-```
-
-- *Type:* *string
-
-The unique name of the index order resource.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
-
----
-
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.id"></a>
 
 ```go
@@ -729,6 +722,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+The unique name of the index order resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
 
 ---
 

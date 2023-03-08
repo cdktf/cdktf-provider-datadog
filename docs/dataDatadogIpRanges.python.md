@@ -450,6 +450,8 @@ dataDatadogIpRanges.DataDatadogIpRanges.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv6">apm_ipv6</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv4">logs_ipv4</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv6">logs_ipv6</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4">orchestrator_ipv4</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6">orchestrator_ipv6</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv4">process_ipv4</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv6">process_ipv6</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.syntheticsIpv4">synthetics_ipv4</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -659,6 +661,26 @@ logs_ipv4: typing.List[str]
 
 ```python
 logs_ipv6: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `orchestrator_ipv4`<sup>Required</sup> <a name="orchestrator_ipv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4"></a>
+
+```python
+orchestrator_ipv4: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `orchestrator_ipv6`<sup>Required</sup> <a name="orchestrator_ipv6" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6"></a>
+
+```python
+orchestrator_ipv6: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
