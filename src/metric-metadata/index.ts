@@ -84,7 +84,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_metric_metadata',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

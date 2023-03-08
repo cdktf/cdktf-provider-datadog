@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.resetIncludeRestricted">ResetIncludeRestricted</a></code> | *No description.* |
 
 ---
 
@@ -260,6 +261,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetIncludeRestricted` <a name="ResetIncludeRestricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.resetIncludeRestricted"></a>
+
+```csharp
+private void ResetIncludeRestricted()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -348,7 +355,9 @@ DataDatadogPermissions.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.permissions">Permissions</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestrictedInput">IncludeRestrictedInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestricted">IncludeRestricted</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -494,6 +503,16 @@ public string IdInput { get; }
 
 ---
 
+##### `IncludeRestrictedInput`<sup>Optional</sup> <a name="IncludeRestrictedInput" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestrictedInput"></a>
+
+```csharp
+public object IncludeRestrictedInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.id"></a>
 
 ```csharp
@@ -501,6 +520,16 @@ public string Id { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `IncludeRestricted`<sup>Required</sup> <a name="IncludeRestricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestricted"></a>
+
+```csharp
+public object IncludeRestricted { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -539,7 +568,8 @@ new DataDatadogPermissionsConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Id = null
+    string Id = null,
+    object IncludeRestricted = null
 };
 ```
 
@@ -555,6 +585,7 @@ new DataDatadogPermissionsConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#id DataDatadogPermissions#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.includeRestricted">IncludeRestricted</a></code> | <code>object</code> | Whether to include restricted permissions. |
 
 ---
 
@@ -640,6 +671,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `IncludeRestricted`<sup>Optional</sup> <a name="IncludeRestricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.includeRestricted"></a>
+
+```csharp
+public object IncludeRestricted { get; set; }
+```
+
+- *Type:* object
+
+Whether to include restricted permissions.
+
+Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#include_restricted DataDatadogPermissions#include_restricted}
 
 ---
 

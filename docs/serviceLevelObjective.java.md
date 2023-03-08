@@ -57,16 +57,16 @@ ServiceLevelObjective.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.thresholds">thresholds</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholds">ServiceLevelObjectiveThresholds</a>></code> | thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of this service level objective. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards). |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | A static set of groups to filter monitor-based SLOs. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.monitorIds">monitorIds</a></code> | <code>java.util.List<java.lang.Number></code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.query">query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tags to associate with your service level objective. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.targetThreshold">targetThreshold</a></code> | <code>java.lang.Number</code> | The objective's target in `(0,100)`. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.timeframe">timeframe</a></code> | <code>java.lang.String</code> | The time frame for the objective. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.targetThreshold">targetThreshold</a></code> | <code>java.lang.Number</code> | The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.timeframe">timeframe</a></code> | <code>java.lang.String</code> | The primary time frame for the objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to validate the SLO. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.warningThreshold">warningThreshold</a></code> | <code>java.lang.Number</code> | The objective's warning value in `(0,100)`. This must be greater than the target value. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.warningThreshold">warningThreshold</a></code> | <code>java.lang.Number</code> | The objective's warning value in `(0,100)`. |
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards).
+A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.Number
 
-The objective's target in `(0,100)`.
+The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.String
 
-The time frame for the objective.
+The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
@@ -271,7 +271,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.Number
 
-The objective's warning value in `(0,100)`. This must be greater than the target value.
+The objective's warning value in `(0,100)`.
+
+This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 
@@ -1201,16 +1203,16 @@ ServiceLevelObjectiveConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.thresholds">thresholds</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholds">ServiceLevelObjectiveThresholds</a>></code> | thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of this service level objective. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards). |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | A static set of groups to filter monitor-based SLOs. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.monitorIds">monitorIds</a></code> | <code>java.util.List<java.lang.Number></code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.query">query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tags to associate with your service level objective. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.targetThreshold">targetThreshold</a></code> | <code>java.lang.Number</code> | The objective's target in `(0,100)`. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.timeframe">timeframe</a></code> | <code>java.lang.String</code> | The time frame for the objective. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.targetThreshold">targetThreshold</a></code> | <code>java.lang.Number</code> | The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.timeframe">timeframe</a></code> | <code>java.lang.String</code> | The primary time frame for the objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not to validate the SLO. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.warningThreshold">warningThreshold</a></code> | <code>java.lang.Number</code> | The objective's warning value in `(0,100)`. This must be greater than the target value. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.warningThreshold">warningThreshold</a></code> | <code>java.lang.Number</code> | The objective's warning value in `(0,100)`. |
 
 ---
 
@@ -1350,7 +1352,7 @@ public java.lang.Object getForceDelete();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards).
+A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
@@ -1437,7 +1439,7 @@ public java.lang.Number getTargetThreshold();
 
 - *Type:* java.lang.Number
 
-The objective's target in `(0,100)`.
+The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
@@ -1451,7 +1453,7 @@ public java.lang.String getTimeframe();
 
 - *Type:* java.lang.String
 
-The time frame for the objective.
+The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
@@ -1481,7 +1483,9 @@ public java.lang.Number getWarningThreshold();
 
 - *Type:* java.lang.Number
 
-The objective's warning value in `(0,100)`. This must be greater than the target value.
+The objective's warning value in `(0,100)`.
+
+This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 

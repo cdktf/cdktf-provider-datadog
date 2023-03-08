@@ -22,8 +22,8 @@ logsIndexOrder.LogsIndexOrder(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   indexes: typing.List[str],
-  name: str,
-  id: str = None
+  id: str = None,
+  name: str = None
 )
 ```
 
@@ -39,8 +39,8 @@ logsIndexOrder.LogsIndexOrder(
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.indexes">indexes</a></code> | <code>typing.List[str]</code> | The index resource list. |
-| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name">name</a></code> | <code>str</code> | The unique name of the index order resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#id LogsIndexOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name">name</a></code> | <code>str</code> | The unique name of the index order resource. |
 
 ---
 
@@ -116,16 +116,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name"></a>
-
-- *Type:* str
-
-The unique name of the index order resource.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.id"></a>
 
 - *Type:* str
@@ -134,6 +124,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.Initializer.parameter.name"></a>
+
+- *Type:* str
+
+The unique name of the index order resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
 
 ---
 
@@ -158,6 +158,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetName">reset_name</a></code> | *No description.* |
 
 ---
 
@@ -374,6 +375,12 @@ def interpolation_for_attribute(
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrder.resetName"></a>
+
+```python
+def reset_name() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -717,8 +724,8 @@ logsIndexOrder.LogsIndexOrderConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   indexes: typing.List[str],
-  name: str,
-  id: str = None
+  id: str = None,
+  name: str = None
 )
 ```
 
@@ -734,8 +741,8 @@ logsIndexOrder.LogsIndexOrderConfig(
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | The index resource list. |
-| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name">name</a></code> | <code>str</code> | The unique name of the index order resource. |
 | <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#id LogsIndexOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name">name</a></code> | <code>str</code> | The unique name of the index order resource. |
 
 ---
 
@@ -825,20 +832,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
-The unique name of the index order resource.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.id"></a>
 
 ```python
@@ -851,6 +844,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsIndexOrder.LogsIndexOrderConfig.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+The unique name of the index order resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index_order#name LogsIndexOrder#name}
 
 ---
 

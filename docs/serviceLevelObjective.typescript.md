@@ -942,16 +942,16 @@ const serviceLevelObjectiveConfig: serviceLevelObjective.ServiceLevelObjectiveCo
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.thresholds">thresholds</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholds">ServiceLevelObjectiveThresholds</a>[]</code> | thresholds block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.type">type</a></code> | <code>string</code> | The type of the service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.description">description</a></code> | <code>string</code> | A description of this service level objective. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards). |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.groups">groups</a></code> | <code>string[]</code> | A static set of groups to filter monitor-based SLOs. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.monitorIds">monitorIds</a></code> | <code>number[]</code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.query">query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.tags">tags</a></code> | <code>string[]</code> | A list of tags to associate with your service level objective. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.targetThreshold">targetThreshold</a></code> | <code>number</code> | The objective's target in `(0,100)`. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.timeframe">timeframe</a></code> | <code>string</code> | The time frame for the objective. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.targetThreshold">targetThreshold</a></code> | <code>number</code> | The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.timeframe">timeframe</a></code> | <code>string</code> | The primary time frame for the objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.validate">validate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not to validate the SLO. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.warningThreshold">warningThreshold</a></code> | <code>number</code> | The objective's warning value in `(0,100)`. This must be greater than the target value. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.warningThreshold">warningThreshold</a></code> | <code>number</code> | The objective's warning value in `(0,100)`. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly forceDelete: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards).
+A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
@@ -1178,7 +1178,7 @@ public readonly targetThreshold: number;
 
 - *Type:* number
 
-The objective's target in `(0,100)`.
+The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
@@ -1192,7 +1192,7 @@ public readonly timeframe: string;
 
 - *Type:* string
 
-The time frame for the objective.
+The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
@@ -1222,7 +1222,9 @@ public readonly warningThreshold: number;
 
 - *Type:* number
 
-The objective's warning value in `(0,100)`. This must be greater than the target value.
+The objective's warning value in `(0,100)`.
+
+This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 

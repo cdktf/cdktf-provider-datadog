@@ -21,7 +21,8 @@ dataDatadogPermissions.DataDatadogPermissions(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None
+  id: str = None,
+  include_restricted: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -37,6 +38,7 @@ dataDatadogPermissions.DataDatadogPermissions(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#id DataDatadogPermissions#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer.parameter.includeRestricted">include_restricted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to include restricted permissions. |
 
 ---
 
@@ -111,6 +113,18 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `include_restricted`<sup>Optional</sup> <a name="include_restricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer.parameter.includeRestricted"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether to include restricted permissions.
+
+Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#include_restricted DataDatadogPermissions#include_restricted}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -132,6 +146,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.resetIncludeRestricted">reset_include_restricted</a></code> | *No description.* |
 
 ---
 
@@ -350,6 +365,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_include_restricted` <a name="reset_include_restricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.resetIncludeRestricted"></a>
+
+```python
+def reset_include_restricted() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -444,7 +465,9 @@ dataDatadogPermissions.DataDatadogPermissions.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.permissions">permissions</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestrictedInput">include_restricted_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestricted">include_restricted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -590,6 +613,16 @@ id_input: str
 
 ---
 
+##### `include_restricted_input`<sup>Optional</sup> <a name="include_restricted_input" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestrictedInput"></a>
+
+```python
+include_restricted_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.id"></a>
 
 ```python
@@ -597,6 +630,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `include_restricted`<sup>Required</sup> <a name="include_restricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.property.includeRestricted"></a>
+
+```python
+include_restricted: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -635,7 +678,8 @@ dataDatadogPermissions.DataDatadogPermissionsConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  id: str = None
+  id: str = None,
+  include_restricted: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -651,6 +695,7 @@ dataDatadogPermissions.DataDatadogPermissionsConfig(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#id DataDatadogPermissions#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.includeRestricted">include_restricted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to include restricted permissions. |
 
 ---
 
@@ -736,6 +781,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `include_restricted`<sup>Optional</sup> <a name="include_restricted" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.includeRestricted"></a>
+
+```python
+include_restricted: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether to include restricted permissions.
+
+Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/permissions#include_restricted DataDatadogPermissions#include_restricted}
 
 ---
 

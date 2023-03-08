@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/d/ip_ranges 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogipranges"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogipranges"
 
 datadatadogipranges.NewDataDatadogIpRanges(scope Construct, id *string, config DataDatadogIpRangesConfig) DataDatadogIpRanges
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogipranges"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogipranges"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadatadogipranges.DataDatadogIpRanges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogipranges"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogipranges"
 
 datadatadogipranges.DataDatadogIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -354,6 +354,8 @@ datadatadogipranges.DataDatadogIpRanges_IsTerraformDataSource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv6">ApmIpv6</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv4">LogsIpv4</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv6">LogsIpv6</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4">OrchestratorIpv4</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6">OrchestratorIpv6</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv4">ProcessIpv4</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv6">ProcessIpv6</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.syntheticsIpv4">SyntheticsIpv4</a></code> | <code>*[]*string</code> | *No description.* |
@@ -569,6 +571,26 @@ func LogsIpv6() *[]*string
 
 ---
 
+##### `OrchestratorIpv4`<sup>Required</sup> <a name="OrchestratorIpv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv4"></a>
+
+```go
+func OrchestratorIpv4() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `OrchestratorIpv6`<sup>Required</sup> <a name="OrchestratorIpv6" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.orchestratorIpv6"></a>
+
+```go
+func OrchestratorIpv6() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ProcessIpv4`<sup>Required</sup> <a name="ProcessIpv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.processIpv4"></a>
 
 ```go
@@ -694,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogipranges"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogipranges"
 
 &datadatadogipranges.DataDatadogIpRangesConfig {
 	Connection: interface{},

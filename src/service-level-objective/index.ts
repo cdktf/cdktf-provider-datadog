@@ -14,7 +14,7 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   */
   readonly description?: string;
   /**
-  * A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. dashboards).
+  * A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#force_delete ServiceLevelObjective#force_delete}
   */
@@ -51,13 +51,13 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   */
   readonly tags?: string[];
   /**
-  * The objective's target in `(0,100)`.
+  * The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
   */
   readonly targetThreshold?: number;
   /**
-  * The time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
+  * The primary time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
   */
@@ -75,7 +75,7 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   */
   readonly validate?: boolean | cdktf.IResolvable;
   /**
-  * The objective's warning value in `(0,100)`. This must be greater than the target value.
+  * The objective's warning value in `(0,100)`. This must be greater than the target value and match the corresponding thresholds of the primary time frame.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
   */
@@ -371,7 +371,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_level_objective',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

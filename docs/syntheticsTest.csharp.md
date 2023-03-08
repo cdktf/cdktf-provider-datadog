@@ -4297,7 +4297,8 @@ new SyntheticsTestOptionsList {
     object NoScreenshot = null,
     string[] RestrictedRoles = null,
     SyntheticsTestOptionsListRetry Retry = null,
-    SyntheticsTestOptionsListRumSettings RumSettings = null
+    SyntheticsTestOptionsListRumSettings RumSettings = null,
+    SyntheticsTestOptionsListScheduling Scheduling = null
 };
 ```
 
@@ -4325,6 +4326,7 @@ new SyntheticsTestOptionsList {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | scheduling block. |
 
 ---
 
@@ -4606,6 +4608,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `Scheduling`<sup>Optional</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling"></a>
+
+```csharp
+public SyntheticsTestOptionsListScheduling Scheduling { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+scheduling block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#scheduling SyntheticsTest#scheduling}
+
+---
+
 ### SyntheticsTestOptionsListCi <a name="SyntheticsTestOptionsListCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi.Initializer"></a>
@@ -4656,7 +4672,7 @@ new SyntheticsTestOptionsListMonitorOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.property.renotifyInterval">RenotifyInterval</a></code> | <code>double</code> | Specify a renotification frequency. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.property.renotifyInterval">RenotifyInterval</a></code> | <code>double</code> | Specify a renotification frequency in minutes. |
 
 ---
 
@@ -4668,7 +4684,9 @@ public double RenotifyInterval { get; set; }
 
 - *Type:* double
 
-Specify a renotification frequency.
+Specify a renotification frequency in minutes.
+
+Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
 
@@ -4787,6 +4805,122 @@ public double ClientTokenId { get; set; }
 RUM application API key ID used to collect RUM data for the browser test.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+
+---
+
+### SyntheticsTestOptionsListScheduling <a name="SyntheticsTestOptionsListScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListScheduling {
+    object Timeframes,
+    string Timezone
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">Timeframes</a></code> | <code>object</code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone">Timezone</a></code> | <code>string</code> | Timezone in which the timeframe is based. |
+
+---
+
+##### `Timeframes`<sup>Required</sup> <a name="Timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes"></a>
+
+```csharp
+public object Timeframes { get; set; }
+```
+
+- *Type:* object
+
+timeframes block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#timeframes SyntheticsTest#timeframes}
+
+---
+
+##### `Timezone`<sup>Required</sup> <a name="Timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone"></a>
+
+```csharp
+public string Timezone { get; set; }
+```
+
+- *Type:* string
+
+Timezone in which the timeframe is based.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#timezone SyntheticsTest#timezone}
+
+---
+
+### SyntheticsTestOptionsListSchedulingTimeframes <a name="SyntheticsTestOptionsListSchedulingTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListSchedulingTimeframes {
+    double Day,
+    string From,
+    string To
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.day">Day</a></code> | <code>double</code> | Number representing the day of the week. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.from">From</a></code> | <code>string</code> | The hour of the day on which scheduling starts. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.to">To</a></code> | <code>string</code> | The hour of the day on which scheduling ends. |
+
+---
+
+##### `Day`<sup>Required</sup> <a name="Day" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.day"></a>
+
+```csharp
+public double Day { get; set; }
+```
+
+- *Type:* double
+
+Number representing the day of the week.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#day SyntheticsTest#day}
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.from"></a>
+
+```csharp
+public string From { get; set; }
+```
+
+- *Type:* string
+
+The hour of the day on which scheduling starts.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#from SyntheticsTest#from}
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.to"></a>
+
+```csharp
+public string To { get; set; }
+```
+
+- *Type:* string
+
+The hour of the day on which scheduling ends.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#to SyntheticsTest#to}
 
 ---
 
@@ -16859,6 +16993,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions">PutMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry">PutRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings">PutRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling">PutScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned">ResetAcceptSelfSigned</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAllowInsecure">ResetAllowInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCheckCertificateRevocation">ResetCheckCertificateRevocation</a></code> | *No description.* |
@@ -16878,6 +17013,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRestrictedRoles">ResetRestrictedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRetry">ResetRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRumSettings">ResetRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling">ResetScheduling</a></code> | *No description.* |
 
 ---
 
@@ -17079,6 +17215,18 @@ private void PutRumSettings(SyntheticsTestOptionsListRumSettings Value)
 
 ---
 
+##### `PutScheduling` <a name="PutScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling"></a>
+
+```csharp
+private void PutScheduling(SyntheticsTestOptionsListScheduling Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
 ##### `ResetAcceptSelfSigned` <a name="ResetAcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned"></a>
 
 ```csharp
@@ -17193,6 +17341,12 @@ private void ResetRetry()
 private void ResetRumSettings()
 ```
 
+##### `ResetScheduling` <a name="ResetScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling"></a>
+
+```csharp
+private void ResetScheduling()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -17204,6 +17358,7 @@ private void ResetRumSettings()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>object</code> | *No description.* |
@@ -17223,6 +17378,7 @@ private void ResetRumSettings()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettingsInput">RumSettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput">SchedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput">TickEveryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | *No description.* |
@@ -17305,6 +17461,16 @@ public SyntheticsTestOptionsListRumSettingsOutputReference RumSettings { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a>
+
+---
+
+##### `Scheduling`<sup>Required</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling"></a>
+
+```csharp
+public SyntheticsTestOptionsListSchedulingOutputReference Scheduling { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a>
 
 ---
 
@@ -17495,6 +17661,16 @@ public SyntheticsTestOptionsListRumSettings RumSettingsInput { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+---
+
+##### `SchedulingInput`<sup>Optional</sup> <a name="SchedulingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput"></a>
+
+```csharp
+public SyntheticsTestOptionsListScheduling SchedulingInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
 
 ---
 
@@ -18311,6 +18487,788 @@ public SyntheticsTestOptionsListRumSettings InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+---
+
+
+### SyntheticsTestOptionsListSchedulingOutputReference <a name="SyntheticsTestOptionsListSchedulingOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListSchedulingOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes">PutTimeframes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutTimeframes` <a name="PutTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes"></a>
+
+```csharp
+private void PutTimeframes(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes">Timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">TimeframesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput">TimezoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone">Timezone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Timeframes`<sup>Required</sup> <a name="Timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes"></a>
+
+```csharp
+public SyntheticsTestOptionsListSchedulingTimeframesList Timeframes { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a>
+
+---
+
+##### `TimeframesInput`<sup>Optional</sup> <a name="TimeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput"></a>
+
+```csharp
+public object TimeframesInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `TimezoneInput`<sup>Optional</sup> <a name="TimezoneInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput"></a>
+
+```csharp
+public string TimezoneInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Timezone`<sup>Required</sup> <a name="Timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone"></a>
+
+```csharp
+public string Timezone { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue"></a>
+
+```csharp
+public SyntheticsTestOptionsListScheduling InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
+
+### SyntheticsTestOptionsListSchedulingTimeframesList <a name="SyntheticsTestOptionsListSchedulingTimeframesList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListSchedulingTimeframesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.get"></a>
+
+```csharp
+private SyntheticsTestOptionsListSchedulingTimeframesOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### SyntheticsTestOptionsListSchedulingTimeframesOutputReference <a name="SyntheticsTestOptionsListSchedulingTimeframesOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListSchedulingTimeframesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.dayInput">DayInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fromInput">FromInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.toInput">ToInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day">Day</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from">From</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to">To</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DayInput`<sup>Optional</sup> <a name="DayInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.dayInput"></a>
+
+```csharp
+public double DayInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `FromInput`<sup>Optional</sup> <a name="FromInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fromInput"></a>
+
+```csharp
+public string FromInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ToInput`<sup>Optional</sup> <a name="ToInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.toInput"></a>
+
+```csharp
+public string ToInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Day`<sup>Required</sup> <a name="Day" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day"></a>
+
+```csharp
+public double Day { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from"></a>
+
+```csharp
+public string From { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to"></a>
+
+```csharp
+public string To { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 

@@ -5029,7 +5029,7 @@ export class SyntheticsTestOptionsListCiOutputReference extends cdktf.ComplexObj
 }
 export interface SyntheticsTestOptionsListMonitorOptions {
   /**
-  * Specify a renotification frequency.
+  * Specify a renotification frequency in minutes. Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
   */
@@ -5312,6 +5312,244 @@ export class SyntheticsTestOptionsListRumSettingsOutputReference extends cdktf.C
     return this._isEnabled;
   }
 }
+export interface SyntheticsTestOptionsListSchedulingTimeframes {
+  /**
+  * Number representing the day of the week
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#day SyntheticsTest#day}
+  */
+  readonly day: number;
+  /**
+  * The hour of the day on which scheduling starts.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#from SyntheticsTest#from}
+  */
+  readonly from: string;
+  /**
+  * The hour of the day on which scheduling ends.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#to SyntheticsTest#to}
+  */
+  readonly to: string;
+}
+
+export function syntheticsTestOptionsListSchedulingTimeframesToTerraform(struct?: SyntheticsTestOptionsListSchedulingTimeframes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    from: cdktf.stringToTerraform(struct!.from),
+    to: cdktf.stringToTerraform(struct!.to),
+  }
+}
+
+export class SyntheticsTestOptionsListSchedulingTimeframesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SyntheticsTestOptionsListSchedulingTimeframes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._from !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from;
+    }
+    if (this._to !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.to = this._to;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestOptionsListSchedulingTimeframes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._day = undefined;
+      this._from = undefined;
+      this._to = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._day = value.day;
+      this._from = value.from;
+      this._to = value.to;
+    }
+  }
+
+  // day - computed: false, optional: false, required: true
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // from - computed: false, optional: false, required: true
+  private _from?: string; 
+  public get from() {
+    return this.getStringAttribute('from');
+  }
+  public set from(value: string) {
+    this._from = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromInput() {
+    return this._from;
+  }
+
+  // to - computed: false, optional: false, required: true
+  private _to?: string; 
+  public get to() {
+    return this.getStringAttribute('to');
+  }
+  public set to(value: string) {
+    this._to = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toInput() {
+    return this._to;
+  }
+}
+
+export class SyntheticsTestOptionsListSchedulingTimeframesList extends cdktf.ComplexList {
+  public internalValue? : SyntheticsTestOptionsListSchedulingTimeframes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SyntheticsTestOptionsListSchedulingTimeframesOutputReference {
+    return new SyntheticsTestOptionsListSchedulingTimeframesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SyntheticsTestOptionsListScheduling {
+  /**
+  * Timezone in which the timeframe is based.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#timezone SyntheticsTest#timezone}
+  */
+  readonly timezone: string;
+  /**
+  * timeframes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#timeframes SyntheticsTest#timeframes}
+  */
+  readonly timeframes: SyntheticsTestOptionsListSchedulingTimeframes[] | cdktf.IResolvable;
+}
+
+export function syntheticsTestOptionsListSchedulingToTerraform(struct?: SyntheticsTestOptionsListSchedulingOutputReference | SyntheticsTestOptionsListScheduling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    timezone: cdktf.stringToTerraform(struct!.timezone),
+    timeframes: cdktf.listMapper(syntheticsTestOptionsListSchedulingTimeframesToTerraform, true)(struct!.timeframes),
+  }
+}
+
+export class SyntheticsTestOptionsListSchedulingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SyntheticsTestOptionsListScheduling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._timezone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
+    if (this._timeframes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeframes = this._timeframes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SyntheticsTestOptionsListScheduling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._timezone = undefined;
+      this._timeframes.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._timezone = value.timezone;
+      this._timeframes.internalValue = value.timeframes;
+    }
+  }
+
+  // timezone - computed: false, optional: false, required: true
+  private _timezone?: string; 
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
+  public set timezone(value: string) {
+    this._timezone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timezoneInput() {
+    return this._timezone;
+  }
+
+  // timeframes - computed: false, optional: false, required: true
+  private _timeframes = new SyntheticsTestOptionsListSchedulingTimeframesList(this, "timeframes", true);
+  public get timeframes() {
+    return this._timeframes;
+  }
+  public putTimeframes(value: SyntheticsTestOptionsListSchedulingTimeframes[] | cdktf.IResolvable) {
+    this._timeframes.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeframesInput() {
+    return this._timeframes.internalValue;
+  }
+}
 export interface SyntheticsTestOptionsList {
   /**
   * For SSL test, whether or not the test should allow self signed certificates.
@@ -5431,6 +5669,12 @@ export interface SyntheticsTestOptionsList {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#rum_settings SyntheticsTest#rum_settings}
   */
   readonly rumSettings?: SyntheticsTestOptionsListRumSettings;
+  /**
+  * scheduling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#scheduling SyntheticsTest#scheduling}
+  */
+  readonly scheduling?: SyntheticsTestOptionsListScheduling;
 }
 
 export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsListOutputReference | SyntheticsTestOptionsList): any {
@@ -5459,6 +5703,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
     monitor_options: syntheticsTestOptionsListMonitorOptionsToTerraform(struct!.monitorOptions),
     retry: syntheticsTestOptionsListRetryToTerraform(struct!.retry),
     rum_settings: syntheticsTestOptionsListRumSettingsToTerraform(struct!.rumSettings),
+    scheduling: syntheticsTestOptionsListSchedulingToTerraform(struct!.scheduling),
   }
 }
 
@@ -5556,6 +5801,10 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       hasAnyValues = true;
       internalValueResult.rumSettings = this._rumSettings?.internalValue;
     }
+    if (this._scheduling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduling = this._scheduling?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -5582,6 +5831,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._monitorOptions.internalValue = undefined;
       this._retry.internalValue = undefined;
       this._rumSettings.internalValue = undefined;
+      this._scheduling.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -5605,6 +5855,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
       this._monitorOptions.internalValue = value.monitorOptions;
       this._retry.internalValue = value.retry;
       this._rumSettings.internalValue = value.rumSettings;
+      this._scheduling.internalValue = value.scheduling;
     }
   }
 
@@ -5923,6 +6174,22 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get rumSettingsInput() {
     return this._rumSettings.internalValue;
+  }
+
+  // scheduling - computed: false, optional: true, required: false
+  private _scheduling = new SyntheticsTestOptionsListSchedulingOutputReference(this, "scheduling");
+  public get scheduling() {
+    return this._scheduling;
+  }
+  public putScheduling(value: SyntheticsTestOptionsListScheduling) {
+    this._scheduling.internalValue = value;
+  }
+  public resetScheduling() {
+    this._scheduling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingInput() {
+    return this._scheduling.internalValue;
   }
 }
 export interface SyntheticsTestRequestBasicauth {
@@ -7383,7 +7650,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

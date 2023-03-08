@@ -1464,7 +1464,7 @@ export class DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEve
 }
 export interface DashboardWidgetGroupDefinitionWidgetChangeDefinitionRequestQueryEventQuery {
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
@@ -9508,7 +9508,7 @@ export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionCustomLink 
   */
   readonly link?: string;
   /**
-  * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
+  * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
@@ -12277,7 +12277,7 @@ export class DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEve
 }
 export interface DashboardWidgetGroupDefinitionWidgetGeomapDefinitionRequestQueryEventQuery {
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#data_source Dashboard#data_source}
   */
@@ -14548,7 +14548,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHeatmapDefinitionCustomLink
   */
   readonly link?: string;
   /**
-  * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
+  * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */
@@ -18789,7 +18789,7 @@ export interface DashboardWidgetGroupDefinitionWidgetHostmapDefinitionCustomLink
   */
   readonly link?: string;
   /**
-  * The label id that refers to a context menu link item. When override_label is provided, the client request omits the label field.
+  * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard#override_label Dashboard#override_label}
   */

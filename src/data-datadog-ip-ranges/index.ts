@@ -42,7 +42,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.21.0',
+        providerVersion: '3.22.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -114,6 +114,16 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   // logs_ipv6 - computed: true, optional: false, required: false
   public get logsIpv6() {
     return this.getListAttribute('logs_ipv6');
+  }
+
+  // orchestrator_ipv4 - computed: true, optional: false, required: false
+  public get orchestratorIpv4() {
+    return this.getListAttribute('orchestrator_ipv4');
+  }
+
+  // orchestrator_ipv6 - computed: true, optional: false, required: false
+  public get orchestratorIpv6() {
+    return this.getListAttribute('orchestrator_ipv6');
   }
 
   // process_ipv4 - computed: true, optional: false, required: false

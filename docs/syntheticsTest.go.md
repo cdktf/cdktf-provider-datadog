@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTest(scope Construct, id *string, config SyntheticsTestConfig) SyntheticsTest
 ```
@@ -522,7 +522,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ syntheticstest.SyntheticsTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -1262,7 +1262,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStep {
 	Name: *string,
@@ -1270,13 +1270,13 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 	Assertion: interface{},
 	ExtractedValue: interface{},
 	IsCritical: interface{},
-	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRequestBasicauth,
-	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate,
-	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRequestDefinition,
+	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth,
+	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate,
+	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition,
 	RequestHeaders: *map[string]*string,
-	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRequestProxy,
+	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy,
 	RequestQuery: *map[string]*string,
-	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRetry,
+	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRetry,
 	Subtype: *string,
 }
 ```
@@ -1490,15 +1490,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertion {
 	Operator: *string,
 	Type: *string,
 	Property: *string,
 	Target: *string,
-	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath,
-	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath,
+	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath,
+	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath,
 }
 ```
 
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetjsonpath {
 	Jsonpath: *string,
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetxpath {
 	Operator: *string,
@@ -1738,11 +1738,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepExtractedValue {
 	Name: *string,
-	Parser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepExtractedValueParser,
+	Parser: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser,
 	Type: *string,
 	Field: *string,
 }
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepExtractedValueParser {
 	Type: *string,
@@ -1868,7 +1868,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestBasicauth {
 	AccessKey: *string,
@@ -2158,11 +2158,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificate {
-	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert,
-	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey,
+	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert,
+	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey,
 }
 ```
 
@@ -2208,7 +2208,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificateCert {
 	Content: *string,
@@ -2258,7 +2258,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificateKey {
 	Content: *string,
@@ -2308,7 +2308,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestDefinition {
 	AllowInsecure: interface{},
@@ -2636,7 +2636,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestProxy {
 	Url: *string,
@@ -2686,7 +2686,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRetry {
 	Count: *f64,
@@ -2736,15 +2736,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertion {
 	Operator: *string,
 	Type: *string,
 	Property: *string,
 	Target: *string,
-	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestAssertionTargetjsonpath,
-	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestAssertionTargetxpath,
+	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpath,
+	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestAssertionTargetxpath,
 }
 ```
 
@@ -2852,7 +2852,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetjsonpath {
 	Jsonpath: *string,
@@ -2918,7 +2918,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetxpath {
 	Operator: *string,
@@ -2984,11 +2984,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStep {
 	Name: *string,
-	Params: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestBrowserStepParams,
+	Params: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParams,
 	Type: *string,
 	AllowFailure: interface{},
 	ForceElementUpdate: interface{},
@@ -3118,7 +3118,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParams {
 	Attribute: *string,
@@ -3127,7 +3127,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 	Code: *string,
 	Delay: *f64,
 	Element: *string,
-	ElementUserLocator: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator,
+	ElementUserLocator: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator,
 	Email: *string,
 	File: *string,
 	Files: *string,
@@ -3136,7 +3136,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 	Request: *string,
 	SubtestPublicId: *string,
 	Value: *string,
-	Variable: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestBrowserStepParamsVariable,
+	Variable: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable,
 	WithClick: interface{},
 	X: *f64,
 	Y: *f64,
@@ -3442,10 +3442,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsElementUserLocator {
-	Value: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue,
+	Value: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue,
 	FailTestOnCannotLocate: interface{},
 }
 ```
@@ -3490,7 +3490,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsElementUserLocatorValue {
 	Value: *string,
@@ -3536,7 +3536,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsVariable {
 	Example: *string,
@@ -3586,7 +3586,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserVariable {
 	Name: *string,
@@ -3689,7 +3689,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestConfig {
 	Connection: interface{},
@@ -3711,12 +3711,12 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 	DeviceIds: *[]*string,
 	Id: *string,
 	Message: *string,
-	OptionsList: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestOptionsList,
-	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestRequestBasicauth,
-	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestRequestClientCertificate,
-	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestRequestDefinition,
+	OptionsList: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsList,
+	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestBasicauth,
+	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestClientCertificate,
+	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestDefinition,
 	RequestHeaders: *map[string]*string,
-	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestRequestProxy,
+	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestProxy,
 	RequestQuery: *map[string]*string,
 	SetCookie: *string,
 	Subtype: *string,
@@ -4154,7 +4154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestConfigVariable {
 	Name: *string,
@@ -4275,14 +4275,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsList {
 	TickEvery: *f64,
 	AcceptSelfSigned: interface{},
 	AllowInsecure: interface{},
 	CheckCertificateRevocation: interface{},
-	Ci: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestOptionsListCi,
+	Ci: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListCi,
 	DisableCors: interface{},
 	DisableCsp: interface{},
 	FollowRedirects: interface{},
@@ -4292,12 +4292,13 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 	MinFailureDuration: *f64,
 	MinLocationFailed: *f64,
 	MonitorName: *string,
-	MonitorOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestOptionsListMonitorOptions,
+	MonitorOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions,
 	MonitorPriority: *f64,
 	NoScreenshot: interface{},
 	RestrictedRoles: *[]*string,
-	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestOptionsListRetry,
-	RumSettings: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestOptionsListRumSettings,
+	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListRetry,
+	RumSettings: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings,
+	Scheduling: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListScheduling,
 }
 ```
 
@@ -4325,6 +4326,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.restrictedRoles">RestrictedRoles</a></code> | <code>*[]*string</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | scheduling block. |
 
 ---
 
@@ -4606,12 +4608,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `Scheduling`<sup>Optional</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling"></a>
+
+```go
+Scheduling SyntheticsTestOptionsListScheduling
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+scheduling block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#scheduling SyntheticsTest#scheduling}
+
+---
+
 ### SyntheticsTestOptionsListCi <a name="SyntheticsTestOptionsListCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListCi {
 	ExecutionRule: *string,
@@ -4645,7 +4661,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListMonitorOptions {
 	RenotifyInterval: *f64,
@@ -4656,7 +4672,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.property.renotifyInterval">RenotifyInterval</a></code> | <code>*f64</code> | Specify a renotification frequency. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.property.renotifyInterval">RenotifyInterval</a></code> | <code>*f64</code> | Specify a renotification frequency in minutes. |
 
 ---
 
@@ -4668,7 +4684,9 @@ RenotifyInterval *f64
 
 - *Type:* *f64
 
-Specify a renotification frequency.
+Specify a renotification frequency in minutes.
+
+Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
 
@@ -4679,7 +4697,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListRetry {
 	Count: *f64,
@@ -4729,7 +4747,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListRumSettings {
 	IsEnabled: interface{},
@@ -4790,12 +4808,128 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+### SyntheticsTestOptionsListScheduling <a name="SyntheticsTestOptionsListScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+
+&syntheticstest.SyntheticsTestOptionsListScheduling {
+	Timeframes: interface{},
+	Timezone: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes">Timeframes</a></code> | <code>interface{}</code> | timeframes block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone">Timezone</a></code> | <code>*string</code> | Timezone in which the timeframe is based. |
+
+---
+
+##### `Timeframes`<sup>Required</sup> <a name="Timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timeframes"></a>
+
+```go
+Timeframes interface{}
+```
+
+- *Type:* interface{}
+
+timeframes block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#timeframes SyntheticsTest#timeframes}
+
+---
+
+##### `Timezone`<sup>Required</sup> <a name="Timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.property.timezone"></a>
+
+```go
+Timezone *string
+```
+
+- *Type:* *string
+
+Timezone in which the timeframe is based.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#timezone SyntheticsTest#timezone}
+
+---
+
+### SyntheticsTestOptionsListSchedulingTimeframes <a name="SyntheticsTestOptionsListSchedulingTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+
+&syntheticstest.SyntheticsTestOptionsListSchedulingTimeframes {
+	Day: *f64,
+	From: *string,
+	To: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.day">Day</a></code> | <code>*f64</code> | Number representing the day of the week. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.from">From</a></code> | <code>*string</code> | The hour of the day on which scheduling starts. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.to">To</a></code> | <code>*string</code> | The hour of the day on which scheduling ends. |
+
+---
+
+##### `Day`<sup>Required</sup> <a name="Day" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.day"></a>
+
+```go
+Day *f64
+```
+
+- *Type:* *f64
+
+Number representing the day of the week.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#day SyntheticsTest#day}
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.from"></a>
+
+```go
+From *string
+```
+
+- *Type:* *string
+
+The hour of the day on which scheduling starts.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#from SyntheticsTest#from}
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.property.to"></a>
+
+```go
+To *string
+```
+
+- *Type:* *string
+
+The hour of the day on which scheduling ends.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#to SyntheticsTest#to}
+
+---
+
 ### SyntheticsTestRequestBasicauth <a name="SyntheticsTestRequestBasicauth" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestBasicauth {
 	AccessKey: *string,
@@ -5085,11 +5219,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificate {
-	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestRequestClientCertificateCert,
-	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.syntheticsTest.SyntheticsTestRequestClientCertificateKey,
+	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCert,
+	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKey,
 }
 ```
 
@@ -5135,7 +5269,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificateCert {
 	Content: *string,
@@ -5185,7 +5319,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificateKey {
 	Content: *string,
@@ -5235,7 +5369,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestDefinition {
 	Body: *string,
@@ -5531,7 +5665,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestProxy {
 	Url: *string,
@@ -5583,7 +5717,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepAssertionList
 ```
@@ -5726,7 +5860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepAssertionOutputReference
 ```
@@ -6179,7 +6313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetjsonpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetjsonpathOutputReference
 ```
@@ -6494,7 +6628,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetjsonpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetxpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetxpathOutputReference
 ```
@@ -6809,7 +6943,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetxpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepExtractedValueList
 ```
@@ -6952,7 +7086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepExtractedValueOutputReference
 ```
@@ -7327,7 +7461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepExtractedValueParserOutputReference
 ```
@@ -7627,7 +7761,7 @@ func InternalValue() SyntheticsTestApiStepExtractedValueParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepList
 ```
@@ -7770,7 +7904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepOutputReference
 ```
@@ -8498,7 +8632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestBasicauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestBasicauthOutputReference
 ```
@@ -9240,7 +9374,7 @@ func InternalValue() SyntheticsTestApiStepRequestBasicauth
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateCertOutputReference
 ```
@@ -9540,7 +9674,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificateCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateKeyOutputReference
 ```
@@ -9840,7 +9974,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificateKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateOutputReference
 ```
@@ -10159,7 +10293,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestDefinitionOutputReference
 ```
@@ -10959,7 +11093,7 @@ func InternalValue() SyntheticsTestApiStepRequestDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestProxyOutputReference
 ```
@@ -11259,7 +11393,7 @@ func InternalValue() SyntheticsTestApiStepRequestProxy
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRetryOutputReference
 ```
@@ -11566,7 +11700,7 @@ func InternalValue() SyntheticsTestApiStepRetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestAssertionList
 ```
@@ -11709,7 +11843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestAssertionOutputReference
 ```
@@ -12162,7 +12296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetjsonpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetjsonpathOutputReference
 ```
@@ -12477,7 +12611,7 @@ func InternalValue() SyntheticsTestAssertionTargetjsonpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetxpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetxpathOutputReference
 ```
@@ -12792,7 +12926,7 @@ func InternalValue() SyntheticsTestAssertionTargetxpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserStepList
 ```
@@ -12935,7 +13069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestBrowserStepOutputReference
 ```
@@ -13397,7 +13531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference
 ```
@@ -13710,7 +13844,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsElementUserLocator
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference
 ```
@@ -14010,7 +14144,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsElementUserLocatorValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsOutputReference
 ```
@@ -14836,7 +14970,7 @@ func InternalValue() SyntheticsTestBrowserStepParams
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsVariableOutputReference
 ```
@@ -15143,7 +15277,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsVariable
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserVariableList
 ```
@@ -15286,7 +15420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestBrowserVariableOutputReference
 ```
@@ -15684,7 +15818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestConfigVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestConfigVariableList
 ```
@@ -15827,7 +15961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestConfigVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestConfigVariableOutputReference
 ```
@@ -16254,7 +16388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListCiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListCiOutputReference
 ```
@@ -16532,7 +16666,7 @@ func InternalValue() SyntheticsTestOptionsListCi
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListMonitorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListMonitorOptionsOutputReference
 ```
@@ -16810,7 +16944,7 @@ func InternalValue() SyntheticsTestOptionsListMonitorOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListOutputReference
 ```
@@ -16859,6 +16993,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions">PutMonitorOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry">PutRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings">PutRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling">PutScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned">ResetAcceptSelfSigned</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAllowInsecure">ResetAllowInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCheckCertificateRevocation">ResetCheckCertificateRevocation</a></code> | *No description.* |
@@ -16878,6 +17013,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRestrictedRoles">ResetRestrictedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRetry">ResetRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRumSettings">ResetRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling">ResetScheduling</a></code> | *No description.* |
 
 ---
 
@@ -17079,6 +17215,18 @@ func PutRumSettings(value SyntheticsTestOptionsListRumSettings)
 
 ---
 
+##### `PutScheduling` <a name="PutScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling"></a>
+
+```go
+func PutScheduling(value SyntheticsTestOptionsListScheduling)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
 ##### `ResetAcceptSelfSigned` <a name="ResetAcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned"></a>
 
 ```go
@@ -17193,6 +17341,12 @@ func ResetRetry()
 func ResetRumSettings()
 ```
 
+##### `ResetScheduling` <a name="ResetScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling"></a>
+
+```go
+func ResetScheduling()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -17204,6 +17358,7 @@ func ResetRumSettings()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -17223,6 +17378,7 @@ func ResetRumSettings()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettingsInput">RumSettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput">SchedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput">TickEveryInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>interface{}</code> | *No description.* |
@@ -17305,6 +17461,16 @@ func RumSettings() SyntheticsTestOptionsListRumSettingsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a>
+
+---
+
+##### `Scheduling`<sup>Required</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling"></a>
+
+```go
+func Scheduling() SyntheticsTestOptionsListSchedulingOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a>
 
 ---
 
@@ -17498,6 +17664,16 @@ func RumSettingsInput() SyntheticsTestOptionsListRumSettings
 
 ---
 
+##### `SchedulingInput`<sup>Optional</sup> <a name="SchedulingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput"></a>
+
+```go
+func SchedulingInput() SyntheticsTestOptionsListScheduling
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
 ##### `TickEveryInput`<sup>Optional</sup> <a name="TickEveryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput"></a>
 
 ```go
@@ -17684,7 +17860,7 @@ func InternalValue() SyntheticsTestOptionsList
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListRetryOutputReference
 ```
@@ -17991,7 +18167,7 @@ func InternalValue() SyntheticsTestOptionsListRetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListRumSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListRumSettingsOutputReference
 ```
@@ -18315,12 +18491,794 @@ func InternalValue() SyntheticsTestOptionsListRumSettings
 ---
 
 
+### SyntheticsTestOptionsListSchedulingOutputReference <a name="SyntheticsTestOptionsListSchedulingOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+
+syntheticstest.NewSyntheticsTestOptionsListSchedulingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListSchedulingOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes">PutTimeframes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutTimeframes` <a name="PutTimeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes"></a>
+
+```go
+func PutTimeframes(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.putTimeframes.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes">Timeframes</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput">TimeframesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput">TimezoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone">Timezone</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Timeframes`<sup>Required</sup> <a name="Timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframes"></a>
+
+```go
+func Timeframes() SyntheticsTestOptionsListSchedulingTimeframesList
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList">SyntheticsTestOptionsListSchedulingTimeframesList</a>
+
+---
+
+##### `TimeframesInput`<sup>Optional</sup> <a name="TimeframesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timeframesInput"></a>
+
+```go
+func TimeframesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `TimezoneInput`<sup>Optional</sup> <a name="TimezoneInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezoneInput"></a>
+
+```go
+func TimezoneInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Timezone`<sup>Required</sup> <a name="Timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.timezone"></a>
+
+```go
+func Timezone() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() SyntheticsTestOptionsListScheduling
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
+
+### SyntheticsTestOptionsListSchedulingTimeframesList <a name="SyntheticsTestOptionsListSchedulingTimeframesList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+
+syntheticstest.NewSyntheticsTestOptionsListSchedulingTimeframesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestOptionsListSchedulingTimeframesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.get"></a>
+
+```go
+func Get(index *f64) SyntheticsTestOptionsListSchedulingTimeframesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### SyntheticsTestOptionsListSchedulingTimeframesOutputReference <a name="SyntheticsTestOptionsListSchedulingTimeframesOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+
+syntheticstest.NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestOptionsListSchedulingTimeframesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.dayInput">DayInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fromInput">FromInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.toInput">ToInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day">Day</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from">From</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to">To</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DayInput`<sup>Optional</sup> <a name="DayInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.dayInput"></a>
+
+```go
+func DayInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `FromInput`<sup>Optional</sup> <a name="FromInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.fromInput"></a>
+
+```go
+func FromInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ToInput`<sup>Optional</sup> <a name="ToInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.toInput"></a>
+
+```go
+func ToInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Day`<sup>Required</sup> <a name="Day" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day"></a>
+
+```go
+func Day() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `From`<sup>Required</sup> <a name="From" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from"></a>
+
+```go
+func From() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to"></a>
+
+```go
+func To() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### SyntheticsTestRequestBasicauthOutputReference <a name="SyntheticsTestRequestBasicauthOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestBasicauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestBasicauthOutputReference
 ```
@@ -19062,7 +20020,7 @@ func InternalValue() SyntheticsTestRequestBasicauth
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateCertOutputReference
 ```
@@ -19362,7 +20320,7 @@ func InternalValue() SyntheticsTestRequestClientCertificateCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateKeyOutputReference
 ```
@@ -19662,7 +20620,7 @@ func InternalValue() SyntheticsTestRequestClientCertificateKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateOutputReference
 ```
@@ -19981,7 +20939,7 @@ func InternalValue() SyntheticsTestRequestClientCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestDefinitionOutputReference
 ```
@@ -20723,7 +21681,7 @@ func InternalValue() SyntheticsTestRequestDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestProxyOutputReference
 ```
