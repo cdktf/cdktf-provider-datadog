@@ -19,6 +19,7 @@ export * as integrationOpsgenieServiceObject from './integration-opsgenie-servic
 export * as integrationPagerduty from './integration-pagerduty';
 export * as integrationPagerdutyServiceObject from './integration-pagerduty-service-object';
 export * as integrationSlackChannel from './integration-slack-channel';
+export * as ipAllowlist from './ip-allowlist';
 export * as logsArchive from './logs-archive';
 export * as logsArchiveOrder from './logs-archive-order';
 export * as logsCustomPipeline from './logs-custom-pipeline';

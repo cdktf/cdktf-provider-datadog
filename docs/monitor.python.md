@@ -3143,9 +3143,9 @@ monitor.MonitorVariablesEventQuery(
   compute: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryCompute]],
   data_source: str,
   name: str,
+  search: MonitorVariablesEventQuerySearch,
   group_by: typing.Union[IResolvable, typing.List[MonitorVariablesEventQueryGroupBy]] = None,
-  indexes: typing.List[str] = None,
-  search: MonitorVariablesEventQuerySearch = None
+  indexes: typing.List[str] = None
 )
 ```
 
@@ -3156,9 +3156,9 @@ monitor.MonitorVariablesEventQuery(
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]]</code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">name</a></code> | <code>str</code> | The name of query for use in formulas. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">group_by</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]]</code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | An array of index names to query in the stream. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 
 ---
 
@@ -3204,6 +3204,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `search`<sup>Required</sup> <a name="search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
+
+```python
+search: MonitorVariablesEventQuerySearch
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+
+search block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
+
+---
+
 ##### `group_by`<sup>Optional</sup> <a name="group_by" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```python
@@ -3229,20 +3243,6 @@ indexes: typing.List[str]
 An array of index names to query in the stream.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#indexes Monitor#indexes}
-
----
-
-##### `search`<sup>Optional</sup> <a name="search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
-
-```python
-search: MonitorVariablesEventQuerySearch
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
-
-search block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
 
 ---
 
@@ -6954,7 +6954,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch">put_search</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy">reset_group_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes">reset_indexes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch">reset_search</a></code> | *No description.* |
 
 ---
 
@@ -7186,12 +7185,6 @@ def reset_group_by() -> None
 
 ```python
 def reset_indexes() -> None
-```
-
-##### `reset_search` <a name="reset_search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch"></a>
-
-```python
-def reset_search() -> None
 ```
 
 

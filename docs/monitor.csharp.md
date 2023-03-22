@@ -2527,9 +2527,9 @@ new MonitorVariablesEventQuery {
     object Compute,
     string DataSource,
     string Name,
+    MonitorVariablesEventQuerySearch Search,
     object GroupBy = null,
-    string[] Indexes = null,
-    MonitorVariablesEventQuerySearch Search = null
+    string[] Indexes = null
 };
 ```
 
@@ -2540,9 +2540,9 @@ new MonitorVariablesEventQuery {
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">Compute</a></code> | <code>object</code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">DataSource</a></code> | <code>string</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">Name</a></code> | <code>string</code> | The name of query for use in formulas. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">Search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">GroupBy</a></code> | <code>object</code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">Indexes</a></code> | <code>string[]</code> | An array of index names to query in the stream. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">Search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 
 ---
 
@@ -2588,6 +2588,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `Search`<sup>Required</sup> <a name="Search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
+
+```csharp
+public MonitorVariablesEventQuerySearch Search { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+
+search block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
+
+---
+
 ##### `GroupBy`<sup>Optional</sup> <a name="GroupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```csharp
@@ -2613,20 +2627,6 @@ public string[] Indexes { get; set; }
 An array of index names to query in the stream.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#indexes Monitor#indexes}
-
----
-
-##### `Search`<sup>Optional</sup> <a name="Search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
-
-```csharp
-public MonitorVariablesEventQuerySearch Search { get; set; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
-
-search block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
 
 ---
 
@@ -6078,7 +6078,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch">PutSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy">ResetGroupBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes">ResetIndexes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch">ResetSearch</a></code> | *No description.* |
 
 ---
 
@@ -6278,12 +6277,6 @@ private void ResetGroupBy()
 
 ```csharp
 private void ResetIndexes()
-```
-
-##### `ResetSearch` <a name="ResetSearch" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch"></a>
-
-```csharp
-private void ResetSearch()
 ```
 
 

@@ -1316,7 +1316,7 @@ export interface MonitorVariablesEventQuery {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
   */
-  readonly search?: MonitorVariablesEventQuerySearch;
+  readonly search: MonitorVariablesEventQuerySearch;
 }
 
 export function monitorVariablesEventQueryToTerraform(struct?: MonitorVariablesEventQuery | cdktf.IResolvable): any {
@@ -1479,16 +1479,13 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
     return this._groupBy.internalValue;
   }
 
-  // search - computed: false, optional: true, required: false
+  // search - computed: false, optional: false, required: true
   private _search = new MonitorVariablesEventQuerySearchOutputReference(this, "search");
   public get search() {
     return this._search;
   }
   public putSearch(value: MonitorVariablesEventQuerySearch) {
     this._search.internalValue = value;
-  }
-  public resetSearch() {
-    this._search.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get searchInput() {
@@ -1609,7 +1606,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

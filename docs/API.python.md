@@ -48,6 +48,7 @@ The following submodules are available:
 - [integrationPagerduty](./integrationPagerduty.python.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.python.md)
 - [integrationSlackChannel](./integrationSlackChannel.python.md)
+- [ipAllowlist](./ipAllowlist.python.md)
 - [logsArchive](./logsArchive.python.md)
 - [logsArchiveOrder](./logsArchiveOrder.python.md)
 - [logsCustomPipeline](./logsCustomPipeline.python.md)

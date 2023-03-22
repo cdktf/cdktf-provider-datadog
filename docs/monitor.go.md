@@ -2527,9 +2527,9 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/monitor"
 	Compute: interface{},
 	DataSource: *string,
 	Name: *string,
+	Search: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.monitor.MonitorVariablesEventQuerySearch,
 	GroupBy: interface{},
 	Indexes: *[]*string,
-	Search: github.com/cdktf/cdktf-provider-datadog-go/datadog/v5.monitor.MonitorVariablesEventQuerySearch,
 }
 ```
 
@@ -2540,9 +2540,9 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/monitor"
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">Compute</a></code> | <code>interface{}</code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">DataSource</a></code> | <code>*string</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">Name</a></code> | <code>*string</code> | The name of query for use in formulas. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">Search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">GroupBy</a></code> | <code>interface{}</code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">Indexes</a></code> | <code>*[]*string</code> | An array of index names to query in the stream. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">Search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 
 ---
 
@@ -2588,6 +2588,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `Search`<sup>Required</sup> <a name="Search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
+
+```go
+Search MonitorVariablesEventQuerySearch
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+
+search block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
+
+---
+
 ##### `GroupBy`<sup>Optional</sup> <a name="GroupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```go
@@ -2613,20 +2627,6 @@ Indexes *[]*string
 An array of index names to query in the stream.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#indexes Monitor#indexes}
-
----
-
-##### `Search`<sup>Optional</sup> <a name="Search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
-
-```go
-Search MonitorVariablesEventQuerySearch
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
-
-search block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
 
 ---
 
@@ -6078,7 +6078,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch">PutSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy">ResetGroupBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes">ResetIndexes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch">ResetSearch</a></code> | *No description.* |
 
 ---
 
@@ -6278,12 +6277,6 @@ func ResetGroupBy()
 
 ```go
 func ResetIndexes()
-```
-
-##### `ResetSearch` <a name="ResetSearch" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch"></a>
-
-```go
-func ResetSearch()
 ```
 
 

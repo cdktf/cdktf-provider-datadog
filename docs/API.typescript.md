@@ -48,6 +48,7 @@ The following submodules are available:
 - [integrationPagerduty](./integrationPagerduty.typescript.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.typescript.md)
 - [integrationSlackChannel](./integrationSlackChannel.typescript.md)
+- [ipAllowlist](./ipAllowlist.typescript.md)
 - [logsArchive](./logsArchive.typescript.md)
 - [logsArchiveOrder](./logsArchiveOrder.typescript.md)
 - [logsCustomPipeline](./logsCustomPipeline.typescript.md)

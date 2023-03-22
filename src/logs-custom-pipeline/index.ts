@@ -3543,6 +3543,180 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
     return this._sources;
   }
 }
+export interface LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor {
+  /**
+  * If the processor is enabled or not.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  */
+  readonly isEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Name of the Reference Table for the source attribute and their associated target attribute values.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+  */
+  readonly lookupEnrichmentTable: string;
+  /**
+  * Name of the processor
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}
+  */
+  readonly name?: string;
+  /**
+  * Name of the source attribute used to do the lookup.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#source LogsCustomPipeline#source}
+  */
+  readonly source: string;
+  /**
+  * Name of the attribute that contains the result of the lookup.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#target LogsCustomPipeline#target}
+  */
+  readonly target: string;
+}
+
+export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
+    lookup_enrichment_table: cdktf.stringToTerraform(struct!.lookupEnrichmentTable),
+    name: cdktf.stringToTerraform(struct!.name),
+    source: cdktf.stringToTerraform(struct!.source),
+    target: cdktf.stringToTerraform(struct!.target),
+  }
+}
+
+export class LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._lookupEnrichmentTable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookupEnrichmentTable = this._lookupEnrichmentTable;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._lookupEnrichmentTable = undefined;
+      this._name = undefined;
+      this._source = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._lookupEnrichmentTable = value.lookupEnrichmentTable;
+      this._name = value.name;
+      this._source = value.source;
+      this._target = value.target;
+    }
+  }
+
+  // is_enabled - computed: false, optional: true, required: false
+  private _isEnabled?: boolean | cdktf.IResolvable; 
+  public get isEnabled() {
+    return this.getBooleanAttribute('is_enabled');
+  }
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
+    this._isEnabled = value;
+  }
+  public resetIsEnabled() {
+    this._isEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isEnabledInput() {
+    return this._isEnabled;
+  }
+
+  // lookup_enrichment_table - computed: false, optional: false, required: true
+  private _lookupEnrichmentTable?: string; 
+  public get lookupEnrichmentTable() {
+    return this.getStringAttribute('lookup_enrichment_table');
+  }
+  public set lookupEnrichmentTable(value: string) {
+    this._lookupEnrichmentTable = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookupEnrichmentTableInput() {
+    return this._lookupEnrichmentTable;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+}
 export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
   /**
   * If the processor is enabled or not.
@@ -4490,6 +4664,12 @@ export interface LogsCustomPipelineProcessorPipelineProcessor {
   */
   readonly messageRemapper?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapper;
   /**
+  * reference_table_lookup_processor block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+  */
+  readonly referenceTableLookupProcessor?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor;
+  /**
   * service_remapper block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
@@ -4541,6 +4721,7 @@ export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?:
     grok_parser: logsCustomPipelineProcessorPipelineProcessorGrokParserToTerraform(struct!.grokParser),
     lookup_processor: logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTerraform(struct!.lookupProcessor),
     message_remapper: logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTerraform(struct!.messageRemapper),
+    reference_table_lookup_processor: logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToTerraform(struct!.referenceTableLookupProcessor),
     service_remapper: logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTerraform(struct!.serviceRemapper),
     status_remapper: logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerraform(struct!.statusRemapper),
     string_builder_processor: logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToTerraform(struct!.stringBuilderProcessor),
@@ -4602,6 +4783,10 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
       hasAnyValues = true;
       internalValueResult.messageRemapper = this._messageRemapper?.internalValue;
     }
+    if (this._referenceTableLookupProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referenceTableLookupProcessor = this._referenceTableLookupProcessor?.internalValue;
+    }
     if (this._serviceRemapper?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceRemapper = this._serviceRemapper?.internalValue;
@@ -4641,6 +4826,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
       this._grokParser.internalValue = undefined;
       this._lookupProcessor.internalValue = undefined;
       this._messageRemapper.internalValue = undefined;
+      this._referenceTableLookupProcessor.internalValue = undefined;
       this._serviceRemapper.internalValue = undefined;
       this._statusRemapper.internalValue = undefined;
       this._stringBuilderProcessor.internalValue = undefined;
@@ -4663,6 +4849,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
       this._grokParser.internalValue = value.grokParser;
       this._lookupProcessor.internalValue = value.lookupProcessor;
       this._messageRemapper.internalValue = value.messageRemapper;
+      this._referenceTableLookupProcessor.internalValue = value.referenceTableLookupProcessor;
       this._serviceRemapper.internalValue = value.serviceRemapper;
       this._statusRemapper.internalValue = value.statusRemapper;
       this._stringBuilderProcessor.internalValue = value.stringBuilderProcessor;
@@ -4798,6 +4985,22 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
   // Temporarily expose input value. Use with caution.
   public get messageRemapperInput() {
     return this._messageRemapper.internalValue;
+  }
+
+  // reference_table_lookup_processor - computed: false, optional: true, required: false
+  private _referenceTableLookupProcessor = new LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference(this, "reference_table_lookup_processor");
+  public get referenceTableLookupProcessor() {
+    return this._referenceTableLookupProcessor;
+  }
+  public putReferenceTableLookupProcessor(value: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor) {
+    this._referenceTableLookupProcessor.internalValue = value;
+  }
+  public resetReferenceTableLookupProcessor() {
+    this._referenceTableLookupProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referenceTableLookupProcessorInput() {
+    return this._referenceTableLookupProcessor.internalValue;
   }
 
   // service_remapper - computed: false, optional: true, required: false
@@ -5058,6 +5261,180 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get processorInput() {
     return this._processor.internalValue;
+  }
+}
+export interface LogsCustomPipelineProcessorReferenceTableLookupProcessor {
+  /**
+  * If the processor is enabled or not.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  */
+  readonly isEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Name of the Reference Table for the source attribute and their associated target attribute values.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+  */
+  readonly lookupEnrichmentTable: string;
+  /**
+  * Name of the processor
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}
+  */
+  readonly name?: string;
+  /**
+  * Name of the source attribute used to do the lookup.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#source LogsCustomPipeline#source}
+  */
+  readonly source: string;
+  /**
+  * Name of the attribute that contains the result of the lookup.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#target LogsCustomPipeline#target}
+  */
+  readonly target: string;
+}
+
+export function logsCustomPipelineProcessorReferenceTableLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorReferenceTableLookupProcessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
+    lookup_enrichment_table: cdktf.stringToTerraform(struct!.lookupEnrichmentTable),
+    name: cdktf.stringToTerraform(struct!.name),
+    source: cdktf.stringToTerraform(struct!.source),
+    target: cdktf.stringToTerraform(struct!.target),
+  }
+}
+
+export class LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LogsCustomPipelineProcessorReferenceTableLookupProcessor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._isEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isEnabled = this._isEnabled;
+    }
+    if (this._lookupEnrichmentTable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookupEnrichmentTable = this._lookupEnrichmentTable;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LogsCustomPipelineProcessorReferenceTableLookupProcessor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._isEnabled = undefined;
+      this._lookupEnrichmentTable = undefined;
+      this._name = undefined;
+      this._source = undefined;
+      this._target = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._isEnabled = value.isEnabled;
+      this._lookupEnrichmentTable = value.lookupEnrichmentTable;
+      this._name = value.name;
+      this._source = value.source;
+      this._target = value.target;
+    }
+  }
+
+  // is_enabled - computed: false, optional: true, required: false
+  private _isEnabled?: boolean | cdktf.IResolvable; 
+  public get isEnabled() {
+    return this.getBooleanAttribute('is_enabled');
+  }
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
+    this._isEnabled = value;
+  }
+  public resetIsEnabled() {
+    this._isEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isEnabledInput() {
+    return this._isEnabled;
+  }
+
+  // lookup_enrichment_table - computed: false, optional: false, required: true
+  private _lookupEnrichmentTable?: string; 
+  public get lookupEnrichmentTable() {
+    return this.getStringAttribute('lookup_enrichment_table');
+  }
+  public set lookupEnrichmentTable(value: string) {
+    this._lookupEnrichmentTable = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookupEnrichmentTableInput() {
+    return this._lookupEnrichmentTable;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
   }
 }
 export interface LogsCustomPipelineProcessorServiceRemapper {
@@ -6013,6 +6390,12 @@ export interface LogsCustomPipelineProcessor {
   */
   readonly pipeline?: LogsCustomPipelineProcessorPipeline;
   /**
+  * reference_table_lookup_processor block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+  */
+  readonly referenceTableLookupProcessor?: LogsCustomPipelineProcessorReferenceTableLookupProcessor;
+  /**
   * service_remapper block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
@@ -6065,6 +6448,7 @@ export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipeli
     lookup_processor: logsCustomPipelineProcessorLookupProcessorToTerraform(struct!.lookupProcessor),
     message_remapper: logsCustomPipelineProcessorMessageRemapperToTerraform(struct!.messageRemapper),
     pipeline: logsCustomPipelineProcessorPipelineToTerraform(struct!.pipeline),
+    reference_table_lookup_processor: logsCustomPipelineProcessorReferenceTableLookupProcessorToTerraform(struct!.referenceTableLookupProcessor),
     service_remapper: logsCustomPipelineProcessorServiceRemapperToTerraform(struct!.serviceRemapper),
     status_remapper: logsCustomPipelineProcessorStatusRemapperToTerraform(struct!.statusRemapper),
     string_builder_processor: logsCustomPipelineProcessorStringBuilderProcessorToTerraform(struct!.stringBuilderProcessor),
@@ -6130,6 +6514,10 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.pipeline = this._pipeline?.internalValue;
     }
+    if (this._referenceTableLookupProcessor?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referenceTableLookupProcessor = this._referenceTableLookupProcessor?.internalValue;
+    }
     if (this._serviceRemapper?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceRemapper = this._serviceRemapper?.internalValue;
@@ -6170,6 +6558,7 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
       this._lookupProcessor.internalValue = undefined;
       this._messageRemapper.internalValue = undefined;
       this._pipeline.internalValue = undefined;
+      this._referenceTableLookupProcessor.internalValue = undefined;
       this._serviceRemapper.internalValue = undefined;
       this._statusRemapper.internalValue = undefined;
       this._stringBuilderProcessor.internalValue = undefined;
@@ -6193,6 +6582,7 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
       this._lookupProcessor.internalValue = value.lookupProcessor;
       this._messageRemapper.internalValue = value.messageRemapper;
       this._pipeline.internalValue = value.pipeline;
+      this._referenceTableLookupProcessor.internalValue = value.referenceTableLookupProcessor;
       this._serviceRemapper.internalValue = value.serviceRemapper;
       this._statusRemapper.internalValue = value.statusRemapper;
       this._stringBuilderProcessor.internalValue = value.stringBuilderProcessor;
@@ -6346,6 +6736,22 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
     return this._pipeline.internalValue;
   }
 
+  // reference_table_lookup_processor - computed: false, optional: true, required: false
+  private _referenceTableLookupProcessor = new LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference(this, "reference_table_lookup_processor");
+  public get referenceTableLookupProcessor() {
+    return this._referenceTableLookupProcessor;
+  }
+  public putReferenceTableLookupProcessor(value: LogsCustomPipelineProcessorReferenceTableLookupProcessor) {
+    this._referenceTableLookupProcessor.internalValue = value;
+  }
+  public resetReferenceTableLookupProcessor() {
+    this._referenceTableLookupProcessor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referenceTableLookupProcessorInput() {
+    return this._referenceTableLookupProcessor.internalValue;
+  }
+
   // service_remapper - computed: false, optional: true, required: false
   private _serviceRemapper = new LogsCustomPipelineProcessorServiceRemapperOutputReference(this, "service_remapper");
   public get serviceRemapper() {
@@ -6489,7 +6895,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

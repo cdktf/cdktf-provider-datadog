@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* typing.Union[int, float]
 
-Minimum amount of time in failure required to trigger an alert. Default is `0`.
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 
@@ -5313,7 +5313,7 @@ syntheticsTest.SyntheticsTestOptionsList(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion">http_version</a></code> | <code>str</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore server certificate error. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time in failure required to trigger an alert. Default is `0`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName">monitor_name</a></code> | <code>str</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
@@ -5488,7 +5488,7 @@ min_failure_duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Minimum amount of time in failure required to trigger an alert. Default is `0`.
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 

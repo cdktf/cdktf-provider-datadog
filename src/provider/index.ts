@@ -26,11 +26,29 @@ export interface DatadogProviderConfig {
   */
   readonly appKey?: string;
   /**
+  * The HTTP request retry back off base. Defaults to 2.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+  */
+  readonly httpClientRetryBackoffBase?: number;
+  /**
+  * The HTTP request retry back off multiplier. Defaults to 2.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+  */
+  readonly httpClientRetryBackoffMultiplier?: number;
+  /**
   * Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
   */
   readonly httpClientRetryEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * The HTTP request maximum retry number. Defaults to 3.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+  */
+  readonly httpClientRetryMaxRetries?: number;
   /**
   * The HTTP request retry timeout period. Defaults to 60 seconds.
   * 
@@ -77,7 +95,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'datadog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'DataDog/datadog'
@@ -85,7 +103,10 @@ export class DatadogProvider extends cdktf.TerraformProvider {
     this._apiKey = config.apiKey;
     this._apiUrl = config.apiUrl;
     this._appKey = config.appKey;
+    this._httpClientRetryBackoffBase = config.httpClientRetryBackoffBase;
+    this._httpClientRetryBackoffMultiplier = config.httpClientRetryBackoffMultiplier;
     this._httpClientRetryEnabled = config.httpClientRetryEnabled;
+    this._httpClientRetryMaxRetries = config.httpClientRetryMaxRetries;
     this._httpClientRetryTimeout = config.httpClientRetryTimeout;
     this._validate = config.validate;
     this._alias = config.alias;
@@ -143,6 +164,38 @@ export class DatadogProvider extends cdktf.TerraformProvider {
     return this._appKey;
   }
 
+  // http_client_retry_backoff_base - computed: false, optional: true, required: false
+  private _httpClientRetryBackoffBase?: number; 
+  public get httpClientRetryBackoffBase() {
+    return this._httpClientRetryBackoffBase;
+  }
+  public set httpClientRetryBackoffBase(value: number | undefined) {
+    this._httpClientRetryBackoffBase = value;
+  }
+  public resetHttpClientRetryBackoffBase() {
+    this._httpClientRetryBackoffBase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpClientRetryBackoffBaseInput() {
+    return this._httpClientRetryBackoffBase;
+  }
+
+  // http_client_retry_backoff_multiplier - computed: false, optional: true, required: false
+  private _httpClientRetryBackoffMultiplier?: number; 
+  public get httpClientRetryBackoffMultiplier() {
+    return this._httpClientRetryBackoffMultiplier;
+  }
+  public set httpClientRetryBackoffMultiplier(value: number | undefined) {
+    this._httpClientRetryBackoffMultiplier = value;
+  }
+  public resetHttpClientRetryBackoffMultiplier() {
+    this._httpClientRetryBackoffMultiplier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpClientRetryBackoffMultiplierInput() {
+    return this._httpClientRetryBackoffMultiplier;
+  }
+
   // http_client_retry_enabled - computed: false, optional: true, required: false
   private _httpClientRetryEnabled?: boolean | cdktf.IResolvable; 
   public get httpClientRetryEnabled() {
@@ -157,6 +210,22 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get httpClientRetryEnabledInput() {
     return this._httpClientRetryEnabled;
+  }
+
+  // http_client_retry_max_retries - computed: false, optional: true, required: false
+  private _httpClientRetryMaxRetries?: number; 
+  public get httpClientRetryMaxRetries() {
+    return this._httpClientRetryMaxRetries;
+  }
+  public set httpClientRetryMaxRetries(value: number | undefined) {
+    this._httpClientRetryMaxRetries = value;
+  }
+  public resetHttpClientRetryMaxRetries() {
+    this._httpClientRetryMaxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpClientRetryMaxRetriesInput() {
+    return this._httpClientRetryMaxRetries;
   }
 
   // http_client_retry_timeout - computed: false, optional: true, required: false
@@ -216,7 +285,10 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       api_key: cdktf.stringToTerraform(this._apiKey),
       api_url: cdktf.stringToTerraform(this._apiUrl),
       app_key: cdktf.stringToTerraform(this._appKey),
+      http_client_retry_backoff_base: cdktf.numberToTerraform(this._httpClientRetryBackoffBase),
+      http_client_retry_backoff_multiplier: cdktf.numberToTerraform(this._httpClientRetryBackoffMultiplier),
       http_client_retry_enabled: cdktf.booleanToTerraform(this._httpClientRetryEnabled),
+      http_client_retry_max_retries: cdktf.numberToTerraform(this._httpClientRetryMaxRetries),
       http_client_retry_timeout: cdktf.numberToTerraform(this._httpClientRetryTimeout),
       validate: cdktf.booleanToTerraform(this._validate),
       alias: cdktf.stringToTerraform(this._alias),

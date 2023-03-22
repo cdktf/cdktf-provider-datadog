@@ -4317,7 +4317,7 @@ new SyntheticsTestOptionsList {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion">HttpVersion</a></code> | <code>string</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | Ignore server certificate error. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | Minimum amount of time in failure required to trigger an alert. Default is `0`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName">MonitorName</a></code> | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
@@ -4492,7 +4492,7 @@ public double MinFailureDuration { get; set; }
 
 - *Type:* double
 
-Minimum amount of time in failure required to trigger an alert. Default is `0`.
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 

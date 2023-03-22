@@ -48,6 +48,7 @@ The following submodules are available:
 - [integrationPagerduty](./integrationPagerduty.go.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.go.md)
 - [integrationSlackChannel](./integrationSlackChannel.go.md)
+- [ipAllowlist](./ipAllowlist.go.md)
 - [logsArchive](./logsArchive.go.md)
 - [logsArchiveOrder](./logsArchiveOrder.go.md)
 - [logsCustomPipeline](./logsCustomPipeline.go.md)

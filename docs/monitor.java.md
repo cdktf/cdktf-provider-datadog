@@ -3053,10 +3053,10 @@ MonitorVariablesEventQuery.builder()
     .compute(java.util.List<MonitorVariablesEventQueryCompute>)
     .dataSource(java.lang.String)
     .name(java.lang.String)
+    .search(MonitorVariablesEventQuerySearch)
 //  .groupBy(IResolvable)
 //  .groupBy(java.util.List<MonitorVariablesEventQueryGroupBy>)
 //  .indexes(java.util.List<java.lang.String>)
-//  .search(MonitorVariablesEventQuerySearch)
     .build();
 ```
 
@@ -3067,9 +3067,9 @@ MonitorVariablesEventQuery.builder()
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>></code> | compute block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">name</a></code> | <code>java.lang.String</code> | The name of query for use in formulas. |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">groupBy</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>></code> | group_by block. |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">indexes</a></code> | <code>java.util.List<java.lang.String></code> | An array of index names to query in the stream. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
 
 ---
 
@@ -3115,6 +3115,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `search`<sup>Required</sup> <a name="search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
+
+```java
+public MonitorVariablesEventQuerySearch getSearch();
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+
+search block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
+
+---
+
 ##### `groupBy`<sup>Optional</sup> <a name="groupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```java
@@ -3140,20 +3154,6 @@ public java.util.List<java.lang.String> getIndexes();
 An array of index names to query in the stream.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#indexes Monitor#indexes}
-
----
-
-##### `search`<sup>Optional</sup> <a name="search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
-
-```java
-public MonitorVariablesEventQuerySearch getSearch();
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
-
-search block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor#search Monitor#search}
 
 ---
 
@@ -6605,7 +6605,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch">putSearch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy">resetGroupBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes">resetIndexes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch">resetSearch</a></code> | *No description.* |
 
 ---
 
@@ -6805,12 +6804,6 @@ public void resetGroupBy()
 
 ```java
 public void resetIndexes()
-```
-
-##### `resetSearch` <a name="resetSearch" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetSearch"></a>
-
-```java
-public void resetSearch()
 ```
 
 
