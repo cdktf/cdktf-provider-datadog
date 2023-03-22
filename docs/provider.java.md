@@ -16,8 +16,11 @@ DatadogProvider.Builder.create(Construct scope, java.lang.String id)
 //  .apiKey(java.lang.String)
 //  .apiUrl(java.lang.String)
 //  .appKey(java.lang.String)
+//  .httpClientRetryBackoffBase(java.lang.Number)
+//  .httpClientRetryBackoffMultiplier(java.lang.Number)
 //  .httpClientRetryEnabled(java.lang.Boolean)
 //  .httpClientRetryEnabled(IResolvable)
+//  .httpClientRetryMaxRetries(java.lang.Number)
 //  .httpClientRetryTimeout(java.lang.Number)
 //  .validate(java.lang.Boolean)
 //  .validate(IResolvable)
@@ -32,7 +35,10 @@ DatadogProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.apiKey">apiKey</a></code> | <code>java.lang.String</code> | (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | The API URL. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.appKey">appKey</a></code> | <code>java.lang.String</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryBackoffBase">httpClientRetryBackoffBase</a></code> | <code>java.lang.Number</code> | The HTTP request retry back off base. Defaults to 2. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryBackoffMultiplier">httpClientRetryBackoffMultiplier</a></code> | <code>java.lang.Number</code> | The HTTP request retry back off multiplier. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryEnabled">httpClientRetryEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryMaxRetries">httpClientRetryMaxRetries</a></code> | <code>java.lang.Number</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryTimeout">httpClientRetryTimeout</a></code> | <code>java.lang.Number</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables validation of the provided API and APP keys during provider initialization. |
 
@@ -98,6 +104,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `httpClientRetryBackoffBase`<sup>Optional</sup> <a name="httpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryBackoffBase"></a>
+
+- *Type:* java.lang.Number
+
+The HTTP request retry back off base. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+
+---
+
+##### `httpClientRetryBackoffMultiplier`<sup>Optional</sup> <a name="httpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryBackoffMultiplier"></a>
+
+- *Type:* java.lang.Number
+
+The HTTP request retry back off multiplier. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+
+---
+
 ##### `httpClientRetryEnabled`<sup>Optional</sup> <a name="httpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryEnabled"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -105,6 +131,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+
+---
+
+##### `httpClientRetryMaxRetries`<sup>Optional</sup> <a name="httpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryMaxRetries"></a>
+
+- *Type:* java.lang.Number
+
+The HTTP request maximum retry number. Defaults to 3.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 
@@ -144,7 +180,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetApiKey">resetApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetApiUrl">resetApiUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetAppKey">resetAppKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffBase">resetHttpClientRetryBackoffBase</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffMultiplier">resetHttpClientRetryBackoffMultiplier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryEnabled">resetHttpClientRetryEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryMaxRetries">resetHttpClientRetryMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryTimeout">resetHttpClientRetryTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetValidate">resetValidate</a></code> | *No description.* |
 
@@ -238,10 +277,28 @@ public void resetApiUrl()
 public void resetAppKey()
 ```
 
+##### `resetHttpClientRetryBackoffBase` <a name="resetHttpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffBase"></a>
+
+```java
+public void resetHttpClientRetryBackoffBase()
+```
+
+##### `resetHttpClientRetryBackoffMultiplier` <a name="resetHttpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffMultiplier"></a>
+
+```java
+public void resetHttpClientRetryBackoffMultiplier()
+```
+
 ##### `resetHttpClientRetryEnabled` <a name="resetHttpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryEnabled"></a>
 
 ```java
 public void resetHttpClientRetryEnabled()
+```
+
+##### `resetHttpClientRetryMaxRetries` <a name="resetHttpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryMaxRetries"></a>
+
+```java
+public void resetHttpClientRetryMaxRetries()
 ```
 
 ##### `resetHttpClientRetryTimeout` <a name="resetHttpClientRetryTimeout" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryTimeout"></a>
@@ -343,13 +400,19 @@ DatadogProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrlInput">apiUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKeyInput">appKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBaseInput">httpClientRetryBackoffBaseInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplierInput">httpClientRetryBackoffMultiplierInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput">httpClientRetryEnabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput">httpClientRetryMaxRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeoutInput">httpClientRetryTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput">validateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKey">appKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBase">httpClientRetryBackoffBase</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplier">httpClientRetryBackoffMultiplier</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled">httpClientRetryEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries">httpClientRetryMaxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeout">httpClientRetryTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
@@ -487,6 +550,26 @@ public java.lang.String getAppKeyInput();
 
 ---
 
+##### `httpClientRetryBackoffBaseInput`<sup>Optional</sup> <a name="httpClientRetryBackoffBaseInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBaseInput"></a>
+
+```java
+public java.lang.Number getHttpClientRetryBackoffBaseInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `httpClientRetryBackoffMultiplierInput`<sup>Optional</sup> <a name="httpClientRetryBackoffMultiplierInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplierInput"></a>
+
+```java
+public java.lang.Number getHttpClientRetryBackoffMultiplierInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `httpClientRetryEnabledInput`<sup>Optional</sup> <a name="httpClientRetryEnabledInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput"></a>
 
 ```java
@@ -494,6 +577,16 @@ public java.lang.Object getHttpClientRetryEnabledInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `httpClientRetryMaxRetriesInput`<sup>Optional</sup> <a name="httpClientRetryMaxRetriesInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput"></a>
+
+```java
+public java.lang.Number getHttpClientRetryMaxRetriesInput();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -547,6 +640,26 @@ public java.lang.String getAppKey();
 
 ---
 
+##### `httpClientRetryBackoffBase`<sup>Optional</sup> <a name="httpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBase"></a>
+
+```java
+public java.lang.Number getHttpClientRetryBackoffBase();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `httpClientRetryBackoffMultiplier`<sup>Optional</sup> <a name="httpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplier"></a>
+
+```java
+public java.lang.Number getHttpClientRetryBackoffMultiplier();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `httpClientRetryEnabled`<sup>Optional</sup> <a name="httpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled"></a>
 
 ```java
@@ -554,6 +667,16 @@ public java.lang.Object getHttpClientRetryEnabled();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `httpClientRetryMaxRetries`<sup>Optional</sup> <a name="httpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries"></a>
+
+```java
+public java.lang.Number getHttpClientRetryMaxRetries();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -609,8 +732,11 @@ DatadogProviderConfig.builder()
 //  .apiKey(java.lang.String)
 //  .apiUrl(java.lang.String)
 //  .appKey(java.lang.String)
+//  .httpClientRetryBackoffBase(java.lang.Number)
+//  .httpClientRetryBackoffMultiplier(java.lang.Number)
 //  .httpClientRetryEnabled(java.lang.Boolean)
 //  .httpClientRetryEnabled(IResolvable)
+//  .httpClientRetryMaxRetries(java.lang.Number)
 //  .httpClientRetryTimeout(java.lang.Number)
 //  .validate(java.lang.Boolean)
 //  .validate(IResolvable)
@@ -625,7 +751,10 @@ DatadogProviderConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.apiUrl">apiUrl</a></code> | <code>java.lang.String</code> | The API URL. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.appKey">appKey</a></code> | <code>java.lang.String</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffBase">httpClientRetryBackoffBase</a></code> | <code>java.lang.Number</code> | The HTTP request retry back off base. Defaults to 2. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffMultiplier">httpClientRetryBackoffMultiplier</a></code> | <code>java.lang.Number</code> | The HTTP request retry back off multiplier. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled">httpClientRetryEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries">httpClientRetryMaxRetries</a></code> | <code>java.lang.Number</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryTimeout">httpClientRetryTimeout</a></code> | <code>java.lang.Number</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.validate">validate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables validation of the provided API and APP keys during provider initialization. |
 
@@ -689,6 +818,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `httpClientRetryBackoffBase`<sup>Optional</sup> <a name="httpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffBase"></a>
+
+```java
+public java.lang.Number getHttpClientRetryBackoffBase();
+```
+
+- *Type:* java.lang.Number
+
+The HTTP request retry back off base. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+
+---
+
+##### `httpClientRetryBackoffMultiplier`<sup>Optional</sup> <a name="httpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffMultiplier"></a>
+
+```java
+public java.lang.Number getHttpClientRetryBackoffMultiplier();
+```
+
+- *Type:* java.lang.Number
+
+The HTTP request retry back off multiplier. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+
+---
+
 ##### `httpClientRetryEnabled`<sup>Optional</sup> <a name="httpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled"></a>
 
 ```java
@@ -700,6 +857,20 @@ public java.lang.Object getHttpClientRetryEnabled();
 Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+
+---
+
+##### `httpClientRetryMaxRetries`<sup>Optional</sup> <a name="httpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries"></a>
+
+```java
+public java.lang.Number getHttpClientRetryMaxRetries();
+```
+
+- *Type:* java.lang.Number
+
+The HTTP request maximum retry number. Defaults to 3.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 

@@ -1561,8 +1561,8 @@ SecurityMonitoringRuleOptions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.keepAlive">keepAlive</a></code> | <code>java.lang.Number</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.maxSignalDuration">maxSignalDuration</a></code> | <code>java.lang.Number</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.keepAlive">keepAlive</a></code> | <code>java.lang.Number</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window (in seconds). |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.maxSignalDuration">maxSignalDuration</a></code> | <code>java.lang.Number</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration (in seconds). |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.decreaseCriticalityBasedOnEnv">decreaseCriticalityBasedOnEnv</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.detectionMethod">detectionMethod</a></code> | <code>java.lang.String</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.evaluationWindow">evaluationWindow</a></code> | <code>java.lang.Number</code> | A time window is specified to match when at least one of the cases matches true. |
@@ -1579,7 +1579,7 @@ public java.lang.Number getKeepAlive();
 
 - *Type:* java.lang.Number
 
-Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window.
+Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window (in seconds).
 
 Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
 
@@ -1595,7 +1595,7 @@ public java.lang.Number getMaxSignalDuration();
 
 - *Type:* java.lang.Number
 
-A signal will “close” regardless of the query being matched once the time exceeds the maximum duration.
+A signal will “close” regardless of the query being matched once the time exceeds the maximum duration (in seconds).
 
 This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
 

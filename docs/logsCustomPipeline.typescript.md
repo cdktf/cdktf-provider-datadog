@@ -884,6 +884,7 @@ const logsCustomPipelineProcessor: logsCustomPipeline.LogsCustomPipelineProcesso
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.lookupProcessor">lookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessor">LogsCustomPipelineProcessorLookupProcessor</a></code> | lookup_processor block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.messageRemapper">messageRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapper">LogsCustomPipelineProcessorMessageRemapper</a></code> | message_remapper block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.pipeline">pipeline</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline">LogsCustomPipelineProcessorPipeline</a></code> | pipeline block. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.referenceTableLookupProcessor">referenceTableLookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a></code> | reference_table_lookup_processor block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.serviceRemapper">serviceRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapper">LogsCustomPipelineProcessorServiceRemapper</a></code> | service_remapper block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.statusRemapper">statusRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapper">LogsCustomPipelineProcessorStatusRemapper</a></code> | status_remapper block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessor">LogsCustomPipelineProcessorStringBuilderProcessor</a></code> | string_builder_processor block. |
@@ -1016,6 +1017,20 @@ public readonly pipeline: LogsCustomPipelineProcessorPipeline;
 pipeline block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
+
+---
+
+##### `referenceTableLookupProcessor`<sup>Optional</sup> <a name="referenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.property.referenceTableLookupProcessor"></a>
+
+```typescript
+public readonly referenceTableLookupProcessor: LogsCustomPipelineProcessorReferenceTableLookupProcessor;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a>
+
+reference_table_lookup_processor block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -2079,6 +2094,7 @@ const logsCustomPipelineProcessorPipelineProcessor: logsCustomPipeline.LogsCusto
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.grokParser">grokParser</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParser">LogsCustomPipelineProcessorPipelineProcessorGrokParser</a></code> | grok_parser block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.lookupProcessor">lookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorLookupProcessor</a></code> | lookup_processor block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.messageRemapper">messageRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapper">LogsCustomPipelineProcessorPipelineProcessorMessageRemapper</a></code> | message_remapper block. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.referenceTableLookupProcessor">referenceTableLookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a></code> | reference_table_lookup_processor block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.serviceRemapper">serviceRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper">LogsCustomPipelineProcessorPipelineProcessorServiceRemapper</a></code> | service_remapper block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.statusRemapper">statusRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapper">LogsCustomPipelineProcessorPipelineProcessorStatusRemapper</a></code> | status_remapper block. |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor</a></code> | string_builder_processor block. |
@@ -2197,6 +2213,20 @@ public readonly messageRemapper: LogsCustomPipelineProcessorPipelineProcessorMes
 message_remapper block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+
+---
+
+##### `referenceTableLookupProcessor`<sup>Optional</sup> <a name="referenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.property.referenceTableLookupProcessor"></a>
+
+```typescript
+public readonly referenceTableLookupProcessor: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a>
+
+reference_table_lookup_processor block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
 
 ---
 
@@ -3133,6 +3163,98 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+### LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor <a name="LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.Initializer"></a>
+
+```typescript
+import { logsCustomPipeline } from '@cdktf/provider-datadog'
+
+const logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor: logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.lookupEnrichmentTable">lookupEnrichmentTable</a></code> | <code>string</code> | Name of the Reference Table for the source attribute and their associated target attribute values. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.source">source</a></code> | <code>string</code> | Name of the source attribute used to do the lookup. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.target">target</a></code> | <code>string</code> | Name of the attribute that contains the result of the lookup. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If the processor is enabled or not. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.name">name</a></code> | <code>string</code> | Name of the processor. |
+
+---
+
+##### `lookupEnrichmentTable`<sup>Required</sup> <a name="lookupEnrichmentTable" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.lookupEnrichmentTable"></a>
+
+```typescript
+public readonly lookupEnrichmentTable: string;
+```
+
+- *Type:* string
+
+Name of the Reference Table for the source attribute and their associated target attribute values.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
+
+Name of the source attribute used to do the lookup.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.target"></a>
+
+```typescript
+public readonly target: string;
+```
+
+- *Type:* string
+
+Name of the attribute that contains the result of the lookup.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `isEnabled`<sup>Optional</sup> <a name="isEnabled" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.isEnabled"></a>
+
+```typescript
+public readonly isEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If the processor is enabled or not.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
 ### LogsCustomPipelineProcessorPipelineProcessorServiceRemapper <a name="LogsCustomPipelineProcessorPipelineProcessorServiceRemapper" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper.Initializer"></a>
@@ -3582,6 +3704,98 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 ---
 
 ##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Name of the processor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#name LogsCustomPipeline#name}
+
+---
+
+### LogsCustomPipelineProcessorReferenceTableLookupProcessor <a name="LogsCustomPipelineProcessorReferenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.Initializer"></a>
+
+```typescript
+import { logsCustomPipeline } from '@cdktf/provider-datadog'
+
+const logsCustomPipelineProcessorReferenceTableLookupProcessor: logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.lookupEnrichmentTable">lookupEnrichmentTable</a></code> | <code>string</code> | Name of the Reference Table for the source attribute and their associated target attribute values. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.source">source</a></code> | <code>string</code> | Name of the source attribute used to do the lookup. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.target">target</a></code> | <code>string</code> | Name of the attribute that contains the result of the lookup. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If the processor is enabled or not. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.name">name</a></code> | <code>string</code> | Name of the processor. |
+
+---
+
+##### `lookupEnrichmentTable`<sup>Required</sup> <a name="lookupEnrichmentTable" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.lookupEnrichmentTable"></a>
+
+```typescript
+public readonly lookupEnrichmentTable: string;
+```
+
+- *Type:* string
+
+Name of the Reference Table for the source attribute and their associated target attribute values.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
+
+Name of the source attribute used to do the lookup.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#source LogsCustomPipeline#source}
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.target"></a>
+
+```typescript
+public readonly target: string;
+```
+
+- *Type:* string
+
+Name of the attribute that contains the result of the lookup.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#target LogsCustomPipeline#target}
+
+---
+
+##### `isEnabled`<sup>Optional</sup> <a name="isEnabled" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.isEnabled"></a>
+
+```typescript
+public readonly isEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If the processor is enabled or not.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -8772,6 +8986,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putLookupProcessor">putLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putMessageRemapper">putMessageRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putPipeline">putPipeline</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putReferenceTableLookupProcessor">putReferenceTableLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putServiceRemapper">putServiceRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putStatusRemapper">putStatusRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putStringBuilderProcessor">putStringBuilderProcessor</a></code> | *No description.* |
@@ -8787,6 +9002,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetLookupProcessor">resetLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetMessageRemapper">resetMessageRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetPipeline">resetPipeline</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetReferenceTableLookupProcessor">resetReferenceTableLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetServiceRemapper">resetServiceRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetStatusRemapper">resetStatusRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetStringBuilderProcessor">resetStringBuilderProcessor</a></code> | *No description.* |
@@ -9054,6 +9270,18 @@ public putPipeline(value: LogsCustomPipelineProcessorPipeline): void
 
 ---
 
+##### `putReferenceTableLookupProcessor` <a name="putReferenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putReferenceTableLookupProcessor"></a>
+
+```typescript
+public putReferenceTableLookupProcessor(value: LogsCustomPipelineProcessorReferenceTableLookupProcessor): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putReferenceTableLookupProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a>
+
+---
+
 ##### `putServiceRemapper` <a name="putServiceRemapper" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.putServiceRemapper"></a>
 
 ```typescript
@@ -9180,6 +9408,12 @@ public resetMessageRemapper(): void
 public resetPipeline(): void
 ```
 
+##### `resetReferenceTableLookupProcessor` <a name="resetReferenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetReferenceTableLookupProcessor"></a>
+
+```typescript
+public resetReferenceTableLookupProcessor(): void
+```
+
 ##### `resetServiceRemapper` <a name="resetServiceRemapper" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.resetServiceRemapper"></a>
 
 ```typescript
@@ -9232,6 +9466,7 @@ public resetUserAgentParser(): void
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.lookupProcessor">lookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessorOutputReference">LogsCustomPipelineProcessorLookupProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.messageRemapper">messageRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapperOutputReference">LogsCustomPipelineProcessorMessageRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.pipeline">pipeline</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineOutputReference">LogsCustomPipelineProcessorPipelineOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.referenceTableLookupProcessor">referenceTableLookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference">LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.serviceRemapper">serviceRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapperOutputReference">LogsCustomPipelineProcessorServiceRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.statusRemapper">statusRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapperOutputReference">LogsCustomPipelineProcessorStatusRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorStringBuilderProcessorOutputReference</a></code> | *No description.* |
@@ -9247,6 +9482,7 @@ public resetUserAgentParser(): void
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.lookupProcessorInput">lookupProcessorInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessor">LogsCustomPipelineProcessorLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.messageRemapperInput">messageRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapper">LogsCustomPipelineProcessorMessageRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.pipelineInput">pipelineInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline">LogsCustomPipelineProcessorPipeline</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.referenceTableLookupProcessorInput">referenceTableLookupProcessorInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.serviceRemapperInput">serviceRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapper">LogsCustomPipelineProcessorServiceRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.statusRemapperInput">statusRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapper">LogsCustomPipelineProcessorStatusRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.stringBuilderProcessorInput">stringBuilderProcessorInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessor">LogsCustomPipelineProcessorStringBuilderProcessor</a></code> | *No description.* |
@@ -9368,6 +9604,16 @@ public readonly pipeline: LogsCustomPipelineProcessorPipelineOutputReference;
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineOutputReference">LogsCustomPipelineProcessorPipelineOutputReference</a>
+
+---
+
+##### `referenceTableLookupProcessor`<sup>Required</sup> <a name="referenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.referenceTableLookupProcessor"></a>
+
+```typescript
+public readonly referenceTableLookupProcessor: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference">LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference</a>
 
 ---
 
@@ -9518,6 +9764,16 @@ public readonly pipelineInput: LogsCustomPipelineProcessorPipeline;
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline">LogsCustomPipelineProcessorPipeline</a>
+
+---
+
+##### `referenceTableLookupProcessorInput`<sup>Optional</sup> <a name="referenceTableLookupProcessorInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.referenceTableLookupProcessorInput"></a>
+
+```typescript
+public readonly referenceTableLookupProcessorInput: LogsCustomPipelineProcessorReferenceTableLookupProcessor;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a>
 
 ---
 
@@ -14681,6 +14937,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putGrokParser">putGrokParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putLookupProcessor">putLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putMessageRemapper">putMessageRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putReferenceTableLookupProcessor">putReferenceTableLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putServiceRemapper">putServiceRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putStatusRemapper">putStatusRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putStringBuilderProcessor">putStringBuilderProcessor</a></code> | *No description.* |
@@ -14695,6 +14952,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetGrokParser">resetGrokParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetLookupProcessor">resetLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetMessageRemapper">resetMessageRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetReferenceTableLookupProcessor">resetReferenceTableLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetServiceRemapper">resetServiceRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetStatusRemapper">resetStatusRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetStringBuilderProcessor">resetStringBuilderProcessor</a></code> | *No description.* |
@@ -14950,6 +15208,18 @@ public putMessageRemapper(value: LogsCustomPipelineProcessorPipelineProcessorMes
 
 ---
 
+##### `putReferenceTableLookupProcessor` <a name="putReferenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putReferenceTableLookupProcessor"></a>
+
+```typescript
+public putReferenceTableLookupProcessor(value: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putReferenceTableLookupProcessor.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a>
+
+---
+
 ##### `putServiceRemapper` <a name="putServiceRemapper" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.putServiceRemapper"></a>
 
 ```typescript
@@ -15070,6 +15340,12 @@ public resetLookupProcessor(): void
 public resetMessageRemapper(): void
 ```
 
+##### `resetReferenceTableLookupProcessor` <a name="resetReferenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetReferenceTableLookupProcessor"></a>
+
+```typescript
+public resetReferenceTableLookupProcessor(): void
+```
+
 ##### `resetServiceRemapper` <a name="resetServiceRemapper" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.resetServiceRemapper"></a>
 
 ```typescript
@@ -15121,6 +15397,7 @@ public resetUserAgentParser(): void
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.grokParser">grokParser</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference">LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.lookupProcessor">lookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.messageRemapper">messageRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.referenceTableLookupProcessor">referenceTableLookupProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.serviceRemapper">serviceRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.statusRemapper">statusRemapper</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.stringBuilderProcessor">stringBuilderProcessor</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference</a></code> | *No description.* |
@@ -15135,6 +15412,7 @@ public resetUserAgentParser(): void
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.grokParserInput">grokParserInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParser">LogsCustomPipelineProcessorPipelineProcessorGrokParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.lookupProcessorInput">lookupProcessorInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.messageRemapperInput">messageRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapper">LogsCustomPipelineProcessorPipelineProcessorMessageRemapper</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.referenceTableLookupProcessorInput">referenceTableLookupProcessorInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.serviceRemapperInput">serviceRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper">LogsCustomPipelineProcessorPipelineProcessorServiceRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.statusRemapperInput">statusRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapper">LogsCustomPipelineProcessorPipelineProcessorStatusRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.stringBuilderProcessorInput">stringBuilderProcessorInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor">LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor</a></code> | *No description.* |
@@ -15246,6 +15524,16 @@ public readonly messageRemapper: LogsCustomPipelineProcessorPipelineProcessorMes
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference">LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference</a>
+
+---
+
+##### `referenceTableLookupProcessor`<sup>Required</sup> <a name="referenceTableLookupProcessor" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.referenceTableLookupProcessor"></a>
+
+```typescript
+public readonly referenceTableLookupProcessor: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference</a>
 
 ---
 
@@ -15389,6 +15677,16 @@ public readonly messageRemapperInput: LogsCustomPipelineProcessorPipelineProcess
 
 ---
 
+##### `referenceTableLookupProcessorInput`<sup>Optional</sup> <a name="referenceTableLookupProcessorInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.referenceTableLookupProcessorInput"></a>
+
+```typescript
+public readonly referenceTableLookupProcessorInput: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a>
+
+---
+
 ##### `serviceRemapperInput`<sup>Optional</sup> <a name="serviceRemapperInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.serviceRemapperInput"></a>
 
 ```typescript
@@ -15456,6 +15754,379 @@ public readonly internalValue: LogsCustomPipelineProcessorPipelineProcessor | IR
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a> | cdktf.IResolvable
+
+---
+
+
+### LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference <a name="LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer"></a>
+
+```typescript
+import { logsCustomPipeline } from '@cdktf/provider-datadog'
+
+new logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resetIsEnabled">resetIsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIsEnabled` <a name="resetIsEnabled" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resetIsEnabled"></a>
+
+```typescript
+public resetIsEnabled(): void
+```
+
+##### `resetName` <a name="resetName" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabledInput">isEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTableInput">lookupEnrichmentTableInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTable">lookupEnrichmentTable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `isEnabledInput`<sup>Optional</sup> <a name="isEnabledInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabledInput"></a>
+
+```typescript
+public readonly isEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `lookupEnrichmentTableInput`<sup>Optional</sup> <a name="lookupEnrichmentTableInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTableInput"></a>
+
+```typescript
+public readonly lookupEnrichmentTableInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.targetInput"></a>
+
+```typescript
+public readonly targetInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `isEnabled`<sup>Required</sup> <a name="isEnabled" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabled"></a>
+
+```typescript
+public readonly isEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `lookupEnrichmentTable`<sup>Required</sup> <a name="lookupEnrichmentTable" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTable"></a>
+
+```typescript
+public readonly lookupEnrichmentTable: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.target"></a>
+
+```typescript
+public readonly target: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor</a>
 
 ---
 
@@ -17583,6 +18254,379 @@ public readonly internalValue: LogsCustomPipelineProcessorPipelineProcessorUserA
 ```
 
 - *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser">LogsCustomPipelineProcessorPipelineProcessorUserAgentParser</a>
+
+---
+
+
+### LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference <a name="LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer"></a>
+
+```typescript
+import { logsCustomPipeline } from '@cdktf/provider-datadog'
+
+new logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resetIsEnabled">resetIsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIsEnabled` <a name="resetIsEnabled" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resetIsEnabled"></a>
+
+```typescript
+public resetIsEnabled(): void
+```
+
+##### `resetName` <a name="resetName" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabledInput">isEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTableInput">lookupEnrichmentTableInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTable">lookupEnrichmentTable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `isEnabledInput`<sup>Optional</sup> <a name="isEnabledInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabledInput"></a>
+
+```typescript
+public readonly isEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `lookupEnrichmentTableInput`<sup>Optional</sup> <a name="lookupEnrichmentTableInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTableInput"></a>
+
+```typescript
+public readonly lookupEnrichmentTableInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.sourceInput"></a>
+
+```typescript
+public readonly sourceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.targetInput"></a>
+
+```typescript
+public readonly targetInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `isEnabled`<sup>Required</sup> <a name="isEnabled" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.isEnabled"></a>
+
+```typescript
+public readonly isEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `lookupEnrichmentTable`<sup>Required</sup> <a name="lookupEnrichmentTable" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.lookupEnrichmentTable"></a>
+
+```typescript
+public readonly lookupEnrichmentTable: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
+
+- *Type:* string
+
+---
+
+##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.target"></a>
+
+```typescript
+public readonly target: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: LogsCustomPipelineProcessorReferenceTableLookupProcessor;
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor">LogsCustomPipelineProcessorReferenceTableLookupProcessor</a>
 
 ---
 

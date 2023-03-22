@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog datadog}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.NewDatadogProvider(scope Construct, id *string, config DatadogProviderConfig) DatadogProvider
 ```
@@ -60,7 +60,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetApiKey">ResetApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetApiUrl">ResetApiUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetAppKey">ResetAppKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffBase">ResetHttpClientRetryBackoffBase</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffMultiplier">ResetHttpClientRetryBackoffMultiplier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryEnabled">ResetHttpClientRetryEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryMaxRetries">ResetHttpClientRetryMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryTimeout">ResetHttpClientRetryTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.resetValidate">ResetValidate</a></code> | *No description.* |
 
@@ -154,10 +157,28 @@ func ResetApiUrl()
 func ResetAppKey()
 ```
 
+##### `ResetHttpClientRetryBackoffBase` <a name="ResetHttpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffBase"></a>
+
+```go
+func ResetHttpClientRetryBackoffBase()
+```
+
+##### `ResetHttpClientRetryBackoffMultiplier` <a name="ResetHttpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryBackoffMultiplier"></a>
+
+```go
+func ResetHttpClientRetryBackoffMultiplier()
+```
+
 ##### `ResetHttpClientRetryEnabled` <a name="ResetHttpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryEnabled"></a>
 
 ```go
 func ResetHttpClientRetryEnabled()
+```
+
+##### `ResetHttpClientRetryMaxRetries` <a name="ResetHttpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryMaxRetries"></a>
+
+```go
+func ResetHttpClientRetryMaxRetries()
 ```
 
 ##### `ResetHttpClientRetryTimeout` <a name="ResetHttpClientRetryTimeout" id="@cdktf/provider-datadog.provider.DatadogProvider.resetHttpClientRetryTimeout"></a>
@@ -185,7 +206,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.provider.DatadogProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_IsConstruct(x interface{}) *bool
 ```
@@ -217,7 +238,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.provider.DatadogProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -231,7 +252,7 @@ provider.DatadogProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-datadog.provider.DatadogProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 provider.DatadogProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -259,13 +280,19 @@ provider.DatadogProvider_IsTerraformProvider(x interface{}) *bool
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKeyInput">ApiKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrlInput">ApiUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKeyInput">AppKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBaseInput">HttpClientRetryBackoffBaseInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplierInput">HttpClientRetryBackoffMultiplierInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput">HttpClientRetryEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput">HttpClientRetryMaxRetriesInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeoutInput">HttpClientRetryTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput">ValidateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKey">ApiKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKey">AppKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBase">HttpClientRetryBackoffBase</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplier">HttpClientRetryBackoffMultiplier</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled">HttpClientRetryEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries">HttpClientRetryMaxRetries</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeout">HttpClientRetryTimeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validate">Validate</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -403,6 +430,26 @@ func AppKeyInput() *string
 
 ---
 
+##### `HttpClientRetryBackoffBaseInput`<sup>Optional</sup> <a name="HttpClientRetryBackoffBaseInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBaseInput"></a>
+
+```go
+func HttpClientRetryBackoffBaseInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `HttpClientRetryBackoffMultiplierInput`<sup>Optional</sup> <a name="HttpClientRetryBackoffMultiplierInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplierInput"></a>
+
+```go
+func HttpClientRetryBackoffMultiplierInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `HttpClientRetryEnabledInput`<sup>Optional</sup> <a name="HttpClientRetryEnabledInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput"></a>
 
 ```go
@@ -410,6 +457,16 @@ func HttpClientRetryEnabledInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `HttpClientRetryMaxRetriesInput`<sup>Optional</sup> <a name="HttpClientRetryMaxRetriesInput" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput"></a>
+
+```go
+func HttpClientRetryMaxRetriesInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -463,6 +520,26 @@ func AppKey() *string
 
 ---
 
+##### `HttpClientRetryBackoffBase`<sup>Optional</sup> <a name="HttpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBase"></a>
+
+```go
+func HttpClientRetryBackoffBase() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `HttpClientRetryBackoffMultiplier`<sup>Optional</sup> <a name="HttpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplier"></a>
+
+```go
+func HttpClientRetryBackoffMultiplier() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `HttpClientRetryEnabled`<sup>Optional</sup> <a name="HttpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled"></a>
 
 ```go
@@ -470,6 +547,16 @@ func HttpClientRetryEnabled() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `HttpClientRetryMaxRetries`<sup>Optional</sup> <a name="HttpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries"></a>
+
+```go
+func HttpClientRetryMaxRetries() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -518,14 +605,17 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/provider"
 
 &provider.DatadogProviderConfig {
 	Alias: *string,
 	ApiKey: *string,
 	ApiUrl: *string,
 	AppKey: *string,
+	HttpClientRetryBackoffBase: *f64,
+	HttpClientRetryBackoffMultiplier: *f64,
 	HttpClientRetryEnabled: interface{},
+	HttpClientRetryMaxRetries: *f64,
 	HttpClientRetryTimeout: *f64,
 	Validate: interface{},
 }
@@ -539,7 +629,10 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/provider"
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.apiKey">ApiKey</a></code> | <code>*string</code> | (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.apiUrl">ApiUrl</a></code> | <code>*string</code> | The API URL. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.appKey">AppKey</a></code> | <code>*string</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffBase">HttpClientRetryBackoffBase</a></code> | <code>*f64</code> | The HTTP request retry back off base. Defaults to 2. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffMultiplier">HttpClientRetryBackoffMultiplier</a></code> | <code>*f64</code> | The HTTP request retry back off multiplier. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled">HttpClientRetryEnabled</a></code> | <code>interface{}</code> | Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries">HttpClientRetryMaxRetries</a></code> | <code>*f64</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryTimeout">HttpClientRetryTimeout</a></code> | <code>*f64</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.validate">Validate</a></code> | <code>interface{}</code> | Enables validation of the provided API and APP keys during provider initialization. |
 
@@ -603,6 +696,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ---
 
+##### `HttpClientRetryBackoffBase`<sup>Optional</sup> <a name="HttpClientRetryBackoffBase" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffBase"></a>
+
+```go
+HttpClientRetryBackoffBase *f64
+```
+
+- *Type:* *f64
+
+The HTTP request retry back off base. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+
+---
+
+##### `HttpClientRetryBackoffMultiplier`<sup>Optional</sup> <a name="HttpClientRetryBackoffMultiplier" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffMultiplier"></a>
+
+```go
+HttpClientRetryBackoffMultiplier *f64
+```
+
+- *Type:* *f64
+
+The HTTP request retry back off multiplier. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+
+---
+
 ##### `HttpClientRetryEnabled`<sup>Optional</sup> <a name="HttpClientRetryEnabled" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled"></a>
 
 ```go
@@ -614,6 +735,20 @@ HttpClientRetryEnabled interface{}
 Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+
+---
+
+##### `HttpClientRetryMaxRetries`<sup>Optional</sup> <a name="HttpClientRetryMaxRetries" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries"></a>
+
+```go
+HttpClientRetryMaxRetries *f64
+```
+
+- *Type:* *f64
+
+The HTTP request maximum retry number. Defaults to 3.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 

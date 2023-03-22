@@ -4680,7 +4680,7 @@ SyntheticsTestOptionsList.builder()
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion">httpVersion</a></code> | <code>java.lang.String</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError">ignoreServerCertificateError</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore server certificate error. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout">initialNavigationTimeout</a></code> | <code>java.lang.Number</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | Minimum amount of time in failure required to trigger an alert. Default is `0`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">minFailureDuration</a></code> | <code>java.lang.Number</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed">minLocationFailed</a></code> | <code>java.lang.Number</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName">monitorName</a></code> | <code>java.lang.String</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions">monitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
@@ -4855,7 +4855,7 @@ public java.lang.Number getMinFailureDuration();
 
 - *Type:* java.lang.Number
 
-Minimum amount of time in failure required to trigger an alert. Default is `0`.
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 

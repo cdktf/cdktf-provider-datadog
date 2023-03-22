@@ -1347,8 +1347,8 @@ new SecurityMonitoringRuleOptions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.keepAlive">KeepAlive</a></code> | <code>double</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.maxSignalDuration">MaxSignalDuration</a></code> | <code>double</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.keepAlive">KeepAlive</a></code> | <code>double</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window (in seconds). |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.maxSignalDuration">MaxSignalDuration</a></code> | <code>double</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration (in seconds). |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.decreaseCriticalityBasedOnEnv">DecreaseCriticalityBasedOnEnv</a></code> | <code>object</code> | If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.detectionMethod">DetectionMethod</a></code> | <code>string</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.evaluationWindow">EvaluationWindow</a></code> | <code>double</code> | A time window is specified to match when at least one of the cases matches true. |
@@ -1365,7 +1365,7 @@ public double KeepAlive { get; set; }
 
 - *Type:* double
 
-Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window.
+Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window (in seconds).
 
 Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
 
@@ -1381,7 +1381,7 @@ public double MaxSignalDuration { get; set; }
 
 - *Type:* double
 
-A signal will “close” regardless of the query being matched once the time exceeds the maximum duration.
+A signal will “close” regardless of the query being matched once the time exceeds the maximum duration (in seconds).
 
 This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
 

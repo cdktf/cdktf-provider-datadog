@@ -5606,7 +5606,7 @@ export interface SyntheticsTestOptionsList {
   */
   readonly initialNavigationTimeout?: number;
   /**
-  * Minimum amount of time in failure required to trigger an alert. Default is `0`.
+  * Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
   */
@@ -7650,7 +7650,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_test',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.22.0',
+        providerVersion: '3.23.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

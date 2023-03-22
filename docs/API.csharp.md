@@ -48,6 +48,7 @@ The following submodules are available:
 - [integrationPagerduty](./integrationPagerduty.csharp.md)
 - [integrationPagerdutyServiceObject](./integrationPagerdutyServiceObject.csharp.md)
 - [integrationSlackChannel](./integrationSlackChannel.csharp.md)
+- [ipAllowlist](./ipAllowlist.csharp.md)
 - [logsArchive](./logsArchive.csharp.md)
 - [logsArchiveOrder](./logsArchiveOrder.csharp.md)
 - [logsCustomPipeline](./logsCustomPipeline.csharp.md)
