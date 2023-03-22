@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_met
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metricmetadata"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/metricmetadata"
 
 metricmetadata.NewMetricMetadata(scope Construct, id *string, config MetricMetadataConfig) MetricMetadata
 ```
@@ -315,7 +315,7 @@ func ResetUnit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metricmetadata"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/metricmetadata"
 
 metricmetadata.MetricMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metricmetadata"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/metricmetadata"
 
 metricmetadata.MetricMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ metricmetadata.MetricMetadata_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metricmetadata"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/metricmetadata"
 
 metricmetadata.MetricMetadata_IsTerraformResource(x interface{}) *bool
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metricmetadata"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/metricmetadata"
 
 &metricmetadata.MetricMetadataConfig {
 	Connection: interface{},
