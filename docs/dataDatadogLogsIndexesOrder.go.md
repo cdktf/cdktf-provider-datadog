@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_index
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexesorder"
 
 datadatadoglogsindexesorder.NewDataDatadogLogsIndexesOrder(scope Construct, id *string, config DataDatadogLogsIndexesOrderConfig) DataDatadogLogsIndexesOrder
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexesorder"
 
 datadatadoglogsindexesorder.DataDatadogLogsIndexesOrder_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexesorder"
 
 datadatadoglogsindexesorder.DataDatadogLogsIndexesOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datadatadoglogsindexesorder.DataDatadogLogsIndexesOrder_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexesorder"
 
 datadatadoglogsindexesorder.DataDatadogLogsIndexesOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsIndexesOrder.DataDatadogLogsIndexesOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadoglogsindexesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexesorder"
 
 &datadatadoglogsindexesorder.DataDatadogLogsIndexesOrderConfig {
 	Connection: interface{},
