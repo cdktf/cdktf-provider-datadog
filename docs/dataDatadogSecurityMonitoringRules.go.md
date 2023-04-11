@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/d/security_m
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRules(scope Construct, id *string, config DataDatadogSecurityMonitoringRulesConfig) DataDatadogSecurityMonitoringRules
 ```
@@ -301,7 +301,7 @@ func ResetUserOnlyFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRules_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRules_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRules {
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesCase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesCase {
 
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesFilter {
 
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesOptions {
 
@@ -891,7 +891,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptions {
 
@@ -904,7 +904,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptions {
 
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesQuery {
 
@@ -930,7 +930,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesQueryAgentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesQueryAgentRule {
 
@@ -943,7 +943,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesSignalQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 &datadatadogsecuritymonitoringrules.DataDatadogSecurityMonitoringRulesRulesSignalQuery {
 
@@ -958,7 +958,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecurit
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesCaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesCaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesCaseList
 ```
@@ -1090,7 +1090,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesCaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesCaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesCaseOutputReference
 ```
@@ -1401,7 +1401,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesCase
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesFilterList
 ```
@@ -1533,7 +1533,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesFilterOutputReference
 ```
@@ -1822,7 +1822,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesList
 ```
@@ -1954,7 +1954,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsList
 ```
@@ -2086,7 +2086,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTravelOptionsOutputReference
 ```
@@ -2364,7 +2364,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesOptionsImpossibleTra
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsList
 ```
@@ -2496,7 +2496,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsList
 ```
@@ -2628,7 +2628,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptionsOutputReference
 ```
@@ -2939,7 +2939,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesOptionsNewValueOptio
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesOptionsOutputReference
 ```
@@ -3283,7 +3283,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesOutputReference
 ```
@@ -3671,7 +3671,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleList
 ```
@@ -3803,7 +3803,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesQueryAgentRuleOutputReference
 ```
@@ -4092,7 +4092,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesQueryAgentRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesQueryList
 ```
@@ -4224,7 +4224,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesQueryOutputReference
 ```
@@ -4579,7 +4579,7 @@ func InternalValue() DataDatadogSecurityMonitoringRulesRulesQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesSignalQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesSignalQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringRulesRulesSignalQueryList
 ```
@@ -4711,7 +4711,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules.DataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/datadatadogsecuritymonitoringrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsecuritymonitoringrules"
 
 datadatadogsecuritymonitoringrules.NewDataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringRulesRulesSignalQueryOutputReference
 ```

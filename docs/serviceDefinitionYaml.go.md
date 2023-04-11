@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_de
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/servicedefinitionyaml"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/servicedefinitionyaml"
 
 servicedefinitionyaml.NewServiceDefinitionYaml(scope Construct, id *string, config ServiceDefinitionYamlConfig) ServiceDefinitionYaml
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/servicedefinitionyaml"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/servicedefinitionyaml"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/servicedefinitionyaml"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v5/servicedefinitionyaml"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/servicedefinitionyaml"
 
 &servicedefinitionyaml.ServiceDefinitionYamlConfig {
 	Connection: interface{},
