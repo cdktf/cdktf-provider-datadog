@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key da
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
 
 datadatadogapikey.NewDataDatadogApiKey(scope Construct, id *string, config DataDatadogApiKeyConfig) DataDatadogApiKey
 ```
@@ -280,7 +280,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
 
 &datadatadogapikey.DataDatadogApiKeyConfig {
 	Connection: interface{},
