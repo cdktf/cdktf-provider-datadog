@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -300,7 +300,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -644,7 +644,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 &role.RoleConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.role.RolePermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 &role.RolePermission {
 	Id: *string,
@@ -850,7 +850,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.RolePermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.NewRolePermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RolePermissionList
 ```
@@ -993,7 +993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.RolePermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/role"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/role"
 
 role.NewRolePermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RolePermissionOutputReference
 ```
