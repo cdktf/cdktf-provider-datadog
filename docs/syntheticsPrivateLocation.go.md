@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/synthetics
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 syntheticsprivatelocation.NewSyntheticsPrivateLocation(scope Construct, id *string, config SyntheticsPrivateLocationConfig) SyntheticsPrivateLocation
 ```
@@ -307,7 +307,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 syntheticsprivatelocation.SyntheticsPrivateLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -673,7 +673,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 &syntheticsprivatelocation.SyntheticsPrivateLocationConfig {
 	Connection: interface{},
@@ -686,7 +686,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivateloca
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	Metadata: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-datadog-go/datadog/v6.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata,
 	Tags: *[]*string,
 }
 ```
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 &syntheticsprivatelocation.SyntheticsPrivateLocationMetadata {
 	RestrictedRoles: *[]*string,
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsPrivateLocation.SyntheticsPrivateLocationMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsprivatelocation"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/syntheticsprivatelocation"
 
 syntheticsprivatelocation.NewSyntheticsPrivateLocationMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsPrivateLocationMetadataOutputReference
 ```

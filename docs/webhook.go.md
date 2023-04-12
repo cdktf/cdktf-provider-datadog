@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook da
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhook.Webhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 
 webhook.NewWebhook(scope Construct, id *string, config WebhookConfig) Webhook
 ```
@@ -294,7 +294,7 @@ func ResetPayload()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.webhook.Webhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 
 webhook.Webhook_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.webhook.Webhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 
 webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.webhook.Webhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 
 webhook.Webhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.webhook.WebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 
 &webhook.WebhookConfig {
 	Connection: interface{},

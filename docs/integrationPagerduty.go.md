@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integratio
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerduty"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationpagerduty"
 
 integrationpagerduty.NewIntegrationPagerduty(scope Construct, id *string, config IntegrationPagerdutyConfig) IntegrationPagerduty
 ```
@@ -287,7 +287,7 @@ func ResetSchedules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerduty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerduty"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationpagerduty"
 
 integrationpagerduty.IntegrationPagerduty_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerduty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerduty"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationpagerduty"
 
 integrationpagerduty.IntegrationPagerduty_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ integrationpagerduty.IntegrationPagerduty_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerduty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerduty"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationpagerduty"
 
 integrationpagerduty.IntegrationPagerduty_IsTerraformResource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationPagerduty.IntegrationPagerdutyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerduty"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationpagerduty"
 
 &integrationpagerduty.IntegrationPagerdutyConfig {
 	Connection: interface{},
