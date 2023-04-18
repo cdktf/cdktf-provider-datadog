@@ -1,6 +1,6 @@
 # `datadog_service_level_objective`
 
-Refer to the Terraform Registory for docs: [`datadog_service_level_objective`](https://www.terraform.io/docs/providers/datadog/r/service_level_objective).
+Refer to the Terraform Registory for docs: [`datadog_service_level_objective`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective).
 
 # `serviceLevelObjective` Submodule <a name="`serviceLevelObjective` Submodule" id="@cdktf/provider-datadog.serviceLevelObjective"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_service_level_objective`](h
 
 ### ServiceLevelObjective <a name="ServiceLevelObjective" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective datadog_service_level_objective}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective datadog_service_level_objective}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer"></a>
 
@@ -19,7 +19,7 @@ serviceLevelObjective.ServiceLevelObjective(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -47,7 +47,7 @@ serviceLevelObjective.ServiceLevelObjective(
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -59,7 +59,7 @@ serviceLevelObjective.ServiceLevelObjective(
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of this service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.groups">groups</a></code> | <code>typing.List[str]</code> | A static set of groups to filter monitor-based SLOs. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.monitorIds">monitor_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.query">query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your service level objective. |
@@ -96,7 +96,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 Name of Datadog service level objective.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#name ServiceLevelObjective#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 thresholds block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#thresholds ServiceLevelObjective#thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
 
 ---
 
@@ -158,7 +158,7 @@ The type of the service level objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/service-level-objectives/#create-a-slo-object). Valid values are `metric`, `monitor`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#type ServiceLevelObjective#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 A description of this service level objective.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#description ServiceLevelObjective#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#force_delete ServiceLevelObjective#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 A static set of groups to filter monitor-based SLOs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#groups ServiceLevelObjective#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -209,7 +209,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A static set of monitor IDs to use as part of the SLO.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -231,7 +231,7 @@ A list of tags to associate with your service level objective.
 
 This can help you categorize and filter service level objectives in the service level objectives page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#tags ServiceLevelObjective#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
 ---
 
@@ -253,7 +253,7 @@ The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Whether or not to validate the SLO.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#validate ServiceLevelObjective#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
 
 ---
 
@@ -275,7 +275,7 @@ The objective's warning value in `(0,100)`.
 
 This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 
 ---
 
@@ -539,7 +539,7 @@ def put_query(
 
 The sum of the `total` events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#denominator ServiceLevelObjective#denominator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
 
 ---
 
@@ -549,7 +549,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The sum of all the `good` events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#numerator ServiceLevelObjective#numerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
 
 ---
 
@@ -721,7 +721,7 @@ serviceLevelObjective.ServiceLevelObjective.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -843,10 +843,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1209,7 +1209,7 @@ from cdktf_cdktf_provider_datadog import service_level_objective
 
 serviceLevelObjective.ServiceLevelObjectiveConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1237,7 +1237,7 @@ serviceLevelObjective.ServiceLevelObjectiveConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1249,7 +1249,7 @@ serviceLevelObjective.ServiceLevelObjectiveConfig(
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.description">description</a></code> | <code>str</code> | A description of this service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">force_delete</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.groups">groups</a></code> | <code>typing.List[str]</code> | A static set of groups to filter monitor-based SLOs. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.monitorIds">monitor_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.query">query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your service level objective. |
@@ -1273,10 +1273,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1340,7 +1340,7 @@ name: str
 
 Name of Datadog service level objective.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#name ServiceLevelObjective#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
 
 ---
 
@@ -1354,7 +1354,7 @@ thresholds: typing.Union[IResolvable, typing.List[ServiceLevelObjectiveThreshold
 
 thresholds block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#thresholds ServiceLevelObjective#thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
 
 ---
 
@@ -1370,7 +1370,7 @@ The type of the service level objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/service-level-objectives/#create-a-slo-object). Valid values are `metric`, `monitor`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#type ServiceLevelObjective#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
 
 ---
 
@@ -1384,7 +1384,7 @@ description: str
 
 A description of this service level objective.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#description ServiceLevelObjective#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
 
 ---
 
@@ -1398,7 +1398,7 @@ force_delete: typing.Union[bool, IResolvable]
 
 A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#force_delete ServiceLevelObjective#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
 ---
 
@@ -1412,7 +1412,7 @@ groups: typing.List[str]
 
 A static set of groups to filter monitor-based SLOs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#groups ServiceLevelObjective#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
 
 ---
 
@@ -1424,7 +1424,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#id ServiceLevelObjective#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1441,7 +1441,7 @@ monitor_ids: typing.List[typing.Union[int, float]]
 
 A static set of monitor IDs to use as part of the SLO.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
 
 ---
 
@@ -1455,7 +1455,7 @@ query: ServiceLevelObjectiveQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -1471,7 +1471,7 @@ A list of tags to associate with your service level objective.
 
 This can help you categorize and filter service level objectives in the service level objectives page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#tags ServiceLevelObjective#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
 
 ---
 
@@ -1485,7 +1485,7 @@ target_threshold: typing.Union[int, float]
 
 The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
 ---
 
@@ -1501,7 +1501,7 @@ The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -1515,7 +1515,7 @@ validate: typing.Union[bool, IResolvable]
 
 Whether or not to validate the SLO.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#validate ServiceLevelObjective#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
 
 ---
 
@@ -1531,7 +1531,7 @@ The objective's warning value in `(0,100)`.
 
 This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 
 ---
 
@@ -1567,7 +1567,7 @@ denominator: str
 
 The sum of the `total` events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#denominator ServiceLevelObjective#denominator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
 
 ---
 
@@ -1581,7 +1581,7 @@ numerator: str
 
 The sum of all the `good` events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#numerator ServiceLevelObjective#numerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
 
 ---
 
@@ -1619,7 +1619,7 @@ target: typing.Union[int, float]
 
 The objective's target in `(0,100)`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#target ServiceLevelObjective#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
 
 ---
 
@@ -1635,7 +1635,7 @@ The time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -1649,7 +1649,7 @@ warning: typing.Union[int, float]
 
 The objective's warning value in `(0,100)`. This must be greater than the target value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_level_objective#warning ServiceLevelObjective#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
 
 ---
 

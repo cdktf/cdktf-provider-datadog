@@ -1,6 +1,6 @@
 # `data_datadog_user`
 
-Refer to the Terraform Registory for docs: [`data_datadog_user`](https://www.terraform.io/docs/providers/datadog/d/user).
+Refer to the Terraform Registory for docs: [`data_datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user).
 
 # `dataDatadogUser` Submodule <a name="`dataDatadogUser` Submodule" id="@cdktf/provider-datadog.dataDatadogUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_user`](https://www.ter
 
 ### DataDatadogUser <a name="DataDatadogUser" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataDatadogUser.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -570,7 +570,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new DataDatadogUserConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -586,14 +586,14 @@ new DataDatadogUserConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.filter">Filter</a></code> | <code>string</code> | Filter all users by the given string. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -610,10 +610,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -677,7 +677,7 @@ public string Filter { get; set; }
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -689,7 +689,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`datadog`](https://www.terraform.io/docs/providers/datadog).
+Refer to the Terraform Registory for docs: [`datadog`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs).

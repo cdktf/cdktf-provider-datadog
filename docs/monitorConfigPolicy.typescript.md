@@ -1,6 +1,6 @@
 # `datadog_monitor_config_policy`
 
-Refer to the Terraform Registory for docs: [`datadog_monitor_config_policy`](https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy).
+Refer to the Terraform Registory for docs: [`datadog_monitor_config_policy`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy).
 
 # `monitorConfigPolicy` Submodule <a name="`monitorConfigPolicy` Submodule" id="@cdktf/provider-datadog.monitorConfigPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_monitor_config_policy`](htt
 
 ### MonitorConfigPolicy <a name="MonitorConfigPolicy" id="@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy datadog_monitor_config_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer"></a>
 
@@ -366,7 +366,7 @@ monitorConfigPolicy.MonitorConfigPolicy.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -466,10 +466,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -618,14 +618,14 @@ const monitorConfigPolicyConfig: monitorConfigPolicy.MonitorConfigPolicyConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.policyType">policyType</a></code> | <code>string</code> | The monitor config policy type Valid values are `tag`. |
-| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#id MonitorConfigPolicy#id}. |
+| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.tagPolicy">tagPolicy</a></code> | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy">MonitorConfigPolicyTagPolicy</a></code> | tag_policy block. |
 
 ---
@@ -643,10 +643,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -710,7 +710,7 @@ public readonly policyType: string;
 
 The monitor config policy type Valid values are `tag`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
 
 ---
 
@@ -722,7 +722,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#id MonitorConfigPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -739,7 +739,7 @@ public readonly tagPolicy: MonitorConfigPolicyTagPolicy;
 
 tag_policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
 
 ---
 
@@ -773,7 +773,7 @@ public readonly tagKey: string;
 
 The key of the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
 
 ---
 
@@ -787,7 +787,7 @@ public readonly tagKeyRequired: boolean | IResolvable;
 
 If a tag key is required for monitor creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
 
 ---
 
@@ -801,7 +801,7 @@ public readonly validTagValues: string[];
 
 Valid values for the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
 
 ---
 

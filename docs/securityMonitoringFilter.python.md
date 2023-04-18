@@ -1,6 +1,6 @@
 # `datadog_security_monitoring_filter`
 
-Refer to the Terraform Registory for docs: [`datadog_security_monitoring_filter`](https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter).
+Refer to the Terraform Registory for docs: [`datadog_security_monitoring_filter`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter).
 
 # `securityMonitoringFilter` Submodule <a name="`securityMonitoringFilter` Submodule" id="@cdktf/provider-datadog.securityMonitoringFilter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_security_monitoring_filter`
 
 ### SecurityMonitoringFilter <a name="SecurityMonitoringFilter" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter datadog_security_monitoring_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer"></a>
 
@@ -19,7 +19,7 @@ securityMonitoringFilter.SecurityMonitoringFilter(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ securityMonitoringFilter.SecurityMonitoringFilter(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +50,7 @@ securityMonitoringFilter.SecurityMonitoringFilter(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.query">query</a></code> | <code>str</code> | The query of the security filter. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.exclusionFilter">exclusion_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a>]]</code> | exclusion_filter block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.filteredDataType">filtered_data_type</a></code> | <code>str</code> | The filtered data type. Valid values are `logs`. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
 
 ---
 
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the security filter is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The name of the security filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The query of the security filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The filtered data type. Valid values are `logs`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#id SecurityMonitoringFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -531,7 +531,7 @@ securityMonitoringFilter.SecurityMonitoringFilter.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -638,10 +638,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -854,7 +854,7 @@ from cdktf_cdktf_provider_datadog import security_monitoring_filter
 
 securityMonitoringFilter.SecurityMonitoringFilterConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -874,7 +874,7 @@ securityMonitoringFilter.SecurityMonitoringFilterConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -885,7 +885,7 @@ securityMonitoringFilter.SecurityMonitoringFilterConfig(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.query">query</a></code> | <code>str</code> | The query of the security filter. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.exclusionFilter">exclusion_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a>]]</code> | exclusion_filter block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.filteredDataType">filtered_data_type</a></code> | <code>str</code> | The filtered data type. Valid values are `logs`. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
 
 ---
 
@@ -902,10 +902,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -969,7 +969,7 @@ is_enabled: typing.Union[bool, IResolvable]
 
 Whether the security filter is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
 
 ---
 
@@ -983,7 +983,7 @@ name: str
 
 The name of the security filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -997,7 +997,7 @@ query: str
 
 The query of the security filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 
@@ -1011,7 +1011,7 @@ exclusion_filter: typing.Union[IResolvable, typing.List[SecurityMonitoringFilter
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
 
 ---
 
@@ -1025,7 +1025,7 @@ filtered_data_type: str
 
 The filtered data type. Valid values are `logs`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
 
 ---
 
@@ -1037,7 +1037,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#id SecurityMonitoringFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ name: str
 
 Exclusion filter name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -1090,7 +1090,7 @@ query: str
 
 Exclusion filter query. Logs that match this query are excluded from the security filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 

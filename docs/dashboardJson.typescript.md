@@ -1,6 +1,6 @@
 # `datadog_dashboard_json`
 
-Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://www.terraform.io/docs/providers/datadog/r/dashboard_json).
+Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json).
 
 # `dashboardJson` Submodule <a name="`dashboardJson` Submodule" id="@cdktf/provider-datadog.dashboardJson"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://ww
 
 ### DashboardJson <a name="DashboardJson" id="@cdktf/provider-datadog.dashboardJson.DashboardJson"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json datadog_dashboard_json}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json datadog_dashboard_json}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer"></a>
 
@@ -360,7 +360,7 @@ dashboardJson.DashboardJson.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -463,10 +463,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -645,7 +645,7 @@ const dashboardJsonConfig: dashboardJson.DashboardJsonConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -653,7 +653,7 @@ const dashboardJsonConfig: dashboardJson.DashboardJsonConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.dashboard">dashboard</a></code> | <code>string</code> | The JSON formatted definition of the Dashboard. |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.dashboardLists">dashboardLists</a></code> | <code>number[]</code> | The list of dashboard lists this dashboard belongs to. |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#id DashboardJson#id}. |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json#id DashboardJson#id}. |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.url">url</a></code> | <code>string</code> | The URL of the dashboard. |
 
 ---
@@ -671,10 +671,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -738,7 +738,7 @@ public readonly dashboard: string;
 
 The JSON formatted definition of the Dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#dashboard DashboardJson#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
 
 ---
 
@@ -752,7 +752,7 @@ public readonly dashboardLists: number[];
 
 The list of dashboard lists this dashboard belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#id DashboardJson#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json#id DashboardJson#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -781,7 +781,7 @@ public readonly url: string;
 
 The URL of the dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_json#url DashboardJson#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_json#url DashboardJson#url}
 
 ---
 

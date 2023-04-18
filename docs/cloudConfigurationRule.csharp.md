@@ -1,6 +1,6 @@
 # `datadog_cloud_configuration_rule`
 
-Refer to the Terraform Registory for docs: [`datadog_cloud_configuration_rule`](https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule).
+Refer to the Terraform Registory for docs: [`datadog_cloud_configuration_rule`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule).
 
 # `cloudConfigurationRule` Submodule <a name="`cloudConfigurationRule` Submodule" id="@cdktf/provider-datadog.cloudConfigurationRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_cloud_configuration_rule`](
 
 ### CloudConfigurationRule <a name="CloudConfigurationRule" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule datadog_cloud_configuration_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer"></a>
 
@@ -374,7 +374,7 @@ CloudConfigurationRule.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -490,10 +490,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -796,7 +796,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new CloudConfigurationRuleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -821,7 +821,7 @@ new CloudConfigurationRuleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -834,7 +834,7 @@ new CloudConfigurationRuleConfig {
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.resourceType">ResourceType</a></code> | <code>string</code> | Main resource type to be checked by the rule. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.severity">Severity</a></code> | <code>string</code> | Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.groupBy">GroupBy</a></code> | <code>string[]</code> | Fields to group by when generating signals, e.g. @resource. Defaults to empty list. |
-| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#id CloudConfigurationRule#id}. |
+| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.notifications">Notifications</a></code> | <code>string[]</code> | Notification targets for signals. Defaults to empty list. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.relatedResourceTypes">RelatedResourceTypes</a></code> | <code>string[]</code> | Related resource types to be checked by the rule. Defaults to empty list. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.tags">Tags</a></code> | <code>string[]</code> | Tags of the rule, propagated to findings and signals. Defaults to empty list. |
@@ -854,10 +854,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -921,7 +921,7 @@ public object Enabled { get; set; }
 
 Whether the cloud configuration rule is enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
 
 ---
 
@@ -935,7 +935,7 @@ public string Message { get; set; }
 
 The message associated to the rule that will be shown in findings and signals.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#message CloudConfigurationRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
 
 ---
 
@@ -949,7 +949,7 @@ public string Name { get; set; }
 
 The name of the cloud configuration rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#name CloudConfigurationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
 
 ---
 
@@ -963,7 +963,7 @@ public string Policy { get; set; }
 
 Policy written in Rego format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#policy CloudConfigurationRule#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
 
 ---
 
@@ -977,7 +977,7 @@ public string ResourceType { get; set; }
 
 Main resource type to be checked by the rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
 
 ---
 
@@ -991,7 +991,7 @@ public string Severity { get; set; }
 
 Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#severity CloudConfigurationRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
 
 ---
 
@@ -1005,7 +1005,7 @@ public string[] GroupBy { get; set; }
 
 Fields to group by when generating signals, e.g. @resource. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#id CloudConfigurationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1034,7 +1034,7 @@ public string[] Notifications { get; set; }
 
 Notification targets for signals. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
 
 ---
 
@@ -1048,7 +1048,7 @@ public string[] RelatedResourceTypes { get; set; }
 
 Related resource types to be checked by the rule. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string[] Tags { get; set; }
 
 Tags of the rule, propagated to findings and signals. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/cloud_configuration_rule#tags CloudConfigurationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
 
 ---
 

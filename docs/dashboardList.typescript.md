@@ -1,6 +1,6 @@
 # `datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://www.terraform.io/docs/providers/datadog/r/dashboard_list).
+Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list).
 
 # `dashboardList` Submodule <a name="`dashboardList` Submodule" id="@cdktf/provider-datadog.dashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://ww
 
 ### DashboardList <a name="DashboardList" id="@cdktf/provider-datadog.dashboardList.DashboardList"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardList.DashboardList.Initializer"></a>
 
@@ -366,7 +366,7 @@ dashboardList.DashboardList.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -466,10 +466,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -618,7 +618,7 @@ const dashboardListConfig: dashboardList.DashboardListConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -626,7 +626,7 @@ const dashboardListConfig: dashboardList.DashboardListConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.name">name</a></code> | <code>string</code> | The name of the Dashboard List. |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.dashItem">dashItem</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.dashboardList.DashboardListDashItem">DashboardListDashItem</a>[]</code> | dash_item block. |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#id DashboardList#id}. |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#id DashboardList#id}. |
 
 ---
 
@@ -643,10 +643,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -710,7 +710,7 @@ public readonly name: string;
 
 The name of the Dashboard List.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#name DashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#name DashboardList#name}
 
 ---
 
@@ -724,7 +724,7 @@ public readonly dashItem: IResolvable | DashboardListDashItem[];
 
 dash_item block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_item DashboardList#dash_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
 
 ---
 
@@ -736,7 +736,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#id DashboardList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#id DashboardList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ public readonly dashId: string;
 
 The ID of the dashboard to add.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_id DashboardList#dash_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
 
 ---
 
@@ -786,7 +786,7 @@ public readonly type: string;
 
 The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#type DashboardList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#type DashboardList#type}
 
 ---
 

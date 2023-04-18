@@ -1,6 +1,6 @@
 # `data_datadog_synthetics_test`
 
-Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](https://www.terraform.io/docs/providers/datadog/d/synthetics_test).
+Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_test).
 
 # `dataDatadogSyntheticsTest` Submodule <a name="`dataDatadogSyntheticsTest` Submodule" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](http
 
 ### DataDatadogSyntheticsTest <a name="DataDatadogSyntheticsTest" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test datadog_synthetics_test}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.NewDataDatadogSyntheticsTest(scope Construct, id *string, config DataDatadogSyntheticsTestConfig) DataDatadogSyntheticsTest
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformDataSource(x inte
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -435,10 +435,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -577,11 +577,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 &datadatadogsyntheticstest.DataDatadogSyntheticsTestConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -597,14 +597,14 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogsynthet
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.testId">TestId</a></code> | <code>*string</code> | The synthetic test id to search for. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test#id DataDatadogSyntheticsTest#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_test#id DataDatadogSyntheticsTest#id}. |
 
 ---
 
@@ -621,10 +621,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -688,7 +688,7 @@ TestId *string
 
 The synthetic test id to search for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test#test_id DataDatadogSyntheticsTest#test_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_test#test_id DataDatadogSyntheticsTest#test_id}
 
 ---
 
@@ -700,7 +700,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_test#id DataDatadogSyntheticsTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_test#id DataDatadogSyntheticsTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

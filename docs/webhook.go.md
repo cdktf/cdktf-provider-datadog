@@ -1,6 +1,6 @@
 # `datadog_webhook`
 
-Refer to the Terraform Registory for docs: [`datadog_webhook`](https://www.terraform.io/docs/providers/datadog/r/webhook).
+Refer to the Terraform Registory for docs: [`datadog_webhook`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook).
 
 # `webhook` Submodule <a name="`webhook` Submodule" id="@cdktf/provider-datadog.webhook"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_webhook`](https://www.terra
 
 ### Webhook <a name="Webhook" id="@cdktf/provider-datadog.webhook.Webhook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/webhook datadog_webhook}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook datadog_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhook.Webhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
 
 webhook.NewWebhook(scope Construct, id *string, config WebhookConfig) Webhook
 ```
@@ -298,7 +298,7 @@ func ResetPayload()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.webhook.Webhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
 
 webhook.Webhook_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.webhook.Webhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
 
 webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.webhook.Webhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
 
 webhook.Webhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ webhook.Webhook_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.webhook.Webhook.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -675,11 +675,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.webhook.WebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
 
 &webhook.WebhookConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -699,7 +699,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -709,7 +709,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/webhook"
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.url">Url</a></code> | <code>*string</code> | The URL of the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.customHeaders">CustomHeaders</a></code> | <code>*string</code> | The headers attached to the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.encodeAs">EncodeAs</a></code> | <code>*string</code> | Encoding type. Valid values are `json`, `form`. |
-| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#id Webhook#id}. |
+| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#id Webhook#id}. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.payload">Payload</a></code> | <code>*string</code> | The payload of the webhook. |
 
 ---
@@ -727,10 +727,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.webhook.WebhookConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -794,7 +794,7 @@ Name *string
 
 The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#name Webhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#name Webhook#name}
 
 ---
 
@@ -808,7 +808,7 @@ Url *string
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#url Webhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#url Webhook#url}
 
 ---
 
@@ -822,7 +822,7 @@ CustomHeaders *string
 
 The headers attached to the webhook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#custom_headers Webhook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
 
 ---
 
@@ -836,7 +836,7 @@ EncodeAs *string
 
 Encoding type. Valid values are `json`, `form`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#encode_as Webhook#encode_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#encode_as Webhook#encode_as}
 
 ---
 
@@ -848,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#id Webhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#id Webhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -865,7 +865,7 @@ Payload *string
 
 The payload of the webhook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/webhook#payload Webhook#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/webhook#payload Webhook#payload}
 
 ---
 

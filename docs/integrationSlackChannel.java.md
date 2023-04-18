@@ -1,6 +1,6 @@
 # `datadog_integration_slack_channel`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_slack_channel`](https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel).
+Refer to the Terraform Registory for docs: [`datadog_integration_slack_channel`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel).
 
 # `integrationSlackChannel` Submodule <a name="`integrationSlackChannel` Submodule" id="@cdktf/provider-datadog.integrationSlackChannel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_slack_channel`]
 
 ### IntegrationSlackChannel <a name="IntegrationSlackChannel" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel datadog_integration_slack_channel}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer"></a>
 
@@ -19,6 +19,7 @@ IntegrationSlackChannel.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -38,7 +39,7 @@ IntegrationSlackChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +48,7 @@ IntegrationSlackChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.accountName">accountName</a></code> | <code>java.lang.String</code> | Slack account name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.channelName">channelName</a></code> | <code>java.lang.String</code> | Slack channel name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.display">display</a></code> | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay">IntegrationSlackChannelDisplay</a></code> | display block. |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#id IntegrationSlackChannel#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
 
 ---
 
@@ -77,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Slack account name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
 
 ---
 
@@ -127,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Slack channel name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
 
 ---
 
@@ -137,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 display block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#display IntegrationSlackChannel#display}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
 
 ---
 
@@ -145,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#id IntegrationSlackChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -461,7 +462,7 @@ IntegrationSlackChannel.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -563,10 +564,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -731,6 +732,7 @@ IntegrationSlackChannelConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -750,7 +752,7 @@ IntegrationSlackChannelConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -759,7 +761,7 @@ IntegrationSlackChannelConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.accountName">accountName</a></code> | <code>java.lang.String</code> | Slack account name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.channelName">channelName</a></code> | <code>java.lang.String</code> | Slack channel name. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.display">display</a></code> | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay">IntegrationSlackChannelDisplay</a></code> | display block. |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#id IntegrationSlackChannel#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
 
 ---
 
@@ -776,10 +778,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -843,7 +845,7 @@ public java.lang.String getAccountName();
 
 Slack account name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
 
 ---
 
@@ -857,7 +859,7 @@ public java.lang.String getChannelName();
 
 Slack channel name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
 
 ---
 
@@ -871,7 +873,7 @@ public IntegrationSlackChannelDisplay getDisplay();
 
 display block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#display IntegrationSlackChannel#display}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
 
 ---
 
@@ -883,7 +885,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#id IntegrationSlackChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -930,7 +932,7 @@ public java.lang.Object getMessage();
 
 Show the main body of the alert event.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#message IntegrationSlackChannel#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
 
 ---
 
@@ -944,7 +946,7 @@ public java.lang.Object getNotified();
 
 Show the list of @-handles in the alert event.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#notified IntegrationSlackChannel#notified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
 
 ---
 
@@ -958,7 +960,7 @@ public java.lang.Object getSnapshot();
 
 Show the alert event's snapshot image.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
 
 ---
 
@@ -972,7 +974,7 @@ public java.lang.Object getTags();
 
 Show the scopes on which the monitor alerted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel#tags IntegrationSlackChannel#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
 
 ---
 

@@ -1,6 +1,6 @@
 # `datadog_integration_aws_log_collection`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_aws_log_collection`](https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection).
+Refer to the Terraform Registory for docs: [`datadog_integration_aws_log_collection`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_log_collection).
 
 # `integrationAwsLogCollection` Submodule <a name="`integrationAwsLogCollection` Submodule" id="@cdktf/provider-datadog.integrationAwsLogCollection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_aws_log_collect
 
 ### IntegrationAwsLogCollection <a name="IntegrationAwsLogCollection" id="@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection datadog_integration_aws_log_collection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer"></a>
 
@@ -346,7 +346,7 @@ IntegrationAwsLogCollection.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -592,7 +592,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new IntegrationAwsLogCollectionConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -609,7 +609,7 @@ new IntegrationAwsLogCollectionConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ new IntegrationAwsLogCollectionConfig {
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.accountId">AccountId</a></code> | <code>string</code> | Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here. |
 | <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.services">Services</a></code> | <code>string[]</code> | A list of services to collect logs from. |
-| <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection#id IntegrationAwsLogCollection#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -701,7 +701,7 @@ public string AccountId { get; set; }
 
 Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
 
 ---
 
@@ -717,7 +717,7 @@ A list of services to collect logs from.
 
 See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
 
 ---
 
@@ -729,7 +729,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

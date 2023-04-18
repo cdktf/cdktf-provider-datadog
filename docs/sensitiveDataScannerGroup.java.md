@@ -1,6 +1,6 @@
 # `datadog_sensitive_data_scanner_group`
 
-Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_group`](https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group).
+Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_group`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group).
 
 # `sensitiveDataScannerGroup` Submodule <a name="`sensitiveDataScannerGroup` Submodule" id="@cdktf/provider-datadog.sensitiveDataScannerGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_grou
 
 ### SensitiveDataScannerGroup <a name="SensitiveDataScannerGroup" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer"></a>
 
@@ -19,6 +19,7 @@ SensitiveDataScannerGroup.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -41,7 +42,7 @@ SensitiveDataScannerGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -52,7 +53,7 @@ SensitiveDataScannerGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Datadog scanning group. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.productList">productList</a></code> | <code>java.util.List<java.lang.String></code> | List of products the scanning group applies. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the Datadog scanning group. |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
 
 ---
 
@@ -82,7 +83,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -122,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
 
 ---
 
@@ -134,7 +135,7 @@ Whether or not the scanning group is enabled.
 
 If the group doesn't contain any rule or if all the rules in it are disabled, the group is force-disabled by our backend
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
 
 ---
 
@@ -144,7 +145,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Name of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
 
 ---
 
@@ -154,7 +155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 List of products the scanning group applies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
 
 ---
 
@@ -164,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Description of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
 
 ---
 
@@ -172,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -495,7 +496,7 @@ SensitiveDataScannerGroup.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -601,10 +602,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -809,6 +810,7 @@ SensitiveDataScannerGroupConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -831,7 +833,7 @@ SensitiveDataScannerGroupConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -842,7 +844,7 @@ SensitiveDataScannerGroupConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Datadog scanning group. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.productList">productList</a></code> | <code>java.util.List<java.lang.String></code> | List of products the scanning group applies. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the Datadog scanning group. |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
 
 ---
 
@@ -859,10 +861,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -926,7 +928,7 @@ public SensitiveDataScannerGroupFilter getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
 
 ---
 
@@ -942,7 +944,7 @@ Whether or not the scanning group is enabled.
 
 If the group doesn't contain any rule or if all the rules in it are disabled, the group is force-disabled by our backend
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
 
 ---
 
@@ -956,7 +958,7 @@ public java.lang.String getName();
 
 Name of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
 
 ---
 
@@ -970,7 +972,7 @@ public java.util.List<java.lang.String> getProductList();
 
 List of products the scanning group applies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
 
 ---
 
@@ -984,7 +986,7 @@ public java.lang.String getDescription();
 
 Description of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
 
 ---
 
@@ -996,7 +998,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1033,7 +1035,7 @@ public java.lang.String getQuery();
 
 Query to filter the events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
 
 ---
 

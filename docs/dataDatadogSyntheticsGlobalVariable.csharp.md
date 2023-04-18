@@ -1,6 +1,6 @@
 # `data_datadog_synthetics_global_variable`
 
-Refer to the Terraform Registory for docs: [`data_datadog_synthetics_global_variable`](https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable).
+Refer to the Terraform Registory for docs: [`data_datadog_synthetics_global_variable`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable).
 
 # `dataDatadogSyntheticsGlobalVariable` Submodule <a name="`dataDatadogSyntheticsGlobalVariable` Submodule" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_synthetics_global_vari
 
 ### DataDatadogSyntheticsGlobalVariable <a name="DataDatadogSyntheticsGlobalVariable" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable datadog_synthetics_global_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataDatadogSyntheticsGlobalVariable.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -559,7 +559,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new DataDatadogSyntheticsGlobalVariableConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -575,14 +575,14 @@ new DataDatadogSyntheticsGlobalVariableConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.name">Name</a></code> | <code>string</code> | The synthetics global variable name to search for. Must only match one global variable. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -666,7 +666,7 @@ public string Name { get; set; }
 
 The synthetics global variable name to search for. Must only match one global variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `datadog_security_monitoring_default_rule`
 
-Refer to the Terraform Registory for docs: [`datadog_security_monitoring_default_rule`](https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule).
+Refer to the Terraform Registory for docs: [`datadog_security_monitoring_default_rule`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule).
 
 # `securityMonitoringDefaultRule` Submodule <a name="`securityMonitoringDefaultRule` Submodule" id="@cdktf/provider-datadog.securityMonitoringDefaultRule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_security_monitoring_default
 
 ### SecurityMonitoringDefaultRule <a name="SecurityMonitoringDefaultRule" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.NewSecurityMonitoringDefaultRule(scope Construct, id *string, config SecurityMonitoringDefaultRuleConfig) SecurityMonitoringDefaultRule
 ```
@@ -344,7 +344,7 @@ func ResetOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.SecurityMonitoringDefaultRule_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.SecurityMonitoringDefaultRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ securitymonitoringdefaultrule.SecurityMonitoringDefaultRule_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.SecurityMonitoringDefaultRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ securitymonitoringdefaultrule.SecurityMonitoringDefaultRule_IsTerraformResource(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -518,10 +518,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -710,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 &securitymonitoringdefaultrule.SecurityMonitoringDefaultRuleCase {
 	Notifications: *[]*string,
@@ -737,7 +737,7 @@ Notifications *[]*string
 
 Notification targets for each rule case.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
 
 ---
 
@@ -751,7 +751,7 @@ Status *string
 
 Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
 
 ---
 
@@ -760,11 +760,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 &securitymonitoringdefaultrule.SecurityMonitoringDefaultRuleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -774,7 +774,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoring
 	Enabled: interface{},
 	Filter: interface{},
 	Id: *string,
-	Options: github.com/cdktf/cdktf-provider-datadog-go/datadog/v6.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions,
+	Options: github.com/cdktf/cdktf-provider-datadog-go/datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions,
 }
 ```
 
@@ -783,7 +783,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoring
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -792,7 +792,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoring
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.case">Case</a></code> | <code>interface{}</code> | case block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Enable the rule. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options">Options</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | options block. |
 
 ---
@@ -810,10 +810,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -877,7 +877,7 @@ Case interface{}
 
 case block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
 
 ---
 
@@ -891,7 +891,7 @@ Enabled interface{}
 
 Enable the rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
 
 ---
 
@@ -905,7 +905,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -934,7 +934,7 @@ Options SecurityMonitoringDefaultRuleOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 &securitymonitoringdefaultrule.SecurityMonitoringDefaultRuleFilter {
 	Action: *string,
@@ -970,7 +970,7 @@ Action *string
 
 The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
 
 ---
 
@@ -984,7 +984,7 @@ Query *string
 
 Query for selecting logs to apply the filtering action.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 &securitymonitoringdefaultrule.SecurityMonitoringDefaultRuleOptions {
 	DecreaseCriticalityBasedOnEnv: interface{},
@@ -1020,7 +1020,7 @@ If true, signals in non-production environments have a lower severity than what 
 
 The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
 
 ---
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.NewSecurityMonitoringDefaultRuleCaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringDefaultRuleCaseList
 ```
@@ -1174,7 +1174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.NewSecurityMonitoringDefaultRuleCaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringDefaultRuleCaseOutputReference
 ```
@@ -1485,7 +1485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.NewSecurityMonitoringDefaultRuleFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringDefaultRuleFilterList
 ```
@@ -1628,7 +1628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.NewSecurityMonitoringDefaultRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringDefaultRuleFilterOutputReference
 ```
@@ -1939,7 +1939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/securitymonitoringdefaultrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringdefaultrule"
 
 securitymonitoringdefaultrule.NewSecurityMonitoringDefaultRuleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityMonitoringDefaultRuleOptionsOutputReference
 ```

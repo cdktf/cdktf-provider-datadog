@@ -1,6 +1,6 @@
 # `data_datadog_dashboard`
 
-Refer to the Terraform Registory for docs: [`data_datadog_dashboard`](https://www.terraform.io/docs/providers/datadog/d/dashboard).
+Refer to the Terraform Registory for docs: [`data_datadog_dashboard`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard).
 
 # `dataDatadogDashboard` Submodule <a name="`dataDatadogDashboard` Submodule" id="@cdktf/provider-datadog.dataDatadogDashboard"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_dashboard`](https://ww
 
 ### DataDatadogDashboard <a name="DataDatadogDashboard" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/dashboard datadog_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard datadog_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboard"
 
 datadatadogdashboard.NewDataDatadogDashboard(scope Construct, id *string, config DataDatadogDashboardConfig) DataDatadogDashboard
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadatadogdashboard.DataDatadogDashboard_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboard"
 
 datadatadogdashboard.DataDatadogDashboard_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datadatadogdashboard.DataDatadogDashboard_IsTerraformDataSource(x interface{}) *
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -566,11 +566,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboard"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboard"
 
 &datadatadogdashboard.DataDatadogDashboardConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -586,14 +586,14 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogdashboa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.name">Name</a></code> | <code>*string</code> | The dashboard name to search for. Must only match one dashboard. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard#id DataDatadogDashboard#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}. |
 
 ---
 
@@ -610,10 +610,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -677,7 +677,7 @@ Name *string
 
 The dashboard name to search for. Must only match one dashboard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard#name DataDatadogDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard#name DataDatadogDashboard#name}
 
 ---
 
@@ -689,7 +689,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/dashboard#id DataDatadogDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

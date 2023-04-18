@@ -1,6 +1,6 @@
 # `datadog_metric_metadata`
 
-Refer to the Terraform Registory for docs: [`datadog_metric_metadata`](https://www.terraform.io/docs/providers/datadog/r/metric_metadata).
+Refer to the Terraform Registory for docs: [`datadog_metric_metadata`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata).
 
 # `metricMetadata` Submodule <a name="`metricMetadata` Submodule" id="@cdktf/provider-datadog.metricMetadata"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_metric_metadata`](https://w
 
 ### MetricMetadata <a name="MetricMetadata" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata datadog_metric_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer"></a>
 
@@ -388,7 +388,7 @@ MetricMetadata.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -498,10 +498,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -744,7 +744,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new MetricMetadataConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -766,7 +766,7 @@ new MetricMetadataConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -774,7 +774,7 @@ new MetricMetadataConfig {
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric">Metric</a></code> | <code>string</code> | The name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.description">Description</a></code> | <code>string</code> | A description of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#id MetricMetadata#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit">PerUnit</a></code> | <code>string</code> | Per unit of the metric such as `second` in `bytes per second`. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName">ShortName</a></code> | <code>string</code> | A short name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval">StatsdInterval</a></code> | <code>double</code> | If applicable, statsd flush interval in seconds for the metric. |
@@ -796,10 +796,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -863,7 +863,7 @@ public string Metric { get; set; }
 
 The name of the metric.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#metric MetricMetadata#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
 
 ---
 
@@ -877,7 +877,7 @@ public string Description { get; set; }
 
 A description of the metric.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#description MetricMetadata#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#description MetricMetadata#description}
 
 ---
 
@@ -889,7 +889,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#id MetricMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#id MetricMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -906,7 +906,7 @@ public string PerUnit { get; set; }
 
 Per unit of the metric such as `second` in `bytes per second`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#per_unit MetricMetadata#per_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
 
 ---
 
@@ -920,7 +920,7 @@ public string ShortName { get; set; }
 
 A short name of the metric.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#short_name MetricMetadata#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
 
 ---
 
@@ -934,7 +934,7 @@ public double StatsdInterval { get; set; }
 
 If applicable, statsd flush interval in seconds for the metric.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
 
 ---
 
@@ -948,7 +948,7 @@ public string Type { get; set; }
 
 Metric type such as `gauge` or `rate`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#type MetricMetadata#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#type MetricMetadata#type}
 
 ---
 
@@ -962,7 +962,7 @@ public string Unit { get; set; }
 
 Primary unit of the metric such as `byte` or `operation`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/metric_metadata#unit MetricMetadata#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
 
 ---
 

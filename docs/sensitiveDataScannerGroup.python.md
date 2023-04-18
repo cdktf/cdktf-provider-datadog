@@ -1,6 +1,6 @@
 # `datadog_sensitive_data_scanner_group`
 
-Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_group`](https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group).
+Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_group`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group).
 
 # `sensitiveDataScannerGroup` Submodule <a name="`sensitiveDataScannerGroup` Submodule" id="@cdktf/provider-datadog.sensitiveDataScannerGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_grou
 
 ### SensitiveDataScannerGroup <a name="SensitiveDataScannerGroup" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer"></a>
 
@@ -19,7 +19,7 @@ sensitiveDataScannerGroup.SensitiveDataScannerGroup(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ sensitiveDataScannerGroup.SensitiveDataScannerGroup(
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +50,7 @@ sensitiveDataScannerGroup.SensitiveDataScannerGroup(
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the Datadog scanning group. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.productList">product_list</a></code> | <code>typing.List[str]</code> | List of products the scanning group applies. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the Datadog scanning group. |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
 
 ---
 
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
 
 ---
 
@@ -132,7 +132,7 @@ Whether or not the scanning group is enabled.
 
 If the group doesn't contain any rule or if all the rules in it are disabled, the group is force-disabled by our backend
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Name of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 List of products the scanning group applies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Description of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -426,7 +426,7 @@ def put_filter(
 
 Query to filter the events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
 
 ---
 
@@ -530,7 +530,7 @@ sensitiveDataScannerGroup.SensitiveDataScannerGroup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -636,10 +636,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -842,7 +842,7 @@ from cdktf_cdktf_provider_datadog import sensitive_data_scanner_group
 
 sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -862,7 +862,7 @@ sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -873,7 +873,7 @@ sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig(
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.name">name</a></code> | <code>str</code> | Name of the Datadog scanning group. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.productList">product_list</a></code> | <code>typing.List[str]</code> | List of products the scanning group applies. |
 | <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.description">description</a></code> | <code>str</code> | Description of the Datadog scanning group. |
-| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
+| <code><a href="#@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
 
 ---
 
@@ -890,10 +890,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -957,7 +957,7 @@ filter: SensitiveDataScannerGroupFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
 
 ---
 
@@ -973,7 +973,7 @@ Whether or not the scanning group is enabled.
 
 If the group doesn't contain any rule or if all the rules in it are disabled, the group is force-disabled by our backend
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
 
 ---
 
@@ -987,7 +987,7 @@ name: str
 
 Name of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
 
 ---
 
@@ -1001,7 +1001,7 @@ product_list: typing.List[str]
 
 List of products the scanning group applies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
 
 ---
 
@@ -1015,7 +1015,7 @@ description: str
 
 Description of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
 
 ---
 
@@ -1027,7 +1027,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1064,7 +1064,7 @@ query: str
 
 Query to filter the events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
 
 ---
 

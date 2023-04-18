@@ -1,6 +1,6 @@
 # `datadog_slo_correction`
 
-Refer to the Terraform Registory for docs: [`datadog_slo_correction`](https://www.terraform.io/docs/providers/datadog/r/slo_correction).
+Refer to the Terraform Registory for docs: [`datadog_slo_correction`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction).
 
 # `sloCorrection` Submodule <a name="`sloCorrection` Submodule" id="@cdktf/provider-datadog.sloCorrection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_slo_correction`](https://ww
 
 ### SloCorrection <a name="SloCorrection" id="@cdktf/provider-datadog.sloCorrection.SloCorrection"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction datadog_slo_correction}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction datadog_slo_correction}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer"></a>
 
@@ -19,7 +19,7 @@ sloCorrection.SloCorrection(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -42,7 +42,7 @@ sloCorrection.SloCorrection(
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -54,7 +54,7 @@ sloCorrection.SloCorrection(
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the correction being made. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`). |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.end">end</a></code> | <code>typing.Union[int, float]</code> | Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified. |
-| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#id SloCorrection#id}. |
+| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#id SloCorrection#id}. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.rrule">rrule</a></code> | <code>str</code> | Recurrence rules as defined in the iCalendar RFC 5545. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.timezone">timezone</a></code> | <code>str</code> | The timezone to display in the UI for the correction times (defaults to "UTC"). |
 
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sloCorrection.SloCorrection.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#category SloCorrection#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#category SloCorrection#category}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 ID of the SLO that this correction will be applied to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#slo_id SloCorrection#slo_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Starting time of the correction in epoch seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#start SloCorrection#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#start SloCorrection#start}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Description of the correction being made.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#description SloCorrection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#description SloCorrection#description}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#duration SloCorrection#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#duration SloCorrection#duration}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#end SloCorrection#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#end SloCorrection#end}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#id SloCorrection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#id SloCorrection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -199,7 +199,7 @@ Recurrence rules as defined in the iCalendar RFC 5545.
 
 Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#rrule SloCorrection#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The timezone to display in the UI for the correction times (defaults to "UTC").
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#timezone SloCorrection#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
 
 ---
 
@@ -575,7 +575,7 @@ sloCorrection.SloCorrection.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrection.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -687,10 +687,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sloCorrection.SloCorrection.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -953,7 +953,7 @@ from cdktf_cdktf_provider_datadog import slo_correction
 
 sloCorrection.SloCorrectionConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -976,7 +976,7 @@ sloCorrection.SloCorrectionConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -988,7 +988,7 @@ sloCorrection.SloCorrectionConfig(
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.description">description</a></code> | <code>str</code> | Description of the correction being made. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`). |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.end">end</a></code> | <code>typing.Union[int, float]</code> | Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified. |
-| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#id SloCorrection#id}. |
+| <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#id SloCorrection#id}. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.rrule">rrule</a></code> | <code>str</code> | Recurrence rules as defined in the iCalendar RFC 5545. |
 | <code><a href="#@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.timezone">timezone</a></code> | <code>str</code> | The timezone to display in the UI for the correction times (defaults to "UTC"). |
 
@@ -1007,10 +1007,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.sloCorrection.SloCorrectionConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1074,7 +1074,7 @@ category: str
 
 Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#category SloCorrection#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#category SloCorrection#category}
 
 ---
 
@@ -1088,7 +1088,7 @@ slo_id: str
 
 ID of the SLO that this correction will be applied to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#slo_id SloCorrection#slo_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
 
 ---
 
@@ -1102,7 +1102,7 @@ start: typing.Union[int, float]
 
 Starting time of the correction in epoch seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#start SloCorrection#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#start SloCorrection#start}
 
 ---
 
@@ -1116,7 +1116,7 @@ description: str
 
 Description of the correction being made.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#description SloCorrection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#description SloCorrection#description}
 
 ---
 
@@ -1130,7 +1130,7 @@ duration: typing.Union[int, float]
 
 Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#duration SloCorrection#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#duration SloCorrection#duration}
 
 ---
 
@@ -1144,7 +1144,7 @@ end: typing.Union[int, float]
 
 Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#end SloCorrection#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#end SloCorrection#end}
 
 ---
 
@@ -1156,7 +1156,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#id SloCorrection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#id SloCorrection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1175,7 +1175,7 @@ Recurrence rules as defined in the iCalendar RFC 5545.
 
 Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#rrule SloCorrection#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
 
 ---
 
@@ -1189,7 +1189,7 @@ timezone: str
 
 The timezone to display in the UI for the correction times (defaults to "UTC").
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/slo_correction#timezone SloCorrection#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
 
 ---
 

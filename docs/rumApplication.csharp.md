@@ -1,6 +1,6 @@
 # `datadog_rum_application`
 
-Refer to the Terraform Registory for docs: [`datadog_rum_application`](https://www.terraform.io/docs/providers/datadog/r/rum_application).
+Refer to the Terraform Registory for docs: [`datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/rum_application).
 
 # `rumApplication` Submodule <a name="`rumApplication` Submodule" id="@cdktf/provider-datadog.rumApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_rum_application`](https://w
 
 ### RumApplication <a name="RumApplication" id="@cdktf/provider-datadog.rumApplication.RumApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.rumApplication.RumApplication.Initializer"></a>
 
@@ -353,7 +353,7 @@ RumApplication.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplication.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -454,10 +454,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.rumApplication.RumApplication.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -610,7 +610,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new RumApplicationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -627,14 +627,14 @@ new RumApplicationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.name">Name</a></code> | <code>string</code> | The name of the RUM application. |
-| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#id RumApplication#id}. |
+| <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/rum_application#id RumApplication#id}. |
 | <code><a href="#@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.type">Type</a></code> | <code>string</code> | The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`. |
 
 ---
@@ -652,10 +652,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.rumApplication.RumApplicationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -719,7 +719,7 @@ public string Name { get; set; }
 
 The name of the RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#name RumApplication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/rum_application#name RumApplication#name}
 
 ---
 
@@ -731,7 +731,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#id RumApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/rum_application#id RumApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +748,7 @@ public string Type { get; set; }
 
 The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/rum_application#type RumApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/rum_application#type RumApplication#type}
 
 ---
 

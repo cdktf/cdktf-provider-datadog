@@ -1,6 +1,6 @@
 # `datadog_logs_metric`
 
-Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://www.terraform.io/docs/providers/datadog/r/logs_metric).
+Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric).
 
 # `logsMetric` Submodule <a name="`logsMetric` Submodule" id="@cdktf/provider-datadog.logsMetric"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://www.t
 
 ### LogsMetric <a name="LogsMetric" id="@cdktf/provider-datadog.logsMetric.LogsMetric"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric datadog_logs_metric}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric datadog_logs_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer"></a>
 
@@ -19,7 +19,7 @@ logsMetric.LogsMetric(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -38,7 +38,7 @@ logsMetric.LogsMetric(
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +48,7 @@ logsMetric.LogsMetric(
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricFilter">LogsMetricFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the log-based metric. This field can't be updated after creation. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.groupBy">group_by</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy">LogsMetricGroupBy</a>]]</code> | group_by block. |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#id LogsMetric#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#id LogsMetric#id}. |
 
 ---
 
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 compute block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#compute LogsMetric#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#compute LogsMetric#compute}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#filter LogsMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#filter LogsMetric#filter}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The name of the log-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#name LogsMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#name LogsMetric#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#group_by LogsMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#id LogsMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#id LogsMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -416,7 +416,7 @@ def put_compute(
 
 The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#aggregation_type LogsMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
 
 ---
 
@@ -428,7 +428,7 @@ Toggle to include/exclude percentiles for a distribution metric.
 
 Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#include_percentiles LogsMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
 
 ---
 
@@ -440,7 +440,7 @@ The path to the value the log-based metric will aggregate on (only used if the a
 
 This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#path LogsMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#path LogsMetric#path}
 
 ---
 
@@ -458,7 +458,7 @@ def put_filter(
 
 The search query - following the log search syntax.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#query LogsMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#query LogsMetric#query}
 
 ---
 
@@ -576,7 +576,7 @@ logsMetric.LogsMetric.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetric.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -680,10 +680,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsMetric.LogsMetric.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -891,7 +891,7 @@ aggregation_type: str
 
 The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#aggregation_type LogsMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
 
 ---
 
@@ -907,7 +907,7 @@ Toggle to include/exclude percentiles for a distribution metric.
 
 Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#include_percentiles LogsMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
 
 ---
 
@@ -923,7 +923,7 @@ The path to the value the log-based metric will aggregate on (only used if the a
 
 This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#path LogsMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#path LogsMetric#path}
 
 ---
 
@@ -936,7 +936,7 @@ from cdktf_cdktf_provider_datadog import logs_metric
 
 logsMetric.LogsMetricConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -955,7 +955,7 @@ logsMetric.LogsMetricConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -965,7 +965,7 @@ logsMetric.LogsMetricConfig(
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricFilter">LogsMetricFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.name">name</a></code> | <code>str</code> | The name of the log-based metric. This field can't be updated after creation. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.groupBy">group_by</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy">LogsMetricGroupBy</a>]]</code> | group_by block. |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#id LogsMetric#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#id LogsMetric#id}. |
 
 ---
 
@@ -982,10 +982,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1049,7 +1049,7 @@ compute: LogsMetricCompute
 
 compute block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#compute LogsMetric#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#compute LogsMetric#compute}
 
 ---
 
@@ -1063,7 +1063,7 @@ filter: LogsMetricFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#filter LogsMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#filter LogsMetric#filter}
 
 ---
 
@@ -1077,7 +1077,7 @@ name: str
 
 The name of the log-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#name LogsMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#name LogsMetric#name}
 
 ---
 
@@ -1091,7 +1091,7 @@ group_by: typing.Union[IResolvable, typing.List[LogsMetricGroupBy]]
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#group_by LogsMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
 
 ---
 
@@ -1103,7 +1103,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#id LogsMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#id LogsMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1140,7 @@ query: str
 
 The search query - following the log search syntax.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#query LogsMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#query LogsMetric#query}
 
 ---
 
@@ -1176,7 +1176,7 @@ path: str
 
 The path to the value the log-based metric will be aggregated over.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#path LogsMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#path LogsMetric#path}
 
 ---
 
@@ -1190,7 +1190,7 @@ tag_name: str
 
 Name of the tag that gets created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_metric#tag_name LogsMetric#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
 
 ---
 

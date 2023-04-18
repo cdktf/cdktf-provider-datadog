@@ -1,6 +1,6 @@
 # `datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://www.terraform.io/docs/providers/datadog/r/dashboard_list).
+Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list).
 
 # `dashboardList` Submodule <a name="`dashboardList` Submodule" id="@cdktf/provider-datadog.dashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://ww
 
 ### DashboardList <a name="DashboardList" id="@cdktf/provider-datadog.dashboardList.DashboardList"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardList.DashboardList.Initializer"></a>
 
@@ -366,7 +366,7 @@ DashboardList.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -466,10 +466,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -612,7 +612,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new DashboardListConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -629,7 +629,7 @@ new DashboardListConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -637,7 +637,7 @@ new DashboardListConfig {
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.name">Name</a></code> | <code>string</code> | The name of the Dashboard List. |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.dashItem">DashItem</a></code> | <code>object</code> | dash_item block. |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#id DashboardList#id}. |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#id DashboardList#id}. |
 
 ---
 
@@ -654,10 +654,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -721,7 +721,7 @@ public string Name { get; set; }
 
 The name of the Dashboard List.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#name DashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#name DashboardList#name}
 
 ---
 
@@ -735,7 +735,7 @@ public object DashItem { get; set; }
 
 dash_item block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_item DashboardList#dash_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
 
 ---
 
@@ -747,7 +747,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#id DashboardList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#id DashboardList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -786,7 +786,7 @@ public string DashId { get; set; }
 
 The ID of the dashboard to add.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#dash_id DashboardList#dash_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
 
 ---
 
@@ -800,7 +800,7 @@ public string Type { get; set; }
 
 The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/dashboard_list#type DashboardList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/dashboard_list#type DashboardList#type}
 
 ---
 

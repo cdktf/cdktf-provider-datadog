@@ -1,6 +1,6 @@
 # `datadog_role`
 
-Refer to the Terraform Registory for docs: [`datadog_role`](https://www.terraform.io/docs/providers/datadog/r/role).
+Refer to the Terraform Registory for docs: [`datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role).
 
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-datadog.role"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_role`](https://www.terrafor
 
 ### Role <a name="Role" id="@cdktf/provider-datadog.role.Role"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/role datadog_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role datadog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.role.Role.Initializer"></a>
 
@@ -373,7 +373,7 @@ Role.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.role.Role.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.Role.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.Role.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -476,10 +476,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.role.Role.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -652,7 +652,7 @@ using HashiCorp.Cdktf.Providers.Datadog;
 
 new RoleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -670,14 +670,14 @@ new RoleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.name">Name</a></code> | <code>string</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#id Role#id}. |
+| <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.permission">Permission</a></code> | <code>object</code> | permission block. |
 | <code><a href="#@cdktf/provider-datadog.role.RoleConfig.property.validate">Validate</a></code> | <code>object</code> | If set to `false`, skip the validation call done during plan. |
 
@@ -696,10 +696,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.role.RoleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -763,7 +763,7 @@ public string Name { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -775,7 +775,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -792,7 +792,7 @@ public object Permission { get; set; }
 
 permission block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#permission Role#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role#permission Role#permission}
 
 ---
 
@@ -806,7 +806,7 @@ public object Validate { get; set; }
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#validate Role#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role#validate Role#validate}
 
 ---
 
@@ -840,7 +840,7 @@ public string Id { get; set; }
 
 ID of the permission to assign.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/role#id Role#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/role#id Role#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

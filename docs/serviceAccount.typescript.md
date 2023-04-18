@@ -1,6 +1,6 @@
 # `datadog_service_account`
 
-Refer to the Terraform Registory for docs: [`datadog_service_account`](https://www.terraform.io/docs/providers/datadog/r/service_account).
+Refer to the Terraform Registory for docs: [`datadog_service_account`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account).
 
 # `serviceAccount` Submodule <a name="`serviceAccount` Submodule" id="@cdktf/provider-datadog.serviceAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_service_account`](https://w
 
 ### ServiceAccount <a name="ServiceAccount" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/service_account datadog_service_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account datadog_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.Initializer"></a>
 
@@ -367,7 +367,7 @@ serviceAccount.ServiceAccount.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.serviceAccount.ServiceAccount.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -663,7 +663,7 @@ const serviceAccountConfig: serviceAccount.ServiceAccountConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -671,7 +671,7 @@ const serviceAccountConfig: serviceAccount.ServiceAccountConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.email">email</a></code> | <code>string</code> | Email of the associated user. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the service account is disabled. |
-| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#id ServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.name">name</a></code> | <code>string</code> | Name for the service account. |
 | <code><a href="#@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.roles">roles</a></code> | <code>string[]</code> | A list a role IDs to assign to the service account. |
 
@@ -690,10 +690,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.serviceAccount.ServiceAccountConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -757,7 +757,7 @@ public readonly email: string;
 
 Email of the associated user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#email ServiceAccount#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account#email ServiceAccount#email}
 
 ---
 
@@ -771,7 +771,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the service account is disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#disabled ServiceAccount#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -783,7 +783,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#id ServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account#id ServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -800,7 +800,7 @@ public readonly name: string;
 
 Name for the service account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#name ServiceAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account#name ServiceAccount#name}
 
 ---
 
@@ -814,7 +814,7 @@ public readonly roles: string[];
 
 A list a role IDs to assign to the service account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/service_account#roles ServiceAccount#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/service_account#roles ServiceAccount#roles}
 
 ---
 

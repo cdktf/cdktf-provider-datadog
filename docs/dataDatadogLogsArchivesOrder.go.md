@@ -1,6 +1,6 @@
 # `data_datadog_logs_archives_order`
 
-Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](https://www.terraform.io/docs/providers/datadog/d/logs_archives_order).
+Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_archives_order).
 
 # `dataDatadogLogsArchivesOrder` Submodule <a name="`dataDatadogLogsArchivesOrder` Submodule" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](
 
 ### DataDatadogLogsArchivesOrder <a name="DataDatadogLogsArchivesOrder" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/logs_archives_order datadog_logs_archives_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_archives_order datadog_logs_archives_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsarchivesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.NewDataDatadogLogsArchivesOrder(scope Construct, id *string, config DataDatadogLogsArchivesOrderConfig) DataDatadogLogsArchivesOrder
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsarchivesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsarchivesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsarchivesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsarchivesorder"
 
 datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrder_IsTerraformDataSource(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -533,11 +533,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsarchivesorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsarchivesorder"
 
 &datadatadoglogsarchivesorder.DataDatadogLogsArchivesOrderConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -552,13 +552,13 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadoglogsarc
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/logs_archives_order#id DataDatadogLogsArchivesOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_archives_order#id DataDatadogLogsArchivesOrder#id}. |
 
 ---
 
@@ -575,10 +575,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/logs_archives_order#id DataDatadogLogsArchivesOrder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/logs_archives_order#id DataDatadogLogsArchivesOrder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

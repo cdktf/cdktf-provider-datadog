@@ -1,6 +1,6 @@
 # `data_datadog_api_key`
 
-Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://www.terraform.io/docs/providers/datadog/d/api_key).
+Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key).
 
 # `dataDatadogApiKey` Submodule <a name="`dataDatadogApiKey` Submodule" id="@cdktf/provider-datadog.dataDatadogApiKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://www.
 
 ### DataDatadogApiKey <a name="DataDatadogApiKey" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.NewDataDatadogApiKey(scope Construct, id *string, config DataDatadogApiKeyConfig) DataDatadogApiKey
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datadatadogapikey.DataDatadogApiKey_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -440,10 +440,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -562,11 +562,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapikey"
 
 &datadatadogapikey.DataDatadogApiKeyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -582,7 +582,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapikey"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,10 +606,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -673,7 +673,7 @@ Id *string
 
 Id for API Key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/api_key#id DataDatadogApiKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -690,7 +690,7 @@ Name *string
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/api_key#name DataDatadogApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
 
 ---
 
