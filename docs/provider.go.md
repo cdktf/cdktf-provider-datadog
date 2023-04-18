@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`datadog`](https://www.terraform.io/docs/providers/datadog).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-datadog.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

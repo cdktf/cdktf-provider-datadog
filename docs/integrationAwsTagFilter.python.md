@@ -1,3 +1,7 @@
+# `datadog_integration_aws_tag_filter`
+
+Refer to the Terraform Registory for docs: [`datadog_integration_aws_tag_filter`](https://www.terraform.io/docs/providers/datadog/r/integration_aws_tag_filter).
+
 # `integrationAwsTagFilter` Submodule <a name="`integrationAwsTagFilter` Submodule" id="@cdktf/provider-datadog.integrationAwsTagFilter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

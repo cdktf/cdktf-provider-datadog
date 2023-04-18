@@ -1,3 +1,7 @@
+# `datadog_monitor_json`
+
+Refer to the Terraform Registory for docs: [`datadog_monitor_json`](https://www.terraform.io/docs/providers/datadog/r/monitor_json).
+
 # `monitorJson` Submodule <a name="`monitorJson` Submodule" id="@cdktf/provider-datadog.monitorJson"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

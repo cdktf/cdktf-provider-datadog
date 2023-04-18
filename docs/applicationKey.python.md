@@ -1,3 +1,7 @@
+# `datadog_application_key`
+
+Refer to the Terraform Registory for docs: [`datadog_application_key`](https://www.terraform.io/docs/providers/datadog/r/application_key).
+
 # `applicationKey` Submodule <a name="`applicationKey` Submodule" id="@cdktf/provider-datadog.applicationKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

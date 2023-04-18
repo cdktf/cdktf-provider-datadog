@@ -1,3 +1,7 @@
+# `datadog_integration_aws`
+
+Refer to the Terraform Registory for docs: [`datadog_integration_aws`](https://www.terraform.io/docs/providers/datadog/r/integration_aws).
+
 # `integrationAws` Submodule <a name="`integrationAws` Submodule" id="@cdktf/provider-datadog.integrationAws"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

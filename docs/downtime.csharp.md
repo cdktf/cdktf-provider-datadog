@@ -1,3 +1,7 @@
+# `datadog_downtime`
+
+Refer to the Terraform Registory for docs: [`datadog_downtime`](https://www.terraform.io/docs/providers/datadog/r/downtime).
+
 # `downtime` Submodule <a name="`downtime` Submodule" id="@cdktf/provider-datadog.downtime"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

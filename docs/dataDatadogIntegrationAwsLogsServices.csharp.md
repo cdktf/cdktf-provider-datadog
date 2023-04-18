@@ -1,3 +1,7 @@
+# `data_datadog_integration_aws_logs_services`
+
+Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_logs_services`](https://www.terraform.io/docs/providers/datadog/d/integration_aws_logs_services).
+
 # `dataDatadogIntegrationAwsLogsServices` Submodule <a name="`dataDatadogIntegrationAwsLogsServices` Submodule" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

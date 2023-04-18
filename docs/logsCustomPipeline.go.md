@@ -1,3 +1,7 @@
+# `datadog_logs_custom_pipeline`
+
+Refer to the Terraform Registory for docs: [`datadog_logs_custom_pipeline`](https://www.terraform.io/docs/providers/datadog/r/logs_custom_pipeline).
+
 # `logsCustomPipeline` Submodule <a name="`logsCustomPipeline` Submodule" id="@cdktf/provider-datadog.logsCustomPipeline"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

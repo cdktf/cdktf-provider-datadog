@@ -1,3 +1,7 @@
+# `data_datadog_synthetics_test`
+
+Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](https://www.terraform.io/docs/providers/datadog/d/synthetics_test).
+
 # `dataDatadogSyntheticsTest` Submodule <a name="`dataDatadogSyntheticsTest` Submodule" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

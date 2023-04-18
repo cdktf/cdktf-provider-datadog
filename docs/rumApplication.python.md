@@ -1,3 +1,7 @@
+# `datadog_rum_application`
+
+Refer to the Terraform Registory for docs: [`datadog_rum_application`](https://www.terraform.io/docs/providers/datadog/r/rum_application).
+
 # `rumApplication` Submodule <a name="`rumApplication` Submodule" id="@cdktf/provider-datadog.rumApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

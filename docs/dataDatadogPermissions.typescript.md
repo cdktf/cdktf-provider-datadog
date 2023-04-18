@@ -1,3 +1,7 @@
+# `data_datadog_permissions`
+
+Refer to the Terraform Registory for docs: [`data_datadog_permissions`](https://www.terraform.io/docs/providers/datadog/d/permissions).
+
 # `dataDatadogPermissions` Submodule <a name="`dataDatadogPermissions` Submodule" id="@cdktf/provider-datadog.dataDatadogPermissions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

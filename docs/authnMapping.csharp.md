@@ -1,3 +1,7 @@
+# `datadog_authn_mapping`
+
+Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://www.terraform.io/docs/providers/datadog/r/authn_mapping).
+
 # `authnMapping` Submodule <a name="`authnMapping` Submodule" id="@cdktf/provider-datadog.authnMapping"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
