@@ -1,6 +1,6 @@
 # `datadog_user`
 
-Refer to the Terraform Registory for docs: [`datadog_user`](https://www.terraform.io/docs/providers/datadog/r/user).
+Refer to the Terraform Registory for docs: [`datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-datadog.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_user`](https://www.terrafor
 
 ### User <a name="User" id="@cdktf/provider-datadog.user.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.user.User.Initializer"></a>
 
@@ -374,7 +374,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.user.User.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.User.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.User.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.user.User.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -714,7 +714,7 @@ const userConfig: user.UserConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -722,7 +722,7 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.email">email</a></code> | <code>string</code> | Email address for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the user is disabled. |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}. |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.name">name</a></code> | <code>string</code> | Name for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.roles">roles</a></code> | <code>string[]</code> | A list a role IDs to assign to the user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.sendUserInvitation">sendUserInvitation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether an invitation email should be sent when the user is created. |
@@ -742,10 +742,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.user.UserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -809,7 +809,7 @@ public readonly email: string;
 
 Email address for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#email User#email}
 
 ---
 
@@ -823,7 +823,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the user is disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#disabled User#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#disabled User#disabled}
 
 ---
 
@@ -835,7 +835,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -852,7 +852,7 @@ public readonly name: string;
 
 Name for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#name User#name}
 
 ---
 
@@ -866,7 +866,7 @@ public readonly roles: string[];
 
 A list a role IDs to assign to the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#roles User#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#roles User#roles}
 
 ---
 
@@ -880,7 +880,7 @@ public readonly sendUserInvitation: boolean | IResolvable;
 
 Whether an invitation email should be sent when the user is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#send_user_invitation User#send_user_invitation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#send_user_invitation User#send_user_invitation}
 
 ---
 

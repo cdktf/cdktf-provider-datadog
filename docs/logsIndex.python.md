@@ -1,6 +1,6 @@
 # `datadog_logs_index`
 
-Refer to the Terraform Registory for docs: [`datadog_logs_index`](https://www.terraform.io/docs/providers/datadog/r/logs_index).
+Refer to the Terraform Registory for docs: [`datadog_logs_index`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index).
 
 # `logsIndex` Submodule <a name="`logsIndex` Submodule" id="@cdktf/provider-datadog.logsIndex"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_logs_index`](https://www.te
 
 ### LogsIndex <a name="LogsIndex" id="@cdktf/provider-datadog.logsIndex.LogsIndex"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_index datadog_logs_index}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index datadog_logs_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer"></a>
 
@@ -19,7 +19,7 @@ logsIndex.LogsIndex(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ logsIndex.LogsIndex(
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ logsIndex.LogsIndex(
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.dailyLimit">daily_limit</a></code> | <code>typing.Union[int, float]</code> | The number of log events you can send in this index per day before you are rate-limited. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.disableDailyLimit">disable_daily_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.exclusionFilter">exclusion_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>]]</code> | exclusion_filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.retentionDays">retention_days</a></code> | <code>typing.Union[int, float]</code> | The number of days before logs are deleted from this index. |
 
 ---
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsIndex.LogsIndex.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The name of the index.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
 
 ---
 
@@ -154,7 +154,7 @@ If true, sets the daily_limit value to null and the index is not limited on a da
 
 If false or omitted, the index's current daily_limit is maintained.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The number of days before logs are deleted from this index.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
 
 ---
 
@@ -456,7 +456,7 @@ def put_filter(
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -578,7 +578,7 @@ logsIndex.LogsIndex.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndex.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -686,10 +686,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsIndex.LogsIndex.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -912,7 +912,7 @@ from cdktf_cdktf_provider_datadog import logs_index
 
 logsIndex.LogsIndexConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -933,7 +933,7 @@ logsIndex.LogsIndexConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -944,7 +944,7 @@ logsIndex.LogsIndexConfig(
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.dailyLimit">daily_limit</a></code> | <code>typing.Union[int, float]</code> | The number of log events you can send in this index per day before you are rate-limited. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.disableDailyLimit">disable_daily_limit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.exclusionFilter">exclusion_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>]]</code> | exclusion_filter block. |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#id LogsIndex#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#id LogsIndex#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.retentionDays">retention_days</a></code> | <code>typing.Union[int, float]</code> | The number of days before logs are deleted from this index. |
 
 ---
@@ -962,10 +962,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsIndex.LogsIndexConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1029,7 +1029,7 @@ filter: LogsIndexFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1043,7 +1043,7 @@ name: str
 
 The name of the index.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1057,7 +1057,7 @@ daily_limit: typing.Union[int, float]
 
 The number of log events you can send in this index per day before you are rate-limited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#daily_limit LogsIndex#daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
 
 ---
 
@@ -1073,7 +1073,7 @@ If true, sets the daily_limit value to null and the index is not limited on a da
 
 If false or omitted, the index's current daily_limit is maintained.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
 
 ---
 
@@ -1087,7 +1087,7 @@ exclusion_filter: typing.Union[IResolvable, typing.List[LogsIndexExclusionFilter
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
 
 ---
 
@@ -1099,7 +1099,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#id LogsIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#id LogsIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1116,7 @@ retention_days: typing.Union[int, float]
 
 The number of days before logs are deleted from this index.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#retention_days LogsIndex#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
 
 ---
 
@@ -1154,7 +1154,7 @@ filter: typing.Union[IResolvable, typing.List[LogsIndexExclusionFilterFilter]]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#filter LogsIndex#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#filter LogsIndex#filter}
 
 ---
 
@@ -1168,7 +1168,7 @@ is_enabled: typing.Union[bool, IResolvable]
 
 A boolean stating if the exclusion is active or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#is_enabled LogsIndex#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
 
 ---
 
@@ -1182,7 +1182,7 @@ name: str
 
 The name of the exclusion filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#name LogsIndex#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#name LogsIndex#name}
 
 ---
 
@@ -1218,7 +1218,7 @@ query: str
 
 Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 
@@ -1232,7 +1232,7 @@ sample_rate: typing.Union[int, float]
 
 The fraction of logs excluded by the exclusion filter, when active.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#sample_rate LogsIndex#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
 
 ---
 
@@ -1266,7 +1266,7 @@ query: str
 
 Logs filter criteria. Only logs matching this filter criteria are considered for this index.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_index#query LogsIndex#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_index#query LogsIndex#query}
 
 ---
 

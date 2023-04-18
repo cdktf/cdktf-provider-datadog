@@ -1,6 +1,6 @@
 # `datadog_logs_archive`
 
-Refer to the Terraform Registory for docs: [`datadog_logs_archive`](https://www.terraform.io/docs/providers/datadog/r/logs_archive).
+Refer to the Terraform Registory for docs: [`datadog_logs_archive`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive).
 
 # `logsArchive` Submodule <a name="`logsArchive` Submodule" id="@cdktf/provider-datadog.logsArchive"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_logs_archive`](https://www.
 
 ### LogsArchive <a name="LogsArchive" id="@cdktf/provider-datadog.logsArchive.LogsArchive"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive datadog_logs_archive}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive datadog_logs_archive}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer"></a>
 
@@ -19,6 +19,7 @@ LogsArchive.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -44,7 +45,7 @@ LogsArchive.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -54,7 +55,7 @@ LogsArchive.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | The archive query/filter. Logs matching this query are included in the archive. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.azureArchive">azureArchive</a></code> | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveAzureArchive">LogsArchiveAzureArchive</a></code> | azure_archive block. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.gcsArchive">gcsArchive</a></code> | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveGcsArchive">LogsArchiveGcsArchive</a></code> | gcs_archive block. |
-| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#id LogsArchive#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#id LogsArchive#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.includeTags">includeTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | To store the tags in the archive, set the value `true`. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.rehydrationMaxScanSizeInGb">rehydrationMaxScanSizeInGb</a></code> | <code>java.lang.Number</code> | To limit the rehydration scan size for the archive, set a value in GB. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.rehydrationTags">rehydrationTags</a></code> | <code>java.util.List<java.lang.String></code> | An array of tags to add to rehydrated logs from an archive. |
@@ -88,7 +89,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsArchive.LogsArchive.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -128,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 Your archive name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#name LogsArchive#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#name LogsArchive#name}
 
 ---
 
@@ -138,7 +139,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The archive query/filter. Logs matching this query are included in the archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#query LogsArchive#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#query LogsArchive#query}
 
 ---
 
@@ -148,7 +149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 azure_archive block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#azure_archive LogsArchive#azure_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
 
 ---
 
@@ -158,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 gcs_archive block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#gcs_archive LogsArchive#gcs_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
 
 ---
 
@@ -166,7 +167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#id LogsArchive#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#id LogsArchive#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +182,7 @@ To store the tags in the archive, set the value `true`.
 
 If it is set to `false`, the tags will be dropped when the logs are sent to the archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#include_tags LogsArchive#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
 
 ---
 
@@ -191,7 +192,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 To limit the rehydration scan size for the archive, set a value in GB.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
 
 ---
 
@@ -201,7 +202,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 An array of tags to add to rehydrated logs from an archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
 
 ---
 
@@ -211,7 +212,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 s3_archive block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#s3_archive LogsArchive#s3_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
 
 ---
 
@@ -592,7 +593,7 @@ LogsArchive.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchive.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -704,10 +705,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsArchive.LogsArchive.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -999,7 +1000,7 @@ public java.lang.String getClientId();
 
 Your client id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#client_id LogsArchive#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
 
 ---
 
@@ -1013,7 +1014,7 @@ public java.lang.String getContainer();
 
 The container where the archive is stored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#container LogsArchive#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#container LogsArchive#container}
 
 ---
 
@@ -1027,7 +1028,7 @@ public java.lang.String getStorageAccount();
 
 The associated storage account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#storage_account LogsArchive#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
 
 ---
 
@@ -1041,7 +1042,7 @@ public java.lang.String getTenantId();
 
 Your tenant id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#tenant_id LogsArchive#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
 
 ---
 
@@ -1055,7 +1056,7 @@ public java.lang.String getPath();
 
 The path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -1070,6 +1071,7 @@ LogsArchiveConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1095,7 +1097,7 @@ LogsArchiveConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1105,7 +1107,7 @@ LogsArchiveConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.query">query</a></code> | <code>java.lang.String</code> | The archive query/filter. Logs matching this query are included in the archive. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.azureArchive">azureArchive</a></code> | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveAzureArchive">LogsArchiveAzureArchive</a></code> | azure_archive block. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.gcsArchive">gcsArchive</a></code> | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveGcsArchive">LogsArchiveGcsArchive</a></code> | gcs_archive block. |
-| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#id LogsArchive#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#id LogsArchive#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.includeTags">includeTags</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | To store the tags in the archive, set the value `true`. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.rehydrationMaxScanSizeInGb">rehydrationMaxScanSizeInGb</a></code> | <code>java.lang.Number</code> | To limit the rehydration scan size for the archive, set a value in GB. |
 | <code><a href="#@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.rehydrationTags">rehydrationTags</a></code> | <code>java.util.List<java.lang.String></code> | An array of tags to add to rehydrated logs from an archive. |
@@ -1126,10 +1128,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.logsArchive.LogsArchiveConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1193,7 +1195,7 @@ public java.lang.String getName();
 
 Your archive name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#name LogsArchive#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#name LogsArchive#name}
 
 ---
 
@@ -1207,7 +1209,7 @@ public java.lang.String getQuery();
 
 The archive query/filter. Logs matching this query are included in the archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#query LogsArchive#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#query LogsArchive#query}
 
 ---
 
@@ -1221,7 +1223,7 @@ public LogsArchiveAzureArchive getAzureArchive();
 
 azure_archive block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#azure_archive LogsArchive#azure_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
 
 ---
 
@@ -1235,7 +1237,7 @@ public LogsArchiveGcsArchive getGcsArchive();
 
 gcs_archive block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#gcs_archive LogsArchive#gcs_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
 
 ---
 
@@ -1247,7 +1249,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#id LogsArchive#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#id LogsArchive#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1268,7 @@ To store the tags in the archive, set the value `true`.
 
 If it is set to `false`, the tags will be dropped when the logs are sent to the archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#include_tags LogsArchive#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
 
 ---
 
@@ -1280,7 +1282,7 @@ public java.lang.Number getRehydrationMaxScanSizeInGb();
 
 To limit the rehydration scan size for the archive, set a value in GB.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
 
 ---
 
@@ -1294,7 +1296,7 @@ public java.util.List<java.lang.String> getRehydrationTags();
 
 An array of tags to add to rehydrated logs from an archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
 
 ---
 
@@ -1308,7 +1310,7 @@ public LogsArchiveS3Archive getS3Archive();
 
 s3_archive block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#s3_archive LogsArchive#s3_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
 
 ---
 
@@ -1348,7 +1350,7 @@ public java.lang.String getBucket();
 
 Name of your GCS bucket.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
@@ -1362,7 +1364,7 @@ public java.lang.String getClientEmail();
 
 Your client email.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#client_email LogsArchive#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
 
 ---
 
@@ -1376,7 +1378,7 @@ public java.lang.String getProjectId();
 
 Your project id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#project_id LogsArchive#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
 
 ---
 
@@ -1390,7 +1392,7 @@ public java.lang.String getPath();
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 
@@ -1430,7 +1432,7 @@ public java.lang.String getAccountId();
 
 Your AWS account id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#account_id LogsArchive#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
 
 ---
 
@@ -1444,7 +1446,7 @@ public java.lang.String getBucket();
 
 Name of your s3 bucket.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#bucket LogsArchive#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
 
 ---
 
@@ -1458,7 +1460,7 @@ public java.lang.String getRoleName();
 
 Your AWS role name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#role_name LogsArchive#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
 
 ---
 
@@ -1472,7 +1474,7 @@ public java.lang.String getPath();
 
 Path where the archive is stored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/logs_archive#path LogsArchive#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/logs_archive#path LogsArchive#path}
 
 ---
 

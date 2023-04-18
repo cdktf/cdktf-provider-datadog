@@ -1,6 +1,6 @@
 # `datadog_user`
 
-Refer to the Terraform Registory for docs: [`datadog_user`](https://www.terraform.io/docs/providers/datadog/r/user).
+Refer to the Terraform Registory for docs: [`datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-datadog.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_user`](https://www.terrafor
 
 ### User <a name="User" id="@cdktf/provider-datadog.user.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.user.User.Initializer"></a>
 
@@ -19,7 +19,7 @@ user.User(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ user.User(
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +47,7 @@ user.User(
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.email">email</a></code> | <code>str</code> | Email address for user. |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the user is disabled. |
-| <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}. |
+| <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for user. |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | A list a role IDs to assign to the user. |
 | <code><a href="#@cdktf/provider-datadog.user.User.Initializer.parameter.sendUserInvitation">send_user_invitation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether an invitation email should be sent when the user is created. |
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.user.User.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Email address for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#email User#email}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Whether the user is disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#disabled User#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#disabled User#disabled}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#name User#name}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 A list a role IDs to assign to the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#roles User#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#roles User#roles}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 Whether an invitation email should be sent when the user is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#send_user_invitation User#send_user_invitation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#send_user_invitation User#send_user_invitation}
 
 ---
 
@@ -530,7 +530,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.user.User.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.User.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.User.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -638,10 +638,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.user.User.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -864,7 +864,7 @@ from cdktf_cdktf_provider_datadog import user
 
 user.UserConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -884,7 +884,7 @@ user.UserConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -892,7 +892,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.email">email</a></code> | <code>str</code> | Email address for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the user is disabled. |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}. |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.name">name</a></code> | <code>str</code> | Name for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | A list a role IDs to assign to the user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.sendUserInvitation">send_user_invitation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether an invitation email should be sent when the user is created. |
@@ -912,10 +912,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.user.UserConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -979,7 +979,7 @@ email: str
 
 Email address for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#email User#email}
 
 ---
 
@@ -993,7 +993,7 @@ disabled: typing.Union[bool, IResolvable]
 
 Whether the user is disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#disabled User#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#disabled User#disabled}
 
 ---
 
@@ -1005,7 +1005,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ name: str
 
 Name for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1036,7 +1036,7 @@ roles: typing.List[str]
 
 A list a role IDs to assign to the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#roles User#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#roles User#roles}
 
 ---
 
@@ -1050,7 +1050,7 @@ send_user_invitation: typing.Union[bool, IResolvable]
 
 Whether an invitation email should be sent when the user is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#send_user_invitation User#send_user_invitation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#send_user_invitation User#send_user_invitation}
 
 ---
 

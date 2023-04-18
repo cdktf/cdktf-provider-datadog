@@ -1,6 +1,6 @@
 # `datadog_authn_mapping`
 
-Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://www.terraform.io/docs/providers/datadog/r/authn_mapping).
+Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping).
 
 # `authnMapping` Submodule <a name="`authnMapping` Submodule" id="@cdktf/provider-datadog.authnMapping"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://www
 
 ### AuthnMapping <a name="AuthnMapping" id="@cdktf/provider-datadog.authnMapping.AuthnMapping"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping datadog_authn_mapping}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping datadog_authn_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer"></a>
 
@@ -346,7 +346,7 @@ authnmapping.AuthnMapping_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -614,7 +614,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/authnmapping"
 
 &authnmapping.AuthnMappingConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -632,7 +632,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/authnmapping"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -641,7 +641,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/authnmapping"
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.key">Key</a></code> | <code>*string</code> | Identity provider key. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">Role</a></code> | <code>*string</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.value">Value</a></code> | <code>*string</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
 
 ---
 
@@ -658,10 +658,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -725,7 +725,7 @@ Key *string
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping#key AuthnMapping#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -739,7 +739,7 @@ Role *string
 
 The ID of a role to attach to all users with the corresponding key and value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#role AuthnMapping#role}
 
 ---
 
@@ -753,7 +753,7 @@ Value *string
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -765,7 +765,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

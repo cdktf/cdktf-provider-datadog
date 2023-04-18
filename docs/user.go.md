@@ -1,6 +1,6 @@
 # `datadog_user`
 
-Refer to the Terraform Registory for docs: [`datadog_user`](https://www.terraform.io/docs/providers/datadog/r/user).
+Refer to the Terraform Registory for docs: [`datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-datadog.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_user`](https://www.terrafor
 
 ### User <a name="User" id="@cdktf/provider-datadog.user.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/r/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.user.User.Initializer"></a>
 
@@ -374,7 +374,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-datadog.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.User.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.User.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.User.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.user.User.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/user"
 
 &user.UserConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/user"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -736,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/user"
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.email">Email</a></code> | <code>*string</code> | Email address for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Whether the user is disabled. |
-| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}. |
+| <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.name">Name</a></code> | <code>*string</code> | Name for user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | A list a role IDs to assign to the user. |
 | <code><a href="#@cdktf/provider-datadog.user.UserConfig.property.sendUserInvitation">SendUserInvitation</a></code> | <code>interface{}</code> | Whether an invitation email should be sent when the user is created. |
@@ -756,10 +756,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.user.UserConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -823,7 +823,7 @@ Email *string
 
 Email address for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#email User#email}
 
 ---
 
@@ -837,7 +837,7 @@ Disabled interface{}
 
 Whether the user is disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#disabled User#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#disabled User#disabled}
 
 ---
 
@@ -849,7 +849,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -866,7 +866,7 @@ Name *string
 
 Name for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#name User#name}
 
 ---
 
@@ -880,7 +880,7 @@ Roles *[]*string
 
 A list a role IDs to assign to the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#roles User#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#roles User#roles}
 
 ---
 
@@ -894,7 +894,7 @@ SendUserInvitation interface{}
 
 Whether an invitation email should be sent when the user is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/r/user#send_user_invitation User#send_user_invitation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/user#send_user_invitation User#send_user_invitation}
 
 ---
 

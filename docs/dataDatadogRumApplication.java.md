@@ -1,6 +1,6 @@
 # `data_datadog_rum_application`
 
-Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](https://www.terraform.io/docs/providers/datadog/d/rum_application).
+Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application).
 
 # `dataDatadogRumApplication` Submodule <a name="`dataDatadogRumApplication` Submodule" id="@cdktf/provider-datadog.dataDatadogRumApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](http
 
 ### DataDatadogRumApplication <a name="DataDatadogRumApplication" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataDatadogRumApplication.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,7 +38,7 @@ DataDatadogRumApplication.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the RUM application. Cannot be used with name and type filters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#id DataDatadogRumApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -128,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#name_filter DataDatadogRumApplication#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
 
 ---
 
@@ -138,7 +139,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datad
 
 The type used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#type_filter DataDatadogRumApplication#type_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
 
 ---
 
@@ -451,7 +452,7 @@ DataDatadogRumApplication.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -543,10 +544,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -711,6 +712,7 @@ DataDatadogRumApplicationConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -729,7 +731,7 @@ DataDatadogRumApplicationConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -754,10 +756,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -821,7 +823,7 @@ public java.lang.String getId();
 
 ID of the RUM application. Cannot be used with name and type filters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#id DataDatadogRumApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +840,7 @@ public java.lang.String getNameFilter();
 
 The name used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#name_filter DataDatadogRumApplication#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
 
 ---
 
@@ -852,7 +854,7 @@ public java.lang.String getTypeFilter();
 
 The type used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#type_filter DataDatadogRumApplication#type_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
 
 ---
 

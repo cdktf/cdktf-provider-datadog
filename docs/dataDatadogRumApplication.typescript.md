@@ -1,6 +1,6 @@
 # `data_datadog_rum_application`
 
-Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](https://www.terraform.io/docs/providers/datadog/d/rum_application).
+Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application).
 
 # `dataDatadogRumApplication` Submodule <a name="`dataDatadogRumApplication` Submodule" id="@cdktf/provider-datadog.dataDatadogRumApplication"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](http
 
 ### DataDatadogRumApplication <a name="DataDatadogRumApplication" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer"></a>
 
@@ -359,7 +359,7 @@ dataDatadogRumApplication.DataDatadogRumApplication.isTerraformDataSource(x: any
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -451,10 +451,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -623,7 +623,7 @@ const dataDatadogRumApplicationConfig: dataDatadogRumApplication.DataDatadogRumA
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -648,10 +648,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -715,7 +715,7 @@ public readonly id: string;
 
 ID of the RUM application. Cannot be used with name and type filters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#id DataDatadogRumApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -732,7 +732,7 @@ public readonly nameFilter: string;
 
 The name used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#name_filter DataDatadogRumApplication#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
 
 ---
 
@@ -746,7 +746,7 @@ public readonly typeFilter: string;
 
 The type used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/rum_application#type_filter DataDatadogRumApplication#type_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
 
 ---
 

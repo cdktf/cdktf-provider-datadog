@@ -1,3 +1,3 @@
 # `data_datadog_api_key`
 
-Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://www.terraform.io/docs/providers/datadog/d/api_key).
+Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key).

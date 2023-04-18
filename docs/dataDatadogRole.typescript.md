@@ -1,6 +1,6 @@
 # `data_datadog_role`
 
-Refer to the Terraform Registory for docs: [`data_datadog_role`](https://www.terraform.io/docs/providers/datadog/d/role).
+Refer to the Terraform Registory for docs: [`data_datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role).
 
 # `dataDatadogRole` Submodule <a name="`dataDatadogRole` Submodule" id="@cdktf/provider-datadog.dataDatadogRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_role`](https://www.ter
 
 ### DataDatadogRole <a name="DataDatadogRole" id="@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/datadog/d/role datadog_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role datadog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataDatadogRole.DataDatadogRole.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -576,14 +576,14 @@ const dataDatadogRoleConfig: dataDatadogRole.DataDatadogRoleConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.filter">filter</a></code> | <code>string</code> | A string on which to filter the roles. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/role#id DataDatadogRole#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#id DataDatadogRole#id}. |
 
 ---
 
@@ -600,10 +600,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -667,7 +667,7 @@ public readonly filter: string;
 
 A string on which to filter the roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/role#filter DataDatadogRole#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#filter DataDatadogRole#filter}
 
 ---
 
@@ -679,7 +679,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/datadog/d/role#id DataDatadogRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#id DataDatadogRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
