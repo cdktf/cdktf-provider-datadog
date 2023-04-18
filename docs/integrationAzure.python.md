@@ -1,3 +1,7 @@
+# `datadog_integration_azure`
+
+Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://www.terraform.io/docs/providers/datadog/r/integration_azure).
+
 # `integrationAzure` Submodule <a name="`integrationAzure` Submodule" id="@cdktf/provider-datadog.integrationAzure"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

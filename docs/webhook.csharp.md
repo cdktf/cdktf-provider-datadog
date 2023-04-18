@@ -1,3 +1,7 @@
+# `datadog_webhook`
+
+Refer to the Terraform Registory for docs: [`datadog_webhook`](https://www.terraform.io/docs/providers/datadog/r/webhook).
+
 # `webhook` Submodule <a name="`webhook` Submodule" id="@cdktf/provider-datadog.webhook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

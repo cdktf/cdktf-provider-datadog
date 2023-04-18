@@ -1,3 +1,7 @@
+# `datadog_integration_gcp`
+
+Refer to the Terraform Registory for docs: [`datadog_integration_gcp`](https://www.terraform.io/docs/providers/datadog/r/integration_gcp).
+
 # `integrationGcp` Submodule <a name="`integrationGcp` Submodule" id="@cdktf/provider-datadog.integrationGcp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

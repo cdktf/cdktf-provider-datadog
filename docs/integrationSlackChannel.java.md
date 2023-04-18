@@ -1,3 +1,7 @@
+# `datadog_integration_slack_channel`
+
+Refer to the Terraform Registory for docs: [`datadog_integration_slack_channel`](https://www.terraform.io/docs/providers/datadog/r/integration_slack_channel).
+
 # `integrationSlackChannel` Submodule <a name="`integrationSlackChannel` Submodule" id="@cdktf/provider-datadog.integrationSlackChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

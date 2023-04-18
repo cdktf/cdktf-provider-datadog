@@ -1,3 +1,7 @@
+# `data_datadog_dashboard_list`
+
+Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://www.terraform.io/docs/providers/datadog/d/dashboard_list).
+
 # `dataDatadogDashboardList` Submodule <a name="`dataDatadogDashboardList` Submodule" id="@cdktf/provider-datadog.dataDatadogDashboardList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

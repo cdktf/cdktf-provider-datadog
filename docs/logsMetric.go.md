@@ -1,3 +1,7 @@
+# `datadog_logs_metric`
+
+Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://www.terraform.io/docs/providers/datadog/r/logs_metric).
+
 # `logsMetric` Submodule <a name="`logsMetric` Submodule" id="@cdktf/provider-datadog.logsMetric"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

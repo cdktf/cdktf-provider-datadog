@@ -1,3 +1,7 @@
+# `data_datadog_monitor`
+
+Refer to the Terraform Registory for docs: [`data_datadog_monitor`](https://www.terraform.io/docs/providers/datadog/d/monitor).
+
 # `dataDatadogMonitor` Submodule <a name="`dataDatadogMonitor` Submodule" id="@cdktf/provider-datadog.dataDatadogMonitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
