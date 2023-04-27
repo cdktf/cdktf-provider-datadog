@@ -1,6 +1,6 @@
 # `data_datadog_api_key`
 
-Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key).
+Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/api_key).
 
 # `dataDatadogApiKey` Submodule <a name="`dataDatadogApiKey` Submodule" id="@cdktf/provider-datadog.dataDatadogApiKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://regi
 
 ### DataDatadogApiKey <a name="DataDatadogApiKey" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer"></a>
 
@@ -41,7 +41,7 @@ dataDatadogApiKey.DataDatadogApiKey(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Id for API Key. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | The ID of this resource. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for API Key. |
 
 ---
@@ -110,9 +110,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Id for API Key.
+The ID of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
 
 ---
 
@@ -698,7 +698,7 @@ dataDatadogApiKey.DataDatadogApiKeyConfig(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.id">id</a></code> | <code>str</code> | Id for API Key. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.id">id</a></code> | <code>str</code> | The ID of this resource. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogApiKey.DataDatadogApiKeyConfig.property.name">name</a></code> | <code>str</code> | Name for API Key. |
 
 ---
@@ -781,9 +781,9 @@ id: str
 
 - *Type:* str
 
-Id for API Key.
+The ID of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -800,7 +800,7 @@ name: str
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
 
 ---
 

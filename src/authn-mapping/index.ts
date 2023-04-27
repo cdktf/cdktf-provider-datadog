@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping
+// https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AuthnMappingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#id AuthnMapping#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping#id AuthnMapping#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,25 +17,25 @@ export interface AuthnMappingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identity provider key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#key AuthnMapping#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping#key AuthnMapping#key}
   */
   readonly key: string;
   /**
   * The ID of a role to attach to all users with the corresponding key and value.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#role AuthnMapping#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping#role AuthnMapping#role}
   */
   readonly role: string;
   /**
   * Identity provider value.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping#value AuthnMapping#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping#value AuthnMapping#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping datadog_authn_mapping}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping datadog_authn_mapping}
 */
 export class AuthnMapping extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class AuthnMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/authn_mapping datadog_authn_mapping} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/authn_mapping datadog_authn_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class AuthnMapping extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_authn_mapping',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.23.0',
+        providerVersion: '3.24.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

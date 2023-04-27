@@ -1,6 +1,6 @@
 # `datadog_api_key`
 
-Refer to the Terraform Registory for docs: [`datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key).
+Refer to the Terraform Registory for docs: [`datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key).
 
 # `apiKey` Submodule <a name="`apiKey` Submodule" id="@cdktf/provider-datadog.apiKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_api_key`](https://registry.
 
 ### ApiKey <a name="ApiKey" id="@cdktf/provider-datadog.apiKey.ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.NewApiKey(scope Construct, id *string, config ApiKeyConfig) ApiKey
 ```
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -258,12 +257,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.apiKey.ApiKey.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -277,7 +270,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.apiKey.ApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.apiKey.ApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +316,7 @@ apikey.ApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.apiKey.ApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -352,10 +345,9 @@ apikey.ApiKey_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -502,6 +494,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.apiKey.ApiKey.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-datadog.apiKey.ApiKey.property.key"></a>
 
 ```go
@@ -512,30 +514,10 @@ func Key() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.apiKey.ApiKey.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput"></a>
 
 ```go
 func NameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.apiKey.ApiKey.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -577,7 +559,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.apiKey.ApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 &apikey.ApiKeyConfig {
 	Connection: interface{},
@@ -588,7 +570,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Id: *string,
 }
 ```
 
@@ -604,7 +585,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/apikey"
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.name">Name</a></code> | <code>*string</code> | Name for API Key. |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#id ApiKey#id}. |
 
 ---
 
@@ -688,22 +668,7 @@ Name *string
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#name ApiKey#name}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#id ApiKey#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key#name ApiKey#name}
 
 ---
 

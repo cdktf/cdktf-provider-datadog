@@ -1,6 +1,6 @@
 # `datadog_api_key`
 
-Refer to the Terraform Registory for docs: [`datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key).
+Refer to the Terraform Registory for docs: [`datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key).
 
 # `apiKey` Submodule <a name="`apiKey` Submodule" id="@cdktf/provider-datadog.apiKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_api_key`](https://registry.
 
 ### ApiKey <a name="ApiKey" id="@cdktf/provider-datadog.apiKey.ApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key datadog_api_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key datadog_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer"></a>
 
@@ -25,8 +25,7 @@ apiKey.ApiKey(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  name: str
 )
 ```
 
@@ -42,7 +41,6 @@ apiKey.ApiKey(
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for API Key. |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#id ApiKey#id}. |
 
 ---
 
@@ -112,18 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#name ApiKey#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#id ApiKey#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key#name ApiKey#name}
 
 ---
 
@@ -147,7 +134,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -360,12 +346,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.apiKey.ApiKey.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -460,10 +440,9 @@ apiKey.ApiKey.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKey.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -610,6 +589,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.apiKey.ApiKey.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-datadog.apiKey.ApiKey.property.key"></a>
 
 ```python
@@ -620,30 +609,10 @@ key: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.apiKey.ApiKey.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-datadog.apiKey.ApiKey.property.nameInput"></a>
 
 ```python
 name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.apiKey.ApiKey.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -695,8 +664,7 @@ apiKey.ApiKeyConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  name: str
 )
 ```
 
@@ -712,7 +680,6 @@ apiKey.ApiKeyConfig(
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.name">name</a></code> | <code>str</code> | Name for API Key. |
-| <code><a href="#@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#id ApiKey#id}. |
 
 ---
 
@@ -796,22 +763,7 @@ name: str
 
 Name for API Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#name ApiKey#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.apiKey.ApiKeyConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/resources/api_key#id ApiKey#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/api_key#name ApiKey#name}
 
 ---
 

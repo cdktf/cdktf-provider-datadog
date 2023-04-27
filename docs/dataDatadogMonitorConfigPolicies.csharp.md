@@ -1,6 +1,6 @@
 # `data_datadog_monitor_config_policies`
 
-Refer to the Terraform Registory for docs: [`data_datadog_monitor_config_policies`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitor_config_policies).
+Refer to the Terraform Registory for docs: [`data_datadog_monitor_config_policies`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/monitor_config_policies).
 
 # `dataDatadogMonitorConfigPolicies` Submodule <a name="`dataDatadogMonitorConfigPolicies` Submodule" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_monitor_config_policie
 
 ### DataDatadogMonitorConfigPolicies <a name="DataDatadogMonitorConfigPolicies" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/monitor_config_policies datadog_monitor_config_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPolicies.Initializer"></a>
 
@@ -558,7 +558,7 @@ new DataDatadogMonitorConfigPoliciesConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies.DataDatadogMonitorConfigPoliciesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/monitor_config_policies#id DataDatadogMonitorConfigPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
