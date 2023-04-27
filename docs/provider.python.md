@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`datadog`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs).
+Refer to the Terraform Registory for docs: [`datadog`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-datadog.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog`](https://registry.terrafor
 
 ### DatadogProvider <a name="DatadogProvider" id="@cdktf/provider-datadog.provider.DatadogProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs datadog}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs datadog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer"></a>
 
@@ -24,10 +24,10 @@ provider.DatadogProvider(
   app_key: str = None,
   http_client_retry_backoff_base: typing.Union[int, float] = None,
   http_client_retry_backoff_multiplier: typing.Union[int, float] = None,
-  http_client_retry_enabled: typing.Union[bool, IResolvable] = None,
+  http_client_retry_enabled: str = None,
   http_client_retry_max_retries: typing.Union[int, float] = None,
   http_client_retry_timeout: typing.Union[int, float] = None,
-  validate: typing.Union[bool, IResolvable] = None
+  validate: str = None
 )
 ```
 
@@ -41,10 +41,10 @@ provider.DatadogProvider(
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.appKey">app_key</a></code> | <code>str</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryBackoffBase">http_client_retry_backoff_base</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry back off base. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryBackoffMultiplier">http_client_retry_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry back off multiplier. Defaults to 2. |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>str</code> | Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryMaxRetries">http_client_retry_max_retries</a></code> | <code>typing.Union[int, float]</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryTimeout">http_client_retry_timeout</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables validation of the provided API and APP keys during provider initialization. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.validate">validate</a></code> | <code>str</code> | Enables validation of the provided API and APP keys during provider initialization. |
 
 ---
 
@@ -72,7 +72,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#alias DatadogProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#alias DatadogProvider#alias}
 
 ---
 
@@ -82,7 +82,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#api_key DatadogProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#api_key DatadogProvider#api_key}
 
 ---
 
@@ -94,7 +94,7 @@ The API URL.
 
 This can also be set via the DD_HOST environment variable. Note that this URL must not end with the `/api/` path. For example, `https://api.datadoghq.com/` is a correct value, while `https://api.datadoghq.com/api/` is not. And if you're working with "EU" version of Datadog, use `https://api.datadoghq.eu/`. Other Datadog region examples: `https://api.us5.datadoghq.com/`, `https://api.us3.datadoghq.com/` and `https://api.ddog-gov.com/`. See https://docs.datadoghq.com/getting_started/site/ for all available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#api_url DatadogProvider#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#api_url DatadogProvider#api_url}
 
 ---
 
@@ -104,7 +104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#app_key DatadogProvider#app_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#app_key DatadogProvider#app_key}
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request retry back off base. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
 
 ---
 
@@ -124,17 +124,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request retry back off multiplier. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
 
 ---
 
 ##### `http_client_retry_enabled`<sup>Optional</sup> <a name="http_client_retry_enabled" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.httpClientRetryEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
-Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
+Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request maximum retry number. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 
@@ -154,19 +154,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The HTTP request retry timeout period. Defaults to 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
 
 ---
 
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.provider.DatadogProvider.Initializer.parameter.validate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 Enables validation of the provided API and APP keys during provider initialization.
 
-Default is true. When false, api_key and app_key won't be checked.
+Valid values are [`true`, `false`]. Default is true. When false, api_key and app_key won't be checked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#validate DatadogProvider#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#validate DatadogProvider#validate}
 
 ---
 
@@ -417,19 +417,19 @@ provider.DatadogProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKeyInput">app_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBaseInput">http_client_retry_backoff_base_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplierInput">http_client_retry_backoff_multiplier_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput">http_client_retry_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput">http_client_retry_enabled_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetriesInput">http_client_retry_max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeoutInput">http_client_retry_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput">validate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput">validate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.apiUrl">api_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.appKey">app_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffBase">http_client_retry_backoff_base</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryBackoffMultiplier">http_client_retry_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryMaxRetries">http_client_retry_max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryTimeout">http_client_retry_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProvider.property.validate">validate</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -588,10 +588,10 @@ http_client_retry_backoff_multiplier_input: typing.Union[int, float]
 ##### `http_client_retry_enabled_input`<sup>Optional</sup> <a name="http_client_retry_enabled_input" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabledInput"></a>
 
 ```python
-http_client_retry_enabled_input: typing.Union[bool, IResolvable]
+http_client_retry_enabled_input: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -618,10 +618,10 @@ http_client_retry_timeout_input: typing.Union[int, float]
 ##### `validate_input`<sup>Optional</sup> <a name="validate_input" id="@cdktf/provider-datadog.provider.DatadogProvider.property.validateInput"></a>
 
 ```python
-validate_input: typing.Union[bool, IResolvable]
+validate_input: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -678,10 +678,10 @@ http_client_retry_backoff_multiplier: typing.Union[int, float]
 ##### `http_client_retry_enabled`<sup>Optional</sup> <a name="http_client_retry_enabled" id="@cdktf/provider-datadog.provider.DatadogProvider.property.httpClientRetryEnabled"></a>
 
 ```python
-http_client_retry_enabled: typing.Union[bool, IResolvable]
+http_client_retry_enabled: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -708,10 +708,10 @@ http_client_retry_timeout: typing.Union[int, float]
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.provider.DatadogProvider.property.validate"></a>
 
 ```python
-validate: typing.Union[bool, IResolvable]
+validate: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -749,10 +749,10 @@ provider.DatadogProviderConfig(
   app_key: str = None,
   http_client_retry_backoff_base: typing.Union[int, float] = None,
   http_client_retry_backoff_multiplier: typing.Union[int, float] = None,
-  http_client_retry_enabled: typing.Union[bool, IResolvable] = None,
+  http_client_retry_enabled: str = None,
   http_client_retry_max_retries: typing.Union[int, float] = None,
   http_client_retry_timeout: typing.Union[int, float] = None,
-  validate: typing.Union[bool, IResolvable] = None
+  validate: str = None
 )
 ```
 
@@ -766,10 +766,10 @@ provider.DatadogProviderConfig(
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.appKey">app_key</a></code> | <code>str</code> | (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffBase">http_client_retry_backoff_base</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry back off base. Defaults to 2. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryBackoffMultiplier">http_client_retry_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry back off multiplier. Defaults to 2. |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled">http_client_retry_enabled</a></code> | <code>str</code> | Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryMaxRetries">http_client_retry_max_retries</a></code> | <code>typing.Union[int, float]</code> | The HTTP request maximum retry number. Defaults to 3. |
 | <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryTimeout">http_client_retry_timeout</a></code> | <code>typing.Union[int, float]</code> | The HTTP request retry timeout period. Defaults to 60 seconds. |
-| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.validate">validate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables validation of the provided API and APP keys during provider initialization. |
+| <code><a href="#@cdktf/provider-datadog.provider.DatadogProviderConfig.property.validate">validate</a></code> | <code>str</code> | Enables validation of the provided API and APP keys during provider initialization. |
 
 ---
 
@@ -783,7 +783,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#alias DatadogProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#alias DatadogProvider#alias}
 
 ---
 
@@ -797,7 +797,7 @@ api_key: str
 
 (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#api_key DatadogProvider#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#api_key DatadogProvider#api_key}
 
 ---
 
@@ -813,7 +813,7 @@ The API URL.
 
 This can also be set via the DD_HOST environment variable. Note that this URL must not end with the `/api/` path. For example, `https://api.datadoghq.com/` is a correct value, while `https://api.datadoghq.com/api/` is not. And if you're working with "EU" version of Datadog, use `https://api.datadoghq.eu/`. Other Datadog region examples: `https://api.us5.datadoghq.com/`, `https://api.us3.datadoghq.com/` and `https://api.ddog-gov.com/`. See https://docs.datadoghq.com/getting_started/site/ for all available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#api_url DatadogProvider#api_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#api_url DatadogProvider#api_url}
 
 ---
 
@@ -827,7 +827,7 @@ app_key: str
 
 (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#app_key DatadogProvider#app_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#app_key DatadogProvider#app_key}
 
 ---
 
@@ -841,7 +841,7 @@ http_client_retry_backoff_base: typing.Union[int, float]
 
 The HTTP request retry back off base. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
 
 ---
 
@@ -855,21 +855,21 @@ http_client_retry_backoff_multiplier: typing.Union[int, float]
 
 The HTTP request retry back off multiplier. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
 
 ---
 
 ##### `http_client_retry_enabled`<sup>Optional</sup> <a name="http_client_retry_enabled" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.httpClientRetryEnabled"></a>
 
 ```python
-http_client_retry_enabled: typing.Union[bool, IResolvable]
+http_client_retry_enabled: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
-Enables request retries on HTTP status codes 429 and 5xx. Defaults to `true`.
+Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
 
 ---
 
@@ -883,7 +883,7 @@ http_client_retry_max_retries: typing.Union[int, float]
 
 The HTTP request maximum retry number. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
 
 ---
 
@@ -897,23 +897,23 @@ http_client_retry_timeout: typing.Union[int, float]
 
 The HTTP request retry timeout period. Defaults to 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
 
 ---
 
 ##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.provider.DatadogProviderConfig.property.validate"></a>
 
 ```python
-validate: typing.Union[bool, IResolvable]
+validate: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 Enables validation of the provided API and APP keys during provider initialization.
 
-Default is true. When false, api_key and app_key won't be checked.
+Valid values are [`true`, `false`]. Default is true. When false, api_key and app_key won't be checked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs#validate DatadogProvider#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs#validate DatadogProvider#validate}
 
 ---
 

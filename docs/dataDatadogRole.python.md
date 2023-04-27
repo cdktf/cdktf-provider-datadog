@@ -1,6 +1,6 @@
 # `data_datadog_role`
 
-Refer to the Terraform Registory for docs: [`data_datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role).
+Refer to the Terraform Registory for docs: [`data_datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role).
 
 # `dataDatadogRole` Submodule <a name="`dataDatadogRole` Submodule" id="@cdktf/provider-datadog.dataDatadogRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_role`](https://registr
 
 ### DataDatadogRole <a name="DataDatadogRole" id="@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role datadog_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role datadog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataDatadogRole.DataDatadogRole(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer.parameter.filter">filter</a></code> | <code>str</code> | A string on which to filter the roles. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#id DataDatadogRole#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role#id DataDatadogRole#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 A string on which to filter the roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#filter DataDatadogRole#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role#filter DataDatadogRole#filter}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#id DataDatadogRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role#id DataDatadogRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -701,7 +701,7 @@ dataDatadogRole.DataDatadogRoleConfig(
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.filter">filter</a></code> | <code>str</code> | A string on which to filter the roles. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#id DataDatadogRole#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRole.DataDatadogRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role#id DataDatadogRole#id}. |
 
 ---
 
@@ -785,7 +785,7 @@ filter: str
 
 A string on which to filter the roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#filter DataDatadogRole#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role#filter DataDatadogRole#filter}
 
 ---
 
@@ -797,7 +797,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.23.0/docs/data-sources/role#id DataDatadogRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/role#id DataDatadogRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
