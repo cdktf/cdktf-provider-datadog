@@ -1,6 +1,6 @@
 # `datadog_integration_fastly_service`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_fastly_service).
+Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`](https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_fastly_service).
 
 # `integrationFastlyService` Submodule <a name="`integrationFastlyService` Submodule" id="@cdktf/provider-datadog.integrationFastlyService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`
 
 ### IntegrationFastlyService <a name="IntegrationFastlyService" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.Initializer"></a>
 
@@ -708,7 +708,7 @@ public readonly serviceId: string;
 
 The ID of the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
 
 ---
 
@@ -722,7 +722,7 @@ public readonly accountId: string;
 
 Fastly Account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
 
 ---
 
@@ -736,7 +736,7 @@ public readonly tags: string[];
 
 A list of tags for the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
 
 ---
 
