@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure
+// https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface IntegrationAzureConfig extends cdktf.TerraformMetaArguments {
   /**
   * Silence monitors for expected Azure VM shutdowns.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure#automute IntegrationAzure#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your Azure web application ID.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
   */
   readonly clientId: string;
   /**
   * (Required for Initial Creation) Your Azure web application secret key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
   */
   readonly clientSecret: string;
   /**
   * String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
   */
   readonly hostFilters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure#id IntegrationAzure#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure#id IntegrationAzure#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,13 +41,13 @@ export interface IntegrationAzureConfig extends cdktf.TerraformMetaArguments {
   /**
   * Your Azure Active Directory ID.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
   */
   readonly tenantName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure datadog_integration_azure}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure datadog_integration_azure}
 */
 export class IntegrationAzure extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/resources/integration_azure datadog_integration_azure} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/integration_azure datadog_integration_azure} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_azure',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.24.0',
+        providerVersion: '3.24.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

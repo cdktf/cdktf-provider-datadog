@@ -1,6 +1,6 @@
 # `data_datadog_application_key`
 
-Refer to the Terraform Registory for docs: [`data_datadog_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/application_key).
+Refer to the Terraform Registory for docs: [`data_datadog_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/application_key).
 
 # `dataDatadogApplicationKey` Submodule <a name="`dataDatadogApplicationKey` Submodule" id="@cdktf/provider-datadog.dataDatadogApplicationKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_application_key`](http
 
 ### DataDatadogApplicationKey <a name="DataDatadogApplicationKey" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/application_key datadog_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/application_key datadog_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapplicationkey"
 
 datadatadogapplicationkey.NewDataDatadogApplicationKey(scope Construct, id *string, config DataDatadogApplicationKeyConfig) DataDatadogApplicationKey
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapplicationkey"
 
 datadatadogapplicationkey.DataDatadogApplicationKey_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapplicationkey"
 
 datadatadogapplicationkey.DataDatadogApplicationKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatadogapplicationkey.DataDatadogApplicationKey_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapplicationkey"
 
 datadatadogapplicationkey.DataDatadogApplicationKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogApplicationKey.DataDatadogApplicationKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/datadatadogapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogapplicationkey"
 
 &datadatadogapplicationkey.DataDatadogApplicationKeyConfig {
 	Connection: interface{},
@@ -673,7 +673,7 @@ Id *string
 
 Id for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -690,7 +690,7 @@ Name *string
 
 Name for Application Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
 
 ---
 
