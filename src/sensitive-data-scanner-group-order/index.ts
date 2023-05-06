@@ -1,0 +1,89 @@
+// https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/sensitive_data_scanner_group_order
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface SensitiveDataScannerGroupOrderConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The list of Sensitive Data Scanner group IDs, in order. Logs are tested against the query filter of each index one by one following the order of the list.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
+  */
+  readonly groupIds: string[];
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}
+*/
+export class SensitiveDataScannerGroupOrder extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "datadog_sensitive_data_scanner_group_order";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SensitiveDataScannerGroupOrderConfig
+  */
+  public constructor(scope: Construct, id: string, config: SensitiveDataScannerGroupOrderConfig) {
+    super(scope, id, {
+      terraformResourceType: 'datadog_sensitive_data_scanner_group_order',
+      terraformGeneratorMetadata: {
+        providerName: 'datadog',
+        providerVersion: '3.25.0',
+        providerVersionConstraint: '~> 3.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._groupIds = config.groupIds;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // group_ids - computed: false, optional: false, required: true
+  private _groupIds?: string[]; 
+  public get groupIds() {
+    return this.getListAttribute('group_ids');
+  }
+  public set groupIds(value: string[]) {
+    this._groupIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdsInput() {
+    return this._groupIds;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
+    };
+  }
+}

@@ -1,3 +1,3 @@
 # `datadog_rum_application`
 
-Refer to the Terraform Registory for docs: [`datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/rum_application).
+Refer to the Terraform Registory for docs: [`datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/rum_application).

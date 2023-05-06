@@ -1,3 +1,3 @@
 # `datadog_authn_mapping`
 
-Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/authn_mapping).
+Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/authn_mapping).

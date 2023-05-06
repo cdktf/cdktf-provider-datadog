@@ -1,6 +1,6 @@
 # `data_datadog_permissions`
 
-Refer to the Terraform Registory for docs: [`data_datadog_permissions`](https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions).
+Refer to the Terraform Registory for docs: [`data_datadog_permissions`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/permissions).
 
 # `dataDatadogPermissions` Submodule <a name="`dataDatadogPermissions` Submodule" id="@cdktf/provider-datadog.dataDatadogPermissions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_permissions`](https://
 
 ### DataDatadogPermissions <a name="DataDatadogPermissions" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions datadog_permissions}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/permissions datadog_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer"></a>
 
@@ -588,7 +588,7 @@ new DataDatadogPermissionsConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions#id DataDatadogPermissions#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/permissions#id DataDatadogPermissions#id}. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.includeRestricted">IncludeRestricted</a></code> | <code>object</code> | Whether to include restricted permissions. |
 
 ---
@@ -671,7 +671,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions#id DataDatadogPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/permissions#id DataDatadogPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -690,7 +690,7 @@ Whether to include restricted permissions.
 
 Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
 
 ---
 
