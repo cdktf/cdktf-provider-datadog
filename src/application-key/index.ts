@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/application_key
+// https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/application_key#id ApplicationKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/application_key#id ApplicationKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface ApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for Application Key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/application_key#name ApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/application_key#name ApplicationKey#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/application_key datadog_application_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/application_key datadog_application_key}
 */
 export class ApplicationKey extends cdktf.TerraformResource {
 
@@ -37,7 +37,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.24.1/docs/resources/application_key datadog_application_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/application_key datadog_application_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class ApplicationKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_application_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.24.1',
+        providerVersion: '3.25.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

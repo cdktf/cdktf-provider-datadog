@@ -45,6 +45,7 @@ export * as securityMonitoringDefaultRule from './security-monitoring-default-ru
 export * as securityMonitoringFilter from './security-monitoring-filter';
 export * as securityMonitoringRule from './security-monitoring-rule';
 export * as sensitiveDataScannerGroup from './sensitive-data-scanner-group';
+export * as sensitiveDataScannerGroupOrder from './sensitive-data-scanner-group-order';
 export * as sensitiveDataScannerRule from './sensitive-data-scanner-rule';
 export * as serviceAccount from './service-account';
 export * as serviceDefinitionYaml from './service-definition-yaml';
@@ -77,6 +78,7 @@ export * as dataDatadogRoles from './data-datadog-roles';
 export * as dataDatadogRumApplication from './data-datadog-rum-application';
 export * as dataDatadogSecurityMonitoringFilters from './data-datadog-security-monitoring-filters';
 export * as dataDatadogSecurityMonitoringRules from './data-datadog-security-monitoring-rules';
+export * as dataDatadogSensitiveDataScannerGroupOrder from './data-datadog-sensitive-data-scanner-group-order';
 export * as dataDatadogSensitiveDataScannerStandardPattern from './data-datadog-sensitive-data-scanner-standard-pattern';
 export * as dataDatadogServiceLevelObjective from './data-datadog-service-level-objective';
 export * as dataDatadogServiceLevelObjectives from './data-datadog-service-level-objectives';
