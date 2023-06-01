@@ -348,12 +348,12 @@ private void PutConfigVariable(object Value)
 ##### `PutOptionsList` <a name="PutOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList"></a>
 
 ```csharp
-private void PutOptionsList(SyntheticsTestOptionsList Value)
+private void PutOptionsList(SyntheticsTestOptionsListStruct Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.putOptionsList.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 ---
 
@@ -607,7 +607,7 @@ SyntheticsTest.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariable">BrowserVariable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList">SyntheticsTestBrowserVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariable">ConfigVariable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList">SyntheticsTestConfigVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.monitorId">MonitorId</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList">OptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference">SyntheticsTestOptionsListOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList">OptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference">SyntheticsTestOptionsListStructOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauth">RequestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference">SyntheticsTestRequestBasicauthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificate">RequestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateOutputReference">SyntheticsTestRequestClientCertificateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinition">RequestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference">SyntheticsTestRequestDefinitionOutputReference</a></code> | *No description.* |
@@ -622,7 +622,7 @@ SyntheticsTest.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locationsInput">LocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.messageInput">MessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">OptionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">OptionsListInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauthInput">RequestBasicauthInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificateInput">RequestClientCertificateInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinitionInput">RequestDefinitionInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
@@ -854,10 +854,10 @@ public double MonitorId { get; }
 ##### `OptionsList`<sup>Required</sup> <a name="OptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList"></a>
 
 ```csharp
-public SyntheticsTestOptionsListOutputReference OptionsList { get; }
+public SyntheticsTestOptionsListStructOutputReference OptionsList { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference">SyntheticsTestOptionsListOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference">SyntheticsTestOptionsListStructOutputReference</a>
 
 ---
 
@@ -1004,10 +1004,10 @@ public string NameInput { get; }
 ##### `OptionsListInput`<sup>Optional</sup> <a name="OptionsListInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput"></a>
 
 ```csharp
-public SyntheticsTestOptionsList OptionsListInput { get; }
+public SyntheticsTestOptionsListStruct OptionsListInput { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 ---
 
@@ -3731,7 +3731,7 @@ new SyntheticsTestConfig {
     string[] DeviceIds = null,
     string Id = null,
     string Message = null,
-    SyntheticsTestOptionsList OptionsList = null,
+    SyntheticsTestOptionsListStruct OptionsList = null,
     SyntheticsTestRequestBasicauth RequestBasicauth = null,
     SyntheticsTestRequestClientCertificate RequestClientCertificate = null,
     SyntheticsTestRequestDefinition RequestDefinition = null,
@@ -3767,7 +3767,7 @@ new SyntheticsTestConfig {
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">DeviceIds</a></code> | <code>string[]</code> | Required if `type = "browser"`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">Message</a></code> | <code>string</code> | A message to include with notifications for this synthetics test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">OptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | options_list block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">OptionsList</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestBasicauth">RequestBasicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestClientCertificate">RequestClientCertificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestDefinition">RequestDefinition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
@@ -4028,10 +4028,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `OptionsList`<sup>Optional</sup> <a name="OptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList"></a>
 
 ```csharp
-public SyntheticsTestOptionsList OptionsList { get; set; }
+public SyntheticsTestOptionsListStruct OptionsList { get; set; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 options_list block.
 
@@ -4287,358 +4287,6 @@ public object Secure { get; set; }
 Whether the value of this variable will be obfuscated in test results.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
-
----
-
-### SyntheticsTestOptionsList <a name="SyntheticsTestOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.Initializer"></a>
-
-```csharp
-using HashiCorp.Cdktf.Providers.Datadog;
-
-new SyntheticsTestOptionsList {
-    double TickEvery,
-    object AcceptSelfSigned = null,
-    object AllowInsecure = null,
-    object CheckCertificateRevocation = null,
-    SyntheticsTestOptionsListCi Ci = null,
-    object DisableCors = null,
-    object DisableCsp = null,
-    object FollowRedirects = null,
-    string HttpVersion = null,
-    object IgnoreServerCertificateError = null,
-    double InitialNavigationTimeout = null,
-    double MinFailureDuration = null,
-    double MinLocationFailed = null,
-    string MonitorName = null,
-    SyntheticsTestOptionsListMonitorOptions MonitorOptions = null,
-    double MonitorPriority = null,
-    object NoScreenshot = null,
-    string[] RestrictedRoles = null,
-    SyntheticsTestOptionsListRetry Retry = null,
-    SyntheticsTestOptionsListRumSettings RumSettings = null,
-    SyntheticsTestOptionsListScheduling Scheduling = null
-};
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.tickEvery">TickEvery</a></code> | <code>double</code> | How often the test should run (in seconds). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | For SSL test, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | Allows loading insecure content for an HTTP test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ci">Ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCors">DisableCors</a></code> | <code>object</code> | Disable Cross-Origin Resource Sharing for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCsp">DisableCsp</a></code> | <code>object</code> | Disable Content Security Policy for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | Determines whether or not the API HTTP test should follow redirects. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion">HttpVersion</a></code> | <code>string</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | Ignore server certificate error. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName">MonitorName</a></code> | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | Prevents saving screenshots of the steps. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | scheduling block. |
-
----
-
-##### `TickEvery`<sup>Required</sup> <a name="TickEvery" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.tickEvery"></a>
-
-```csharp
-public double TickEvery { get; set; }
-```
-
-- *Type:* double
-
-How often the test should run (in seconds).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
-
----
-
-##### `AcceptSelfSigned`<sup>Optional</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.acceptSelfSigned"></a>
-
-```csharp
-public object AcceptSelfSigned { get; set; }
-```
-
-- *Type:* object
-
-For SSL test, whether or not the test should allow self signed certificates.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
-
----
-
-##### `AllowInsecure`<sup>Optional</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.allowInsecure"></a>
-
-```csharp
-public object AllowInsecure { get; set; }
-```
-
-- *Type:* object
-
-Allows loading insecure content for an HTTP test.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
-
----
-
-##### `CheckCertificateRevocation`<sup>Optional</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.checkCertificateRevocation"></a>
-
-```csharp
-public object CheckCertificateRevocation { get; set; }
-```
-
-- *Type:* object
-
-For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
-
----
-
-##### `Ci`<sup>Optional</sup> <a name="Ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ci"></a>
-
-```csharp
-public SyntheticsTestOptionsListCi Ci { get; set; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
-
-ci block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
-
----
-
-##### `DisableCors`<sup>Optional</sup> <a name="DisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCors"></a>
-
-```csharp
-public object DisableCors { get; set; }
-```
-
-- *Type:* object
-
-Disable Cross-Origin Resource Sharing for browser tests.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
-
----
-
-##### `DisableCsp`<sup>Optional</sup> <a name="DisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCsp"></a>
-
-```csharp
-public object DisableCsp { get; set; }
-```
-
-- *Type:* object
-
-Disable Content Security Policy for browser tests.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
-
----
-
-##### `FollowRedirects`<sup>Optional</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.followRedirects"></a>
-
-```csharp
-public object FollowRedirects { get; set; }
-```
-
-- *Type:* object
-
-Determines whether or not the API HTTP test should follow redirects.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
-
----
-
-##### `HttpVersion`<sup>Optional</sup> <a name="HttpVersion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion"></a>
-
-```csharp
-public string HttpVersion { get; set; }
-```
-
-- *Type:* string
-
-HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
-
----
-
-##### `IgnoreServerCertificateError`<sup>Optional</sup> <a name="IgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError"></a>
-
-```csharp
-public object IgnoreServerCertificateError { get; set; }
-```
-
-- *Type:* object
-
-Ignore server certificate error.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
-
----
-
-##### `InitialNavigationTimeout`<sup>Optional</sup> <a name="InitialNavigationTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout"></a>
-
-```csharp
-public double InitialNavigationTimeout { get; set; }
-```
-
-- *Type:* double
-
-Timeout before declaring the initial step as failed (in seconds) for browser tests.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
-
----
-
-##### `MinFailureDuration`<sup>Optional</sup> <a name="MinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration"></a>
-
-```csharp
-public double MinFailureDuration { get; set; }
-```
-
-- *Type:* double
-
-Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
-
----
-
-##### `MinLocationFailed`<sup>Optional</sup> <a name="MinLocationFailed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed"></a>
-
-```csharp
-public double MinLocationFailed { get; set; }
-```
-
-- *Type:* double
-
-Minimum number of locations in failure required to trigger an alert. Default is `1`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
-
----
-
-##### `MonitorName`<sup>Optional</sup> <a name="MonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName"></a>
-
-```csharp
-public string MonitorName { get; set; }
-```
-
-- *Type:* string
-
-The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
-
----
-
-##### `MonitorOptions`<sup>Optional</sup> <a name="MonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions"></a>
-
-```csharp
-public SyntheticsTestOptionsListMonitorOptions MonitorOptions { get; set; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
-
-monitor_options block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
-
----
-
-##### `MonitorPriority`<sup>Optional</sup> <a name="MonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorPriority"></a>
-
-```csharp
-public double MonitorPriority { get; set; }
-```
-
-- *Type:* double
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
-
----
-
-##### `NoScreenshot`<sup>Optional</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.noScreenshot"></a>
-
-```csharp
-public object NoScreenshot { get; set; }
-```
-
-- *Type:* object
-
-Prevents saving screenshots of the steps.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
-
----
-
-##### `RestrictedRoles`<sup>Optional</sup> <a name="RestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.restrictedRoles"></a>
-
-```csharp
-public string[] RestrictedRoles { get; set; }
-```
-
-- *Type:* string[]
-
-A list of role identifiers pulled from the Roles API to restrict read and write access.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
-
----
-
-##### `Retry`<sup>Optional</sup> <a name="Retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.retry"></a>
-
-```csharp
-public SyntheticsTestOptionsListRetry Retry { get; set; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
-
-retry block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
-
----
-
-##### `RumSettings`<sup>Optional</sup> <a name="RumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.rumSettings"></a>
-
-```csharp
-public SyntheticsTestOptionsListRumSettings RumSettings { get; set; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
-
-rum_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
-
----
-
-##### `Scheduling`<sup>Optional</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling"></a>
-
-```csharp
-public SyntheticsTestOptionsListScheduling Scheduling { get; set; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
-
-scheduling block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -4941,6 +4589,358 @@ public string To { get; set; }
 The hour of the day on which scheduling ends.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+
+---
+
+### SyntheticsTestOptionsListStruct <a name="SyntheticsTestOptionsListStruct" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListStruct {
+    double TickEvery,
+    object AcceptSelfSigned = null,
+    object AllowInsecure = null,
+    object CheckCertificateRevocation = null,
+    SyntheticsTestOptionsListCi Ci = null,
+    object DisableCors = null,
+    object DisableCsp = null,
+    object FollowRedirects = null,
+    string HttpVersion = null,
+    object IgnoreServerCertificateError = null,
+    double InitialNavigationTimeout = null,
+    double MinFailureDuration = null,
+    double MinLocationFailed = null,
+    string MonitorName = null,
+    SyntheticsTestOptionsListMonitorOptions MonitorOptions = null,
+    double MonitorPriority = null,
+    object NoScreenshot = null,
+    string[] RestrictedRoles = null,
+    SyntheticsTestOptionsListRetry Retry = null,
+    SyntheticsTestOptionsListRumSettings RumSettings = null,
+    SyntheticsTestOptionsListScheduling Scheduling = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery">TickEvery</a></code> | <code>double</code> | How often the test should run (in seconds). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | For SSL test, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | Allows loading insecure content for an HTTP test. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci">Ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">DisableCors</a></code> | <code>object</code> | Disable Cross-Origin Resource Sharing for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">DisableCsp</a></code> | <code>object</code> | Disable Content Security Policy for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion">HttpVersion</a></code> | <code>string</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | Ignore server certificate error. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">MonitorName</a></code> | <code>string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | scheduling block. |
+
+---
+
+##### `TickEvery`<sup>Required</sup> <a name="TickEvery" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery"></a>
+
+```csharp
+public double TickEvery { get; set; }
+```
+
+- *Type:* double
+
+How often the test should run (in seconds).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+
+---
+
+##### `AcceptSelfSigned`<sup>Optional</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned"></a>
+
+```csharp
+public object AcceptSelfSigned { get; set; }
+```
+
+- *Type:* object
+
+For SSL test, whether or not the test should allow self signed certificates.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+
+---
+
+##### `AllowInsecure`<sup>Optional</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure"></a>
+
+```csharp
+public object AllowInsecure { get; set; }
+```
+
+- *Type:* object
+
+Allows loading insecure content for an HTTP test.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+
+---
+
+##### `CheckCertificateRevocation`<sup>Optional</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation"></a>
+
+```csharp
+public object CheckCertificateRevocation { get; set; }
+```
+
+- *Type:* object
+
+For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+
+---
+
+##### `Ci`<sup>Optional</sup> <a name="Ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci"></a>
+
+```csharp
+public SyntheticsTestOptionsListCi Ci { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
+
+ci block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+
+---
+
+##### `DisableCors`<sup>Optional</sup> <a name="DisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors"></a>
+
+```csharp
+public object DisableCors { get; set; }
+```
+
+- *Type:* object
+
+Disable Cross-Origin Resource Sharing for browser tests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+
+---
+
+##### `DisableCsp`<sup>Optional</sup> <a name="DisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp"></a>
+
+```csharp
+public object DisableCsp { get; set; }
+```
+
+- *Type:* object
+
+Disable Content Security Policy for browser tests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+
+---
+
+##### `FollowRedirects`<sup>Optional</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects"></a>
+
+```csharp
+public object FollowRedirects { get; set; }
+```
+
+- *Type:* object
+
+Determines whether or not the API HTTP test should follow redirects.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+
+---
+
+##### `HttpVersion`<sup>Optional</sup> <a name="HttpVersion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion"></a>
+
+```csharp
+public string HttpVersion { get; set; }
+```
+
+- *Type:* string
+
+HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+
+---
+
+##### `IgnoreServerCertificateError`<sup>Optional</sup> <a name="IgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError"></a>
+
+```csharp
+public object IgnoreServerCertificateError { get; set; }
+```
+
+- *Type:* object
+
+Ignore server certificate error.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+
+---
+
+##### `InitialNavigationTimeout`<sup>Optional</sup> <a name="InitialNavigationTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout"></a>
+
+```csharp
+public double InitialNavigationTimeout { get; set; }
+```
+
+- *Type:* double
+
+Timeout before declaring the initial step as failed (in seconds) for browser tests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+
+---
+
+##### `MinFailureDuration`<sup>Optional</sup> <a name="MinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration"></a>
+
+```csharp
+public double MinFailureDuration { get; set; }
+```
+
+- *Type:* double
+
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+
+---
+
+##### `MinLocationFailed`<sup>Optional</sup> <a name="MinLocationFailed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed"></a>
+
+```csharp
+public double MinLocationFailed { get; set; }
+```
+
+- *Type:* double
+
+Minimum number of locations in failure required to trigger an alert. Default is `1`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
+
+---
+
+##### `MonitorName`<sup>Optional</sup> <a name="MonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName"></a>
+
+```csharp
+public string MonitorName { get; set; }
+```
+
+- *Type:* string
+
+The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+
+---
+
+##### `MonitorOptions`<sup>Optional</sup> <a name="MonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions"></a>
+
+```csharp
+public SyntheticsTestOptionsListMonitorOptions MonitorOptions { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
+
+monitor_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+
+---
+
+##### `MonitorPriority`<sup>Optional</sup> <a name="MonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority"></a>
+
+```csharp
+public double MonitorPriority { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
+
+---
+
+##### `NoScreenshot`<sup>Optional</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot"></a>
+
+```csharp
+public object NoScreenshot { get; set; }
+```
+
+- *Type:* object
+
+Prevents saving screenshots of the steps.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+
+---
+
+##### `RestrictedRoles`<sup>Optional</sup> <a name="RestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles"></a>
+
+```csharp
+public string[] RestrictedRoles { get; set; }
+```
+
+- *Type:* string[]
+
+A list of role identifiers pulled from the Roles API to restrict read and write access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+
+---
+
+##### `Retry`<sup>Optional</sup> <a name="Retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry"></a>
+
+```csharp
+public SyntheticsTestOptionsListRetry Retry { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
+
+retry block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+
+---
+
+##### `RumSettings`<sup>Optional</sup> <a name="RumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings"></a>
+
+```csharp
+public SyntheticsTestOptionsListRumSettings RumSettings { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+rum_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+
+---
+
+##### `Scheduling`<sup>Optional</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.scheduling"></a>
+
+```csharp
+public SyntheticsTestOptionsListScheduling Scheduling { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+scheduling block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -17016,922 +17016,6 @@ public SyntheticsTestOptionsListMonitorOptions InternalValue { get; }
 ---
 
 
-### SyntheticsTestOptionsListOutputReference <a name="SyntheticsTestOptionsListOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer"></a>
-
-```csharp
-using HashiCorp.Cdktf.Providers.Datadog;
-
-new SyntheticsTestOptionsListOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* HashiCorp.Cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putCi">PutCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions">PutMonitorOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry">PutRetry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings">PutRumSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling">PutScheduling</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned">ResetAcceptSelfSigned</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAllowInsecure">ResetAllowInsecure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCheckCertificateRevocation">ResetCheckCertificateRevocation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCi">ResetCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCors">ResetDisableCors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCsp">ResetDisableCsp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetFollowRedirects">ResetFollowRedirects</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetHttpVersion">ResetHttpVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetIgnoreServerCertificateError">ResetIgnoreServerCertificateError</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetInitialNavigationTimeout">ResetInitialNavigationTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinFailureDuration">ResetMinFailureDuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinLocationFailed">ResetMinLocationFailed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorName">ResetMonitorName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorOptions">ResetMonitorOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorPriority">ResetMonitorPriority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetNoScreenshot">ResetNoScreenshot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRestrictedRoles">ResetRestrictedRoles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRetry">ResetRetry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRumSettings">ResetRumSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling">ResetScheduling</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getAnyMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanAttribute"></a>
-
-```csharp
-private IResolvable GetBooleanAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getListAttribute"></a>
-
-```csharp
-private string[] GetListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberAttribute"></a>
-
-```csharp
-private double GetNumberAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberListAttribute"></a>
-
-```csharp
-private double[] GetNumberListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringAttribute"></a>
-
-```csharp
-private string GetStringAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.interpolationForAttribute"></a>
-
-```csharp
-private IResolvable InterpolationForAttribute(string Property)
-```
-
-###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resolve.parameter._context"></a>
-
-- *Type:* HashiCorp.Cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `PutCi` <a name="PutCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putCi"></a>
-
-```csharp
-private void PutCi(SyntheticsTestOptionsListCi Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putCi.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
-
----
-
-##### `PutMonitorOptions` <a name="PutMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions"></a>
-
-```csharp
-private void PutMonitorOptions(SyntheticsTestOptionsListMonitorOptions Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
-
----
-
-##### `PutRetry` <a name="PutRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry"></a>
-
-```csharp
-private void PutRetry(SyntheticsTestOptionsListRetry Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
-
----
-
-##### `PutRumSettings` <a name="PutRumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings"></a>
-
-```csharp
-private void PutRumSettings(SyntheticsTestOptionsListRumSettings Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
-
----
-
-##### `PutScheduling` <a name="PutScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling"></a>
-
-```csharp
-private void PutScheduling(SyntheticsTestOptionsListScheduling Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
-
----
-
-##### `ResetAcceptSelfSigned` <a name="ResetAcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned"></a>
-
-```csharp
-private void ResetAcceptSelfSigned()
-```
-
-##### `ResetAllowInsecure` <a name="ResetAllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAllowInsecure"></a>
-
-```csharp
-private void ResetAllowInsecure()
-```
-
-##### `ResetCheckCertificateRevocation` <a name="ResetCheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCheckCertificateRevocation"></a>
-
-```csharp
-private void ResetCheckCertificateRevocation()
-```
-
-##### `ResetCi` <a name="ResetCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCi"></a>
-
-```csharp
-private void ResetCi()
-```
-
-##### `ResetDisableCors` <a name="ResetDisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCors"></a>
-
-```csharp
-private void ResetDisableCors()
-```
-
-##### `ResetDisableCsp` <a name="ResetDisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCsp"></a>
-
-```csharp
-private void ResetDisableCsp()
-```
-
-##### `ResetFollowRedirects` <a name="ResetFollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetFollowRedirects"></a>
-
-```csharp
-private void ResetFollowRedirects()
-```
-
-##### `ResetHttpVersion` <a name="ResetHttpVersion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetHttpVersion"></a>
-
-```csharp
-private void ResetHttpVersion()
-```
-
-##### `ResetIgnoreServerCertificateError` <a name="ResetIgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetIgnoreServerCertificateError"></a>
-
-```csharp
-private void ResetIgnoreServerCertificateError()
-```
-
-##### `ResetInitialNavigationTimeout` <a name="ResetInitialNavigationTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetInitialNavigationTimeout"></a>
-
-```csharp
-private void ResetInitialNavigationTimeout()
-```
-
-##### `ResetMinFailureDuration` <a name="ResetMinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinFailureDuration"></a>
-
-```csharp
-private void ResetMinFailureDuration()
-```
-
-##### `ResetMinLocationFailed` <a name="ResetMinLocationFailed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinLocationFailed"></a>
-
-```csharp
-private void ResetMinLocationFailed()
-```
-
-##### `ResetMonitorName` <a name="ResetMonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorName"></a>
-
-```csharp
-private void ResetMonitorName()
-```
-
-##### `ResetMonitorOptions` <a name="ResetMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorOptions"></a>
-
-```csharp
-private void ResetMonitorOptions()
-```
-
-##### `ResetMonitorPriority` <a name="ResetMonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorPriority"></a>
-
-```csharp
-private void ResetMonitorPriority()
-```
-
-##### `ResetNoScreenshot` <a name="ResetNoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetNoScreenshot"></a>
-
-```csharp
-private void ResetNoScreenshot()
-```
-
-##### `ResetRestrictedRoles` <a name="ResetRestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRestrictedRoles"></a>
-
-```csharp
-private void ResetRestrictedRoles()
-```
-
-##### `ResetRetry` <a name="ResetRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRetry"></a>
-
-```csharp
-private void ResetRetry()
-```
-
-##### `ResetRumSettings` <a name="ResetRumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRumSettings"></a>
-
-```csharp
-private void ResetRumSettings()
-```
-
-##### `ResetScheduling` <a name="ResetScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling"></a>
-
-```csharp
-private void ResetScheduling()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ci">Ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ciInput">CiInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCorsInput">DisableCorsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCspInput">DisableCspInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirectsInput">FollowRedirectsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersionInput">HttpVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateErrorInput">IgnoreServerCertificateErrorInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeoutInput">InitialNavigationTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDurationInput">MinFailureDurationInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailedInput">MinLocationFailedInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorNameInput">MonitorNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptionsInput">MonitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriorityInput">MonitorPriorityInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettingsInput">RumSettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput">SchedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput">TickEveryInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCors">DisableCors</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCsp">DisableCsp</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersion">HttpVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorName">MonitorName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEvery">TickEvery</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Ci`<sup>Required</sup> <a name="Ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ci"></a>
-
-```csharp
-public SyntheticsTestOptionsListCiOutputReference Ci { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a>
-
----
-
-##### `MonitorOptions`<sup>Required</sup> <a name="MonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptions"></a>
-
-```csharp
-public SyntheticsTestOptionsListMonitorOptionsOutputReference MonitorOptions { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a>
-
----
-
-##### `Retry`<sup>Required</sup> <a name="Retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retry"></a>
-
-```csharp
-public SyntheticsTestOptionsListRetryOutputReference Retry { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a>
-
----
-
-##### `RumSettings`<sup>Required</sup> <a name="RumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettings"></a>
-
-```csharp
-public SyntheticsTestOptionsListRumSettingsOutputReference RumSettings { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a>
-
----
-
-##### `Scheduling`<sup>Required</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling"></a>
-
-```csharp
-public SyntheticsTestOptionsListSchedulingOutputReference Scheduling { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a>
-
----
-
-##### `AcceptSelfSignedInput`<sup>Optional</sup> <a name="AcceptSelfSignedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSignedInput"></a>
-
-```csharp
-public object AcceptSelfSignedInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `AllowInsecureInput`<sup>Optional</sup> <a name="AllowInsecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecureInput"></a>
-
-```csharp
-public object AllowInsecureInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `CheckCertificateRevocationInput`<sup>Optional</sup> <a name="CheckCertificateRevocationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocationInput"></a>
-
-```csharp
-public object CheckCertificateRevocationInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `CiInput`<sup>Optional</sup> <a name="CiInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ciInput"></a>
-
-```csharp
-public SyntheticsTestOptionsListCi CiInput { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
-
----
-
-##### `DisableCorsInput`<sup>Optional</sup> <a name="DisableCorsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCorsInput"></a>
-
-```csharp
-public object DisableCorsInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `DisableCspInput`<sup>Optional</sup> <a name="DisableCspInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCspInput"></a>
-
-```csharp
-public object DisableCspInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `FollowRedirectsInput`<sup>Optional</sup> <a name="FollowRedirectsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirectsInput"></a>
-
-```csharp
-public object FollowRedirectsInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `HttpVersionInput`<sup>Optional</sup> <a name="HttpVersionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersionInput"></a>
-
-```csharp
-public string HttpVersionInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IgnoreServerCertificateErrorInput`<sup>Optional</sup> <a name="IgnoreServerCertificateErrorInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateErrorInput"></a>
-
-```csharp
-public object IgnoreServerCertificateErrorInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `InitialNavigationTimeoutInput`<sup>Optional</sup> <a name="InitialNavigationTimeoutInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeoutInput"></a>
-
-```csharp
-public double InitialNavigationTimeoutInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `MinFailureDurationInput`<sup>Optional</sup> <a name="MinFailureDurationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDurationInput"></a>
-
-```csharp
-public double MinFailureDurationInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `MinLocationFailedInput`<sup>Optional</sup> <a name="MinLocationFailedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailedInput"></a>
-
-```csharp
-public double MinLocationFailedInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `MonitorNameInput`<sup>Optional</sup> <a name="MonitorNameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorNameInput"></a>
-
-```csharp
-public string MonitorNameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `MonitorOptionsInput`<sup>Optional</sup> <a name="MonitorOptionsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptionsInput"></a>
-
-```csharp
-public SyntheticsTestOptionsListMonitorOptions MonitorOptionsInput { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
-
----
-
-##### `MonitorPriorityInput`<sup>Optional</sup> <a name="MonitorPriorityInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriorityInput"></a>
-
-```csharp
-public double MonitorPriorityInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `NoScreenshotInput`<sup>Optional</sup> <a name="NoScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshotInput"></a>
-
-```csharp
-public object NoScreenshotInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `RestrictedRolesInput`<sup>Optional</sup> <a name="RestrictedRolesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRolesInput"></a>
-
-```csharp
-public string[] RestrictedRolesInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `RetryInput`<sup>Optional</sup> <a name="RetryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retryInput"></a>
-
-```csharp
-public SyntheticsTestOptionsListRetry RetryInput { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
-
----
-
-##### `RumSettingsInput`<sup>Optional</sup> <a name="RumSettingsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettingsInput"></a>
-
-```csharp
-public SyntheticsTestOptionsListRumSettings RumSettingsInput { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
-
----
-
-##### `SchedulingInput`<sup>Optional</sup> <a name="SchedulingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput"></a>
-
-```csharp
-public SyntheticsTestOptionsListScheduling SchedulingInput { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
-
----
-
-##### `TickEveryInput`<sup>Optional</sup> <a name="TickEveryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput"></a>
-
-```csharp
-public double TickEveryInput { get; }
-```
-
-- *Type:* double
-
----
-
-##### `AcceptSelfSigned`<sup>Required</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSigned"></a>
-
-```csharp
-public object AcceptSelfSigned { get; }
-```
-
-- *Type:* object
-
----
-
-##### `AllowInsecure`<sup>Required</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecure"></a>
-
-```csharp
-public object AllowInsecure { get; }
-```
-
-- *Type:* object
-
----
-
-##### `CheckCertificateRevocation`<sup>Required</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocation"></a>
-
-```csharp
-public object CheckCertificateRevocation { get; }
-```
-
-- *Type:* object
-
----
-
-##### `DisableCors`<sup>Required</sup> <a name="DisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCors"></a>
-
-```csharp
-public object DisableCors { get; }
-```
-
-- *Type:* object
-
----
-
-##### `DisableCsp`<sup>Required</sup> <a name="DisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCsp"></a>
-
-```csharp
-public object DisableCsp { get; }
-```
-
-- *Type:* object
-
----
-
-##### `FollowRedirects`<sup>Required</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirects"></a>
-
-```csharp
-public object FollowRedirects { get; }
-```
-
-- *Type:* object
-
----
-
-##### `HttpVersion`<sup>Required</sup> <a name="HttpVersion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersion"></a>
-
-```csharp
-public string HttpVersion { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IgnoreServerCertificateError`<sup>Required</sup> <a name="IgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateError"></a>
-
-```csharp
-public object IgnoreServerCertificateError { get; }
-```
-
-- *Type:* object
-
----
-
-##### `InitialNavigationTimeout`<sup>Required</sup> <a name="InitialNavigationTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeout"></a>
-
-```csharp
-public double InitialNavigationTimeout { get; }
-```
-
-- *Type:* double
-
----
-
-##### `MinFailureDuration`<sup>Required</sup> <a name="MinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDuration"></a>
-
-```csharp
-public double MinFailureDuration { get; }
-```
-
-- *Type:* double
-
----
-
-##### `MinLocationFailed`<sup>Required</sup> <a name="MinLocationFailed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailed"></a>
-
-```csharp
-public double MinLocationFailed { get; }
-```
-
-- *Type:* double
-
----
-
-##### `MonitorName`<sup>Required</sup> <a name="MonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorName"></a>
-
-```csharp
-public string MonitorName { get; }
-```
-
-- *Type:* string
-
----
-
-##### `MonitorPriority`<sup>Required</sup> <a name="MonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriority"></a>
-
-```csharp
-public double MonitorPriority { get; }
-```
-
-- *Type:* double
-
----
-
-##### `NoScreenshot`<sup>Required</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshot"></a>
-
-```csharp
-public object NoScreenshot { get; }
-```
-
-- *Type:* object
-
----
-
-##### `RestrictedRoles`<sup>Required</sup> <a name="RestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRoles"></a>
-
-```csharp
-public string[] RestrictedRoles { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `TickEvery`<sup>Required</sup> <a name="TickEvery" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEvery"></a>
-
-```csharp
-public double TickEvery { get; }
-```
-
-- *Type:* double
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.internalValue"></a>
-
-```csharp
-public SyntheticsTestOptionsList InternalValue { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
-
----
-
-
 ### SyntheticsTestOptionsListRetryOutputReference <a name="SyntheticsTestOptionsListRetryOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference.Initializer"></a>
@@ -19346,6 +18430,922 @@ public object InternalValue { get; }
 ```
 
 - *Type:* object
+
+---
+
+
+### SyntheticsTestOptionsListStructOutputReference <a name="SyntheticsTestOptionsListStructOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new SyntheticsTestOptionsListStructOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putCi">PutCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putMonitorOptions">PutMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry">PutRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings">PutRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling">PutScheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAcceptSelfSigned">ResetAcceptSelfSigned</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAllowInsecure">ResetAllowInsecure</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCheckCertificateRevocation">ResetCheckCertificateRevocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCi">ResetCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCors">ResetDisableCors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCsp">ResetDisableCsp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetFollowRedirects">ResetFollowRedirects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetHttpVersion">ResetHttpVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetIgnoreServerCertificateError">ResetIgnoreServerCertificateError</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetInitialNavigationTimeout">ResetInitialNavigationTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinFailureDuration">ResetMinFailureDuration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinLocationFailed">ResetMinLocationFailed</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorName">ResetMonitorName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorOptions">ResetMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorPriority">ResetMonitorPriority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetNoScreenshot">ResetNoScreenshot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRestrictedRoles">ResetRestrictedRoles</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRetry">ResetRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRumSettings">ResetRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetScheduling">ResetScheduling</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutCi` <a name="PutCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putCi"></a>
+
+```csharp
+private void PutCi(SyntheticsTestOptionsListCi Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putCi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
+
+---
+
+##### `PutMonitorOptions` <a name="PutMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putMonitorOptions"></a>
+
+```csharp
+private void PutMonitorOptions(SyntheticsTestOptionsListMonitorOptions Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putMonitorOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
+
+---
+
+##### `PutRetry` <a name="PutRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry"></a>
+
+```csharp
+private void PutRetry(SyntheticsTestOptionsListRetry Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
+
+---
+
+##### `PutRumSettings` <a name="PutRumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings"></a>
+
+```csharp
+private void PutRumSettings(SyntheticsTestOptionsListRumSettings Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+---
+
+##### `PutScheduling` <a name="PutScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling"></a>
+
+```csharp
+private void PutScheduling(SyntheticsTestOptionsListScheduling Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
+##### `ResetAcceptSelfSigned` <a name="ResetAcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAcceptSelfSigned"></a>
+
+```csharp
+private void ResetAcceptSelfSigned()
+```
+
+##### `ResetAllowInsecure` <a name="ResetAllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAllowInsecure"></a>
+
+```csharp
+private void ResetAllowInsecure()
+```
+
+##### `ResetCheckCertificateRevocation` <a name="ResetCheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCheckCertificateRevocation"></a>
+
+```csharp
+private void ResetCheckCertificateRevocation()
+```
+
+##### `ResetCi` <a name="ResetCi" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCi"></a>
+
+```csharp
+private void ResetCi()
+```
+
+##### `ResetDisableCors` <a name="ResetDisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCors"></a>
+
+```csharp
+private void ResetDisableCors()
+```
+
+##### `ResetDisableCsp` <a name="ResetDisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCsp"></a>
+
+```csharp
+private void ResetDisableCsp()
+```
+
+##### `ResetFollowRedirects` <a name="ResetFollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetFollowRedirects"></a>
+
+```csharp
+private void ResetFollowRedirects()
+```
+
+##### `ResetHttpVersion` <a name="ResetHttpVersion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetHttpVersion"></a>
+
+```csharp
+private void ResetHttpVersion()
+```
+
+##### `ResetIgnoreServerCertificateError` <a name="ResetIgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetIgnoreServerCertificateError"></a>
+
+```csharp
+private void ResetIgnoreServerCertificateError()
+```
+
+##### `ResetInitialNavigationTimeout` <a name="ResetInitialNavigationTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetInitialNavigationTimeout"></a>
+
+```csharp
+private void ResetInitialNavigationTimeout()
+```
+
+##### `ResetMinFailureDuration` <a name="ResetMinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinFailureDuration"></a>
+
+```csharp
+private void ResetMinFailureDuration()
+```
+
+##### `ResetMinLocationFailed` <a name="ResetMinLocationFailed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinLocationFailed"></a>
+
+```csharp
+private void ResetMinLocationFailed()
+```
+
+##### `ResetMonitorName` <a name="ResetMonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorName"></a>
+
+```csharp
+private void ResetMonitorName()
+```
+
+##### `ResetMonitorOptions` <a name="ResetMonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorOptions"></a>
+
+```csharp
+private void ResetMonitorOptions()
+```
+
+##### `ResetMonitorPriority` <a name="ResetMonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorPriority"></a>
+
+```csharp
+private void ResetMonitorPriority()
+```
+
+##### `ResetNoScreenshot` <a name="ResetNoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetNoScreenshot"></a>
+
+```csharp
+private void ResetNoScreenshot()
+```
+
+##### `ResetRestrictedRoles` <a name="ResetRestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRestrictedRoles"></a>
+
+```csharp
+private void ResetRestrictedRoles()
+```
+
+##### `ResetRetry` <a name="ResetRetry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRetry"></a>
+
+```csharp
+private void ResetRetry()
+```
+
+##### `ResetRumSettings` <a name="ResetRumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRumSettings"></a>
+
+```csharp
+private void ResetRumSettings()
+```
+
+##### `ResetScheduling` <a name="ResetScheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetScheduling"></a>
+
+```csharp
+private void ResetScheduling()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ci">Ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry">Retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings">RumSettings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">AcceptSelfSignedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">AllowInsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">CheckCertificateRevocationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput">CiInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">DisableCorsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">DisableCspInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">FollowRedirectsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput">HttpVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">IgnoreServerCertificateErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput">InitialNavigationTimeoutInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput">MinFailureDurationInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput">MinLocationFailedInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput">MonitorNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput">MonitorOptionsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput">MonitorPriorityInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">NoScreenshotInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput">RestrictedRolesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput">RetryInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput">RumSettingsInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput">SchedulingInput</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput">TickEveryInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">AcceptSelfSigned</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">AllowInsecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">CheckCertificateRevocation</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">DisableCors</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">DisableCsp</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">FollowRedirects</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion">HttpVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">IgnoreServerCertificateError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout">InitialNavigationTimeout</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration">MinFailureDuration</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed">MinLocationFailed</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName">MonitorName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority">MonitorPriority</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">NoScreenshot</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles">RestrictedRoles</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery">TickEvery</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Ci`<sup>Required</sup> <a name="Ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ci"></a>
+
+```csharp
+public SyntheticsTestOptionsListCiOutputReference Ci { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a>
+
+---
+
+##### `MonitorOptions`<sup>Required</sup> <a name="MonitorOptions" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptions"></a>
+
+```csharp
+public SyntheticsTestOptionsListMonitorOptionsOutputReference MonitorOptions { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a>
+
+---
+
+##### `Retry`<sup>Required</sup> <a name="Retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry"></a>
+
+```csharp
+public SyntheticsTestOptionsListRetryOutputReference Retry { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a>
+
+---
+
+##### `RumSettings`<sup>Required</sup> <a name="RumSettings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings"></a>
+
+```csharp
+public SyntheticsTestOptionsListRumSettingsOutputReference RumSettings { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a>
+
+---
+
+##### `Scheduling`<sup>Required</sup> <a name="Scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling"></a>
+
+```csharp
+public SyntheticsTestOptionsListSchedulingOutputReference Scheduling { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a>
+
+---
+
+##### `AcceptSelfSignedInput`<sup>Optional</sup> <a name="AcceptSelfSignedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput"></a>
+
+```csharp
+public object AcceptSelfSignedInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AllowInsecureInput`<sup>Optional</sup> <a name="AllowInsecureInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput"></a>
+
+```csharp
+public object AllowInsecureInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `CheckCertificateRevocationInput`<sup>Optional</sup> <a name="CheckCertificateRevocationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput"></a>
+
+```csharp
+public object CheckCertificateRevocationInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `CiInput`<sup>Optional</sup> <a name="CiInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput"></a>
+
+```csharp
+public SyntheticsTestOptionsListCi CiInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
+
+---
+
+##### `DisableCorsInput`<sup>Optional</sup> <a name="DisableCorsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput"></a>
+
+```csharp
+public object DisableCorsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `DisableCspInput`<sup>Optional</sup> <a name="DisableCspInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput"></a>
+
+```csharp
+public object DisableCspInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `FollowRedirectsInput`<sup>Optional</sup> <a name="FollowRedirectsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput"></a>
+
+```csharp
+public object FollowRedirectsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `HttpVersionInput`<sup>Optional</sup> <a name="HttpVersionInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput"></a>
+
+```csharp
+public string HttpVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IgnoreServerCertificateErrorInput`<sup>Optional</sup> <a name="IgnoreServerCertificateErrorInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput"></a>
+
+```csharp
+public object IgnoreServerCertificateErrorInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `InitialNavigationTimeoutInput`<sup>Optional</sup> <a name="InitialNavigationTimeoutInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput"></a>
+
+```csharp
+public double InitialNavigationTimeoutInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `MinFailureDurationInput`<sup>Optional</sup> <a name="MinFailureDurationInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput"></a>
+
+```csharp
+public double MinFailureDurationInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `MinLocationFailedInput`<sup>Optional</sup> <a name="MinLocationFailedInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput"></a>
+
+```csharp
+public double MinLocationFailedInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `MonitorNameInput`<sup>Optional</sup> <a name="MonitorNameInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput"></a>
+
+```csharp
+public string MonitorNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MonitorOptionsInput`<sup>Optional</sup> <a name="MonitorOptionsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput"></a>
+
+```csharp
+public SyntheticsTestOptionsListMonitorOptions MonitorOptionsInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
+
+---
+
+##### `MonitorPriorityInput`<sup>Optional</sup> <a name="MonitorPriorityInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput"></a>
+
+```csharp
+public double MonitorPriorityInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `NoScreenshotInput`<sup>Optional</sup> <a name="NoScreenshotInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput"></a>
+
+```csharp
+public object NoScreenshotInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RestrictedRolesInput`<sup>Optional</sup> <a name="RestrictedRolesInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput"></a>
+
+```csharp
+public string[] RestrictedRolesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `RetryInput`<sup>Optional</sup> <a name="RetryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput"></a>
+
+```csharp
+public SyntheticsTestOptionsListRetry RetryInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
+
+---
+
+##### `RumSettingsInput`<sup>Optional</sup> <a name="RumSettingsInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput"></a>
+
+```csharp
+public SyntheticsTestOptionsListRumSettings RumSettingsInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+---
+
+##### `SchedulingInput`<sup>Optional</sup> <a name="SchedulingInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput"></a>
+
+```csharp
+public SyntheticsTestOptionsListScheduling SchedulingInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
+##### `TickEveryInput`<sup>Optional</sup> <a name="TickEveryInput" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput"></a>
+
+```csharp
+public double TickEveryInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `AcceptSelfSigned`<sup>Required</sup> <a name="AcceptSelfSigned" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned"></a>
+
+```csharp
+public object AcceptSelfSigned { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AllowInsecure`<sup>Required</sup> <a name="AllowInsecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure"></a>
+
+```csharp
+public object AllowInsecure { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `CheckCertificateRevocation`<sup>Required</sup> <a name="CheckCertificateRevocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation"></a>
+
+```csharp
+public object CheckCertificateRevocation { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `DisableCors`<sup>Required</sup> <a name="DisableCors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors"></a>
+
+```csharp
+public object DisableCors { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `DisableCsp`<sup>Required</sup> <a name="DisableCsp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp"></a>
+
+```csharp
+public object DisableCsp { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `FollowRedirects`<sup>Required</sup> <a name="FollowRedirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects"></a>
+
+```csharp
+public object FollowRedirects { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `HttpVersion`<sup>Required</sup> <a name="HttpVersion" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion"></a>
+
+```csharp
+public string HttpVersion { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IgnoreServerCertificateError`<sup>Required</sup> <a name="IgnoreServerCertificateError" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError"></a>
+
+```csharp
+public object IgnoreServerCertificateError { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `InitialNavigationTimeout`<sup>Required</sup> <a name="InitialNavigationTimeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout"></a>
+
+```csharp
+public double InitialNavigationTimeout { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `MinFailureDuration`<sup>Required</sup> <a name="MinFailureDuration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration"></a>
+
+```csharp
+public double MinFailureDuration { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `MinLocationFailed`<sup>Required</sup> <a name="MinLocationFailed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed"></a>
+
+```csharp
+public double MinLocationFailed { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `MonitorName`<sup>Required</sup> <a name="MonitorName" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName"></a>
+
+```csharp
+public string MonitorName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MonitorPriority`<sup>Required</sup> <a name="MonitorPriority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority"></a>
+
+```csharp
+public double MonitorPriority { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `NoScreenshot`<sup>Required</sup> <a name="NoScreenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot"></a>
+
+```csharp
+public object NoScreenshot { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `RestrictedRoles`<sup>Required</sup> <a name="RestrictedRoles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles"></a>
+
+```csharp
+public string[] RestrictedRoles { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `TickEvery`<sup>Required</sup> <a name="TickEvery" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery"></a>
+
+```csharp
+public double TickEvery { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue"></a>
+
+```csharp
+public SyntheticsTestOptionsListStruct InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 ---
 

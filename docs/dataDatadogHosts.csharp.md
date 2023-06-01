@@ -378,7 +378,7 @@ DataDatadogHosts.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.hostList">HostList</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList">DataDatadogHostsHostListList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.hostList">HostList</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList">DataDatadogHostsHostListStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.totalMatching">TotalMatching</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.totalReturned">TotalReturned</a></code> | <code>double</code> | *No description.* |
@@ -520,10 +520,10 @@ public TerraformProvider Provider { get; }
 ##### `HostList`<sup>Required</sup> <a name="HostList" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.property.hostList"></a>
 
 ```csharp
-public DataDatadogHostsHostListList HostList { get; }
+public DataDatadogHostsHostListStructList HostList { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList">DataDatadogHostsHostListList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList">DataDatadogHostsHostListStructList</a>
 
 ---
 
@@ -859,19 +859,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ---
 
-### DataDatadogHostsHostList <a name="DataDatadogHostsHostList" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostList"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostList.Initializer"></a>
-
-```csharp
-using HashiCorp.Cdktf.Providers.Datadog;
-
-new DataDatadogHostsHostList {
-
-};
-```
-
-
 ### DataDatadogHostsHostListMeta <a name="DataDatadogHostsHostListMeta" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMeta"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMeta.Initializer"></a>
@@ -898,139 +885,20 @@ new DataDatadogHostsHostListMetrics {
 ```
 
 
-## Classes <a name="Classes" id="Classes"></a>
+### DataDatadogHostsHostListStruct <a name="DataDatadogHostsHostListStruct" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct"></a>
 
-### DataDatadogHostsHostListList <a name="DataDatadogHostsHostListList" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Datadog;
 
-new DataDatadogHostsHostListList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+new DataDatadogHostsHostListStruct {
+
+};
 ```
 
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* HashiCorp.Cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.get">Get</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.resolve.parameter._context"></a>
-
-- *Type:* HashiCorp.Cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.get"></a>
-
-```csharp
-private DataDatadogHostsHostListOutputReference Get(double Index)
-```
-
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.get.parameter.index"></a>
-
-- *Type:* double
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListList.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
+## Classes <a name="Classes" id="Classes"></a>
 
 ### DataDatadogHostsHostListMetaOutputReference <a name="DataDatadogHostsHostListMetaOutputReference" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetaOutputReference"></a>
 
@@ -1662,26 +1530,25 @@ public DataDatadogHostsHostListMetrics InternalValue { get; }
 ---
 
 
-### DataDatadogHostsHostListOutputReference <a name="DataDatadogHostsHostListOutputReference" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference"></a>
+### DataDatadogHostsHostListStructList <a name="DataDatadogHostsHostListStructList" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Datadog;
 
-new DataDatadogHostsHostListOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+new DataDatadogHostsHostListStructList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.terraformResource"></a>
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* HashiCorp.Cdktf.IInterpolatingParent
 
@@ -1689,7 +1556,7 @@ The parent resource.
 
 ---
 
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1697,15 +1564,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* double
-
-the index of this item in the list.
-
----
-
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1717,149 +1576,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.computeFqn"></a>
 
 ```csharp
 private string ComputeFqn()
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getAnyMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getBooleanAttribute"></a>
-
-```csharp
-private IResolvable GetBooleanAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getBooleanMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getListAttribute"></a>
-
-```csharp
-private string[] GetListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberAttribute"></a>
-
-```csharp
-private double GetNumberAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberListAttribute"></a>
-
-```csharp
-private double[] GetNumberListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getStringAttribute"></a>
-
-```csharp
-private string GetStringAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getStringMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.interpolationForAttribute"></a>
-
-```csharp
-private IResolvable InterpolationForAttribute(string Property)
-```
-
-###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.resolve"></a>
 
 ```csharp
 private object Resolve(IResolveContext Context)
@@ -1867,13 +1597,283 @@ private object Resolve(IResolveContext Context)
 
 Produce the Token's value at resolution time.
 
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.resolve.parameter._context"></a>
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.resolve.parameter._context"></a>
 
 - *Type:* HashiCorp.Cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.get"></a>
+
+```csharp
+private DataDatadogHostsHostListStructOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataDatadogHostsHostListStructOutputReference <a name="DataDatadogHostsHostListStructOutputReference" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Datadog;
+
+new DataDatadogHostsHostListStructOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.toString"></a>
 
 ```csharp
 private string ToString()
@@ -1888,26 +1888,26 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.aliases">Aliases</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.apps">Apps</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.awsName">AwsName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.hostName">HostName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.id">Id</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.isMuted">IsMuted</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.lastReportedTime">LastReportedTime</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.meta">Meta</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetaOutputReference">DataDatadogHostsHostListMetaOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.metrics">Metrics</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetricsOutputReference">DataDatadogHostsHostListMetricsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.muteTimeout">MuteTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.sources">Sources</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.up">Up</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostList">DataDatadogHostsHostList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.aliases">Aliases</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.apps">Apps</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.awsName">AwsName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.hostName">HostName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.id">Id</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.isMuted">IsMuted</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.lastReportedTime">LastReportedTime</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.meta">Meta</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetaOutputReference">DataDatadogHostsHostListMetaOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.metrics">Metrics</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetricsOutputReference">DataDatadogHostsHostListMetricsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.muteTimeout">MuteTimeout</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.sources">Sources</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.up">Up</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct">DataDatadogHostsHostListStruct</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.creationStack"></a>
 
 ```csharp
 public string[] CreationStack { get; }
@@ -1921,7 +1921,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.fqn"></a>
 
 ```csharp
 public string Fqn { get; }
@@ -1931,7 +1931,7 @@ public string Fqn { get; }
 
 ---
 
-##### `Aliases`<sup>Required</sup> <a name="Aliases" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.aliases"></a>
+##### `Aliases`<sup>Required</sup> <a name="Aliases" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.aliases"></a>
 
 ```csharp
 public string[] Aliases { get; }
@@ -1941,7 +1941,7 @@ public string[] Aliases { get; }
 
 ---
 
-##### `Apps`<sup>Required</sup> <a name="Apps" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.apps"></a>
+##### `Apps`<sup>Required</sup> <a name="Apps" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.apps"></a>
 
 ```csharp
 public string[] Apps { get; }
@@ -1951,7 +1951,7 @@ public string[] Apps { get; }
 
 ---
 
-##### `AwsName`<sup>Required</sup> <a name="AwsName" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.awsName"></a>
+##### `AwsName`<sup>Required</sup> <a name="AwsName" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.awsName"></a>
 
 ```csharp
 public string AwsName { get; }
@@ -1961,7 +1961,7 @@ public string AwsName { get; }
 
 ---
 
-##### `HostName`<sup>Required</sup> <a name="HostName" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.hostName"></a>
+##### `HostName`<sup>Required</sup> <a name="HostName" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.hostName"></a>
 
 ```csharp
 public string HostName { get; }
@@ -1971,7 +1971,7 @@ public string HostName { get; }
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.id"></a>
 
 ```csharp
 public double Id { get; }
@@ -1981,7 +1981,7 @@ public double Id { get; }
 
 ---
 
-##### `IsMuted`<sup>Required</sup> <a name="IsMuted" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.isMuted"></a>
+##### `IsMuted`<sup>Required</sup> <a name="IsMuted" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.isMuted"></a>
 
 ```csharp
 public IResolvable IsMuted { get; }
@@ -1991,7 +1991,7 @@ public IResolvable IsMuted { get; }
 
 ---
 
-##### `LastReportedTime`<sup>Required</sup> <a name="LastReportedTime" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.lastReportedTime"></a>
+##### `LastReportedTime`<sup>Required</sup> <a name="LastReportedTime" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.lastReportedTime"></a>
 
 ```csharp
 public double LastReportedTime { get; }
@@ -2001,7 +2001,7 @@ public double LastReportedTime { get; }
 
 ---
 
-##### `Meta`<sup>Required</sup> <a name="Meta" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.meta"></a>
+##### `Meta`<sup>Required</sup> <a name="Meta" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.meta"></a>
 
 ```csharp
 public DataDatadogHostsHostListMetaOutputReference Meta { get; }
@@ -2011,7 +2011,7 @@ public DataDatadogHostsHostListMetaOutputReference Meta { get; }
 
 ---
 
-##### `Metrics`<sup>Required</sup> <a name="Metrics" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.metrics"></a>
+##### `Metrics`<sup>Required</sup> <a name="Metrics" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.metrics"></a>
 
 ```csharp
 public DataDatadogHostsHostListMetricsOutputReference Metrics { get; }
@@ -2021,7 +2021,7 @@ public DataDatadogHostsHostListMetricsOutputReference Metrics { get; }
 
 ---
 
-##### `MuteTimeout`<sup>Required</sup> <a name="MuteTimeout" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.muteTimeout"></a>
+##### `MuteTimeout`<sup>Required</sup> <a name="MuteTimeout" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.muteTimeout"></a>
 
 ```csharp
 public double MuteTimeout { get; }
@@ -2031,7 +2031,7 @@ public double MuteTimeout { get; }
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.name"></a>
 
 ```csharp
 public string Name { get; }
@@ -2041,7 +2041,7 @@ public string Name { get; }
 
 ---
 
-##### `Sources`<sup>Required</sup> <a name="Sources" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.sources"></a>
+##### `Sources`<sup>Required</sup> <a name="Sources" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.sources"></a>
 
 ```csharp
 public string[] Sources { get; }
@@ -2051,7 +2051,7 @@ public string[] Sources { get; }
 
 ---
 
-##### `Up`<sup>Required</sup> <a name="Up" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.up"></a>
+##### `Up`<sup>Required</sup> <a name="Up" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.up"></a>
 
 ```csharp
 public IResolvable Up { get; }
@@ -2061,13 +2061,13 @@ public IResolvable Up { get; }
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.property.internalValue"></a>
 
 ```csharp
-public DataDatadogHostsHostList InternalValue { get; }
+public DataDatadogHostsHostListStruct InternalValue { get; }
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostList">DataDatadogHostsHostList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct">DataDatadogHostsHostListStruct</a>
 
 ---
 

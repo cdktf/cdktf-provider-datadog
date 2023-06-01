@@ -179,10 +179,10 @@ export class DataDatadogHostsHostListMetricsOutputReference extends cdktf.Comple
     return this.getNumberAttribute('load');
   }
 }
-export interface DataDatadogHostsHostList {
+export interface DataDatadogHostsHostListStruct {
 }
 
-export function dataDatadogHostsHostListToTerraform(struct?: DataDatadogHostsHostList): any {
+export function dataDatadogHostsHostListStructToTerraform(struct?: DataDatadogHostsHostListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -191,7 +191,7 @@ export function dataDatadogHostsHostListToTerraform(struct?: DataDatadogHostsHos
   }
 }
 
-export class DataDatadogHostsHostListOutputReference extends cdktf.ComplexObject {
+export class DataDatadogHostsHostListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -204,13 +204,13 @@ export class DataDatadogHostsHostListOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogHostsHostList | undefined {
+  public get internalValue(): DataDatadogHostsHostListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogHostsHostList | undefined) {
+  public set internalValue(value: DataDatadogHostsHostListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -287,7 +287,7 @@ export class DataDatadogHostsHostListOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DataDatadogHostsHostListList extends cdktf.ComplexList {
+export class DataDatadogHostsHostListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -301,8 +301,8 @@ export class DataDatadogHostsHostListList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataDatadogHostsHostListOutputReference {
-    return new DataDatadogHostsHostListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataDatadogHostsHostListStructOutputReference {
+    return new DataDatadogHostsHostListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -387,7 +387,7 @@ export class DataDatadogHosts extends cdktf.TerraformDataSource {
   }
 
   // host_list - computed: true, optional: false, required: false
-  private _hostList = new DataDatadogHostsHostListList(this, "host_list", false);
+  private _hostList = new DataDatadogHostsHostListStructList(this, "host_list", false);
   public get hostList() {
     return this._hostList;
   }

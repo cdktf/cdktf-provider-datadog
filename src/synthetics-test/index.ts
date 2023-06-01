@@ -120,7 +120,7 @@ export interface SyntheticsTestConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
   */
-  readonly optionsList?: SyntheticsTestOptionsList;
+  readonly optionsList?: SyntheticsTestOptionsListStruct;
   /**
   * request_basicauth block
   * 
@@ -5596,7 +5596,7 @@ export class SyntheticsTestOptionsListSchedulingOutputReference extends cdktf.Co
     return this._timeframes.internalValue;
   }
 }
-export interface SyntheticsTestOptionsList {
+export interface SyntheticsTestOptionsListStruct {
   /**
   * For SSL test, whether or not the test should allow self signed certificates.
   * 
@@ -5723,7 +5723,7 @@ export interface SyntheticsTestOptionsList {
   readonly scheduling?: SyntheticsTestOptionsListScheduling;
 }
 
-export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOptionsListOutputReference | SyntheticsTestOptionsList): any {
+export function syntheticsTestOptionsListStructToTerraform(struct?: SyntheticsTestOptionsListStructOutputReference | SyntheticsTestOptionsListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5753,7 +5753,7 @@ export function syntheticsTestOptionsListToTerraform(struct?: SyntheticsTestOpti
   }
 }
 
-export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObject {
+export class SyntheticsTestOptionsListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5764,7 +5764,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): SyntheticsTestOptionsList | undefined {
+  public get internalValue(): SyntheticsTestOptionsListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._acceptSelfSigned !== undefined) {
@@ -5854,7 +5854,7 @@ export class SyntheticsTestOptionsListOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsTestOptionsList | undefined) {
+  public set internalValue(value: SyntheticsTestOptionsListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._acceptSelfSigned = undefined;
@@ -8001,11 +8001,11 @@ export class SyntheticsTest extends cdktf.TerraformResource {
   }
 
   // options_list - computed: false, optional: true, required: false
-  private _optionsList = new SyntheticsTestOptionsListOutputReference(this, "options_list");
+  private _optionsList = new SyntheticsTestOptionsListStructOutputReference(this, "options_list");
   public get optionsList() {
     return this._optionsList;
   }
-  public putOptionsList(value: SyntheticsTestOptionsList) {
+  public putOptionsList(value: SyntheticsTestOptionsListStruct) {
     this._optionsList.internalValue = value;
   }
   public resetOptionsList() {
@@ -8103,7 +8103,7 @@ export class SyntheticsTest extends cdktf.TerraformResource {
       browser_step: cdktf.listMapper(syntheticsTestBrowserStepToTerraform, true)(this._browserStep.internalValue),
       browser_variable: cdktf.listMapper(syntheticsTestBrowserVariableToTerraform, true)(this._browserVariable.internalValue),
       config_variable: cdktf.listMapper(syntheticsTestConfigVariableToTerraform, true)(this._configVariable.internalValue),
-      options_list: syntheticsTestOptionsListToTerraform(this._optionsList.internalValue),
+      options_list: syntheticsTestOptionsListStructToTerraform(this._optionsList.internalValue),
       request_basicauth: syntheticsTestRequestBasicauthToTerraform(this._requestBasicauth.internalValue),
       request_client_certificate: syntheticsTestRequestClientCertificateToTerraform(this._requestClientCertificate.internalValue),
       request_definition: syntheticsTestRequestDefinitionToTerraform(this._requestDefinition.internalValue),
