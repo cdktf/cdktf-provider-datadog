@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 sensitivedatascannergroup.NewSensitiveDataScannerGroup(scope Construct, id *string, config SensitiveDataScannerGroupConfig) SensitiveDataScannerGroup
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 &sensitivedatascannergroup.SensitiveDataScannerGroupConfig {
 	Connection: interface{},
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannerg
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v6.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter,
 	IsEnabled: interface{},
 	Name: *string,
 	ProductList: *[]*string,
@@ -875,7 +875,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 &sensitivedatascannergroup.SensitiveDataScannerGroupFilter {
 	Query: *string,
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/sensitivedatascannergroup"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/sensitivedatascannergroup"
 
 sensitivedatascannergroup.NewSensitiveDataScannerGroupFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SensitiveDataScannerGroupFilterOutputReference
 ```
