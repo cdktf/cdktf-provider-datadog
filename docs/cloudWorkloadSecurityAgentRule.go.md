@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudworkloadsecurityagentrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/cloudworkloadsecurityagentrule"
 
 cloudworkloadsecurityagentrule.NewCloudWorkloadSecurityAgentRule(scope Construct, id *string, config CloudWorkloadSecurityAgentRuleConfig) CloudWorkloadSecurityAgentRule
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudworkloadsecurityagentrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/cloudworkloadsecurityagentrule"
 
 cloudworkloadsecurityagentrule.CloudWorkloadSecurityAgentRule_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudworkloadsecurityagentrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/cloudworkloadsecurityagentrule"
 
 cloudworkloadsecurityagentrule.CloudWorkloadSecurityAgentRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ cloudworkloadsecurityagentrule.CloudWorkloadSecurityAgentRule_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudworkloadsecurityagentrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/cloudworkloadsecurityagentrule"
 
 cloudworkloadsecurityagentrule.CloudWorkloadSecurityAgentRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.cloudWorkloadSecurityAgentRule.CloudWorkloadSecurityAgentRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudworkloadsecurityagentrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/cloudworkloadsecurityagentrule"
 
 &cloudworkloadsecurityagentrule.CloudWorkloadSecurityAgentRuleConfig {
 	Connection: interface{},

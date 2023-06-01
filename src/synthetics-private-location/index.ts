@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_private_location
 // generated from terraform resource schema
 
