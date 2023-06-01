@@ -37,7 +37,7 @@ syntheticsTest.SyntheticsTest(
   device_ids: typing.List[str] = None,
   id: str = None,
   message: str = None,
-  options_list: SyntheticsTestOptionsList = None,
+  options_list: SyntheticsTestOptionsListStruct = None,
   request_basicauth: SyntheticsTestRequestBasicauth = None,
   request_client_certificate: SyntheticsTestRequestClientCertificate = None,
   request_definition: SyntheticsTestRequestDefinition = None,
@@ -73,7 +73,7 @@ syntheticsTest.SyntheticsTest(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | Required if `type = "browser"`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.message">message</a></code> | <code>str</code> | A message to include with notifications for this synthetics test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | options_list block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestBasicauth">request_basicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestClientCertificate">request_client_certificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ##### `options_list`<sup>Optional</sup> <a name="options_list" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer.parameter.optionsList"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 options_list block.
 
@@ -1603,7 +1603,7 @@ syntheticsTest.SyntheticsTest.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.browserVariable">browser_variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList">SyntheticsTestBrowserVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.configVariable">config_variable</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList">SyntheticsTestConfigVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.monitorId">monitor_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference">SyntheticsTestOptionsListOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference">SyntheticsTestOptionsListStructOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauth">request_basicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference">SyntheticsTestRequestBasicauthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificate">request_client_certificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateOutputReference">SyntheticsTestRequestClientCertificateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference">SyntheticsTestRequestDefinitionOutputReference</a></code> | *No description.* |
@@ -1618,7 +1618,7 @@ syntheticsTest.SyntheticsTest.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.locationsInput">locations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">options_list_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput">options_list_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestBasicauthInput">request_basicauth_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestClientCertificateInput">request_client_certificate_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.requestDefinitionInput">request_definition_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | *No description.* |
@@ -1850,10 +1850,10 @@ monitor_id: typing.Union[int, float]
 ##### `options_list`<sup>Required</sup> <a name="options_list" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsList"></a>
 
 ```python
-options_list: SyntheticsTestOptionsListOutputReference
+options_list: SyntheticsTestOptionsListStructOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference">SyntheticsTestOptionsListOutputReference</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference">SyntheticsTestOptionsListStructOutputReference</a>
 
 ---
 
@@ -2000,10 +2000,10 @@ name_input: str
 ##### `options_list_input`<sup>Optional</sup> <a name="options_list_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.property.optionsListInput"></a>
 
 ```python
-options_list_input: SyntheticsTestOptionsList
+options_list_input: SyntheticsTestOptionsListStruct
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 ---
 
@@ -4727,7 +4727,7 @@ syntheticsTest.SyntheticsTestConfig(
   device_ids: typing.List[str] = None,
   id: str = None,
   message: str = None,
-  options_list: SyntheticsTestOptionsList = None,
+  options_list: SyntheticsTestOptionsListStruct = None,
   request_basicauth: SyntheticsTestRequestBasicauth = None,
   request_client_certificate: SyntheticsTestRequestClientCertificate = None,
   request_definition: SyntheticsTestRequestDefinition = None,
@@ -4763,7 +4763,7 @@ syntheticsTest.SyntheticsTestConfig(
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">device_ids</a></code> | <code>typing.List[str]</code> | Required if `type = "browser"`. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">message</a></code> | <code>str</code> | A message to include with notifications for this synthetics test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | options_list block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList">options_list</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | options_list block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestBasicauth">request_basicauth</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth">SyntheticsTestRequestBasicauth</a></code> | request_basicauth block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestClientCertificate">request_client_certificate</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate">SyntheticsTestRequestClientCertificate</a></code> | request_client_certificate block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.requestDefinition">request_definition</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition">SyntheticsTestRequestDefinition</a></code> | request_definition block. |
@@ -5024,10 +5024,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 ##### `options_list`<sup>Optional</sup> <a name="options_list" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.optionsList"></a>
 
 ```python
-options_list: SyntheticsTestOptionsList
+options_list: SyntheticsTestOptionsListStruct
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 options_list block.
 
@@ -5283,358 +5283,6 @@ secure: typing.Union[bool, IResolvable]
 Whether the value of this variable will be obfuscated in test results.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
-
----
-
-### SyntheticsTestOptionsList <a name="SyntheticsTestOptionsList" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import synthetics_test
-
-syntheticsTest.SyntheticsTestOptionsList(
-  tick_every: typing.Union[int, float],
-  accept_self_signed: typing.Union[bool, IResolvable] = None,
-  allow_insecure: typing.Union[bool, IResolvable] = None,
-  check_certificate_revocation: typing.Union[bool, IResolvable] = None,
-  ci: SyntheticsTestOptionsListCi = None,
-  disable_cors: typing.Union[bool, IResolvable] = None,
-  disable_csp: typing.Union[bool, IResolvable] = None,
-  follow_redirects: typing.Union[bool, IResolvable] = None,
-  http_version: str = None,
-  ignore_server_certificate_error: typing.Union[bool, IResolvable] = None,
-  initial_navigation_timeout: typing.Union[int, float] = None,
-  min_failure_duration: typing.Union[int, float] = None,
-  min_location_failed: typing.Union[int, float] = None,
-  monitor_name: str = None,
-  monitor_options: SyntheticsTestOptionsListMonitorOptions = None,
-  monitor_priority: typing.Union[int, float] = None,
-  no_screenshot: typing.Union[bool, IResolvable] = None,
-  restricted_roles: typing.List[str] = None,
-  retry: SyntheticsTestOptionsListRetry = None,
-  rum_settings: SyntheticsTestOptionsListRumSettings = None,
-  scheduling: SyntheticsTestOptionsListScheduling = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | How often the test should run (in seconds). |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL test, whether or not the test should allow self signed certificates. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows loading insecure content for an HTTP test. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCors">disable_cors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable Cross-Origin Resource Sharing for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCsp">disable_csp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable Content Security Policy for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the API HTTP test should follow redirects. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion">http_version</a></code> | <code>str</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore server certificate error. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName">monitor_name</a></code> | <code>str</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevents saving screenshots of the steps. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.rumSettings">rum_settings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | scheduling block. |
-
----
-
-##### `tick_every`<sup>Required</sup> <a name="tick_every" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.tickEvery"></a>
-
-```python
-tick_every: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-How often the test should run (in seconds).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
-
----
-
-##### `accept_self_signed`<sup>Optional</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.acceptSelfSigned"></a>
-
-```python
-accept_self_signed: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-For SSL test, whether or not the test should allow self signed certificates.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
-
----
-
-##### `allow_insecure`<sup>Optional</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.allowInsecure"></a>
-
-```python
-allow_insecure: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Allows loading insecure content for an HTTP test.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
-
----
-
-##### `check_certificate_revocation`<sup>Optional</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.checkCertificateRevocation"></a>
-
-```python
-check_certificate_revocation: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
-
----
-
-##### `ci`<sup>Optional</sup> <a name="ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ci"></a>
-
-```python
-ci: SyntheticsTestOptionsListCi
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
-
-ci block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
-
----
-
-##### `disable_cors`<sup>Optional</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCors"></a>
-
-```python
-disable_cors: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Disable Cross-Origin Resource Sharing for browser tests.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
-
----
-
-##### `disable_csp`<sup>Optional</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.disableCsp"></a>
-
-```python
-disable_csp: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Disable Content Security Policy for browser tests.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
-
----
-
-##### `follow_redirects`<sup>Optional</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.followRedirects"></a>
-
-```python
-follow_redirects: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Determines whether or not the API HTTP test should follow redirects.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
-
----
-
-##### `http_version`<sup>Optional</sup> <a name="http_version" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.httpVersion"></a>
-
-```python
-http_version: str
-```
-
-- *Type:* str
-
-HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
-
----
-
-##### `ignore_server_certificate_error`<sup>Optional</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.ignoreServerCertificateError"></a>
-
-```python
-ignore_server_certificate_error: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore server certificate error.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
-
----
-
-##### `initial_navigation_timeout`<sup>Optional</sup> <a name="initial_navigation_timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.initialNavigationTimeout"></a>
-
-```python
-initial_navigation_timeout: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Timeout before declaring the initial step as failed (in seconds) for browser tests.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
-
----
-
-##### `min_failure_duration`<sup>Optional</sup> <a name="min_failure_duration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minFailureDuration"></a>
-
-```python
-min_failure_duration: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
-
----
-
-##### `min_location_failed`<sup>Optional</sup> <a name="min_location_failed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.minLocationFailed"></a>
-
-```python
-min_location_failed: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Minimum number of locations in failure required to trigger an alert. Default is `1`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
-
----
-
-##### `monitor_name`<sup>Optional</sup> <a name="monitor_name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorName"></a>
-
-```python
-monitor_name: str
-```
-
-- *Type:* str
-
-The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
-
----
-
-##### `monitor_options`<sup>Optional</sup> <a name="monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorOptions"></a>
-
-```python
-monitor_options: SyntheticsTestOptionsListMonitorOptions
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
-
-monitor_options block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
-
----
-
-##### `monitor_priority`<sup>Optional</sup> <a name="monitor_priority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.monitorPriority"></a>
-
-```python
-monitor_priority: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
-
----
-
-##### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.noScreenshot"></a>
-
-```python
-no_screenshot: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Prevents saving screenshots of the steps.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
-
----
-
-##### `restricted_roles`<sup>Optional</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.restrictedRoles"></a>
-
-```python
-restricted_roles: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-A list of role identifiers pulled from the Roles API to restrict read and write access.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
-
----
-
-##### `retry`<sup>Optional</sup> <a name="retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.retry"></a>
-
-```python
-retry: SyntheticsTestOptionsListRetry
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
-
-retry block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
-
----
-
-##### `rum_settings`<sup>Optional</sup> <a name="rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.rumSettings"></a>
-
-```python
-rum_settings: SyntheticsTestOptionsListRumSettings
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
-
-rum_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
-
----
-
-##### `scheduling`<sup>Optional</sup> <a name="scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList.property.scheduling"></a>
-
-```python
-scheduling: SyntheticsTestOptionsListScheduling
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
-
-scheduling block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -5937,6 +5585,358 @@ to: str
 The hour of the day on which scheduling ends.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+
+---
+
+### SyntheticsTestOptionsListStruct <a name="SyntheticsTestOptionsListStruct" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_datadog import synthetics_test
+
+syntheticsTest.SyntheticsTestOptionsListStruct(
+  tick_every: typing.Union[int, float],
+  accept_self_signed: typing.Union[bool, IResolvable] = None,
+  allow_insecure: typing.Union[bool, IResolvable] = None,
+  check_certificate_revocation: typing.Union[bool, IResolvable] = None,
+  ci: SyntheticsTestOptionsListCi = None,
+  disable_cors: typing.Union[bool, IResolvable] = None,
+  disable_csp: typing.Union[bool, IResolvable] = None,
+  follow_redirects: typing.Union[bool, IResolvable] = None,
+  http_version: str = None,
+  ignore_server_certificate_error: typing.Union[bool, IResolvable] = None,
+  initial_navigation_timeout: typing.Union[int, float] = None,
+  min_failure_duration: typing.Union[int, float] = None,
+  min_location_failed: typing.Union[int, float] = None,
+  monitor_name: str = None,
+  monitor_options: SyntheticsTestOptionsListMonitorOptions = None,
+  monitor_priority: typing.Union[int, float] = None,
+  no_screenshot: typing.Union[bool, IResolvable] = None,
+  restricted_roles: typing.List[str] = None,
+  retry: SyntheticsTestOptionsListRetry = None,
+  rum_settings: SyntheticsTestOptionsListRumSettings = None,
+  scheduling: SyntheticsTestOptionsListScheduling = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | How often the test should run (in seconds). |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL test, whether or not the test should allow self signed certificates. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allows loading insecure content for an HTTP test. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | ci block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors">disable_cors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable Cross-Origin Resource Sharing for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp">disable_csp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable Content Security Policy for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether or not the API HTTP test should follow redirects. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion">http_version</a></code> | <code>str</code> | HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore server certificate error. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | Timeout before declaring the initial step as failed (in seconds) for browser tests. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | Minimum number of locations in failure required to trigger an alert. Default is `1`. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">monitor_name</a></code> | <code>str</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prevents saving screenshots of the steps. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings">rum_settings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | rum_settings block. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | scheduling block. |
+
+---
+
+##### `tick_every`<sup>Required</sup> <a name="tick_every" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.tickEvery"></a>
+
+```python
+tick_every: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+How often the test should run (in seconds).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+
+---
+
+##### `accept_self_signed`<sup>Optional</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.acceptSelfSigned"></a>
+
+```python
+accept_self_signed: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+For SSL test, whether or not the test should allow self signed certificates.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+
+---
+
+##### `allow_insecure`<sup>Optional</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.allowInsecure"></a>
+
+```python
+allow_insecure: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Allows loading insecure content for an HTTP test.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+
+---
+
+##### `check_certificate_revocation`<sup>Optional</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.checkCertificateRevocation"></a>
+
+```python
+check_certificate_revocation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+For SSL test, whether or not the test should fail on revoked certificate in stapled OCSP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+
+---
+
+##### `ci`<sup>Optional</sup> <a name="ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ci"></a>
+
+```python
+ci: SyntheticsTestOptionsListCi
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
+
+ci block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+
+---
+
+##### `disable_cors`<sup>Optional</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCors"></a>
+
+```python
+disable_cors: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Disable Cross-Origin Resource Sharing for browser tests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+
+---
+
+##### `disable_csp`<sup>Optional</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.disableCsp"></a>
+
+```python
+disable_csp: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Disable Content Security Policy for browser tests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+
+---
+
+##### `follow_redirects`<sup>Optional</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.followRedirects"></a>
+
+```python
+follow_redirects: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Determines whether or not the API HTTP test should follow redirects.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+
+---
+
+##### `http_version`<sup>Optional</sup> <a name="http_version" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.httpVersion"></a>
+
+```python
+http_version: str
+```
+
+- *Type:* str
+
+HTTP version to use for a Synthetics API test. Valid values are `http1`, `http2`, `any`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+
+---
+
+##### `ignore_server_certificate_error`<sup>Optional</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.ignoreServerCertificateError"></a>
+
+```python
+ignore_server_certificate_error: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Ignore server certificate error.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+
+---
+
+##### `initial_navigation_timeout`<sup>Optional</sup> <a name="initial_navigation_timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.initialNavigationTimeout"></a>
+
+```python
+initial_navigation_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Timeout before declaring the initial step as failed (in seconds) for browser tests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+
+---
+
+##### `min_failure_duration`<sup>Optional</sup> <a name="min_failure_duration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minFailureDuration"></a>
+
+```python
+min_failure_duration: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+
+---
+
+##### `min_location_failed`<sup>Optional</sup> <a name="min_location_failed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed"></a>
+
+```python
+min_location_failed: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Minimum number of locations in failure required to trigger an alert. Default is `1`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
+
+---
+
+##### `monitor_name`<sup>Optional</sup> <a name="monitor_name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName"></a>
+
+```python
+monitor_name: str
+```
+
+- *Type:* str
+
+The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+
+---
+
+##### `monitor_options`<sup>Optional</sup> <a name="monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions"></a>
+
+```python
+monitor_options: SyntheticsTestOptionsListMonitorOptions
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
+
+monitor_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+
+---
+
+##### `monitor_priority`<sup>Optional</sup> <a name="monitor_priority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority"></a>
+
+```python
+monitor_priority: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
+
+---
+
+##### `no_screenshot`<sup>Optional</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot"></a>
+
+```python
+no_screenshot: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Prevents saving screenshots of the steps.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+
+---
+
+##### `restricted_roles`<sup>Optional</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles"></a>
+
+```python
+restricted_roles: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of role identifiers pulled from the Roles API to restrict read and write access.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+
+---
+
+##### `retry`<sup>Optional</sup> <a name="retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry"></a>
+
+```python
+retry: SyntheticsTestOptionsListRetry
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
+
+retry block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+
+---
+
+##### `rum_settings`<sup>Optional</sup> <a name="rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.rumSettings"></a>
+
+```python
+rum_settings: SyntheticsTestOptionsListRumSettings
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+rum_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+
+---
+
+##### `scheduling`<sup>Optional</sup> <a name="scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.scheduling"></a>
+
+```python
+scheduling: SyntheticsTestOptionsListScheduling
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+scheduling block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -19568,1023 +19568,6 @@ internal_value: SyntheticsTestOptionsListMonitorOptions
 ---
 
 
-### SyntheticsTestOptionsListOutputReference <a name="SyntheticsTestOptionsListOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import synthetics_test
-
-syntheticsTest.SyntheticsTestOptionsListOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putCi">put_ci</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions">put_monitor_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry">put_retry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings">put_rum_settings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling">put_scheduling</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned">reset_accept_self_signed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAllowInsecure">reset_allow_insecure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCheckCertificateRevocation">reset_check_certificate_revocation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCi">reset_ci</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCors">reset_disable_cors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCsp">reset_disable_csp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetFollowRedirects">reset_follow_redirects</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetHttpVersion">reset_http_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetIgnoreServerCertificateError">reset_ignore_server_certificate_error</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetInitialNavigationTimeout">reset_initial_navigation_timeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinFailureDuration">reset_min_failure_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinLocationFailed">reset_min_location_failed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorName">reset_monitor_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorOptions">reset_monitor_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorPriority">reset_monitor_priority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetNoScreenshot">reset_no_screenshot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRestrictedRoles">reset_restricted_roles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRetry">reset_retry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRumSettings">reset_rum_settings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling">reset_scheduling</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `put_ci` <a name="put_ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putCi"></a>
-
-```python
-def put_ci(
-  execution_rule: str = None
-) -> None
-```
-
-###### `execution_rule`<sup>Optional</sup> <a name="execution_rule" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putCi.parameter.executionRule"></a>
-
-- *Type:* str
-
-Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
-
----
-
-##### `put_monitor_options` <a name="put_monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions"></a>
-
-```python
-def put_monitor_options(
-  renotify_interval: typing.Union[int, float] = None
-) -> None
-```
-
-###### `renotify_interval`<sup>Optional</sup> <a name="renotify_interval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putMonitorOptions.parameter.renotifyInterval"></a>
-
-- *Type:* typing.Union[int, float]
-
-Specify a renotification frequency in minutes.
-
-Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
-
----
-
-##### `put_retry` <a name="put_retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry"></a>
-
-```python
-def put_retry(
-  count: typing.Union[int, float] = None,
-  interval: typing.Union[int, float] = None
-) -> None
-```
-
-###### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry.parameter.count"></a>
-
-- *Type:* typing.Union[int, float]
-
-Number of retries needed to consider a location as failed before sending a notification alert.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#count SyntheticsTest#count}
-
----
-
-###### `interval`<sup>Optional</sup> <a name="interval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRetry.parameter.interval"></a>
-
-- *Type:* typing.Union[int, float]
-
-Interval between a failed test and the next retry in milliseconds.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
-
----
-
-##### `put_rum_settings` <a name="put_rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings"></a>
-
-```python
-def put_rum_settings(
-  is_enabled: typing.Union[bool, IResolvable],
-  application_id: str = None,
-  client_token_id: typing.Union[int, float] = None
-) -> None
-```
-
-###### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings.parameter.isEnabled"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Determines whether RUM data is collected during test runs.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
-
----
-
-###### `application_id`<sup>Optional</sup> <a name="application_id" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings.parameter.applicationId"></a>
-
-- *Type:* str
-
-RUM application ID used to collect RUM data for the browser test.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
-
----
-
-###### `client_token_id`<sup>Optional</sup> <a name="client_token_id" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putRumSettings.parameter.clientTokenId"></a>
-
-- *Type:* typing.Union[int, float]
-
-RUM application API key ID used to collect RUM data for the browser test.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
-
----
-
-##### `put_scheduling` <a name="put_scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling"></a>
-
-```python
-def put_scheduling(
-  timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]],
-  timezone: str
-) -> None
-```
-
-###### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling.parameter.timeframes"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
-
-timeframes block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
-
----
-
-###### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.putScheduling.parameter.timezone"></a>
-
-- *Type:* str
-
-Timezone in which the timeframe is based.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
-
----
-
-##### `reset_accept_self_signed` <a name="reset_accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAcceptSelfSigned"></a>
-
-```python
-def reset_accept_self_signed() -> None
-```
-
-##### `reset_allow_insecure` <a name="reset_allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetAllowInsecure"></a>
-
-```python
-def reset_allow_insecure() -> None
-```
-
-##### `reset_check_certificate_revocation` <a name="reset_check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCheckCertificateRevocation"></a>
-
-```python
-def reset_check_certificate_revocation() -> None
-```
-
-##### `reset_ci` <a name="reset_ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetCi"></a>
-
-```python
-def reset_ci() -> None
-```
-
-##### `reset_disable_cors` <a name="reset_disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCors"></a>
-
-```python
-def reset_disable_cors() -> None
-```
-
-##### `reset_disable_csp` <a name="reset_disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetDisableCsp"></a>
-
-```python
-def reset_disable_csp() -> None
-```
-
-##### `reset_follow_redirects` <a name="reset_follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetFollowRedirects"></a>
-
-```python
-def reset_follow_redirects() -> None
-```
-
-##### `reset_http_version` <a name="reset_http_version" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetHttpVersion"></a>
-
-```python
-def reset_http_version() -> None
-```
-
-##### `reset_ignore_server_certificate_error` <a name="reset_ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetIgnoreServerCertificateError"></a>
-
-```python
-def reset_ignore_server_certificate_error() -> None
-```
-
-##### `reset_initial_navigation_timeout` <a name="reset_initial_navigation_timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetInitialNavigationTimeout"></a>
-
-```python
-def reset_initial_navigation_timeout() -> None
-```
-
-##### `reset_min_failure_duration` <a name="reset_min_failure_duration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinFailureDuration"></a>
-
-```python
-def reset_min_failure_duration() -> None
-```
-
-##### `reset_min_location_failed` <a name="reset_min_location_failed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMinLocationFailed"></a>
-
-```python
-def reset_min_location_failed() -> None
-```
-
-##### `reset_monitor_name` <a name="reset_monitor_name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorName"></a>
-
-```python
-def reset_monitor_name() -> None
-```
-
-##### `reset_monitor_options` <a name="reset_monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorOptions"></a>
-
-```python
-def reset_monitor_options() -> None
-```
-
-##### `reset_monitor_priority` <a name="reset_monitor_priority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetMonitorPriority"></a>
-
-```python
-def reset_monitor_priority() -> None
-```
-
-##### `reset_no_screenshot` <a name="reset_no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetNoScreenshot"></a>
-
-```python
-def reset_no_screenshot() -> None
-```
-
-##### `reset_restricted_roles` <a name="reset_restricted_roles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRestrictedRoles"></a>
-
-```python
-def reset_restricted_roles() -> None
-```
-
-##### `reset_retry` <a name="reset_retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRetry"></a>
-
-```python
-def reset_retry() -> None
-```
-
-##### `reset_rum_settings` <a name="reset_rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetRumSettings"></a>
-
-```python
-def reset_rum_settings() -> None
-```
-
-##### `reset_scheduling` <a name="reset_scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.resetScheduling"></a>
-
-```python
-def reset_scheduling() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettings">rum_settings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSignedInput">accept_self_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecureInput">allow_insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocationInput">check_certificate_revocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ciInput">ci_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCorsInput">disable_cors_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCspInput">disable_csp_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirectsInput">follow_redirects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersionInput">http_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateErrorInput">ignore_server_certificate_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeoutInput">initial_navigation_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDurationInput">min_failure_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailedInput">min_location_failed_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorNameInput">monitor_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptionsInput">monitor_options_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriorityInput">monitor_priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retryInput">retry_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettingsInput">rum_settings_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput">scheduling_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput">tick_every_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCors">disable_cors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCsp">disable_csp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersion">http_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorName">monitor_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `ci`<sup>Required</sup> <a name="ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ci"></a>
-
-```python
-ci: SyntheticsTestOptionsListCiOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a>
-
----
-
-##### `monitor_options`<sup>Required</sup> <a name="monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptions"></a>
-
-```python
-monitor_options: SyntheticsTestOptionsListMonitorOptionsOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a>
-
----
-
-##### `retry`<sup>Required</sup> <a name="retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retry"></a>
-
-```python
-retry: SyntheticsTestOptionsListRetryOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a>
-
----
-
-##### `rum_settings`<sup>Required</sup> <a name="rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettings"></a>
-
-```python
-rum_settings: SyntheticsTestOptionsListRumSettingsOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a>
-
----
-
-##### `scheduling`<sup>Required</sup> <a name="scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.scheduling"></a>
-
-```python
-scheduling: SyntheticsTestOptionsListSchedulingOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a>
-
----
-
-##### `accept_self_signed_input`<sup>Optional</sup> <a name="accept_self_signed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSignedInput"></a>
-
-```python
-accept_self_signed_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `allow_insecure_input`<sup>Optional</sup> <a name="allow_insecure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecureInput"></a>
-
-```python
-allow_insecure_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `check_certificate_revocation_input`<sup>Optional</sup> <a name="check_certificate_revocation_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocationInput"></a>
-
-```python
-check_certificate_revocation_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `ci_input`<sup>Optional</sup> <a name="ci_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ciInput"></a>
-
-```python
-ci_input: SyntheticsTestOptionsListCi
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
-
----
-
-##### `disable_cors_input`<sup>Optional</sup> <a name="disable_cors_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCorsInput"></a>
-
-```python
-disable_cors_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `disable_csp_input`<sup>Optional</sup> <a name="disable_csp_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCspInput"></a>
-
-```python
-disable_csp_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `follow_redirects_input`<sup>Optional</sup> <a name="follow_redirects_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirectsInput"></a>
-
-```python
-follow_redirects_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `http_version_input`<sup>Optional</sup> <a name="http_version_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersionInput"></a>
-
-```python
-http_version_input: str
-```
-
-- *Type:* str
-
----
-
-##### `ignore_server_certificate_error_input`<sup>Optional</sup> <a name="ignore_server_certificate_error_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateErrorInput"></a>
-
-```python
-ignore_server_certificate_error_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `initial_navigation_timeout_input`<sup>Optional</sup> <a name="initial_navigation_timeout_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeoutInput"></a>
-
-```python
-initial_navigation_timeout_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `min_failure_duration_input`<sup>Optional</sup> <a name="min_failure_duration_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDurationInput"></a>
-
-```python
-min_failure_duration_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `min_location_failed_input`<sup>Optional</sup> <a name="min_location_failed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailedInput"></a>
-
-```python
-min_location_failed_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `monitor_name_input`<sup>Optional</sup> <a name="monitor_name_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorNameInput"></a>
-
-```python
-monitor_name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `monitor_options_input`<sup>Optional</sup> <a name="monitor_options_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorOptionsInput"></a>
-
-```python
-monitor_options_input: SyntheticsTestOptionsListMonitorOptions
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
-
----
-
-##### `monitor_priority_input`<sup>Optional</sup> <a name="monitor_priority_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriorityInput"></a>
-
-```python
-monitor_priority_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `no_screenshot_input`<sup>Optional</sup> <a name="no_screenshot_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshotInput"></a>
-
-```python
-no_screenshot_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `restricted_roles_input`<sup>Optional</sup> <a name="restricted_roles_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRolesInput"></a>
-
-```python
-restricted_roles_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `retry_input`<sup>Optional</sup> <a name="retry_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.retryInput"></a>
-
-```python
-retry_input: SyntheticsTestOptionsListRetry
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
-
----
-
-##### `rum_settings_input`<sup>Optional</sup> <a name="rum_settings_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.rumSettingsInput"></a>
-
-```python
-rum_settings_input: SyntheticsTestOptionsListRumSettings
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
-
----
-
-##### `scheduling_input`<sup>Optional</sup> <a name="scheduling_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.schedulingInput"></a>
-
-```python
-scheduling_input: SyntheticsTestOptionsListScheduling
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
-
----
-
-##### `tick_every_input`<sup>Optional</sup> <a name="tick_every_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEveryInput"></a>
-
-```python
-tick_every_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `accept_self_signed`<sup>Required</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.acceptSelfSigned"></a>
-
-```python
-accept_self_signed: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `allow_insecure`<sup>Required</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.allowInsecure"></a>
-
-```python
-allow_insecure: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `check_certificate_revocation`<sup>Required</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.checkCertificateRevocation"></a>
-
-```python
-check_certificate_revocation: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `disable_cors`<sup>Required</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCors"></a>
-
-```python
-disable_cors: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `disable_csp`<sup>Required</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.disableCsp"></a>
-
-```python
-disable_csp: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `follow_redirects`<sup>Required</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.followRedirects"></a>
-
-```python
-follow_redirects: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `http_version`<sup>Required</sup> <a name="http_version" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.httpVersion"></a>
-
-```python
-http_version: str
-```
-
-- *Type:* str
-
----
-
-##### `ignore_server_certificate_error`<sup>Required</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.ignoreServerCertificateError"></a>
-
-```python
-ignore_server_certificate_error: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `initial_navigation_timeout`<sup>Required</sup> <a name="initial_navigation_timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.initialNavigationTimeout"></a>
-
-```python
-initial_navigation_timeout: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `min_failure_duration`<sup>Required</sup> <a name="min_failure_duration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minFailureDuration"></a>
-
-```python
-min_failure_duration: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `min_location_failed`<sup>Required</sup> <a name="min_location_failed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.minLocationFailed"></a>
-
-```python
-min_location_failed: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `monitor_name`<sup>Required</sup> <a name="monitor_name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorName"></a>
-
-```python
-monitor_name: str
-```
-
-- *Type:* str
-
----
-
-##### `monitor_priority`<sup>Required</sup> <a name="monitor_priority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.monitorPriority"></a>
-
-```python
-monitor_priority: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `no_screenshot`<sup>Required</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.noScreenshot"></a>
-
-```python
-no_screenshot: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `restricted_roles`<sup>Required</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.restrictedRoles"></a>
-
-```python
-restricted_roles: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `tick_every`<sup>Required</sup> <a name="tick_every" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.tickEvery"></a>
-
-```python
-tick_every: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListOutputReference.property.internalValue"></a>
-
-```python
-internal_value: SyntheticsTestOptionsList
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsList">SyntheticsTestOptionsList</a>
-
----
-
-
 ### SyntheticsTestOptionsListRetryOutputReference <a name="SyntheticsTestOptionsListRetryOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference.Initializer"></a>
@@ -22111,6 +21094,1023 @@ internal_value: typing.Union[SyntheticsTestOptionsListSchedulingTimeframes, IRes
 ```
 
 - *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>, cdktf.IResolvable]
+
+---
+
+
+### SyntheticsTestOptionsListStructOutputReference <a name="SyntheticsTestOptionsListStructOutputReference" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_datadog import synthetics_test
+
+syntheticsTest.SyntheticsTestOptionsListStructOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putCi">put_ci</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putMonitorOptions">put_monitor_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry">put_retry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings">put_rum_settings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling">put_scheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAcceptSelfSigned">reset_accept_self_signed</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAllowInsecure">reset_allow_insecure</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCheckCertificateRevocation">reset_check_certificate_revocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCi">reset_ci</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCors">reset_disable_cors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCsp">reset_disable_csp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetFollowRedirects">reset_follow_redirects</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetHttpVersion">reset_http_version</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetIgnoreServerCertificateError">reset_ignore_server_certificate_error</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetInitialNavigationTimeout">reset_initial_navigation_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinFailureDuration">reset_min_failure_duration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinLocationFailed">reset_min_location_failed</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorName">reset_monitor_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorOptions">reset_monitor_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorPriority">reset_monitor_priority</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetNoScreenshot">reset_no_screenshot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRestrictedRoles">reset_restricted_roles</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRetry">reset_retry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRumSettings">reset_rum_settings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetScheduling">reset_scheduling</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_ci` <a name="put_ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putCi"></a>
+
+```python
+def put_ci(
+  execution_rule: str = None
+) -> None
+```
+
+###### `execution_rule`<sup>Optional</sup> <a name="execution_rule" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putCi.parameter.executionRule"></a>
+
+- *Type:* str
+
+Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+
+---
+
+##### `put_monitor_options` <a name="put_monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putMonitorOptions"></a>
+
+```python
+def put_monitor_options(
+  renotify_interval: typing.Union[int, float] = None
+) -> None
+```
+
+###### `renotify_interval`<sup>Optional</sup> <a name="renotify_interval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putMonitorOptions.parameter.renotifyInterval"></a>
+
+- *Type:* typing.Union[int, float]
+
+Specify a renotification frequency in minutes.
+
+Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+
+---
+
+##### `put_retry` <a name="put_retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry"></a>
+
+```python
+def put_retry(
+  count: typing.Union[int, float] = None,
+  interval: typing.Union[int, float] = None
+) -> None
+```
+
+###### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry.parameter.count"></a>
+
+- *Type:* typing.Union[int, float]
+
+Number of retries needed to consider a location as failed before sending a notification alert.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+
+---
+
+###### `interval`<sup>Optional</sup> <a name="interval" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRetry.parameter.interval"></a>
+
+- *Type:* typing.Union[int, float]
+
+Interval between a failed test and the next retry in milliseconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+
+---
+
+##### `put_rum_settings` <a name="put_rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings"></a>
+
+```python
+def put_rum_settings(
+  is_enabled: typing.Union[bool, IResolvable],
+  application_id: str = None,
+  client_token_id: typing.Union[int, float] = None
+) -> None
+```
+
+###### `is_enabled`<sup>Required</sup> <a name="is_enabled" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings.parameter.isEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Determines whether RUM data is collected during test runs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
+
+---
+
+###### `application_id`<sup>Optional</sup> <a name="application_id" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings.parameter.applicationId"></a>
+
+- *Type:* str
+
+RUM application ID used to collect RUM data for the browser test.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+
+---
+
+###### `client_token_id`<sup>Optional</sup> <a name="client_token_id" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putRumSettings.parameter.clientTokenId"></a>
+
+- *Type:* typing.Union[int, float]
+
+RUM application API key ID used to collect RUM data for the browser test.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+
+---
+
+##### `put_scheduling` <a name="put_scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling"></a>
+
+```python
+def put_scheduling(
+  timeframes: typing.Union[IResolvable, typing.List[SyntheticsTestOptionsListSchedulingTimeframes]],
+  timezone: str
+) -> None
+```
+
+###### `timeframes`<sup>Required</sup> <a name="timeframes" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling.parameter.timeframes"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]]
+
+timeframes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+
+---
+
+###### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.putScheduling.parameter.timezone"></a>
+
+- *Type:* str
+
+Timezone in which the timeframe is based.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+
+---
+
+##### `reset_accept_self_signed` <a name="reset_accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAcceptSelfSigned"></a>
+
+```python
+def reset_accept_self_signed() -> None
+```
+
+##### `reset_allow_insecure` <a name="reset_allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetAllowInsecure"></a>
+
+```python
+def reset_allow_insecure() -> None
+```
+
+##### `reset_check_certificate_revocation` <a name="reset_check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCheckCertificateRevocation"></a>
+
+```python
+def reset_check_certificate_revocation() -> None
+```
+
+##### `reset_ci` <a name="reset_ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetCi"></a>
+
+```python
+def reset_ci() -> None
+```
+
+##### `reset_disable_cors` <a name="reset_disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCors"></a>
+
+```python
+def reset_disable_cors() -> None
+```
+
+##### `reset_disable_csp` <a name="reset_disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetDisableCsp"></a>
+
+```python
+def reset_disable_csp() -> None
+```
+
+##### `reset_follow_redirects` <a name="reset_follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetFollowRedirects"></a>
+
+```python
+def reset_follow_redirects() -> None
+```
+
+##### `reset_http_version` <a name="reset_http_version" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetHttpVersion"></a>
+
+```python
+def reset_http_version() -> None
+```
+
+##### `reset_ignore_server_certificate_error` <a name="reset_ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetIgnoreServerCertificateError"></a>
+
+```python
+def reset_ignore_server_certificate_error() -> None
+```
+
+##### `reset_initial_navigation_timeout` <a name="reset_initial_navigation_timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetInitialNavigationTimeout"></a>
+
+```python
+def reset_initial_navigation_timeout() -> None
+```
+
+##### `reset_min_failure_duration` <a name="reset_min_failure_duration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinFailureDuration"></a>
+
+```python
+def reset_min_failure_duration() -> None
+```
+
+##### `reset_min_location_failed` <a name="reset_min_location_failed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMinLocationFailed"></a>
+
+```python
+def reset_min_location_failed() -> None
+```
+
+##### `reset_monitor_name` <a name="reset_monitor_name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorName"></a>
+
+```python
+def reset_monitor_name() -> None
+```
+
+##### `reset_monitor_options` <a name="reset_monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorOptions"></a>
+
+```python
+def reset_monitor_options() -> None
+```
+
+##### `reset_monitor_priority` <a name="reset_monitor_priority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetMonitorPriority"></a>
+
+```python
+def reset_monitor_priority() -> None
+```
+
+##### `reset_no_screenshot` <a name="reset_no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetNoScreenshot"></a>
+
+```python
+def reset_no_screenshot() -> None
+```
+
+##### `reset_restricted_roles` <a name="reset_restricted_roles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRestrictedRoles"></a>
+
+```python
+def reset_restricted_roles() -> None
+```
+
+##### `reset_retry` <a name="reset_retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRetry"></a>
+
+```python
+def reset_retry() -> None
+```
+
+##### `reset_rum_settings` <a name="reset_rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetRumSettings"></a>
+
+```python
+def reset_rum_settings() -> None
+```
+
+##### `reset_scheduling` <a name="reset_scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.resetScheduling"></a>
+
+```python
+def reset_scheduling() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ci">ci</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry">retry</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings">rum_settings</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling">scheduling</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput">accept_self_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput">allow_insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput">check_certificate_revocation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput">ci_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput">disable_cors_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput">disable_csp_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput">follow_redirects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput">http_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput">ignore_server_certificate_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput">initial_navigation_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput">min_failure_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput">min_location_failed_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput">monitor_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput">monitor_options_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput">monitor_priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput">no_screenshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput">retry_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput">rum_settings_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput">scheduling_input</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput">tick_every_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned">accept_self_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure">allow_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation">check_certificate_revocation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors">disable_cors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp">disable_csp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects">follow_redirects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion">http_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError">ignore_server_certificate_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout">initial_navigation_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration">min_failure_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed">min_location_failed</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName">monitor_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority">monitor_priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery">tick_every</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `ci`<sup>Required</sup> <a name="ci" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ci"></a>
+
+```python
+ci: SyntheticsTestOptionsListCiOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference">SyntheticsTestOptionsListCiOutputReference</a>
+
+---
+
+##### `monitor_options`<sup>Required</sup> <a name="monitor_options" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptions"></a>
+
+```python
+monitor_options: SyntheticsTestOptionsListMonitorOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference">SyntheticsTestOptionsListMonitorOptionsOutputReference</a>
+
+---
+
+##### `retry`<sup>Required</sup> <a name="retry" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retry"></a>
+
+```python
+retry: SyntheticsTestOptionsListRetryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference">SyntheticsTestOptionsListRetryOutputReference</a>
+
+---
+
+##### `rum_settings`<sup>Required</sup> <a name="rum_settings" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettings"></a>
+
+```python
+rum_settings: SyntheticsTestOptionsListRumSettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference">SyntheticsTestOptionsListRumSettingsOutputReference</a>
+
+---
+
+##### `scheduling`<sup>Required</sup> <a name="scheduling" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.scheduling"></a>
+
+```python
+scheduling: SyntheticsTestOptionsListSchedulingOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference">SyntheticsTestOptionsListSchedulingOutputReference</a>
+
+---
+
+##### `accept_self_signed_input`<sup>Optional</sup> <a name="accept_self_signed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSignedInput"></a>
+
+```python
+accept_self_signed_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allow_insecure_input`<sup>Optional</sup> <a name="allow_insecure_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecureInput"></a>
+
+```python
+allow_insecure_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `check_certificate_revocation_input`<sup>Optional</sup> <a name="check_certificate_revocation_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocationInput"></a>
+
+```python
+check_certificate_revocation_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `ci_input`<sup>Optional</sup> <a name="ci_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ciInput"></a>
+
+```python
+ci_input: SyntheticsTestOptionsListCi
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi">SyntheticsTestOptionsListCi</a>
+
+---
+
+##### `disable_cors_input`<sup>Optional</sup> <a name="disable_cors_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCorsInput"></a>
+
+```python
+disable_cors_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `disable_csp_input`<sup>Optional</sup> <a name="disable_csp_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCspInput"></a>
+
+```python
+disable_csp_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `follow_redirects_input`<sup>Optional</sup> <a name="follow_redirects_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirectsInput"></a>
+
+```python
+follow_redirects_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `http_version_input`<sup>Optional</sup> <a name="http_version_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersionInput"></a>
+
+```python
+http_version_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ignore_server_certificate_error_input`<sup>Optional</sup> <a name="ignore_server_certificate_error_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateErrorInput"></a>
+
+```python
+ignore_server_certificate_error_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `initial_navigation_timeout_input`<sup>Optional</sup> <a name="initial_navigation_timeout_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeoutInput"></a>
+
+```python
+initial_navigation_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_failure_duration_input`<sup>Optional</sup> <a name="min_failure_duration_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDurationInput"></a>
+
+```python
+min_failure_duration_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_location_failed_input`<sup>Optional</sup> <a name="min_location_failed_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailedInput"></a>
+
+```python
+min_location_failed_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `monitor_name_input`<sup>Optional</sup> <a name="monitor_name_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorNameInput"></a>
+
+```python
+monitor_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `monitor_options_input`<sup>Optional</sup> <a name="monitor_options_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorOptionsInput"></a>
+
+```python
+monitor_options_input: SyntheticsTestOptionsListMonitorOptions
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a>
+
+---
+
+##### `monitor_priority_input`<sup>Optional</sup> <a name="monitor_priority_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriorityInput"></a>
+
+```python
+monitor_priority_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `no_screenshot_input`<sup>Optional</sup> <a name="no_screenshot_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshotInput"></a>
+
+```python
+no_screenshot_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `restricted_roles_input`<sup>Optional</sup> <a name="restricted_roles_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRolesInput"></a>
+
+```python
+restricted_roles_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `retry_input`<sup>Optional</sup> <a name="retry_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.retryInput"></a>
+
+```python
+retry_input: SyntheticsTestOptionsListRetry
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a>
+
+---
+
+##### `rum_settings_input`<sup>Optional</sup> <a name="rum_settings_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.rumSettingsInput"></a>
+
+```python
+rum_settings_input: SyntheticsTestOptionsListRumSettings
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings">SyntheticsTestOptionsListRumSettings</a>
+
+---
+
+##### `scheduling_input`<sup>Optional</sup> <a name="scheduling_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.schedulingInput"></a>
+
+```python
+scheduling_input: SyntheticsTestOptionsListScheduling
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling">SyntheticsTestOptionsListScheduling</a>
+
+---
+
+##### `tick_every_input`<sup>Optional</sup> <a name="tick_every_input" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEveryInput"></a>
+
+```python
+tick_every_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `accept_self_signed`<sup>Required</sup> <a name="accept_self_signed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.acceptSelfSigned"></a>
+
+```python
+accept_self_signed: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `allow_insecure`<sup>Required</sup> <a name="allow_insecure" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.allowInsecure"></a>
+
+```python
+allow_insecure: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `check_certificate_revocation`<sup>Required</sup> <a name="check_certificate_revocation" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.checkCertificateRevocation"></a>
+
+```python
+check_certificate_revocation: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `disable_cors`<sup>Required</sup> <a name="disable_cors" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCors"></a>
+
+```python
+disable_cors: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `disable_csp`<sup>Required</sup> <a name="disable_csp" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.disableCsp"></a>
+
+```python
+disable_csp: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `follow_redirects`<sup>Required</sup> <a name="follow_redirects" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.followRedirects"></a>
+
+```python
+follow_redirects: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `http_version`<sup>Required</sup> <a name="http_version" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.httpVersion"></a>
+
+```python
+http_version: str
+```
+
+- *Type:* str
+
+---
+
+##### `ignore_server_certificate_error`<sup>Required</sup> <a name="ignore_server_certificate_error" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.ignoreServerCertificateError"></a>
+
+```python
+ignore_server_certificate_error: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `initial_navigation_timeout`<sup>Required</sup> <a name="initial_navigation_timeout" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.initialNavigationTimeout"></a>
+
+```python
+initial_navigation_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_failure_duration`<sup>Required</sup> <a name="min_failure_duration" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minFailureDuration"></a>
+
+```python
+min_failure_duration: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `min_location_failed`<sup>Required</sup> <a name="min_location_failed" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.minLocationFailed"></a>
+
+```python
+min_location_failed: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `monitor_name`<sup>Required</sup> <a name="monitor_name" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorName"></a>
+
+```python
+monitor_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `monitor_priority`<sup>Required</sup> <a name="monitor_priority" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.monitorPriority"></a>
+
+```python
+monitor_priority: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `no_screenshot`<sup>Required</sup> <a name="no_screenshot" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.noScreenshot"></a>
+
+```python
+no_screenshot: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `restricted_roles`<sup>Required</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.restrictedRoles"></a>
+
+```python
+restricted_roles: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `tick_every`<sup>Required</sup> <a name="tick_every" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.tickEvery"></a>
+
+```python
+tick_every: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.property.internalValue"></a>
+
+```python
+internal_value: SyntheticsTestOptionsListStruct
+```
+
+- *Type:* <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct">SyntheticsTestOptionsListStruct</a>
 
 ---
 
