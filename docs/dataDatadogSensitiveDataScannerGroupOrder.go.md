@@ -1,6 +1,6 @@
 # `data_datadog_sensitive_data_scanner_group_order`
 
-Refer to the Terraform Registory for docs: [`data_datadog_sensitive_data_scanner_group_order`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/sensitive_data_scanner_group_order).
+Refer to the Terraform Registory for docs: [`data_datadog_sensitive_data_scanner_group_order`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/sensitive_data_scanner_group_order).
 
 # `dataDatadogSensitiveDataScannerGroupOrder` Submodule <a name="`dataDatadogSensitiveDataScannerGroupOrder` Submodule" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_sensitive_data_scanner
 
 ### DataDatadogSensitiveDataScannerGroupOrder <a name="DataDatadogSensitiveDataScannerGroupOrder" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/sensitive_data_scanner_group_order datadog_sensitive_data_scanner_group_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerGroupOrder.DataDatadogSensitiveDataScannerGroupOrder.Initializer"></a>
 

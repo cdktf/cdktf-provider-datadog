@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account
+// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ServiceAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the service account is disabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account#disabled ServiceAccount#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account#disabled ServiceAccount#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Email of the associated user.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account#email ServiceAccount#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account#email ServiceAccount#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account#id ServiceAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account#id ServiceAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface ServiceAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for the service account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account#name ServiceAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account#name ServiceAccount#name}
   */
   readonly name?: string;
   /**
   * A list a role IDs to assign to the service account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account#roles ServiceAccount#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account#roles ServiceAccount#roles}
   */
   readonly roles?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account datadog_service_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account datadog_service_account}
 */
 export class ServiceAccount extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class ServiceAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/service_account datadog_service_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/service_account datadog_service_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class ServiceAccount extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

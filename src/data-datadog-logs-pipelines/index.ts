@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/logs_pipelines
+// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_pipelines
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogLogsPipelinesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/logs_pipelines#id DataDatadogLogsPipelines#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_pipelines#id DataDatadogLogsPipelines#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataDatadogLogsPipelinesConfig extends cdktf.TerraformMetaArgum
   /**
   * Filter parameter for retrieved pipelines
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/logs_pipelines#is_read_only DataDatadogLogsPipelines#is_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_pipelines#is_read_only DataDatadogLogsPipelines#is_read_only}
   */
   readonly isReadOnly?: string;
 }
@@ -182,7 +182,7 @@ export class DataDatadogLogsPipelinesLogsPipelinesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}
 */
 export class DataDatadogLogsPipelines extends cdktf.TerraformDataSource {
 
@@ -196,7 +196,7 @@ export class DataDatadogLogsPipelines extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/logs_pipelines datadog_logs_pipelines} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +207,7 @@ export class DataDatadogLogsPipelines extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_logs_pipelines',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `datadog_integration_confluent_resource`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resource`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource).
+Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resource`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource).
 
 # `integrationConfluentResource` Submodule <a name="`integrationConfluentResource` Submodule" id="@cdktf/provider-datadog.integrationConfluentResource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resou
 
 ### IntegrationConfluentResource <a name="IntegrationConfluentResource" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Confluent Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID associated with a Confluent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
 
 ---
 
@@ -874,7 +874,7 @@ account_id: str
 
 Confluent Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
 
 ---
 
@@ -888,7 +888,7 @@ resource_id: str
 
 The ID associated with a Confluent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
 
 ---
 
@@ -902,7 +902,7 @@ resource_type: str
 
 The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
 
 ---
 
@@ -916,7 +916,7 @@ tags: typing.List[str]
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
 
 ---
 

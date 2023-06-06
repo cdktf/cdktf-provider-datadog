@@ -1,6 +1,6 @@
 # `datadog_organization_settings`
 
-Refer to the Terraform Registory for docs: [`datadog_organization_settings`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings).
+Refer to the Terraform Registory for docs: [`datadog_organization_settings`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings).
 
 # `organizationSettings` Submodule <a name="`organizationSettings` Submodule" id="@cdktf/provider-datadog.organizationSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_organization_settings`](htt
 
 ### OrganizationSettings <a name="OrganizationSettings" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings datadog_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings datadog_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.organizationSettings.OrganizationSettings.Initializer"></a>
 
@@ -664,7 +664,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/organizationsettin
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.name">Name</a></code> | <code>*string</code> | Name for Organization. |
 | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsConfig.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-datadog.organizationSettings.OrganizationSettingsSettings">OrganizationSettingsSettings</a></code> | settings block. |
 
@@ -748,7 +748,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#id OrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#id OrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -765,7 +765,7 @@ Name *string
 
 Name for Organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#name OrganizationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#name OrganizationSettings#name}
 
 ---
 
@@ -779,7 +779,7 @@ Settings OrganizationSettingsSettings
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
 
 ---
 
@@ -823,7 +823,7 @@ Saml OrganizationSettingsSettingsSaml
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
 
 ---
 
@@ -837,7 +837,7 @@ SamlAutocreateUsersDomains OrganizationSettingsSettingsSamlAutocreateUsersDomain
 
 saml_autocreate_users_domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
 
 ---
 
@@ -851,7 +851,7 @@ SamlIdpInitiatedLogin OrganizationSettingsSettingsSamlIdpInitiatedLogin
 
 saml_idp_initiated_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
 
 ---
 
@@ -865,7 +865,7 @@ SamlStrictMode OrganizationSettingsSettingsSamlStrictMode
 
 saml_strict_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
 
 ---
 
@@ -879,7 +879,7 @@ PrivateWidgetShare interface{}
 
 Whether or not the organization users can share widgets outside of Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
 
 ---
 
@@ -895,7 +895,7 @@ The access role of the user.
 
 Options are `st` (standard user), `adm` (admin user), or `ro` (read-only user). Allowed enum values: `st`, `adm` , `ro`, `ERROR`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
 
 ---
 
@@ -929,7 +929,7 @@ Enabled interface{}
 
 Whether or not SAML is enabled for this organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -965,7 +965,7 @@ Domains *[]*string
 
 List of domains where the SAML automated user creation is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
 
 ---
 
@@ -979,7 +979,7 @@ Enabled interface{}
 
 Whether or not the automated user creation based on SAML domain is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -1013,7 +1013,7 @@ Enabled interface{}
 
 Whether or not a SAML identity provider metadata file was provided to the Datadog organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 
@@ -1047,7 +1047,7 @@ Enabled interface{}
 
 Whether or not the SAML strict mode is enabled. If true, all users must log in with SAML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
 
 ---
 

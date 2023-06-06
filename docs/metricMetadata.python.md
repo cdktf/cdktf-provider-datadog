@@ -1,6 +1,6 @@
 # `datadog_metric_metadata`
 
-Refer to the Terraform Registory for docs: [`datadog_metric_metadata`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata).
+Refer to the Terraform Registory for docs: [`datadog_metric_metadata`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata).
 
 # `metricMetadata` Submodule <a name="`metricMetadata` Submodule" id="@cdktf/provider-datadog.metricMetadata"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_metric_metadata`](https://r
 
 ### MetricMetadata <a name="MetricMetadata" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata datadog_metric_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer"></a>
 
@@ -49,7 +49,7 @@ metricMetadata.MetricMetadata(
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.metric">metric</a></code> | <code>str</code> | The name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.perUnit">per_unit</a></code> | <code>str</code> | Per unit of the metric such as `second` in `bytes per second`. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.shortName">short_name</a></code> | <code>str</code> | A short name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.statsdInterval">statsd_interval</a></code> | <code>typing.Union[int, float]</code> | If applicable, statsd flush interval in seconds for the metric. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A description of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#description MetricMetadata#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#description MetricMetadata#description}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#id MetricMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#id MetricMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Per unit of the metric such as `second` in `bytes per second`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A short name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If applicable, statsd flush interval in seconds for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Metric type such as `gauge` or `rate`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#type MetricMetadata#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#type MetricMetadata#type}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Primary unit of the metric such as `byte` or `operation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
 
 ---
 
@@ -954,7 +954,7 @@ metricMetadata.MetricMetadataConfig(
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric">metric</a></code> | <code>str</code> | The name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.description">description</a></code> | <code>str</code> | A description of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit">per_unit</a></code> | <code>str</code> | Per unit of the metric such as `second` in `bytes per second`. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName">short_name</a></code> | <code>str</code> | A short name of the metric. |
 | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval">statsd_interval</a></code> | <code>typing.Union[int, float]</code> | If applicable, statsd flush interval in seconds for the metric. |
@@ -1043,7 +1043,7 @@ metric: str
 
 The name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
 
 ---
 
@@ -1057,7 +1057,7 @@ description: str
 
 A description of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#description MetricMetadata#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#description MetricMetadata#description}
 
 ---
 
@@ -1069,7 +1069,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#id MetricMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#id MetricMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ per_unit: str
 
 Per unit of the metric such as `second` in `bytes per second`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
 
 ---
 
@@ -1100,7 +1100,7 @@ short_name: str
 
 A short name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
 
 ---
 
@@ -1114,7 +1114,7 @@ statsd_interval: typing.Union[int, float]
 
 If applicable, statsd flush interval in seconds for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
 
 ---
 
@@ -1128,7 +1128,7 @@ type: str
 
 Metric type such as `gauge` or `rate`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#type MetricMetadata#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#type MetricMetadata#type}
 
 ---
 
@@ -1142,7 +1142,7 @@ unit: str
 
 Primary unit of the metric such as `byte` or `operation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
 
 ---
 
