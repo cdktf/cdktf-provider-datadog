@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/api_key
+// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of this resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +19,13 @@ export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for API Key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/api_key datadog_api_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/api_key datadog_api_key}
 */
 export class DataDatadogApiKey extends cdktf.TerraformDataSource {
 
@@ -44,7 +39,7 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/api_key datadog_api_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/api_key datadog_api_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +50,7 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.25.0',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

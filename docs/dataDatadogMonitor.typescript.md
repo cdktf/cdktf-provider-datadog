@@ -1,6 +1,6 @@
 # `data_datadog_monitor`
 
-Refer to the Terraform Registory for docs: [`data_datadog_monitor`](https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor).
+Refer to the Terraform Registory for docs: [`data_datadog_monitor`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor).
 
 # `dataDatadogMonitor` Submodule <a name="`dataDatadogMonitor` Submodule" id="@cdktf/provider-datadog.dataDatadogMonitor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_monitor`](https://regi
 
 ### DataDatadogMonitor <a name="DataDatadogMonitor" id="@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor datadog_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.Initializer"></a>
 
@@ -955,7 +955,7 @@ const dataDatadogMonitorConfig: dataDatadogMonitor.DataDatadogMonitorConfig = { 
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor#id DataDatadogMonitor#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor#id DataDatadogMonitor#id}. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.monitorTagsFilter">monitorTagsFilter</a></code> | <code>string[]</code> | A list of monitor tags to limit the search. This filters on the tags set on the monitor itself. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.nameFilter">nameFilter</a></code> | <code>string</code> | A monitor name to limit the search. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.tagsFilter">tagsFilter</a></code> | <code>string[]</code> | A list of tags to limit the search. This filters on the monitor scope. |
@@ -1040,7 +1040,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor#id DataDatadogMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor#id DataDatadogMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ public readonly monitorTagsFilter: string[];
 
 A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly nameFilter: string;
 
 A monitor name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly tagsFilter: string[];
 
 A list of tags to limit the search. This filters on the monitor scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.25.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
 
 ---
 
