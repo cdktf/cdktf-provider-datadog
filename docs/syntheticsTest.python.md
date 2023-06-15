@@ -7290,7 +7290,7 @@ def reset_targetxpath() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.property">property</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]</code> | *No description.* |
 
 ---
 
@@ -7441,10 +7441,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestApiStepAssertion, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestApiStepAssertion]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion">SyntheticsTestApiStepAssertion</a>]
 
 ---
 
@@ -8603,7 +8603,7 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]</code> | *No description.* |
 
 ---
 
@@ -8734,10 +8734,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestApiStepExtractedValue, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestApiStepExtractedValue]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue">SyntheticsTestApiStepExtractedValue</a>]
 
 ---
 
@@ -10121,7 +10121,7 @@ def reset_subtype() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestHeaders">request_headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.requestQuery">request_query</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.subtype">subtype</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]</code> | *No description.* |
 
 ---
 
@@ -10412,10 +10412,10 @@ subtype: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestApiStep, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestApiStep]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep">SyntheticsTestApiStep</a>]
 
 ---
 
@@ -14225,7 +14225,7 @@ def reset_targetxpath() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.property">property</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]</code> | *No description.* |
 
 ---
 
@@ -14376,10 +14376,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestAssertion, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestAssertion]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion">SyntheticsTestAssertion</a>]
 
 ---
 
@@ -15754,7 +15754,7 @@ def reset_timeout() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.noScreenshot">no_screenshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]</code> | *No description.* |
 
 ---
 
@@ -15945,10 +15945,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestBrowserStep, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestBrowserStep]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep">SyntheticsTestBrowserStep</a>]
 
 ---
 
@@ -18290,7 +18290,7 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -18441,10 +18441,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestBrowserVariable, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestBrowserVariable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable">SyntheticsTestBrowserVariable</a>]
 
 ---
 
@@ -18895,7 +18895,7 @@ def reset_secure() -> None
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.secure">secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -19046,10 +19046,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestConfigVariable, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestConfigVariable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable">SyntheticsTestConfigVariable</a>]
 
 ---
 
@@ -21091,7 +21091,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.day">day</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.from">from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.to">to</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]</code> | *No description.* |
 
 ---
 
@@ -21182,10 +21182,10 @@ to: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SyntheticsTestOptionsListSchedulingTimeframes, IResolvable]
+internal_value: typing.Union[IResolvable, SyntheticsTestOptionsListSchedulingTimeframes]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes">SyntheticsTestOptionsListSchedulingTimeframes</a>]
 
 ---
 

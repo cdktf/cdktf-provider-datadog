@@ -516,7 +516,7 @@ spansMetric.SpansMetric.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.filter">filter</a></code> | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference">SpansMetricFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.groupBy">group_by</a></code> | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByList">SpansMetricGroupByList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.filterInput">filter_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.filterInput">filter_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.groupByInput">group_by_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy">SpansMetricGroupBy</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetric.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -708,10 +708,10 @@ id: str
 ##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-datadog.spansMetric.SpansMetric.property.filterInput"></a>
 
 ```python
-filter_input: typing.Union[SpansMetricFilter, IResolvable]
+filter_input: typing.Union[IResolvable, SpansMetricFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>]
 
 ---
 
@@ -1324,7 +1324,7 @@ def reset_path() -> None
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.property.aggregationType">aggregation_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.property.includePercentiles">include_percentiles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a>]</code> | *No description.* |
 
 ---
 
@@ -1415,10 +1415,10 @@ path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.spansMetric.SpansMetricComputeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SpansMetricCompute, IResolvable]
+internal_value: typing.Union[IResolvable, SpansMetricCompute]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricCompute">SpansMetricCompute</a>]
 
 ---
 
@@ -1667,7 +1667,7 @@ def reset_query() -> None
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -1718,10 +1718,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.spansMetric.SpansMetricFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SpansMetricFilter, IResolvable]
+internal_value: typing.Union[IResolvable, SpansMetricFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricFilter">SpansMetricFilter</a>]
 
 ---
 
@@ -2143,7 +2143,7 @@ def reset_tag_name() -> None
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.property.tagNameInput">tag_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.property.tagName">tag_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy">SpansMetricGroupBy</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy">SpansMetricGroupBy</a>]</code> | *No description.* |
 
 ---
 
@@ -2214,10 +2214,10 @@ tag_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.spansMetric.SpansMetricGroupByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SpansMetricGroupBy, IResolvable]
+internal_value: typing.Union[IResolvable, SpansMetricGroupBy]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy">SpansMetricGroupBy</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.spansMetric.SpansMetricGroupBy">SpansMetricGroupBy</a>]
 
 ---
 

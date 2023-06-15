@@ -1392,7 +1392,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>]</code> | *No description.* |
 
 ---
 
@@ -1453,10 +1453,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.role.RolePermissionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RolePermission, IResolvable]
+internal_value: typing.Union[IResolvable, RolePermission]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>]
 
 ---
 

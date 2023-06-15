@@ -1343,7 +1343,7 @@ def reset_note() -> None
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.noteInput">note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.cidrBlock">cidr_block</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.note">note</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a>]</code> | *No description.* |
 
 ---
 
@@ -1414,10 +1414,10 @@ note: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IpAllowlistEntry, IResolvable]
+internal_value: typing.Union[IResolvable, IpAllowlistEntry]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a>]
 
 ---
 

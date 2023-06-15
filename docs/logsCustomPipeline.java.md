@@ -5055,7 +5055,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a></code> | *No description.* |
 
 ---
 
@@ -5109,7 +5109,7 @@ public java.lang.String getQuery();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>
 
 ---
 
@@ -6635,7 +6635,7 @@ public void putFilter(LogsCustomPipelineProcessorCategoryProcessorCategoryFilter
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.filterInput">filterInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorCategoryProcessorCategoryFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a></code> | *No description.* |
 
 ---
 
@@ -6709,7 +6709,7 @@ public java.lang.String getName();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a>
 
 ---
 
@@ -9898,7 +9898,7 @@ public void resetUserAgentParser()
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.traceIdRemapperInput">traceIdRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorTraceIdRemapper">LogsCustomPipelineProcessorTraceIdRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.urlParserInput">urlParserInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParser">LogsCustomPipelineProcessorUrlParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.userAgentParserInput">userAgentParserInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParser">LogsCustomPipelineProcessorUserAgentParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a></code> | *No description.* |
 
 ---
 
@@ -10252,7 +10252,7 @@ public LogsCustomPipelineProcessorUserAgentParser getUserAgentParserInput();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>
 
 ---
 
@@ -10630,7 +10630,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a></code> | *No description.* |
 
 ---
 
@@ -10684,7 +10684,7 @@ public java.lang.String getQuery();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>
 
 ---
 
@@ -12587,7 +12587,7 @@ public void putFilter(LogsCustomPipelineProcessorPipelineProcessorCategoryProces
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.filterInput">filterInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a></code> | *No description.* |
 
 ---
 
@@ -12661,7 +12661,7 @@ public java.lang.String getName();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a>
 
 ---
 
@@ -15828,7 +15828,7 @@ public void resetUserAgentParser()
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.traceIdRemapperInput">traceIdRemapperInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper">LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.urlParserInput">urlParserInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParser">LogsCustomPipelineProcessorPipelineProcessorUrlParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.userAgentParserInput">userAgentParserInput</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser">LogsCustomPipelineProcessorPipelineProcessorUserAgentParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a></code> | *No description.* |
 
 ---
 
@@ -16162,7 +16162,7 @@ public LogsCustomPipelineProcessorPipelineProcessorUserAgentParser getUserAgentP
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>
 
 ---
 

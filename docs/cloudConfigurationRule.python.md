@@ -56,7 +56,7 @@ cloudConfigurationRule.CloudConfigurationRule(
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Policy written in Rego format. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Main resource type to be checked by the rule. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.severity">severity</a></code> | <code>str</code> | Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`. |
-| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.groupBy">group_by</a></code> | <code>typing.List[str]</code> | Fields to group by when generating signals, e.g. @resource. Defaults to empty list. |
+| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.groupBy">group_by</a></code> | <code>typing.List[str]</code> | Fields to group by when generating signals, e.g. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.notifications">notifications</a></code> | <code>typing.List[str]</code> | Notification targets for signals. Defaults to empty list. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.relatedResourceTypes">related_resource_types</a></code> | <code>typing.List[str]</code> | Related resource types to be checked by the rule. Defaults to empty list. |
@@ -188,9 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.List[str]
 
-Fields to group by when generating signals, e.g. @resource. Defaults to empty list.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
+Fields to group by when generating signals, e.g.
 
 ---
 
@@ -1049,7 +1047,7 @@ cloudConfigurationRule.CloudConfigurationRuleConfig(
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.policy">policy</a></code> | <code>str</code> | Policy written in Rego format. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Main resource type to be checked by the rule. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.severity">severity</a></code> | <code>str</code> | Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`. |
-| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.groupBy">group_by</a></code> | <code>typing.List[str]</code> | Fields to group by when generating signals, e.g. @resource. Defaults to empty list. |
+| <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.groupBy">group_by</a></code> | <code>typing.List[str]</code> | Fields to group by when generating signals, e.g. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.notifications">notifications</a></code> | <code>typing.List[str]</code> | Notification targets for signals. Defaults to empty list. |
 | <code><a href="#@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.relatedResourceTypes">related_resource_types</a></code> | <code>typing.List[str]</code> | Related resource types to be checked by the rule. Defaults to empty list. |
@@ -1219,9 +1217,7 @@ group_by: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Fields to group by when generating signals, e.g. @resource. Defaults to empty list.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
+Fields to group by when generating signals, e.g.
 
 ---
 

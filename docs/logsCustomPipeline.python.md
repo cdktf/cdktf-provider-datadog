@@ -5066,7 +5066,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -5117,10 +5117,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsCustomPipelineFilter, IResolvable]
+internal_value: typing.Union[IResolvable, LogsCustomPipelineFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter">LogsCustomPipelineFilter</a>]
 
 ---
 
@@ -6762,7 +6762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.filterInput">filter_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorCategoryProcessorCategoryFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a>]</code> | *No description.* |
 
 ---
 
@@ -6833,10 +6833,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsCustomPipelineProcessorCategoryProcessorCategory, IResolvable]
+internal_value: typing.Union[IResolvable, LogsCustomPipelineProcessorCategoryProcessorCategory]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorCategoryProcessorCategory</a>]
 
 ---
 
@@ -10966,7 +10966,7 @@ def reset_user_agent_parser() -> None
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.traceIdRemapperInput">trace_id_remapper_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorTraceIdRemapper">LogsCustomPipelineProcessorTraceIdRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.urlParserInput">url_parser_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParser">LogsCustomPipelineProcessorUrlParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.userAgentParserInput">user_agent_parser_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParser">LogsCustomPipelineProcessorUserAgentParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>]</code> | *No description.* |
 
 ---
 
@@ -11317,10 +11317,10 @@ user_agent_parser_input: LogsCustomPipelineProcessorUserAgentParser
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsCustomPipelineProcessor, IResolvable]
+internal_value: typing.Union[IResolvable, LogsCustomPipelineProcessor]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor">LogsCustomPipelineProcessor</a>]
 
 ---
 
@@ -11733,7 +11733,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -11784,10 +11784,10 @@ query: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsCustomPipelineProcessorPipelineFilter, IResolvable]
+internal_value: typing.Union[IResolvable, LogsCustomPipelineProcessorPipelineFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter">LogsCustomPipelineProcessorPipelineFilter</a>]
 
 ---
 
@@ -13835,7 +13835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.filterInput">filter_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a>]</code> | *No description.* |
 
 ---
 
@@ -13906,10 +13906,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory, IResolvable]
+internal_value: typing.Union[IResolvable, LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory">LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory</a>]
 
 ---
 
@@ -17982,7 +17982,7 @@ def reset_user_agent_parser() -> None
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.traceIdRemapperInput">trace_id_remapper_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper">LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.urlParserInput">url_parser_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParser">LogsCustomPipelineProcessorPipelineProcessorUrlParser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.userAgentParserInput">user_agent_parser_input</a></code> | <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser">LogsCustomPipelineProcessorPipelineProcessorUserAgentParser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>]</code> | *No description.* |
 
 ---
 
@@ -18313,10 +18313,10 @@ user_agent_parser_input: LogsCustomPipelineProcessorPipelineProcessorUserAgentPa
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsCustomPipelineProcessorPipelineProcessor, IResolvable]
+internal_value: typing.Union[IResolvable, LogsCustomPipelineProcessorPipelineProcessor]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor">LogsCustomPipelineProcessorPipelineProcessor</a>]
 
 ---
 

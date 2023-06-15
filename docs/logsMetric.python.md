@@ -2256,7 +2256,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.property.tagNameInput">tag_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.property.tagName">tag_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy">LogsMetricGroupBy</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy">LogsMetricGroupBy</a>]</code> | *No description.* |
 
 ---
 
@@ -2327,10 +2327,10 @@ tag_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LogsMetricGroupBy, IResolvable]
+internal_value: typing.Union[IResolvable, LogsMetricGroupBy]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy">LogsMetricGroupBy</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy">LogsMetricGroupBy</a>]
 
 ---
 

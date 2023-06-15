@@ -805,7 +805,7 @@ new IntegrationSlackChannelDisplay {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.message">Message</a></code> | <code>object</code> | Show the main body of the alert event. |
-| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.notified">Notified</a></code> | <code>object</code> | Show the list of @-handles in the alert event. |
+| <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.notified">Notified</a></code> | <code>object</code> | Show the list of. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.snapshot">Snapshot</a></code> | <code>object</code> | Show the alert event's snapshot image. |
 | <code><a href="#@cdktf/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.property.tags">Tags</a></code> | <code>object</code> | Show the scopes on which the monitor alerted. |
 
@@ -833,9 +833,7 @@ public object Notified { get; set; }
 
 - *Type:* object
 
-Show the list of @-handles in the alert event.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
+Show the list of.
 
 ---
 

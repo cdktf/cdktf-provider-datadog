@@ -4701,7 +4701,7 @@ def reset_month_starts() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStarts">day_starts</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStarts">hour_starts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStarts">month_starts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>]</code> | *No description.* |
 
 ---
 
@@ -4792,10 +4792,10 @@ month_starts: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MonitorSchedulingOptionsEvaluationWindow, IResolvable]
+internal_value: typing.Union[IResolvable, MonitorSchedulingOptionsEvaluationWindow]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>]
 
 ---
 
@@ -5223,7 +5223,7 @@ def put_evaluation_window(
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindow">evaluation_window</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowList">MonitorSchedulingOptionsEvaluationWindowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindowInput">evaluation_window_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>]</code> | *No description.* |
 
 ---
 
@@ -5274,10 +5274,10 @@ evaluation_window_input: typing.Union[IResolvable, typing.List[MonitorScheduling
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MonitorSchedulingOptions, IResolvable]
+internal_value: typing.Union[IResolvable, MonitorSchedulingOptions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>]
 
 ---
 
@@ -5708,7 +5708,7 @@ def reset_metric() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation">aggregation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval">interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric">metric</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
 
 ---
 
@@ -5799,10 +5799,10 @@ metric: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MonitorVariablesEventQueryCompute, IResolvable]
+internal_value: typing.Union[IResolvable, MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
@@ -6276,7 +6276,7 @@ def reset_sort() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput">sort_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet">facet</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
 
 ---
 
@@ -6367,10 +6367,10 @@ limit: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MonitorVariablesEventQueryGroupBy, IResolvable]
+internal_value: typing.Union[IResolvable, MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
@@ -7210,7 +7210,7 @@ def reset_indexes() -> None
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
 
 ---
 
@@ -7361,10 +7361,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MonitorVariablesEventQuery, IResolvable]
+internal_value: typing.Union[IResolvable, MonitorVariablesEventQuery]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 

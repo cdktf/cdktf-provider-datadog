@@ -1287,7 +1287,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.property.timeInput">timeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.property.space">space</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.property.time">time</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a></code> | *No description.* |
 
 ---
 
@@ -1358,10 +1358,10 @@ public readonly time: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MetricTagConfigurationAggregations | IResolvable;
+public readonly internalValue: IResolvable | MetricTagConfigurationAggregations;
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a>
 
 ---
 

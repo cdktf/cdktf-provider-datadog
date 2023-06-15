@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelines(scope Construct, id *string, config DataDatadogLogsPipelinesConfig) DataDatadogLogsPipelines
 ```
@@ -284,7 +284,7 @@ func ResetIsReadOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.DataDatadogLogsPipelines_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 &datadatadoglogspipelines.DataDatadogLogsPipelinesConfig {
 	Connection: interface{},
@@ -697,7 +697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 &datadatadoglogspipelines.DataDatadogLogsPipelinesLogsPipelines {
 
@@ -710,7 +710,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspip
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 &datadatadoglogspipelines.DataDatadogLogsPipelinesLogsPipelinesFilter {
 
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspip
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsPipelinesLogsPipelinesFilterList
 ```
@@ -857,7 +857,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference
 ```
@@ -1135,7 +1135,7 @@ func InternalValue() DataDatadogLogsPipelinesLogsPipelinesFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsPipelinesLogsPipelinesList
 ```
@@ -1267,7 +1267,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v7/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsPipelinesLogsPipelinesOutputReference
 ```

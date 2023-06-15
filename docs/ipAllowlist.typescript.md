@@ -1172,7 +1172,7 @@ public resetNote(): void
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.noteInput">noteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.note">note</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a></code> | *No description.* |
 
 ---
 
@@ -1243,10 +1243,10 @@ public readonly note: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntryOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IpAllowlistEntry | IResolvable;
+public readonly internalValue: IResolvable | IpAllowlistEntry;
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a>
 
 ---
 

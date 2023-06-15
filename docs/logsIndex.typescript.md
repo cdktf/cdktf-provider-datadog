@@ -1459,7 +1459,7 @@ public resetSampleRate(): void
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.property.sampleRateInput">sampleRateInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.property.query">query</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.property.sampleRate">sampleRate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter">LogsIndexExclusionFilterFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter">LogsIndexExclusionFilterFilter</a></code> | *No description.* |
 
 ---
 
@@ -1530,10 +1530,10 @@ public readonly sampleRate: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LogsIndexExclusionFilterFilter | IResolvable;
+public readonly internalValue: IResolvable | LogsIndexExclusionFilterFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter">LogsIndexExclusionFilterFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterFilter">LogsIndexExclusionFilterFilter</a>
 
 ---
 
@@ -1949,7 +1949,7 @@ public resetName(): void
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a></code> | *No description.* |
 
 ---
 
@@ -2040,10 +2040,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LogsIndexExclusionFilter | IResolvable;
+public readonly internalValue: IResolvable | LogsIndexExclusionFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.logsIndex.LogsIndexExclusionFilter">LogsIndexExclusionFilter</a>
 
 ---
 

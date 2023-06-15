@@ -1448,7 +1448,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a></code> | *No description.* |
 
 ---
 
@@ -1522,7 +1522,7 @@ public java.lang.String getQuery();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a>
 
 ---
 
