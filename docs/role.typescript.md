@@ -1209,7 +1209,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.role.RolePermissionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a></code> | *No description.* |
 
 ---
 
@@ -1270,10 +1270,10 @@ public readonly id: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-datadog.role.RolePermissionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RolePermission | IResolvable;
+public readonly internalValue: IResolvable | RolePermission;
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.role.RolePermission">RolePermission</a>
 
 ---
 
