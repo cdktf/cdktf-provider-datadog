@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.NewLogsArchiveOrder(scope Construct, id *string, config LogsArchiveOrderConfig) LogsArchiveOrder
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ logsarchiveorder.LogsArchiveOrder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 &logsarchiveorder.LogsArchiveOrderConfig {
 	Connection: interface{},

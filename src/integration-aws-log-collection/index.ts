@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_aws_log_collection
 // generated from terraform resource schema
 

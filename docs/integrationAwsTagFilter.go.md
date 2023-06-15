@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationawstagfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawstagfilter"
 
 integrationawstagfilter.NewIntegrationAwsTagFilter(scope Construct, id *string, config IntegrationAwsTagFilterConfig) IntegrationAwsTagFilter
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationawstagfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationawstagfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationawstagfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v6/integrationawstagfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationawstagfilter"
 
 &integrationawstagfilter.IntegrationAwsTagFilterConfig {
 	Connection: interface{},
