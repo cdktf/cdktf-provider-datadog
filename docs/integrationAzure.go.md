@@ -1,6 +1,6 @@
 # `datadog_integration_azure`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure).
+Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure).
 
 # `integrationAzure` Submodule <a name="`integrationAzure` Submodule" id="@cdktf/provider-datadog.integrationAzure"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https:/
 
 ### IntegrationAzure <a name="IntegrationAzure" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure datadog_integration_azure}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure datadog_integration_azure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationazure"
 
 integrationazure.NewIntegrationAzure(scope Construct, id *string, config IntegrationAzureConfig) IntegrationAzure
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationazure"
 
 integrationazure.IntegrationAzure_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationazure"
 
 integrationazure.IntegrationAzure_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ integrationazure.IntegrationAzure_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationazure"
 
 integrationazure.IntegrationAzure_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationazure"
 
 &integrationazure.IntegrationAzureConfig {
 	Connection: interface{},
@@ -703,7 +703,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationazure"
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.tenantName">TenantName</a></code> | <code>*string</code> | Your Azure Active Directory ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.automute">Automute</a></code> | <code>interface{}</code> | Silence monitors for expected Azure VM shutdowns. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.hostFilters">HostFilters</a></code> | <code>*string</code> | String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. |
-| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
 
 ---
 
@@ -787,7 +787,7 @@ ClientId *string
 
 Your Azure web application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
 
 ---
 
@@ -801,7 +801,7 @@ ClientSecret *string
 
 (Required for Initial Creation) Your Azure web application secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
 
 ---
 
@@ -815,7 +815,7 @@ TenantName *string
 
 Your Azure Active Directory ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
 
 ---
 
@@ -829,7 +829,7 @@ Automute interface{}
 
 Silence monitors for expected Azure VM shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
 
 ---
 
@@ -845,7 +845,7 @@ String of host tag(s) (in the form `key:value,key:value`) defines a filter that 
 
 Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
 
 ---
 
@@ -857,7 +857,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/integration_azure#id IntegrationAzure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_azure#id IntegrationAzure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

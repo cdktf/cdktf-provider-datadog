@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors
+// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogMonitorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors#id DataDatadogMonitors#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors#id DataDatadogMonitors#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataDatadogMonitorsConfig extends cdktf.TerraformMetaArguments 
   /**
   * A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
   */
   readonly monitorTagsFilter?: string[];
   /**
   * A monitor name to limit the search.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search. This filters on the monitor scope.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
   */
   readonly tagsFilter?: string[];
 }
@@ -114,7 +109,7 @@ export class DataDatadogMonitorsMonitorsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors datadog_monitors}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors datadog_monitors}
 */
 export class DataDatadogMonitors extends cdktf.TerraformDataSource {
 
@@ -128,7 +123,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/monitors datadog_monitors} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/monitors datadog_monitors} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,7 +134,7 @@ export class DataDatadogMonitors extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitors',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

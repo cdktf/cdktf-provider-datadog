@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link
+// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface TeamLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The link's label.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link#label TeamLink#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link#label TeamLink#label}
   */
   readonly label: string;
   /**
   * The link's position, used to sort links for the team.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link#position TeamLink#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link#position TeamLink#position}
   */
   readonly position?: number;
   /**
   * ID of the team the link is associated with.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link#team_id TeamLink#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link#team_id TeamLink#team_id}
   */
   readonly teamId: string;
   /**
   * The URL for the link.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link#url TeamLink#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link#url TeamLink#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link datadog_team_link}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link datadog_team_link}
 */
 export class TeamLink extends cdktf.TerraformResource {
 
@@ -53,7 +48,7 @@ export class TeamLink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/team_link datadog_team_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team_link datadog_team_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +59,7 @@ export class TeamLink extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_team_link',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
