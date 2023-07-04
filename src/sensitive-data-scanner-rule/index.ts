@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface SensitiveDataScannerRuleConfig extends cdktf.TerraformMetaArgum
   /**
   * Description of the rule.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#description SensitiveDataScannerRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#description SensitiveDataScannerRule#description}
   */
   readonly description?: string;
   /**
   * Attributes excluded from the scan. If namespaces is provided, it has to be a sub-path of the namespaces array.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#excluded_namespaces SensitiveDataScannerRule#excluded_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#excluded_namespaces SensitiveDataScannerRule#excluded_namespaces}
   */
   readonly excludedNamespaces?: string[];
   /**
   * Id of the scanning group the rule belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#group_id SensitiveDataScannerRule#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#group_id SensitiveDataScannerRule#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +40,43 @@ export interface SensitiveDataScannerRuleConfig extends cdktf.TerraformMetaArgum
   /**
   * Whether or not the rule is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#is_enabled SensitiveDataScannerRule#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#is_enabled SensitiveDataScannerRule#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Name of the rule.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#name SensitiveDataScannerRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#name SensitiveDataScannerRule#name}
   */
   readonly name?: string;
   /**
   * Attributes included in the scan. If namespaces is empty or missing, all attributes except excluded_namespaces are scanned. If both are missing the whole event is scanned.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#namespaces SensitiveDataScannerRule#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#namespaces SensitiveDataScannerRule#namespaces}
   */
   readonly namespaces?: string[];
   /**
   * Not included if there is a relationship to a standard pattern.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#pattern SensitiveDataScannerRule#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#pattern SensitiveDataScannerRule#pattern}
   */
   readonly pattern?: string;
   /**
   * Id of the standard pattern the rule refers to. If provided, then pattern must not be provided.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#standard_pattern_id SensitiveDataScannerRule#standard_pattern_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#standard_pattern_id SensitiveDataScannerRule#standard_pattern_id}
   */
   readonly standardPatternId?: string;
   /**
   * List of tags.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#tags SensitiveDataScannerRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#tags SensitiveDataScannerRule#tags}
   */
   readonly tags?: string[];
   /**
   * text_replacement block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#text_replacement SensitiveDataScannerRule#text_replacement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#text_replacement SensitiveDataScannerRule#text_replacement}
   */
   readonly textReplacement?: SensitiveDataScannerRuleTextReplacement;
 }
@@ -84,19 +84,19 @@ export interface SensitiveDataScannerRuleTextReplacement {
   /**
   * Required if type == 'partial_replacement_from_beginning' or 'partial_replacement_from_end'. It must be > 0.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#number_of_chars SensitiveDataScannerRule#number_of_chars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#number_of_chars SensitiveDataScannerRule#number_of_chars}
   */
   readonly numberOfChars?: number;
   /**
   * Required if type == 'replacement_string'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#replacement_string SensitiveDataScannerRule#replacement_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#replacement_string SensitiveDataScannerRule#replacement_string}
   */
   readonly replacementString?: string;
   /**
   * Type of the replacement text. None means no replacement. hash means the data will be stubbed. replacement_string means that one can chose a text to replace the data. partial_replacement_from_beginning allows a user to partially replace the data from the beginning, and partial_replacement_from_end on the other hand, allows to replace data from the end. Valid values are `none`, `hash`, `replacement_string`, `partial_replacement_from_beginning`, `partial_replacement_from_end`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule#type SensitiveDataScannerRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule#type SensitiveDataScannerRule#type}
   */
   readonly type: string;
 }
@@ -204,7 +204,7 @@ export class SensitiveDataScannerRuleTextReplacementOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}
 */
 export class SensitiveDataScannerRule extends cdktf.TerraformResource {
 
@@ -218,7 +218,7 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -229,7 +229,7 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_sensitive_data_scanner_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

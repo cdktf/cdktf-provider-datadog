@@ -1,6 +1,6 @@
 # `datadog_dashboard_json`
 
-Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json).
+Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json).
 
 # `dashboardJson` Submodule <a name="`dashboardJson` Submodule" id="@cdktf/provider-datadog.dashboardJson"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://re
 
 ### DashboardJson <a name="DashboardJson" id="@cdktf/provider-datadog.dashboardJson.DashboardJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json datadog_dashboard_json}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json datadog_dashboard_json}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer"></a>
 
@@ -44,8 +44,8 @@ dashboardJson.DashboardJson(
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.dashboard">dashboard</a></code> | <code>str</code> | The JSON formatted definition of the Dashboard. |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.dashboardLists">dashboard_lists</a></code> | <code>typing.List[typing.Union[int, float]]</code> | The list of dashboard lists this dashboard belongs to. |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#id DashboardJson#id}. |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.dashboardLists">dashboard_lists</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of dashboard lists this dashboard belongs to. |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#id DashboardJson#id}. |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer.parameter.url">url</a></code> | <code>str</code> | The URL of the dashboard. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The JSON formatted definition of the Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
 
 ---
 
@@ -124,9 +124,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-The list of dashboard lists this dashboard belongs to.
+A list of dashboard lists this dashboard belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
+This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#id DashboardJson#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#id DashboardJson#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The URL of the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#url DashboardJson#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#url DashboardJson#url}
 
 ---
 
@@ -796,8 +798,8 @@ dashboardJson.DashboardJsonConfig(
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.dashboard">dashboard</a></code> | <code>str</code> | The JSON formatted definition of the Dashboard. |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.dashboardLists">dashboard_lists</a></code> | <code>typing.List[typing.Union[int, float]]</code> | The list of dashboard lists this dashboard belongs to. |
-| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#id DashboardJson#id}. |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.dashboardLists">dashboard_lists</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of dashboard lists this dashboard belongs to. |
+| <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#id DashboardJson#id}. |
 | <code><a href="#@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.property.url">url</a></code> | <code>str</code> | The URL of the dashboard. |
 
 ---
@@ -882,7 +884,7 @@ dashboard: str
 
 The JSON formatted definition of the Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
 
 ---
 
@@ -894,9 +896,11 @@ dashboard_lists: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-The list of dashboard lists this dashboard belongs to.
+A list of dashboard lists this dashboard belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
+This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
 
 ---
 
@@ -908,7 +912,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#id DashboardJson#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#id DashboardJson#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -925,7 +929,7 @@ url: str
 
 The URL of the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/dashboard_json#url DashboardJson#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/dashboard_json#url DashboardJson#url}
 
 ---
 

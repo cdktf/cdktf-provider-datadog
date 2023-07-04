@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/integration_aws_namespace_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_namespace_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogIntegrationAwsNamespaceRulesConfig extends cdktf.Ter
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}
 */
 export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformDataSource {
 
@@ -29,7 +29,7 @@ export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +40,7 @@ export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformData
       terraformResourceType: 'datadog_integration_aws_namespace_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.26.0',
+        providerVersion: '3.27.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

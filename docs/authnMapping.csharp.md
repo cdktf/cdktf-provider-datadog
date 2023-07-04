@@ -1,6 +1,6 @@
 # `datadog_authn_mapping`
 
-Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping).
+Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping).
 
 # `authnMapping` Submodule <a name="`authnMapping` Submodule" id="@cdktf/provider-datadog.authnMapping"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://reg
 
 ### AuthnMapping <a name="AuthnMapping" id="@cdktf/provider-datadog.authnMapping.AuthnMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping datadog_authn_mapping}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping datadog_authn_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer"></a>
 
@@ -641,7 +641,7 @@ new AuthnMappingConfig {
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.key">Key</a></code> | <code>string</code> | Identity provider key. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">Role</a></code> | <code>string</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.value">Value</a></code> | <code>string</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ public string Key { get; set; }
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping#key AuthnMapping#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -739,7 +739,7 @@ public string Role { get; set; }
 
 The ID of a role to attach to all users with the corresponding key and value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping#role AuthnMapping#role}
 
 ---
 
@@ -753,7 +753,7 @@ public string Value { get; set; }
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -765,7 +765,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `datadog_webhook`
 
-Refer to the Terraform Registory for docs: [`datadog_webhook`](https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook).
+Refer to the Terraform Registory for docs: [`datadog_webhook`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook).
 
 # `webhook` Submodule <a name="`webhook` Submodule" id="@cdktf/provider-datadog.webhook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_webhook`](https://registry.
 
 ### Webhook <a name="Webhook" id="@cdktf/provider-datadog.webhook.Webhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook datadog_webhook}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook datadog_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhook.Webhook.Initializer"></a>
 
@@ -51,7 +51,7 @@ Webhook.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | The URL of the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.Initializer.parameter.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | The headers attached to the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.Initializer.parameter.encodeAs">encodeAs</a></code> | <code>java.lang.String</code> | Encoding type. Valid values are `json`, `form`. |
-| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#id Webhook#id}. |
+| <code><a href="#@cdktf/provider-datadog.webhook.Webhook.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#id Webhook#id}. |
 | <code><a href="#@cdktf/provider-datadog.webhook.Webhook.Initializer.parameter.payload">payload</a></code> | <code>java.lang.String</code> | The payload of the webhook. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#name Webhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#name Webhook#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#url Webhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#url Webhook#url}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The headers attached to the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Encoding type. Valid values are `json`, `form`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#encode_as Webhook#encode_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#encode_as Webhook#encode_as}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#id Webhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#id Webhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The payload of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#payload Webhook#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#payload Webhook#payload}
 
 ---
 
@@ -840,7 +840,7 @@ WebhookConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.url">url</a></code> | <code>java.lang.String</code> | The URL of the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.customHeaders">customHeaders</a></code> | <code>java.lang.String</code> | The headers attached to the webhook. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.encodeAs">encodeAs</a></code> | <code>java.lang.String</code> | Encoding type. Valid values are `json`, `form`. |
-| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#id Webhook#id}. |
+| <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#id Webhook#id}. |
 | <code><a href="#@cdktf/provider-datadog.webhook.WebhookConfig.property.payload">payload</a></code> | <code>java.lang.String</code> | The payload of the webhook. |
 
 ---
@@ -925,7 +925,7 @@ public java.lang.String getName();
 
 The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#name Webhook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#name Webhook#name}
 
 ---
 
@@ -939,7 +939,7 @@ public java.lang.String getUrl();
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#url Webhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#url Webhook#url}
 
 ---
 
@@ -953,7 +953,7 @@ public java.lang.String getCustomHeaders();
 
 The headers attached to the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getEncodeAs();
 
 Encoding type. Valid values are `json`, `form`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#encode_as Webhook#encode_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#encode_as Webhook#encode_as}
 
 ---
 
@@ -979,7 +979,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#id Webhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#id Webhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ public java.lang.String getPayload();
 
 The payload of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.26.0/docs/resources/webhook#payload Webhook#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/webhook#payload Webhook#payload}
 
 ---
 
