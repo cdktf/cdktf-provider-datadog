@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard
+// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogDashboardConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataDatadogDashboardConfig extends cdktf.TerraformMetaArguments
   /**
   * The dashboard name to search for. Must only match one dashboard.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard#name DataDatadogDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard#name DataDatadogDashboard#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard datadog_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard datadog_dashboard}
 */
 export class DataDatadogDashboard extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataDatadogDashboard extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/dashboard datadog_dashboard} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard datadog_dashboard} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +48,7 @@ export class DataDatadogDashboard extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

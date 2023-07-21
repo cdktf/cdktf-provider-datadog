@@ -1,6 +1,6 @@
 # `datadog_logs_metric`
 
-Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric).
+Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric).
 
 # `logsMetric` Submodule <a name="`logsMetric` Submodule" id="@cdktf/provider-datadog.logsMetric"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_logs_metric`](https://regis
 
 ### LogsMetric <a name="LogsMetric" id="@cdktf/provider-datadog.logsMetric.LogsMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric datadog_logs_metric}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric datadog_logs_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsMetric.LogsMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.NewLogsMetric(scope Construct, id *string, config LogsMetricConfig) LogsMetric
 ```
@@ -323,7 +323,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsMetric.LogsMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.LogsMetric_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsMetric.LogsMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.LogsMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ logsmetric.LogsMetric_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsMetric.LogsMetric.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.LogsMetric_IsTerraformResource(x interface{}) *bool
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsMetric.LogsMetricCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 &logsmetric.LogsMetricCompute {
 	AggregationType: *string,
@@ -707,7 +707,7 @@ AggregationType *string
 
 The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
 
 ---
 
@@ -723,7 +723,7 @@ Toggle to include/exclude percentiles for a distribution metric.
 
 Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
 
 ---
 
@@ -739,7 +739,7 @@ The path to the value the log-based metric will aggregate on (only used if the a
 
 This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#path LogsMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#path LogsMetric#path}
 
 ---
 
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsMetric.LogsMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 &logsmetric.LogsMetricConfig {
 	Connection: interface{},
@@ -758,8 +758,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Compute: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsMetric.LogsMetricCompute,
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsMetric.LogsMetricFilter,
+	Compute: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsMetric.LogsMetricCompute,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsMetric.LogsMetricFilter,
 	Name: *string,
 	GroupBy: interface{},
 	Id: *string,
@@ -781,7 +781,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.filter">Filter</a></code> | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricFilter">LogsMetricFilter</a></code> | filter block. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.name">Name</a></code> | <code>*string</code> | The name of the log-based metric. This field can't be updated after creation. |
 | <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.groupBy">GroupBy</a></code> | <code>interface{}</code> | group_by block. |
-| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#id LogsMetric#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsMetric.LogsMetricConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#id LogsMetric#id}. |
 
 ---
 
@@ -865,7 +865,7 @@ Compute LogsMetricCompute
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#compute LogsMetric#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#compute LogsMetric#compute}
 
 ---
 
@@ -879,7 +879,7 @@ Filter LogsMetricFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#filter LogsMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#filter LogsMetric#filter}
 
 ---
 
@@ -893,7 +893,7 @@ Name *string
 
 The name of the log-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#name LogsMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#name LogsMetric#name}
 
 ---
 
@@ -907,7 +907,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
 
 ---
 
@@ -919,7 +919,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#id LogsMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#id LogsMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsMetric.LogsMetricFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 &logsmetric.LogsMetricFilter {
 	Query: *string,
@@ -956,7 +956,7 @@ Query *string
 
 The search query - following the log search syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#query LogsMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#query LogsMetric#query}
 
 ---
 
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsMetric.LogsMetricGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 &logsmetric.LogsMetricGroupBy {
 	Path: *string,
@@ -992,7 +992,7 @@ Path *string
 
 The path to the value the log-based metric will be aggregated over.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#path LogsMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#path LogsMetric#path}
 
 ---
 
@@ -1006,7 +1006,7 @@ TagName *string
 
 Name of the tag that gets created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
 
 ---
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsMetric.LogsMetricComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.NewLogsMetricComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsMetricComputeOutputReference
 ```
@@ -1346,7 +1346,7 @@ func InternalValue() LogsMetricCompute
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsMetric.LogsMetricFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.NewLogsMetricFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsMetricFilterOutputReference
 ```
@@ -1617,7 +1617,7 @@ func InternalValue() LogsMetricFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsMetric.LogsMetricGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.NewLogsMetricGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsMetricGroupByList
 ```
@@ -1760,7 +1760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsMetric.LogsMetricGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logsmetric"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsmetric"
 
 logsmetric.NewLogsMetricGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsMetricGroupByOutputReference
 ```

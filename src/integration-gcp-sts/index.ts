@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts
+// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface IntegrationGcpStsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Silence monitors for expected GCE instance shutdowns.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your service account email address.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
   */
   readonly clientEmail: string;
   /**
   * Your Host Filters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
   */
   readonly hostFilters?: string[];
   /**
   * When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
   */
   readonly isCspmEnabled?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}
 */
 export class IntegrationGcpSts extends cdktf.TerraformResource {
 
@@ -53,7 +48,7 @@ export class IntegrationGcpSts extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +59,7 @@ export class IntegrationGcpSts extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_gcp_sts',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

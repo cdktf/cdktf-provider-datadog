@@ -1,6 +1,6 @@
 # `datadog_service_account_application_key`
 
-Refer to the Terraform Registory for docs: [`datadog_service_account_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key).
+Refer to the Terraform Registory for docs: [`datadog_service_account_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key).
 
 # `serviceAccountApplicationKey` Submodule <a name="`serviceAccountApplicationKey` Submodule" id="@cdktf/provider-datadog.serviceAccountApplicationKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_service_account_application
 
 ### ServiceAccountApplicationKey <a name="ServiceAccountApplicationKey" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.NewServiceAccountApplicationKey(scope Construct, id *string, config ServiceAccountApplicationKeyConfig) ServiceAccountApplicationKey
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.ServiceAccountApplicationKey_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.ServiceAccountApplicationKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ serviceaccountapplicationkey.ServiceAccountApplicationKey_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.ServiceAccountApplicationKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
 
 &serviceaccountapplicationkey.ServiceAccountApplicationKeyConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ Name *string
 
 Name of the application key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
 
 ---
 
@@ -728,7 +728,7 @@ ServiceAccountId *string
 
 ID of the service account that owns this key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
 
 ---
 

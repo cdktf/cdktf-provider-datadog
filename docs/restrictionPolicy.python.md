@@ -1,6 +1,6 @@
 # `datadog_restriction_policy`
 
-Refer to the Terraform Registory for docs: [`datadog_restriction_policy`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy).
+Refer to the Terraform Registory for docs: [`datadog_restriction_policy`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy).
 
 # `restrictionPolicy` Submodule <a name="`restrictionPolicy` Submodule" id="@cdktf/provider-datadog.restrictionPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_restriction_policy`](https:
 
 ### RestrictionPolicy <a name="RestrictionPolicy" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy datadog_restriction_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy datadog_restriction_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicy.Initializer"></a>
 
@@ -112,7 +112,9 @@ Must be unique amongst siblings in the same scope
 
 Identifier for the resource, formatted as resource_type:resource_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+Note: dashboard resource is currently not supported
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 
 ---
 
@@ -702,8 +704,8 @@ tfResourceType: str
 from cdktf_cdktf_provider_datadog import restriction_policy
 
 restrictionPolicy.RestrictionPolicyBindings(
-  principals: typing.List[str] = None,
-  relation: str = None
+  principals: typing.List[str],
+  relation: str
 )
 ```
 
@@ -712,11 +714,11 @@ restrictionPolicy.RestrictionPolicyBindings(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.principals">principals</a></code> | <code>typing.List[str]</code> | An array of principals. |
-| <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.relation">relation</a></code> | <code>str</code> | The role/level of access. |
+| <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.relation">relation</a></code> | <code>str</code> | The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources. |
 
 ---
 
-##### `principals`<sup>Optional</sup> <a name="principals" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.principals"></a>
+##### `principals`<sup>Required</sup> <a name="principals" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.principals"></a>
 
 ```python
 principals: typing.List[str]
@@ -728,11 +730,11 @@ An array of principals.
 
 A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role` and `org`. The org ID can be obtained through the api/v2/users API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
 
 ---
 
-##### `relation`<sup>Optional</sup> <a name="relation" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.relation"></a>
+##### `relation`<sup>Required</sup> <a name="relation" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.property.relation"></a>
 
 ```python
 relation: str
@@ -740,9 +742,9 @@ relation: str
 
 - *Type:* str
 
-The role/level of access.
+The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
 
 ---
 
@@ -862,7 +864,9 @@ resource_id: str
 
 Identifier for the resource, formatted as resource_type:resource_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+Note: dashboard resource is currently not supported
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 
 ---
 
@@ -876,7 +880,7 @@ bindings: typing.Union[IResolvable, typing.List[RestrictionPolicyBindings]]
 
 bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 
 ---
 
@@ -1106,8 +1110,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.resetPrincipals">reset_principals</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.resetRelation">reset_relation</a></code> | *No description.* |
 
 ---
 
@@ -1282,18 +1284,6 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
-
-##### `reset_principals` <a name="reset_principals" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.resetPrincipals"></a>
-
-```python
-def reset_principals() -> None
-```
-
-##### `reset_relation` <a name="reset_relation" id="@cdktf/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.resetRelation"></a>
-
-```python
-def reset_relation() -> None
-```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
