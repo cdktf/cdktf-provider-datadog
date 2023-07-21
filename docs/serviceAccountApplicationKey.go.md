@@ -1,6 +1,6 @@
 # `datadog_service_account_application_key`
 
-Refer to the Terraform Registory for docs: [`datadog_service_account_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key).
+Refer to the Terraform Registory for docs: [`datadog_service_account_application_key`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key).
 
 # `serviceAccountApplicationKey` Submodule <a name="`serviceAccountApplicationKey` Submodule" id="@cdktf/provider-datadog.serviceAccountApplicationKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_service_account_application
 
 ### ServiceAccountApplicationKey <a name="ServiceAccountApplicationKey" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key datadog_service_account_application_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.Initializer"></a>
 
@@ -714,7 +714,7 @@ Name *string
 
 Name of the application key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
 
 ---
 
@@ -728,7 +728,7 @@ ServiceAccountId *string
 
 ID of the service account that owns this key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
 
 ---
 

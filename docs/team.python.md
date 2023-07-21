@@ -1,6 +1,6 @@
 # `datadog_team`
 
-Refer to the Terraform Registory for docs: [`datadog_team`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team).
+Refer to the Terraform Registory for docs: [`datadog_team`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team).
 
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-datadog.team"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_team`](https://registry.ter
 
 ### Team <a name="Team" id="@cdktf/provider-datadog.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team datadog_team}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team datadog_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.team.Team.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Free-form markdown description/content for the team's homepage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team#handle Team#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#handle Team#handle}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -857,7 +857,7 @@ description: str
 
 Free-form markdown description/content for the team's homepage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -871,7 +871,7 @@ handle: str
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team#handle Team#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#handle Team#handle}
 
 ---
 
@@ -885,7 +885,7 @@ name: str
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#name Team#name}
 
 ---
 

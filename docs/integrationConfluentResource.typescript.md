@@ -1,6 +1,6 @@
 # `datadog_integration_confluent_resource`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resource`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource).
+Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resource`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource).
 
 # `integrationConfluentResource` Submodule <a name="`integrationConfluentResource` Submodule" id="@cdktf/provider-datadog.integrationConfluentResource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resou
 
 ### IntegrationConfluentResource <a name="IntegrationConfluentResource" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetEnableCustomMetrics">resetEnableCustomMetrics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetResourceType">resetResourceType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetTags">resetTags</a></code> | *No description.* |
 
@@ -259,6 +260,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableCustomMetrics` <a name="resetEnableCustomMetrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetEnableCustomMetrics"></a>
+
+```typescript
+public resetEnableCustomMetrics(): void
+```
+
 ##### `resetResourceType` <a name="resetResourceType" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetResourceType"></a>
 
 ```typescript
@@ -361,10 +368,12 @@ integrationConfluentResource.IntegrationConfluentResource.isTerraformResource(x:
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetricsInput">enableCustomMetricsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceIdInput">resourceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceTypeInput">resourceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetrics">enableCustomMetrics</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceId">resourceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceType">resourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
@@ -533,6 +542,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `enableCustomMetricsInput`<sup>Optional</sup> <a name="enableCustomMetricsInput" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetricsInput"></a>
+
+```typescript
+public readonly enableCustomMetricsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `resourceIdInput`<sup>Optional</sup> <a name="resourceIdInput" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceIdInput"></a>
 
 ```typescript
@@ -570,6 +589,16 @@ public readonly accountId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableCustomMetrics`<sup>Required</sup> <a name="enableCustomMetrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetrics"></a>
+
+```typescript
+public readonly enableCustomMetrics: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -646,6 +675,7 @@ const integrationConfluentResourceConfig: integrationConfluentResource.Integrati
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.accountId">accountId</a></code> | <code>string</code> | Confluent Account ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.resourceId">resourceId</a></code> | <code>string</code> | The ID associated with a Confluent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.enableCustomMetrics">enableCustomMetrics</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.resourceType">resourceType</a></code> | <code>string</code> | The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.tags">tags</a></code> | <code>string[]</code> | A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon. |
 
@@ -731,7 +761,7 @@ public readonly accountId: string;
 
 Confluent Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
 
 ---
 
@@ -745,7 +775,21 @@ public readonly resourceId: string;
 
 The ID associated with a Confluent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+
+---
+
+##### `enableCustomMetrics`<sup>Optional</sup> <a name="enableCustomMetrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.enableCustomMetrics"></a>
+
+```typescript
+public readonly enableCustomMetrics: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#enable_custom_metrics IntegrationConfluentResource#enable_custom_metrics}
 
 ---
 
@@ -759,7 +803,7 @@ public readonly resourceType: string;
 
 The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
 
 ---
 
@@ -773,7 +817,7 @@ public readonly tags: string[];
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
 
 ---
 

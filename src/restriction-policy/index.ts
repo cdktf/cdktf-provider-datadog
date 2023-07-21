@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy
+// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,14 +14,16 @@ import * as cdktf from 'cdktf';
 export interface RestrictionPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier for the resource, formatted as resource_type:resource_id.
+
+Note: dashboard resource is currently not supported
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
   */
   readonly resourceId: string;
   /**
   * bindings block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
   */
   readonly bindings?: RestrictionPolicyBindings[] | cdktf.IResolvable;
 }
@@ -29,15 +31,15 @@ export interface RestrictionPolicyBindings {
   /**
   * An array of principals. A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role` and `org`. The org ID can be obtained through the api/v2/users API.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
   */
-  readonly principals?: string[];
+  readonly principals: string[];
   /**
-  * The role/level of access.
+  * The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
   */
-  readonly relation?: string;
+  readonly relation: string;
 }
 
 export function restrictionPolicyBindingsToTerraform(struct?: RestrictionPolicyBindings | cdktf.IResolvable): any {
@@ -101,7 +103,7 @@ export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObjec
     }
   }
 
-  // principals - computed: false, optional: true, required: false
+  // principals - computed: false, optional: false, required: true
   private _principals?: string[]; 
   public get principals() {
     return cdktf.Fn.tolist(this.getListAttribute('principals'));
@@ -109,24 +111,18 @@ export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObjec
   public set principals(value: string[]) {
     this._principals = value;
   }
-  public resetPrincipals() {
-    this._principals = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get principalsInput() {
     return this._principals;
   }
 
-  // relation - computed: false, optional: true, required: false
+  // relation - computed: false, optional: false, required: true
   private _relation?: string; 
   public get relation() {
     return this.getStringAttribute('relation');
   }
   public set relation(value: string) {
     this._relation = value;
-  }
-  public resetRelation() {
-    this._relation = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get relationInput() {
@@ -155,7 +151,7 @@ export class RestrictionPolicyBindingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy datadog_restriction_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy datadog_restriction_policy}
 */
 export class RestrictionPolicy extends cdktf.TerraformResource {
 
@@ -169,7 +165,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/restriction_policy datadog_restriction_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/restriction_policy datadog_restriction_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +176,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_restriction_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

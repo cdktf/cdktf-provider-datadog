@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/ip_ranges
+// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/ip_ranges
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogIpRangesConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/ip_ranges datadog_ip_ranges}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/ip_ranges datadog_ip_ranges}
 */
 export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
 
@@ -29,7 +29,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/ip_ranges datadog_ip_ranges} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +40,7 @@ export class DataDatadogIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

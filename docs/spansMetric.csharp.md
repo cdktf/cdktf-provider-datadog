@@ -1,6 +1,6 @@
 # `datadog_spans_metric`
 
-Refer to the Terraform Registory for docs: [`datadog_spans_metric`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric).
+Refer to the Terraform Registory for docs: [`datadog_spans_metric`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric).
 
 # `spansMetric` Submodule <a name="`spansMetric` Submodule" id="@cdktf/provider-datadog.spansMetric"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_spans_metric`](https://regi
 
 ### SpansMetric <a name="SpansMetric" id="@cdktf/provider-datadog.spansMetric.SpansMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric datadog_spans_metric}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric datadog_spans_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.spansMetric.SpansMetric.Initializer"></a>
 
@@ -672,7 +672,7 @@ public string AggregationType { get; set; }
 
 The type of aggregation to use. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
 
 ---
 
@@ -686,7 +686,7 @@ public object IncludePercentiles { get; set; }
 
 Toggle to include or exclude percentile aggregations for distribution metrics. Only present when the `aggregation_type` is `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
 
 ---
 
@@ -702,7 +702,7 @@ The path to the value the span-based metric will aggregate on (only used if the 
 
 This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#path SpansMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#path SpansMetric#path}
 
 ---
 
@@ -824,7 +824,7 @@ public string Name { get; set; }
 
 The name of the span-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#name SpansMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#name SpansMetric#name}
 
 ---
 
@@ -838,7 +838,7 @@ public SpansMetricFilter Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#filter SpansMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#filter SpansMetric#filter}
 
 ---
 
@@ -852,7 +852,7 @@ public object GroupBy { get; set; }
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
 
 ---
 
@@ -886,7 +886,7 @@ public string Query { get; set; }
 
 The search query - following the span search syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#query SpansMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#query SpansMetric#query}
 
 ---
 
@@ -922,7 +922,7 @@ public string Path { get; set; }
 
 The path to the value the span-based metric will be aggregated over.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#path SpansMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#path SpansMetric#path}
 
 ---
 
@@ -936,7 +936,7 @@ public string TagName { get; set; }
 
 Eventual name of the tag that gets created. By default, the path attribute is used as the tag name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
 
 ---
 

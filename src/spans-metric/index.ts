@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric
+// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface SpansMetricConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the span-based metric. This field can't be updated after creation.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#name SpansMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#name SpansMetric#name}
   */
   readonly name: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#filter SpansMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#filter SpansMetric#filter}
   */
   readonly filter?: SpansMetricFilter;
   /**
   * group_by block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
   */
   readonly groupBy?: SpansMetricGroupBy[] | cdktf.IResolvable;
 }
@@ -35,19 +35,19 @@ export interface SpansMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include or exclude percentile aggregations for distribution metrics. Only present when the `aggregation_type` is `distribution`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The path to the value the span-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#path SpansMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#path SpansMetric#path}
   */
   readonly path?: string;
 }
@@ -167,7 +167,7 @@ export interface SpansMetricFilter {
   /**
   * The search query - following the span search syntax.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#query SpansMetric#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#query SpansMetric#query}
   */
   readonly query?: string;
 }
@@ -244,13 +244,13 @@ export interface SpansMetricGroupBy {
   /**
   * The path to the value the span-based metric will be aggregated over.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#path SpansMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#path SpansMetric#path}
   */
   readonly path: string;
   /**
   * Eventual name of the tag that gets created. By default, the path attribute is used as the tag name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
   */
   readonly tagName?: string;
 }
@@ -367,7 +367,7 @@ export class SpansMetricGroupByList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric datadog_spans_metric}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric datadog_spans_metric}
 */
 export class SpansMetric extends cdktf.TerraformResource {
 
@@ -381,7 +381,7 @@ export class SpansMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/spans_metric datadog_spans_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric datadog_spans_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +392,7 @@ export class SpansMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_spans_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

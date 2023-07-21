@@ -1,6 +1,6 @@
 # `datadog_integration_confluent_resource`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resource`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource).
+Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resource`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource).
 
 # `integrationConfluentResource` Submodule <a name="`integrationConfluentResource` Submodule" id="@cdktf/provider-datadog.integrationConfluentResource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_confluent_resou
 
 ### IntegrationConfluentResource <a name="IntegrationConfluentResource" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer"></a>
 
@@ -27,6 +27,7 @@ integrationConfluentResource.IntegrationConfluentResource(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
   resource_id: str,
+  enable_custom_metrics: typing.Union[bool, IResolvable] = None,
   resource_type: str = None,
   tags: typing.List[str] = None
 )
@@ -45,6 +46,7 @@ integrationConfluentResource.IntegrationConfluentResource(
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Confluent Account ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.resourceId">resource_id</a></code> | <code>str</code> | The ID associated with a Confluent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.enableCustomMetrics">enable_custom_metrics</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon. |
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Confluent Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
 
 ---
 
@@ -126,7 +128,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID associated with a Confluent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+
+---
+
+##### `enable_custom_metrics`<sup>Optional</sup> <a name="enable_custom_metrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer.parameter.enableCustomMetrics"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#enable_custom_metrics IntegrationConfluentResource#enable_custom_metrics}
 
 ---
 
@@ -136,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
 
 ---
 
@@ -146,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
 
 ---
 
@@ -170,6 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetEnableCustomMetrics">reset_enable_custom_metrics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetResourceType">reset_resource_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetTags">reset_tags</a></code> | *No description.* |
 
@@ -384,6 +397,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_enable_custom_metrics` <a name="reset_enable_custom_metrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetEnableCustomMetrics"></a>
+
+```python
+def reset_enable_custom_metrics() -> None
+```
+
 ##### `reset_resource_type` <a name="reset_resource_type" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.resetResourceType"></a>
 
 ```python
@@ -492,10 +511,12 @@ integrationConfluentResource.IntegrationConfluentResource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetricsInput">enable_custom_metrics_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceIdInput">resource_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceTypeInput">resource_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetrics">enable_custom_metrics</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceId">resource_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -664,6 +685,16 @@ account_id_input: str
 
 ---
 
+##### `enable_custom_metrics_input`<sup>Optional</sup> <a name="enable_custom_metrics_input" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetricsInput"></a>
+
+```python
+enable_custom_metrics_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `resource_id_input`<sup>Optional</sup> <a name="resource_id_input" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.resourceIdInput"></a>
 
 ```python
@@ -701,6 +732,16 @@ account_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `enable_custom_metrics`<sup>Required</sup> <a name="enable_custom_metrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.property.enableCustomMetrics"></a>
+
+```python
+enable_custom_metrics: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -771,6 +812,7 @@ integrationConfluentResource.IntegrationConfluentResourceConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   account_id: str,
   resource_id: str,
+  enable_custom_metrics: typing.Union[bool, IResolvable] = None,
   resource_type: str = None,
   tags: typing.List[str] = None
 )
@@ -789,6 +831,7 @@ integrationConfluentResource.IntegrationConfluentResourceConfig(
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.accountId">account_id</a></code> | <code>str</code> | Confluent Account ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.resourceId">resource_id</a></code> | <code>str</code> | The ID associated with a Confluent resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.enableCustomMetrics">enable_custom_metrics</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.resourceType">resource_type</a></code> | <code>str</code> | The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`. |
 | <code><a href="#@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon. |
 
@@ -874,7 +917,7 @@ account_id: str
 
 Confluent Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
 
 ---
 
@@ -888,7 +931,21 @@ resource_id: str
 
 The ID associated with a Confluent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+
+---
+
+##### `enable_custom_metrics`<sup>Optional</sup> <a name="enable_custom_metrics" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.property.enableCustomMetrics"></a>
+
+```python
+enable_custom_metrics: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#enable_custom_metrics IntegrationConfluentResource#enable_custom_metrics}
 
 ---
 
@@ -902,7 +959,7 @@ resource_type: str
 
 The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
 
 ---
 
@@ -916,7 +973,7 @@ tags: typing.List[str]
 
 A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
 
 ---
 

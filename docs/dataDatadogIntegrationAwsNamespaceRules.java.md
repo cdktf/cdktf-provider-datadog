@@ -1,6 +1,6 @@
 # `data_datadog_integration_aws_namespace_rules`
 
-Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_namespace_rules`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_namespace_rules).
+Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_namespace_rules`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/integration_aws_namespace_rules).
 
 # `dataDatadogIntegrationAwsNamespaceRules` Submodule <a name="`dataDatadogIntegrationAwsNamespaceRules` Submodule" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_namesp
 
 ### DataDatadogIntegrationAwsNamespaceRules <a name="DataDatadogIntegrationAwsNamespaceRules" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.Initializer"></a>
 

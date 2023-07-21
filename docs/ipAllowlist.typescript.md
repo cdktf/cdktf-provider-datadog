@@ -1,6 +1,6 @@
 # `datadog_ip_allowlist`
 
-Refer to the Terraform Registory for docs: [`datadog_ip_allowlist`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist).
+Refer to the Terraform Registory for docs: [`datadog_ip_allowlist`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist).
 
 # `ipAllowlist` Submodule <a name="`ipAllowlist` Submodule" id="@cdktf/provider-datadog.ipAllowlist"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_ip_allowlist`](https://regi
 
 ### IpAllowlist <a name="IpAllowlist" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist datadog_ip_allowlist}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.ipAllowlist.IpAllowlist.Initializer"></a>
 
@@ -626,7 +626,7 @@ const ipAllowlistConfig: ipAllowlist.IpAllowlistConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the IP Allowlist is enabled. |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.entry">entry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry">IpAllowlistEntry</a>[]</code> | entry block. |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#id IpAllowlist#id}. |
+| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#id IpAllowlist#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the IP Allowlist is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
 
 ---
 
@@ -724,7 +724,7 @@ public readonly entry: IResolvable | IpAllowlistEntry[];
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
 
 ---
 
@@ -736,7 +736,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#id IpAllowlist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#id IpAllowlist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -757,7 +757,7 @@ const ipAllowlistEntry: ipAllowlist.IpAllowlistEntry = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}. |
+| <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}. |
 | <code><a href="#@cdktf/provider-datadog.ipAllowlist.IpAllowlistEntry.property.note">note</a></code> | <code>string</code> | Note accompanying IP address. |
 
 ---
@@ -770,7 +770,7 @@ public readonly cidrBlock: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#cidr_block IpAllowlist#cidr_block}.
 
 ---
 
@@ -784,7 +784,7 @@ public readonly note: string;
 
 Note accompanying IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/ip_allowlist#note IpAllowlist#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#note IpAllowlist#note}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts
+// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DataDatadogHostsConfig extends cdktf.TerraformMetaArguments {
   /**
   * String to filter search results.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
   */
   readonly filter?: string;
   /**
   * Number of seconds since UNIX epoch from which you want to search your hosts.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts#from DataDatadogHosts#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#from DataDatadogHosts#from}
   */
   readonly from?: number;
   /**
   * Include information on the muted status of hosts and when the mute expires.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
   */
   readonly includeMutedHostsData?: boolean | cdktf.IResolvable;
   /**
   * Direction of sort.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
   */
   readonly sortDir?: string;
   /**
   * Sort hosts by this field.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
   */
   readonly sortField?: string;
 }
@@ -307,7 +307,7 @@ export class DataDatadogHostsHostListStructList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts datadog_hosts}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts datadog_hosts}
 */
 export class DataDatadogHosts extends cdktf.TerraformDataSource {
 
@@ -321,7 +321,7 @@ export class DataDatadogHosts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/hosts datadog_hosts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts datadog_hosts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +332,7 @@ export class DataDatadogHosts extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_hosts',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.27.0',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

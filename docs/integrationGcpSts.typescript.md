@@ -1,6 +1,6 @@
 # `datadog_integration_gcp_sts`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_gcp_sts`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts).
+Refer to the Terraform Registory for docs: [`datadog_integration_gcp_sts`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts).
 
 # `integrationGcpSts` Submodule <a name="`integrationGcpSts` Submodule" id="@cdktf/provider-datadog.integrationGcpSts"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_gcp_sts`](https
 
 ### IntegrationGcpSts <a name="IntegrationGcpSts" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer"></a>
 
@@ -749,7 +749,7 @@ public readonly clientEmail: string;
 
 Your service account email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
 
 ---
 
@@ -763,7 +763,7 @@ public readonly automute: boolean | IResolvable;
 
 Silence monitors for expected GCE instance shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
 
 ---
 
@@ -777,7 +777,7 @@ public readonly hostFilters: string[];
 
 Your Host Filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
 
 ---
 
@@ -791,7 +791,7 @@ public readonly isCspmEnabled: boolean | IResolvable;
 
 When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
 
 ---
 

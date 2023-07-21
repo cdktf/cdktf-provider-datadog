@@ -1,6 +1,6 @@
 # `data_datadog_logs_archives_order`
 
-Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_archives_order).
+Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/logs_archives_order).
 
 # `dataDatadogLogsArchivesOrder` Submodule <a name="`dataDatadogLogsArchivesOrder` Submodule" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](
 
 ### DataDatadogLogsArchivesOrder <a name="DataDatadogLogsArchivesOrder" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_archives_order datadog_logs_archives_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/logs_archives_order datadog_logs_archives_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrder.Initializer"></a>
 
@@ -558,7 +558,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadoglogsarc
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_archives_order#id DataDatadogLogsArchivesOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsArchivesOrder.DataDatadogLogsArchivesOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/logs_archives_order#id DataDatadogLogsArchivesOrder#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.27.0/docs/data-sources/logs_archives_order#id DataDatadogLogsArchivesOrder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/logs_archives_order#id DataDatadogLogsArchivesOrder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
