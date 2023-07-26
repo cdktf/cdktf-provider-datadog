@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,7 +23,7 @@ export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name for API Key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
   */
   readonly name?: string;

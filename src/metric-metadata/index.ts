@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface MetricMetadataConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the metric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#description MetricMetadata#description}
   */
   readonly description?: string;
@@ -27,37 +27,37 @@ export interface MetricMetadataConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the metric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
   */
   readonly metric: string;
   /**
   * Per unit of the metric such as `second` in `bytes per second`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
   */
   readonly perUnit?: string;
   /**
   * A short name of the metric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
   */
   readonly shortName?: string;
   /**
   * If applicable, statsd flush interval in seconds for the metric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
   */
   readonly statsdInterval?: number;
   /**
   * Metric type such as `gauge` or `rate`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#type MetricMetadata#type}
   */
   readonly type?: string;
   /**
   * Primary unit of the metric such as `byte` or `operation`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
   */
   readonly unit?: string;

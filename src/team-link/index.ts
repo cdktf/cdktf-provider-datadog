@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface TeamLinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The link's label.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link#label TeamLink#label}
   */
   readonly label: string;
   /**
   * The link's position, used to sort links for the team.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link#position TeamLink#position}
   */
   readonly position?: number;
   /**
   * ID of the team the link is associated with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link#team_id TeamLink#team_id}
   */
   readonly teamId: string;
   /**
   * The URL for the link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_link#url TeamLink#url}
   */
   readonly url: string;

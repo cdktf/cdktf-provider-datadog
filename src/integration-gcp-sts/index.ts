@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface IntegrationGcpStsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Silence monitors for expected GCE instance shutdowns.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your service account email address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
   */
   readonly clientEmail: string;
   /**
   * Your Host Filters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
   */
   readonly hostFilters?: string[];
   /**
   * When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
   */
   readonly isCspmEnabled?: boolean | cdktf.IResolvable;

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The JSON formatted definition of the Dashboard.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
   */
   readonly dashboard: string;
   /**
   * A list of dashboard lists this dashboard belongs to. This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
   */
   readonly dashboardLists?: number[];
@@ -33,7 +33,7 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The URL of the dashboard.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#url DashboardJson#url}
   */
   readonly url?: string;

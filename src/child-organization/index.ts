@@ -21,7 +21,7 @@ export interface ChildOrganizationConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name for Child Organization after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/child_organization#name ChildOrganization#name}
   */
   readonly name: string;

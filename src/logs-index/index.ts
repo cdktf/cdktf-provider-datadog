@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   /**
   * The number of log events you can send in this index per day before you are rate-limited.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
   */
   readonly dailyLimit?: number;
   /**
   * If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). If false or omitted, the index's current daily_limit is maintained.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
   */
   readonly disableDailyLimit?: boolean | cdktf.IResolvable;
@@ -33,25 +33,25 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the index.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#name LogsIndex#name}
   */
   readonly name: string;
   /**
   * The number of days before logs are deleted from this index.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
   */
   readonly retentionDays?: number;
   /**
   * exclusion_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
   */
   readonly exclusionFilter?: LogsIndexExclusionFilter[] | cdktf.IResolvable;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#filter LogsIndex#filter}
   */
   readonly filter: LogsIndexFilter;
@@ -59,13 +59,13 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
 export interface LogsIndexExclusionFilterFilter {
   /**
   * Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#query LogsIndex#query}
   */
   readonly query?: string;
   /**
   * The fraction of logs excluded by the exclusion filter, when active.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
   */
   readonly sampleRate?: number;
@@ -187,19 +187,19 @@ export class LogsIndexExclusionFilterFilterList extends cdktf.ComplexList {
 export interface LogsIndexExclusionFilter {
   /**
   * A boolean stating if the exclusion is active or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * The name of the exclusion filter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#name LogsIndex#name}
   */
   readonly name?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#filter LogsIndex#filter}
   */
   readonly filter?: LogsIndexExclusionFilterFilter[] | cdktf.IResolvable;
@@ -344,7 +344,7 @@ export class LogsIndexExclusionFilterList extends cdktf.ComplexList {
 export interface LogsIndexFilter {
   /**
   * Logs filter criteria. Only logs matching this filter criteria are considered for this index.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index#query LogsIndex#query}
   */
   readonly query: string;

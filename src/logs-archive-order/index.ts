@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface LogsArchiveOrderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The archive IDs list. The order of archive IDs in this attribute defines the overall archive order for logs. If `archive_ids` is empty or not specified, it will import the actual archive order, and create the resource. Otherwise, it will try to update the order.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_archive_order#archive_ids LogsArchiveOrder#archive_ids}
   */
   readonly archiveIds?: string[];

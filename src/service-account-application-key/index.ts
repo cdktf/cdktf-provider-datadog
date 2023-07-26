@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface ServiceAccountApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the application key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
   */
   readonly name: string;
   /**
   * ID of the service account that owns this key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
   */
   readonly serviceAccountId: string;

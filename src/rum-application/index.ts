@@ -21,13 +21,13 @@ export interface RumApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the RUM application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/rum_application#name RumApplication#name}
   */
   readonly name: string;
   /**
   * The RUM application type. Supported values are `browser`, `ios`, `android`, `react-native`, `flutter`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/rum_application#type RumApplication#type}
   */
   readonly type?: string;

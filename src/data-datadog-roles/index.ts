@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filter all roles by the given string.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
   */
   readonly filter?: string;

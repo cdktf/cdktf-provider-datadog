@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IntegrationAwsLogCollectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
   */
   readonly accountId: string;
@@ -27,7 +27,7 @@ export interface IntegrationAwsLogCollectionConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * A list of services to collect logs from. See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
   */
   readonly services: string[];

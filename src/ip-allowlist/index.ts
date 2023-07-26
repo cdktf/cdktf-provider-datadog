@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IpAllowlistConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the IP Allowlist is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#enabled IpAllowlist#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -27,7 +27,7 @@ export interface IpAllowlistConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * entry block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#entry IpAllowlist#entry}
   */
   readonly entry?: IpAllowlistEntry[] | cdktf.IResolvable;
@@ -39,7 +39,7 @@ export interface IpAllowlistEntry {
   readonly cidrBlock: string;
   /**
   * Note accompanying IP address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/ip_allowlist#note IpAllowlist#note}
   */
   readonly note?: string;

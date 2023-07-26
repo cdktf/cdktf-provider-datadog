@@ -21,13 +21,13 @@ export interface LogsIndexOrderConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The index resource list. Logs are tested against the query filter of each index one by one following the order of the list.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index_order#indexes LogsIndexOrder#indexes}
   */
   readonly indexes: string[];
   /**
   * The unique name of the index order resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_index_order#name LogsIndexOrder#name}
   */
   readonly name?: string;

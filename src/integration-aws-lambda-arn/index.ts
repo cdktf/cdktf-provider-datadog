@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArguments {
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_lambda_arn#account_id IntegrationAwsLambdaArn#account_id}
   */
   readonly accountId: string;
@@ -27,7 +27,7 @@ export interface IntegrationAwsLambdaArnConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The ARN of the Datadog forwarder Lambda.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_lambda_arn#lambda_arn IntegrationAwsLambdaArn#lambda_arn}
   */
   readonly lambdaArn: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface IntegrationAwsTagFilterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_tag_filter#account_id IntegrationAwsTagFilter#account_id}
   */
   readonly accountId: string;
@@ -27,13 +27,13 @@ export interface IntegrationAwsTagFilterConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The namespace associated with the tag filter entry. Valid values are `elb`, `application_elb`, `sqs`, `rds`, `custom`, `network_elb`, `lambda`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_tag_filter#namespace IntegrationAwsTagFilter#namespace}
   */
   readonly namespace: string;
   /**
   * The tag filter string.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_tag_filter#tag_filter_str IntegrationAwsTagFilter#tag_filter_str}
   */
   readonly tagFilterStr: string;

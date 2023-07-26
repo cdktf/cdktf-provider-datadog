@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogHostsConfig extends cdktf.TerraformMetaArguments {
   /**
   * String to filter search results.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
   */
   readonly filter?: string;
   /**
   * Number of seconds since UNIX epoch from which you want to search your hosts.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#from DataDatadogHosts#from}
   */
   readonly from?: number;
   /**
   * Include information on the muted status of hosts and when the mute expires.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
   */
   readonly includeMutedHostsData?: boolean | cdktf.IResolvable;
   /**
   * Direction of sort.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
   */
   readonly sortDir?: string;
   /**
   * Sort hosts by this field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
   */
   readonly sortField?: string;

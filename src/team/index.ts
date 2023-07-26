@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Free-form markdown description/content for the team's homepage.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#description Team#description}
   */
   readonly description: string;
   /**
   * The team's identifier
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#handle Team#handle}
   */
   readonly handle: string;
   /**
   * The name of the team.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team#name Team#name}
   */
   readonly name: string;

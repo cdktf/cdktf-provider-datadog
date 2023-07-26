@@ -21,31 +21,31 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The metric name for this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
   */
   readonly metricName: string;
   /**
   * The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
   */
   readonly metricType: string;
   /**
   * A list of tag keys that will be queryable for your metric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
   */
   readonly tags: string[];
   /**
   * aggregations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
   */
   readonly aggregations?: MetricTagConfigurationAggregations[] | cdktf.IResolvable;
@@ -53,13 +53,13 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
 export interface MetricTagConfigurationAggregations {
   /**
   * A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
   */
   readonly space: string;
   /**
   * A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
   */
   readonly time: string;

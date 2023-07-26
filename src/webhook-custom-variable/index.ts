@@ -21,19 +21,19 @@ export interface WebhookCustomVariableConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Whether the custom variable is secret or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
   */
   readonly isSecret: boolean | cdktf.IResolvable;
   /**
   * The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
   */
   readonly name: string;
   /**
   * The value of the custom variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
   */
   readonly value: string;

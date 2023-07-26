@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface ServiceAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the service account is disabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account#disabled ServiceAccount#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Email of the associated user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account#email ServiceAccount#email}
   */
   readonly email: string;
@@ -33,13 +33,13 @@ export interface ServiceAccountConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name for the service account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account#name ServiceAccount#name}
   */
   readonly name?: string;
   /**
   * A list a role IDs to assign to the service account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_account#roles ServiceAccount#roles}
   */
   readonly roles?: string[];

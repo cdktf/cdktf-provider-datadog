@@ -21,7 +21,7 @@ export interface DataDatadogDashboardListConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * A dashboard list name to limit the search.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
   */
   readonly name: string;

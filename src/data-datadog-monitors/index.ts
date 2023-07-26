@@ -21,19 +21,19 @@ export interface DataDatadogMonitorsConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
   */
   readonly monitorTagsFilter?: string[];
   /**
   * A monitor name to limit the search.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search. This filters on the monitor scope.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
   */
   readonly tagsFilter?: string[];

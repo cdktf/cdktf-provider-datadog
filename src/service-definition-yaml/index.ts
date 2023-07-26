@@ -21,7 +21,7 @@ export interface ServiceDefinitionYamlConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * The YAML/JSON formatted definition of the service
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
   */
   readonly serviceDefinition: string;

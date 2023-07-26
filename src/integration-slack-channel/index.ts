@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * Slack account name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
   */
   readonly accountName: string;
   /**
   * Slack channel name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
   */
   readonly channelName: string;
@@ -33,7 +33,7 @@ export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * display block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
   */
   readonly display: IntegrationSlackChannelDisplay;
@@ -41,25 +41,25 @@ export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArgume
 export interface IntegrationSlackChannelDisplay {
   /**
   * Show the main body of the alert event.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
   */
   readonly message?: boolean | cdktf.IResolvable;
   /**
   * Show the list of @-handles in the alert event.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
   */
   readonly notified?: boolean | cdktf.IResolvable;
   /**
   * Show the alert event's snapshot image.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
   */
   readonly snapshot?: boolean | cdktf.IResolvable;
   /**
   * Show the scopes on which the monitor alerted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
   */
   readonly tags?: boolean | cdktf.IResolvable;

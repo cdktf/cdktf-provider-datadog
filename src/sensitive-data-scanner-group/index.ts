@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface SensitiveDataScannerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the Datadog scanning group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
   */
   readonly description?: string;
@@ -27,25 +27,25 @@ export interface SensitiveDataScannerGroupConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Whether or not the scanning group is enabled. If the group doesn't contain any rule or if all the rules in it are disabled, the group is force-disabled by our backend
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
   */
   readonly isEnabled: boolean | cdktf.IResolvable;
   /**
   * Name of the Datadog scanning group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
   */
   readonly name: string;
   /**
   * List of products the scanning group applies.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
   */
   readonly productList: string[];
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
   */
   readonly filter: SensitiveDataScannerGroupFilter;
@@ -53,7 +53,7 @@ export interface SensitiveDataScannerGroupConfig extends cdktf.TerraformMetaArgu
 export interface SensitiveDataScannerGroupFilter {
   /**
   * Query to filter the events.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
   */
   readonly query: string;

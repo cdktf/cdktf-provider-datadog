@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogTeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search query. Can be team name, team handle, or email of team member.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/team#filter_keyword DataDatadogTeam#filter_keyword}
   */
   readonly filterKeyword?: string;
   /**
   * The team's identifier.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/team#team_id DataDatadogTeam#team_id}
   */
   readonly teamId?: string;

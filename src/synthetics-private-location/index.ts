@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the private location.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_private_location#description SyntheticsPrivateLocation#description}
   */
   readonly description?: string;
@@ -27,19 +27,19 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Synthetics private location name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_private_location#name SyntheticsPrivateLocation#name}
   */
   readonly name: string;
   /**
   * A list of tags to associate with your synthetics private location.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_private_location#tags SyntheticsPrivateLocation#tags}
   */
   readonly tags?: string[];
   /**
   * metadata block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_private_location#metadata SyntheticsPrivateLocation#metadata}
   */
   readonly metadata?: SyntheticsPrivateLocationMetadata;
@@ -47,7 +47,7 @@ export interface SyntheticsPrivateLocationConfig extends cdktf.TerraformMetaArgu
 export interface SyntheticsPrivateLocationMetadata {
   /**
   * A list of role identifiers pulled from the Roles API to restrict read and write access.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_private_location#restricted_roles SyntheticsPrivateLocation#restricted_roles}
   */
   readonly restrictedRoles?: string[];

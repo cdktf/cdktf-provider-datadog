@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface SensitiveDataScannerGroupOrderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The list of Sensitive Data Scanner group IDs, in order. Logs are tested against the query filter of each index one by one following the order of the list.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/sensitive_data_scanner_group_order#group_ids SensitiveDataScannerGroupOrder#group_ids}
   */
   readonly groupIds: string[];

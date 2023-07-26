@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the global variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
   */
   readonly description?: string;
@@ -27,49 +27,49 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Synthetics global variable name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
   */
   readonly name: string;
   /**
   * Id of the Synthetics test to use for a variable from test.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
   */
   readonly parseTestId?: string;
   /**
   * A list of role identifiers to associate with the Synthetics global variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * If set to true, the value of the global variable is hidden. Defaults to `false`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
   */
   readonly secure?: boolean | cdktf.IResolvable;
   /**
   * A list of tags to associate with your synthetics global variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
   */
   readonly tags?: string[];
   /**
   * The value of the global variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
   */
   readonly value: string;
   /**
   * options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
   */
   readonly options?: SyntheticsGlobalVariableOptions;
   /**
   * parse_test_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
   */
   readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions;
@@ -77,13 +77,13 @@ export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArgum
 export interface SyntheticsGlobalVariableOptionsTotpParameters {
   /**
   * Number of digits for the OTP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
   */
   readonly digits: number;
   /**
   * Interval for which to refresh the token (in seconds).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
   */
   readonly refreshInterval: number;
@@ -167,7 +167,7 @@ export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extend
 export interface SyntheticsGlobalVariableOptions {
   /**
   * totp_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
   */
   readonly totpParameters?: SyntheticsGlobalVariableOptionsTotpParameters;
@@ -234,13 +234,13 @@ export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.Comple
 export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
   * Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
   readonly type: string;
   /**
   * Value for the parser to use, required for type `json_path` or `regex`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
   */
   readonly value?: string;
@@ -327,25 +327,25 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
 export interface SyntheticsGlobalVariableParseTestOptions {
   /**
   * Required when type = `http_header`. Defines the header to use to extract the value
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
   */
   readonly field?: string;
   /**
   * When type is `local_variable`, name of the local variable to use to extract the value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
   */
   readonly localVariableName?: string;
   /**
   * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `local_variable`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
   readonly type: string;
   /**
   * parser block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
   */
   readonly parser?: SyntheticsGlobalVariableParseTestOptionsParser;

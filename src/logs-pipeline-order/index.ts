@@ -21,13 +21,13 @@ export interface LogsPipelineOrderConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name attribute in the resource `datadog_logs_pipeline_order` needs to be unique. It's recommended to use the same value as the resource name. No related field is available in [Logs Pipeline API](https://docs.datadoghq.com/api/v1/logs-pipelines/#get-pipeline-order).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_pipeline_order#name LogsPipelineOrder#name}
   */
   readonly name: string;
   /**
   * The pipeline IDs list. The order of pipeline IDs in this attribute defines the overall pipeline order for logs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_pipeline_order#pipelines LogsPipelineOrder#pipelines}
   */
   readonly pipelines: string[];

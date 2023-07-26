@@ -21,19 +21,19 @@ export interface AuthnMappingConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Identity provider key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/authn_mapping#key AuthnMapping#key}
   */
   readonly key: string;
   /**
   * The ID of a role to attach to all users with the corresponding key and value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/authn_mapping#role AuthnMapping#role}
   */
   readonly role: string;
   /**
   * Identity provider value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/authn_mapping#value AuthnMapping#value}
   */
   readonly value: string;

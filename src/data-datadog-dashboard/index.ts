@@ -21,7 +21,7 @@ export interface DataDatadogDashboardConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The dashboard name to search for. Must only match one dashboard.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard#name DataDatadogDashboard#name}
   */
   readonly name: string;

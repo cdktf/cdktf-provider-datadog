@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for API Key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/api_key#name ApiKey#name}
   */
   readonly name: string;

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, `filter` string is exact matched againts the users `email`, followed by `name` attribute.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
   */
   readonly exactMatch?: boolean | cdktf.IResolvable;
   /**
   * Filter all users by the given string.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/user#filter DataDatadogUser#filter}
   */
   readonly filter: string;

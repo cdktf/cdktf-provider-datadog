@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface WebhookConfig extends cdktf.TerraformMetaArguments {
   /**
   * The headers attached to the webhook.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
   */
   readonly customHeaders?: string;
   /**
   * Encoding type. Valid values are `json`, `form`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook#encode_as Webhook#encode_as}
   */
   readonly encodeAs?: string;
@@ -33,19 +33,19 @@ export interface WebhookConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook#name Webhook#name}
   */
   readonly name: string;
   /**
   * The payload of the webhook.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook#payload Webhook#payload}
   */
   readonly payload?: string;
   /**
   * The URL of the webhook.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/webhook#url Webhook#url}
   */
   readonly url: string;

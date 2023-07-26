@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The filtered data type. Valid values are `logs`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
   */
   readonly filteredDataType?: string;
@@ -27,25 +27,25 @@ export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Whether the security filter is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
   */
   readonly isEnabled: boolean | cdktf.IResolvable;
   /**
   * The name of the security filter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * The query of the security filter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
   /**
   * exclusion_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
   */
   readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable;
@@ -53,13 +53,13 @@ export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArgum
 export interface SecurityMonitoringFilterExclusionFilter {
   /**
   * Exclusion filter name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * Exclusion filter query. Logs that match this query are excluded from the security filter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;

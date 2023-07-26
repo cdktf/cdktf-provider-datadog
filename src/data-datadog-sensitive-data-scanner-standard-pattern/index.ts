@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogSensitiveDataScannerStandardPatternConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filter all the Datadog standard patterns by name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/sensitive_data_scanner_standard_pattern#filter DataDatadogSensitiveDataScannerStandardPattern#filter}
   */
   readonly filter: string;

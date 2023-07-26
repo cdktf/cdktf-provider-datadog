@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface SpansMetricConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the span-based metric. This field can't be updated after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#name SpansMetric#name}
   */
   readonly name: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#filter SpansMetric#filter}
   */
   readonly filter?: SpansMetricFilter;
   /**
   * group_by block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
   */
   readonly groupBy?: SpansMetricGroupBy[] | cdktf.IResolvable;
@@ -34,19 +34,19 @@ export interface SpansMetricConfig extends cdktf.TerraformMetaArguments {
 export interface SpansMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include or exclude percentile aggregations for distribution metrics. Only present when the `aggregation_type` is `distribution`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The path to the value the span-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#path SpansMetric#path}
   */
   readonly path?: string;
@@ -166,7 +166,7 @@ export class SpansMetricComputeOutputReference extends cdktf.ComplexObject {
 export interface SpansMetricFilter {
   /**
   * The search query - following the span search syntax.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#query SpansMetric#query}
   */
   readonly query?: string;
@@ -243,13 +243,13 @@ export class SpansMetricFilterOutputReference extends cdktf.ComplexObject {
 export interface SpansMetricGroupBy {
   /**
   * The path to the value the span-based metric will be aggregated over.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#path SpansMetric#path}
   */
   readonly path: string;
   /**
   * Eventual name of the tag that gets created. By default, the path attribute is used as the tag name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
   */
   readonly tagName?: string;

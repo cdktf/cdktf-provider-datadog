@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogServiceLevelObjectiveConfig extends cdktf.TerraformMetaArguments {
   /**
   * A SLO ID to limit the search.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective#id DataDatadogServiceLevelObjective#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,19 +23,19 @@ export interface DataDatadogServiceLevelObjectiveConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * Filter results based on SLO numerator and denominator.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective#metrics_query DataDatadogServiceLevelObjective#metrics_query}
   */
   readonly metricsQuery?: string;
   /**
   * Filter results based on SLO names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective#name_query DataDatadogServiceLevelObjective#name_query}
   */
   readonly nameQuery?: string;
   /**
   * Filter results based on a single SLO tag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objective#tags_query DataDatadogServiceLevelObjective#tags_query}
   */
   readonly tagsQuery?: string;
