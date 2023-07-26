@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_test
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataDatadogSyntheticsTestConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The synthetic test id or URL to search for
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_test#test_id DataDatadogSyntheticsTest#test_id}
   */
   readonly testId: string;

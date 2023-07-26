@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface IntegrationCloudflareAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * The API key (or token) for the Cloudflare account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
   */
   readonly apiKey: string;
   /**
   * The email associated with the Cloudflare account. If an API key is provided (and not a token), this field is also required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
   */
   readonly email?: string;
   /**
   * The name of the Cloudflare account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
   */
   readonly name: string;

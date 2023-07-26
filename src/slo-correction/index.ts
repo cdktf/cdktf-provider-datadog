@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#category SloCorrection#category}
   */
   readonly category: string;
   /**
   * Description of the correction being made.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#description SloCorrection#description}
   */
   readonly description?: string;
   /**
   * Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#duration SloCorrection#duration}
   */
   readonly duration?: number;
   /**
   * Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#end SloCorrection#end}
   */
   readonly end?: number;
@@ -45,25 +40,25 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Recurrence rules as defined in the iCalendar RFC 5545. Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
   */
   readonly rrule?: string;
   /**
   * ID of the SLO that this correction will be applied to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
   */
   readonly sloId: string;
   /**
   * Starting time of the correction in epoch seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#start SloCorrection#start}
   */
   readonly start: number;
   /**
   * The timezone to display in the UI for the correction times (defaults to "UTC")
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
   */
   readonly timezone?: string;

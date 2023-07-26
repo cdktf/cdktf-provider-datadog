@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/application_key
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Id for Application Key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,7 +18,7 @@ export interface DataDatadogApplicationKeyConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Name for Application Key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
   */
   readonly name?: string;

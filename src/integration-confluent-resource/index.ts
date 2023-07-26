@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface IntegrationConfluentResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Confluent Account ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
   */
   readonly accountId: string;
   /**
   * Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#enable_custom_metrics IntegrationConfluentResource#enable_custom_metrics}
   */
   readonly enableCustomMetrics?: boolean | cdktf.IResolvable;
   /**
   * The ID associated with a Confluent resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
   */
   readonly resourceId: string;
   /**
   * The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
   */
   readonly resourceType?: string;
   /**
   * A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
   */
   readonly tags?: string[];

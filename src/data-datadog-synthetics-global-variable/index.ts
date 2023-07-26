@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_global_variable
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataDatadogSyntheticsGlobalVariableConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * The synthetics global variable name to search for. Must only match one global variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
   */
   readonly name: string;

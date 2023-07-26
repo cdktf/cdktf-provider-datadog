@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the log-based metric. This field can't be updated after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#name LogsMetric#name}
   */
   readonly name: string;
   /**
   * compute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#compute LogsMetric#compute}
   */
   readonly compute: LogsMetricCompute;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#filter LogsMetric#filter}
   */
   readonly filter: LogsMetricFilter;
   /**
   * group_by block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
   */
   readonly groupBy?: LogsMetricGroupBy[] | cdktf.IResolvable;
@@ -47,19 +42,19 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
 export interface LogsMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktf.IResolvable;
   /**
   * The path to the value the log-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#path LogsMetric#path}
   */
   readonly path?: string;
@@ -169,7 +164,7 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
 export interface LogsMetricFilter {
   /**
   * The search query - following the log search syntax.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#query LogsMetric#query}
   */
   readonly query: string;
@@ -233,13 +228,13 @@ export class LogsMetricFilterOutputReference extends cdktf.ComplexObject {
 export interface LogsMetricGroupBy {
   /**
   * The path to the value the log-based metric will be aggregated over.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#path LogsMetric#path}
   */
   readonly path: string;
   /**
   * Name of the tag that gets created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
   */
   readonly tagName: string;

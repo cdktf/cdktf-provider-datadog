@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogServiceAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filter all users and service accounts by name, email, or role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
   */
   readonly filter?: string;
   /**
   * Filter on status attribute. Comma separated list, with possible values `Active`, `Pending`, and `Disabled`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
   */
   readonly filterStatus?: string;
   /**
   * The service account's ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface IntegrationFastlyServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Fastly Account id.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
   */
   readonly accountId?: string;
   /**
   * The ID of the Fastly service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
   */
   readonly serviceId: string;
   /**
   * A list of tags for the Fastly service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
   */
   readonly tags?: string[];

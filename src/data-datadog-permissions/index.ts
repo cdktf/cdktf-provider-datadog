@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/permissions
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataDatadogPermissionsConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Whether to include restricted permissions. Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
   */
   readonly includeRestricted?: boolean | cdktf.IResolvable;

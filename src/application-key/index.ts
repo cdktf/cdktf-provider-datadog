@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/application_key
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface ApplicationKeyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name for Application Key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/application_key#name ApplicationKey#name}
   */
   readonly name: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Enable the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -27,19 +22,19 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * case block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
   */
   readonly case?: SecurityMonitoringDefaultRuleCase[] | cdktf.IResolvable;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
   */
   readonly filter?: SecurityMonitoringDefaultRuleFilter[] | cdktf.IResolvable;
   /**
   * options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
   */
   readonly options?: SecurityMonitoringDefaultRuleOptions;
@@ -47,13 +42,13 @@ export interface SecurityMonitoringDefaultRuleConfig extends cdktf.TerraformMeta
 export interface SecurityMonitoringDefaultRuleCase {
   /**
   * Notification targets for each rule case.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
   */
   readonly notifications: string[];
   /**
   * Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
   */
   readonly status: string;
@@ -169,13 +164,13 @@ export class SecurityMonitoringDefaultRuleCaseList extends cdktf.ComplexList {
 export interface SecurityMonitoringDefaultRuleFilter {
   /**
   * The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
   */
   readonly query: string;
@@ -291,7 +286,7 @@ export class SecurityMonitoringDefaultRuleFilterList extends cdktf.ComplexList {
 export interface SecurityMonitoringDefaultRuleOptions {
   /**
   * If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
   */
   readonly decreaseCriticalityBasedOnEnv?: boolean | cdktf.IResolvable;

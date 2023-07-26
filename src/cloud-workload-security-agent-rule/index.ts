@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_workload_security_agent_rule
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface CloudWorkloadSecurityAgentRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the Agent rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_workload_security_agent_rule#description CloudWorkloadSecurityAgentRule#description}
   */
   readonly description?: string;
   /**
   * Whether the Agent rule is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_workload_security_agent_rule#enabled CloudWorkloadSecurityAgentRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The SECL expression of the Agent rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_workload_security_agent_rule#expression CloudWorkloadSecurityAgentRule#expression}
   */
   readonly expression: string;
@@ -39,7 +34,7 @@ export interface CloudWorkloadSecurityAgentRuleConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The name of the Agent rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/cloud_workload_security_agent_rule#name CloudWorkloadSecurityAgentRule#name}
   */
   readonly name: string;

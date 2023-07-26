@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_pagerduty
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface IntegrationPagerdutyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Your PagerDuty API token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_pagerduty#api_token IntegrationPagerduty#api_token}
   */
   readonly apiToken?: string;
@@ -27,13 +22,13 @@ export interface IntegrationPagerdutyConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Array of your schedule URLs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_pagerduty#schedules IntegrationPagerduty#schedules}
   */
   readonly schedules?: string[];
   /**
   * Your PagerDuty account’s personalized subdomain name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_pagerduty#subdomain IntegrationPagerduty#subdomain}
   */
   readonly subdomain: string;

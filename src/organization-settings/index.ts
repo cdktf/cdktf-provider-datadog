@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Name for Organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#name OrganizationSettings#name}
   */
   readonly name?: string;
   /**
   * settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
   */
   readonly settings?: OrganizationSettingsSettings;
@@ -35,7 +30,7 @@ export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments
 export interface OrganizationSettingsSettingsSaml {
   /**
   * Whether or not SAML is enabled for this organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -102,13 +97,13 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
 export interface OrganizationSettingsSettingsSamlAutocreateUsersDomains {
   /**
   * List of domains where the SAML automated user creation is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
   */
   readonly domains?: string[];
   /**
   * Whether or not the automated user creation based on SAML domain is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -198,7 +193,7 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
 export interface OrganizationSettingsSettingsSamlIdpInitiatedLogin {
   /**
   * Whether or not a SAML identity provider metadata file was provided to the Datadog organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -265,7 +260,7 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
 export interface OrganizationSettingsSettingsSamlStrictMode {
   /**
   * Whether or not the SAML strict mode is enabled. If true, all users must log in with SAML.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -332,37 +327,37 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
 export interface OrganizationSettingsSettings {
   /**
   * Whether or not the organization users can share widgets outside of Datadog.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
   */
   readonly privateWidgetShare?: boolean | cdktf.IResolvable;
   /**
   * The access role of the user. Options are `st` (standard user), `adm` (admin user), or `ro` (read-only user). Allowed enum values: `st`, `adm` , `ro`, `ERROR`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
   */
   readonly samlAutocreateAccessRole?: string;
   /**
   * saml block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
   */
   readonly saml: OrganizationSettingsSettingsSaml;
   /**
   * saml_autocreate_users_domains block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
   */
   readonly samlAutocreateUsersDomains: OrganizationSettingsSettingsSamlAutocreateUsersDomains;
   /**
   * saml_idp_initiated_login block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
   */
   readonly samlIdpInitiatedLogin: OrganizationSettingsSettingsSamlIdpInitiatedLogin;
   /**
   * saml_strict_mode block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
   */
   readonly samlStrictMode: OrganizationSettingsSettingsSamlStrictMode;

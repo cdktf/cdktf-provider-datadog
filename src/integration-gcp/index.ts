@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Silence monitors for expected GCE instance shutdowns.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your email found in your JSON service account key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
   */
   readonly clientEmail: string;
   /**
   * Your ID found in your JSON service account key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
   */
   readonly clientId: string;
   /**
   * Whether Datadog collects cloud security posture management resources from your GCP project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
   */
   readonly cspmResourceCollectionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Limit the GCE instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
   */
   readonly hostFilters?: string;
@@ -51,19 +46,19 @@ export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Your private key name found in your JSON service account key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
   */
   readonly privateKey: string;
   /**
   * Your private key ID found in your JSON service account key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
   */
   readonly privateKeyId: string;
   /**
   * Your Google Cloud project ID found in your JSON service account key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
   */
   readonly projectId: string;

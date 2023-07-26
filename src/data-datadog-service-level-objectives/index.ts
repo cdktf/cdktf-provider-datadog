@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface DataDatadogServiceLevelObjectivesConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * An array of SLO IDs to limit the search.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#ids DataDatadogServiceLevelObjectives#ids}
   */
   readonly ids?: string[];
   /**
   * Filter results based on SLO numerator and denominator.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
   */
   readonly metricsQuery?: string;
   /**
   * Filter results based on SLO names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#name_query DataDatadogServiceLevelObjectives#name_query}
   */
   readonly nameQuery?: string;
   /**
   * Filter results based on a single SLO tag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#tags_query DataDatadogServiceLevelObjectives#tags_query}
   */
   readonly tagsQuery?: string;

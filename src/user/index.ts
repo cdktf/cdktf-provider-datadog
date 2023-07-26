@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/user
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the user is disabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/user#disabled User#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Email address for user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/user#email User#email}
   */
   readonly email: string;
@@ -33,19 +28,19 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name for user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/user#name User#name}
   */
   readonly name?: string;
   /**
   * A list a role IDs to assign to the user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/user#roles User#roles}
   */
   readonly roles?: string[];
   /**
   * Whether an invitation email should be sent when the user is created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/user#send_user_invitation User#send_user_invitation}
   */
   readonly sendUserInvitation?: boolean | cdktf.IResolvable;

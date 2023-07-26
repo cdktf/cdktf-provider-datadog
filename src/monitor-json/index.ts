@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface MonitorJsonConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The JSON formatted definition of the monitor.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json#monitor MonitorJson#monitor}
   */
   readonly monitor: string;
   /**
   * The URL of the monitor.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json#url MonitorJson#url}
   */
   readonly url?: string;

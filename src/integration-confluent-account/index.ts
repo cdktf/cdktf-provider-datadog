@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface IntegrationConfluentAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * The API key associated with your Confluent account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account#api_key IntegrationConfluentAccount#api_key}
   */
   readonly apiKey: string;
   /**
   * The API secret associated with your Confluent account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account#api_secret IntegrationConfluentAccount#api_secret}
   */
   readonly apiSecret: string;
   /**
   * A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_account#tags IntegrationConfluentAccount#tags}
   */
   readonly tags?: string[];

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_integration_pipeline
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface LogsIntegrationPipelineConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Boolean value to enable your pipeline.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;

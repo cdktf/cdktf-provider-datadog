@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/rum_application
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataDatadogRumApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the RUM application. Cannot be used with name and type filters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,13 +18,13 @@ export interface DataDatadogRumApplicationConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The name used to search for a RUM application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * The type used to search for a RUM application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
   */
   readonly typeFilter?: string;

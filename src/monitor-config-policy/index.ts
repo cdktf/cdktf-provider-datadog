@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_config_policy
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface MonitorConfigPolicyConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * The monitor config policy type Valid values are `tag`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
   */
   readonly policyType: string;
   /**
   * tag_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
   */
   readonly tagPolicy?: MonitorConfigPolicyTagPolicy;
@@ -35,19 +30,19 @@ export interface MonitorConfigPolicyConfig extends cdktf.TerraformMetaArguments 
 export interface MonitorConfigPolicyTagPolicy {
   /**
   * The key of the tag
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
   */
   readonly tagKey: string;
   /**
   * If a tag key is required for monitor creation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
   */
   readonly tagKeyRequired: boolean | cdktf.IResolvable;
   /**
   * Valid values for the tag
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
   */
   readonly validTagValues: string[];

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface IntegrationOpsgenieServiceObjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The custom url for a custom region.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
   */
   readonly customUrl?: string;
@@ -27,19 +22,19 @@ export interface IntegrationOpsgenieServiceObjectConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * The name for the Opsgenie service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
   */
   readonly name: string;
   /**
   * The Opsgenie API key for the Opsgenie service. Note: Since the Datadog API never returns Opsgenie API keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
   */
   readonly opsgenieApiKey: string;
   /**
   * The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
   */
   readonly region: string;

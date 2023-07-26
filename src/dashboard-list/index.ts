@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DashboardListConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the Dashboard List
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#name DashboardList#name}
   */
   readonly name: string;
   /**
   * dash_item block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
   */
   readonly dashItem?: DashboardListDashItem[] | cdktf.IResolvable;
@@ -35,13 +30,13 @@ export interface DashboardListConfig extends cdktf.TerraformMetaArguments {
 export interface DashboardListDashItem {
   /**
   * The ID of the dashboard to add
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
   */
   readonly dashId: string;
   /**
   * The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#type DashboardList#type}
   */
   readonly type: string;

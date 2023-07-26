@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The user's role within the team. Valid values are `admin`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership#role TeamMembership#role}
   */
   readonly role?: string;
   /**
   * ID of the team the team membership is associated with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership#team_id TeamMembership#team_id}
   */
   readonly teamId: string;
   /**
   * The ID of the user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership#user_id TeamMembership#user_id}
   */
   readonly userId: string;
