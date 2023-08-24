@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The JSON formatted definition of the Dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
   */
   readonly dashboard: string;
   /**
   * A list of dashboard lists this dashboard belongs to. This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
   */
   readonly dashboardLists?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#id DashboardJson#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json#id DashboardJson#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json#url DashboardJson#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json#url DashboardJson#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json datadog_dashboard_json}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json datadog_dashboard_json}
 */
 export class DashboardJson extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_json datadog_dashboard_json} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_json datadog_dashboard_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DashboardJson extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dashboard_json',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface IntegrationAwsLogCollectionConfig extends cdktf.TerraformMetaAr
   /**
   * Your AWS Account ID without dashes. If your account is a GovCloud or China account, specify the `access_key_id` here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface IntegrationAwsLogCollectionConfig extends cdktf.TerraformMetaAr
   /**
   * A list of services to collect logs from. See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
   */
   readonly services: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}
 */
 export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class IntegrationAwsLogCollection extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_log_collection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

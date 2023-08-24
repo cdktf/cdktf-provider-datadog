@@ -1,6 +1,6 @@
 # `datadog_synthetics_concurrency_cap`
 
-Refer to the Terraform Registory for docs: [`datadog_synthetics_concurrency_cap`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_concurrency_cap).
+Refer to the Terraform Registory for docs: [`datadog_synthetics_concurrency_cap`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/synthetics_concurrency_cap).
 
 # `syntheticsConcurrencyCap` Submodule <a name="`syntheticsConcurrencyCap` Submodule" id="@cdktf/provider-datadog.syntheticsConcurrencyCap"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_synthetics_concurrency_cap`
 
 ### SyntheticsConcurrencyCap <a name="SyntheticsConcurrencyCap" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.Initializer"></a>
 
@@ -648,7 +648,7 @@ public readonly onDemandConcurrencyCap: number;
 
 Value of the on-demand concurrency cap, customizing the number of Synthetic tests run in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
 
 ---
 

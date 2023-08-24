@@ -1,6 +1,6 @@
 # `datadog_integration_fastly_account`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_fastly_account`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account).
+Refer to the Terraform Registory for docs: [`datadog_integration_fastly_account`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account).
 
 # `integrationFastlyAccount` Submodule <a name="`integrationFastlyAccount` Submodule" id="@cdktf/provider-datadog.integrationFastlyAccount"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_integration_fastly_account`
 
 ### IntegrationFastlyAccount <a name="IntegrationFastlyAccount" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyaccount"
 
 integrationfastlyaccount.NewIntegrationFastlyAccount(scope Construct, id *string, config IntegrationFastlyAccountConfig) IntegrationFastlyAccount
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/integrationfastlyaccount"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyaccount"
 
 &integrationfastlyaccount.IntegrationFastlyAccountConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ ApiKey *string
 
 The API key for the Fastly account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
 
 ---
 
@@ -695,7 +695,7 @@ Name *string
 
 The name of the Fastly account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
 
 ---
 

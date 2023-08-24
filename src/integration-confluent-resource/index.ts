@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +10,37 @@ export interface IntegrationConfluentResourceConfig extends cdktf.TerraformMetaA
   /**
   * Confluent Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource#account_id IntegrationConfluentResource#account_id}
   */
   readonly accountId: string;
   /**
   * Enable the `custom.consumer_lag_offset` metric, which contains extra metric tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#enable_custom_metrics IntegrationConfluentResource#enable_custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource#enable_custom_metrics IntegrationConfluentResource#enable_custom_metrics}
   */
   readonly enableCustomMetrics?: boolean | cdktf.IResolvable;
   /**
   * The ID associated with a Confluent resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource#resource_id IntegrationConfluentResource#resource_id}
   */
   readonly resourceId: string;
   /**
   * The resource type of the Resource. Can be `kafka`, `connector`, `ksql`, or `schema_registry`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource#resource_type IntegrationConfluentResource#resource_type}
   */
   readonly resourceType?: string;
   /**
   * A list of strings representing tags. Can be a single key, or key-value pairs separated by a colon.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource#tags IntegrationConfluentResource#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource}
 */
 export class IntegrationConfluentResource extends cdktf.TerraformResource {
 
@@ -59,7 +54,7 @@ export class IntegrationConfluentResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_confluent_resource datadog_integration_confluent_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +65,7 @@ export class IntegrationConfluentResource extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_confluent_resource',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

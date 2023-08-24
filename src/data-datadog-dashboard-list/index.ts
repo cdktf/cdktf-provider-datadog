@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataDatadogDashboardListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list#id DataDatadogDashboardList#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * A dashboard list name to limit the search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list datadog_dashboard_list}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list}
 */
 export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
 
@@ -42,7 +30,7 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +41,7 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_dashboard_list',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -64,7 +52,6 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
   }
 
@@ -72,20 +59,9 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -107,7 +83,6 @@ export class DataDatadogDashboardList extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
