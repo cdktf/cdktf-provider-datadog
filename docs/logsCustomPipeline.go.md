@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipeline(scope Construct, id *string, config LogsCustomPipelineConfig) LogsCustomPipeline
 ```
@@ -317,7 +317,7 @@ func ResetProcessor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.LogsCustomPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.LogsCustomPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ logscustompipeline.LogsCustomPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.LogsCustomPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineFilter {
 	Query: *string,
@@ -885,25 +885,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessor {
-	ArithmeticProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor,
-	AttributeRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper,
-	CategoryProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor,
-	DateRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorDateRemapper,
-	GeoIpParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorGeoIpParser,
-	GrokParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorGrokParser,
-	LookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessor,
-	MessageRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapper,
-	Pipeline: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline,
-	ReferenceTableLookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor,
-	ServiceRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapper,
-	StatusRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapper,
-	StringBuilderProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessor,
-	TraceIdRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorTraceIdRemapper,
-	UrlParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParser,
-	UserAgentParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParser,
+	ArithmeticProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor,
+	AttributeRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper,
+	CategoryProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor,
+	DateRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorDateRemapper,
+	GeoIpParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorGeoIpParser,
+	GrokParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorGrokParser,
+	LookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessor,
+	MessageRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapper,
+	Pipeline: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipeline,
+	ReferenceTableLookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor,
+	ServiceRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapper,
+	StatusRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapper,
+	StringBuilderProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessor,
+	TraceIdRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorTraceIdRemapper,
+	UrlParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorUrlParser,
+	UserAgentParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParser,
 }
 ```
 
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorArithmeticProcessor {
 	Expression: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorAttributeRemapper {
 	Sources: *[]*string,
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorCategoryProcessor {
 	Category: interface{},
@@ -1503,10 +1503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorCategoryProcessorCategory {
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter,
 	Name: *string,
 }
 ```
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilter {
 	Query: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorDateRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorDateRemapper {
 	Sources: *[]*string,
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGeoIpParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorGeoIpParser {
 	Sources: *[]*string,
@@ -1733,10 +1733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGrokParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorGrokParser {
-	Grok: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorGrokParserGrok,
+	Grok: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorGrokParserGrok,
 	Source: *string,
 	IsEnabled: interface{},
 	Name: *string,
@@ -1833,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGrokParserGrok.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorGrokParserGrok {
 	MatchRules: *string,
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorLookupProcessor {
 	LookupTable: *[]*string,
@@ -1997,7 +1997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorMessageRemapper {
 	Sources: *[]*string,
@@ -2063,7 +2063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipeline {
 	Filter: interface{},
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineFilter {
 	Query: *string,
@@ -2175,24 +2175,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessor {
-	ArithmeticProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor,
-	AttributeRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper,
-	CategoryProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor,
-	DateRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorDateRemapper,
-	GeoIpParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGeoIpParser,
-	GrokParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParser,
-	LookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessor,
-	MessageRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapper,
-	ReferenceTableLookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor,
-	ServiceRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper,
-	StatusRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapper,
-	StringBuilderProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor,
-	TraceIdRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper,
-	UrlParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParser,
-	UserAgentParser: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser,
+	ArithmeticProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor,
+	AttributeRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper,
+	CategoryProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor,
+	DateRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorDateRemapper,
+	GeoIpParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGeoIpParser,
+	GrokParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParser,
+	LookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessor,
+	MessageRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapper,
+	ReferenceTableLookupProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor,
+	ServiceRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper,
+	StatusRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapper,
+	StringBuilderProcessor: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor,
+	TraceIdRemapper: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper,
+	UrlParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParser,
+	UserAgentParser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser,
 }
 ```
 
@@ -2433,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor {
 	Expression: *string,
@@ -2531,7 +2531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
 	Sources: *[]*string,
@@ -2695,7 +2695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
 	Category: interface{},
@@ -2777,10 +2777,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory {
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter,
 	Name: *string,
 }
 ```
@@ -2825,7 +2825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter {
 	Query: *string,
@@ -2859,7 +2859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorDateRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
 	Sources: *[]*string,
@@ -2925,7 +2925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGeoIpParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
 	Sources: *[]*string,
@@ -3007,10 +3007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParser {
-	Grok: github.com/cdktf/cdktf-provider-datadog-go/datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok,
+	Grok: github.com/cdktf/cdktf-provider-datadog-go/datadog/v8.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok,
 	Source: *string,
 	IsEnabled: interface{},
 	Name: *string,
@@ -3107,7 +3107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok {
 	MatchRules: *string,
@@ -3157,7 +3157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
 	LookupTable: *[]*string,
@@ -3271,7 +3271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
 	Sources: *[]*string,
@@ -3337,7 +3337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor {
 	LookupEnrichmentTable: *string,
@@ -3435,7 +3435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
 	Sources: *[]*string,
@@ -3501,7 +3501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
 	Sources: *[]*string,
@@ -3567,7 +3567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor {
 	Target: *string,
@@ -3665,7 +3665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
 	Sources: *[]*string,
@@ -3731,7 +3731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParser {
 	Sources: *[]*string,
@@ -3829,7 +3829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
 	Sources: *[]*string,
@@ -3927,7 +3927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessor {
 	LookupEnrichmentTable: *string,
@@ -4025,7 +4025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorServiceRemapper {
 	Sources: *[]*string,
@@ -4091,7 +4091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorStatusRemapper {
 	Sources: *[]*string,
@@ -4157,7 +4157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorStringBuilderProcessor {
 	Target: *string,
@@ -4255,7 +4255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorTraceIdRemapper.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorTraceIdRemapper {
 	Sources: *[]*string,
@@ -4321,7 +4321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorUrlParser {
 	Sources: *[]*string,
@@ -4419,7 +4419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 &logscustompipeline.LogsCustomPipelineProcessorUserAgentParser {
 	Sources: *[]*string,
@@ -4519,7 +4519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineFilterList
 ```
@@ -4662,7 +4662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomPipelineFilterOutputReference
 ```
@@ -4951,7 +4951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorArithmeticProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorArithmeticProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorArithmeticProcessorOutputReference
 ```
@@ -5331,7 +5331,7 @@ func InternalValue() LogsCustomPipelineProcessorArithmeticProcessor
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorAttributeRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorAttributeRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorAttributeRemapperOutputReference
 ```
@@ -5813,7 +5813,7 @@ func InternalValue() LogsCustomPipelineProcessorAttributeRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference
 ```
@@ -6084,7 +6084,7 @@ func InternalValue() LogsCustomPipelineProcessorCategoryProcessorCategoryFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorCategoryProcessorCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorCategoryProcessorCategoryList
 ```
@@ -6227,7 +6227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference
 ```
@@ -6551,7 +6551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorCategoryProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorCategoryProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorCategoryProcessorOutputReference
 ```
@@ -6915,7 +6915,7 @@ func InternalValue() LogsCustomPipelineProcessorCategoryProcessor
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorDateRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorDateRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorDateRemapperOutputReference
 ```
@@ -7244,7 +7244,7 @@ func InternalValue() LogsCustomPipelineProcessorDateRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGeoIpParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorGeoIpParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorGeoIpParserOutputReference
 ```
@@ -7595,7 +7595,7 @@ func InternalValue() LogsCustomPipelineProcessorGeoIpParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGrokParserGrokOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorGrokParserGrokOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorGrokParserGrokOutputReference
 ```
@@ -7888,7 +7888,7 @@ func InternalValue() LogsCustomPipelineProcessorGrokParserGrok
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorGrokParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorGrokParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorGrokParserOutputReference
 ```
@@ -8281,7 +8281,7 @@ func InternalValue() LogsCustomPipelineProcessorGrokParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorList
 ```
@@ -8424,7 +8424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorLookupProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorLookupProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorLookupProcessorOutputReference
 ```
@@ -8826,7 +8826,7 @@ func InternalValue() LogsCustomPipelineProcessorLookupProcessor
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorMessageRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorMessageRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorMessageRemapperOutputReference
 ```
@@ -9155,7 +9155,7 @@ func InternalValue() LogsCustomPipelineProcessorMessageRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomPipelineProcessorOutputReference
 ```
@@ -10094,7 +10094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorPipelineFilterList
 ```
@@ -10237,7 +10237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomPipelineProcessorPipelineFilterOutputReference
 ```
@@ -10526,7 +10526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineOutputReference
 ```
@@ -10903,7 +10903,7 @@ func InternalValue() LogsCustomPipelineProcessorPipeline
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference
 ```
@@ -11283,7 +11283,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorArithmeticProce
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference
 ```
@@ -11765,7 +11765,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorAttributeRemapp
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference
 ```
@@ -12036,7 +12036,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorCategoryProcess
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList
 ```
@@ -12179,7 +12179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference
 ```
@@ -12503,7 +12503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference
 ```
@@ -12867,7 +12867,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorCategoryProcess
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference
 ```
@@ -13196,7 +13196,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorDateRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference
 ```
@@ -13547,7 +13547,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorGeoIpParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference
 ```
@@ -13840,7 +13840,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference
 ```
@@ -14233,7 +14233,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorGrokParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogsCustomPipelineProcessorPipelineProcessorList
 ```
@@ -14376,7 +14376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference
 ```
@@ -14778,7 +14778,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorLookupProcessor
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference
 ```
@@ -15107,7 +15107,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorMessageRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogsCustomPipelineProcessorPipelineProcessorOutputReference
 ```
@@ -16004,7 +16004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference
 ```
@@ -16377,7 +16377,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorReferenceTableL
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference
 ```
@@ -16706,7 +16706,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorServiceRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference
 ```
@@ -17035,7 +17035,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorStatusRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference
 ```
@@ -17415,7 +17415,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorStringBuilderPr
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference
 ```
@@ -17744,7 +17744,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference
 ```
@@ -18124,7 +18124,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorUrlParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference
 ```
@@ -18504,7 +18504,7 @@ func InternalValue() LogsCustomPipelineProcessorPipelineProcessorUserAgentParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference
 ```
@@ -18877,7 +18877,7 @@ func InternalValue() LogsCustomPipelineProcessorReferenceTableLookupProcessor
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorServiceRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorServiceRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorServiceRemapperOutputReference
 ```
@@ -19206,7 +19206,7 @@ func InternalValue() LogsCustomPipelineProcessorServiceRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStatusRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorStatusRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorStatusRemapperOutputReference
 ```
@@ -19535,7 +19535,7 @@ func InternalValue() LogsCustomPipelineProcessorStatusRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorStringBuilderProcessorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorStringBuilderProcessorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorStringBuilderProcessorOutputReference
 ```
@@ -19915,7 +19915,7 @@ func InternalValue() LogsCustomPipelineProcessorStringBuilderProcessor
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorTraceIdRemapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorTraceIdRemapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorTraceIdRemapperOutputReference
 ```
@@ -20244,7 +20244,7 @@ func InternalValue() LogsCustomPipelineProcessorTraceIdRemapper
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUrlParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorUrlParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorUrlParserOutputReference
 ```
@@ -20624,7 +20624,7 @@ func InternalValue() LogsCustomPipelineProcessorUrlParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsCustomPipeline.LogsCustomPipelineProcessorUserAgentParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logscustompipeline"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/logscustompipeline"
 
 logscustompipeline.NewLogsCustomPipelineProcessorUserAgentParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogsCustomPipelineProcessorUserAgentParserOutputReference
 ```
