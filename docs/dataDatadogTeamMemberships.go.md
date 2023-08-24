@@ -1,6 +1,6 @@
 # `data_datadog_team_memberships`
 
-Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/team_memberships).
+Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/team_memberships).
 
 # `dataDatadogTeamMemberships` Submodule <a name="`dataDatadogTeamMemberships` Submodule" id="@cdktf/provider-datadog.dataDatadogTeamMemberships"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](htt
 
 ### DataDatadogTeamMemberships <a name="DataDatadogTeamMemberships" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/team_memberships datadog_team_memberships}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/team_memberships datadog_team_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.Initializer"></a>
 
@@ -677,7 +677,7 @@ TeamId *string
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
 
 ---
 
@@ -691,7 +691,7 @@ FilterKeyword *string
 
 Search query, can be user email or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 
 ---
 

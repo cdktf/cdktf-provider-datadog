@@ -1,6 +1,6 @@
 # `datadog_integration_azure`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure).
+Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure).
 
 # `integrationAzure` Submodule <a name="`integrationAzure` Submodule" id="@cdktf/provider-datadog.integrationAzure"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https:/
 
 ### IntegrationAzure <a name="IntegrationAzure" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure datadog_integration_azure}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure datadog_integration_azure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer"></a>
 
@@ -70,7 +70,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetAppServicePlanFilters">resetAppServicePlanFilters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetAutomute">resetAutomute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCspmEnabled">resetCspmEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCustomMetricsEnabled">resetCustomMetricsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetHostFilters">resetHostFilters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetId">resetId</a></code> | *No description.* |
 
@@ -260,10 +263,28 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAppServicePlanFilters` <a name="resetAppServicePlanFilters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetAppServicePlanFilters"></a>
+
+```typescript
+public resetAppServicePlanFilters(): void
+```
+
 ##### `resetAutomute` <a name="resetAutomute" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetAutomute"></a>
 
 ```typescript
 public resetAutomute(): void
+```
+
+##### `resetCspmEnabled` <a name="resetCspmEnabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCspmEnabled"></a>
+
+```typescript
+public resetCspmEnabled(): void
+```
+
+##### `resetCustomMetricsEnabled` <a name="resetCustomMetricsEnabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCustomMetricsEnabled"></a>
+
+```typescript
+public resetCustomMetricsEnabled(): void
 ```
 
 ##### `resetHostFilters` <a name="resetHostFilters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetHostFilters"></a>
@@ -366,15 +387,21 @@ integrationAzure.IntegrationAzure.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.appServicePlanFiltersInput">appServicePlanFiltersInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.automuteInput">automuteInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabledInput">cspmEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.customMetricsEnabledInput">customMetricsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.hostFiltersInput">hostFiltersInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.tenantNameInput">tenantNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.appServicePlanFilters">appServicePlanFilters</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.automute">automute</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabled">cspmEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.customMetricsEnabled">customMetricsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.hostFilters">hostFilters</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.tenantName">tenantName</a></code> | <code>string</code> | *No description.* |
@@ -523,6 +550,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `appServicePlanFiltersInput`<sup>Optional</sup> <a name="appServicePlanFiltersInput" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.appServicePlanFiltersInput"></a>
+
+```typescript
+public readonly appServicePlanFiltersInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `automuteInput`<sup>Optional</sup> <a name="automuteInput" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.automuteInput"></a>
 
 ```typescript
@@ -550,6 +587,26 @@ public readonly clientSecretInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `cspmEnabledInput`<sup>Optional</sup> <a name="cspmEnabledInput" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabledInput"></a>
+
+```typescript
+public readonly cspmEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `customMetricsEnabledInput`<sup>Optional</sup> <a name="customMetricsEnabledInput" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.customMetricsEnabledInput"></a>
+
+```typescript
+public readonly customMetricsEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -583,6 +640,16 @@ public readonly tenantNameInput: string;
 
 ---
 
+##### `appServicePlanFilters`<sup>Required</sup> <a name="appServicePlanFilters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.appServicePlanFilters"></a>
+
+```typescript
+public readonly appServicePlanFilters: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `automute`<sup>Required</sup> <a name="automute" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.automute"></a>
 
 ```typescript
@@ -610,6 +677,26 @@ public readonly clientSecret: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `cspmEnabled`<sup>Required</sup> <a name="cspmEnabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabled"></a>
+
+```typescript
+public readonly cspmEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `customMetricsEnabled`<sup>Required</sup> <a name="customMetricsEnabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.customMetricsEnabled"></a>
+
+```typescript
+public readonly customMetricsEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -687,9 +774,12 @@ const integrationAzureConfig: integrationAzure.IntegrationAzureConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.clientId">clientId</a></code> | <code>string</code> | Your Azure web application ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | (Required for Initial Creation) Your Azure web application secret key. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.tenantName">tenantName</a></code> | <code>string</code> | Your Azure Active Directory ID. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.appServicePlanFilters">appServicePlanFilters</a></code> | <code>string</code> | String of app service plan tag(s) (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.automute">automute</a></code> | <code>boolean \| cdktf.IResolvable</code> | Silence monitors for expected Azure VM shutdowns. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.cspmEnabled">cspmEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable Cloud Security Management Misconfigurations for your organization. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.customMetricsEnabled">customMetricsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable custom metrics for your organization. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.hostFilters">hostFilters</a></code> | <code>string</code> | String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. |
-| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
 
 ---
 
@@ -773,7 +863,7 @@ public readonly clientId: string;
 
 Your Azure web application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
 
 ---
 
@@ -787,7 +877,7 @@ public readonly clientSecret: string;
 
 (Required for Initial Creation) Your Azure web application secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
 
 ---
 
@@ -801,7 +891,23 @@ public readonly tenantName: string;
 
 Your Azure Active Directory ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+
+---
+
+##### `appServicePlanFilters`<sup>Optional</sup> <a name="appServicePlanFilters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.appServicePlanFilters"></a>
+
+```typescript
+public readonly appServicePlanFilters: string;
+```
+
+- *Type:* string
+
+String of app service plan tag(s) (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure.
+
+Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. For example, `env:production,deploymentgroup:red`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
 
 ---
 
@@ -815,7 +921,35 @@ public readonly automute: boolean | IResolvable;
 
 Silence monitors for expected Azure VM shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+
+---
+
+##### `cspmEnabled`<sup>Optional</sup> <a name="cspmEnabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.cspmEnabled"></a>
+
+```typescript
+public readonly cspmEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable Cloud Security Management Misconfigurations for your organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
+
+---
+
+##### `customMetricsEnabled`<sup>Optional</sup> <a name="customMetricsEnabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.customMetricsEnabled"></a>
+
+```typescript
+public readonly customMetricsEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable custom metrics for your organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
 
 ---
 
@@ -831,7 +965,7 @@ String of host tag(s) (in the form `key:value,key:value`) defines a filter that 
 
 Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
 
 ---
 
@@ -843,7 +977,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#id IntegrationAzure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#id IntegrationAzure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

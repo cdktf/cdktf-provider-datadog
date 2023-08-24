@@ -1,6 +1,6 @@
 # `datadog_monitor_json`
 
-Refer to the Terraform Registory for docs: [`datadog_monitor_json`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json).
+Refer to the Terraform Registory for docs: [`datadog_monitor_json`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/monitor_json).
 
 # `monitorJson` Submodule <a name="`monitorJson` Submodule" id="@cdktf/provider-datadog.monitorJson"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_monitor_json`](https://regi
 
 ### MonitorJson <a name="MonitorJson" id="@cdktf/provider-datadog.monitorJson.MonitorJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json datadog_monitor_json}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/monitor_json datadog_monitor_json}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorJson.MonitorJson.Initializer"></a>
 
@@ -623,7 +623,7 @@ new MonitorJsonConfig {
 | <code><a href="#@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.property.monitor">Monitor</a></code> | <code>string</code> | The JSON formatted definition of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json#id MonitorJson#id}. |
+| <code><a href="#@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/monitor_json#id MonitorJson#id}. |
 | <code><a href="#@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.property.url">Url</a></code> | <code>string</code> | The URL of the monitor. |
 
 ---
@@ -708,7 +708,7 @@ public string Monitor { get; set; }
 
 The JSON formatted definition of the monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json#monitor MonitorJson#monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/monitor_json#monitor MonitorJson#monitor}
 
 ---
 
@@ -720,7 +720,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json#id MonitorJson#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/monitor_json#id MonitorJson#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ public string Url { get; set; }
 
 The URL of the monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/monitor_json#url MonitorJson#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/monitor_json#url MonitorJson#url}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The user's role within the team. Valid values are `admin`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership#role TeamMembership#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#role TeamMembership#role}
   */
   readonly role?: string;
   /**
   * ID of the team the team membership is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#team_id TeamMembership#team_id}
   */
   readonly teamId: string;
   /**
   * The ID of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#user_id TeamMembership#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership datadog_team_membership}
 */
 export class TeamMembership extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/team_membership datadog_team_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership datadog_team_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class TeamMembership extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_team_membership',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

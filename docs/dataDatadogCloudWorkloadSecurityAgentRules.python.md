@@ -1,6 +1,6 @@
 # `data_datadog_cloud_workload_security_agent_rules`
 
-Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_security_agent_rules`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/cloud_workload_security_agent_rules).
+Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_security_agent_rules`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/cloud_workload_security_agent_rules).
 
 # `dataDatadogCloudWorkloadSecurityAgentRules` Submodule <a name="`dataDatadogCloudWorkloadSecurityAgentRules` Submodule" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_securit
 
 ### DataDatadogCloudWorkloadSecurityAgentRules <a name="DataDatadogCloudWorkloadSecurityAgentRules" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgent
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -665,7 +665,7 @@ dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgent
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

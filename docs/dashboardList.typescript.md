@@ -1,6 +1,6 @@
 # `datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list).
+Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_list).
 
 # `dashboardList` Submodule <a name="`dashboardList` Submodule" id="@cdktf/provider-datadog.dashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://re
 
 ### DashboardList <a name="DashboardList" id="@cdktf/provider-datadog.dashboardList.DashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardList.DashboardList.Initializer"></a>
 
@@ -72,7 +72,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.putDashItem">putDashItem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.resetDashItem">resetDashItem</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -278,12 +277,6 @@ public putDashItem(value: IResolvable | DashboardListDashItem[]): void
 public resetDashItem(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-datadog.dashboardList.DashboardList.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -373,10 +366,9 @@ dashboardList.DashboardList.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.dashItem">dashItem</a></code> | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListDashItemList">DashboardListDashItemList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.dashItemInput">dashItemInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.dashboardList.DashboardListDashItem">DashboardListDashItem</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.dashItemInput">dashItemInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.dashboardList.DashboardListDashItem">DashboardListDashItem</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardList.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -533,6 +525,16 @@ public readonly dashItem: DashboardListDashItemList;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `dashItemInput`<sup>Optional</sup> <a name="dashItemInput" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.dashItemInput"></a>
 
 ```typescript
@@ -543,30 +545,10 @@ public readonly dashItemInput: IResolvable | DashboardListDashItem[];
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.dashboardList.DashboardList.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -626,7 +608,6 @@ const dashboardListConfig: dashboardList.DashboardListConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.name">name</a></code> | <code>string</code> | The name of the Dashboard List. |
 | <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.dashItem">dashItem</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.dashboardList.DashboardListDashItem">DashboardListDashItem</a>[]</code> | dash_item block. |
-| <code><a href="#@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#id DashboardList#id}. |
 
 ---
 
@@ -710,7 +691,7 @@ public readonly name: string;
 
 The name of the Dashboard List.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#name DashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_list#name DashboardList#name}
 
 ---
 
@@ -724,22 +705,7 @@ public readonly dashItem: IResolvable | DashboardListDashItem[];
 
 dash_item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.dashboardList.DashboardListConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#id DashboardList#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
 
 ---
 
@@ -772,7 +738,7 @@ public readonly dashId: string;
 
 The ID of the dashboard to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
 
 ---
 
@@ -786,7 +752,7 @@ public readonly type: string;
 
 The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/dashboard_list#type DashboardList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/dashboard_list#type DashboardList#type}
 
 ---
 

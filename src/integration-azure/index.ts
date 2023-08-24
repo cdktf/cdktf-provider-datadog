@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +13,49 @@ import * as cdktf from 'cdktf';
 
 export interface IntegrationAzureConfig extends cdktf.TerraformMetaArguments {
   /**
+  * String of app service plan tag(s) (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure. Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. For example, `env:production,deploymentgroup:red`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
+  */
+  readonly appServicePlanFilters?: string;
+  /**
   * Silence monitors for expected Azure VM shutdowns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
   */
   readonly automute?: boolean | cdktf.IResolvable;
   /**
   * Your Azure web application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
   */
   readonly clientId: string;
   /**
   * (Required for Initial Creation) Your Azure web application secret key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
   */
   readonly clientSecret: string;
   /**
+  * Enable Cloud Security Management Misconfigurations for your organization.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
+  */
+  readonly cspmEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Enable custom metrics for your organization.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
+  */
+  readonly customMetricsEnabled?: boolean | cdktf.IResolvable;
+  /**
   * String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
   */
   readonly hostFilters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#id IntegrationAzure#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#id IntegrationAzure#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,13 +64,13 @@ export interface IntegrationAzureConfig extends cdktf.TerraformMetaArguments {
   /**
   * Your Azure Active Directory ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
   */
   readonly tenantName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure datadog_integration_azure}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure datadog_integration_azure}
 */
 export class IntegrationAzure extends cdktf.TerraformResource {
 
@@ -66,7 +84,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/integration_azure datadog_integration_azure} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_azure datadog_integration_azure} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +95,7 @@ export class IntegrationAzure extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_azure',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -88,9 +106,12 @@ export class IntegrationAzure extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._appServicePlanFilters = config.appServicePlanFilters;
     this._automute = config.automute;
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
+    this._cspmEnabled = config.cspmEnabled;
+    this._customMetricsEnabled = config.customMetricsEnabled;
     this._hostFilters = config.hostFilters;
     this._id = config.id;
     this._tenantName = config.tenantName;
@@ -99,6 +120,22 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // app_service_plan_filters - computed: false, optional: true, required: false
+  private _appServicePlanFilters?: string; 
+  public get appServicePlanFilters() {
+    return this.getStringAttribute('app_service_plan_filters');
+  }
+  public set appServicePlanFilters(value: string) {
+    this._appServicePlanFilters = value;
+  }
+  public resetAppServicePlanFilters() {
+    this._appServicePlanFilters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appServicePlanFiltersInput() {
+    return this._appServicePlanFilters;
+  }
 
   // automute - computed: false, optional: true, required: false
   private _automute?: boolean | cdktf.IResolvable; 
@@ -140,6 +177,38 @@ export class IntegrationAzure extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clientSecretInput() {
     return this._clientSecret;
+  }
+
+  // cspm_enabled - computed: false, optional: true, required: false
+  private _cspmEnabled?: boolean | cdktf.IResolvable; 
+  public get cspmEnabled() {
+    return this.getBooleanAttribute('cspm_enabled');
+  }
+  public set cspmEnabled(value: boolean | cdktf.IResolvable) {
+    this._cspmEnabled = value;
+  }
+  public resetCspmEnabled() {
+    this._cspmEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cspmEnabledInput() {
+    return this._cspmEnabled;
+  }
+
+  // custom_metrics_enabled - computed: false, optional: true, required: false
+  private _customMetricsEnabled?: boolean | cdktf.IResolvable; 
+  public get customMetricsEnabled() {
+    return this.getBooleanAttribute('custom_metrics_enabled');
+  }
+  public set customMetricsEnabled(value: boolean | cdktf.IResolvable) {
+    this._customMetricsEnabled = value;
+  }
+  public resetCustomMetricsEnabled() {
+    this._customMetricsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customMetricsEnabledInput() {
+    return this._customMetricsEnabled;
   }
 
   // host_filters - computed: false, optional: true, required: false
@@ -193,9 +262,12 @@ export class IntegrationAzure extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      app_service_plan_filters: cdktf.stringToTerraform(this._appServicePlanFilters),
       automute: cdktf.booleanToTerraform(this._automute),
       client_id: cdktf.stringToTerraform(this._clientId),
       client_secret: cdktf.stringToTerraform(this._clientSecret),
+      cspm_enabled: cdktf.booleanToTerraform(this._cspmEnabled),
+      custom_metrics_enabled: cdktf.booleanToTerraform(this._customMetricsEnabled),
       host_filters: cdktf.stringToTerraform(this._hostFilters),
       id: cdktf.stringToTerraform(this._id),
       tenant_name: cdktf.stringToTerraform(this._tenantName),

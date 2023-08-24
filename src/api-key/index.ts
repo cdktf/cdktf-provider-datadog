@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/api_key
+// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface ApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for API Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/api_key#name ApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/api_key#name ApiKey#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/api_key datadog_api_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/api_key datadog_api_key}
 */
 export class ApiKey extends cdktf.TerraformResource {
 
@@ -35,7 +35,7 @@ export class ApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/resources/api_key datadog_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/api_key datadog_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,7 +46,7 @@ export class ApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.28.0',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

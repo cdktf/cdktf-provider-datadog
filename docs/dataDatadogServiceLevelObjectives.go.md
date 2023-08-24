@@ -1,6 +1,6 @@
 # `data_datadog_service_level_objectives`
 
-Refer to the Terraform Registory for docs: [`data_datadog_service_level_objectives`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives).
+Refer to the Terraform Registory for docs: [`data_datadog_service_level_objectives`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives).
 
 # `dataDatadogServiceLevelObjectives` Submodule <a name="`dataDatadogServiceLevelObjectives` Submodule" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjectives"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_service_level_objectiv
 
 ### DataDatadogServiceLevelObjectives <a name="DataDatadogServiceLevelObjectives" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives datadog_service_level_objectives}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.Initializer"></a>
 
@@ -678,7 +678,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogservice
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | An array of SLO IDs to limit the search. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.metricsQuery">MetricsQuery</a></code> | <code>*string</code> | Filter results based on SLO numerator and denominator. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.property.nameQuery">NameQuery</a></code> | <code>*string</code> | Filter results based on SLO names. |
@@ -764,7 +764,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives#id DataDatadogServiceLevelObjectives#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -781,7 +781,7 @@ Ids *[]*string
 
 An array of SLO IDs to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#ids DataDatadogServiceLevelObjectives#ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives#ids DataDatadogServiceLevelObjectives#ids}
 
 ---
 
@@ -795,7 +795,7 @@ MetricsQuery *string
 
 Filter results based on SLO numerator and denominator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives#metrics_query DataDatadogServiceLevelObjectives#metrics_query}
 
 ---
 
@@ -809,7 +809,7 @@ NameQuery *string
 
 Filter results based on SLO names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#name_query DataDatadogServiceLevelObjectives#name_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives#name_query DataDatadogServiceLevelObjectives#name_query}
 
 ---
 
@@ -823,7 +823,7 @@ TagsQuery *string
 
 Filter results based on a single SLO tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/service_level_objectives#tags_query DataDatadogServiceLevelObjectives#tags_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/service_level_objectives#tags_query DataDatadogServiceLevelObjectives#tags_query}
 
 ---
 

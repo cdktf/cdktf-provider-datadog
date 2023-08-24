@@ -1,6 +1,6 @@
 # `data_datadog_hosts`
 
-Refer to the Terraform Registory for docs: [`data_datadog_hosts`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts).
+Refer to the Terraform Registory for docs: [`data_datadog_hosts`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts).
 
 # `dataDatadogHosts` Submodule <a name="`dataDatadogHosts` Submodule" id="@cdktf/provider-datadog.dataDatadogHosts"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_hosts`](https://regist
 
 ### DataDatadogHosts <a name="DataDatadogHosts" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts datadog_hosts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts datadog_hosts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 String to filter search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Number of seconds since UNIX epoch from which you want to search your hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#from DataDatadogHosts#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#from DataDatadogHosts#from}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Include information on the muted status of hosts and when the mute expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Direction of sort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Sort hosts by this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
 
 ---
 
@@ -942,7 +942,7 @@ filter: str
 
 String to filter search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
 
 ---
 
@@ -956,7 +956,7 @@ from: typing.Union[int, float]
 
 Number of seconds since UNIX epoch from which you want to search your hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#from DataDatadogHosts#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#from DataDatadogHosts#from}
 
 ---
 
@@ -970,7 +970,7 @@ include_muted_hosts_data: typing.Union[bool, IResolvable]
 
 Include information on the muted status of hosts and when the mute expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
 
 ---
 
@@ -984,7 +984,7 @@ sort_dir: str
 
 Direction of sort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
 
 ---
 
@@ -998,7 +998,7 @@ sort_field: str
 
 Sort hosts by this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
 
 ---
 

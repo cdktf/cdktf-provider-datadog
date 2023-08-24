@@ -1,6 +1,6 @@
 # `data_datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list).
+Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list).
 
 # `dataDatadogDashboardList` Submodule <a name="`dataDatadogDashboardList` Submodule" id="@cdktf/provider-datadog.dataDatadogDashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https
 
 ### DataDatadogDashboardList <a name="DataDatadogDashboardList" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -258,12 +257,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -350,9 +343,8 @@ datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformDataSource(x interf
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -479,10 +471,10 @@ func Provider() TerraformProvider
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.idInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.id"></a>
 
 ```go
-func IdInput() *string
+func Id() *string
 ```
 
 - *Type:* *string
@@ -493,16 +485,6 @@ func IdInput() *string
 
 ```go
 func NameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -555,7 +537,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogdashboa
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Id: *string,
 }
 ```
 
@@ -571,7 +552,6 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v8/datadatadogdashboa
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.property.name">Name</a></code> | <code>*string</code> | A dashboard list name to limit the search. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list#id DataDatadogDashboardList#id}. |
 
 ---
 
@@ -655,22 +635,7 @@ Name *string
 
 A dashboard list name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.28.0/docs/data-sources/dashboard_list#id DataDatadogDashboardList#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
 
 ---
 
