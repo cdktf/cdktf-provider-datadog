@@ -1,6 +1,6 @@
 # `data_datadog_ip_ranges`
 
-Refer to the Terraform Registory for docs: [`data_datadog_ip_ranges`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/ip_ranges).
+Refer to the Terraform Registory for docs: [`data_datadog_ip_ranges`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges).
 
 # `dataDatadogIpRanges` Submodule <a name="`dataDatadogIpRanges` Submodule" id="@cdktf/provider-datadog.dataDatadogIpRanges"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_ip_ranges`](https://re
 
 ### DataDatadogIpRanges <a name="DataDatadogIpRanges" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.Initializer"></a>
 

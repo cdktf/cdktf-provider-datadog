@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty
+// https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface IntegrationPagerdutyConfig extends cdktf.TerraformMetaArguments
   /**
   * Your PagerDuty API token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty#api_token IntegrationPagerduty#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty#api_token IntegrationPagerduty#api_token}
   */
   readonly apiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty#id IntegrationPagerduty#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty#id IntegrationPagerduty#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface IntegrationPagerdutyConfig extends cdktf.TerraformMetaArguments
   /**
   * Array of your schedule URLs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty#schedules IntegrationPagerduty#schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty#schedules IntegrationPagerduty#schedules}
   */
   readonly schedules?: string[];
   /**
   * Your PagerDuty account’s personalized subdomain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty#subdomain IntegrationPagerduty#subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty#subdomain IntegrationPagerduty#subdomain}
   */
   readonly subdomain: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty datadog_integration_pagerduty}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty datadog_integration_pagerduty}
 */
 export class IntegrationPagerduty extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty datadog_integration_pagerduty} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class IntegrationPagerduty extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

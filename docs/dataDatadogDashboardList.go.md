@@ -1,6 +1,6 @@
 # `data_datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list).
+Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/dashboard_list).
 
 # `dataDatadogDashboardList` Submodule <a name="`dataDatadogDashboardList` Submodule" id="@cdktf/provider-datadog.dataDatadogDashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https
 
 ### DataDatadogDashboardList <a name="DataDatadogDashboardList" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.Initializer"></a>
 
@@ -635,7 +635,7 @@ Name *string
 
 A dashboard list name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_datadog_user`
 
-Refer to the Terraform Registory for docs: [`data_datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/user).
+Refer to the Terraform Registory for docs: [`data_datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/user).
 
 # `dataDatadogUser` Submodule <a name="`dataDatadogUser` Submodule" id="@cdktf/provider-datadog.dataDatadogUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_user`](https://registr
 
 ### DataDatadogUser <a name="DataDatadogUser" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/user datadog_user}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/user datadog_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogUser.DataDatadogUser.Initializer"></a>
 
@@ -613,7 +613,7 @@ const dataDatadogUserConfig: dataDatadogUser.DataDatadogUserConfig = { ... }
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.filter">filter</a></code> | <code>string</code> | Filter all users by the given string. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.exactMatch">exactMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/user#id DataDatadogUser#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogUser.DataDatadogUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/user#id DataDatadogUser#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public readonly filter: string;
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/user#filter DataDatadogUser#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/user#filter DataDatadogUser#filter}
 
 ---
 
@@ -711,7 +711,7 @@ public readonly exactMatch: boolean | IResolvable;
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/user#exact_match DataDatadogUser#exact_match}
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/user#id DataDatadogUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/user#id DataDatadogUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

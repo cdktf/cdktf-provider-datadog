@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective
+// https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   /**
   * A description of this service level objective.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
   */
   readonly description?: string;
   /**
   * A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
   * A static set of groups to filter monitor-based SLOs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,61 +40,61 @@ export interface ServiceLevelObjectiveConfig extends cdktf.TerraformMetaArgument
   /**
   * A static set of monitor IDs to use as part of the SLO
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
   */
   readonly monitorIds?: number[];
   /**
   * Name of Datadog service level objective
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
   */
   readonly name: string;
   /**
   * A list of tags to associate with your service level objective. This can help you categorize and filter service level objectives in the service level objectives page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
   */
   readonly tags?: string[];
   /**
   * The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
   */
   readonly targetThreshold?: number;
   /**
   * The primary time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
   */
   readonly timeframe?: string;
   /**
   * The type of the service level objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/service-level-objectives/#create-a-slo-object). Valid values are `metric`, `monitor`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
   */
   readonly type: string;
   /**
   * Whether or not to validate the SLO.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
   */
   readonly validate?: boolean | cdktf.IResolvable;
   /**
   * The objective's warning value in `(0,100)`. This must be greater than the target value and match the corresponding thresholds of the primary time frame.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
   */
   readonly warningThreshold?: number;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
   */
   readonly query?: ServiceLevelObjectiveQuery;
   /**
   * thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
   */
   readonly thresholds: ServiceLevelObjectiveThresholds[] | cdktf.IResolvable;
 }
@@ -102,13 +102,13 @@ export interface ServiceLevelObjectiveQuery {
   /**
   * The sum of the `total` events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
   */
   readonly denominator: string;
   /**
   * The sum of all the `good` events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
   */
   readonly numerator: string;
 }
@@ -192,19 +192,19 @@ export interface ServiceLevelObjectiveThresholds {
   /**
   * The objective's target in `(0,100)`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
   */
   readonly target: number;
   /**
   * The time frame for the objective. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
   */
   readonly timeframe: string;
   /**
   * The objective's warning value in `(0,100)`. This must be greater than the target value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
   */
   readonly warning?: number;
 }
@@ -351,7 +351,7 @@ export class ServiceLevelObjectiveThresholdsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective datadog_service_level_objective}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective datadog_service_level_objective}
 */
 export class ServiceLevelObjective extends cdktf.TerraformResource {
 
@@ -365,7 +365,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_level_objective datadog_service_level_objective} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective datadog_service_level_objective} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -376,7 +376,7 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_level_objective',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

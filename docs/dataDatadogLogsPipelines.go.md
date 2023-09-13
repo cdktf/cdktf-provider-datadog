@@ -1,6 +1,6 @@
 # `data_datadog_logs_pipelines`
 
-Refer to the Terraform Registory for docs: [`data_datadog_logs_pipelines`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/logs_pipelines).
+Refer to the Terraform Registory for docs: [`data_datadog_logs_pipelines`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_pipelines).
 
 # `dataDatadogLogsPipelines` Submodule <a name="`dataDatadogLogsPipelines` Submodule" id="@cdktf/provider-datadog.dataDatadogLogsPipelines"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_logs_pipelines`](https
 
 ### DataDatadogLogsPipelines <a name="DataDatadogLogsPipelines" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_pipelines datadog_logs_pipelines}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.Initializer"></a>
 
@@ -588,7 +588,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadoglogspip
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/logs_pipelines#id DataDatadogLogsPipelines#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_pipelines#id DataDatadogLogsPipelines#id}. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.property.isReadOnly">IsReadOnly</a></code> | <code>*string</code> | Filter parameter for retrieved pipelines. |
 
 ---
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/logs_pipelines#id DataDatadogLogsPipelines#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_pipelines#id DataDatadogLogsPipelines#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -688,7 +688,7 @@ IsReadOnly *string
 
 Filter parameter for retrieved pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/logs_pipelines#is_read_only DataDatadogLogsPipelines#is_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_pipelines#is_read_only DataDatadogLogsPipelines#is_read_only}
 
 ---
 
