@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata
+// https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface MetricMetadataConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#description MetricMetadata#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#description MetricMetadata#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#id MetricMetadata#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#id MetricMetadata#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +23,43 @@ export interface MetricMetadataConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
   */
   readonly metric: string;
   /**
   * Per unit of the metric such as `second` in `bytes per second`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
   */
   readonly perUnit?: string;
   /**
   * A short name of the metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
   */
   readonly shortName?: string;
   /**
   * If applicable, statsd flush interval in seconds for the metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
   */
   readonly statsdInterval?: number;
   /**
   * Metric type such as `gauge` or `rate`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#type MetricMetadata#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#type MetricMetadata#type}
   */
   readonly type?: string;
   /**
   * Primary unit of the metric such as `byte` or `operation`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
   */
   readonly unit?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata datadog_metric_metadata}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata datadog_metric_metadata}
 */
 export class MetricMetadata extends cdktf.TerraformResource {
 
@@ -78,7 +73,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/metric_metadata datadog_metric_metadata} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/metric_metadata datadog_metric_metadata} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +84,7 @@ export class MetricMetadata extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_metric_metadata',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

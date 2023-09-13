@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key
+// https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_account_application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface ServiceAccountApplicationKeyConfig extends cdktf.TerraformMetaA
   /**
   * Name of the application key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_account_application_key#name ServiceAccountApplicationKey#name}
   */
   readonly name: string;
   /**
   * ID of the service account that owns this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_account_application_key#service_account_id ServiceAccountApplicationKey#service_account_id}
   */
   readonly serviceAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key datadog_service_account_application_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_account_application_key datadog_service_account_application_key}
 */
 export class ServiceAccountApplicationKey extends cdktf.TerraformResource {
 
@@ -41,7 +36,7 @@ export class ServiceAccountApplicationKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_account_application_key datadog_service_account_application_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +47,7 @@ export class ServiceAccountApplicationKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_account_application_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

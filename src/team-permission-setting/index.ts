@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_permission_setting
+// https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface TeamPermissionSettingConfig extends cdktf.TerraformMetaArgument
   /**
   * The identifier for the action. Valid values are `manage_membership`, `edit`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
   */
   readonly action: string;
   /**
   * ID of the team the team permission setting is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
   */
   readonly teamId: string;
   /**
   * The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_permission_setting datadog_team_permission_setting}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting datadog_team_permission_setting}
 */
 export class TeamPermissionSetting extends cdktf.TerraformResource {
 
@@ -47,7 +42,7 @@ export class TeamPermissionSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting datadog_team_permission_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +53,7 @@ export class TeamPermissionSetting extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_team_permission_setting',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.29.0',
+        providerVersion: '3.30.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

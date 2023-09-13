@@ -1,6 +1,6 @@
 # `data_datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list).
+Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/dashboard_list).
 
 # `dataDatadogDashboardList` Submodule <a name="`dataDatadogDashboardList` Submodule" id="@cdktf/provider-datadog.dataDatadogDashboardList"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https
 
 ### DataDatadogDashboardList <a name="DataDatadogDashboardList" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.NewDataDatadogDashboardList(scope Construct, id *string, config DataDatadogDashboardListConfig) DataDatadogDashboardList
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 datadatadogdashboardlist.DataDatadogDashboardList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/datadatadogdashboardlist"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogdashboardlist"
 
 &datadatadogdashboardlist.DataDatadogDashboardListConfig {
 	Connection: interface{},
@@ -635,7 +635,7 @@ Name *string
 
 A dashboard list name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
 
 ---
 

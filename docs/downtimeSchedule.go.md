@@ -1,6 +1,6 @@
 # `datadog_downtime_schedule`
 
-Refer to the Terraform Registory for docs: [`datadog_downtime_schedule`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule).
+Refer to the Terraform Registory for docs: [`datadog_downtime_schedule`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule).
 
 # `downtimeSchedule` Submodule <a name="`downtimeSchedule` Submodule" id="@cdktf/provider-datadog.downtimeSchedule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_downtime_schedule`](https:/
 
 ### DowntimeSchedule <a name="DowntimeSchedule" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule datadog_downtime_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule datadog_downtime_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeSchedule(scope Construct, id *string, config DowntimeScheduleConfig) DowntimeSchedule
 ```
@@ -365,7 +365,7 @@ func ResetRecurringSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ downtimeschedule.DowntimeSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -819,7 +819,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleConfig {
 	Connection: interface{},
@@ -832,12 +832,12 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
 	Scope: *string,
 	DisplayTimezone: *string,
 	Message: *string,
-	MonitorIdentifier: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.downtimeSchedule.DowntimeScheduleMonitorIdentifier,
+	MonitorIdentifier: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifier,
 	MuteFirstRecoveryNotification: interface{},
 	NotifyEndStates: *[]*string,
 	NotifyEndTypes: *[]*string,
-	OneTimeSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.downtimeSchedule.DowntimeScheduleOneTimeSchedule,
-	RecurringSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.downtimeSchedule.DowntimeScheduleRecurringSchedule,
+	OneTimeSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtimeSchedule.DowntimeScheduleOneTimeSchedule,
+	RecurringSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtimeSchedule.DowntimeScheduleRecurringSchedule,
 }
 ```
 
@@ -944,7 +944,7 @@ Scope *string
 
 The scope to which the downtime applies. Must follow the [common search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#scope DowntimeSchedule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#scope DowntimeSchedule#scope}
 
 ---
 
@@ -960,7 +960,7 @@ The timezone in which to display the downtime's start and end times in Datadog a
 
 This is not used as an offset for scheduling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#display_timezone DowntimeSchedule#display_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#display_timezone DowntimeSchedule#display_timezone}
 
 ---
 
@@ -976,7 +976,7 @@ A message to include with notifications for this downtime.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#message DowntimeSchedule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#message DowntimeSchedule#message}
 
 ---
 
@@ -990,7 +990,7 @@ MonitorIdentifier DowntimeScheduleMonitorIdentifier
 
 monitor_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#monitor_identifier DowntimeSchedule#monitor_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#monitor_identifier DowntimeSchedule#monitor_identifier}
 
 ---
 
@@ -1004,7 +1004,7 @@ MuteFirstRecoveryNotification interface{}
 
 If the first recovery notification during a downtime should be muted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#mute_first_recovery_notification DowntimeSchedule#mute_first_recovery_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#mute_first_recovery_notification DowntimeSchedule#mute_first_recovery_notification}
 
 ---
 
@@ -1018,7 +1018,7 @@ NotifyEndStates *[]*string
 
 States that will trigger a monitor notification when the `notify_end_types` action occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#notify_end_states DowntimeSchedule#notify_end_states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#notify_end_states DowntimeSchedule#notify_end_states}
 
 ---
 
@@ -1032,7 +1032,7 @@ NotifyEndTypes *[]*string
 
 Actions that will trigger a monitor notification if the downtime is in the `notify_end_types` state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#notify_end_types DowntimeSchedule#notify_end_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#notify_end_types DowntimeSchedule#notify_end_types}
 
 ---
 
@@ -1046,7 +1046,7 @@ OneTimeSchedule DowntimeScheduleOneTimeSchedule
 
 one_time_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#one_time_schedule DowntimeSchedule#one_time_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#one_time_schedule DowntimeSchedule#one_time_schedule}
 
 ---
 
@@ -1060,7 +1060,7 @@ RecurringSchedule DowntimeScheduleRecurringSchedule
 
 recurring_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#recurring_schedule DowntimeSchedule#recurring_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#recurring_schedule DowntimeSchedule#recurring_schedule}
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleMonitorIdentifier {
 	MonitorId: *f64,
@@ -1096,7 +1096,7 @@ MonitorId *f64
 
 ID of the monitor to prevent notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#monitor_id DowntimeSchedule#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#monitor_id DowntimeSchedule#monitor_id}
 
 ---
 
@@ -1112,7 +1112,7 @@ A list of monitor tags.
 
 For example, tags that are applied directly to monitors, not tags that are used in monitor queries (which are filtered by the scope parameter), to which the downtime applies. The resulting downtime applies to monitors that match **all** provided monitor tags. Setting `monitor_tags` to `[*]` configures the downtime to mute all monitors for the given scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#monitor_tags DowntimeSchedule#monitor_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#monitor_tags DowntimeSchedule#monitor_tags}
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleOneTimeSchedule {
 	End: *string,
@@ -1150,7 +1150,7 @@ ISO-8601 Datetime to end the downtime.
 
 Must include a UTC offset of zero. If not provided, the downtime never ends.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#end DowntimeSchedule#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#end DowntimeSchedule#end}
 
 ---
 
@@ -1166,7 +1166,7 @@ ISO-8601 Datetime to start the downtime.
 
 Must include a UTC offset of zero. If not provided, the downtime starts the moment it is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
 
 ---
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleRecurringSchedule {
 	Recurrence: interface{},
@@ -1202,7 +1202,7 @@ Recurrence interface{}
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#recurrence DowntimeSchedule#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#recurrence DowntimeSchedule#recurrence}
 
 ---
 
@@ -1216,7 +1216,7 @@ Timezone *string
 
 The timezone in which to schedule the downtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#timezone DowntimeSchedule#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#timezone DowntimeSchedule#timezone}
 
 ---
 
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleRecurringScheduleRecurrence {
 	Duration: *string,
@@ -1256,7 +1256,7 @@ The length of the downtime.
 
 Must begin with an integer and end with one of 'm', 'h', d', or 'w'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#duration DowntimeSchedule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#duration DowntimeSchedule#duration}
 
 ---
 
@@ -1272,7 +1272,7 @@ The `RRULE` standard for defining recurring events.
 
 For example, to have a recurring event on the first day of each month, set the type to `rrule` and set the `FREQ` to `MONTHLY` and `BYMONTHDAY` to `1`. Most common `rrule` options from the [iCalendar Spec](https://tools.ietf.org/html/rfc5545) are supported.  **Note**: Attributes specifying the duration in `RRULE` are not supported (for example, `DTSTART`, `DTEND`, `DURATION`). More examples available in this [downtime guide](https://docs.datadoghq.com/monitors/guide/suppress-alert-with-downtimes/?tab=api).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#rrule DowntimeSchedule#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#rrule DowntimeSchedule#rrule}
 
 ---
 
@@ -1288,7 +1288,7 @@ ISO-8601 Datetime to start the downtime.
 
 Must not include a UTC offset. If not provided, the downtime starts the moment it is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
 
 ---
 
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleMonitorIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeScheduleMonitorIdentifierOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleOneTimeScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeScheduleOneTimeScheduleOutputReference
 ```
@@ -1913,7 +1913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleRecurringScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeScheduleRecurringScheduleOutputReference
 ```
@@ -2233,7 +2233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleRecurringScheduleRecurrenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DowntimeScheduleRecurringScheduleRecurrenceList
 ```
@@ -2376,7 +2376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleRecurringScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DowntimeScheduleRecurringScheduleRecurrenceOutputReference
 ```

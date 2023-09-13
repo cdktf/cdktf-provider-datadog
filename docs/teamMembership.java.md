@@ -1,6 +1,6 @@
 # `datadog_team_membership`
 
-Refer to the Terraform Registory for docs: [`datadog_team_membership`](https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership).
+Refer to the Terraform Registory for docs: [`datadog_team_membership`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership).
 
 # `teamMembership` Submodule <a name="`teamMembership` Submodule" id="@cdktf/provider-datadog.teamMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_team_membership`](https://r
 
 ### TeamMembership <a name="TeamMembership" id="@cdktf/provider-datadog.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership datadog_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership datadog_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamMembership.TeamMembership.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the team the team membership is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership#user_id TeamMembership#user_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The user's role within the team. Valid values are `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 
@@ -806,7 +806,7 @@ public java.lang.String getTeamId();
 
 ID of the team the team membership is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -820,7 +820,7 @@ public java.lang.String getUserId();
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership#user_id TeamMembership#user_id}
 
 ---
 
@@ -834,7 +834,7 @@ public java.lang.String getRole();
 
 The user's role within the team. Valid values are `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.29.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 
