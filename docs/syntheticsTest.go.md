@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTest(scope Construct, id *string, config SyntheticsTestConfig) SyntheticsTest
 ```
@@ -533,7 +533,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ syntheticstest.SyntheticsTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -1295,7 +1295,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStep {
 	Name: *string,
@@ -1303,13 +1303,13 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 	Assertion: interface{},
 	ExtractedValue: interface{},
 	IsCritical: interface{},
-	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth,
-	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate,
-	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition,
+	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRequestBasicauth,
+	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate,
+	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRequestDefinition,
 	RequestHeaders: *map[string]*string,
-	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy,
+	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRequestProxy,
 	RequestQuery: *map[string]*string,
-	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRetry,
+	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRetry,
 	Subtype: *string,
 }
 ```
@@ -1523,15 +1523,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertion {
 	Operator: *string,
 	Type: *string,
 	Property: *string,
 	Target: *string,
-	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath,
-	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath,
+	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath,
+	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath,
 }
 ```
 
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetjsonpath {
 	Jsonpath: *string,
@@ -1705,7 +1705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetxpath {
 	Operator: *string,
@@ -1771,11 +1771,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepExtractedValue {
 	Name: *string,
-	Parser: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser,
+	Parser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepExtractedValueParser,
 	Type: *string,
 	Field: *string,
 	Secure: interface{},
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepExtractedValueParser {
 	Type: *string,
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestBasicauth {
 	AccessKey: *string,
@@ -2207,11 +2207,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificate {
-	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert,
-	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey,
+	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert,
+	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey,
 }
 ```
 
@@ -2257,7 +2257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificateCert {
 	Content: *string,
@@ -2307,7 +2307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificateKey {
 	Content: *string,
@@ -2357,7 +2357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestDefinition {
 	AllowInsecure: interface{},
@@ -2701,7 +2701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestProxy {
 	Url: *string,
@@ -2751,7 +2751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRetry {
 	Count: *f64,
@@ -2801,15 +2801,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertion {
 	Operator: *string,
 	Type: *string,
 	Property: *string,
 	Target: *string,
-	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpath,
-	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestAssertionTargetxpath,
+	Targetjsonpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestAssertionTargetjsonpath,
+	Targetxpath: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestAssertionTargetxpath,
 }
 ```
 
@@ -2917,7 +2917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetjsonpath {
 	Jsonpath: *string,
@@ -2983,7 +2983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetxpath {
 	Operator: *string,
@@ -3049,11 +3049,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStep {
 	Name: *string,
-	Params: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParams,
+	Params: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestBrowserStepParams,
 	Type: *string,
 	AllowFailure: interface{},
 	ForceElementUpdate: interface{},
@@ -3199,7 +3199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParams {
 	Attribute: *string,
@@ -3208,7 +3208,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 	Code: *string,
 	Delay: *f64,
 	Element: *string,
-	ElementUserLocator: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator,
+	ElementUserLocator: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator,
 	Email: *string,
 	File: *string,
 	Files: *string,
@@ -3217,7 +3217,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 	Request: *string,
 	SubtestPublicId: *string,
 	Value: *string,
-	Variable: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable,
+	Variable: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestBrowserStepParamsVariable,
 	WithClick: interface{},
 	X: *f64,
 	Y: *f64,
@@ -3523,10 +3523,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsElementUserLocator {
-	Value: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue,
+	Value: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue,
 	FailTestOnCannotLocate: interface{},
 }
 ```
@@ -3571,7 +3571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsElementUserLocatorValue {
 	Value: *string,
@@ -3617,7 +3617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsVariable {
 	Example: *string,
@@ -3667,7 +3667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserVariable {
 	Name: *string,
@@ -3788,7 +3788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestConfig {
 	Connection: interface{},
@@ -3810,13 +3810,13 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 	DeviceIds: *[]*string,
 	Id: *string,
 	Message: *string,
-	OptionsList: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListStruct,
-	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestBasicauth,
-	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestClientCertificate,
-	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestDefinition,
+	OptionsList: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestOptionsListStruct,
+	RequestBasicauth: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestRequestBasicauth,
+	RequestClientCertificate: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestRequestClientCertificate,
+	RequestDefinition: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestRequestDefinition,
 	RequestHeaders: *map[string]*string,
 	RequestMetadata: *map[string]*string,
-	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestProxy,
+	RequestProxy: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestRequestProxy,
 	RequestQuery: *map[string]*string,
 	SetCookie: *string,
 	Subtype: *string,
@@ -4269,7 +4269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestConfigVariable {
 	Name: *string,
@@ -4390,7 +4390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListCi {
 	ExecutionRule: *string,
@@ -4424,7 +4424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListMonitorOptions {
 	RenotifyInterval: *f64,
@@ -4460,7 +4460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListRetry {
 	Count: *f64,
@@ -4510,7 +4510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListRumSettings {
 	IsEnabled: interface{},
@@ -4576,7 +4576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListScheduling {
 	Timeframes: interface{},
@@ -4626,7 +4626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListSchedulingTimeframes {
 	Day: *f64,
@@ -4692,14 +4692,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListStruct {
 	TickEvery: *f64,
 	AcceptSelfSigned: interface{},
 	AllowInsecure: interface{},
 	CheckCertificateRevocation: interface{},
-	Ci: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListCi,
+	Ci: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestOptionsListCi,
 	DisableCors: interface{},
 	DisableCsp: interface{},
 	FollowRedirects: interface{},
@@ -4709,13 +4709,13 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
 	MinFailureDuration: *f64,
 	MinLocationFailed: *f64,
 	MonitorName: *string,
-	MonitorOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions,
+	MonitorOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestOptionsListMonitorOptions,
 	MonitorPriority: *f64,
 	NoScreenshot: interface{},
 	RestrictedRoles: *[]*string,
-	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListRetry,
-	RumSettings: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings,
-	Scheduling: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestOptionsListScheduling,
+	Retry: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestOptionsListRetry,
+	RumSettings: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestOptionsListRumSettings,
+	Scheduling: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestOptionsListScheduling,
 }
 ```
 
@@ -5044,7 +5044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestBasicauth {
 	AccessKey: *string,
@@ -5334,11 +5334,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificate {
-	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCert,
-	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKey,
+	Cert: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestRequestClientCertificateCert,
+	Key: github.com/cdktf/cdktf-provider-datadog-go/datadog/v9.syntheticsTest.SyntheticsTestRequestClientCertificateKey,
 }
 ```
 
@@ -5384,7 +5384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificateCert {
 	Content: *string,
@@ -5434,7 +5434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificateKey {
 	Content: *string,
@@ -5484,7 +5484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestDefinition {
 	Body: *string,
@@ -5796,7 +5796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestProxy {
 	Url: *string,
@@ -5848,7 +5848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepAssertionList
 ```
@@ -5991,7 +5991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepAssertionOutputReference
 ```
@@ -6444,7 +6444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetjsonpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetjsonpathOutputReference
 ```
@@ -6766,7 +6766,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetjsonpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetxpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetxpathOutputReference
 ```
@@ -7088,7 +7088,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetxpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepExtractedValueList
 ```
@@ -7231,7 +7231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepExtractedValueOutputReference
 ```
@@ -7635,7 +7635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepExtractedValueParserOutputReference
 ```
@@ -7935,7 +7935,7 @@ func InternalValue() SyntheticsTestApiStepExtractedValueParser
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepList
 ```
@@ -8078,7 +8078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepOutputReference
 ```
@@ -8806,7 +8806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestBasicauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestBasicauthOutputReference
 ```
@@ -9548,7 +9548,7 @@ func InternalValue() SyntheticsTestApiStepRequestBasicauth
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateCertOutputReference
 ```
@@ -9848,7 +9848,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificateCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateKeyOutputReference
 ```
@@ -10148,7 +10148,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificateKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateOutputReference
 ```
@@ -10467,7 +10467,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestDefinitionOutputReference
 ```
@@ -11296,7 +11296,7 @@ func InternalValue() SyntheticsTestApiStepRequestDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestProxyOutputReference
 ```
@@ -11596,7 +11596,7 @@ func InternalValue() SyntheticsTestApiStepRequestProxy
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRetryOutputReference
 ```
@@ -11903,7 +11903,7 @@ func InternalValue() SyntheticsTestApiStepRetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestAssertionList
 ```
@@ -12046,7 +12046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestAssertionOutputReference
 ```
@@ -12499,7 +12499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetjsonpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetjsonpathOutputReference
 ```
@@ -12821,7 +12821,7 @@ func InternalValue() SyntheticsTestAssertionTargetjsonpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetxpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetxpathOutputReference
 ```
@@ -13143,7 +13143,7 @@ func InternalValue() SyntheticsTestAssertionTargetxpath
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserStepList
 ```
@@ -13286,7 +13286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestBrowserStepOutputReference
 ```
@@ -13777,7 +13777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference
 ```
@@ -14090,7 +14090,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsElementUserLocator
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference
 ```
@@ -14390,7 +14390,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsElementUserLocatorValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsOutputReference
 ```
@@ -15216,7 +15216,7 @@ func InternalValue() SyntheticsTestBrowserStepParams
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsVariableOutputReference
 ```
@@ -15523,7 +15523,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsVariable
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserVariableList
 ```
@@ -15666,7 +15666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestBrowserVariableOutputReference
 ```
@@ -16093,7 +16093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestConfigVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestConfigVariableList
 ```
@@ -16236,7 +16236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestConfigVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestConfigVariableOutputReference
 ```
@@ -16663,7 +16663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListCiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListCiOutputReference
 ```
@@ -16941,7 +16941,7 @@ func InternalValue() SyntheticsTestOptionsListCi
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListMonitorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListMonitorOptionsOutputReference
 ```
@@ -17219,7 +17219,7 @@ func InternalValue() SyntheticsTestOptionsListMonitorOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListRetryOutputReference
 ```
@@ -17526,7 +17526,7 @@ func InternalValue() SyntheticsTestOptionsListRetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListRumSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListRumSettingsOutputReference
 ```
@@ -17855,7 +17855,7 @@ func InternalValue() SyntheticsTestOptionsListRumSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListSchedulingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListSchedulingOutputReference
 ```
@@ -18161,7 +18161,7 @@ func InternalValue() SyntheticsTestOptionsListScheduling
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListSchedulingTimeframesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestOptionsListSchedulingTimeframesList
 ```
@@ -18304,7 +18304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestOptionsListSchedulingTimeframesOutputReference
 ```
@@ -18637,7 +18637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListStructOutputReference
 ```
@@ -19553,7 +19553,7 @@ func InternalValue() SyntheticsTestOptionsListStruct
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestBasicauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestBasicauthOutputReference
 ```
@@ -20295,7 +20295,7 @@ func InternalValue() SyntheticsTestRequestBasicauth
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateCertOutputReference
 ```
@@ -20595,7 +20595,7 @@ func InternalValue() SyntheticsTestRequestClientCertificateCert
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateKeyOutputReference
 ```
@@ -20895,7 +20895,7 @@ func InternalValue() SyntheticsTestRequestClientCertificateKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateOutputReference
 ```
@@ -21214,7 +21214,7 @@ func InternalValue() SyntheticsTestRequestClientCertificate
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestDefinitionOutputReference
 ```
@@ -21985,7 +21985,7 @@ func InternalValue() SyntheticsTestRequestDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsTest.SyntheticsTestRequestProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v9/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestProxyOutputReference
 ```
