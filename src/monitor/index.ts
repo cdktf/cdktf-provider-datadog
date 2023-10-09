@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor
 // generated from terraform resource schema
 
@@ -26,8 +21,8 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   readonly escalationMessage?: string;
   /**
   * (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer.
-
-For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
+  * 
+  * For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
   */
@@ -71,8 +66,8 @@ For example, if the value is set to `300` (5min), the `timeframe` is set to `las
   readonly locked?: boolean | cdktf.IResolvable;
   /**
   * A message to include with notifications for this monitor.
-
-Email notifications can be sent to specific users by using the same `@username` notation as events.
+  * 
+  * Email notifications can be sent to specific users by using the same `@username` notation as events.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor#message Monitor#message}
   */
@@ -85,8 +80,8 @@ Email notifications can be sent to specific users by using the same `@username` 
   readonly name: string;
   /**
   * The time (in seconds) to skip evaluations for new groups.
-
-`new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
+  * 
+  * `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
   */
@@ -99,8 +94,8 @@ Email notifications can be sent to specific users by using the same `@username` 
   readonly newHostDelay?: number;
   /**
   * The number of minutes before a monitor will notify when data stops reporting. Provider defaults to 10 minutes.
-
-We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks.
+  * 
+  * We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
   */
@@ -143,8 +138,8 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   readonly priority?: number;
   /**
   * The monitor query to notify on. Note this is not the same query you see in the UI and the syntax is different depending on the monitor type, please see the [API Reference](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor) for details. `terraform plan` will validate query contents unless `validate` is set to `false`.
-
-**Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
+  * 
+  * **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor#query Monitor#query}
   */
@@ -169,8 +164,8 @@ We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes fo
   readonly renotifyStatuses?: string[];
   /**
   * A boolean indicating whether this monitor needs a full window of data before it's evaluated.
-
-We highly recommend you set this to `false` for sparse metrics, otherwise some evaluations will be skipped. Default: `true` for `on average`, `at all times` and `in total` aggregation. `false` otherwise.
+  * 
+  * We highly recommend you set this to `false` for sparse metrics, otherwise some evaluations will be skipped. Default: `true` for `on average`, `at all times` and `in total` aggregation. `false` otherwise.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
   */
