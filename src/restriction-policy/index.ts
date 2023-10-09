@@ -14,8 +14,8 @@ import * as cdktf from 'cdktf';
 export interface RestrictionPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier for the resource, formatted as resource_type:resource_id.
-
-Note: Dashboards support is in private beta. Reach out to your Datadog contact or support to enable this.
+  * 
+  * Note: Dashboards support is in private beta. Reach out to your Datadog contact or support to enable this.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
   */
