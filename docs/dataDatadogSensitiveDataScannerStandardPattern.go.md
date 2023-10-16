@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsensitivedatascannerstandardpattern"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsensitivedatascannerstandardpattern"
 
 datadatadogsensitivedatascannerstandardpattern.NewDataDatadogSensitiveDataScannerStandardPattern(scope Construct, id *string, config DataDatadogSensitiveDataScannerStandardPatternConfig) DataDatadogSensitiveDataScannerStandardPattern
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsensitivedatascannerstandardpattern"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsensitivedatascannerstandardpattern"
 
 datadatadogsensitivedatascannerstandardpattern.DataDatadogSensitiveDataScannerStandardPattern_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsensitivedatascannerstandardpattern"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsensitivedatascannerstandardpattern"
 
 datadatadogsensitivedatascannerstandardpattern.DataDatadogSensitiveDataScannerStandardPattern_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datadatadogsensitivedatascannerstandardpattern.DataDatadogSensitiveDataScannerSt
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsensitivedatascannerstandardpattern"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsensitivedatascannerstandardpattern"
 
 datadatadogsensitivedatascannerstandardpattern.DataDatadogSensitiveDataScannerStandardPattern_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsensitivedatascannerstandardpattern"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsensitivedatascannerstandardpattern"
 
 &datadatadogsensitivedatascannerstandardpattern.DataDatadogSensitiveDataScannerStandardPatternConfig {
 	Connection: interface{},
