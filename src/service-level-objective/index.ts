@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective
 // generated from terraform resource schema
 
@@ -359,6 +354,20 @@ export class ServiceLevelObjective extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "datadog_service_level_objective";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ServiceLevelObjective resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ServiceLevelObjective to import
+  * @param importFromId The id of the existing ServiceLevelObjective that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/service_level_objective#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ServiceLevelObjective to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_service_level_objective", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

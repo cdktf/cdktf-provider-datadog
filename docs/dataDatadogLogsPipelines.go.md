@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelines(scope Construct, id *string, config DataDatadogLogsPipelinesConfig) DataDatadogLogsPipelines
 ```
@@ -278,13 +278,14 @@ func ResetIsReadOnly()
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataDatadogLogsPipelines resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.DataDatadogLogsPipelines_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datadatadoglogspipelines.DataDatadogLogsPipelines_IsTerraformDataSource(x interf
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
+
+datadatadoglogspipelines.DataDatadogLogsPipelines_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataDatadogLogsPipelines resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataDatadogLogsPipelines to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataDatadogLogsPipelines that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_pipelines#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelines.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataDatadogLogsPipelines to import is found.
 
 ---
 
@@ -562,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 &datadatadoglogspipelines.DataDatadogLogsPipelinesConfig {
 	Connection: interface{},
@@ -697,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelines.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 &datadatadoglogspipelines.DataDatadogLogsPipelinesLogsPipelines {
 
@@ -710,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspi
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 &datadatadoglogspipelines.DataDatadogLogsPipelinesLogsPipelinesFilter {
 
@@ -725,7 +770,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspi
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsPipelinesLogsPipelinesFilterList
 ```
@@ -857,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsPipelinesLogsPipelinesFilterOutputReference
 ```
@@ -1135,7 +1180,7 @@ func InternalValue() DataDatadogLogsPipelinesLogsPipelinesFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsPipelinesLogsPipelinesList
 ```
@@ -1267,7 +1312,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsPipelines.DataDatadogLogsPipelinesLogsPipelinesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogspipelines"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogspipelines"
 
 datadatadoglogspipelines.NewDataDatadogLogsPipelinesLogsPipelinesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsPipelinesLogsPipelinesOutputReference
 ```

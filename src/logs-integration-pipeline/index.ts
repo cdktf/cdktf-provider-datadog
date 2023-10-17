@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/logs_integration_pipeline
 // generated from terraform resource schema
 
@@ -36,6 +31,20 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "datadog_logs_integration_pipeline";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LogsIntegrationPipeline resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LogsIntegrationPipeline to import
+  * @param importFromId The id of the existing LogsIntegrationPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LogsIntegrationPipeline to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_integration_pipeline", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

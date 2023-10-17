@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexes(scope Construct, id *string, config DataDatadogLogsIndexesConfig) DataDatadogLogsIndexes
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataDatadogLogsIndexes resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.DataDatadogLogsIndexes_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.DataDatadogLogsIndexes_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ datadatadoglogsindexes.DataDatadogLogsIndexes_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.DataDatadogLogsIndexes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ datadatadoglogsindexes.DataDatadogLogsIndexes_IsTerraformDataSource(x interface{
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
+
+datadatadoglogsindexes.DataDatadogLogsIndexes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataDatadogLogsIndexes resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataDatadogLogsIndexes to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataDatadogLogsIndexes that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataDatadogLogsIndexes to import is found.
 
 ---
 
@@ -533,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 &datadatadoglogsindexes.DataDatadogLogsIndexesConfig {
 	Connection: interface{},
@@ -652,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 &datadatadoglogsindexes.DataDatadogLogsIndexesLogsIndexes {
 
@@ -665,7 +710,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsin
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 &datadatadoglogsindexes.DataDatadogLogsIndexesLogsIndexesExclusionFilter {
 
@@ -678,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsin
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 &datadatadoglogsindexes.DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter {
 
@@ -691,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsin
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 &datadatadoglogsindexes.DataDatadogLogsIndexesLogsIndexesFilter {
 
@@ -706,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsin
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList
 ```
@@ -838,7 +883,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference
 ```
@@ -1127,7 +1172,7 @@ func InternalValue() DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesExclusionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesExclusionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsIndexesLogsIndexesExclusionFilterList
 ```
@@ -1259,7 +1304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference
 ```
@@ -1559,7 +1604,7 @@ func InternalValue() DataDatadogLogsIndexesLogsIndexesExclusionFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsIndexesLogsIndexesFilterList
 ```
@@ -1691,7 +1736,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsIndexesLogsIndexesFilterOutputReference
 ```
@@ -1969,7 +2014,7 @@ func InternalValue() DataDatadogLogsIndexesLogsIndexesFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogLogsIndexesLogsIndexesList
 ```
@@ -2101,7 +2146,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoglogsindexes"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoglogsindexes"
 
 datadatadoglogsindexes.NewDataDatadogLogsIndexesLogsIndexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogLogsIndexesLogsIndexesOutputReference
 ```
