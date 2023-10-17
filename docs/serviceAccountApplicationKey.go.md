@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.NewServiceAccountApplicationKey(scope Construct, id *string, config ServiceAccountApplicationKeyConfig) ServiceAccountApplicationKey
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.ServiceAccountApplicationKey_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.ServiceAccountApplicationKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ serviceaccountapplicationkey.ServiceAccountApplicationKey_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/serviceaccountapplicationkey"
 
 serviceaccountapplicationkey.ServiceAccountApplicationKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceAccountApplicationKey.ServiceAccountApplicationKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/serviceaccountapplicationkey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/serviceaccountapplicationkey"
 
 &serviceaccountapplicationkey.ServiceAccountApplicationKeyConfig {
 	Connection: interface{},
