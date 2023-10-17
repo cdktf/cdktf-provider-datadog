@@ -61,6 +61,20 @@ export class Webhook extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "datadog_webhook";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a Webhook resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the Webhook to import
+  * @param importFromId The id of the existing Webhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Webhook to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_webhook", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

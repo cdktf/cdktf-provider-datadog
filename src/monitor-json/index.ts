@@ -43,6 +43,20 @@ export class MonitorJson extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "datadog_monitor_json";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a MonitorJson resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the MonitorJson to import
+  * @param importFromId The id of the existing MonitorJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/monitor_json#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the MonitorJson to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor_json", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

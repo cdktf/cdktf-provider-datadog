@@ -48,6 +48,20 @@ export class TeamLink extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "datadog_team_link";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a TeamLink resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the TeamLink to import
+  * @param importFromId The id of the existing TeamLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_link#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the TeamLink to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_team_link", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
