@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apiKey.ApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.NewApiKey(scope Construct, id *string, config ApiKeyConfig) ApiKey
 ```
@@ -332,7 +332,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.apiKey.ApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.apiKey.ApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ apikey.ApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.apiKey.ApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ apikey.ApiKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.apiKey.ApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 apikey.ApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.apiKey.ApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apikey"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apikey"
 
 &apikey.ApiKeyConfig {
 	Connection: interface{},

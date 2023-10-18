@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.NewMetricTagConfiguration(scope Construct, id *string, config MetricTagConfigurationConfig) MetricTagConfiguration
 ```
@@ -366,7 +366,7 @@ func ResetIncludePercentiles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ metrictagconfiguration.MetricTagConfiguration_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ metrictagconfiguration.MetricTagConfiguration_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 &metrictagconfiguration.MetricTagConfigurationAggregations {
 	Space: *string,
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 &metrictagconfiguration.MetricTagConfigurationConfig {
 	Connection: interface{},
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.NewMetricTagConfigurationAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MetricTagConfigurationAggregationsList
 ```
@@ -1183,7 +1183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.NewMetricTagConfigurationAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MetricTagConfigurationAggregationsOutputReference
 ```
