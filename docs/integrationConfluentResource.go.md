@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationconfluentresource"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationconfluentresource"
 
 integrationconfluentresource.NewIntegrationConfluentResource(scope Construct, id *string, config IntegrationConfluentResourceConfig) IntegrationConfluentResource
 ```
@@ -353,7 +353,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationconfluentresource"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationconfluentresource"
 
 integrationconfluentresource.IntegrationConfluentResource_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationconfluentresource"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationconfluentresource"
 
 integrationconfluentresource.IntegrationConfluentResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ integrationconfluentresource.IntegrationConfluentResource_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationconfluentresource"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationconfluentresource"
 
 integrationconfluentresource.IntegrationConfluentResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ integrationconfluentresource.IntegrationConfluentResource_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationconfluentresource"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationconfluentresource"
 
 integrationconfluentresource.IntegrationConfluentResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationConfluentResource.IntegrationConfluentResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationconfluentresource"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationconfluentresource"
 
 &integrationconfluentresource.IntegrationConfluentResourceConfig {
 	Connection: interface{},
