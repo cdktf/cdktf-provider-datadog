@@ -1,6 +1,6 @@
 # `datadog_team_permission_setting`
 
-Refer to the Terraform Registory for docs: [`datadog_team_permission_setting`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting).
+Refer to the Terraform Registory for docs: [`datadog_team_permission_setting`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/team_permission_setting).
 
 # `teamPermissionSetting` Submodule <a name="`teamPermissionSetting` Submodule" id="@cdktf/provider-datadog.teamPermissionSetting"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_team_permission_setting`](h
 
 ### TeamPermissionSetting <a name="TeamPermissionSetting" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.NewTeamPermissionSetting(scope Construct, id *string, config TeamPermissionSettingConfig) TeamPermissionSetting
 ```
@@ -332,7 +332,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ teampermissionsetting.TeamPermissionSetting_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ teampermissionsetting.TeamPermissionSetting_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the TeamPermissionSetting to i
 
 The id of the existing TeamPermissionSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 &teampermissionsetting.TeamPermissionSettingConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ Action *string
 
 The identifier for the action. Valid values are `manage_membership`, `edit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 
 ---
 
@@ -825,7 +825,7 @@ TeamId *string
 
 ID of the team the team permission setting is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 
 ---
 
@@ -839,7 +839,7 @@ Value *string
 
 The action value. Valid values are `admins`, `members`, `organization`, `user_access_manage`, `teams_manage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 
 ---
 

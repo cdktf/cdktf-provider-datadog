@@ -1,6 +1,6 @@
 # `datadog_synthetics_global_variable`
 
-Refer to the Terraform Registory for docs: [`datadog_synthetics_global_variable`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable).
+Refer to the Terraform Registory for docs: [`datadog_synthetics_global_variable`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable).
 
 # `syntheticsGlobalVariable` Submodule <a name="`syntheticsGlobalVariable` Submodule" id="@cdktf/provider-datadog.syntheticsGlobalVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_synthetics_global_variable`
 
 ### SyntheticsGlobalVariable <a name="SyntheticsGlobalVariable" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariable(scope Construct, id *string, config SyntheticsGlobalVariableConfig) SyntheticsGlobalVariable
 ```
@@ -414,7 +414,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ syntheticsglobalvariable.SyntheticsGlobalVariable_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.SyntheticsGlobalVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the SyntheticsGlobalVariable t
 
 The id of the existing SyntheticsGlobalVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,7 +923,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableConfig {
 	Connection: interface{},
@@ -937,9 +937,9 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalv
 	Value: *string,
 	Description: *string,
 	Id: *string,
-	Options: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions,
+	Options: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions,
 	ParseTestId: *string,
-	ParseTestOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions,
+	ParseTestOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions,
 	RestrictedRoles: *[]*string,
 	Secure: interface{},
 	Tags: *[]*string,
@@ -960,7 +960,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalv
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.name">Name</a></code> | <code>*string</code> | Synthetics global variable name. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.value">Value</a></code> | <code>*string</code> | The value of the global variable. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.description">Description</a></code> | <code>*string</code> | Description of the global variable. |
-| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}. |
+| <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.options">Options</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions">SyntheticsGlobalVariableOptions</a></code> | options block. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.parseTestId">ParseTestId</a></code> | <code>*string</code> | Id of the Synthetics test to use for a variable from test. |
 | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableConfig.property.parseTestOptions">ParseTestOptions</a></code> | <code><a href="#@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions">SyntheticsGlobalVariableParseTestOptions</a></code> | parse_test_options block. |
@@ -1050,7 +1050,7 @@ Name *string
 
 Synthetics global variable name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
 
 ---
 
@@ -1064,7 +1064,7 @@ Value *string
 
 The value of the global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 
@@ -1078,7 +1078,7 @@ Description *string
 
 Description of the global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
 
 ---
 
@@ -1090,7 +1090,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#id SyntheticsGlobalVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1107,7 @@ Options SyntheticsGlobalVariableOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
 
 ---
 
@@ -1121,7 +1121,7 @@ ParseTestId *string
 
 Id of the Synthetics test to use for a variable from test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
 
 ---
 
@@ -1135,7 +1135,7 @@ ParseTestOptions SyntheticsGlobalVariableParseTestOptions
 
 parse_test_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
 
 ---
 
@@ -1149,7 +1149,7 @@ RestrictedRoles *[]*string
 
 A list of role identifiers to associate with the Synthetics global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
 
 ---
 
@@ -1163,7 +1163,7 @@ Secure interface{}
 
 If set to true, the value of the global variable is hidden. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
 
 ---
 
@@ -1177,7 +1177,7 @@ Tags *[]*string
 
 A list of tags to associate with your synthetics global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
 
 ---
 
@@ -1186,10 +1186,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableOptions {
-	TotpParameters: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters,
+	TotpParameters: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters,
 }
 ```
 
@@ -1211,7 +1211,7 @@ TotpParameters SyntheticsGlobalVariableOptionsTotpParameters
 
 totp_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
 
 ---
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableOptionsTotpParameters {
 	Digits: *f64,
@@ -1247,7 +1247,7 @@ Digits *f64
 
 Number of digits for the OTP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
 
 ---
 
@@ -1261,7 +1261,7 @@ RefreshInterval *f64
 
 Interval for which to refresh the token (in seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
 
 ---
 
@@ -1270,13 +1270,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableParseTestOptions {
 	Type: *string,
 	Field: *string,
 	LocalVariableName: *string,
-	Parser: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParser,
+	Parser: github.com/cdktf/cdktf-provider-datadog-go/datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParser,
 }
 ```
 
@@ -1301,7 +1301,7 @@ Type *string
 
 Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `local_variable`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 
 ---
 
@@ -1315,7 +1315,7 @@ Field *string
 
 Required when type = `http_header`. Defines the header to use to extract the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
 
 ---
 
@@ -1329,7 +1329,7 @@ LocalVariableName *string
 
 When type is `local_variable`, name of the local variable to use to extract the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
 
 ---
 
@@ -1343,7 +1343,7 @@ Parser SyntheticsGlobalVariableParseTestOptionsParser
 
 parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
 
 ---
 
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 &syntheticsglobalvariable.SyntheticsGlobalVariableParseTestOptionsParser {
 	Type: *string,
@@ -1379,7 +1379,7 @@ Type *string
 
 Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
 
 ---
 
@@ -1393,7 +1393,7 @@ Value *string
 
 Value for the parser to use, required for type `json_path` or `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableOptionsOutputReference
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() SyntheticsGlobalVariableOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableOptionsTotpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableOptionsTotpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableOptionsTotpParametersOutputReference
 ```
@@ -1988,7 +1988,7 @@ func InternalValue() SyntheticsGlobalVariableOptionsTotpParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableParseTestOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableParseTestOptionsOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() SyntheticsGlobalVariableParseTestOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsGlobalVariable.SyntheticsGlobalVariableParseTestOptionsParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsglobalvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsglobalvariable"
 
 syntheticsglobalvariable.NewSyntheticsGlobalVariableParseTestOptionsParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsGlobalVariableParseTestOptionsParserOutputReference
 ```

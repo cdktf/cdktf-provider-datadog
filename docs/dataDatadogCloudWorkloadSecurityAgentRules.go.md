@@ -1,6 +1,6 @@
 # `data_datadog_cloud_workload_security_agent_rules`
 
-Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_security_agent_rules`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/cloud_workload_security_agent_rules).
+Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_security_agent_rules`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/cloud_workload_security_agent_rules).
 
 # `dataDatadogCloudWorkloadSecurityAgentRules` Submodule <a name="`dataDatadogCloudWorkloadSecurityAgentRules` Submodule" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_securit
 
 ### DataDatadogCloudWorkloadSecurityAgentRules <a name="DataDatadogCloudWorkloadSecurityAgentRules" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/cloud_workload_security_agent_rules datadog_cloud_workload_security_agent_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.NewDataDatadogCloudWorkloadSecurityAgentRules(scope Construct, id *string, config DataDatadogCloudWorkloadSecurityAgentRulesConfig) DataDatadogCloudWorkloadSecurityAgentRules
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgentRules_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgentRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgent
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgentRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgent
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgentRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDatadogCloudWorkloadSe
 
 The id of the existing DataDatadogCloudWorkloadSecurityAgentRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/cloud_workload_security_agent_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/cloud_workload_security_agent_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesAgentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 &datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgentRulesAgentRules {
 
@@ -591,7 +591,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudw
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 &datadatadogcloudworkloadsecurityagentrules.DataDatadogCloudWorkloadSecurityAgentRulesConfig {
 	Connection: interface{},
@@ -616,7 +616,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudw
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}. |
 
 ---
 
@@ -698,7 +698,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/cloud_workload_security_agent_rules#id DataDatadogCloudWorkloadSecurityAgentRules#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -712,7 +712,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.NewDataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules.DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogcloudworkloadsecurityagentrules"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogcloudworkloadsecurityagentrules"
 
 datadatadogcloudworkloadsecurityagentrules.NewDataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogCloudWorkloadSecurityAgentRulesAgentRulesOutputReference
 ```
