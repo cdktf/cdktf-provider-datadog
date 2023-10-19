@@ -1,6 +1,6 @@
 # `datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list).
+Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list).
 
 # `dashboardList` Submodule <a name="`dashboardList` Submodule" id="@cdktf/provider-datadog.dashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_dashboard_list`](https://re
 
 ### DashboardList <a name="DashboardList" id="@cdktf/provider-datadog.dashboardList.DashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardList.DashboardList.Initializer"></a>
 
@@ -441,7 +441,7 @@ The construct id used in the generated config for the DashboardList to import.
 
 The id of the existing DashboardList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +797,7 @@ public readonly name: string;
 
 The name of the Dashboard List.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list#name DashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list#name DashboardList#name}
 
 ---
 
@@ -811,7 +811,7 @@ public readonly dashItem: IResolvable | DashboardListDashItem[];
 
 dash_item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
 
 ---
 
@@ -844,7 +844,7 @@ public readonly dashId: string;
 
 The ID of the dashboard to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
 
 ---
 
@@ -858,7 +858,7 @@ public readonly type: string;
 
 The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/dashboard_list#type DashboardList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/dashboard_list#type DashboardList#type}
 
 ---
 

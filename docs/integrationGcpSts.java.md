@@ -1,6 +1,6 @@
 # `datadog_integration_gcp_sts`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_gcp_sts`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts).
+Refer to the Terraform Registory for docs: [`datadog_integration_gcp_sts`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts).
 
 # `integrationGcpSts` Submodule <a name="`integrationGcpSts` Submodule" id="@cdktf/provider-datadog.integrationGcpSts"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_gcp_sts`](https
 
 ### IntegrationGcpSts <a name="IntegrationGcpSts" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts datadog_integration_gcp_sts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer"></a>
 
@@ -50,7 +50,7 @@ IntegrationGcpSts.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer.parameter.clientEmail">clientEmail</a></code> | <code>java.lang.String</code> | Your service account email address. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer.parameter.automute">automute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Silence monitors for expected GCE instance shutdowns. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer.parameter.hostFilters">hostFilters</a></code> | <code>java.util.List<java.lang.String></code> | Your Host Filters. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer.parameter.isCspmEnabled">isCspmEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpSts.Initializer.parameter.isCspmEnabled">isCspmEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource, which may incur additional charges. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Your service account email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Silence monitors for expected GCE instance shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your Host Filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
 
 ---
 
@@ -148,9 +148,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource.
+When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource, which may incur additional charges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
 
 ---
 
@@ -548,7 +548,7 @@ The construct id used in the generated config for the IntegrationGcpSts to impor
 
 The id of the existing IntegrationGcpSts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ IntegrationGcpStsConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.clientEmail">clientEmail</a></code> | <code>java.lang.String</code> | Your service account email address. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.automute">automute</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Silence monitors for expected GCE instance shutdowns. |
 | <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.hostFilters">hostFilters</a></code> | <code>java.util.List<java.lang.String></code> | Your Host Filters. |
-| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isCspmEnabled">isCspmEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource. |
+| <code><a href="#@cdktf/provider-datadog.integrationGcpSts.IntegrationGcpStsConfig.property.isCspmEnabled">isCspmEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource, which may incur additional charges. |
 
 ---
 
@@ -979,7 +979,7 @@ public java.lang.String getClientEmail();
 
 Your service account email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#client_email IntegrationGcpSts#client_email}
 
 ---
 
@@ -993,7 +993,7 @@ public java.lang.Object getAutomute();
 
 Silence monitors for expected GCE instance shutdowns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#automute IntegrationGcpSts#automute}
 
 ---
 
@@ -1007,7 +1007,7 @@ public java.util.List<java.lang.String> getHostFilters();
 
 Your Host Filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#host_filters IntegrationGcpSts#host_filters}
 
 ---
 
@@ -1019,9 +1019,9 @@ public java.lang.Object getIsCspmEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource.
+When enabled, Datadog performs configuration checks across your Google Cloud environment by continuously scanning every resource, which may incur additional charges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_gcp_sts#is_cspm_enabled IntegrationGcpSts#is_cspm_enabled}
 
 ---
 

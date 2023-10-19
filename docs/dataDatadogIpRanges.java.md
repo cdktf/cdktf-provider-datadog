@@ -1,6 +1,6 @@
 # `data_datadog_ip_ranges`
 
-Refer to the Terraform Registory for docs: [`data_datadog_ip_ranges`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges).
+Refer to the Terraform Registory for docs: [`data_datadog_ip_ranges`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/ip_ranges).
 
 # `dataDatadogIpRanges` Submodule <a name="`dataDatadogIpRanges` Submodule" id="@cdktf/provider-datadog.dataDatadogIpRanges"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_ip_ranges`](https://re
 
 ### DataDatadogIpRanges <a name="DataDatadogIpRanges" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/ip_ranges datadog_ip_ranges}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatadogIpRanges to imp
 
 The id of the existing DataDatadogIpRanges that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -448,6 +448,8 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apiIpv6">apiIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv4">apmIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.apmIpv6">apmIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.globalIpv4">globalIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.globalIpv6">globalIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv4">logsIpv4</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.logsIpv6">logsIpv6</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -640,6 +642,26 @@ public java.util.List<java.lang.String> getApmIpv4();
 
 ```java
 public java.util.List<java.lang.String> getApmIpv6();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `globalIpv4`<sup>Required</sup> <a name="globalIpv4" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.globalIpv4"></a>
+
+```java
+public java.util.List<java.lang.String> getGlobalIpv4();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `globalIpv6`<sup>Required</sup> <a name="globalIpv6" id="@cdktf/provider-datadog.dataDatadogIpRanges.DataDatadogIpRanges.property.globalIpv6"></a>
+
+```java
+public java.util.List<java.lang.String> getGlobalIpv6();
 ```
 
 - *Type:* java.util.List<java.lang.String>

@@ -1,6 +1,6 @@
 # `data_datadog_synthetics_global_variable`
 
-Refer to the Terraform Registory for docs: [`data_datadog_synthetics_global_variable`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/synthetics_global_variable).
+Refer to the Terraform Registory for docs: [`data_datadog_synthetics_global_variable`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_global_variable).
 
 # `dataDatadogSyntheticsGlobalVariable` Submodule <a name="`dataDatadogSyntheticsGlobalVariable` Submodule" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_synthetics_global_vari
 
 ### DataDatadogSyntheticsGlobalVariable <a name="DataDatadogSyntheticsGlobalVariable" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsGloba
 
 The id of the existing DataDatadogSyntheticsGlobalVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ new DataDatadogSyntheticsGlobalVariableConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.name">Name</a></code> | <code>string</code> | The synthetics global variable name to search for. Must only match one global variable. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}. |
 
 ---
 
@@ -711,7 +711,7 @@ public string Name { get; set; }
 
 The synthetics global variable name to search for. Must only match one global variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
 
 ---
 
@@ -723,7 +723,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/data-sources/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_global_variable#id DataDatadogSyntheticsGlobalVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

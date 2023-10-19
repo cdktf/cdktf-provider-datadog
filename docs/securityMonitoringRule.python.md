@@ -1,6 +1,6 @@
 # `datadog_security_monitoring_rule`
 
-Refer to the Terraform Registory for docs: [`datadog_security_monitoring_rule`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule).
+Refer to the Terraform Registory for docs: [`datadog_security_monitoring_rule`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule).
 
 # `securityMonitoringRule` Submodule <a name="`securityMonitoringRule` Submodule" id="@cdktf/provider-datadog.securityMonitoringRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_security_monitoring_rule`](
 
 ### SecurityMonitoringRule <a name="SecurityMonitoringRule" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule datadog_security_monitoring_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer"></a>
 
@@ -54,15 +54,15 @@ securityMonitoringRule.SecurityMonitoringRule(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.case">case</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCase">SecurityMonitoringRuleCase</a>]]</code> | case block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.message">message</a></code> | <code>str</code> | Message for generated signals. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the rule. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is enabled. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is enabled. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilter">SecurityMonitoringRuleFilter</a>]]</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.hasExtendedTitle">has_extended_title</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the notifications include the triggering group-by values in their title. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.hasExtendedTitle">has_extended_title</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the notifications include the triggering group-by values in their title. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.options">options</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions">SecurityMonitoringRuleOptions</a></code> | options block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.query">query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQuery">SecurityMonitoringRuleQuery</a>]]</code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.signalQuery">signal_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQuery">SecurityMonitoringRuleSignalQuery</a>]]</code> | signal_query block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Tags for generated signals. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.type">type</a></code> | <code>str</code> | The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer.parameter.type">type</a></code> | <code>str</code> | The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`. Defaults to `"log_detection"`. |
 
 ---
 
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 case block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Message for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 
 ---
 
@@ -160,9 +160,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether the rule is enabled.
+Whether the rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
 
 ---
 
@@ -180,9 +180,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether the notifications include the triggering group-by values in their title.
+Whether the notifications include the triggering group-by values in their title. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +203,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 signal_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tags for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
 
 ---
 
@@ -241,9 +241,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`.
+The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`. Defaults to `"log_detection"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
 
 ---
 
@@ -612,7 +612,7 @@ Once a signal is generated, the signal will remain “open” if a case is match
 
 Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
 
 ---
 
@@ -624,7 +624,7 @@ A signal will “close” regardless of the query being matched once the time ex
 
 This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
 
 ---
 
@@ -634,9 +634,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise.
 
-The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
+The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
 
 ---
 
@@ -644,9 +644,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`.
+The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`. Defaults to `"threshold"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
 
 ---
 
@@ -658,7 +658,7 @@ A time window is specified to match when at least one of the cases matches true.
 
 This is a sliding window and evaluates in real time. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
 
 ---
 
@@ -668,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 impossible_travel_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
 
 ---
 
@@ -678,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 new_value_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
 
 ---
 
@@ -878,7 +878,7 @@ The construct id used in the generated config for the SecurityMonitoringRule to 
 
 The id of the existing SecurityMonitoringRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1373,7 +1373,7 @@ status: str
 
 Severity of the Security Signal. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#status SecurityMonitoringRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#status SecurityMonitoringRule#status}
 
 ---
 
@@ -1387,7 +1387,7 @@ condition: str
 
 A rule case contains logical operations (`>`,`>=`, `&&`, `||`) to determine if a signal should be generated based on the event counts in the previously defined queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#condition SecurityMonitoringRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#condition SecurityMonitoringRule#condition}
 
 ---
 
@@ -1401,7 +1401,7 @@ name: str
 
 Name of the case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 
 ---
 
@@ -1415,7 +1415,7 @@ notifications: typing.List[str]
 
 Notification targets for each rule case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#notifications SecurityMonitoringRule#notifications}
 
 ---
 
@@ -1463,15 +1463,15 @@ securityMonitoringRule.SecurityMonitoringRuleConfig(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.case">case</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCase">SecurityMonitoringRuleCase</a>]]</code> | case block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.message">message</a></code> | <code>str</code> | Message for generated signals. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.name">name</a></code> | <code>str</code> | The name of the rule. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is enabled. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the rule is enabled. Defaults to `true`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.filter">filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilter">SecurityMonitoringRuleFilter</a>]]</code> | filter block. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.hasExtendedTitle">has_extended_title</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the notifications include the triggering group-by values in their title. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.hasExtendedTitle">has_extended_title</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the notifications include the triggering group-by values in their title. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.options">options</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions">SecurityMonitoringRuleOptions</a></code> | options block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.query">query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQuery">SecurityMonitoringRuleQuery</a>]]</code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.signalQuery">signal_query</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQuery">SecurityMonitoringRuleSignalQuery</a>]]</code> | signal_query block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags for generated signals. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.type">type</a></code> | <code>str</code> | The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.property.type">type</a></code> | <code>str</code> | The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`. Defaults to `"log_detection"`. |
 
 ---
 
@@ -1555,7 +1555,7 @@ case: typing.Union[IResolvable, typing.List[SecurityMonitoringRuleCase]]
 
 case block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#case SecurityMonitoringRule#case}
 
 ---
 
@@ -1569,7 +1569,7 @@ message: str
 
 Message for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#message SecurityMonitoringRule#message}
 
 ---
 
@@ -1583,7 +1583,7 @@ name: str
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 
 ---
 
@@ -1595,9 +1595,9 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether the rule is enabled.
+Whether the rule is enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#enabled SecurityMonitoringRule#enabled}
 
 ---
 
@@ -1611,7 +1611,7 @@ filter: typing.Union[IResolvable, typing.List[SecurityMonitoringRuleFilter]]
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#filter SecurityMonitoringRule#filter}
 
 ---
 
@@ -1623,9 +1623,9 @@ has_extended_title: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether the notifications include the triggering group-by values in their title.
+Whether the notifications include the triggering group-by values in their title. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#has_extended_title SecurityMonitoringRule#has_extended_title}
 
 ---
 
@@ -1637,7 +1637,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#id SecurityMonitoringRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1654,7 +1654,7 @@ options: SecurityMonitoringRuleOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#options SecurityMonitoringRule#options}
 
 ---
 
@@ -1668,7 +1668,7 @@ query: typing.Union[IResolvable, typing.List[SecurityMonitoringRuleQuery]]
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
 
 ---
 
@@ -1682,7 +1682,7 @@ signal_query: typing.Union[IResolvable, typing.List[SecurityMonitoringRuleSignal
 
 signal_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#signal_query SecurityMonitoringRule#signal_query}
 
 ---
 
@@ -1696,7 +1696,7 @@ tags: typing.List[str]
 
 Tags for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#tags SecurityMonitoringRule#tags}
 
 ---
 
@@ -1708,9 +1708,9 @@ type: str
 
 - *Type:* str
 
-The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`.
+The rule type. Valid values are `log_detection`, `workload_security`, `signal_correlation`. Defaults to `"log_detection"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#type SecurityMonitoringRule#type}
 
 ---
 
@@ -1746,7 +1746,7 @@ action: str
 
 The type of filtering action. Valid values are `require`, `suppress`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#action SecurityMonitoringRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#action SecurityMonitoringRule#action}
 
 ---
 
@@ -1760,7 +1760,7 @@ query: str
 
 Query for selecting logs to apply the filtering action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
 
 ---
 
@@ -1789,7 +1789,7 @@ securityMonitoringRule.SecurityMonitoringRuleOptions(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.keepAlive">keep_alive</a></code> | <code>typing.Union[int, float]</code> | Once a signal is generated, the signal will remain “open” if a case is matched at least once within this keep alive window (in seconds). |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.maxSignalDuration">max_signal_duration</a></code> | <code>typing.Union[int, float]</code> | A signal will “close” regardless of the query being matched once the time exceeds the maximum duration (in seconds). |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.decreaseCriticalityBasedOnEnv">decrease_criticality_based_on_env</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.detectionMethod">detection_method</a></code> | <code>str</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.detectionMethod">detection_method</a></code> | <code>str</code> | The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`. Defaults to `"threshold"`. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.evaluationWindow">evaluation_window</a></code> | <code>typing.Union[int, float]</code> | A time window is specified to match when at least one of the cases matches true. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.impossibleTravelOptions">impossible_travel_options</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptions">SecurityMonitoringRuleOptionsImpossibleTravelOptions</a></code> | impossible_travel_options block. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.property.newValueOptions">new_value_options</a></code> | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions">SecurityMonitoringRuleOptionsNewValueOptions</a></code> | new_value_options block. |
@@ -1808,7 +1808,7 @@ Once a signal is generated, the signal will remain “open” if a case is match
 
 Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#keep_alive SecurityMonitoringRule#keep_alive}
 
 ---
 
@@ -1824,7 +1824,7 @@ A signal will “close” regardless of the query being matched once the time ex
 
 This time is calculated from the first seen timestamp. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`, `10800`, `21600`, `43200`, `86400`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#max_signal_duration SecurityMonitoringRule#max_signal_duration}
 
 ---
 
@@ -1838,9 +1838,9 @@ decrease_criticality_based_on_env: typing.Union[bool, IResolvable]
 
 If true, signals in non-production environments have a lower severity than what is defined by the rule case, which can reduce noise.
 
-The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
+The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#decrease_criticality_based_on_env SecurityMonitoringRule#decrease_criticality_based_on_env}
 
 ---
 
@@ -1852,9 +1852,9 @@ detection_method: str
 
 - *Type:* str
 
-The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`.
+The detection method. Valid values are `threshold`, `new_value`, `anomaly_detection`, `impossible_travel`, `hardcoded`, `third_party`. Defaults to `"threshold"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#detection_method SecurityMonitoringRule#detection_method}
 
 ---
 
@@ -1870,7 +1870,7 @@ A time window is specified to match when at least one of the cases matches true.
 
 This is a sliding window and evaluates in real time. Valid values are `0`, `60`, `300`, `600`, `900`, `1800`, `3600`, `7200`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#evaluation_window SecurityMonitoringRule#evaluation_window}
 
 ---
 
@@ -1884,7 +1884,7 @@ impossible_travel_options: SecurityMonitoringRuleOptionsImpossibleTravelOptions
 
 impossible_travel_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#impossible_travel_options SecurityMonitoringRule#impossible_travel_options}
 
 ---
 
@@ -1898,7 +1898,7 @@ new_value_options: SecurityMonitoringRuleOptionsNewValueOptions
 
 new_value_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#new_value_options SecurityMonitoringRule#new_value_options}
 
 ---
 
@@ -1932,9 +1932,9 @@ baseline_user_locations: typing.Union[bool, IResolvable]
 
 If true, signals are suppressed for the first 24 hours.
 
-During that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access.
+During that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
 
 ---
 
@@ -1960,7 +1960,7 @@ securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions(
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions.property.forgetAfter">forget_after</a></code> | <code>typing.Union[int, float]</code> | The duration in days after which a learned value is forgotten. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions.property.learningDuration">learning_duration</a></code> | <code>typing.Union[int, float]</code> | The duration in days during which values are learned, and after which signals will be generated for values that weren't learned. |
 | <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions.property.learningMethod">learning_method</a></code> | <code>str</code> | The learning method used to determine when signals should be generated for values that weren't learned. |
-| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions.property.learningThreshold">learning_threshold</a></code> | <code>typing.Union[int, float]</code> | A number of occurrences after which signals are generated for values that weren't learned. Valid values are `0`, `1`. |
+| <code><a href="#@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions.property.learningThreshold">learning_threshold</a></code> | <code>typing.Union[int, float]</code> | A number of occurrences after which signals are generated for values that weren't learned. |
 
 ---
 
@@ -1976,7 +1976,7 @@ The duration in days after which a learned value is forgotten.
 
 Valid values are `1`, `2`, `7`, `14`, `21`, `28`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
 
 ---
 
@@ -1990,9 +1990,9 @@ learning_duration: typing.Union[int, float]
 
 The duration in days during which values are learned, and after which signals will be generated for values that weren't learned.
 
-If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`.
+If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
 
 ---
 
@@ -2006,9 +2006,9 @@ learning_method: str
 
 The learning method used to determine when signals should be generated for values that weren't learned.
 
-Valid values are `duration`, `threshold`.
+Valid values are `duration`, `threshold`. Defaults to `"duration"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
 
 ---
 
@@ -2020,9 +2020,11 @@ learning_threshold: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-A number of occurrences after which signals are generated for values that weren't learned. Valid values are `0`, `1`.
+A number of occurrences after which signals are generated for values that weren't learned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
+Valid values are `0`, `1`. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
 
 ---
 
@@ -2070,7 +2072,7 @@ query: str
 
 Query to run on logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#query SecurityMonitoringRule#query}
 
 ---
 
@@ -2084,7 +2086,7 @@ agent_rule: typing.Union[IResolvable, typing.List[SecurityMonitoringRuleQueryAge
 
 agent_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#agent_rule SecurityMonitoringRule#agent_rule}
 
 ---
 
@@ -2098,9 +2100,9 @@ aggregation: str
 
 The aggregation type.
 
-For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
+For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`. Defaults to `"count"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
 
 ---
 
@@ -2114,7 +2116,7 @@ distinct_fields: typing.List[str]
 
 Field for which the cardinality is measured. Sent as an array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#distinct_fields SecurityMonitoringRule#distinct_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#distinct_fields SecurityMonitoringRule#distinct_fields}
 
 ---
 
@@ -2128,7 +2130,7 @@ group_by_fields: typing.List[str]
 
 Fields to group by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#group_by_fields SecurityMonitoringRule#group_by_fields}
 
 ---
 
@@ -2144,7 +2146,7 @@ The target field to aggregate over when using the `sum`, `max`, or `geo_data` ag
 
 **Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#metric SecurityMonitoringRule#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#metric SecurityMonitoringRule#metric}
 
 ---
 
@@ -2160,7 +2162,7 @@ Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`
 
 The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#metrics SecurityMonitoringRule#metrics}
 
 ---
 
@@ -2174,7 +2176,7 @@ name: str
 
 Name of the query. Not compatible with `new_value` aggregations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 
 ---
 
@@ -2210,7 +2212,7 @@ agent_rule_id: str
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#agent_rule_id SecurityMonitoringRule#agent_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#agent_rule_id SecurityMonitoringRule#agent_rule_id}
 
 ---
 
@@ -2224,7 +2226,7 @@ expression: str
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#expression SecurityMonitoringRule#expression}
 
 ---
 
@@ -2268,7 +2270,7 @@ rule_id: str
 
 Rule ID of the signal to correlate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#rule_id SecurityMonitoringRule#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#rule_id SecurityMonitoringRule#rule_id}
 
 ---
 
@@ -2282,9 +2284,9 @@ aggregation: str
 
 The aggregation type.
 
-For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
+For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`. Defaults to `"event_count"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#aggregation SecurityMonitoringRule#aggregation}
 
 ---
 
@@ -2298,7 +2300,7 @@ correlated_by_fields: typing.List[str]
 
 Fields to correlate by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#correlated_by_fields SecurityMonitoringRule#correlated_by_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#correlated_by_fields SecurityMonitoringRule#correlated_by_fields}
 
 ---
 
@@ -2312,9 +2314,9 @@ correlated_query_index: str
 
 Index of the rule query used to retrieve the correlated field.
 
-An empty string applies correlation on the non-projected per query attributes of the rule.
+An empty string applies correlation on the non-projected per query attributes of the rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#correlated_query_index SecurityMonitoringRule#correlated_query_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#correlated_query_index SecurityMonitoringRule#correlated_query_index}
 
 ---
 
@@ -2328,7 +2330,7 @@ default_rule_id: str
 
 Default Rule ID of the signal to correlate. This value is READ-ONLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#default_rule_id SecurityMonitoringRule#default_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#default_rule_id SecurityMonitoringRule#default_rule_id}
 
 ---
 
@@ -2342,7 +2344,7 @@ name: str
 
 Name of the query. Not compatible with `new_value` aggregations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#name SecurityMonitoringRule#name}
 
 ---
 
@@ -4326,9 +4328,9 @@ def put_impossible_travel_options(
 
 If true, signals are suppressed for the first 24 hours.
 
-During that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access.
+During that time, Datadog learns the user's regular access locations. This can be helpful to reduce noise and infer VPN usage or credentialed API access. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#baseline_user_locations SecurityMonitoringRule#baseline_user_locations}
 
 ---
 
@@ -4351,7 +4353,7 @@ The duration in days after which a learned value is forgotten.
 
 Valid values are `1`, `2`, `7`, `14`, `21`, `28`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#forget_after SecurityMonitoringRule#forget_after}
 
 ---
 
@@ -4361,9 +4363,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The duration in days during which values are learned, and after which signals will be generated for values that weren't learned.
 
-If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`.
+If set to 0, a signal will be generated for all new values after the first value is learned. Valid values are `0`, `1`, `7`. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#learning_duration SecurityMonitoringRule#learning_duration}
 
 ---
 
@@ -4373,9 +4375,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The learning method used to determine when signals should be generated for values that weren't learned.
 
-Valid values are `duration`, `threshold`.
+Valid values are `duration`, `threshold`. Defaults to `"duration"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#learning_method SecurityMonitoringRule#learning_method}
 
 ---
 
@@ -4383,9 +4385,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* typing.Union[int, float]
 
-A number of occurrences after which signals are generated for values that weren't learned. Valid values are `0`, `1`.
+A number of occurrences after which signals are generated for values that weren't learned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
+Valid values are `0`, `1`. Defaults to `0`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/security_monitoring_rule#learning_threshold SecurityMonitoringRule#learning_threshold}
 
 ---
 

@@ -1,6 +1,6 @@
 # `datadog_integration_pagerduty_service_object`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_pagerduty_service_object`](https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object).
+Refer to the Terraform Registory for docs: [`datadog_integration_pagerduty_service_object`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object).
 
 # `integrationPagerdutyServiceObject` Submodule <a name="`integrationPagerdutyServiceObject` Submodule" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_pagerduty_servi
 
 ### IntegrationPagerdutyServiceObject <a name="IntegrationPagerdutyServiceObject" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object datadog_integration_pagerduty_service_object}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the IntegrationPagerdutyServic
 
 The id of the existing IntegrationPagerdutyServiceObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerd
 | <code><a href="#@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObjectConfig.property.serviceKey">ServiceKey</a></code> | <code>*string</code> | Your Service name associated service key in PagerDuty. |
 | <code><a href="#@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObjectConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Your Service name in PagerDuty. |
-| <code><a href="#@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object#id IntegrationPagerdutyServiceObject#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object#id IntegrationPagerdutyServiceObject#id}. |
 
 ---
 
@@ -807,9 +807,9 @@ ServiceKey *string
 
 Your Service name associated service key in PagerDuty.
 
-Note: Since the Datadog API never returns service keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
+This key may also be referred to as an Integration Key or Routing Key in the Pagerduty Integration [documentation](https://www.pagerduty.com/docs/guides/datadog-integration-guide/), UI, and within the [Pagerduty Provider for Terraform](https://registry.terraform.io/providers/PagerDuty/pagerduty/latest/docs/resources/service_integration#integration_key) Note: Since the Datadog API never returns service keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object#service_key IntegrationPagerdutyServiceObject#service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object#service_key IntegrationPagerdutyServiceObject#service_key}
 
 ---
 
@@ -823,7 +823,7 @@ ServiceName *string
 
 Your Service name in PagerDuty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object#service_name IntegrationPagerdutyServiceObject#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object#service_name IntegrationPagerdutyServiceObject#service_name}
 
 ---
 
@@ -835,7 +835,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.30.0/docs/resources/integration_pagerduty_service_object#id IntegrationPagerdutyServiceObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/integration_pagerduty_service_object#id IntegrationPagerdutyServiceObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
