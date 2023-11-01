@@ -1,6 +1,6 @@
 # `data_datadog_integration_aws_logs_services`
 
-Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_logs_services`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/integration_aws_logs_services).
+Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_logs_services`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/integration_aws_logs_services).
 
 # `dataDatadogIntegrationAwsLogsServices` Submodule <a name="`dataDatadogIntegrationAwsLogsServices` Submodule" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_integration_aws_logs_s
 
 ### DataDatadogIntegrationAwsLogsServices <a name="DataDatadogIntegrationAwsLogsServices" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsL
 
 The id of the existing DataDatadogIntegrationAwsLogsServices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/integration_aws_logs_services#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/integration_aws_logs_services#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ new DataDatadogIntegrationAwsLogsServicesConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}. |
 
 ---
 
@@ -698,7 +698,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

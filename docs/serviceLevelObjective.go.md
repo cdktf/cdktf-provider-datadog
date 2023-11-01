@@ -1,6 +1,6 @@
 # `datadog_service_level_objective`
 
-Refer to the Terraform Registory for docs: [`datadog_service_level_objective`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective).
+Refer to the Terraform Registory for docs: [`datadog_service_level_objective`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective).
 
 # `serviceLevelObjective` Submodule <a name="`serviceLevelObjective` Submodule" id="@cdktf/provider-datadog.serviceLevelObjective"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_service_level_objective`](h
 
 ### ServiceLevelObjective <a name="ServiceLevelObjective" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective datadog_service_level_objective}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective datadog_service_level_objective}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjective(scope Construct, id *string, config ServiceLevelObjectiveConfig) ServiceLevelObjective
 ```
@@ -435,7 +435,7 @@ func ResetWarningThreshold()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ servicelevelobjective.ServiceLevelObjective_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ servicelevelobjective.ServiceLevelObjective_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjective.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.ServiceLevelObjective_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -524,7 +524,7 @@ The construct id used in the generated config for the ServiceLevelObjective to i
 
 The id of the existing ServiceLevelObjective that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1032,7 +1032,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjec
 	Groups: *[]*string,
 	Id: *string,
 	MonitorIds: *[]*f64,
-	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.serviceLevelObjective.ServiceLevelObjectiveQuery,
+	Query: github.com/cdktf/cdktf-provider-datadog-go/datadog.serviceLevelObjective.ServiceLevelObjectiveQuery,
 	Tags: *[]*string,
 	TargetThreshold: *f64,
 	Timeframe: *string,
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjec
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.description">Description</a></code> | <code>*string</code> | A description of this service level objective. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards). |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | A static set of groups to filter monitor-based SLOs. |
-| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.monitorIds">MonitorIds</a></code> | <code>*[]*f64</code> | A static set of monitor IDs to use as part of the SLO. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.query">Query</a></code> | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery">ServiceLevelObjectiveQuery</a></code> | query block. |
 | <code><a href="#@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | A list of tags to associate with your service level objective. |
@@ -1167,7 +1167,7 @@ Name *string
 
 Name of Datadog service level objective.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#name ServiceLevelObjective#name}
 
 ---
 
@@ -1181,7 +1181,7 @@ Thresholds interface{}
 
 thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#thresholds ServiceLevelObjective#thresholds}
 
 ---
 
@@ -1197,7 +1197,7 @@ The type of the service level objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/service-level-objectives/#create-a-slo-object). Valid values are `metric`, `monitor`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#type ServiceLevelObjective#type}
 
 ---
 
@@ -1211,7 +1211,7 @@ Description *string
 
 A description of this service level objective.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#description ServiceLevelObjective#description}
 
 ---
 
@@ -1225,7 +1225,7 @@ ForceDelete interface{}
 
 A boolean indicating whether this monitor can be deleted even if it's referenced by other resources (for example, dashboards).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#force_delete ServiceLevelObjective#force_delete}
 
 ---
 
@@ -1239,7 +1239,7 @@ Groups *[]*string
 
 A static set of groups to filter monitor-based SLOs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#groups ServiceLevelObjective#groups}
 
 ---
 
@@ -1251,7 +1251,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#id ServiceLevelObjective#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1268,7 +1268,7 @@ MonitorIds *[]*f64
 
 A static set of monitor IDs to use as part of the SLO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#monitor_ids ServiceLevelObjective#monitor_ids}
 
 ---
 
@@ -1282,7 +1282,7 @@ Query ServiceLevelObjectiveQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#query ServiceLevelObjective#query}
 
 ---
 
@@ -1298,7 +1298,7 @@ A list of tags to associate with your service level objective.
 
 This can help you categorize and filter service level objectives in the service level objectives page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#tags ServiceLevelObjective#tags}
 
 ---
 
@@ -1312,7 +1312,7 @@ TargetThreshold *f64
 
 The objective's target in `(0,100)`. This must match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#target_threshold ServiceLevelObjective#target_threshold}
 
 ---
 
@@ -1328,7 +1328,7 @@ The primary time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -1342,7 +1342,7 @@ Validate interface{}
 
 Whether or not to validate the SLO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#validate ServiceLevelObjective#validate}
 
 ---
 
@@ -1358,7 +1358,7 @@ The objective's warning value in `(0,100)`.
 
 This must be greater than the target value and match the corresponding thresholds of the primary time frame.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#warning_threshold ServiceLevelObjective#warning_threshold}
 
 ---
 
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveQuery {
 	Denominator: *string,
@@ -1394,7 +1394,7 @@ Denominator *string
 
 The sum of the `total` events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#denominator ServiceLevelObjective#denominator}
 
 ---
 
@@ -1408,7 +1408,7 @@ Numerator *string
 
 The sum of all the `good` events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#numerator ServiceLevelObjective#numerator}
 
 ---
 
@@ -1417,7 +1417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 &servicelevelobjective.ServiceLevelObjectiveThresholds {
 	Target: *f64,
@@ -1446,7 +1446,7 @@ Target *f64
 
 The objective's target in `(0,100)`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#target ServiceLevelObjective#target}
 
 ---
 
@@ -1462,7 +1462,7 @@ The time frame for the objective.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API documentation page. Valid values are `7d`, `30d`, `90d`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#timeframe ServiceLevelObjective#timeframe}
 
 ---
 
@@ -1476,7 +1476,7 @@ Warning *f64
 
 The objective's warning value in `(0,100)`. This must be greater than the target value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_level_objective#warning ServiceLevelObjective#warning}
 
 ---
 
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveQueryOutputReference
 ```
@@ -1780,7 +1780,7 @@ func InternalValue() ServiceLevelObjectiveQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveThresholdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceLevelObjectiveThresholdsList
 ```
@@ -1923,7 +1923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceLevelObjective.ServiceLevelObjectiveThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/servicelevelobjective"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/servicelevelobjective"
 
 servicelevelobjective.NewServiceLevelObjectiveThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceLevelObjectiveThresholdsOutputReference
 ```

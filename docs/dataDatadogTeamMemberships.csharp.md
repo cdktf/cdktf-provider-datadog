@@ -1,6 +1,6 @@
 # `data_datadog_team_memberships`
 
-Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships).
+Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships).
 
 # `dataDatadogTeamMemberships` Submodule <a name="`dataDatadogTeamMemberships` Submodule" id="@cdktf/provider-datadog.dataDatadogTeamMemberships"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](htt
 
 ### DataDatadogTeamMemberships <a name="DataDatadogTeamMemberships" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships datadog_team_memberships}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships datadog_team_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetExactMatch">ResetExactMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetFilterKeyword">ResetFilterKeyword</a></code> | *No description.* |
 
 ---
@@ -258,6 +259,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetExactMatch` <a name="ResetExactMatch" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetExactMatch"></a>
+
+```csharp
+private void ResetExactMatch()
+```
+
 ##### `ResetFilterKeyword` <a name="ResetFilterKeyword" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetFilterKeyword"></a>
 
 ```csharp
@@ -367,7 +374,7 @@ The construct id used in the generated config for the DataDatadogTeamMemberships
 
 The id of the existing DataDatadogTeamMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -397,8 +404,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.teamMemberships">TeamMemberships</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMembershipsList">DataDatadogTeamMembershipsTeamMembershipsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatchInput">ExactMatchInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.filterKeywordInput">FilterKeywordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.teamIdInput">TeamIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatch">ExactMatch</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.filterKeyword">FilterKeyword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.teamId">TeamId</a></code> | <code>string</code> | *No description.* |
 
@@ -546,6 +555,16 @@ public DataDatadogTeamMembershipsTeamMembershipsList TeamMemberships { get; }
 
 ---
 
+##### `ExactMatchInput`<sup>Optional</sup> <a name="ExactMatchInput" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatchInput"></a>
+
+```csharp
+public object ExactMatchInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `FilterKeywordInput`<sup>Optional</sup> <a name="FilterKeywordInput" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.filterKeywordInput"></a>
 
 ```csharp
@@ -563,6 +582,16 @@ public string TeamIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ExactMatch`<sup>Required</sup> <a name="ExactMatch" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatch"></a>
+
+```csharp
+public object ExactMatch { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -622,6 +651,7 @@ new DataDatadogTeamMembershipsConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string TeamId,
+    object ExactMatch = null,
     string FilterKeyword = null
 };
 ```
@@ -638,6 +668,7 @@ new DataDatadogTeamMembershipsConfig {
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.teamId">TeamId</a></code> | <code>string</code> | The team's identifier. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.exactMatch">ExactMatch</a></code> | <code>object</code> | When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.filterKeyword">FilterKeyword</a></code> | <code>string</code> | Search query, can be user email or name. |
 
 ---
@@ -722,7 +753,21 @@ public string TeamId { get; set; }
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+
+---
+
+##### `ExactMatch`<sup>Optional</sup> <a name="ExactMatch" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.exactMatch"></a>
+
+```csharp
+public object ExactMatch { get; set; }
+```
+
+- *Type:* object
+
+When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
 
 ---
 
@@ -736,7 +781,7 @@ public string FilterKeyword { get; set; }
 
 Search query, can be user email or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 
 ---
 

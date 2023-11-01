@@ -1,6 +1,6 @@
 # `datadog_webhook_custom_variable`
 
-Refer to the Terraform Registory for docs: [`datadog_webhook_custom_variable`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable).
+Refer to the Terraform Registory for docs: [`datadog_webhook_custom_variable`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable).
 
 # `webhookCustomVariable` Submodule <a name="`webhookCustomVariable` Submodule" id="@cdktf/provider-datadog.webhookCustomVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_webhook_custom_variable`](h
 
 ### WebhookCustomVariable <a name="WebhookCustomVariable" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhookcustomvariable"
 
 webhookcustomvariable.NewWebhookCustomVariable(scope Construct, id *string, config WebhookCustomVariableConfig) WebhookCustomVariable
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ webhookcustomvariable.WebhookCustomVariable_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ webhookcustomvariable.WebhookCustomVariable_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the WebhookCustomVariable to i
 
 The id of the existing WebhookCustomVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvariable"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhookcustomvariable"
 
 &webhookcustomvariable.WebhookCustomVariableConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhookcustomvari
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.isSecret">IsSecret</a></code> | <code>interface{}</code> | Whether the custom variable is secret or not. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.name">Name</a></code> | <code>*string</code> | The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`. |
 | <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.value">Value</a></code> | <code>*string</code> | The value of the custom variable. |
-| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}. |
+| <code><a href="#@cdktf/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}. |
 
 ---
 
@@ -831,7 +831,7 @@ IsSecret interface{}
 
 Whether the custom variable is secret or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 
 ---
 
@@ -845,7 +845,7 @@ Name *string
 
 The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 
 ---
 
@@ -859,7 +859,7 @@ Value *string
 
 The value of the custom variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 
 ---
 
@@ -871,7 +871,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/webhook_custom_variable#id WebhookCustomVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

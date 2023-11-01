@@ -1,6 +1,6 @@
 # `data_datadog_synthetics_test`
 
-Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_test).
+Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/synthetics_test).
 
 # `dataDatadogSyntheticsTest` Submodule <a name="`dataDatadogSyntheticsTest` Submodule" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_synthetics_test`](http
 
 ### DataDatadogSyntheticsTest <a name="DataDatadogSyntheticsTest" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/synthetics_test datadog_synthetics_test}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.NewDataDatadogSyntheticsTest(scope Construct, id *string, config DataDatadogSyntheticsTestConfig) DataDatadogSyntheticsTest
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datadatadogsyntheticstest.DataDatadogSyntheticsTest_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 datadatadogsyntheticstest.DataDatadogSyntheticsTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsTest 
 
 The id of the existing DataDatadogSyntheticsTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/synthetics_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticstest"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticstest"
 
 &datadatadogsyntheticstest.DataDatadogSyntheticsTestConfig {
 	Connection: interface{},
@@ -649,7 +649,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsynthe
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.testId">TestId</a></code> | <code>*string</code> | The synthetic test id or URL to search for. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_test#id DataDatadogSyntheticsTest#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogSyntheticsTest.DataDatadogSyntheticsTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/synthetics_test#id DataDatadogSyntheticsTest#id}. |
 
 ---
 
@@ -733,7 +733,7 @@ TestId *string
 
 The synthetic test id or URL to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_test#test_id DataDatadogSyntheticsTest#test_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/synthetics_test#test_id DataDatadogSyntheticsTest#test_id}
 
 ---
 
@@ -745,7 +745,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/synthetics_test#id DataDatadogSyntheticsTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/synthetics_test#id DataDatadogSyntheticsTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

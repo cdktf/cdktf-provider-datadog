@@ -1,6 +1,6 @@
 # `data_datadog_team_memberships`
 
-Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships).
+Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships).
 
 # `dataDatadogTeamMemberships` Submodule <a name="`dataDatadogTeamMemberships` Submodule" id="@cdktf/provider-datadog.dataDatadogTeamMemberships"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_team_memberships`](htt
 
 ### DataDatadogTeamMemberships <a name="DataDatadogTeamMemberships" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships datadog_team_memberships}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships datadog_team_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.NewDataDatadogTeamMemberships(scope Construct, id *string, config DataDatadogTeamMembershipsConfig) DataDatadogTeamMemberships
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetExactMatch">ResetExactMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetFilterKeyword">ResetFilterKeyword</a></code> | *No description.* |
 
 ---
@@ -258,6 +259,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetExactMatch` <a name="ResetExactMatch" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetExactMatch"></a>
+
+```go
+func ResetExactMatch()
+```
+
 ##### `ResetFilterKeyword` <a name="ResetFilterKeyword" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.resetFilterKeyword"></a>
 
 ```go
@@ -278,7 +285,7 @@ func ResetFilterKeyword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +331,7 @@ datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +345,7 @@ datadatadogteammemberships.DataDatadogTeamMemberships_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.DataDatadogTeamMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +374,7 @@ The construct id used in the generated config for the DataDatadogTeamMemberships
 
 The id of the existing DataDatadogTeamMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -397,8 +404,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.teamMemberships">TeamMemberships</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMembershipsList">DataDatadogTeamMembershipsTeamMembershipsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatchInput">ExactMatchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.filterKeywordInput">FilterKeywordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.teamIdInput">TeamIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatch">ExactMatch</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.filterKeyword">FilterKeyword</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.teamId">TeamId</a></code> | <code>*string</code> | *No description.* |
 
@@ -546,6 +555,16 @@ func TeamMemberships() DataDatadogTeamMembershipsTeamMembershipsList
 
 ---
 
+##### `ExactMatchInput`<sup>Optional</sup> <a name="ExactMatchInput" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatchInput"></a>
+
+```go
+func ExactMatchInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `FilterKeywordInput`<sup>Optional</sup> <a name="FilterKeywordInput" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.filterKeywordInput"></a>
 
 ```go
@@ -563,6 +582,16 @@ func TeamIdInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ExactMatch`<sup>Required</sup> <a name="ExactMatch" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMemberships.property.exactMatch"></a>
+
+```go
+func ExactMatch() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -611,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 &datadatadogteammemberships.DataDatadogTeamMembershipsConfig {
 	Connection: interface{},
@@ -622,6 +651,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteamme
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	TeamId: *string,
+	ExactMatch: interface{},
 	FilterKeyword: *string,
 }
 ```
@@ -638,6 +668,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteamme
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.teamId">TeamId</a></code> | <code>*string</code> | The team's identifier. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.exactMatch">ExactMatch</a></code> | <code>interface{}</code> | When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`. |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.filterKeyword">FilterKeyword</a></code> | <code>*string</code> | Search query, can be user email or name. |
 
 ---
@@ -722,7 +753,21 @@ TeamId *string
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+
+---
+
+##### `ExactMatch`<sup>Optional</sup> <a name="ExactMatch" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsConfig.property.exactMatch"></a>
+
+```go
+ExactMatch interface{}
+```
+
+- *Type:* interface{}
+
+When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
 
 ---
 
@@ -736,7 +781,7 @@ FilterKeyword *string
 
 Search query, can be user email or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
 
 ---
 
@@ -745,7 +790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 &datadatadogteammemberships.DataDatadogTeamMembershipsTeamMemberships {
 
@@ -760,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteamme
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMembershipsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.NewDataDatadogTeamMembershipsTeamMembershipsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogTeamMembershipsTeamMembershipsList
 ```
@@ -892,7 +937,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogTeamMemberships.DataDatadogTeamMembershipsTeamMembershipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogteammemberships"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogteammemberships"
 
 datadatadogteammemberships.NewDataDatadogTeamMembershipsTeamMembershipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogTeamMembershipsTeamMembershipsOutputReference
 ```
