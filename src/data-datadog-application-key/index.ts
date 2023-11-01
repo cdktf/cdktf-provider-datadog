@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/application_key
+// https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/application_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogApplicationKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * Id for Application Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/application_key#id DataDatadogApplicationKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataDatadogApplicationKeyConfig extends cdktf.TerraformMetaArgu
   /**
   * Name for Application Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/application_key#name DataDatadogApplicationKey#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/application_key datadog_application_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/application_key datadog_application_key}
 */
 export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
 
@@ -46,7 +46,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataDatadogApplicationKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogApplicationKey to import
-  * @param importFromId The id of the existing DataDatadogApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/application_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogApplicationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/application_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogApplicationKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/application_key datadog_application_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/application_key datadog_application_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class DataDatadogApplicationKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_application_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

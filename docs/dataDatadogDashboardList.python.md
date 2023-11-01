@@ -1,6 +1,6 @@
 # `data_datadog_dashboard_list`
 
-Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/dashboard_list).
+Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/dashboard_list).
 
 # `dataDatadogDashboardList` Submodule <a name="`dataDatadogDashboardList` Submodule" id="@cdktf/provider-datadog.dataDatadogDashboardList"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_datadog_dashboard_list`](https
 
 ### DataDatadogDashboardList <a name="DataDatadogDashboardList" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogDashboardList.DataDatadogDashboardList.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 A dashboard list name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
 
 ---
 
@@ -460,7 +460,7 @@ The construct id used in the generated config for the DataDatadogDashboardList t
 
 The id of the existing DataDatadogDashboardList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/dashboard_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/dashboard_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ name: str
 
 A dashboard list name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.31.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/dashboard_list#name DataDatadogDashboardList#name}
 
 ---
 
