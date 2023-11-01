@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogpermissions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogpermissions"
 
 datadatadogpermissions.NewDataDatadogPermissions(scope Construct, id *string, config DataDatadogPermissionsConfig) DataDatadogPermissions
 ```
@@ -285,7 +285,7 @@ func ResetIncludeRestricted()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogpermissions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogpermissions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datadatadogpermissions.DataDatadogPermissions_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogpermissions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datadatadogpermissions.DataDatadogPermissions_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogpermissions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogpermissions"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogpermissions"
 
 &datadatadogpermissions.DataDatadogPermissionsConfig {
 	Connection: interface{},
