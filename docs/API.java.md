@@ -2,6 +2,8 @@
 
 The following submodules are available:
 - [apiKey](./apiKey.java.md)
+- [apmRetentionFilter](./apmRetentionFilter.java.md)
+- [apmRetentionFilterOrder](./apmRetentionFilterOrder.java.md)
 - [applicationKey](./applicationKey.java.md)
 - [authnMapping](./authnMapping.java.md)
 - [childOrganization](./childOrganization.java.md)
@@ -11,6 +13,7 @@ The following submodules are available:
 - [dashboardJson](./dashboardJson.java.md)
 - [dashboardList](./dashboardList.java.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.java.md)
+- [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.java.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.java.md)
 - [dataDatadogCloudWorkloadSecurityAgentRules](./dataDatadogCloudWorkloadSecurityAgentRules.java.md)
 - [dataDatadogDashboard](./dataDatadogDashboard.java.md)

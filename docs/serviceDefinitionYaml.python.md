@@ -1,6 +1,6 @@
 # `datadog_service_definition_yaml`
 
-Refer to the Terraform Registory for docs: [`datadog_service_definition_yaml`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml).
+Refer to the Terraform Registory for docs: [`datadog_service_definition_yaml`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml).
 
 # `serviceDefinitionYaml` Submodule <a name="`serviceDefinitionYaml` Submodule" id="@cdktf/provider-datadog.serviceDefinitionYaml"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_service_definition_yaml`](h
 
 ### ServiceDefinitionYaml <a name="ServiceDefinitionYaml" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer"></a>
 
@@ -42,7 +42,7 @@ serviceDefinitionYaml.ServiceDefinitionYaml(
 | <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer.parameter.serviceDefinition">service_definition</a></code> | <code>str</code> | The YAML/JSON formatted definition of the service. |
-| <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The YAML/JSON formatted definition of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -549,7 +549,7 @@ The construct id used in the generated config for the ServiceDefinitionYaml to i
 
 The id of the existing ServiceDefinitionYaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ serviceDefinitionYaml.ServiceDefinitionYamlConfig(
 | <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.property.serviceDefinition">service_definition</a></code> | <code>str</code> | The YAML/JSON formatted definition of the service. |
-| <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}. |
+| <code><a href="#@cdktf/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}. |
 
 ---
 
@@ -904,7 +904,7 @@ service_definition: str
 
 The YAML/JSON formatted definition of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
 
 ---
 
@@ -916,7 +916,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -2,6 +2,8 @@
 
 The following submodules are available:
 - [apiKey](./apiKey.go.md)
+- [apmRetentionFilter](./apmRetentionFilter.go.md)
+- [apmRetentionFilterOrder](./apmRetentionFilterOrder.go.md)
 - [applicationKey](./applicationKey.go.md)
 - [authnMapping](./authnMapping.go.md)
 - [childOrganization](./childOrganization.go.md)
@@ -11,6 +13,7 @@ The following submodules are available:
 - [dashboardJson](./dashboardJson.go.md)
 - [dashboardList](./dashboardList.go.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.go.md)
+- [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.go.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.go.md)
 - [dataDatadogCloudWorkloadSecurityAgentRules](./dataDatadogCloudWorkloadSecurityAgentRules.go.md)
 - [dataDatadogDashboard](./dataDatadogDashboard.go.md)

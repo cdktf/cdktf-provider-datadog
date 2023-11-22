@@ -1,6 +1,6 @@
 # `datadog_logs_integration_pipeline`
 
-Refer to the Terraform Registory for docs: [`datadog_logs_integration_pipeline`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/logs_integration_pipeline).
+Refer to the Terraform Registory for docs: [`datadog_logs_integration_pipeline`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_integration_pipeline).
 
 # `logsIntegrationPipeline` Submodule <a name="`logsIntegrationPipeline` Submodule" id="@cdktf/provider-datadog.logsIntegrationPipeline"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_logs_integration_pipeline`]
 
 ### LogsIntegrationPipeline <a name="LogsIntegrationPipeline" id="@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the LogsIntegrationPipeline to
 
 The id of the existing LogsIntegrationPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -695,7 +695,7 @@ const logsIntegrationPipelineConfig: logsIntegrationPipeline.LogsIntegrationPipe
 | <code><a href="#@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}. |
 | <code><a href="#@cdktf/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Boolean value to enable your pipeline. |
 
 ---
@@ -778,7 +778,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -795,7 +795,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
 
 ---
 

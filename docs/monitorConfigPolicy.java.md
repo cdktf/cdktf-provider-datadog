@@ -1,6 +1,6 @@
 # `datadog_monitor_config_policy`
 
-Refer to the Terraform Registory for docs: [`datadog_monitor_config_policy`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy).
+Refer to the Terraform Registory for docs: [`datadog_monitor_config_policy`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy).
 
 # `monitorConfigPolicy` Submodule <a name="`monitorConfigPolicy` Submodule" id="@cdktf/provider-datadog.monitorConfigPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_monitor_config_policy`](htt
 
 ### MonitorConfigPolicy <a name="MonitorConfigPolicy" id="@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer"></a>
 
@@ -45,7 +45,7 @@ MonitorConfigPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.policyType">policyType</a></code> | <code>java.lang.String</code> | The monitor config policy type Valid values are `tag`. |
-| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
+| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer.parameter.tagPolicy">tagPolicy</a></code> | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy">MonitorConfigPolicyTagPolicy</a></code> | tag_policy block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The monitor config policy type Valid values are `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 tag_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
 
 ---
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the MonitorConfigPolicy to imp
 
 The id of the existing MonitorConfigPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ MonitorConfigPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.policyType">policyType</a></code> | <code>java.lang.String</code> | The monitor config policy type Valid values are `tag`. |
-| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
+| <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}. |
 | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.property.tagPolicy">tagPolicy</a></code> | <code><a href="#@cdktf/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy">MonitorConfigPolicyTagPolicy</a></code> | tag_policy block. |
 
 ---
@@ -924,7 +924,7 @@ public java.lang.String getPolicyType();
 
 The monitor config policy type Valid values are `tag`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
 
 ---
 
@@ -936,7 +936,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -953,7 +953,7 @@ public MonitorConfigPolicyTagPolicy getTagPolicy();
 
 tag_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.String getTagKey();
 
 The key of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.lang.Object getTagKeyRequired();
 
 If a tag key is required for monitor creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.util.List<java.lang.String> getValidTagValues();
 
 Valid values for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
 
 ---
 
