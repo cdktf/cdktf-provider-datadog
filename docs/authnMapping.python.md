@@ -1,6 +1,6 @@
 # `datadog_authn_mapping`
 
-Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping).
+Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping).
 
 # `authnMapping` Submodule <a name="`authnMapping` Submodule" id="@cdktf/provider-datadog.authnMapping"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_authn_mapping`](https://reg
 
 ### AuthnMapping <a name="AuthnMapping" id="@cdktf/provider-datadog.authnMapping.AuthnMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping datadog_authn_mapping}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping datadog_authn_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer"></a>
 
@@ -46,7 +46,7 @@ authnMapping.AuthnMapping(
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.key">key</a></code> | <code>str</code> | Identity provider key. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.role">role</a></code> | <code>str</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.value">value</a></code> | <code>str</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#key AuthnMapping#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of a role to attach to all users with the corresponding key and value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#role AuthnMapping#role}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -573,7 +573,7 @@ The construct id used in the generated config for the AuthnMapping to import.
 
 The id of the existing AuthnMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -892,7 +892,7 @@ authnMapping.AuthnMappingConfig(
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.key">key</a></code> | <code>str</code> | Identity provider key. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.role">role</a></code> | <code>str</code> | The ID of a role to attach to all users with the corresponding key and value. |
 | <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.value">value</a></code> | <code>str</code> | Identity provider value. |
-| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
+| <code><a href="#@cdktf/provider-datadog.authnMapping.AuthnMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#id AuthnMapping#id}. |
 
 ---
 
@@ -976,7 +976,7 @@ key: str
 
 Identity provider key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#key AuthnMapping#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#key AuthnMapping#key}
 
 ---
 
@@ -990,7 +990,7 @@ role: str
 
 The ID of a role to attach to all users with the corresponding key and value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#role AuthnMapping#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#role AuthnMapping#role}
 
 ---
 
@@ -1004,7 +1004,7 @@ value: str
 
 Identity provider value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#value AuthnMapping#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#value AuthnMapping#value}
 
 ---
 
@@ -1016,7 +1016,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/authn_mapping#id AuthnMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/authn_mapping#id AuthnMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

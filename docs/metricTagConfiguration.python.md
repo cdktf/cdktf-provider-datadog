@@ -1,6 +1,6 @@
 # `datadog_metric_tag_configuration`
 
-Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration).
+Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration).
 
 # `metricTagConfiguration` Submodule <a name="`metricTagConfiguration` Submodule" id="@cdktf/provider-datadog.metricTagConfiguration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](
 
 ### MetricTagConfiguration <a name="MetricTagConfiguration" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer"></a>
 
@@ -29,6 +29,7 @@ metricTagConfiguration.MetricTagConfiguration(
   metric_type: str,
   tags: typing.List[str],
   aggregations: typing.Union[IResolvable, typing.List[MetricTagConfigurationAggregations]] = None,
+  exclude_tags_mode: typing.Union[bool, IResolvable] = None,
   id: str = None,
   include_percentiles: typing.Union[bool, IResolvable] = None
 )
@@ -49,7 +50,8 @@ metricTagConfiguration.MetricTagConfiguration(
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.metricType">metric_type</a></code> | <code>str</code> | The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag keys that will be queryable for your metric. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.aggregations">aggregations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a>]]</code> | aggregations block. |
-| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.excludeTagsMode">exclude_tags_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Toggle to include/exclude tags as queryable for your metric. |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.includePercentiles">include_percentiles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Toggle to include/exclude percentiles for a distribution metric. |
 
 ---
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The metric name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tag keys that will be queryable for your metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
 
 ---
 
@@ -150,7 +152,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 aggregations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+
+---
+
+##### `exclude_tags_mode`<sup>Optional</sup> <a name="exclude_tags_mode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer.parameter.excludeTagsMode"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Toggle to include/exclude tags as queryable for your metric.
+
+Can only be applied to metrics that have one or more tags configured. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
 
 ---
 
@@ -158,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +187,7 @@ Toggle to include/exclude percentiles for a distribution metric.
 
 Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
 
 ---
 
@@ -202,6 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.putAggregations">put_aggregations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetAggregations">reset_aggregations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetExcludeTagsMode">reset_exclude_tags_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetIncludePercentiles">reset_include_percentiles</a></code> | *No description.* |
 
@@ -502,6 +517,12 @@ def put_aggregations(
 def reset_aggregations() -> None
 ```
 
+##### `reset_exclude_tags_mode` <a name="reset_exclude_tags_mode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetExcludeTagsMode"></a>
+
+```python
+def reset_exclude_tags_mode() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetId"></a>
 
 ```python
@@ -628,7 +649,7 @@ The construct id used in the generated config for the MetricTagConfiguration to 
 
 The id of the existing MetricTagConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -660,11 +681,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.aggregations">aggregations</a></code> | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsList">MetricTagConfigurationAggregationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.aggregationsInput">aggregations_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsModeInput">exclude_tags_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.includePercentilesInput">include_percentiles_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.metricNameInput">metric_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.metricTypeInput">metric_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsMode">exclude_tags_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.includePercentiles">include_percentiles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.metricName">metric_name</a></code> | <code>str</code> | *No description.* |
@@ -835,6 +858,16 @@ aggregations_input: typing.Union[IResolvable, typing.List[MetricTagConfiguration
 
 ---
 
+##### `exclude_tags_mode_input`<sup>Optional</sup> <a name="exclude_tags_mode_input" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsModeInput"></a>
+
+```python
+exclude_tags_mode_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.idInput"></a>
 
 ```python
@@ -882,6 +915,16 @@ tags_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `exclude_tags_mode`<sup>Required</sup> <a name="exclude_tags_mode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsMode"></a>
+
+```python
+exclude_tags_mode: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -987,7 +1030,7 @@ space: str
 
 A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
 
 ---
 
@@ -1001,7 +1044,7 @@ time: str
 
 A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
 
 ---
 
@@ -1024,6 +1067,7 @@ metricTagConfiguration.MetricTagConfigurationConfig(
   metric_type: str,
   tags: typing.List[str],
   aggregations: typing.Union[IResolvable, typing.List[MetricTagConfigurationAggregations]] = None,
+  exclude_tags_mode: typing.Union[bool, IResolvable] = None,
   id: str = None,
   include_percentiles: typing.Union[bool, IResolvable] = None
 )
@@ -1044,7 +1088,8 @@ metricTagConfiguration.MetricTagConfigurationConfig(
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.metricType">metric_type</a></code> | <code>str</code> | The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag keys that will be queryable for your metric. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.aggregations">aggregations</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations">MetricTagConfigurationAggregations</a>]]</code> | aggregations block. |
-| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.excludeTagsMode">exclude_tags_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Toggle to include/exclude tags as queryable for your metric. |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.includePercentiles">include_percentiles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Toggle to include/exclude percentiles for a distribution metric. |
 
 ---
@@ -1129,7 +1174,7 @@ metric_name: str
 
 The metric name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
 
 ---
 
@@ -1143,7 +1188,7 @@ metric_type: str
 
 The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
 
 ---
 
@@ -1157,7 +1202,7 @@ tags: typing.List[str]
 
 A list of tag keys that will be queryable for your metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
 
 ---
 
@@ -1171,7 +1216,23 @@ aggregations: typing.Union[IResolvable, typing.List[MetricTagConfigurationAggreg
 
 aggregations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+
+---
+
+##### `exclude_tags_mode`<sup>Optional</sup> <a name="exclude_tags_mode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.excludeTagsMode"></a>
+
+```python
+exclude_tags_mode: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Toggle to include/exclude tags as queryable for your metric.
+
+Can only be applied to metrics that have one or more tags configured. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
 
 ---
 
@@ -1183,7 +1244,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1202,7 +1263,7 @@ Toggle to include/exclude percentiles for a distribution metric.
 
 Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
 
 ---
 

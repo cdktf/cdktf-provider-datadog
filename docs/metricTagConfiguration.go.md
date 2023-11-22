@@ -1,6 +1,6 @@
 # `datadog_metric_tag_configuration`
 
-Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration).
+Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration).
 
 # `metricTagConfiguration` Submodule <a name="`metricTagConfiguration` Submodule" id="@cdktf/provider-datadog.metricTagConfiguration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](
 
 ### MetricTagConfiguration <a name="MetricTagConfiguration" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.NewMetricTagConfiguration(scope Construct, id *string, config MetricTagConfigurationConfig) MetricTagConfiguration
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.putAggregations">PutAggregations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetAggregations">ResetAggregations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetExcludeTagsMode">ResetExcludeTagsMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetIncludePercentiles">ResetIncludePercentiles</a></code> | *No description.* |
 
@@ -340,6 +341,12 @@ func PutAggregations(value interface{})
 func ResetAggregations()
 ```
 
+##### `ResetExcludeTagsMode` <a name="ResetExcludeTagsMode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetExcludeTagsMode"></a>
+
+```go
+func ResetExcludeTagsMode()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.resetId"></a>
 
 ```go
@@ -366,7 +373,7 @@ func ResetIncludePercentiles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +419,7 @@ metrictagconfiguration.MetricTagConfiguration_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +433,7 @@ metrictagconfiguration.MetricTagConfiguration_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.MetricTagConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -455,7 +462,7 @@ The construct id used in the generated config for the MetricTagConfiguration to 
 
 The id of the existing MetricTagConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -487,11 +494,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.aggregations">Aggregations</a></code> | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsList">MetricTagConfigurationAggregationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.aggregationsInput">AggregationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsModeInput">ExcludeTagsModeInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.includePercentilesInput">IncludePercentilesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.metricNameInput">MetricNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.metricTypeInput">MetricTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsMode">ExcludeTagsMode</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.includePercentiles">IncludePercentiles</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.metricName">MetricName</a></code> | <code>*string</code> | *No description.* |
@@ -662,6 +671,16 @@ func AggregationsInput() interface{}
 
 ---
 
+##### `ExcludeTagsModeInput`<sup>Optional</sup> <a name="ExcludeTagsModeInput" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsModeInput"></a>
+
+```go
+func ExcludeTagsModeInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.idInput"></a>
 
 ```go
@@ -709,6 +728,16 @@ func TagsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `ExcludeTagsMode`<sup>Required</sup> <a name="ExcludeTagsMode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfiguration.property.excludeTagsMode"></a>
+
+```go
+func ExcludeTagsMode() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -787,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 &metrictagconfiguration.MetricTagConfigurationAggregations {
 	Space: *string,
@@ -814,7 +843,7 @@ Space *string
 
 A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
 
 ---
 
@@ -828,7 +857,7 @@ Time *string
 
 A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
 
 ---
 
@@ -837,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 &metrictagconfiguration.MetricTagConfigurationConfig {
 	Connection: interface{},
@@ -851,6 +880,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfigur
 	MetricType: *string,
 	Tags: *[]*string,
 	Aggregations: interface{},
+	ExcludeTagsMode: interface{},
 	Id: *string,
 	IncludePercentiles: interface{},
 }
@@ -871,7 +901,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfigur
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.metricType">MetricType</a></code> | <code>*string</code> | The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | A list of tag keys that will be queryable for your metric. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.aggregations">Aggregations</a></code> | <code>interface{}</code> | aggregations block. |
-| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}. |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.excludeTagsMode">ExcludeTagsMode</a></code> | <code>interface{}</code> | Toggle to include/exclude tags as queryable for your metric. |
+| <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}. |
 | <code><a href="#@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.includePercentiles">IncludePercentiles</a></code> | <code>interface{}</code> | Toggle to include/exclude percentiles for a distribution metric. |
 
 ---
@@ -956,7 +987,7 @@ MetricName *string
 
 The metric name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
 
 ---
 
@@ -970,7 +1001,7 @@ MetricType *string
 
 The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
 
 ---
 
@@ -984,7 +1015,7 @@ Tags *[]*string
 
 A list of tag keys that will be queryable for your metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
 
 ---
 
@@ -998,7 +1029,23 @@ Aggregations interface{}
 
 aggregations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+
+---
+
+##### `ExcludeTagsMode`<sup>Optional</sup> <a name="ExcludeTagsMode" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationConfig.property.excludeTagsMode"></a>
+
+```go
+ExcludeTagsMode interface{}
+```
+
+- *Type:* interface{}
+
+Toggle to include/exclude tags as queryable for your metric.
+
+Can only be applied to metrics that have one or more tags configured. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
 
 ---
 
@@ -1010,7 +1057,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1076,7 @@ Toggle to include/exclude percentiles for a distribution metric.
 
 Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
 
 ---
 
@@ -1040,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.NewMetricTagConfigurationAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MetricTagConfigurationAggregationsList
 ```
@@ -1183,7 +1230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricTagConfiguration.MetricTagConfigurationAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/metrictagconfiguration"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/metrictagconfiguration"
 
 metrictagconfiguration.NewMetricTagConfigurationAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MetricTagConfigurationAggregationsOutputReference
 ```

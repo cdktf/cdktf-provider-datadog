@@ -2,6 +2,8 @@
 
 The following submodules are available:
 - [apiKey](./apiKey.python.md)
+- [apmRetentionFilter](./apmRetentionFilter.python.md)
+- [apmRetentionFilterOrder](./apmRetentionFilterOrder.python.md)
 - [applicationKey](./applicationKey.python.md)
 - [authnMapping](./authnMapping.python.md)
 - [childOrganization](./childOrganization.python.md)
@@ -11,6 +13,7 @@ The following submodules are available:
 - [dashboardJson](./dashboardJson.python.md)
 - [dashboardList](./dashboardList.python.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.python.md)
+- [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.python.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.python.md)
 - [dataDatadogCloudWorkloadSecurityAgentRules](./dataDatadogCloudWorkloadSecurityAgentRules.python.md)
 - [dataDatadogDashboard](./dataDatadogDashboard.python.md)

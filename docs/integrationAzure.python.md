@@ -1,6 +1,6 @@
 # `datadog_integration_azure`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure).
+Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure).
 
 # `integrationAzure` Submodule <a name="`integrationAzure` Submodule" id="@cdktf/provider-datadog.integrationAzure"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`datadog_integration_azure`](https:/
 
 ### IntegrationAzure <a name="IntegrationAzure" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure datadog_integration_azure}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure datadog_integration_azure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer"></a>
 
@@ -30,6 +30,7 @@ integrationAzure.IntegrationAzure(
   tenant_name: str,
   app_service_plan_filters: str = None,
   automute: typing.Union[bool, IResolvable] = None,
+  container_app_filters: str = None,
   cspm_enabled: typing.Union[bool, IResolvable] = None,
   custom_metrics_enabled: typing.Union[bool, IResolvable] = None,
   host_filters: str = None,
@@ -53,10 +54,11 @@ integrationAzure.IntegrationAzure(
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.tenantName">tenant_name</a></code> | <code>str</code> | Your Azure Active Directory ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.appServicePlanFilters">app_service_plan_filters</a></code> | <code>str</code> | This comma-separated list of tags (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure App Service Plans. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.automute">automute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Silence monitors for expected Azure VM shutdowns. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.containerAppFilters">container_app_filters</a></code> | <code>str</code> | This comma-separated list of tags (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure Container Apps. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.cspmEnabled">cspm_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Cloud Security Management Misconfigurations for your organization. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.customMetricsEnabled">custom_metrics_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable custom metrics for your organization. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.hostFilters">host_filters</a></code> | <code>str</code> | String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. |
-| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
 
 ---
 
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Your Azure web application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 (Required for Initial Creation) Your Azure web application secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your Azure Active Directory ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
 
 ---
 
@@ -158,7 +160,7 @@ This comma-separated list of tags (in the form `key:value,key:value`) defines a 
 
 Only App Service Plans that match one of the defined tags are imported into Datadog. The rest, including the apps and functions running on them, are ignored. This also filters the metrics for any App or Function running on the App Service Plan(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
 
 ---
 
@@ -168,7 +170,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Silence monitors for expected Azure VM shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+
+---
+
+##### `container_app_filters`<sup>Optional</sup> <a name="container_app_filters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.Initializer.parameter.containerAppFilters"></a>
+
+- *Type:* str
+
+This comma-separated list of tags (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure Container Apps.
+
+Only Container Apps that match one of the defined tags are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#container_app_filters IntegrationAzure#container_app_filters}
 
 ---
 
@@ -178,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Enable Cloud Security Management Misconfigurations for your organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
 
 ---
 
@@ -188,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Enable custom metrics for your organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
 
 ---
 
@@ -200,7 +214,7 @@ String of host tag(s) (in the form `key:value,key:value`) defines a filter that 
 
 Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
 
 ---
 
@@ -208,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#id IntegrationAzure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#id IntegrationAzure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -240,6 +254,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetAppServicePlanFilters">reset_app_service_plan_filters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetAutomute">reset_automute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetContainerAppFilters">reset_container_app_filters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCspmEnabled">reset_cspm_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCustomMetricsEnabled">reset_custom_metrics_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetHostFilters">reset_host_filters</a></code> | *No description.* |
@@ -534,6 +549,12 @@ def reset_app_service_plan_filters() -> None
 def reset_automute() -> None
 ```
 
+##### `reset_container_app_filters` <a name="reset_container_app_filters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetContainerAppFilters"></a>
+
+```python
+def reset_container_app_filters() -> None
+```
+
 ##### `reset_cspm_enabled` <a name="reset_cspm_enabled" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.resetCspmEnabled"></a>
 
 ```python
@@ -672,7 +693,7 @@ The construct id used in the generated config for the IntegrationAzure to import
 
 The id of the existing IntegrationAzure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,6 +727,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.automuteInput">automute_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.containerAppFiltersInput">container_app_filters_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabledInput">cspm_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.customMetricsEnabledInput">custom_metrics_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.hostFiltersInput">host_filters_input</a></code> | <code>str</code> | *No description.* |
@@ -715,6 +737,7 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.automute">automute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.containerAppFilters">container_app_filters</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabled">cspm_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.customMetricsEnabled">custom_metrics_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.hostFilters">host_filters</a></code> | <code>str</code> | *No description.* |
@@ -905,6 +928,16 @@ client_secret_input: str
 
 ---
 
+##### `container_app_filters_input`<sup>Optional</sup> <a name="container_app_filters_input" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.containerAppFiltersInput"></a>
+
+```python
+container_app_filters_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `cspm_enabled_input`<sup>Optional</sup> <a name="cspm_enabled_input" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.cspmEnabledInput"></a>
 
 ```python
@@ -989,6 +1022,16 @@ client_id: str
 
 ```python
 client_secret: str
+```
+
+- *Type:* str
+
+---
+
+##### `container_app_filters`<sup>Required</sup> <a name="container_app_filters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzure.property.containerAppFilters"></a>
+
+```python
+container_app_filters: str
 ```
 
 - *Type:* str
@@ -1085,6 +1128,7 @@ integrationAzure.IntegrationAzureConfig(
   tenant_name: str,
   app_service_plan_filters: str = None,
   automute: typing.Union[bool, IResolvable] = None,
+  container_app_filters: str = None,
   cspm_enabled: typing.Union[bool, IResolvable] = None,
   custom_metrics_enabled: typing.Union[bool, IResolvable] = None,
   host_filters: str = None,
@@ -1108,10 +1152,11 @@ integrationAzure.IntegrationAzureConfig(
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.tenantName">tenant_name</a></code> | <code>str</code> | Your Azure Active Directory ID. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.appServicePlanFilters">app_service_plan_filters</a></code> | <code>str</code> | This comma-separated list of tags (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure App Service Plans. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.automute">automute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Silence monitors for expected Azure VM shutdowns. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.containerAppFilters">container_app_filters</a></code> | <code>str</code> | This comma-separated list of tags (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure Container Apps. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.cspmEnabled">cspm_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable Cloud Security Management Misconfigurations for your organization. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.customMetricsEnabled">custom_metrics_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable custom metrics for your organization. Defaults to `false`. |
 | <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.hostFilters">host_filters</a></code> | <code>str</code> | String of host tag(s) (in the form `key:value,key:value`) defines a filter that Datadog will use when collecting metrics from Azure. |
-| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
+| <code><a href="#@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#id IntegrationAzure#id}. |
 
 ---
 
@@ -1195,7 +1240,7 @@ client_id: str
 
 Your Azure web application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#client_id IntegrationAzure#client_id}
 
 ---
 
@@ -1209,7 +1254,7 @@ client_secret: str
 
 (Required for Initial Creation) Your Azure web application secret key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#client_secret IntegrationAzure#client_secret}
 
 ---
 
@@ -1223,7 +1268,7 @@ tenant_name: str
 
 Your Azure Active Directory ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#tenant_name IntegrationAzure#tenant_name}
 
 ---
 
@@ -1239,7 +1284,7 @@ This comma-separated list of tags (in the form `key:value,key:value`) defines a 
 
 Only App Service Plans that match one of the defined tags are imported into Datadog. The rest, including the apps and functions running on them, are ignored. This also filters the metrics for any App or Function running on the App Service Plan(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#app_service_plan_filters IntegrationAzure#app_service_plan_filters}
 
 ---
 
@@ -1253,7 +1298,23 @@ automute: typing.Union[bool, IResolvable]
 
 Silence monitors for expected Azure VM shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#automute IntegrationAzure#automute}
+
+---
+
+##### `container_app_filters`<sup>Optional</sup> <a name="container_app_filters" id="@cdktf/provider-datadog.integrationAzure.IntegrationAzureConfig.property.containerAppFilters"></a>
+
+```python
+container_app_filters: str
+```
+
+- *Type:* str
+
+This comma-separated list of tags (in the form `key:value,key:value`) defines a filter that Datadog uses when collecting metrics from Azure Container Apps.
+
+Only Container Apps that match one of the defined tags are imported into Datadog.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#container_app_filters IntegrationAzure#container_app_filters}
 
 ---
 
@@ -1267,7 +1328,7 @@ cspm_enabled: typing.Union[bool, IResolvable]
 
 Enable Cloud Security Management Misconfigurations for your organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#cspm_enabled IntegrationAzure#cspm_enabled}
 
 ---
 
@@ -1281,7 +1342,7 @@ custom_metrics_enabled: typing.Union[bool, IResolvable]
 
 Enable custom metrics for your organization. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#custom_metrics_enabled IntegrationAzure#custom_metrics_enabled}
 
 ---
 
@@ -1297,7 +1358,7 @@ String of host tag(s) (in the form `key:value,key:value`) defines a filter that 
 
 Limit the Azure instances that are pulled into Datadog by using tags. Only hosts that match one of the defined tags are imported into Datadog. e.x. `env:production,deploymentgroup:red`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#host_filters IntegrationAzure#host_filters}
 
 ---
 
@@ -1309,7 +1370,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_azure#id IntegrationAzure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_azure#id IntegrationAzure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

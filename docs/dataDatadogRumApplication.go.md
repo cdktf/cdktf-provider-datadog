@@ -1,6 +1,6 @@
 # `data_datadog_rum_application`
 
-Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/rum_application).
+Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/rum_application).
 
 # `dataDatadogRumApplication` Submodule <a name="`dataDatadogRumApplication` Submodule" id="@cdktf/provider-datadog.dataDatadogRumApplication"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_datadog_rum_application`](http
 
 ### DataDatadogRumApplication <a name="DataDatadogRumApplication" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/rum_application datadog_rum_application}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/rum_application datadog_rum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogrumapplication"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogrumapplication"
 
 datadatadogrumapplication.NewDataDatadogRumApplication(scope Construct, id *string, config DataDatadogRumApplicationConfig) DataDatadogRumApplication
 ```
@@ -292,7 +292,7 @@ func ResetTypeFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogrumapplication"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogrumapplication"
 
 datadatadogrumapplication.DataDatadogRumApplication_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogrumapplication"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogrumapplication"
 
 datadatadogrumapplication.DataDatadogRumApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datadatadogrumapplication.DataDatadogRumApplication_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogrumapplication"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogrumapplication"
 
 datadatadogrumapplication.DataDatadogRumApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datadatadogrumapplication.DataDatadogRumApplication_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogrumapplication"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogrumapplication"
 
 datadatadogrumapplication.DataDatadogRumApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataDatadogRumApplication 
 
 The id of the existing DataDatadogRumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/rum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/rum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRumApplication.DataDatadogRumApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogrumapplication"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogrumapplication"
 
 &datadatadogrumapplication.DataDatadogRumApplicationConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ Id *string
 
 ID of the RUM application. Cannot be used with name and type filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/rum_application#id DataDatadogRumApplication#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ NameFilter *string
 
 The name used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/rum_application#name_filter DataDatadogRumApplication#name_filter}
 
 ---
 
@@ -802,7 +802,7 @@ TypeFilter *string
 
 The type used to search for a RUM application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/rum_application#type_filter DataDatadogRumApplication#type_filter}
 
 ---
 

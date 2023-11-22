@@ -2,6 +2,8 @@
 
 The following submodules are available:
 - [apiKey](./apiKey.typescript.md)
+- [apmRetentionFilter](./apmRetentionFilter.typescript.md)
+- [apmRetentionFilterOrder](./apmRetentionFilterOrder.typescript.md)
 - [applicationKey](./applicationKey.typescript.md)
 - [authnMapping](./authnMapping.typescript.md)
 - [childOrganization](./childOrganization.typescript.md)
@@ -11,6 +13,7 @@ The following submodules are available:
 - [dashboardJson](./dashboardJson.typescript.md)
 - [dashboardList](./dashboardList.typescript.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.typescript.md)
+- [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.typescript.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.typescript.md)
 - [dataDatadogCloudWorkloadSecurityAgentRules](./dataDatadogCloudWorkloadSecurityAgentRules.typescript.md)
 - [dataDatadogDashboard](./dataDatadogDashboard.typescript.md)

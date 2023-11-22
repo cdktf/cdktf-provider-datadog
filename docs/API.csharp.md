@@ -2,6 +2,8 @@
 
 The following submodules are available:
 - [apiKey](./apiKey.csharp.md)
+- [apmRetentionFilter](./apmRetentionFilter.csharp.md)
+- [apmRetentionFilterOrder](./apmRetentionFilterOrder.csharp.md)
 - [applicationKey](./applicationKey.csharp.md)
 - [authnMapping](./authnMapping.csharp.md)
 - [childOrganization](./childOrganization.csharp.md)
@@ -11,6 +13,7 @@ The following submodules are available:
 - [dashboardJson](./dashboardJson.csharp.md)
 - [dashboardList](./dashboardList.csharp.md)
 - [dataDatadogApiKey](./dataDatadogApiKey.csharp.md)
+- [dataDatadogApmRetentionFiltersOrder](./dataDatadogApmRetentionFiltersOrder.csharp.md)
 - [dataDatadogApplicationKey](./dataDatadogApplicationKey.csharp.md)
 - [dataDatadogCloudWorkloadSecurityAgentRules](./dataDatadogCloudWorkloadSecurityAgentRules.csharp.md)
 - [dataDatadogDashboard](./dataDatadogDashboard.csharp.md)

@@ -1,6 +1,6 @@
 # `datadog_integration_fastly_service`
 
-Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`](https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_fastly_service).
+Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service).
 
 # `integrationFastlyService` Submodule <a name="`integrationFastlyService` Submodule" id="@cdktf/provider-datadog.integrationFastlyService"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`
 
 ### IntegrationFastlyService <a name="IntegrationFastlyService" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service datadog_integration_fastly_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationfastlyservice"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyservice"
 
 integrationfastlyservice.NewIntegrationFastlyService(scope Construct, id *string, config IntegrationFastlyServiceConfig) IntegrationFastlyService
 ```
@@ -346,7 +346,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationfastlyservice"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyservice"
 
 integrationfastlyservice.IntegrationFastlyService_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationfastlyservice"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyservice"
 
 integrationfastlyservice.IntegrationFastlyService_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ integrationfastlyservice.IntegrationFastlyService_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationfastlyservice"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyservice"
 
 integrationfastlyservice.IntegrationFastlyService_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ integrationfastlyservice.IntegrationFastlyService_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationfastlyservice"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyservice"
 
 integrationfastlyservice.IntegrationFastlyService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the IntegrationFastlyService t
 
 The id of the existing IntegrationFastlyService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_fastly_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationFastlyService.IntegrationFastlyServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationfastlyservice"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationfastlyservice"
 
 &integrationfastlyservice.IntegrationFastlyServiceConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ ServiceId *string
 
 The ID of the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service#service_id IntegrationFastlyService#service_id}
 
 ---
 
@@ -839,7 +839,7 @@ AccountId *string
 
 Fastly Account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service#account_id IntegrationFastlyService#account_id}
 
 ---
 
@@ -853,7 +853,7 @@ Tags *[]*string
 
 A list of tags for the Fastly service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.32.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service#tags IntegrationFastlyService#tags}
 
 ---
 
