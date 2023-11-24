@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.NewDataDatadogHosts(scope Construct, id *string, config DataDatadogHostsConfig) DataDatadogHosts
 ```
@@ -306,7 +306,7 @@ func ResetSortField()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.DataDatadogHosts_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.DataDatadogHosts_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datadatadoghosts.DataDatadogHosts_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.DataDatadogHosts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ datadatadoghosts.DataDatadogHosts_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHosts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.DataDatadogHosts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 &datadatadoghosts.DataDatadogHostsConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMeta.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 &datadatadoghosts.DataDatadogHostsHostListMeta {
 
@@ -922,7 +922,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 &datadatadoghosts.DataDatadogHostsHostListMetrics {
 
@@ -935,7 +935,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 &datadatadoghosts.DataDatadogHostsHostListStruct {
 
@@ -950,7 +950,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.NewDataDatadogHostsHostListMetaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogHostsHostListMetaOutputReference
 ```
@@ -1298,7 +1298,7 @@ func InternalValue() DataDatadogHostsHostListMeta
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.NewDataDatadogHostsHostListMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogHostsHostListMetricsOutputReference
 ```
@@ -1580,7 +1580,7 @@ func InternalValue() DataDatadogHostsHostListMetrics
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.NewDataDatadogHostsHostListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogHostsHostListStructList
 ```
@@ -1712,7 +1712,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogHosts.DataDatadogHostsHostListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadoghosts"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadoghosts"
 
 datadatadoghosts.NewDataDatadogHostsHostListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogHostsHostListStructOutputReference
 ```

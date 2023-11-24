@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitorJson.MonitorJson.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/monitorjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitorjson"
 
 monitorjson.NewMonitorJson(scope Construct, id *string, config MonitorJsonConfig) MonitorJson
 ```
@@ -346,7 +346,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.monitorJson.MonitorJson.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/monitorjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitorjson"
 
 monitorjson.MonitorJson_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.monitorJson.MonitorJson.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/monitorjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitorjson"
 
 monitorjson.MonitorJson_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ monitorjson.MonitorJson_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.monitorJson.MonitorJson.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/monitorjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitorjson"
 
 monitorjson.MonitorJson_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ monitorjson.MonitorJson_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.monitorJson.MonitorJson.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/monitorjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitorjson"
 
 monitorjson.MonitorJson_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitorJson.MonitorJsonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/monitorjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/monitorjson"
 
 &monitorjson.MonitorJsonConfig {
 	Connection: interface{},
