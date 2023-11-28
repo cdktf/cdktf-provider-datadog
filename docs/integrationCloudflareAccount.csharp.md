@@ -1,7 +1,3 @@
-# `datadog_integration_cloudflare_account`
-
-Refer to the Terraform Registory for docs: [`datadog_integration_cloudflare_account`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_cloudflare_account).
-
 # `integrationCloudflareAccount` Submodule <a name="`integrationCloudflareAccount` Submodule" id="@cdktf/provider-datadog.integrationCloudflareAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

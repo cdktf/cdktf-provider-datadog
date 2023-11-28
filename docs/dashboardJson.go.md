@@ -1,7 +1,3 @@
-# `datadog_dashboard_json`
-
-Refer to the Terraform Registory for docs: [`datadog_dashboard_json`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/dashboard_json).
-
 # `dashboardJson` Submodule <a name="`dashboardJson` Submodule" id="@cdktf/provider-datadog.dashboardJson"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/dashboardjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/dashboardjson"
 
 dashboardjson.NewDashboardJson(scope Construct, id *string, config DashboardJsonConfig) DashboardJson
 ```
@@ -353,7 +349,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/dashboardjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/dashboardjson"
 
 dashboardjson.DashboardJson_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/dashboardjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/dashboardjson"
 
 dashboardjson.DashboardJson_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ dashboardjson.DashboardJson_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/dashboardjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/dashboardjson"
 
 dashboardjson.DashboardJson_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ dashboardjson.DashboardJson_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dashboardJson.DashboardJson.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/dashboardjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/dashboardjson"
 
 dashboardjson.DashboardJson_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -741,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dashboardJson.DashboardJsonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/dashboardjson"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/dashboardjson"
 
 &dashboardjson.DashboardJsonConfig {
 	Connection: interface{},

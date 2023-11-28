@@ -1,7 +1,3 @@
-# `datadog_team_permission_setting`
-
-Refer to the Terraform Registory for docs: [`datadog_team_permission_setting`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/team_permission_setting).
-
 # `teamPermissionSetting` Submodule <a name="`teamPermissionSetting` Submodule" id="@cdktf/provider-datadog.teamPermissionSetting"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.NewTeamPermissionSetting(scope Construct, id *string, config TeamPermissionSettingConfig) TeamPermissionSetting
 ```
@@ -332,7 +328,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ teampermissionsetting.TeamPermissionSetting_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ teampermissionsetting.TeamPermissionSetting_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/teampermissionsetting"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/teampermissionsetting"
 
 &teampermissionsetting.TeamPermissionSettingConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `datadog_integration_pagerduty`
-
-Refer to the Terraform Registory for docs: [`datadog_integration_pagerduty`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_pagerduty).
-
 # `integrationPagerduty` Submodule <a name="`integrationPagerduty` Submodule" id="@cdktf/provider-datadog.integrationPagerduty"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

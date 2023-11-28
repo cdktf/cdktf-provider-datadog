@@ -1,7 +1,3 @@
-# `data_datadog_security_monitoring_filters`
-
-Refer to the Terraform Registory for docs: [`data_datadog_security_monitoring_filters`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/security_monitoring_filters).
-
 # `dataDatadogSecurityMonitoringFilters` Submodule <a name="`dataDatadogSecurityMonitoringFilters` Submodule" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.NewDataDatadogSecurityMonitoringFilters(scope Construct, id *string, config DataDatadogSecurityMonitoringFiltersConfig) DataDatadogSecurityMonitoringFilters
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFilters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFilters_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFilters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFilters_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFilters_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFilters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFilters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFilters_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFilters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFilters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 &datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFiltersConfig {
 	Connection: interface{},
@@ -708,7 +704,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 &datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFiltersFilters {
 
@@ -721,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuri
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 &datadatadogsecuritymonitoringfilters.DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter {
 
@@ -736,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuri
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.NewDataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterList
 ```
@@ -868,7 +864,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.NewDataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringFiltersFiltersExclusionFilterOutputReference
 ```
@@ -1157,7 +1153,7 @@ func InternalValue() DataDatadogSecurityMonitoringFiltersFiltersExclusionFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.NewDataDatadogSecurityMonitoringFiltersFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSecurityMonitoringFiltersFiltersList
 ```
@@ -1289,7 +1285,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringFilters.DataDatadogSecurityMonitoringFiltersFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsecuritymonitoringfilters"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsecuritymonitoringfilters"
 
 datadatadogsecuritymonitoringfilters.NewDataDatadogSecurityMonitoringFiltersFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSecurityMonitoringFiltersFiltersOutputReference
 ```

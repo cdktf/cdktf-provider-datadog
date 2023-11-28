@@ -1,7 +1,3 @@
-# `datadog_integration_pagerduty_service_object`
-
-Refer to the Terraform Registory for docs: [`datadog_integration_pagerduty_service_object`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_pagerduty_service_object).
-
 # `integrationPagerdutyServiceObject` Submodule <a name="`integrationPagerdutyServiceObject` Submodule" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerdutyserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerdutyserviceobject"
 
 integrationpagerdutyserviceobject.NewIntegrationPagerdutyServiceObject(scope Construct, id *string, config IntegrationPagerdutyServiceObjectConfig) IntegrationPagerdutyServiceObject
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerdutyserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerdutyserviceobject"
 
 integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObject_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerdutyserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerdutyserviceobject"
 
 integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObject_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerdutyserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerdutyserviceobject"
 
 integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObject_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObject_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerdutyserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerdutyserviceobject"
 
 integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationPagerdutyServiceObject.IntegrationPagerdutyServiceObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationpagerdutyserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationpagerdutyserviceobject"
 
 &integrationpagerdutyserviceobject.IntegrationPagerdutyServiceObjectConfig {
 	Connection: interface{},

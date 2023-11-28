@@ -1,7 +1,3 @@
-# `datadog_spans_metric`
-
-Refer to the Terraform Registory for docs: [`datadog_spans_metric`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/spans_metric).
-
 # `spansMetric` Submodule <a name="`spansMetric` Submodule" id="@cdktf/provider-datadog.spansMetric"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

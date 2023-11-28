@@ -1,7 +1,3 @@
-# `datadog_child_organization`
-
-Refer to the Terraform Registory for docs: [`datadog_child_organization`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/child_organization).
-
 # `childOrganization` Submodule <a name="`childOrganization` Submodule" id="@cdktf/provider-datadog.childOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

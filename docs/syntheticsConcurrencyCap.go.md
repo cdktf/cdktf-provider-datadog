@@ -1,7 +1,3 @@
-# `datadog_synthetics_concurrency_cap`
-
-Refer to the Terraform Registory for docs: [`datadog_synthetics_concurrency_cap`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/synthetics_concurrency_cap).
-
 # `syntheticsConcurrencyCap` Submodule <a name="`syntheticsConcurrencyCap` Submodule" id="@cdktf/provider-datadog.syntheticsConcurrencyCap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.NewSyntheticsConcurrencyCap(scope Construct, id *string, config SyntheticsConcurrencyCapConfig) SyntheticsConcurrencyCap
 ```
@@ -332,7 +328,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 &syntheticsconcurrencycap.SyntheticsConcurrencyCapConfig {
 	Connection: interface{},

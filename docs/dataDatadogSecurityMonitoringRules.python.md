@@ -1,7 +1,3 @@
-# `data_datadog_security_monitoring_rules`
-
-Refer to the Terraform Registory for docs: [`data_datadog_security_monitoring_rules`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/security_monitoring_rules).
-
 # `dataDatadogSecurityMonitoringRules` Submodule <a name="`dataDatadogSecurityMonitoringRules` Submodule" id="@cdktf/provider-datadog.dataDatadogSecurityMonitoringRules"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

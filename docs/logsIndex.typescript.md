@@ -1,7 +1,3 @@
-# `datadog_logs_index`
-
-Refer to the Terraform Registory for docs: [`datadog_logs_index`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_index).
-
 # `logsIndex` Submodule <a name="`logsIndex` Submodule" id="@cdktf/provider-datadog.logsIndex"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

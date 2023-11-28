@@ -1,7 +1,3 @@
-# `datadog_security_monitoring_filter`
-
-Refer to the Terraform Registory for docs: [`datadog_security_monitoring_filter`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/security_monitoring_filter).
-
 # `securityMonitoringFilter` Submodule <a name="`securityMonitoringFilter` Submodule" id="@cdktf/provider-datadog.securityMonitoringFilter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.NewSecurityMonitoringFilter(scope Construct, id *string, config SecurityMonitoringFilterConfig) SecurityMonitoringFilter
 ```
@@ -366,7 +362,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.SecurityMonitoringFilter_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.SecurityMonitoringFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ securitymonitoringfilter.SecurityMonitoringFilter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.SecurityMonitoringFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ securitymonitoringfilter.SecurityMonitoringFilter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.SecurityMonitoringFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 &securitymonitoringfilter.SecurityMonitoringFilterConfig {
 	Connection: interface{},
@@ -997,7 +993,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 &securitymonitoringfilter.SecurityMonitoringFilterExclusionFilter {
 	Name: *string,
@@ -1049,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.NewSecurityMonitoringFilterExclusionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringFilterExclusionFilterList
 ```
@@ -1192,7 +1188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringfilter"
 
 securitymonitoringfilter.NewSecurityMonitoringFilterExclusionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringFilterExclusionFilterOutputReference
 ```
