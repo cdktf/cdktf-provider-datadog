@@ -1,7 +1,3 @@
-# `datadog_team_membership`
-
-Refer to the Terraform Registory for docs: [`datadog_team_membership`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/team_membership).
-
 # `teamMembership` Submodule <a name="`teamMembership` Submodule" id="@cdktf/provider-datadog.teamMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

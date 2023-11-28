@@ -1,7 +1,3 @@
-# `data_datadog_hosts`
-
-Refer to the Terraform Registory for docs: [`data_datadog_hosts`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/hosts).
-
 # `dataDatadogHosts` Submodule <a name="`dataDatadogHosts` Submodule" id="@cdktf/provider-datadog.dataDatadogHosts"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_datadog_role`
-
-Refer to the Terraform Registory for docs: [`data_datadog_role`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/role).
-
 # `dataDatadogRole` Submodule <a name="`dataDatadogRole` Submodule" id="@cdktf/provider-datadog.dataDatadogRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

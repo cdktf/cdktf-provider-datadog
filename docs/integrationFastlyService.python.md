@@ -1,7 +1,3 @@
-# `datadog_integration_fastly_service`
-
-Refer to the Terraform Registory for docs: [`datadog_integration_fastly_service`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_fastly_service).
-
 # `integrationFastlyService` Submodule <a name="`integrationFastlyService` Submodule" id="@cdktf/provider-datadog.integrationFastlyService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `datadog_sensitive_data_scanner_group`
-
-Refer to the Terraform Registory for docs: [`datadog_sensitive_data_scanner_group`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/sensitive_data_scanner_group).
-
 # `sensitiveDataScannerGroup` Submodule <a name="`sensitiveDataScannerGroup` Submodule" id="@cdktf/provider-datadog.sensitiveDataScannerGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

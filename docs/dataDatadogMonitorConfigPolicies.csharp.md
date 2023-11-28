@@ -1,7 +1,3 @@
-# `data_datadog_monitor_config_policies`
-
-Refer to the Terraform Registory for docs: [`data_datadog_monitor_config_policies`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/monitor_config_policies).
-
 # `dataDatadogMonitorConfigPolicies` Submodule <a name="`dataDatadogMonitorConfigPolicies` Submodule" id="@cdktf/provider-datadog.dataDatadogMonitorConfigPolicies"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

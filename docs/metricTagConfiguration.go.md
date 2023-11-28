@@ -1,7 +1,3 @@
-# `datadog_metric_tag_configuration`
-
-Refer to the Terraform Registory for docs: [`datadog_metric_tag_configuration`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/metric_tag_configuration).
-
 # `metricTagConfiguration` Submodule <a name="`metricTagConfiguration` Submodule" id="@cdktf/provider-datadog.metricTagConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_datadog_logs_pipelines`
-
-Refer to the Terraform Registory for docs: [`data_datadog_logs_pipelines`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/logs_pipelines).
-
 # `dataDatadogLogsPipelines` Submodule <a name="`dataDatadogLogsPipelines` Submodule" id="@cdktf/provider-datadog.dataDatadogLogsPipelines"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

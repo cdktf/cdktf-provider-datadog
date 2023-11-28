@@ -1,7 +1,3 @@
-# `data_datadog_cloud_workload_security_agent_rules`
-
-Refer to the Terraform Registory for docs: [`data_datadog_cloud_workload_security_agent_rules`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/cloud_workload_security_agent_rules).
-
 # `dataDatadogCloudWorkloadSecurityAgentRules` Submodule <a name="`dataDatadogCloudWorkloadSecurityAgentRules` Submodule" id="@cdktf/provider-datadog.dataDatadogCloudWorkloadSecurityAgentRules"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

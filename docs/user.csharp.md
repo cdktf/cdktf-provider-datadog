@@ -1,7 +1,3 @@
-# `datadog_user`
-
-Refer to the Terraform Registory for docs: [`datadog_user`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/user).
-
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-datadog.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

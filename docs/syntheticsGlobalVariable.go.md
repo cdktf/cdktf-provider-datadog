@@ -1,7 +1,3 @@
-# `datadog_synthetics_global_variable`
-
-Refer to the Terraform Registory for docs: [`datadog_synthetics_global_variable`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/synthetics_global_variable).
-
 # `syntheticsGlobalVariable` Submodule <a name="`syntheticsGlobalVariable` Submodule" id="@cdktf/provider-datadog.syntheticsGlobalVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

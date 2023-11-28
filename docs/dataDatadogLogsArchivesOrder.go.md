@@ -1,7 +1,3 @@
-# `data_datadog_logs_archives_order`
-
-Refer to the Terraform Registory for docs: [`data_datadog_logs_archives_order`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/logs_archives_order).
-
 # `dataDatadogLogsArchivesOrder` Submodule <a name="`dataDatadogLogsArchivesOrder` Submodule" id="@cdktf/provider-datadog.dataDatadogLogsArchivesOrder"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

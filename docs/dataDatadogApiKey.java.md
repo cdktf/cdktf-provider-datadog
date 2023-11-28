@@ -1,7 +1,3 @@
-# `data_datadog_api_key`
-
-Refer to the Terraform Registory for docs: [`data_datadog_api_key`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/api_key).
-
 # `dataDatadogApiKey` Submodule <a name="`dataDatadogApiKey` Submodule" id="@cdktf/provider-datadog.dataDatadogApiKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

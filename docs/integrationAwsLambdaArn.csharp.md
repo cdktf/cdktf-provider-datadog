@@ -1,7 +1,3 @@
-# `datadog_integration_aws_lambda_arn`
-
-Refer to the Terraform Registory for docs: [`datadog_integration_aws_lambda_arn`](https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/integration_aws_lambda_arn).
-
 # `integrationAwsLambdaArn` Submodule <a name="`integrationAwsLambdaArn` Submodule" id="@cdktf/provider-datadog.integrationAwsLambdaArn"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
