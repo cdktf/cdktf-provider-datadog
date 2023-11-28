@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRule(scope Construct, id *string, config SecurityMonitoringRuleConfig) SecurityMonitoringRule
 ```
@@ -456,7 +456,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.SecurityMonitoringRule_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.SecurityMonitoringRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ securitymonitoringrule.SecurityMonitoringRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.SecurityMonitoringRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ securitymonitoringrule.SecurityMonitoringRule_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.SecurityMonitoringRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1009,7 +1009,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleCase {
 	Status: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleConfig {
 	Connection: interface{},
@@ -1108,7 +1108,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrul
 	Filter: interface{},
 	HasExtendedTitle: interface{},
 	Id: *string,
-	Options: github.com/cdktf/cdktf-provider-datadog-go/datadog.securityMonitoringRule.SecurityMonitoringRuleOptions,
+	Options: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.securityMonitoringRule.SecurityMonitoringRuleOptions,
 	Query: interface{},
 	SignalQuery: interface{},
 	Tags: *[]*string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleFilter {
 	Action: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleOptions {
 	KeepAlive: *f64,
@@ -1444,8 +1444,8 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrul
 	DecreaseCriticalityBasedOnEnv: interface{},
 	DetectionMethod: *string,
 	EvaluationWindow: *f64,
-	ImpossibleTravelOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptions,
-	NewValueOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions,
+	ImpossibleTravelOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptions,
+	NewValueOptions: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions,
 }
 ```
 
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleOptionsImpossibleTravelOptions {
 	BaselineUserLocations: interface{},
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleOptionsNewValueOptions {
 	ForgetAfter: *f64,
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleQuery {
 	Query: *string,
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleQueryAgentRule {
 	AgentRuleId: *string,
@@ -1902,7 +1902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 &securitymonitoringrule.SecurityMonitoringRuleSignalQuery {
 	RuleId: *string,
@@ -2022,7 +2022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleCaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringRuleCaseList
 ```
@@ -2165,7 +2165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleCaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleCaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringRuleCaseOutputReference
 ```
@@ -2541,7 +2541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringRuleFilterList
 ```
@@ -2684,7 +2684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringRuleFilterOutputReference
 ```
@@ -2995,7 +2995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsImpossibleTravelOptionsOutputReference
 ```
@@ -3273,7 +3273,7 @@ func InternalValue() SecurityMonitoringRuleOptionsImpossibleTravelOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsNewValueOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleOptionsNewValueOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsNewValueOptionsOutputReference
 ```
@@ -3631,7 +3631,7 @@ func InternalValue() SecurityMonitoringRuleOptionsNewValueOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityMonitoringRuleOptionsOutputReference
 ```
@@ -4095,7 +4095,7 @@ func InternalValue() SecurityMonitoringRuleOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleQueryAgentRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringRuleQueryAgentRuleList
 ```
@@ -4238,7 +4238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryAgentRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleQueryAgentRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringRuleQueryAgentRuleOutputReference
 ```
@@ -4549,7 +4549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringRuleQueryList
 ```
@@ -4692,7 +4692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringRuleQueryOutputReference
 ```
@@ -5197,7 +5197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleSignalQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityMonitoringRuleSignalQueryList
 ```
@@ -5340,7 +5340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.securityMonitoringRule.SecurityMonitoringRuleSignalQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/securitymonitoringrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/securitymonitoringrule"
 
 securitymonitoringrule.NewSecurityMonitoringRuleSignalQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityMonitoringRuleSignalQueryOutputReference
 ```

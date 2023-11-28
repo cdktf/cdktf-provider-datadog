@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 apmretentionfilter.NewApmRetentionFilter(scope Construct, id *string, config ApmRetentionFilterConfig) ApmRetentionFilter
 ```
@@ -348,7 +348,7 @@ func ResetFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ apmretentionfilter.ApmRetentionFilter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ apmretentionfilter.ApmRetentionFilter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 apmretentionfilter.ApmRetentionFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 &apmretentionfilter.ApmRetentionFilterConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
 	FilterType: *string,
 	Name: *string,
 	Rate: *string,
-	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog.apmRetentionFilter.ApmRetentionFilterFilter,
+	Filter: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.apmRetentionFilter.ApmRetentionFilterFilter,
 }
 ```
 
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 &apmretentionfilter.ApmRetentionFilterFilter {
 	Query: *string,
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.apmRetentionFilter.ApmRetentionFilterFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/apmretentionfilter"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/apmretentionfilter"
 
 apmretentionfilter.NewApmRetentionFilterFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApmRetentionFilterFilterOutputReference
 ```
