@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-datadog.teamMembership.TeamMembership.resetRole">ResetRole</a></code> | *No description.* |
 
 ---
@@ -261,6 +264,12 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-datadog.teamMembership.TeamMembership.hasResourceMove"></a>
+
+```go
+func HasResourceMove() interface{}
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-datadog.teamMembership.TeamMembership.importFrom"></a>
 
 ```go
@@ -291,6 +300,24 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-datadog.teamMembership.TeamMembership.moveFromId"></a>
+
+```go
+func MoveFromId(id *string)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.teamMembership.TeamMembership.moveFromId.parameter.id"></a>
+
+- *Type:* *string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-datadog.teamMembership.TeamMembership.moveTo"></a>
 
 ```go
@@ -312,6 +339,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* interface{}
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-datadog.teamMembership.TeamMembership.moveToId"></a>
+
+```go
+func MoveToId(id *string)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.teamMembership.TeamMembership.moveToId.parameter.id"></a>
+
+- *Type:* *string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
