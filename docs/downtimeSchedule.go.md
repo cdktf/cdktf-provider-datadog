@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeSchedule(scope Construct, id *string, config DowntimeScheduleConfig) DowntimeSchedule
 ```
@@ -466,7 +466,7 @@ func ResetRecurringSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ downtimeschedule.DowntimeSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ downtimeschedule.DowntimeSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.DowntimeSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleConfig {
 	Connection: interface{},
@@ -977,12 +977,12 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
 	Scope: *string,
 	DisplayTimezone: *string,
 	Message: *string,
-	MonitorIdentifier: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.downtimeSchedule.DowntimeScheduleMonitorIdentifier,
+	MonitorIdentifier: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifier,
 	MuteFirstRecoveryNotification: interface{},
 	NotifyEndStates: *[]*string,
 	NotifyEndTypes: *[]*string,
-	OneTimeSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.downtimeSchedule.DowntimeScheduleOneTimeSchedule,
-	RecurringSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog/v10.downtimeSchedule.DowntimeScheduleRecurringSchedule,
+	OneTimeSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtimeSchedule.DowntimeScheduleOneTimeSchedule,
+	RecurringSchedule: github.com/cdktf/cdktf-provider-datadog-go/datadog.downtimeSchedule.DowntimeScheduleRecurringSchedule,
 }
 ```
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleMonitorIdentifier {
 	MonitorId: *f64,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleOneTimeSchedule {
 	End: *string,
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleRecurringSchedule {
 	Recurrence: interface{},
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 &downtimeschedule.DowntimeScheduleRecurringScheduleRecurrence {
 	Duration: *string,
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleMonitorIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleMonitorIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeScheduleMonitorIdentifierOutputReference
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleOneTimeScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleOneTimeScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeScheduleOneTimeScheduleOutputReference
 ```
@@ -2058,7 +2058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleRecurringScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DowntimeScheduleRecurringScheduleOutputReference
 ```
@@ -2378,7 +2378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleRecurringScheduleRecurrenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DowntimeScheduleRecurringScheduleRecurrenceList
 ```
@@ -2521,7 +2521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.downtimeSchedule.DowntimeScheduleRecurringScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/downtimeschedule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/downtimeschedule"
 
 downtimeschedule.NewDowntimeScheduleRecurringScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DowntimeScheduleRecurringScheduleRecurrenceOutputReference
 ```
