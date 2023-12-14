@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganization(scope Construct, id *string, config ChildOrganizationConfig) ChildOrganization
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.childOrganization.ChildOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.ChildOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.childOrganization.ChildOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.ChildOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ childorganization.ChildOrganization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.childOrganization.ChildOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.ChildOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ childorganization.ChildOrganization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.childOrganization.ChildOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.ChildOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationApiKey {
 
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationApplicationKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationApplicationKey {
 
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationConfig {
 	Connection: interface{},
@@ -938,7 +938,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationSettings {
 
@@ -951,7 +951,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationSettingsSaml {
 
@@ -964,7 +964,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationSettingsSamlAutocreateUsersDomains {
 
@@ -977,7 +977,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationSettingsSamlIdpInitiatedLogin {
 
@@ -990,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationSettingsSamlStrictMode {
 
@@ -1003,7 +1003,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 &childorganization.ChildOrganizationUser {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationApiKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationApiKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationApiKeyList
 ```
@@ -1150,7 +1150,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationApiKeyOutputReference
 ```
@@ -1439,7 +1439,7 @@ func InternalValue() ChildOrganizationApiKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationApplicationKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationApplicationKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationApplicationKeyList
 ```
@@ -1571,7 +1571,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationApplicationKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationApplicationKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationApplicationKeyOutputReference
 ```
@@ -1871,7 +1871,7 @@ func InternalValue() ChildOrganizationApplicationKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsList
 ```
@@ -2003,7 +2003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationSettingsOutputReference
 ```
@@ -2380,7 +2380,7 @@ func InternalValue() ChildOrganizationSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlAutocreateUsersDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlAutocreateUsersDomainsList
 ```
@@ -2512,7 +2512,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationSettingsSamlAutocreateUsersDomainsOutputReference
 ```
@@ -2801,7 +2801,7 @@ func InternalValue() ChildOrganizationSettingsSamlAutocreateUsersDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLoginList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlIdpInitiatedLoginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlIdpInitiatedLoginList
 ```
@@ -2933,7 +2933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationSettingsSamlIdpInitiatedLoginOutputReference
 ```
@@ -3211,7 +3211,7 @@ func InternalValue() ChildOrganizationSettingsSamlIdpInitiatedLogin
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlList
 ```
@@ -3343,7 +3343,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationSettingsSamlOutputReference
 ```
@@ -3621,7 +3621,7 @@ func InternalValue() ChildOrganizationSettingsSaml
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlStrictModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationSettingsSamlStrictModeList
 ```
@@ -3753,7 +3753,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationSettingsSamlStrictModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationSettingsSamlStrictModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationSettingsSamlStrictModeOutputReference
 ```
@@ -4031,7 +4031,7 @@ func InternalValue() ChildOrganizationSettingsSamlStrictMode
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChildOrganizationUserList
 ```
@@ -4163,7 +4163,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.childOrganization.ChildOrganizationUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/childorganization"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/childorganization"
 
 childorganization.NewChildOrganizationUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChildOrganizationUserOutputReference
 ```
