@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.webhook.Webhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhook"
 
 webhook.NewWebhook(scope Construct, id *string, config WebhookConfig) Webhook
 ```
@@ -399,7 +399,7 @@ func ResetPayload()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.webhook.Webhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhook"
 
 webhook.Webhook_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.webhook.Webhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhook"
 
 webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ webhook.Webhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.webhook.Webhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhook"
 
 webhook.Webhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ webhook.Webhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.webhook.Webhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhook"
 
 webhook.Webhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.webhook.WebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/webhook"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/webhook"
 
 &webhook.WebhookConfig {
 	Connection: interface{},
