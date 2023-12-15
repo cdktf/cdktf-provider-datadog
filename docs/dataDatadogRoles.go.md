@@ -4,12 +4,12 @@
 
 ### DataDatadogRoles <a name="DataDatadogRoles" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/roles datadog_roles}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/roles datadog_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.NewDataDatadogRoles(scope Construct, id *string, config DataDatadogRolesConfig) DataDatadogRoles
 ```
@@ -281,7 +281,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.DataDatadogRoles_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.DataDatadogRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datadatadogroles.DataDatadogRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.DataDatadogRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datadatadogroles.DataDatadogRoles_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.DataDatadogRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataDatadogRoles to import
 
 The id of the existing DataDatadogRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -603,7 +603,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 &datadatadogroles.DataDatadogRolesConfig {
 	Connection: interface{},
@@ -630,7 +630,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.filter">Filter</a></code> | <code>*string</code> | Filter all roles by the given string. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/roles#id DataDatadogRoles#id}. |
+| <code><a href="#@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/roles#id DataDatadogRoles#id}. |
 
 ---
 
@@ -714,7 +714,7 @@ Filter *string
 
 Filter all roles by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/roles#filter DataDatadogRoles#filter}
 
 ---
 
@@ -726,7 +726,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/data-sources/roles#id DataDatadogRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/data-sources/roles#id DataDatadogRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +738,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 &datadatadogroles.DataDatadogRolesRoles {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.NewDataDatadogRolesRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogRolesRolesList
 ```
@@ -885,7 +885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogRoles.DataDatadogRolesRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogroles"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogroles"
 
 datadatadogroles.NewDataDatadogRolesRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogRolesRolesOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### LogsArchiveOrder <a name="LogsArchiveOrder" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_archive_order datadog_logs_archive_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_archive_order datadog_logs_archive_order}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.NewLogsArchiveOrder(scope Construct, id *string, config LogsArchiveOrderConfig) LogsArchiveOrder
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ logsarchiveorder.LogsArchiveOrder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ logsarchiveorder.LogsArchiveOrder_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 logsarchiveorder.LogsArchiveOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LogsArchiveOrder to import
 
 The id of the existing LogsArchiveOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_archive_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_archive_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/logsarchiveorder"
 
 &logsarchiveorder.LogsArchiveOrderConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/logsarchiveorder"
 | <code><a href="#@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.property.archiveIds">ArchiveIds</a></code> | <code>*[]*string</code> | The archive IDs list. |
-| <code><a href="#@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_archive_order#id LogsArchiveOrder#id}. |
+| <code><a href="#@cdktf/provider-datadog.logsArchiveOrder.LogsArchiveOrderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_archive_order#id LogsArchiveOrder#id}. |
 
 ---
 
@@ -831,7 +831,7 @@ The archive IDs list.
 
 The order of archive IDs in this attribute defines the overall archive order for logs. If `archive_ids` is empty or not specified, it will import the actual archive order, and create the resource. Otherwise, it will try to update the order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_archive_order#archive_ids LogsArchiveOrder#archive_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_archive_order#archive_ids LogsArchiveOrder#archive_ids}
 
 ---
 
@@ -843,7 +843,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/logs_archive_order#id LogsArchiveOrder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/logs_archive_order#id LogsArchiveOrder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

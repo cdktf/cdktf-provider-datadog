@@ -4,12 +4,12 @@
 
 ### SyntheticsConcurrencyCap <a name="SyntheticsConcurrencyCap" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/synthetics_concurrency_cap datadog_synthetics_concurrency_cap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.NewSyntheticsConcurrencyCap(scope Construct, id *string, config SyntheticsConcurrencyCapConfig) SyntheticsConcurrencyCap
 ```
@@ -371,7 +371,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformResource(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ syntheticsconcurrencycap.SyntheticsConcurrencyCap_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 syntheticsconcurrencycap.SyntheticsConcurrencyCap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -460,7 +460,7 @@ The construct id used in the generated config for the SyntheticsConcurrencyCap t
 
 The id of the existing SyntheticsConcurrencyCap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/synthetics_concurrency_cap#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/synthetics_concurrency_cap#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.syntheticsConcurrencyCap.SyntheticsConcurrencyCapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/syntheticsconcurrencycap"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/syntheticsconcurrencycap"
 
 &syntheticsconcurrencycap.SyntheticsConcurrencyCapConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ OnDemandConcurrencyCap *f64
 
 Value of the on-demand concurrency cap, customizing the number of Synthetic tests run in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.33.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.34.0/docs/resources/synthetics_concurrency_cap#on_demand_concurrency_cap SyntheticsConcurrencyCap#on_demand_concurrency_cap}
 
 ---
 
