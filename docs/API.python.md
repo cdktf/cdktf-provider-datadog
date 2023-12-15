@@ -79,6 +79,7 @@ The following submodules are available:
 - [monitorConfigPolicy](./monitorConfigPolicy.python.md)
 - [monitorJson](./monitorJson.python.md)
 - [organizationSettings](./organizationSettings.python.md)
+- [powerpack](./powerpack.python.md)
 - [provider](./provider.python.md)
 - [restrictionPolicy](./restrictionPolicy.python.md)
 - [role](./role.python.md)

@@ -79,6 +79,7 @@ The following submodules are available:
 - [monitorConfigPolicy](./monitorConfigPolicy.java.md)
 - [monitorJson](./monitorJson.java.md)
 - [organizationSettings](./organizationSettings.java.md)
+- [powerpack](./powerpack.java.md)
 - [provider](./provider.java.md)
 - [restrictionPolicy](./restrictionPolicy.java.md)
 - [role](./role.java.md)

@@ -79,6 +79,7 @@ The following submodules are available:
 - [monitorConfigPolicy](./monitorConfigPolicy.typescript.md)
 - [monitorJson](./monitorJson.typescript.md)
 - [organizationSettings](./organizationSettings.typescript.md)
+- [powerpack](./powerpack.typescript.md)
 - [provider](./provider.typescript.md)
 - [restrictionPolicy](./restrictionPolicy.typescript.md)
 - [role](./role.typescript.md)

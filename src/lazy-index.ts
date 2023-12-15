@@ -48,6 +48,7 @@ Object.defineProperty(exports, 'monitor', { get: function () { return require('.
 Object.defineProperty(exports, 'monitorConfigPolicy', { get: function () { return require('./monitor-config-policy'); } });
 Object.defineProperty(exports, 'monitorJson', { get: function () { return require('./monitor-json'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
+Object.defineProperty(exports, 'powerpack', { get: function () { return require('./powerpack'); } });
 Object.defineProperty(exports, 'restrictionPolicy', { get: function () { return require('./restriction-policy'); } });
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
 Object.defineProperty(exports, 'rumApplication', { get: function () { return require('./rum-application'); } });

@@ -79,6 +79,7 @@ The following submodules are available:
 - [monitorConfigPolicy](./monitorConfigPolicy.go.md)
 - [monitorJson](./monitorJson.go.md)
 - [organizationSettings](./organizationSettings.go.md)
+- [powerpack](./powerpack.go.md)
 - [provider](./provider.go.md)
 - [restrictionPolicy](./restrictionPolicy.go.md)
 - [role](./role.go.md)

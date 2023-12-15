@@ -79,6 +79,7 @@ The following submodules are available:
 - [monitorConfigPolicy](./monitorConfigPolicy.csharp.md)
 - [monitorJson](./monitorJson.csharp.md)
 - [organizationSettings](./organizationSettings.csharp.md)
+- [powerpack](./powerpack.csharp.md)
 - [provider](./provider.csharp.md)
 - [restrictionPolicy](./restrictionPolicy.csharp.md)
 - [role](./role.csharp.md)

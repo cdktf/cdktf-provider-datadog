@@ -48,6 +48,7 @@ export * as monitor from './monitor';
 export * as monitorConfigPolicy from './monitor-config-policy';
 export * as monitorJson from './monitor-json';
 export * as organizationSettings from './organization-settings';
+export * as powerpack from './powerpack';
 export * as restrictionPolicy from './restriction-policy';
 export * as role from './role';
 export * as rumApplication from './rum-application';
