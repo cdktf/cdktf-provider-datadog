@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticslocations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.NewDataDatadogSyntheticsLocations(scope Construct, id *string, config DataDatadogSyntheticsLocationsConfig) DataDatadogSyntheticsLocations
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticslocations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticslocations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticslocations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticslocations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/datadatadogsyntheticslocations"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/datadatadogsyntheticslocations"
 
 &datadatadogsyntheticslocations.DataDatadogSyntheticsLocationsConfig {
 	Connection: interface{},
