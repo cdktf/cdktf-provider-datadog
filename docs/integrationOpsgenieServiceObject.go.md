@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationopsgenieserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.NewIntegrationOpsgenieServiceObject(scope Construct, id *string, config IntegrationOpsgenieServiceObjectConfig) IntegrationOpsgenieServiceObject
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationopsgenieserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationopsgenieserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationopsgenieserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationopsgenieserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/integrationopsgenieserviceobject"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/integrationopsgenieserviceobject"
 
 &integrationopsgenieserviceobject.IntegrationOpsgenieServiceObjectConfig {
 	Connection: interface{},
