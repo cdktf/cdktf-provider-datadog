@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.34
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.NewCloudConfigurationRule(scope Construct, id *string, config CloudConfigurationRuleConfig) CloudConfigurationRule
 ```
@@ -426,7 +426,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.CloudConfigurationRule_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.CloudConfigurationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ cloudconfigurationrule.CloudConfigurationRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.CloudConfigurationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ cloudconfigurationrule.CloudConfigurationRule_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.CloudConfigurationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 &cloudconfigurationrule.CloudConfigurationRuleConfig {
 	Connection: interface{},
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 &cloudconfigurationrule.CloudConfigurationRuleFilter {
 	Action: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.NewCloudConfigurationRuleFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudConfigurationRuleFilterList
 ```
@@ -1467,7 +1467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/cloudconfigurationrule"
+import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v10/cloudconfigurationrule"
 
 cloudconfigurationrule.NewCloudConfigurationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudConfigurationRuleFilterOutputReference
 ```
